@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<elements>
+	<info>
+		<name>Languages</name>
+		<update version="0.0.1">
+			<file name="languages.xml" url="https://raw.githubusercontent.com/MeriadarGoblin/elements-ffxiv/main/FFXIV/languages.xml" />
+		</update>
+	</info>
+
+	<element name="Kitsune" type="Language" source="Handbook to Kamigawa" id="ID_KAMIGAWA_LANGUAGE_KITSUNE">
+		<supports>Exotic</supports>
+		<description>
+			<p>Typically spoken by Kitsune.</p>
+		</description>
+		<setters>
+			<set name="standard">true</set>
+			<set name="speakers">Kitsune</set>
+		</setters>
+	</element>
+	<element name="Nezumi-tongue" type="Language" source="Handbook to Kamigawa" id="ID_KAMIGAWA_LANGUAGE_NEZUMI">
+		<supports>Exotic</supports>
+		<description>
+			<p>Typically spoken by Nezumi.</p>
+		</description>
+		<setters>
+			<set name="standard">true</set>
+			<set name="speakers">Nezumi</set>
+		</setters>
+	</element>
+</elements>

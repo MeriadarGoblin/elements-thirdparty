@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<elements>
+	<element name="Akki" type="Race" source="Handbook to Kamigawa" id="ID_KINGYAMEZ_HTK_RACE_AKKI">
+		<description>
+			<p>"DEEP INSIDE THE SOKENZAN MOUNTAINS, A BAND OF AKKI discovered a cache of ancient items of power. Their ensuing spree of destruction became known as ‘The Three Days of Fun.'"</p>
+			<p class="indent">- Observations of the Kami War</p>
+			<p>The akki are uncivilized children twisted into goblin-like land kappas. They are small and short-lived, but tough. Though they may get themselves killed in their pursuits, they show an unexpected curiosity and intelligence.</p>
+			<h4>Dangerous Curiosity</h4>
+			<p>Akki are full of curiosity, often to their detriment. They are always looking to get into trouble and like to prank others. Most that live in non-akki settlements have learned not to harm others, but still do not respect their property or space. Within human settlements, citizens are often wary of akki, checking their pockets and watching merchandise when one strolls by. However, the akki intellect shouldn't be underestimated. They like to tinker and build contraptions. They innovate new tools and weapons. Despite what stereotypes go around, their most annoying quality is actually one of their best.</p>
+			<h4>Fiery Obsession</h4>
+			<p>The akki's obsession with fire is unlimited and child-like. Fire is the engine, the art, and the soul of the world to them. Those akki who can manipulate fire are lauded with praise. Akki religion and their followers all center on the reverence and control of fire magic. Rituals to the great lava spirits deep under the Sokenzan mountains occur frequently.</p>
+			<p class="indent">Akki are well-known in non-akki settlements for their obsession with fire and proclivity for using it unnecessarily. They are often supervised or outright banned from working in armories with explosives, while also being sought out to do weapons research far away from residential areas. Citizens in the city surrounding Eiganjo groan when they hear an akki has moved in next door for fear their homes may end up burnt to the ground.</p>
+			<h4>Chaotic Rebels</h4>
+			<p>Akki come from the Sokenzan mountains. They have historically been lawless and uncivilized, forming small territorial groups. These groups are often short-lived and never truly form into permanent tribes or communities. The only organized social structures (and the word "organized" is hotly debated) are cults that form around powerful fire shamans. These religious leaders command the chaotic and disparate groups naturally rising and falling throughout the mountain range. When a truly powerful shaman brings together enough akki, they may turn into a warlord.</p>
+			<p class="indent">There are some akki who join the ronins of Sokenzan. This rebellion of sorts is led by Godo, the Bandit Warlord. The ronin, dishonorable and wild samurai, teach the samurai way. Some akki take on the traditions, techniques, weapons, and even the armor of their teachers. Some simply pledge their loyaty for free meals and do as Godo says.</p>
+			<h4>Names</h4>
+			<p>The akki tend to go by only one name, often a one or two-syllable word repeated twice. All names are considered neutral of gender, as there is little difference between the two.</p>
+			<p class="indent"><strong>Common:</strong> Ben-Ben, Den-Den, Goro-Goro, Ik-Uk, Ishi-Ishi, Kiki-Jiki, Ku-Ku, Oku-Doku, Tok-Tok, Yoku-Yoku, and Zo-Zu</p>
+			<h4>name Traits</h4>
+			<p>Your akki has a variety of natural abilities, the result of the tough caves they originate from in the Sokenzan mountains.</p>
+			<p class="indent"><strong><em>Ability Score Increase.</em></strong> Your Constitution score increases by 2. Your Dexterity and Intelligence scores increase by 1.</p>
+			<p class="indent"><strong><em>Age.</em></strong> Akki reach maturity around 8 years old and can live up to 60 years old, though its very very rare to find one past the age of 40. Most die early in their dangerous pursuits.</p>
+			<p class="indent"><strong><em>Alignment.</em></strong> The akki of the Sokenzan mountains are lawless and uncivilized, often only bending to the will of powerful leaders. They tend towards evil and chaotic alignments. Akki within human settlements though tend to be more mellow, learning the hard way to be neutral.</p>
+			<p class="indent"><strong><em>Size.</em></strong> Akki range from 3 to 3.5ft in height. They weigh 40 to 80lbs, with much of the extra weight in their shells. Their limbs are usually slim and spindly, with disproportionately long hands and feet. Your size is Small.</p>
+			<p class="indent"><strong><em>Speed.</em></strong> Your base walking speed is 25ft.</p>
+			<p class="indent"><strong><em>Darkvision.</em></strong> Accustomed to the shadowy caves of the Sokenzan mountains, you have superior vision in the dark and dim conditions. You can see dim light within 60ft of you as if it were bright light, and in darkness as if it were dim light. You can't discern color in darkness, only shades of gray.</p>
+			<p class="indent"><strong><em>Tough Shell.</em></strong> Your back is a hardened shell. As a reaction, you may gain resistance to bludgeoning, piercing, and slashing from nonmagical attacks. You may do this a number of times equal to your proficiency bonus per day, before refreshing this ability by finishing a long rest.</p>
+			<p class="indent"><strong><em>Nimble Escape.</em></strong> You can take the Disengage or Hide action as a bonus action on each of your turns.</p>
+			<p class="indent"><strong><em>Climbing.</em></strong> Your natural form lends itself well to traveling the crags of Sokenzan. You have a climbing speed of 25ft.</p>
+			<p class="indent"><strong><em>Languages.</em></strong> You can speak, read, and write Common and Goblin.</p>
+		</description>
+		<sheet display="false" />
+		<rules>
+			<stat name="constitution" value="2" requirements="!ID_WOTC_TCOE_OPTION_CUSTOMIZED_ASI" />
+			<stat name="dexterity" value="1" requirements="!ID_WOTC_TCOE_OPTION_CUSTOMIZED_ASI" />
+			<stat name="intelligence" value="1" requirements="!ID_WOTC_TCOE_OPTION_CUSTOMIZED_ASI" />
+			<select type="Ability Score Improvement" name="Custom Ability Score Improvement +2 (Akki)" supports="Custom Ability Score Increase 2" requirements="ID_WOTC_TCOE_OPTION_CUSTOMIZED_ASI" />
+			<select type="Ability Score Improvement" name="Custom Ability Score Improvement +1 (Akki)" supports="Custom Ability Score Increase 1" requirements="ID_WOTC_TCOE_OPTION_CUSTOMIZED_ASI" />
+			<select type="Ability Score Improvement" name="Custom Ability Score Improvement +1 (Akki)" supports="Custom Ability Score Increase 1" requirements="ID_WOTC_TCOE_OPTION_CUSTOMIZED_ASI" />
+			<grant type="Size" id="ID_SIZE_MEDIUM" />
+			<grant type="Vision" id="ID_VISION_DARKVISION" />
+			<grant type="Language" id="ID_LANGUAGE_COMMON" requirements="!ID_WOTC_TCOE_OPTION_CUSTOMIZED_LANGUAGE" />
+			<grant type="Language" id="ID_LANGUAGE_GOBLIN" requirements="!ID_WOTC_TCOE_OPTION_CUSTOMIZED_LANGUAGE" />
+			<select type="Language" name="Customized Language (Oni-Touched)" number="2" supports="Custom Race Language"  requirements="ID_WOTC_TCOE_OPTION_CUSTOMIZED_LANGUAGE" />
+			<grant type="Racial Trait" id="ID_KINGYAMEZ_HTK_AKKI_RACIAL_TRAIT_TOUGH_SHELL" />
+			<grant type="Racial Trait" id="ID_KINGYAMEZ_HTK_AKKI_RACIAL_TRAIT_NIMBLE_ESCAPE" />
+			<grant type="Racial Trait" id="ID_KINGYAMEZ_HTK_AKKI_RACIAL_TRAIT_CLIMBING" />
+		</rules>
+	</element>
+	<element name="Tough Shell" type="Racial Trait" source="Handbook to Kamigawa" id="ID_KINGYAMEZ_HTK_AKKI_RACIAL_TRAIT_TOUGH_SHELL">
+		<description>
+			<p>Your back is a hardened shell. As a reaction, you may gain resistance to bludgeoning, piercing, and slashing from nonmagical attacks. You may do this a number of times equal to your proficiency bonus per day, before refreshing this ability by finishing a long rest.</p>
+		</description>
+		<sheet action="Reaction" usage="Long Rest">
+			<description>Your back is a hardened shell. As a reaction, you may gain resistance to bludgeoning, piercing, and slashing from nonmagical attacks. You may do this a number of times equal to your proficiency bonus per day, before refreshing this ability by finishing a long rest.</description>
+		</sheet>
+	</element>
+	<element name="Nimble Escape" type="Racial Trait" source="Handbook to Kamigawa" id="ID_KINGYAMEZ_HTK_AKKI_RACIAL_TRAIT_NIMBLE_ESCAPE">
+		<description>
+			<p>You can take the Disengage or Hide action as a bonus action on each of your turns.</p>
+		</description>
+		<sheet>
+			<description>You can take the Disengage or Hide action as a bonus action on each of your turns.</description>
+		</sheet>
+	</element>
+	<element name="Climbing" type="Racial Trait" source="Handbook to Kamigawa" id="ID_KINGYAMEZ_HTK_AKKI_RACIAL_TRAIT_CLIMBING">
+		<description>
+			<p>Your natural form lends itself well to traveling the crags of Sokenzan. You have a climbing speed of 25ft.</p>
+		</description>
+		<sheet display="false" />
+		<rules>
+			<stat name="innate speed:climb" value="25" bonus="base" />
+		</rules>
+	</element>
+</elements>

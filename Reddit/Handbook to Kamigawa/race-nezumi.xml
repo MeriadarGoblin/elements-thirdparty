@@ -1,0 +1,147 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<elements>
+	<element name="Nezumi" type="Race" source="Handbook to Kamigawa" id="ID_KINGYAMEZ_HTK_RACE_AKKI">
+		<description>
+			<p>"THESE NEZUMI, THEY DISGUST ME. THE THINGS THEY WILL do for money no other thinking creature would consider. This, of course, makes them useful beyond words."</p>
+			<p class="indent">- Meloku the Clouded Mirror</p>
+			<p>The Nezumi are rat-like humanoids with a penchant for the unseemly. They're known as thiefs, assassins, and urchins. They originate from the Takenuma swamp, a place other races already have a distaste for. It's tough for a rat out there.</p>
+			<h4>Swamp Creatures</h4>
+			<p>The Nezumi live in villages and outposts hidden among the morass. Their homes tenuously borders with those of the violent oni-worshipping ogres. While the ogres and nezumi do not get along, that does not mean they are so different. Most nezumi are raised to become mercenaries, using violence as the main source of income for the village. Those that can't cut it wind up as fishermen, foragers, or craftsmen to support the warrior class. Regardless, every nezumi moves with a speed and agility that other races would have a hard time matching.</p>
+			<p class="indent">Some nezumi have migrated outside of the swamp to the larger settlements, especially the city surrounding Eiganjo. A small community of them make an honest but meager living on the periphery of human society.</p>
+			<h4>Cunning Mercenaries</h4>
+			<p>The Nezumi often find lives for themselves as thieves, ninja, or samurai, working for the highest bidder that will tolerate their underhanded tactics. Nezumi are known to be agile and clever, making up for what they lack in outright strength. They use misdirection and chemical attacks to turn the odds in their favor. Some are even known to summon and control swarms of insects or rats to distract opponents. No tactic is too low to get the job done. An enemy who is aware of the Nezumi is never too cautious, while an ignorant fool dies in stupefication. Some Nezumi are so good at what they do, the elites of society keep one on retainer to take care of tasks requiring stealth, infiltration, or assassination.</p>
+			<h4>City Outcasts</h4>
+			<p>Most of the other races are fairly ignorant of or blatantly discriminatory towards Nezumi. This happens far more to Nezumi than towards any other race living within human settlements. Many see them as desperate street urchins at best and disgusting, thieving parasites at worst. Their reputation for using underhanded tricks hasn't earned them any favors, though one wonders if the discrimination or the dishonesty came first.</p>
+			<h4>Nezumi Names</h4>
+			<p>The naming conventions of the nezumi are very similar to that of the kitsune. They have two names, common and clan, with the first being based on a body part.</p>
+			<p class="indent"><strong>Common:</strong>Angry-Tail, Gray-Nose, Twitchy-Whisker, Ink-Eyes, Long-Claw, Marrow-Gnawer, Night-Eyes, Red-Ears, Silent-Paws, Sharp-Claw, Strong-Tail, and White-Fang</p>
+			<p class="indent"><strong>Clan: </strong>Fujibayashi, Fuma, Hattori, Iga, Ishikawa, Kido, Koga, Mochizuki, Momochi, and Tomo</p>
+			<h4>Nezumi Traits</h4>
+			<p>Your nezumi character has a variety of natural abilities, a holdover from the harsh life your ancestors lived in the swamps of Takenuma.</p>
+			<p class="indent"><strong><em>Ability Score Increase.</em></strong> Your Dexterity score increases by 2.</p>
+			<p class="indent"><strong><em>Age.</em></strong> Nezumi tend to live about the same length of time as most humans, but reach maturity quicker around 11 years old.</p>
+			<p class="indent"><strong><em>Alignment.</em></strong> Most nezumi decide for themselves whether they are good or bad, but rarely do they follow the law. They tend towards chaotic alignments.</p>
+			<p class="indent"><strong><em>Size.</em></strong> Nezumi are significantly shorter and more wiry than humans. They typically range from 4 to 5ft tall and weigh 80 to 120lbs. Males are typically larger females. Your size is Medium.</p>
+			<p class="indent"><strong><em>Speed.</em></strong> Your base walking speed is 35ft.</p>
+			<p class="indent"><strong><em>Darkvision.</em></strong> Accustomed to the murky swamp and gloom of dusk, you have superior vision in the dark and dim conditions. You can see dim light within 60ft of you as if it were bright light, and in darkness as if it were dim light. You can't discern color in darkness, only shades of gray.</p>
+			<p class="indent"><strong><em>Keen Senses.</em></strong> You have proficiency in the Perception skill.</p>
+			<p class="indent"><strong><em>Sneaky.</em></strong> You have proficiency in the Stealth skill.</p>
+			<p class="indent"><strong><em>Thin Frame.</em></strong> Your body can squeeze into spaces as if you were a Small Creature.</p>
+			<p class="indent"><strong><em>Languages.</em></strong> You can speak, read, and write Common and Nezumi-tongue.</p>
+			<p class="indent"><strong><em>Subraces.</em></strong> Over time, the separation between nezumi in the swamp and those in the city have created two subraces, the Shimin and Gaijin.</p>
+		</description>
+		<sheet display="false" />
+		<rules>
+			<stat name="dexterity" value="2" requirements="!ID_WOTC_TCOE_OPTION_CUSTOMIZED_ASI" />
+			<select type="Ability Score Improvement" name="Custom Ability Score Improvement +2 (Nezumi)" supports="Custom Ability Score Increase 2" requirements="ID_WOTC_TCOE_OPTION_CUSTOMIZED_ASI" />
+			<grant type="Size" id="ID_SIZE_MEDIUM" />
+			<stat name="innate speed" value="35" bonus="base" />
+			<grant type="Vision" id="ID_VISION_DARKVISION" />
+			<grant type="Language" id="ID_LANGUAGE_COMMON" requirements="!ID_WOTC_TCOE_OPTION_CUSTOMIZED_LANGUAGE" />
+			<grant type="Language" id="ID_KAMIGAWA_LANGUAGE_NEZUMI" requirements="!ID_WOTC_TCOE_OPTION_CUSTOMIZED_LANGUAGE" />
+			<grant type="Proficiency" id="ID_PROFICIENCY_SKILL_PERCEPTION" />
+			<grant type="Proficiency" id="ID_PROFICIENCY_SKILL_STEALTH" />
+			<grant type="Racial Trait" id="ID_KINGYAMEZ_HTK_NEZUMI_RACIAL_TRAIT_THIN_FRAME" />
+			<grant type="Racial Trait" id="ID_KINGYAMEZ_HTK_NEZUMI_RACIAL_TRAIT_SUBRACE" />
+		</rules>
+	</element>
+	<element name="Thin Frame" type="Racial Trait" source="Handbook to Kamigawa" id="ID_KINGYAMEZ_HTK_NEZUMI_RACIAL_TRAIT_THIN_FRAME">
+		<description>
+			<p>Your body can squeeze into spaces as if you were a Small Creature.</p>
+		</description>
+		<sheet>
+			<description>Your body can squeeze into spaces as if you were a Small Creature.</description>
+		</sheet>
+	</element>
+	<element name="Subraces" type="Racial Trait" source="Handbook to Kamigawa" id="ID_KINGYAMEZ_HTK_NEZUMI_RACIAL_TRAIT_SUBRACE">
+		<description>
+			<p>Over time, the separation between nezumi in the swamp and those in the city have created two subraces, the Shimin and Gaijin.</p>
+		</description>
+		<sheet display="false">
+			<description>Over time, the separation between nezumi in the swamp and those in the city have created two subraces, the Shimin and Gaijin.</description>
+		</sheet>
+		<rules>
+			<select type="Sub Race" name="Nezumi Subraces" supports="Nezumi Subrace" />
+		</rules>
+	</element>
+
+	<element name="Shimin" type="Sub Race" source="Handbook to Kamigawa" id="ID_KINGYAMEZ_HTK_NEZUMI_SUBRACE_SHIMIN">
+		<supports>Nezumi Subrace</supports>
+		<description>
+			<p>As a shimin nezumi, you've stayed resistant to the bog's natural poisons and diseases.</p>
+			<p class="indent"><strong><em>Ability Score Increase.</em></strong> Your Constitution score increases by 1.</p>
+			<p class="indent"><strong><em>Rat Weapon Training.</em></strong> You have proficiency with the kunai, shuriken, inji, fukiya, net, and wakizashi. The accurate range of all these ranged weapons is doubled. (Example: Fukiya's range property becomes 50/100 instead of normal 25/100.)</p>
+			<p class="indent"><strong><em>Takenuma Durability.</em></strong> Your homelands are rife with rot and decay. Your character's survival indicates a resistance to these conditions. You have resistance to poison and advantage on saving throws against it. At 3rd level, you gain resistance to necrotic damage and advantage on saving throws against disease.</p>
+		</description>
+		<sheet display="false" />
+		<rules>
+			<stat name="constitution" value="1" requirements="!ID_WOTC_TCOE_OPTION_CUSTOMIZED_ASI" />
+			<select type="Ability Score Improvement" name="Custom Ability Score Improvement +1 (Shimin Nezumi)" supports="Custom Ability Score Increase 1" requirements="ID_WOTC_TCOE_OPTION_CUSTOMIZED_ASI" />
+			<grant type="Racial Trait" id="ID_KINGYAMEZ_HTK_KAMITOUCHED_RACIAL_TRAIT_RAT_WEAPON_TRAINING" />
+			<grant type="Racial Trait" id="ID_KINGYAMEZ_HTK_KAMITOUCHED_RACIAL_TRAIT_TAKENUMA_DURABILITY" />
+		</rules>
+	</element>
+	<element name="Rat Weapon Training" type="Racial Trait" source="Handbook to Kamigawa" id="ID_KINGYAMEZ_HTK_KAMITOUCHED_RACIAL_TRAIT_RAT_WEAPON_TRAINING">
+		<description>
+			<p>You have proficiency with the kunai, shuriken, inji, fukiya, net, and wakizashi. The accurate range of all these ranged weapons is doubled. (Example: Fukiya's range property becomes 50/100 instead of normal 25/100.)</p>
+		</description>
+		<sheet>
+			<description>You have proficiency with the dagger, dart, sling, blowgun, net, and scimitar. The accurate range of all these ranged weapons is doubled. (Example: Fukiya's range property becomes 50/100 instead of normal 25/100.)</description>
+		</sheet>
+		<rules>
+			<grant type="Proficiency" id="ID_PROFICIENCY_WEAPON_PROFICIENCY_DAGGER" />
+			<grant type="Proficiency" id="ID_PROFICIENCY_WEAPON_PROFICIENCY_DART" />
+			<grant type="Proficiency" id="ID_PROFICIENCY_WEAPON_PROFICIENCY_SLING" />
+			<grant type="Proficiency" id="ID_PROFICIENCY_WEAPON_PROFICIENCY_BLOWGUN" />
+			<grant type="Proficiency" id="ID_PROFICIENCY_WEAPON_PROFICIENCY_NET" />
+			<grant type="Proficiency" id="ID_PROFICIENCY_WEAPON_PROFICIENCY_SCIMITAR" />
+		</rules>
+	</element>
+	<element name="Takenuma Durability" type="Racial Trait" source="Handbook to Kamigawa" id="ID_KINGYAMEZ_HTK_KAMITOUCHED_RACIAL_TRAIT_TAKENUMA_DURABILITY">
+		<description>
+			<p>Your homelands are rife with rot and decay. Your character's survival indicates a resistance to these conditions. You have resistance to poison and advantage on saving throws against it. At 3rd level, you gain resistance to necrotic damage and advantage on saving throws against disease.</p>
+		</description>
+		<sheet>
+			<description>You have resistance to poison and advantage on saving throws against it.</description>
+			<description level="3">You have resistance to poison and advantage on saving throws against it. You gain resistance to necrotic damage and advantage on saving throws against disease. </description>
+		</sheet>
+		<rules>
+			<grant type="Condition" id="ID_INTERNAL_CONDITION_DAMAGE_RESISTANCE_POISON" />
+			<grant type="Condition" id="ID_INTERNAL_CONDITION_DAMAGE_RESISTANCE_NECROTIC" level="3" />
+		</rules>
+	</element>
+
+	<element name="Gaijin" type="Sub Race" source="Handbook to Kamigawa" id="ID_KINGYAMEZ_HTK_NEZUMI_SUBRACE_GAIJIN">
+		<supports>Nezumi Subrace</supports>
+		<description>
+			<p>Moving the city has worked on your "charms." Gaijin nezumi use them everyday to survive.</p>
+			<p class="indent"><strong><em>Ability Score Increase.</em></strong> Your Charisma score increases by 1.</p>
+			<p class="indent"><strong><em>Duplicity.</em></strong> You have proficiency in the Deception skill.</p>
+			<p class="indent"><strong><em>Commune with Rats.</em></strong>  You can speak with other rats on a basic level to discover sensory and positional information. You also have advantage on Animal Handling ability checks when involving rats.</p>
+			<p class="indent"><strong><em>Street Smarts.</em></strong> Growing up on the fringe of the city has taught you the tells of the criminal underbelly. You have advantage on Insight ability checks when dealing with thugs, bandits, and other criminals. While in an urban area, you also have advantage on Survival ability checks.</p>
+		</description>
+		<sheet display="false" />
+		<rules>
+			<stat name="charisma" value="1" requirements="!ID_WOTC_TCOE_OPTION_CUSTOMIZED_ASI" />
+			<select type="Ability Score Improvement" name="Custom Ability Score Improvement +1 (Gaijin Nezumi)" supports="Custom Ability Score Increase 1" requirements="ID_WOTC_TCOE_OPTION_CUSTOMIZED_ASI" />
+			<grant type="Racial Trait" id="ID_KINGYAMEZ_HTK_KAMITOUCHED_RACIAL_TRAIT_COMMUNE_WITH_RATS" />
+			<grant type="Racial Trait" id="ID_KINGYAMEZ_HTK_KAMITOUCHED_RACIAL_TRAIT_STREET_SMARTS" />
+		</rules>
+	</element>
+	<element name="Commune with Rats" type="Racial Trait" source="Handbook to Kamigawa" id="ID_KINGYAMEZ_HTK_KAMITOUCHED_RACIAL_TRAIT_COMMUNE_WITH_RATS">
+		<description>
+			<p>You can speak with other rats on a basic level to discover sensory and positional information. You also have advantage on Animal Handling ability checks when involving rats.</p>
+		</description>
+		<sheet>
+			<description>You can speak with other rats on a basic level to discover sensory and positional information. You also have advantage on Animal Handling ability checks when involving rats.</description>
+		</sheet>
+	</element>
+	<element name="Street Smarts" type="Racial Trait" source="Handbook to Kamigawa" id="ID_KINGYAMEZ_HTK_KAMITOUCHED_RACIAL_TRAIT_STREET_SMARTS">
+		<description>
+			<p>Growing up on the fringe of the city has taught you the tells of the criminal underbelly. You have advantage on Insight ability checks when dealing with thugs, bandits, and other criminals. While in an urban area, you also have advantage on Survival ability checks.</p>
+		</description>
+		<sheet>
+			<description>You have advantage on Insight ability checks when dealing with thugs, bandits, and other criminals. While in an urban area, you also have advantage on Survival ability checks.</description>
+		</sheet>
+	</element>
+</elements>

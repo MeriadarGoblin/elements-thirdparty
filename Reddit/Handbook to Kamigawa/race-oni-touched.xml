@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<elements>
+	<element name="Oni-Touched" type="Race" source="Handbook to Kamigawa" id="ID_KINGYAMEZ_HTK_RACE_ONITOUCHED">
+		<description>
+			<p>The oni-touched are humans meddled with by demons. Gifts and curses have been imparted upon the person. These irregularities go to the next generation too, creating a legacy.</p>
+			<h4>Dishonorable Heritage</h4>
+			<p>Many oni-touched are humans with a streak of demon blood. Their ancestors dabbled in the dark arts or made a deal with an oni. They committed a heinous act to achieve a blasphemous power. This event changed the very being of the person involved. They may retain the appearance of a normal human, but deep inside is a force very inhuman.</p>
+			<p class="indent">Rumors surrounding the city of Numai tell of such events. Established clans, corrupted and dishonored, have such a mark, but this does not hold them back. Their powers cannot be denied, and the nobles of Numai are often seduced. Other oni-touched have kept their heritage a secret.</p>
+			<h4>Dark Connections</h4>
+			<p>An oni-touched may still have a connection to the original oni that bargained or tampered with their ancestors. The current oni-touched, though removed from said events, may still be beholden to the oni's pact. It is rare to find an oni-touched who does not have some connection to the demons. This can shape their lives in unexpected ways, requiring them to perform distasteful acts or protecting them from other demons.</p>
+			<p class="indent">An oni-touched may also reject their ancestor's nagging master. They may seek to break such a pact, gain their freedom, or simply get rid of a known evil. An oni-touched isn't evil by nature, but rather by association after all. They may actually be good and want to destroy that associate. It may take a lifetime, but oni-touched seeking redemption are more common than their masters would like to admit.</p>
+			<h4>Oni-Touched Names</h4>
+			<p>The naming conventions of oni-touched match those of humans. Those that are born to established families have clan names, but those cast out do not. Those that bind themselves to a lord may take on the clan name of their lord.</p>
+			<p class="indent"><strong><em>Ability Score Increase.</em></strong> Your Charisma score increases by 2 and your Intellect by 1.</p>
+			<p class="indent"><strong><em>Age.</em></strong> Oni-touched mature at the same rate as humans.</p>
+			<p class="indent"><strong><em>Alignment.</em></strong> While many oni-touched end up with evil alignments, it is not a natural certainty. Like humans, they aren't inclined towards any particular alignment.</p>
+			<p class="indent"><strong><em>Size.</em></strong> Oni-touched are about the same size and build as humans. Your size is Medium.</p>
+			<p class="indent"><strong><em>Speed.</em></strong> Your base walking speed is 30ft.</p>
+			<p class="indent"><strong><em>Psychic Defense.</em></strong> You have resistance to psychic damage.</p>
+			<p class="indent"><strong><em>Demonic Armor Aura.</em></strong> When unarmored, you may use your Charisma modifier in place of your Dexterity modifier when determining AC. (This still applies with Mage Armor.)</p>
+			<p class="indent"><strong><em>Oni Legacy.</em></strong> You know the Thaumaturgy cantrip. Once you reach 3rd level, you can cast the Hex spell once per day, regaining the ability when you finish a long rest. Once you reach 5th level, you can also cast the Darkness spell once per day, regaining the ability when you finish a long rest.</p>
+			<p class="indent"><strong><em>Languages.</em></strong> You can speak, read, and write Common and one extra language of your choice. Humans typically learn the languages of other peoples they deal with, including obscure dialects.</p>
+		</description>
+		<sheet display="false" />
+		<rules>
+			<stat name="charisma" value="2" />
+			<stat name="intellect" value="1" />
+			<select type="Ability Score Improvement" name="Custom Ability Score Improvement +2 (Oni-Touched)" supports="Custom Ability Score Increase 2" requirements="ID_WOTC_TCOE_OPTION_CUSTOMIZED_ASI" />
+			<select type="Ability Score Improvement" name="Custom Ability Score Improvement +1 (Oni-Touched)" supports="Custom Ability Score Increase 1" requirements="ID_WOTC_TCOE_OPTION_CUSTOMIZED_ASI" />
+			<grant type="Size" id="ID_SIZE_MEDIUM" />
+			<stat name="innate speed" value="30" bonus="base" />
+			<grant type="Language" id="ID_LANGUAGE_COMMON" requirements="!ID_WOTC_TCOE_OPTION_CUSTOMIZED_LANGUAGE" />
+			<select type="Language" name="Language, Oni-Touched" supports="Standard||Exotic" requirements="!ID_WOTC_TCOE_OPTION_CUSTOMIZED_LANGUAGE" />
+			<select type="Language" name="Customized Language (Oni-Touched)" number="2" supports="Custom Race Language"  requirements="ID_WOTC_TCOE_OPTION_CUSTOMIZED_LANGUAGE" />
+			<grant type="Racial Trait" id="ID_KINGYAMEZ_HTK_ONITOUCHED_RACIAL_TRAIT_PSYCHIC_DEFENSE" />
+			<grant type="Racial Trait" id="ID_KINGYAMEZ_HTK_ONITOUCHED_RACIAL_TRAIT_DEMONIC_ARMOR_AURA" />
+			<grant type="Racial Trait" id="ID_KINGYAMEZ_HTK_ONITOUCHED_RACIAL_TRAIT_ONI_LEGACY" />
+		</rules>
+	</element>
+	<element name="Psychic Defense" type="Racial Trait" source="Handbook to Kamigawa" id="ID_KINGYAMEZ_HTK_ONITOUCHED_RACIAL_TRAIT_PSYCHIC_DEFENSE">
+		<description>
+			<p>You have resistance to psychic damage.</p>
+		</description>
+		<sheet>
+			<description>You have resistance to psychic damage.</description>
+		</sheet>
+		<rules>
+			<grant type="Condition" id="ID_INTERNAL_CONDITION_DAMAGE_RESISTANCE_PSYCHIC" />
+		</rules>
+	</element>
+	<element name="Demonic Armor Aura" type="Racial Trait" source="Handbook to Kamigawa" id="ID_KINGYAMEZ_HTK_ONITOUCHED_RACIAL_TRAIT_DEMONIC_ARMOR_AURA">
+		<description>
+			<p>When unarmored, you may use your Charisma modifier in place of your Dexterity modifier when determining AC. (This still applies with Mage Armor.)</p>
+		</description>
+		<sheet>
+			<description>When unarmored, you may use your Charisma modifier in place of your Dexterity modifier when determining AC. (This still applies with Mage Armor.)</description>
+		</sheet>
+		<rules>
+			<stat name="ac:demonic armor aura:base" value="10" bonus="base" />
+			<stat name="ac:demonic armor aura:ability" value="charisma:modifier" bonus="ability" />
+			<stat name="ac:demonic armor aura:ability" value="dexterity:modifier" bonus="ability" />
+			<stat name="ac:demonic armor aura" value="ac:demonic armor aura:base" bonus="base" />
+			<stat name="ac:demonic armor aura" value="ac:demonic armor aura:ability" bonus="ability" />
+			<stat name="ac:calculation" value="ac:demonic armor aura" bonus="calculation" equipped="[armor:none]" alt="Demonic Armor Aura (Oni-Touched)" />
+		</rules>
+	</element>
+	<element name="Oni Legacy" type="Racial Trait" source="Handbook to Kamigawa" id="ID_KINGYAMEZ_HTK_ONITOUCHED_RACIAL_TRAIT_ONI_LEGACY">
+		<description>
+			<p>You know the Thaumaturgy cantrip. Once you reach 3rd level, you can cast the Hex spell once per day, regaining the ability when you finish a long rest. Once you reach 5th level, you can also cast the Darkness spell once per day, regaining the ability when you finish a long rest.</p>
+		</description>
+		<sheet usage="Long Rest">
+			<description>You know the Thaumaturgy cantrip.</description>
+			<description level="3">You know the Thaumaturgy cantrip. Once you reach 3rd level, you can cast the Hex spell once per day, regaining the ability when you finish a long rest.</description>
+			<description level="5">You know the Thaumaturgy cantrip. Once you reach 3rd level, you can cast the Hex spell once per day, regaining the ability when you finish a long rest. Once you reach 5th level, you can also cast the Darkness spell once per day, regaining the ability when you finish a long rest.</description>
+		</sheet>
+		<rules>
+			<grant type="Spell" id="ID_PHB_SPELL_THAUMATURGY" />
+			<grant type="Spell" id="ID_PHB_SPELL_HEX" level="3" />
+			<grant type="Spell" id="ID_PHB_SPELL_DARKNESS" level="5" />
+		</rules>
+	</element>
+</elements>

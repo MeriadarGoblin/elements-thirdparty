@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<elements>
+	<element name="Handbook to Kamigawa" type="Source" source="Core" id="ID_SOURCE_HANDBOOK_TO_KAMIGAWA">
+		<description>
+			<p>A Companion Guidebook for use alongside the Dungeons &amp; Dragons 5th Edition Player's Handbook to bring Final Fantasy XIV to your table.</p>
+		</description>
+		<setters>
+			<set name="abbreviation">HTK</set>
+			<set name="image">https://raw.githubusercontent.com/MeriadarGoblin/elements-ffxiv/main/FFXIV/FFXIV.png</set>
+			<set name="url">https://www.gmbinder.com/share/-N6EdwDPUJo5UVoL2VM0#races</set>
+			<set name="author" abbreviation="USI" url="https://www.gmbinder.com/share/-N6EdwDPUJo5UVoL2VM0#races">KingYamez</set>
+			<set name="release">20220902</set>
+			<set name="homebrew">true</set>
+		</setters>
+	</element>
+</elements>

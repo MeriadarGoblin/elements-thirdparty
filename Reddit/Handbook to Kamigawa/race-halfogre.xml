@@ -1,0 +1,136 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<elements>
+	<element name="Half-Ogre" type="Race" source="" id="ID_KINGYAMEZ_HTK_RACE_HALFOGRE">
+		<description>
+			<p>"TOWARDS MIDNIGHT THE RAIN CEASED AND THE clouds drifted away, so that the sky was scattered once more with the incredible lamps of stars. Then the breeze died too and there was no noise save the drip and tickle of water that ran out of clefts and spilled down, leaf by leaf, to the brown earth of the island. The air was cool, moist, and clear; and presently even the sound of the water was still. The beast lay huddled on the pale beach and the stains spread, inch by inch.."</p>
+			<p class="indent">- William Golding, <em>Lord of the Flies</em></p>
+			<p>The half-ogres are the result of human and ogre interbreeding. With great strength and power comes a dark instinctual emotion. Half-ogres struggle with themselves more than society.</p>
+			<h4>Strong and Intimidating</h4>
+			<p>The first thing a person notices about a half-ogre is their size. Taller than any other race and certainly heavier, half-ogres use their natural strength to their advantage. Many make a living in jobs requiring this strength, such as samurai, construction workers, or farmers. Others use it for more nefarious purposes, winding up as thugs or bandits.</p>
+			<p class="indent">The second thing a person notices are the half-ogre's features that separate them from humans. Their teeth are often a sharp mess, and many have long teeth that'd qualify as small tusks. Their skin has a range of colors. Any half-ogre may have a gray skin tone, but most take on shades linked to their ancestry. A half-ogre descended from the mountain ogres could be in shades of pale yellow to earthy red, while one from the swamp could be in shades of white to pale purple. One other common feature for half-ogres is a bony spine. It's not uncommon to see them hunch over as well.</p>
+			<p class="indent">These secondary features often look very intimidating to other races. The more pronounced these ogre features are, the more a half-ogre will get strange or even scared looks. Some who have never seen a half-ogre before may even be caught off guard or frightened by their appearance. While discrimination towards half-ogres is uncommon, the people who've experienced the terrors of true ogres may hold misplaced grudges.</p>
+			<h4>Mysterious Origins</h4>
+			<p>Nobody knows the true origin of the half-ogres. Humans and ogres are not able to reproduce naturally, nor would they want to. Ogres are evil and cunning giants in Kamigawa. Most live to serve oni demons and perform horrible acts. Normal humans run in fear from them, while the brave defend their settlements from raids.</p>
+			<p class="indent">Half-ogres are a rare race among human settlements, but have been around a long time. They are quite accepted in human settlements, though some of the other races less familiar with them sometimes get confused. Ogres do not seem to distinguish between half-ogres and humans, treating them just as horribly as other humans.</p>
+			<p class="indent">Theories of the half-ogre's origins abound. Some wizards believe that they are the product of ancient magical blending between the races. Some historians believe ogres and humans may not have been so different at one point, being able to reproduce naturally at some point in history. The more pessimistic and conspiratorial parts of society believe that they come from corrupted humans, tampered with by the oni long ago.</p>
+			<p class="indent">The half-ogres themselves aren't sure what to believe. Each has their own theory. Some make it their life mission to find out though, leading them to explore the world for clues.</p>
+			<p class="indent">The one thing everyone agrees on is that half-ogres are related to ogres somehow. Their physical features share too many similarities to ignore. Then, there is the instinctual component. Most half-ogres struggle with a tendency towards violence. This tendency can shape their futures.</p>
+			<h4>Rising Above Savage Instincts</h4>
+			<p>Half-ogres grow up experiencing primal urges, often in the form of rage or violence, to a severity that other races do not. This often causes issues in childhood as children have less control over their actions and emotions. An outlet for these urges is needed, such as martial arts or hard labor. Strict reprimands and clear boundaries help half-ogre children learn right from wrong. By adulthood, most half-ogre's can control themselves. However, half-ogres that cannot learn control find themselves exiled or criminals.</p>
+			<div class="sidebar">
+				<h5>Half-Ogre Families</h5>
+				<p>Half-ogres most commonly reproduce with humans. Their children are most often larger than average humans, but some will be half-ogres. Less likely, two half-ogres find each other and have a full family of half-ogres.</p>
+				<p class="indent">Surprisingly, it is known that half-ogres can procreate with ogres. In the Sokenzan Mountains, Godo has brought together ogres, half-ogres, humans, and akki under one banner. Naturally, intermingling occurs and half-ogres are born.</p>
+			</div>
+			<p class="indent">A half-ogre's professional choice and even their whole way of life may be shaped by their savage instincts or the desire to control them. Military occupations are by far the most common path. Strict codes of conduct and frequent practice to manage one's actions help many half-ogres find control. Half-ogres can then tap into their suppressed rage on the battlefield. Military institutions and mercenary groups also prize half-ogre soldiers for this.</p>
+			<h4>Half-Ogre Names</h4>
+			<p>The naming conventions of half-ogres match those of humans. Clan names are rare for half-ogres to have from birth with so many being orphans. However, many take on the clan name of their martial school or future families.</p>
+			<h4>Half-Ogre Traits</h4>
+			<p>Your half-ogre character has certain traits derived from your ogre ancestry.</p>
+			<p class="indent"><strong><em>Ability Score Increase.</em></strong> Your Strength score increases by 2 and your Charisma by 1.</p>
+			<p class="indent"><strong><em>Age.</em></strong> Half-ogres mature slightly faster than humans, reaching adulthood around age 14. They remain strong for about half a century, but then noticeably age faster after that. They rarely live longer than 75 years.</p>
+			<p class="indent"><strong><em>Alignment.</em></strong> A half-ogre's natural tendencies lean towards chaotic and evil alignments. However, many choose the opposite and resist these tendencies in an effort to gain full control of themselves. It's rare to meet a half-ogre that sits inbetween at neutrality.</p>
+			<p class="indent"><strong><em>Size.</em></strong> Half-ogres are significantly larger and bulkier than humans. They range from 6 to 7ft tall and weigh 200 to 300lbs. Males are typically larger than females. Your size is Medium.</p>
+			<p class="indent"><strong><em>Speed.</em></strong> Your base walking speed is 30ft.</p>
+			<p class="indent"><strong><em>Darkvision.</em></strong> Thanks to your ogre blood, you have superior vision in dark and dim conditions. You can see dim light within 60ft of you as if it were bright light, and in darkness as if it were dim light. You can't discern color in darkness, only shades of gray.</p>
+			<p class="indent"><strong><em>Menacing.</em></strong> You have proficiency in the Intimidation skill.</p>
+			<p class="indent"><strong><em>Languages.</em></strong> You can speak, read, and write Common and one extra language of your choice. Half-ogres, like the humans they live with, typically learn the languages of other peoples they deal with.</p>
+			<p class="indent"><strong><em>Subraces.</em></strong> Ogres are divided by region and have some traits differing between them. Depending on which ancestry you have, your instincts give a different benefit.</p>
+		</description>
+		<sheet display="false" />
+		<rules>
+			<stat name="strength" value="2" requirements="!ID_WOTC_TCOE_OPTION_CUSTOMIZED_ASI" />
+			<stat name="charisma" value="1" requirements="!ID_WOTC_TCOE_OPTION_CUSTOMIZED_ASI" />
+			<select type="Ability Score Improvement" name="Custom Ability Score Improvement +2 (Half-Ogre)" supports="Custom Ability Score Increase 2" requirements="ID_WOTC_TCOE_OPTION_CUSTOMIZED_ASI" />
+			<select type="Ability Score Improvement" name="Custom Ability Score Improvement +1 (Half-Ogre)" supports="Custom Ability Score Increase 1" requirements="ID_WOTC_TCOE_OPTION_CUSTOMIZED_ASI" />
+			<grant type="Size" id="ID_SIZE_MEDIUM" />
+			<stat name="innate speed" value="30" bonus="base" />
+			<grant type="Vision" id="ID_VISION_DARKVISION" />
+			<grant type="Racial Trait" id="ID_KINGYAMEZ_HTK_HALFOGRE_RACIAL_TRAIT_MENACING" />
+			<grant type="Racial Trait" id="ID_KINGYAMEZ_HTK_HALFOGRE_RACIAL_TRAIT_SUBRACES" />
+			<grant type="Language" id="ID_LANGUAGE_COMMON" requirements="!ID_WOTC_TCOE_OPTION_CUSTOMIZED_LANGUAGE" />
+			<select type="Language" name="Language, Half-Ogre" supports="Standard||Exotic" requirements="!ID_WOTC_TCOE_OPTION_CUSTOMIZED_LANGUAGE" />
+			<select type="Language" name="Customized Language (Half-Ogre)" number="2" supports="Custom Race Language"  requirements="ID_WOTC_TCOE_OPTION_CUSTOMIZED_LANGUAGE" />
+		</rules>
+	</element>
+	<element name="Menacing" type="Racial Trait" source="" id="ID_KINGYAMEZ_HTK_HALFOGRE_RACIAL_TRAIT_MENACING">
+		<description>
+			<p>You have proficiency in the Intimidation skill.</p>
+		</description>
+		<sheet display="false">
+			<description>You have proficiency in the Intimidation skill.</description>
+		</sheet>
+		<rules>
+			<grant type="Proficiency" id="ID_PROFICIENCY_SKILL_INTIMIDATION" requirements="!ID_WOTC_TCOE_OPTION_CUSTOMIZED_PROFICIENCY" />
+			<select type="Proficiency" name="Customized Skill Proficiency" supports="Skill" requirements="ID_WOTC_TCOE_OPTION_CUSTOMIZED_PROFICIENCY" />
+		</rules>
+	</element>
+	<element name="Half-Ogre Subraces" type="Racial Trait" source="" id="ID_KINGYAMEZ_HTK_HALFOGRE_RACIAL_TRAIT_SUBRACES">
+		<description>
+			<p>Ogres are divided by region and have some traits differing between them. Depending on which ancestry you have, your instincts give a different benefit.</p>
+		</description>
+		<sheet display="false" />
+		<rules>
+			<select type="Sub Race" name="Half-Ogre Subrace" supports="Half-Ogre Subrace" />
+		</rules>
+	</element>
+	<element name="Takenuma" type="Sub Race" source="" id="ID_HTK_SUBRACE_TAKENUMA">
+		<supports>Half-Ogre Subrace</supports>
+		<description>
+			<p>Your heritage came from ogres of the Takenuma swamp and imparted the instincts of a bloodthirsty murderer to you.</p>
+			<p class="indent"><strong>Killing Instinct.</strong> The smell of blood incenses you to kill. Once per round, you may add 1d4 extra damage to a hit against a creature you damaged since the start of your last turn with bludgeoning, slashing, or piercing damage. For this effect to occur, an enemy must have blood you can smell.</p>
+			<p class="indent"><strong>Furious Attacks.</strong> When you score a critical hit with a melee weapon attack, you may use your bonus action to make a quick secondary blow. Make a melee weapon attack, but roll damage as 1d4 regardless of the weapon (still adding modifiers and other bonuses).</p>
+		</description>
+		<sheet display="false" />
+		<rules>
+			<grant type="Racial Trait" id="ID_KINGYAMEZ_HTK_HALFOGRE_RACIAL_TRAIT_KILLING_INSTINCT" />
+			<grant type="Racial Trait" id="ID_KINGYAMEZ_HTK_HALFOGRE_RACIAL_TRAIT_FURIOUS_ATTACKS" />
+		</rules>
+	</element>
+	<element name="Killing Instinct" type="Racial Trait" source="" id="ID_KINGYAMEZ_HTK_HALFOGRE_RACIAL_TRAIT_KILLING_INSTINCT">
+		<description>
+			<p>The smell of blood incenses you to kill. Once per round, you may add 1d4 extra damage to a hit against a creature you damaged since the start of your last turn with bludgeoning, slashing, or piercing damage. For this effect to occur, an enemy must have blood you can smell.</p>
+		</description>
+		<sheet>
+			<description>Once per round, you may add 1d4 extra damage to a hit against a creature you damaged since the start of your last turn with bludgeoning, slashing, or piercing damage. For this effect to occur, an enemy must have blood you can smell.</description>
+		</sheet>
+	</element>
+	<element name="Furious Attacks" type="Racial Trait" source="" id="ID_KINGYAMEZ_HTK_HALFOGRE_RACIAL_TRAIT_FURIOUS_ATTACKS">
+		<description>
+			<p>When you score a critical hit with a melee weapon attack, you may use your bonus action to make a quick secondary blow. Make a melee weapon attack, but roll damage as 1d4 regardless of the weapon (still adding modifiers and other bonuses).</p>
+		</description>
+		<sheet action="Bonus Action">
+			<description>When you score a critical hit with a melee weapon attack, you may use your bonus action to make a quick secondary blow. Make a melee weapon attack, but roll damage as 1d4 regardless of the weapon (still adding modifiers and other bonuses).</description>
+		</sheet>
+	</element>
+
+	<element name="Sokenzan" type="Sub Race" source="" id="ID_HTK_SUBRACE_SOKENZAN">
+		<supports>Half-Ogre Subrace</supports>
+		<description>
+			<p>Your heritage came from ogres of the Sokenzan mountains and imparted the instincts of a brutal tyrant to you.</p>
+			<p class="indent"><strong>Dominating Instinct.</strong> It's not just about defeating the enemy. It's about showing you are more powerful than them. While in combat, you may choose an enemy target as a bonus action. This target must have begun in freedom at the start of combat. If you defeat that target, you regain 1d6 hp and your next attack gains advantage. You may use this ability once, before refreshing it by finishing a short or long rest.</p>
+			<p class="indent"><strong>Savage Attacks.</strong> When you score a critical hit with a melee weapon attack, you can roll one of the weapon's damage dice one additional time and add it to the extra damage of the critical hit.</p>
+		</description>
+		<sheet display="false" />
+		<rules>
+			<grant type="Racial Trait" id="ID_KINGYAMEZ_HTK_HALFOGRE_RACIAL_TRAIT_DOMINATING_INSTINCT" />
+			<grant type="Racial Trait" id="ID_KINGYAMEZ_HTK_HALFOGRE_RACIAL_TRAIT_SAVAGE_ATTACKS" />
+		</rules>
+	</element>
+	<element name="Dominating Instinct" type="Racial Trait" source="" id="ID_KINGYAMEZ_HTK_HALFOGRE_RACIAL_TRAIT_DOMINATING_INSTINCT">
+		<description>
+			<p>It's not just about defeating the enemy. It's about showing you are more powerful than them. While in combat, you may choose an enemy target as a bonus action. This target must have begun in freedom at the start of combat. If you defeat that target, you regain 1d6 hp and your next attack gains advantage. You may use this ability once, before refreshing it by finishing a short or long rest.</p>
+		</description>
+		<sheet action="Bonus Action">
+			<description>While in combat, you may choose an enemy target as a bonus action. This target must have begun in freedom at the start of combat. If you defeat that target, you regain 1d6 hp and your next attack gains advantage. You may use this ability once, before refreshing it by finishing a short or long rest.</description>
+		</sheet>
+	</element>
+	<element name="Savage Attacks" type="Racial Trait" source="" id="ID_KINGYAMEZ_HTK_HALFOGRE_RACIAL_TRAIT_SAVAGE_ATTACKS">
+		<description>
+			<p>When you score a critical hit with a melee weapon attack, you can roll one of the weapon's damage dice one additional time and add it to the extra damage of the critical hit.</p>
+		</description>
+		<sheet>
+			<description>When you score a critical hit with a melee weapon attack, you can roll one of the weapon's damage dice one additional time and add it to the extra damage of the critical hit.</description>
+		</sheet>
+	</element>
+</elements>

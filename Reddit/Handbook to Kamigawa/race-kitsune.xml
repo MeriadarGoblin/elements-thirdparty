@@ -1,0 +1,174 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<elements>
+	<element name="Kitsune" type="Race" source="Handbook to Kamigawa" id="ID_KINGYAMEZ_HTK_RACE_KITSUNE">
+		<description>
+			<p>"VIRTUE IS AN INNER LIGHT THAT CAN PREVAIL IN EVERY SOUL."</p>
+			<p class="indent">- Eight-and-a-Half-Tails</p>
+			<h4>Enduring Specialists</h4>
+			<p>Being so long-lived, the kitsune strive for wisdom and balance above all things. They tend to look long-term and seek to develop themselves. They train their bodies, spirits, and minds to endure the long journey ahead that is their life. It does not behoove them to take hasty actions that may backfire or harm those around them without good reason. Some of their brethern may be their closest friends for the next century.</p>
+			<p class="indent">Within the community, it is easy to see who is the wise elder and who is the learning pup. As a kitsune grows wiser and older, they will grow more tails. At the peak of enlightenment are those kitsune with nine tails, while those in their first century may only have one or two.</p>
+			<p class="indent">Many kitsune are drawn to the kami of Kamigawa. The kami are spirits inhabiting and permeating throughout the world. One cannot live as long as the kitsune without interacting with the kami. This leads them to be some of the most knowledgable about the kami and the spirit world. Many kitsune become clerics and almost all of the major shrines in Kamigawa have kitsune membership.</p>
+			<h4>Peerless Swordsman</h4>
+			<p>The kitsune do not only meditate and reflect when developing themselves. They also train in swordsmanship and tactics to defend their lands, protect their shrines, and bring balance through action if necessary. The kitsune are quick and perceptive. Their techniques have been trained for decades. There is no other race that can match this level of perfection when it comes to the blade, the kitsune's favorite weapon, and few can match their martial arts.</p>
+			<p class="indent">Many kitsune reknown for their skill with the sword become samurai leaders or run martial art schools. The emperor of Kamigawa employs famous kitsune to train their human samurai or as tactical and spiritual advisors. Opposite to many of the other races that are discriminated against, the kitsune enjoy the respect of humans and almost all the other races of Kamigawa.</p>
+			<h4>Close Communities</h4>
+			<p>The kitsune are most often born and raised in one of the Jukai forest villages they inhabit. These are private and sometimes hidden settlements, guarding secret traditions and techniques. Even when born outside of Jukai, parents often send their young to live with relatives and learn their ways from a very young age. The kitsune do not see human settlements as a proper place to raise their young.</p>
+			<p class="indent">Kitsune also have arranged marriages between clans and villages. Once again, longevity gives them a different perspective. It's important for the marriage to last their lifetime. Often, this means they find "worthy" mates that they later fall in love with. This process has been ongoing for centuries, eventually creating a warrior and cleric class.</p>
+			<p class="indent">Many kitsune make and keep friends for life from their home villages. Kitsune friends will outlive friends of other races and are often perceived as more reliable and understanding. A kitsune who turns their back on their clan and community dishonors themself almost to the point of exile. They will have to achieve a feat for the clan to reclaim that honor.</p>
+			<h4>Kitsune Names</h4>
+			<p>The kitsune have two names. First is their common name, typically based on a description of one part of their body. Second is their clan name, often unspoken unless its needed to distinguish between two kitsune.</p>
+			<p class="indent"><strong>Common: </strong>Autumn-Tail, Golden-Tail, Light-Paws, Onyx-Eye, Opal-Eye, Pearl-Ear, Rune-Tail, Sharp-Ear, Silk-Eyes, Silver-Foot, Swift-Arm, Tender-Hand, and Wise-Muzzle</p>
+			<p class="indent"><strong>Clans: </strong>Choshi, Chosokabe, Fujiki, Hakura, Hata, Hirata, Kada, Kawachi, Kawakatsu, Koremune, Matsumuro, Matsuo, Matsushita, Mikami, Minami, Mokusei, Nishioji, Obata, Okura, Onishi, Otomo, Seo, Takamuko, and Togi</p>
+			<h4>Kitsune Traits</h4>
+			<p>Your kitsune character has a variety of natural abilities, the result of centuries of kitsune refinement.</p>
+			<p class="indent"><strong><em>Ability Score Increase.</em></strong> Your Dexterity and Wisdom scores increase by 1.</p>
+			<p class="indent"><strong><em>Age.</em></strong> Although kitsune reach physical maturity at about the same age as humans, the kitsune understanding of adulthood goes beyond physical age to encompass worldly experience, as manifested by the number of tails a kitsune has. A kitsune claims adulthood when they grow their second tail, typically after achieving a certain level of skill or accomplishing a deed. This age varies widely, but few do not attain this in their first century. Kitsune may live up to 900 years old, though few live past 500.</p>
+			<p class="indent"><strong><em>Alignment.</em></strong> Kitsune value wisdom and balance as well as their communities. They often follow a way of life within the temple or military traditions. They are more often lawful and good than not, though many remain independent of government institutions.</p>
+			<p class="indent"><strong><em>Size.</em></strong> Kitsune are slightly shorter and slimmer than humans. They typically range from 5 to 5.5ft tall and weigh 120 to 150lbs. Males and females are relatively the same size. Your size is Medium.</p>
+			<p class="indent"><strong><em>Speed.</em></strong> Your base walking speed is 30ft.</p>
+			<p class="indent"><strong><em>Darkvision.</em></strong> Accustomed to the twilit Jukai forest and night sky, you have superior vision in the dark and dim conditions. You can see dim light within 60ft of you as if it were bright light, and in darkness as if it were dim light. You can't discern color in darkness, only shades of gray.</p>
+			<p class="indent"><strong><em>Keen Senses.</em></strong> You have proficiency in the Perception skill.</p>
+			<p class="indent"><strong><em>Meditative Healing.</em></strong> Your character knows a secret kitsune technique to heal faster. During a short rest, your character may decide to enter a deep meditation state and focus on healing. Double the result of hit dice (not the Con mod) used to heal while in this state. You may only decide to use up to half of your total number of hit dice rounded down during this meditation. You may not spend hit dice as normal after exiting the meditation within the same short rest. This ability may be used once per long rest.</p>
+			<p class="indent"><strong><em>Languages.</em></strong> You can speak, read, and write Common and Kitsune.</p>
+			<p class="indent"><strong><em>Subraces.</em></strong> Two subraces of kitsune exist as a result of their class culture, the Byakko and Shinryu. The Byakko make up the martial clans of the kitsune. The Shinryu make up the clerical clans of the kitsune.</p>
+		</description>
+		<sheet display="false" />
+		<rules>
+			<stat name="dexterity" value="1" requirements="!ID_WOTC_TCOE_OPTION_CUSTOMIZED_ASI" />
+			<stat name="wisodm" value="1" requirements="!ID_WOTC_TCOE_OPTION_CUSTOMIZED_ASI" />
+			<select type="Ability Score Improvement" name="Custom Ability Score Improvement +1 (Kitsune)" supports="Custom Ability Score Increase 1" requirements="ID_WOTC_TCOE_OPTION_CUSTOMIZED_ASI" />
+			<select type="Ability Score Improvement" name="Custom Ability Score Improvement +1 (Kitsune)" supports="Custom Ability Score Increase 1" requirements="ID_WOTC_TCOE_OPTION_CUSTOMIZED_ASI" />
+			<grant type="Size" id="ID_SIZE_MEDIUM" />
+			<stat name="innate speed" value="30" bonus="base" />
+			<grant type="Vision" id="ID_VISION_DARKVISION" />
+			<grant type="Racial Trait" id="ID_KINGYAMEZ_HTK_KITSUNE_RACIAL_TRAIT_KEEN_SENSES" />
+			<grant type="Racial Trait" id="ID_KINGYAMEZ_HTK_KITSUNE_RACIAL_TRAIT_MEDITATIVE_HEALING" />
+			<grant type="Racial Trait" id="ID_KINGYAMEZ_HTK_KITSUNE_RACIAL_TRAIT_SUBRACES" />
+			<grant type="Language" id="ID_LANGUAGE_COMMON" requirements="!ID_WOTC_TCOE_OPTION_CUSTOMIZED_LANGUAGE" />
+			<grant type="Language" id="ID_KAMIGAWA_LANGUAGE_KITSUNE" requirements="!ID_WOTC_TCOE_OPTION_CUSTOMIZED_LANGUAGE" />
+			<select type="Language" name="Customized Language (Kitsune)" supports="Custom Race Language"  requirements="ID_WOTC_TCOE_OPTION_CUSTOMIZED_LANGUAGE" />
+		</rules>
+	</element>
+	<element name="Keen Senses" type="Racial Trait" source="Handbook to Kamigawa" id="ID_KINGYAMEZ_HTK_KITSUNE_RACIAL_TRAIT_KEEN_SENSES">
+		<description>
+			<p>You have proficiency in the Perception skill.</p>
+		</description>
+		<sheet display="false">
+			<description>You have proficiency in the Perception skill.</description>
+		</sheet>
+		<rules>
+			<grant type="Proficiency" id="ID_PROFICIENCY_SKILL_PERCEPTION" requirements="!ID_WOTC_TCOE_OPTION_CUSTOMIZED_PROFICIENCY" />
+			<select type="Proficiency" name="Customized Skill Proficiency" supports="Skill" requirements="ID_WOTC_TCOE_OPTION_CUSTOMIZED_PROFICIENCY" />
+		</rules>
+	</element>
+	<element name="Meditative Healing" type="Racial Trait" source="Handbook to Kamigawa" id="ID_KINGYAMEZ_HTK_KITSUNE_RACIAL_TRAIT_MEDITATIVE_HEALING">
+		<description>
+			<p>Your character knows a secret kitsune technique to heal faster. During a short rest, your character may decide to enter a deep meditation state and focus on healing. Double the result of hit dice (not the Con mod) used to heal while in this state. You may only decide to use up to half of your total number of hit dice rounded down during this meditation. You may not spend hit dice as normal after exiting the meditation within the same short rest. This ability may be used once per long rest.</p>
+		</description>
+		<sheet>
+			<description>Your character knows a secret kitsune technique to heal faster. During a short rest, your character may decide to enter a deep meditation state and focus on healing. Double the result of hit dice (not the Con mod) used to heal while in this state. You may only decide to use up to half of your total number of hit dice rounded down during this meditation. You may not spend hit dice as normal after exiting the meditation within the same short rest. This ability may be used once per long rest.</description>
+		</sheet>
+	</element>
+	<element name="Kitsune Subraces" type="Racial Trait" source="Handbook to Kamigawa" id="ID_KINGYAMEZ_HTK_KITSUNE_RACIAL_TRAIT_SUBRACES">
+		<description>
+			<p>Two subraces of kitsune exist as a result of their class culture, the Byakko and Shinryu. The Byakko make up the martial clans of the kitsune. The Shinryu make up the clerical clans of the kitsune.</p>
+		</description>
+		<sheet display="false">
+			<description>Two subraces of kitsune exist as a result of their class culture, the Byakko and Shinryu. The Byakko make up the martial clans of the kitsune. The Shinryu make up the clerical clans of the kitsune.</description>
+		</sheet>
+		<rules>
+			<select type="Sub Race" name="Kitsune Subraces" supports="Kitsune Clans" />
+		</rules>
+	</element>
+
+	<element name="Byakko Clan" type="Sub Race" source="Handbook to Kamigawa" id="ID_KAMIGAWA_SUBRACE_KITSUNE_BYAKKO">
+		<supports>Kitsune Clans</supports>
+		<description>
+			<p>As a byakko kitsune, you have trained for greater dexterity and quickness. You've conditioned your body and perfected your technique. An enemy would do well to fear you in a fair fight on the battlefield.</p>
+			<p class="indent"><strong>Ability Score Increase.</strong> Your Dexterity score increases by 1.</p>
+			<p class="indent"><strong>Fox Weapon Training.</strong> You have proficiency with the katana, sai, hankyu, and yumi.</p>
+			<p class="indent"><strong>Fleet of Foot.</strong> Your base walking speed increases to 35ft.</p>
+			<p class="indent"><strong>Claws.</strong> You've been taught how to use your claws in combat. They count as natural melee weapons with the finesse property and with which you are proficient. They deal 1d4 slashing damage.</p>
+		</description>
+		<sheet alt="Byakko" display="false" />
+		<rules>
+			<stat name="dexterity" value="1" requirements="!ID_WOTC_TCOE_OPTION_CUSTOMIZED_ASI" />
+			<select type="Ability Score Improvement" name="Custom Ability Score Improvement +1 (Byakko Clan)" supports="Custom Ability Score Increase 1" requirements="ID_WOTC_TCOE_OPTION_CUSTOMIZED_ASI" />
+			<grant type="Racial Trait" id="ID_KAMIGAWA_RACIAL_TRAIT_KITSUNE_FOX_WEAPON_TRAINING" />
+			<grant type="Racial Trait" id="ID_KAMIGAWA_RACIAL_TRAIT_KITSUNE_FLEET_OF_FOOT" />
+			<grant type="Racial Trait" id="ID_KAMIGAWA_RACIAL_TRAIT_KITSUNE_CLAWS" />
+		</rules>
+	</element>
+	<element name="Fox Weapon Training" type="Racial Trait" source="Handbook to Kamigawa" id="ID_KAMIGAWA_RACIAL_TRAIT_KITSUNE_FOX_WEAPON_TRAINING">
+		<description>
+			<p>You have proficiency with the katana, sai, hankyu, and yumi.</p>
+		</description>
+		<sheet display="false">
+			<description>You have proficiency with the katana, sai, hankyu, and yumi.</description>
+		</sheet>
+		<rules>
+			<grant type="Proficiency" id="ID_KAMIGAWA_PROFICIENCY_WEAPON_PROFICIENCY_HANKYU" />
+			<grant type="Proficiency" id="ID_KAMIGAWA_PROFICIENCY_WEAPON_PROFICIENCY_KATANA" />
+			<grant type="Proficiency" id="ID_KAMIGAWA_PROFICIENCY_WEAPON_PROFICIENCY_SAI" />
+			<grant type="Proficiency" id="ID_KAMIGAWA_PROFICIENCY_WEAPON_PROFICIENCY_YUMI" />
+		</rules>
+	</element>
+	<element name="Fleet of Foot" type="Racial Trait" source="Handbook to Kamigawa" id="ID_KAMIGAWA_RACIAL_TRAIT_KITSUNE_FLEET_OF_FOOT">
+		<description>
+			<p>Your base walking speed increases to 35ft.</p>
+		</description>
+		<sheet display="false">
+			<description>Your base walking speed increases to 35ft.</description>
+		</sheet>
+		<rules>
+			<stat name="innate speed" value="5" />
+		</rules>
+	</element>
+	<element name="Claws" type="Racial Trait" source="Handbook to Kamigawa" id="ID_KAMIGAWA_RACIAL_TRAIT_KITSUNE_CLAWS">
+		<description>
+			<p>You've been taught how to use your claws in combat. They count as natural melee weapons with the finesse property and with which you are proficient. They deal 1d4 slashing damage.</p>
+		</description>
+		<sheet>
+			<description>You've been taught how to use your claws in combat. They count as natural melee weapons with the finesse property and with which you are proficient. They deal 1d4 slashing damage.</description>
+		</sheet>
+	</element>
+
+	<element name="Shinryu Clan" type="Sub Race" source="Handbook to Kamigawa" id="ID_KAMIGAWA_SUBRACE_KITSUNE_SHINRYU">
+		<supports>Kitsune Clans</supports>
+		<description>
+			<p>As a shinryu kitsune, you have trained for greater wisdom and spirit. You've spent your childhood learning, meditating, and reflecting on your soul. You've developed your connection to the great kami and magics of the world.</p>
+			<p class="indent"><strong>Ability Score Increase.</strong> Your Wisdom score increases by 1.</p>
+			<p class="indent"><strong>Fox Weapon Training.</strong> You have proficiency with the katana, sai, hankyu, and yumi.</p>
+			<p class="indent"><strong>Cantrip.</strong> You know one cantrip of your choice from the cleric spell list. Wisdom is your spellcasting ability for it.</p>
+			<p class="indent"><strong>Extra Language.</strong> You can speak, read, and write one extra language of your choice.</p>
+		</description>
+		<sheet alt="Byakko" display="false" />
+		<rules>
+			<stat name="wisdom" value="1" requirements="!ID_WOTC_TCOE_OPTION_CUSTOMIZED_ASI" />
+			<select type="Ability Score Improvement" name="Custom Ability Score Improvement +1 (Shinryu Clan)" supports="Custom Ability Score Increase 1" requirements="ID_WOTC_TCOE_OPTION_CUSTOMIZED_ASI" />
+			<grant type="Racial Trait" id="ID_KAMIGAWA_RACIAL_TRAIT_KITSUNE_FOX_WEAPON_TRAINING" />
+			<grant type="Racial Trait" id="ID_KAMIGAWA_RACIAL_TRAIT_KITSUNE_CANTRIP" />
+			<grant type="Racial Trait" id="ID_KAMIGAWA_RACIAL_TRAIT_KITSUNE_EXTRA_LANGUAGE" />
+		</rules>
+	</element>
+	<element name="Cantrip" type="Racial Trait" source="Handbook to Kamigawa" id="ID_KAMIGAWA_RACIAL_TRAIT_KITSUNE_CANTRIP">
+		<description>
+			<p>You know one cantrip of your choice from the cleric spell list. Wisdom is your spellcasting ability for it.</p>
+		</description>
+		<sheet>
+			<description>You know one cantrip of your choice from the cleric spell list. Wisdom is your spellcasting ability for it.</description>
+		</sheet>
+		<rules>
+			<select type="Spell" name="Shinryu Cantrip (Kitsune)" supports="$(spellcasting:list),$(spellcasting:slots)" spellcasting="Cleric" />
+		</rules>
+	</element>
+	<element name="Extra Language" type="Racial Trait" source="Handbook to Kamigawa" id="ID_KAMIGAWA_RACIAL_TRAIT_KITSUNE_EXTRA_LANGUAGE">
+		<description>
+			<p>You can speak, read, and write one extra language of your choice.</p>
+		</description>
+		<sheet display="false" />
+		<rules>
+			<select type="Language" name="Extra Language, Shinryu Kitsune" supports="Standard||Exotic" />
+		</rules>
+	</element>
+</elements>

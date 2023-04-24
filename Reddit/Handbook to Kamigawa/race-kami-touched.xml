@@ -1,0 +1,276 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<elements>
+	<info>
+		<name>Kami-Touched</name>
+		<update version="0.0.1">
+			<file name="race-kami-touched.xml" url="https://raw.githubusercontent.com/AuroraLegacy/elements/master/race-kami-touched.xml" />
+		</update>
+	</info>
+	
+	<element name="Kami-Touched" type="Race" source="Handbook to Kamigawa" id="ID_KINGYAMEZ_HTK_RACE_KAMITOUCHED">
+		<description>
+			<p>"KAMI MANIFEST IN THE FORM OF WHATEVER THEY EMBODY in the physical plane. Some tower in the shape of moss or bark, while others take forms beyond mortal imagining."</p>
+			<p>- Anonymous, <em>Moss Kami</em></p>
+			<p>The kami-touched are humans blessed (or perhaps cursed) by the spirits. At some point in the conception, pregnancy, or birth of a child, a kami imparted a little bit of itself. The child grows up, forever changed.</p>
+			<h4>Spritual Strangeness</h4>
+			<p>The kami-touched are humans blessed (or perhaps cursed) by the spirits. At some point in the conception, pregnancy, or birth of a child, a kami imparted a little bit of itself. The child grows up, forever changed.</p>
+			<p class="indent">The kami-touched are humans blessed (or perhaps cursed) by the spirits. At some point in the conception, pregnancy, or birth of a child, a kami imparted a little bit of itself. The child grows up, forever changed.</p>
+			<h4>Fundamental Feelings</h4>
+			<p>Kami-touched feel a connection with one of the fundamental elements of the world. These fundamental elements are fire, water, earth, air, and the void. This connection will shape how they think and feel. They will often seek out environments or create havens related to the element.</p>
+			<p class="indent">Kajin, or those with an affinity for fire, express energy and passion. Their good qualities may include focus, enthusiasm, adventurousness, and charisma. Their bad qualities may include thoughtlessness, frivolity, and impatience. Many kajin are artists, musicians, and craftsman. Some become travelers and adventurers.</p>
+			<p class="indent">Suijin, or those with an affinity for water, express flexibility and emotion. Their good qualities may include empathy, compassion, generosity, and forgiveness. Their bad qualities may include sensitivity, fearfulness, and naïveté. Many suijin enjoy fishing, sailing, medicine, and jobs related to the community.</p>
+			<p class="indent">Chijin, or those with an affinity for earth, express strength and stability. Their good qualities may include confidence, loyalty, honesty, and practicality. Their bad qualities may include stubborness, insensitivity, and inflexibility. Many chijin are reliable workers and like farming, hunting, mining, and other jobs related to the land. Some use their strength in military service or as mercenaries.</p>
+			<p class="indent">Fujin, or those with an affinity for air, express intellect and logic. Their good qualities may include ambition, stoicism, cleverness, and being adept. Their bad qualities may include arrogance, aloofness, and selfishness. Many Fujin take an interest in learning, teaching, science, magic, and the law.</p>
+			<p class="indent">Kujin, or those with an affinity for void, are the rare among the rare. Less is known about them, but it can be theorized based on the related element how they may tend to express themselves. Kujin could express creativity and abstraction. Their good qualities could include open-mindedness, spontaneity, inventiveness, and the ability to reflect. Their bad qualities could include impracticality, laziness, and indecisiveness. Kujin could be attracted to jobs that deal with ideas and concepts in philosophy, morality, and psychology.</p>
+			<h4>Elemental Manifestation</h4>
+			<p>Kujin, or those with an affinity for void, are the rare among the rare. Less is known about them, but it can be theorized based on the related element how they may tend to express themselves. Kujin could express creativity and abstraction. Their good qualities could include open-mindedness, spontaneity, inventiveness, and the ability to reflect. Their bad qualities could include impracticality, laziness, and indecisiveness. Kujin could be attracted to jobs that deal with ideas and concepts in philosophy, morality, and psychology.</p>
+			<p class="indent">Kajin typically have physical changes in their eyes and facial expressions. Their eyes sometimes glow with light when they are excited. Their smile is always the warmest around. Their face radiates with a happiness that can change the mood of a room. Skin colors can range from orange and red shades to ashy and black ones. Some even have cracked char-like splotches on their bodies. Hair colors include yellow, orange, and red shades.</p>
+			<p class="indent">Suijin usually have physical changes in their extremities. Webbed hands &amp; feet are not uncommon. Scales or shell-like chitin on the forearms and shins may grow. Their skin may be moist to the touch or slightly slimy like an eel. Blue and green skin tones and hair colors are common.</p>
+			<p class="indent">Fujin commonly have physical manifestations related to their head and hair. Their hair constantly drifts about, making it appear as though it is without weight. Their temple and crown may grow small crystals that break and float into their hair. Small sparkles on their skin are not uncommon. Skin and hair colors include light blues, grays, and whites.</p>
+			<p class="indent">Chijin routinely have physical manifestations related to their body and muscles. They are larger than average with stocky builds. Their skin may be dusty like the dry earth, pebbled like rough hide, or hard &amp; polished like a smooth stone. Some even grow hard, rocky protrusions on their bodies. Beige, brown, and gray skin tones are common. Baldness is common, even among chijin women. If they do have hair, it's always brown or black.</p>
+			<p class="indent">Kujin physical manifestations are a mystery. There are so few examples, it's unknown what physical traits they may typically have. One example though is the famed kujin philosopher Hiyozen, who had many odd manifestations. He was disproportionately tall and slim, reaching 6.5ft tall but weighing only 175lbs. His hair had streaks of dark purple and white. It was rumored his eyes would become like a starry night sky when he sleepwalked. As Hiyozen aged, it's written that his skin became thin and the bones of his face, hands, and feet could be seen to an extreme degree. It's possible other kujin may turn out like this, or perhaps they will manifest in other ways.</p>
+			<div class="sidebar">
+				<h5>All Over the Place</h5>
+				<p>Kami suffuse the world with spiritual energy. When they manifest, they embody that energy and warp reality around them. There are infinite varieties. Though categorized above for the sake of the game, the kami-touched are just as varied as their namesakes. Each leads their own life and impacts the world they live in. Many become famous for their wild exploits or sacred havens.</p>
+			</div>
+			<h4>Kami-Touched Names</h4>
+			<p>Kujin physical manifestations are a mystery. There are so few examples, it's unknown what physical traits they may typically have. One example though is the famed kujin philosopher Hiyozen, who had many odd manifestations. He was disproportionately tall and slim, reaching 6.5ft tall but weighing only 175lbs. His hair had streaks of dark purple and white. It was rumored his eyes would become like a starry night sky when he sleepwalked. As Hiyozen aged, it's written that his skin became thin and the bones of his face, hands, and feet could be seen to an extreme degree. It's possible other kujin may turn out like this, or perhaps they will manifest in other ways.</p>
+			<h4>Kami-Touched Traits</h4>
+			<p>As an name, you have the following racial traits.</p>
+			<p class="indent"><strong><em>Age.</em></strong> Kami-touched mature at the same rate as humans.</p>
+			<p class="indent"><strong><em>Alignment.</em></strong> Kami-touched are a mixed bag, though they tend to avoid evil alignments.</p>
+			<p class="indent"><strong><em>Size.</em></strong> Kami-touched generally fit within the same size and build ratios as humans, even if some end up on one extreme. Your size is Medium.</p>
+			<p class="indent"><strong><em>Speed.</em></strong> Your base walking speed is 30ft.</p>
+			<p class="indent"><strong><em>Languages.</em></strong> You can speak, read, and write Common and one extra language of your choice. Humans typically learn the languages of other peoples they deal with, including obscure dialects.</p>
+			<p class="indent"><strong><em>Subraces.</em></strong> Kami-touched are divided into groupings based on their affinity for an element. This element often grants natural abilities a normal human wouldn't have, as well as a change in appearance.</p>
+		</description>
+		<sheet display="false" />
+		<rules>
+			<grant type="Size" id="ID_SIZE_MEDIUM" />
+			<stat name="innate speed" value="30" bonus="base" />
+			<grant type="Language" id="ID_LANGUAGE_COMMON" requirements="!ID_WOTC_TCOE_OPTION_CUSTOMIZED_LANGUAGE" />
+			<select type="Language" name="Language (Kami-Touched)" supports="Standard||Exotic" />
+			<grant type="Racial Trait" id="ID_KINGYAMEZ_HTK_KAMITOUCHED_RACIAL_TRAIT_SUBRACE" />
+		</rules>
+	</element>
+	<element name="Kami-Touched Subrace" type="Racial Trait" source="Handbook to Kamigawa" id="ID_KINGYAMEZ_HTK_KAMITOUCHED_RACIAL_TRAIT_SUBRACE">
+		<description>
+			<p>Kami-touched are divided into groupings based on their affinity for an element. This element often grants natural abilities a normal human wouldn't have, as well as a change in appearance.</p>
+		</description>
+		<sheet display="false" />
+		<rules>
+			<select type="Sub Race" name="Kami-Touched Subraces" supports="Kami-Touched Affinity" />
+		</rules>
+	</element>
+
+	<element name="Kajin" type="Sub Race" source="Handbook to Kamigawa" id="ID_KINGYAMEZ_HTK_KAMITOUCHED_SUBRACE_KAJIN">
+		<supports>Kami-Touched Affinity</supports>
+		<description>
+			<p>Kajin are associated with fire. They are energetic and passionate.</p>
+			<p class="indent"><b><i>Ability Score Increase.</i></b> Your Charisma score increases by 2 and your Constitution by 1.</p>
+			<p class="indent"><b><i>Fire Resistance.</i></b> You have resistance to fire damage.</p>
+			<p class="indent"><b><i>Passion Projects.</i></b> Over the course of your life, you have taken on one hobby after another. You have proficiency in three artisan's tools of your choice.</p>
+			<p class="indent"><b><i>Reach to the Blaze.</i></b> You know the Produce Flame cantrip. Once you reach 3rd level, you can cast the Burning Hands spell once with this trait as a 1st-level spell, and you regain the ability to cast it this way when you finish a long rest. Constitution is your spellcasting ability for these spells.</p>
+		</description>
+		<sheet display="false" />
+		<rules>
+			<stat name="charisma" value="2" requirements="!ID_WOTC_TCOE_OPTION_CUSTOMIZED_ASI" />
+			<stat name="constitution" value="1" requirements="!ID_WOTC_TCOE_OPTION_CUSTOMIZED_ASI" />
+			<select type="Ability Score Improvement" name="Custom Ability Score Improvement +2 (Kajin)" supports="Custom Ability Score Increase 2" requirements="ID_WOTC_TCOE_OPTION_CUSTOMIZED_ASI" />
+			<select type="Ability Score Improvement" name="Custom Ability Score Improvement +1 (Kajin)" supports="Custom Ability Score Increase 1" requirements="ID_WOTC_TCOE_OPTION_CUSTOMIZED_ASI" />
+			<grant type="Condition" id="ID_INTERNAL_CONDITION_DAMAGE_RESISTANCE_FIRE" />
+			<select type="Proficiency" name="Tool Proficiency (Passion Projects)" supports="Tool" number="3" />
+			<grant type="Racial Trait" id="ID_KINGYAMEZ_HTK_KAMITOUCHED_RACIAL_TRAIT_REACH_TO_THE_BLAZE" />
+		</rules>
+	</element>
+	<element name="Reach to the Blaze" type="Racial Trait" source="Handbook to Kamigawa" id="ID_KINGYAMEZ_HTK_KAMITOUCHED_RACIAL_TRAIT_REACH_TO_THE_BLAZE">
+		<description>
+			<p>You know the Produce Flame cantrip. Once you reach 3rd level, you can cast the Burning Hands spell once with this trait as a 1st-level spell, and you regain the ability to cast it this way when you finish a long rest. Constitution is your spellcasting ability for these spells.</p>
+		</description>
+		<sheet usage="1/Long Rest">
+			<description>You know the Produce Flame cantrip. Constitution is your spellcasting ability for this spell.</description>
+			<description level="3">You know the Produce Flame cantrip. Once you reach 3rd level, you can cast the Burning Hands spell once with this trait as a 1st-level spell, and you regain the ability to cast it this way when you finish a long rest. Constitution is your spellcasting ability for these spells.</description>
+		</sheet>
+		<rules>
+			<grant type="Spell" id="ID_PHB_SPELL_PRODUCE_FLAME" />
+			<grant type="Spell" id="ID_PHB_SPELL_BURNING_HANDS" level="3" />
+		</rules>
+	</element>
+
+	<element name="Suijin" type="Sub Race" source="Handbook to Kamigawa" id="ID_KINGYAMEZ_HTK_KAMITOUCHED_SUBRACE_SUIJIN">
+		<supports>Kami-Touched Affinity</supports>
+		<description>
+			<p>Suijin are associated with water. They are flexible and empathetic.</p>
+			<p class="indent"><b><i>Ability Score Increase.</i></b> Your Wisdom score increases by 2 and your Constitution by 1.</p>
+			<p class="indent"><b><i>Cold Resistance.</i></b> You have resistance to cold damage.</p>
+			<p class="indent"><b><i>Amphibious.</i></b> You can breathe both air and water.</p>
+			<p class="indent"><b><i>Swim.</i></b> You have a swimming speed of 30ft.</p>
+			<p class="indent"><b><i>Call to the Wave.</i></b> You know the Shape Water cantrip. When you reach 3rd level, you can cast the Create or Destroy Water spell as a 2nd-level spell once with this trait, and you regain the ability to cast it this way when you finish a long rest. Constitution is your spellcasting ability for these spells.</p>
+		</description>
+		<sheet display="false" />
+		<rules>
+			<stat name="wisdom" value="2" requirements="!ID_WOTC_TCOE_OPTION_CUSTOMIZED_ASI" />
+			<stat name="constitution" value="1" requirements="!ID_WOTC_TCOE_OPTION_CUSTOMIZED_ASI" />
+			<select type="Ability Score Improvement" name="Custom Ability Score Improvement +2 (Suijin)" supports="Custom Ability Score Increase 2" requirements="ID_WOTC_TCOE_OPTION_CUSTOMIZED_ASI" />
+			<select type="Ability Score Improvement" name="Custom Ability Score Improvement +1 (Suijin)" supports="Custom Ability Score Increase 1" requirements="ID_WOTC_TCOE_OPTION_CUSTOMIZED_ASI" />
+			<grant type="Condition" id="ID_INTERNAL_CONDITION_DAMAGE_RESISTANCE_COLD" />
+			<grant type="Racial Trait" id="ID_KINGYAMEZ_HTK_KAMITOUCHED_RACIAL_TRAIT_SUIJIN_AMPHIBIOUS" />
+			<stat name="speed:swim" value="30" bonus="base" />
+			<grant type="Racial Trait" id="ID_KINGYAMEZ_HTK_KAMITOUCHED_RACIAL_TRAIT_CALL_TO_THE_WAVE" />
+		</rules>
+	</element>
+	<element name="Amphibious" type="Racial Trait" source="Handbook to Kamigawa" id="ID_KINGYAMEZ_HTK_KAMITOUCHED_RACIAL_TRAIT_SUIJIN_AMPHIBIOUS">
+		<description>
+			<p>You can breathe both air and water.</p>
+		</description>
+		<sheet>
+			<description>You can breathe both air and water.</description>
+		</sheet>
+	</element>
+	<element name="Call to the Water" type="Racial Trait" source="Handbook to Kamigawa" id="ID_KINGYAMEZ_HTK_KAMITOUCHED_RACIAL_TRAIT_CALL_TO_THE_WAVE">
+		<description>
+			<p>You know the Shape Water cantrip. When you reach 3rd level, you can cast the Create or Destroy Water spell as a 2nd-level spell once with this trait, and you regain the ability to cast it this way when you finish a long rest. Constitution is your spellcasting ability for these spells.</p>
+		</description>
+		<sheet usage="1/Long Rest">
+			<description>You know the Shape Water cantrip. Constitution is your spellcasting ability for this spell.</description>
+			<description level="3">You know the Shape Water cantrip. When you reach 3rd level, you can cast the Create or Destroy Water spell as a 2nd-level spell once with this trait, and you regain the ability to cast it this way when you finish a long rest. Constitution is your spellcasting ability for these spells.</description>
+		</sheet>
+		<rules>
+			<grant type="Spell" id="ID_XGTE_SPELL_SHAPE_WATER" />
+			<grant type="Spell" id="ID_PHB_SPELL_CREATE_OR_DESTROY_WATER" level="3" />
+		</rules>
+	</element>
+	
+	<element name="Chijin" type="Sub Race" source="Handbook to Kamigawa" id="ID_KINGYAMEZ_HTK_KAMITOUCHED_SUBRACE_CHIJIN">
+		<supports>Kami-Touched Affinity</supports>
+		<description>
+			<p>Chijin are assoaciated with earth. They are strong and stable.</p>
+			<p class="indent"><b><i>Ability Score Increase.</i></b> Your Strength score increases by 2 and your Constitution by 1.</p>
+			<p class="indent"><b><i>Acid Resistance.</i></b> You have resistance to acid damage.</p>
+			<p class="indent"><b><i>Earth Walk.</i></b> You can move across difficult terrain made of earth or stone without expending extra movement.</p>
+			<p class="indent"><b><i>Soul of the Earth.</i></b> You can move across difficult terrain made of earth or stone without expending extra movement.</p>
+		</description>
+		<sheet display="false" />
+		<rules>
+			<stat name="strength" value="2" requirements="!ID_WOTC_TCOE_OPTION_CUSTOMIZED_ASI" />
+			<stat name="constitution" value="1" requirements="!ID_WOTC_TCOE_OPTION_CUSTOMIZED_ASI" />
+			<select type="Ability Score Improvement" name="Custom Ability Score Improvement +2 (Chijin)" supports="Custom Ability Score Increase 2" requirements="ID_WOTC_TCOE_OPTION_CUSTOMIZED_ASI" />
+			<select type="Ability Score Improvement" name="Custom Ability Score Improvement +1 (Chijin)" supports="Custom Ability Score Increase 1" requirements="ID_WOTC_TCOE_OPTION_CUSTOMIZED_ASI" />
+			<grant type="Condition" id="ID_INTERNAL_CONDITION_DAMAGE_RESISTANCE_ACID" />
+			<grant type="Racial Trait" id="ID_KINGYAMEZ_HTK_KAMITOUCHED_RACIAL_TRAIT_EARTH_WALK" />
+			<grant type="Racial Trait" id="ID_KINGYAMEZ_HTK_KAMITOUCHED_RACIAL_TRAIT_SOUL_OF_THE_EARTH" />
+		</rules>
+	</element>
+	<element name="Earth Walk" type="Racial Trait" source="Handbook to Kamigawa" id="ID_KINGYAMEZ_HTK_KAMITOUCHED_RACIAL_TRAIT_EARTH_WALK">
+		<description>
+			<p>You can move across difficult terrain made of earth or stone without expending extra movement.</p>
+		</description>
+		<sheet>
+			<description>You can move across difficult terrain made of earth or stone without expending extra movement.</description>
+		</sheet>
+	</element>
+	<element name="Soul of the Earth" type="Racial Trait" source="Handbook to Kamigawa" id="ID_KINGYAMEZ_HTK_KAMITOUCHED_RACIAL_TRAIT_SOUL_OF_THE_EARTH">
+		<description>
+			<p>You know the Mold Earth cantrip. When you reach 3rd level, you can cast Earth Tremor once as a 2nd-level spell, and regain the ability to do so when you finish a long rest. Constitution is your spellcasting ability for these spells.</p>
+		</description>
+		<sheet>
+			<description>You know the Mold Earth cantrip. Constitution is your spellcasting ability for this spell.</description>
+			<description level="3">You know the Mold Earth cantrip. When you reach 3rd level, you can cast Earth Tremor once as a 2nd-level spell, and regain the ability to do so when you finish a long rest. Constitution is your spellcasting ability for these spells.</description>
+		</sheet>
+		<rules>
+			<grant type="Spell" id="ID_XGTE_SPELL_MOLD_EARTH" />
+			<grant type="Spell" id="ID_XGTE_SPELL_EARTH_TREMOR" level="3" />
+		</rules>
+	</element>
+
+	<element name="Fujin" type="Sub Race" source="Handbook to Kamigawa" id="ID_KINGYAMEZ_HTK_KAMITOUCHED_SUBRACE_FUJIN">
+		<supports>Kami-Touched Affinity</supports>
+		<description>
+			<p>Fujin are associated with air. They are intelligent and logical.</p>
+			<p class="indent"><b><i>Ability Score Increase.</i></b> Your Intelligence score increases by 2 and your Constitution by 1.</p>
+			<p class="indent"><b><i>Lightning Resistance.</i></b> You have resistance to lightning damage.</p>
+			<p class="indent"><b><i>Hover Hop.</i></b> You call upon the winds to aid your movement. Until the start of your next turn, you may gain a "hover" speed equal to your walking speed. You are unaffected by difficult terrain that relies on you touching the ground. This does not work underwater. At the start of your next turn (when you land), impose any terrain effects as if you just moved into that space. This ability may be used once a day, and you regain the ability when you finish a long rest.</p>
+			<p class="indent"><b><i>Spirit of the Winds.</i></b> You can move across difficult terrain made of earth or stone without expending extra movement.</p>
+		</description>
+		<sheet display="false" />
+		<rules>
+			<stat name="intelligence" value="2" requirements="!ID_WOTC_TCOE_OPTION_CUSTOMIZED_ASI" />
+			<stat name="constitution" value="1" requirements="!ID_WOTC_TCOE_OPTION_CUSTOMIZED_ASI" />
+			<select type="Ability Score Improvement" name="Custom Ability Score Improvement +2 (Fujin)" supports="Custom Ability Score Increase 2" requirements="ID_WOTC_TCOE_OPTION_CUSTOMIZED_ASI" />
+			<select type="Ability Score Improvement" name="Custom Ability Score Improvement +1 (Fujin)" supports="Custom Ability Score Increase 1" requirements="ID_WOTC_TCOE_OPTION_CUSTOMIZED_ASI" />
+			<grant type="Condition" id="ID_INTERNAL_CONDITION_DAMAGE_RESISTANCE_LIGHTNING" />
+			<grant type="Racial Trait" id="ID_KINGYAMEZ_HTK_KAMITOUCHED_RACIAL_TRAIT_HOVER_HOP" />
+			<grant type="Racial Trait" id="ID_KINGYAMEZ_HTK_KAMITOUCHED_RACIAL_TRAIT_SPIRIT_OFTHE_WINDS" />
+		</rules>
+	</element>
+	<element name="Hover Hop" type="Racial Trait" source="Handbook to Kamigawa" id="ID_KINGYAMEZ_HTK_KAMITOUCHED_RACIAL_TRAIT_HOVER_HOP">
+		<description>
+			<p>You call upon the winds to aid your movement. Until the start of your next turn, you may gain a "hover" speed equal to your walking speed. You are unaffected by difficult terrain that relies on you touching the ground. This does not work underwater. At the start of your next turn (when you land), impose any terrain effects as if you just moved into that space. This ability may be used once a day, and you regain the ability when you finish a long rest.</p>
+		</description>
+		<sheet>
+			<description>Until the start of your next turn, you may gain a "hover" speed equal to your walking speed. You are unaffected by difficult terrain that relies on you touching the ground. This does not work underwater. At the start of your next turn (when you land), impose any terrain effects as if you just moved into that space. This ability may be used once a day, and you regain the ability when you finish a long rest.</description>
+		</sheet>
+	</element>
+	<element name="Spirit of the Winds" type="Racial Trait" source="Handbook to Kamigawa" id="ID_KINGYAMEZ_HTK_KAMITOUCHED_RACIAL_TRAIT_SPIRIT_OFTHE_WINDS">
+		<description>
+			<p>You know the Gust cantrip. When you reach 3rd level, you can cast Fog Cloud once as a 2nd-level spell, and regain the ability to do so when you finish a long rest.</p>
+		</description>
+		<sheet>
+			<description>You know the Gust cantrip. Constitution is your spellcasting ability for this spell.</description>
+			<description level="3">You know the Gust cantrip. When you reach 3rd level, you can cast Fog Cloud once as a 2nd-level spell, and regain the ability to do so when you finish a long rest. Constitution is your spellcasting ability for these spells.</description>
+		</sheet>
+		<rules>
+			<grant type="Spell" id="ID_XGTE_SPELL_GUST" />
+			<grant type="Spell" id="ID_PHB_SPELL_FOG_CLOUD" level="3" />
+		</rules>
+	</element>
+
+	<element name="Kujin" type="Sub Race" source="Handbook to Kamigawa" id="ID_KINGYAMEZ_HTK_KAMITOUCHED_SUBRACE_KUJIN">
+		<supports>Kami-Touched Affinity</supports>
+		<description>
+			<p>Kujin are associated with the void. They are mysterious and abstract.</p>
+			<p class="indent"><b><i>Ability Score Increase.</i></b> Your Dexterity, Intelligence, and Charisma scores increase by 1.</p>
+			<p class="indent"><b><i>Darkvision.</i></b> You can see dim light within 60ft of you as if it were bright light, and in darkness as if it were dim light. Your ties to the void make your darkvision unusual: everything you see is in outlines of purple.</p>
+			<p class="indent"><b><i>Psychic Resistance.</i></b> You have resistance to psychic damage.</p>
+			<p class="indent"><b><i>Mind Palace.</i></b> You have proficiency in history.</p>
+			<p class="indent"><b><i>Empty the Mind.</i></b> You can cast Mind Sliver cantrip. When you reach 3rd level, you can cast the Sleep spell as a 2nd-level spell once, and you regain the ability to cast it this way when you finish a long rest. Intelligence is your spellcasting ability for these spells.</p>
+		</description>
+		<sheet display="false" />
+		<rules>
+			<stat name="dexterity" value="1" requirements="!ID_WOTC_TCOE_OPTION_CUSTOMIZED_ASI" />
+			<stat name="intelligence" value="1" requirements="!ID_WOTC_TCOE_OPTION_CUSTOMIZED_ASI" />
+			<stat name="charisma" value="1" requirements="!ID_WOTC_TCOE_OPTION_CUSTOMIZED_ASI" />
+			<select type="Ability Score Improvement" name="Custom Ability Score Improvement +1 (Kujin)" supports="Custom Ability Score Increase 1" requirements="ID_WOTC_TCOE_OPTION_CUSTOMIZED_ASI" />
+			<select type="Ability Score Improvement" name="Custom Ability Score Improvement +1 (Kujin)" supports="Custom Ability Score Increase 1" requirements="ID_WOTC_TCOE_OPTION_CUSTOMIZED_ASI" />
+			<select type="Ability Score Improvement" name="Custom Ability Score Improvement +1 (Kujin)" supports="Custom Ability Score Increase 1" requirements="ID_WOTC_TCOE_OPTION_CUSTOMIZED_ASI" />
+			<grant type="Condition" id="ID_INTERNAL_CONDITION_DAMAGE_RESISTANCE_PSYCHIC" />
+			<grant type="Proficiency" id="ID_PROFICIENCY_SKILL_HISTORY" />
+			<grant type="Racial Trait" id="ID_KINGYAMEZ_HTK_KAMITOUCHED_RACIAL_TRAIT_DARKVISION" />
+			<grant type="Racial Trait" id="ID_KINGYAMEZ_HTK_KAMITOUCHED_RACIAL_TRAIT_EMPTY_THE_MIND" />
+		</rules>
+	</element>
+	<element name="Darkvision" type="Racial Trait" source="Handbook to Kamigawa" id="ID_KINGYAMEZ_HTK_KAMITOUCHED_RACIAL_TRAIT_DARKVISION">
+		<description>
+			<p>You can see dim light within 60ft of you as if it were bright light, and in darkness as if it were dim light. Your ties to the void make your darkvision unusual: everything you see is in outlines of purple.</p>
+		</description>
+		<sheet>
+			<description>You can see dim light within 60ft of you as if it were bright light, and in darkness as if it were dim light. Your ties to the void make your darkvision unusual: everything you see is in outlines of purple.</description>
+		</sheet>
+		<rules>
+			<grant type="Vision" id="ID_VISION_DARKVISION" />
+		</rules>
+	</element>
+	<element name="Empty the Mind" type="Racial Trait" source="Handbook to Kamigawa" id="ID_KINGYAMEZ_HTK_KAMITOUCHED_RACIAL_TRAIT_EMPTY_THE_MIND">
+		<description>
+			<p>You can cast Mind Sliver cantrip. When you reach 3rd level, you can cast the Sleep spell as a 2nd-level spell once, and you regain the ability to cast it this way when you finish a long rest. Intelligence is your spellcasting ability for these spells.</p>
+		</description>
+		<sheet>
+			<description>You know the Mind Sliver cantrip. Intelligence is your spellcasting ability for this spell.</description>
+			<description level="3">You can cast Mind Sliver cantrip. When you reach 3rd level, you can cast the Sleep spell as a 2nd-level spell once, and you regain the ability to cast it this way when you finish a long rest. Intelligence is your spellcasting ability for these spells.</description>
+		</sheet>
+		<rules>
+			<grant type="Spell" id="ID_WOTC_TCOE_SPELL_MIND_SLIVER" />
+			<grant type="Spell" id="ID_PHB_SPELL_SLEEP" level="3" />
+		</rules>
+	</element>
+</elements>
