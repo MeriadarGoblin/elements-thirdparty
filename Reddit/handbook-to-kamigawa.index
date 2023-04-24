@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<index>
+	<info>
+		<name>Handbook to Kamigawa</name>
+		<description>The content from the Final Fantatsy XIV DnD Compendium.</description>
+		<author url="https://www.gmbinder.com/share/-LsDqsNbupzeLhkTIcPv">SilentSoren</author>
+		<update version="0.1.0">
+			<file name="handbook-to-kamigawa.index" url="https://raw.githubusercontent.com/MeriadarGoblin/elements-thirdparty/main/Reddit/handbook-to-kamigawa.index" />
+		</update>
+	</info>
+	<files>
+		<file name="source.xml" url="https://raw.githubusercontent.com/MeriadarGoblin/elements-thirdparty/main/Reddit/Handbook%20to%20Kamigawa/source.xml" />
+
+        <!-- Races -->
+        <file name="race-akki.xml" url="https://raw.githubusercontent.com/MeriadarGoblin/elements-thirdparty/main/Reddit/Handbook%20to%20Kamigawa/race-akki.xml" />
+        <file name="race-halfogre.xml" url="https://raw.githubusercontent.com/MeriadarGoblin/elements-thirdparty/main/Reddit/Handbook%20to%20Kamigawa/race-halfogre.xml" />
+		<file name="race-kami-touched.xml" url="https://raw.githubusercontent.com/MeriadarGoblin/elements-thirdparty/main/Reddit/Handbook%20to%20Kamigawa/race-kami-touched.xml" />
+		<file name="race-kitsune.xml" url="https://raw.githubusercontent.com/MeriadarGoblin/elements-thirdparty/main/Reddit/Handbook%20to%20Kamigawa/race-kitsune.xml" />
+		<file name="race-nezumi.xml" url="https://raw.githubusercontent.com/MeriadarGoblin/elements-thirdparty/main/Reddit/Handbook%20to%20Kamigawa/race-nezumi.xml" />
+		<file name="race-oni-touched.xml" url="https://raw.githubusercontent.com/MeriadarGoblin/elements-thirdparty/main/Reddit/Handbook%20to%20Kamigawa/race-oni-touched.xml" />
+
+        <!-- Other -->
+		<file name="languages.xml" url="https://raw.githubusercontent.com/MeriadarGoblin/elements-thirdparty/main/Reddit/Handbook%20to%20Kamigawa/languages.xml" />
+	</files>
+</index>

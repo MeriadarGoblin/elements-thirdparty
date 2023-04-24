@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<index>
+	<info>
+		<name>Reddit Content</name>
+		<description>The content from reddit such as r/UnearthedArcana and r/DnDHomebrew. This includes all compendiums and smaller creations.</description>
+		<author url="https://www.reddit.com/r/DnDHomebrew/">Redditors</author>
+		<update version="0.1.0">
+			<file name="reddit.index" url="https://raw.githubusercontent.com/MeriadarGoblin/elements-thirdparty/main/reddit.index" />
+		</update>
+	</info>
+	<files>
+		<file name="handbook-to-kamigawa.xml" url="https://raw.githubusercontent.com/MeriadarGoblin/elements-thirdparty/main/Reddit/handbook-to-kamigawa.index" />
+		<!-- Created by u/KingYamez -->
+	</files>
+</index>

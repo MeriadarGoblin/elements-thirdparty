@@ -2,8 +2,8 @@
 <elements>
 	<info>
 		<name>Kami-Touched</name>
-		<update version="0.0.1">
-			<file name="race-kami-touched.xml" url="https://raw.githubusercontent.com/AuroraLegacy/elements/master/race-kami-touched.xml" />
+		<update version="0.0.2">
+			<file name="race-kami-touched.xml" url="https://raw.githubusercontent.com/MeriadarGoblin/elements-thirdparty/main/Reddit/Handbook%20to%20Kamigawa/race-kami-touched.xml" />
 		</update>
 	</info>
 	

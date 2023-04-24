@@ -1,15 +1,22 @@
 <?xml version="1.0" encoding="utf-8"?>
 <elements>
+	<info>
+		<name>Source</name>
+		<update version="0.0.2">
+			<file name="source.xml" url="https://raw.githubusercontent.com/MeriadarGoblin/elements-thirdparty/main/Reddit/Handbook%20to%20Kamigawa/source.xml" />
+		</update>
+	</info>
+
 	<element name="Handbook to Kamigawa" type="Source" source="Core" id="ID_SOURCE_HANDBOOK_TO_KAMIGAWA">
 		<description>
-			<p>A Companion Guidebook for use alongside the Dungeons &amp; Dragons 5th Edition Player's Handbook to bring Final Fantasy XIV to your table.</p>
+			<p>Handbook to Kamigawa - Converted world setting from MTG into D&amp;D 5e (with new races, subclasses, equipment, and deities). </p>
 		</description>
 		<setters>
 			<set name="abbreviation">HTK</set>
-			<set name="image">https://raw.githubusercontent.com/MeriadarGoblin/elements-ffxiv/main/FFXIV/FFXIV.png</set>
-			<set name="url">https://www.gmbinder.com/share/-N6EdwDPUJo5UVoL2VM0#races</set>
-			<set name="author" abbreviation="USI" url="https://www.gmbinder.com/share/-N6EdwDPUJo5UVoL2VM0#races">KingYamez</set>
-			<set name="release">20220902</set>
+			<set name="image">https://raw.githubusercontent.com/MeriadarGoblin/elements-thirdparty/main/Reddit/Handbook%20to%20Kamigawa/htk-cover.png</set>
+			<set name="url">https://raw.githubusercontent.com/MeriadarGoblin/elements-thirdparty/main/Reddit/Handbook%20to%20Kamigawa/htk-cover.png</set>
+			<set name="author" url="https://www.reddit.com/user/kingyamez/">KingYamez</set>
+			<set name="release">20220824</set>
 			<set name="homebrew">true</set>
 		</setters>
 	</element>

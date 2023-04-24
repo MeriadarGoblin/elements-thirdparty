@@ -1,5 +1,12 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <elements>
+	<info>
+		<name>Race: Oni-Touched</name>
+		<update version="0.0.2">
+			<file name="race-oni-touched.xml" url="https://raw.githubusercontent.com/MeriadarGoblin/elements-thirdparty/main/Reddit/Handbook%20to%20Kamigawa/race-oni-touched.xml" />
+		</update>
+	</info>
+
 	<element name="Oni-Touched" type="Race" source="Handbook to Kamigawa" id="ID_KINGYAMEZ_HTK_RACE_ONITOUCHED">
 		<description>
 			<p>The oni-touched are humans meddled with by demons. Gifts and curses have been imparted upon the person. These irregularities go to the next generation too, creating a legacy.</p>

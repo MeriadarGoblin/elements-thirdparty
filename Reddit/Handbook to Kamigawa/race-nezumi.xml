@@ -1,5 +1,12 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <elements>
+	<info>
+		<name>Race: Nezumi</name>
+		<update version="0.0.2">
+			<file name="race-nezumi.xml" url="https://raw.githubusercontent.com/MeriadarGoblin/elements-thirdparty/main/Reddit/Handbook%20to%20Kamigawa/race-nezumi.xml" />
+		</update>
+	</info>
+
 	<element name="Nezumi" type="Race" source="Handbook to Kamigawa" id="ID_KINGYAMEZ_HTK_RACE_AKKI">
 		<description>
 			<p>"THESE NEZUMI, THEY DISGUST ME. THE THINGS THEY WILL do for money no other thinking creature would consider. This, of course, makes them useful beyond words."</p>

@@ -1,5 +1,12 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <elements>
+	<info>
+		<name>Kitsune</name>
+		<update version="0.0.2">
+			<file name="race-kitsune.xml" url="https://raw.githubusercontent.com/MeriadarGoblin/elements-thirdparty/main/Reddit/Handbook%20to%20Kamigawa/race-kitsune.xml" />
+		</update>
+	</info>
+
 	<element name="Kitsune" type="Race" source="Handbook to Kamigawa" id="ID_KINGYAMEZ_HTK_RACE_KITSUNE">
 		<description>
 			<p>"VIRTUE IS AN INNER LIGHT THAT CAN PREVAIL IN EVERY SOUL."</p>

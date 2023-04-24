@@ -1,5 +1,12 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <elements>
+	<info>
+		<name>Race: Akki</name>
+		<update version="0.0.2">
+			<file name="race-akki.xml" url="https://raw.githubusercontent.com/MeriadarGoblin/elements-thirdparty/main/Reddit/Handbook%20to%20Kamigawa/race-akki.xml" />
+		</update>
+	</info>
+
 	<element name="Akki" type="Race" source="Handbook to Kamigawa" id="ID_KINGYAMEZ_HTK_RACE_AKKI">
 		<description>
 			<p>"DEEP INSIDE THE SOKENZAN MOUNTAINS, A BAND OF AKKI discovered a cache of ancient items of power. Their ensuing spree of destruction became known as ‘The Three Days of Fun.'"</p>
