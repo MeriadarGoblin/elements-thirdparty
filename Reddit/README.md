@@ -4,6 +4,7 @@
 ## Handbook to Kamigawa
 - Converted world setting from MTG into D&D 5e (with new races, subclasses, equipment, and deities).
 - https://raw.githubusercontent.com/MeriadarGoblin/elements-thirdparty/main/Reddit/handbook-to-kamigawa.index
+
 Currently contains:
 1. Races
 	1. Akki (Goblin)
