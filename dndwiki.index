@@ -4,7 +4,7 @@
 		<name>D&amp;D Wiki</name>
 		<description>The 5e homebrew content from the D&amp;D Wiki website.</description>
 		<author url="http://www.dandwiki.com/wiki/5e_Homebrew">D&amp;D Wiki</author>
-		<update version="0.0.1">
+		<update version="0.0.2">
 			<file name="dndwiki.index" url="https://raw.githubusercontent.com/MeriadarGoblin/elements-thirdparty/main/dndwiki.index" />
 		</update>
 	</info>
@@ -24,7 +24,7 @@
 		<!-- races & subraces -->
 		<file name="race-gesttil.xml" url="https://raw.githubusercontent.com/MeriadarGoblin/elements-thirdparty/main/dndwiki/races/race-gesttil.xml" />
 		<file name="race-halfgoblinoid.xml" url="https://raw.githubusercontent.com/MeriadarGoblin/elements-thirdparty/main/dndwiki/races/race-halfgoblinoid.xml" />
-		<file name="subrace-dwarf-halfgenasi.xml" url="https://raw.githubusercontent.com/MeriadarGoblin/elements-thirdparty/main/dndwiki/races/subrace-dwarf-halfgenasi.xml" />
+		<file name="subrace-dwarf-halfgenasi.xml" url="https://raw.githubusercontent.com/MeriadarGoblin/elements-thirdparty/main/dndwiki/races/subrace-dwarf-half-genasi.xml" />
 		<file name="subrace-genasi-arcani.xml" url="https://raw.githubusercontent.com/MeriadarGoblin/elements-thirdparty/main/dndwiki/races/subrace-genasi-arcani.xml" />
 	</files>
 </index>

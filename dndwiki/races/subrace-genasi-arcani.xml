@@ -4,7 +4,7 @@
         <description>The Genasi Arcani subrace from D&amp;D Wiki, created by user random ip user, with contributions from users "Marasmusine", and "ConcealedLight."</description>
 		<author url="https://www.dandwiki.com/w/index.php?title=Arcani_(5e_Subrace)&amp;oldid=1074161">D&amp;D Wiki</author>
 		<update version="0.0.1">
-			<file name="subrace-genasi-arcani.xml" url="https://raw.githubusercontent.com/MeriadarGoblin/elements-thirdparty/main/dndwiki/races/subrace-genasi-acarni.xml" />
+			<file name="subrace-genasi-arcani.xml" url="https://raw.githubusercontent.com/MeriadarGoblin/elements-thirdparty/main/dndwiki/races/subrace-genasi-arcani.xml" />
 		</update>
     </info>
 
