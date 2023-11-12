@@ -1,0 +1,1001 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<elements>
+    <info>
+        <description>The Gun Witch class from D&amp;D Wiki, created by user "Chilroy", with contributions from users "Green Dragon", "DruidJake", "Sereth27", "SwankyPants" and many others.</description>
+		<author url="https://www.dandwiki.com/w/index.php?title=Gun_Witch_(5e_Class)&amp;oldid=1663881">D&amp;D Wiki</author>
+		<update version="0.0.1">
+			<file name="class-gun-witch.xml" url="https://raw.githubusercontent.com/MeriadarGoblin/elements-thirdparty/main/dndwiki/classes/class-gun-witch.xml" />
+		</update>
+    </info>
+
+    <element name="Gun Witch" type="Class" source="D&amp;D Wiki" id="ID_WIKI_CLASS_GUN_WITCH">
+        <description>
+            <p>One shot. Two shots. A shimmering bolt of lightning as smoke clears from the scene. A fearless warrior-witch accustomed to the martial art of gunfighting, moving across the battlefield like a specter or some supernatural beast as ring of gunfire disorients the senses as the smell of blackpowder lingers in the air. Cloaked and strapped to the teeth with ranged weaponry, using the arcane arts in between each shot of their weapons.</p>
+            <p class="indent">As hordes of enemies close in, a blaze of magical shots fire off, obliterating their forces, with bolts of fire and rays of frost bursting from the tips of their deadly tools. They become less like a gunslinger and more like a force of nature.</p>
+            <p class="indent">This class is very much a mixture of Weird West, Witch, and Gunslinger tropes. This is the ideal for a ranged fighter using arcane tricks, especially with its half caster spellcasting.</p>
+            <h4>Weird, Wild Gunslingers</h4>
+            <p><em>"The exalted order of Gun Witches was founded in R.E. 3440 and is the fourth order of witches after the Blade witches. Needless to say, it is by far the most feared."</em> - Tales of the Multiverse.</p>
+            <p>Gun Witches are not proper spellcasters, though they do make use of the arcane arts in some of their techniques. They are best known for being trained in extreme forms of firearm and bow based martial arts. Over the millennia, the original Order descended into legend as the legendary warrior-magicians became myth, but a few lived on creating covens that live on to teach the art of weapon hexing and using special components along with materials to cast spells through these explosive weapons. The sole creators of a mysterious gunpowder crafted with dark alchemy and ammunition inscribed with hex-runes. Most Gun Witches now a days are notorious bounty hunters, using the bounties to fund their covens.</p>
+            <h4>CREATING A Gun Witch</h4>
+            <p>As you create your Gun Witch, consider the circumstances that enabled you to learn your particular capabilities. Did you train with a single mentor, learning under a hedge witch who had access to crude firearms? Or did you become part of a militia-coven that protected a settlement from the supernatural or strange dangers surrounding the town? What caused you to break away from your training? How did you learn your skills? On the road as a lone traveler? Or as someone desperate to survive? Or did you use your training for a newfound occupation? You might be a hedge witch yourself that came across a coven of Gun Witches training in the solitude of an ancient sanctuary. How did you stumble upon the methods of mixing the arcane arts with gun fighting?</p>
+            <p class="indent">How do you continue creating your mysterious hexes? Do you run an alchemy gig on the side? How did you choose your Familiar Weapon? How is it special to you? Have you give it a name? Is it a sentient weapon? Or is it just the best weapon in your hands? Is your adventuring career a continuation of your work, attempting to learn more of the strange teachings that guide your ways, or a significant change? What made you join up with a band of adventurers? Do you find it challenging to travelling with new allies, or do you welcome the relief from solitude that they offer?</p>
+            <h5 class="caption">QUICK BUILD</h5>
+            <p>You can make a Gun Witch quickly by following these suggestions. First, Dexterity should be your highest ability score, followed by Intelligence. Second, choose the Bounty Hunter or Far Traveler background. Third, choose the Pistol, the Component Pouch with 20 Bullets, and the an explorer's pack. As an aside, the rules for firearms are in the pg.267 of the Dungeon Master's Guide. If you're running a campaign with no guns, this class can function with the regular ranged options in the Player's Handbook.</p>
+            <h2>CLASS FEATURES</h2>
+            <p>As an Gun Witch, you gain the following class features.</p>
+            <h5 class="caption">HIT POINTS</h5>
+            <ul class="unstyled">
+                <li><strong>Hit Dice:</strong> 1d8 per gun witch level</li>
+                <li><strong>Hit Points at 1st Level:</strong> 8 + your Constitution modifier</li>
+                <li><strong>Hit Points at Higher Levels:</strong> 1d8 (or 5) + your Constitution modifier per gun witch level after 1st</li>
+            </ul>
+            <h5 class="caption">PROFICIENCIES</h5>
+            <ul class="unstyled mb">
+                <li><strong>Armor:</strong> Light armor</li>
+                <li><strong>Weapons:</strong> Simple Ranged Weapons, Martial Ranged Weapons</li>
+                <li><strong>Tools:</strong> Alchemist’s supplies, Smith's Tools</li>
+            </ul>
+            <ul class="unstyled">
+                <li><strong>Saving Throws:</strong> Dexterity, Intelligence</li>
+                <li><strong>Skills:</strong> Any two and Arcana</li>
+            </ul>
+            <h5 class="caption">EQUIPMENT</h5>
+            <p>You start with the following equipment, in addition to the equipment granted by your background:</p>
+            <ul>
+                <li>(a) Pistol or (b) two hand crossbows or (c) light crossbow</li>
+                <li>(a) a Component Pouch with 20 Bullets or (b) a Quiver of 20 Bolts</li>
+                <li>(a) a scholar's pack or (b) an explorer's pack</li>
+                <li>a Gunpowder Horn, a Musket, a Pistol and 10 Bullets</li>
+                <li>If you are using starting wealth, you have 5d4 x 10 gp in funds.</li>
+            </ul>
+            <h5 class="caption">THE GUNWITCH</h5>
+            <table class="class-features">
+                <thead>
+                    <tr><td class="col-5">Level</td><td class="left">Features</td><td class="col-10">Spells Known</td><td>1st</td><td>2nd</td><td>3rd</td><td>4th</td><td>5th</td></tr>
+                </thead>
+                <tr><td> 1st</td><td class="left">Weapon Hex, Familiar Weapon</td><td>—</td><td>—</td><td>—</td><td>—</td><td>—</td><td>—</td></tr>
+                <tr><td> 2nd</td><td class="left">Fighting Style, Spellcasting</td><td>2</td><td>2</td><td>—</td><td>—</td><td>—</td><td>—</td></tr>
+                <tr><td> 3rd</td><td class="left">Witch Coven, Gunslinger</td><td>3</td><td>3</td><td>—</td><td>—</td><td>—</td><td>—</td></tr>
+                <tr><td> 4th</td><td class="left">Ability Score Improvement</td><td>3</td><td>3</td><td>—</td><td>—</td><td>—</td><td>—</td></tr>
+                <tr><td> 5th</td><td class="left">Extra Attack</td><td>4</td><td>4</td><td>2</td><td>—</td><td>—</td><td>—</td></tr>
+                <tr><td> 6th</td><td class="left">Improved Weapon Hex, Additional Familiar Weapon</td><td>4</td><td>4</td><td>2</td><td>—</td><td>—</td><td>—</td></tr>
+                <tr><td> 7th</td><td class="left">Witch Coven Feature</td><td>4</td><td>4</td><td>3</td><td>—</td><td>—</td><td>—</td></tr>
+                <tr><td> 8th</td><td class="left">Ability Score Improvement</td><td>4</td><td>4</td><td>3</td><td>—</td><td>—</td><td>—</td></tr>
+                <tr><td> 9th</td><td class="left">-</td><td>5</td><td>4</td><td>3</td><td>2</td><td>—</td><td>—</td></tr>
+                <tr><td>10th</td><td class="left">Improved Weapon Hex, Additional Familiar Weapon</td><td>5</td><td>4</td><td>3</td><td>2</td><td>—</td><td>—</td></tr>
+                <tr><td>11th</td><td class="left">Witch Coven Feature</td><td>5</td><td>4</td><td>3</td><td>3</td><td>—</td><td>—</td></tr>
+                <tr><td>12th</td><td class="left">Ability Score Improvement</td><td>5</td><td>4</td><td>3</td><td>3</td><td>—</td><td>—</td></tr>
+                <tr><td>13th</td><td class="left">Extra Attack (x2)</td><td>5</td><td>4</td><td>3</td><td>3</td><td>1</td><td>—</td></tr>
+                <tr><td>14th</td><td class="left">Calling Card, Spellslinger</td><td>6</td><td>4</td><td>3</td><td>3</td><td>1</td><td>—</td></tr>
+                <tr><td>15th</td><td class="left">Witch Coven Feature</td><td>6</td><td>4</td><td>3</td><td>3</td><td>2</td><td>—</td></tr>
+                <tr><td>16th</td><td class="left">Ability Score Improvement</td><td>6</td><td>4</td><td>3</td><td>3</td><td>2</td><td>—</td></tr>
+                <tr><td>17th</td><td class="left">-</td><td>6</td><td>4</td><td>3</td><td>3</td><td>3</td><td>1</td></tr>
+                <tr><td>18th</td><td class="left">Dark Craft</td><td>6</td><td>4</td><td>3</td><td>3</td><td>3</td><td>1</td></tr>
+                <tr><td>19th</td><td class="left">Ability Score Improvement</td><td>6</td><td>4</td><td>3</td><td>3</td><td>3</td><td>2</td></tr>
+                <tr><td>20th</td><td class="left">Weird Quick-draw</td><td>6</td><td>4</td><td>3</td><td>3</td><td>3</td><td>2</td></tr>
+            </table>
+            <div element="ID_WIKI_CLASS_FEATURE_GUN_WITCH_WEAPON_HEX" />
+            <div element="ID_WIKI_CLASS_FEATURE_GUN_WITCH_FAMILIAR_WEAPON" />
+            <div element="ID_WIKI_CLASS_FEATURE_GUN_WITCH_FIGHTING_STYLE" />
+            <div element="ID_WIKI_CLASS_FEATURE_GUN_WITCH_SPELLCASTING" />
+            <div element="ID_WIKI_CLASS_FEATURE_GUN_WITCH_WITCH_COVEN" />
+            <div element="ID_WIKI_CLASS_FEATURE_GUN_WITCH_GUNSLINGER" />
+            <div element="ID_WIKI_CLASS_FEATURE_GUN_WITCH_ABILITY_SCORE_IMPROVEMENT" />
+            <div element="ID_WIKI_CLASS_FEATURE_GUN_WITCH_EXTRA_ATTACK" />
+            <div element="ID_WIKI_CLASS_FEATURE_GUN_WITCH_CALLING_CARD" />
+            <div element="ID_WIKI_CLASS_FEATURE_GUN_WITCH_SPELLSLINGER" />
+            <div element="ID_WIKI_CLASS_FEATURE_GUN_WITCH_DARK_CRAFT" />
+            <div element="ID_WIKI_CLASS_FEATURE_GUN_WITCH_WEIRD_QUICK_DRAW" />
+        </description>
+        <setters>
+            <set name="sourceUrl">https://www.dandwiki.com/w/index.php?title=Gun_Witch_(5e_Class)&amp;oldid=1663881</set>
+            <set name="short">A ranged witch drawing from their ancestry.</set>
+            <set name="hd">d8</set>
+        </setters>
+        <sheet display="false" />
+        <rules>
+            <grant type="Proficiency" id="ID_PROFICIENCY_WEAPON_PROFICIENCY_CROSSBOW_LIGHT" requirements="!ID_WIKI_MULTICLASS_GUN_WITCH" />
+            <grant type="Proficiency" id="ID_PROFICIENCY_WEAPON_PROFICIENCY_DART" requirements="!ID_WIKI_MULTICLASS_GUN_WITCH" />
+            <grant type="Proficiency" id="ID_PROFICIENCY_WEAPON_PROFICIENCY_SHORTBOW" requirements="!ID_WIKI_MULTICLASS_GUN_WITCH" />
+            <grant type="Proficiency" id="ID_PROFICIENCY_WEAPON_PROFICIENCY_SLING" requirements="!ID_WIKI_MULTICLASS_GUN_WITCH" />
+            <grant type="Proficiency" id="ID_PROFICIENCY_WEAPON_PROFICIENCY_BLOWGUN" requirements="!ID_WIKI_MULTICLASS_GUN_WITCH" />
+            <grant type="Proficiency" id="ID_PROFICIENCY_WEAPON_PROFICIENCY_CROSSBOW_HAND" requirements="!ID_WIKI_MULTICLASS_GUN_WITCH" />
+            <grant type="Proficiency" id="ID_PROFICIENCY_WEAPON_PROFICIENCY_CROSSBOW_HEAVY" requirements="!ID_WIKI_MULTICLASS_GUN_WITCH" />
+            <grant type="Proficiency" id="ID_PROFICIENCY_WEAPON_PROFICIENCY_LONGBOW" requirements="!ID_WIKI_MULTICLASS_GUN_WITCH" />
+            <grant type="Proficiency" id="ID_PROFICIENCY_WEAPON_PROFICIENCY_NET" requirements="!ID_WIKI_MULTICLASS_GUN_WITCH" />
+            <grant type="Proficiency" id="ID_WOTC_DMG_PROFICIENCY_WEAPON_FIREARMS" requirements="!ID_WIKI_MULTICLASS_GUN_WITCH" />
+            <grant type="Proficiency" id="ID_PROFICIENCY_ARMOR_PROFICIENCY_LIGHT_ARMOR" requirements="!ID_WIKI_MULTICLASS_GUN_WITCH" />
+            <grant type="Proficiency" id="ID_PROFICIENCY_TOOL_PROFICIENCY_ALCHEMISTS_SUPPLIES" requirements="!ID_WIKI_MULTICLASS_GUN_WITCH" />
+            <grant type="Proficiency" id="ID_PROFICIENCY_TOOL_PROFICIENCY_SMITHS_TOOLS" requirements="!ID_WIKI_MULTICLASS_GUN_WITCH" />
+            <grant type="Proficiency" id="ID_PROFICIENCY_SAVINGTHROW_DEXTERITY" requirements="!ID_WIKI_MULTICLASS_GUN_WITCH" />
+            <grant type="Proficiency" id="ID_PROFICIENCY_SAVINGTHROW_INTELLIGENCE" requirements="!ID_WIKI_MULTICLASS_GUN_WITCH" />
+            <select type="Proficiency" name="Skills, Gun Witch" supports="Skill" number="2" requirements="!ID_WIKI_MULTICLASS_GUN_WITCH" />
+            <grant type="Proficiency" id="ID_PROFICIENCY_SKILL_ARCANA" requirements="!ID_WIKI_MULTICLASS_GUN_WITCH" />
+            <grant type="Class Feature" id="ID_WIKI_CLASS_FEATURE_GUN_WITCH_WEAPON_HEX" level="1" />
+            <grant type="Class Feature" id="ID_WIKI_CLASS_FEATURE_GUN_WITCH_FAMILIAR_WEAPON" level="1" />
+            <grant type="Class Feature" id="ID_WIKI_CLASS_FEATURE_GUN_WITCH_FIGHTING_STYLE" level="2" />
+            <grant type="Class Feature" id="ID_WIKI_CLASS_FEATURE_GUN_WITCH_SPELLCASTING" level="2" />
+            <grant type="Class Feature" id="ID_WIKI_CLASS_FEATURE_GUN_WITCH_WITCH_COVEN" level="3" />
+            <grant type="Class Feature" id="ID_WIKI_CLASS_FEATURE_GUN_WITCH_GUNSLINGER" level="3" />
+            <grant type="Class Feature" id="ID_WIKI_CLASS_FEATURE_GUN_WITCH_ABILITY_SCORE_IMPROVEMENT" level="4" />
+            <grant type="Class Feature" id="ID_WIKI_CLASS_FEATURE_GUN_WITCH_EXTRA_ATTACK" level="5" />
+            <grant type="Class Feature" id="ID_WIKI_CLASS_FEATURE_GUN_WITCH_CALLING_CARD" level="14" />
+            <grant type="Class Feature" id="ID_WIKI_CLASS_FEATURE_GUN_WITCH_SPELLSLINGER" level="14" />
+            <grant type="Class Feature" id="ID_WIKI_CLASS_FEATURE_GUN_WITCH_DARK_CRAFT" level="18" />
+            <grant type="Class Feature" id="ID_WIKI_CLASS_FEATURE_GUN_WITCH_WEIRD_QUICK_DRAW" level="20" />
+        </rules>
+        <multiclass id="ID_WIKI_MULTICLASS_GUN_WITCH">
+			<prerequisite>Dexterity 13 and Intelligence 13</prerequisite>
+			<requirements>[dex:13],[int:13]</requirements>
+			<setters>
+				<set name="multiclass proficiencies">Martial Ranged Weapons</set>
+                <set name="sourceUrl">https://www.dandwiki.com/w/index.php?title=Gun_Witch_(5e_Class)&amp;oldid=1663881#Multiclassing</set>
+			</setters>
+			<rules>
+				<grant type="Grants" id="ID_INTERNAL_GRANT_MULTICLASS" />
+                <grant type="Proficiency" id="ID_PROFICIENCY_WEAPON_PROFICIENCY_BLOWGUN" />
+                <grant type="Proficiency" id="ID_PROFICIENCY_WEAPON_PROFICIENCY_CROSSBOW_HAND" />
+                <grant type="Proficiency" id="ID_PROFICIENCY_WEAPON_PROFICIENCY_CROSSBOW_HEAVY" />
+                <grant type="Proficiency" id="ID_PROFICIENCY_WEAPON_PROFICIENCY_LONGBOW" />
+                <grant type="Proficiency" id="ID_PROFICIENCY_WEAPON_PROFICIENCY_NET" />
+			</rules>
+		</multiclass>
+    </element>
+    <element name="Weapon Hex" type="Class Feature" source="D&amp;D Wiki" id="ID_WIKI_CLASS_FEATURE_GUN_WITCH_WEAPON_HEX">
+        <description>
+            <p>You hex up to two of your weapons. Choose 1 cantrip from the following options: Acid Splash, Fire Bolt, Lightning Lure, or Ray of Frost. Instead of making an Attack action with your weapon, you can cast your chosen cantrip instead. You must be wielding a hexed weapon to do so. At 6th and 10th level, you can choose a second and third cantrip from the list, respectively. At 6th level, you can use one of your chosen cantrips with your Extra Attack feature. At 10th level, you can cast your chosen cantrips as a bonus action. Dexterity is your spellcasting ability for these spells.</p>
+            <p class="indent">You do not require a free hand to load or reload a hexed weapon, and hexed weapons are not required to be melee for the purposes of two-handed fighting. It takes 1 hour to hex or unhex a weapon, and if you lose a hex weapon, the ritual to unhex it takes 2 hours.</p>
+        </description>
+        <sheet>
+            <description>You hex up to two of your weapons. Instead of making an Attack action with your weapon, you can cast your chosen cantrip instead. You must be wielding a hexed weapon to do so. Dexterity is your spellcasting ability for these spells. You do not require a free hand to load or reload a hexed weapon, and hexed weapons are not required to be melee for the purposes of two-handed fighting. It takes 1 hour to hex or unhex a weapon, and if you lose a hex weapon, the ritual to unhex it takes 2 hours.</description>
+            <description level="10">You hex up to two of your weapons. Instead of making an Attack action with your weapon, you can cast your chosen cantrip instead as a bonus action. You must be wielding a hexed weapon to do so. Dexterity is your spellcasting ability for these spells. You do not require a free hand to load or reload a hexed weapon, and hexed weapons are not required to be melee for the purposes of two-handed fighting. It takes 1 hour to hex or unhex a weapon, and if you lose a hex weapon, the ritual to unhex it takes 2 hours.</description>
+        </sheet>
+        <setters>
+            <set name="sourceUrl">https://www.dandwiki.com/w/index.php?title=Gun_Witch_(5e_Class)&amp;oldid=1663881#Weapon_Hex</set>
+        </setters>
+        <rules>
+            <select type="Class Feature" name="Weapon Hex" supports="Weapon Hex" />
+            <select type="Class Feature" name="Weapon Hex (Level 6)" supports="Weapon Hex" level="6" />
+            <select type="Class Feature" name="Weapon Hex (Level 10)" supports="Weapon Hex" level="10" />
+        </rules>
+    </element>
+    <element name="Acid Hex" type="Class Feature" source="D&amp;D Wiki" id="ID_NWIKI_GUN_WITCH_ACID_HEX">
+        <supports>Weapon Hex</supports>
+        <description>
+            <p>Instead of making an Attack action with your weapon, you can cast Acid Splash. Dexterity is your spell casting modifier.</p>
+        </description>
+        <sheet>
+            <description>You can cast Acid Splash. Dexterity is your spell casting modifier.</description>
+            <description level="6">You can cast Acid Splash as well with your Extra Attack feature.</description>
+            <description level="10">As a bonus action, you can cast Acid Splash as well with your Extra Attack feature.</description>
+        </sheet>
+        <setters>
+            <set name="sourceUrl">https://www.dandwiki.com/w/index.php?title=Gun_Witch_(5e_Class)&amp;oldid=1663881#Weapon_Hex</set>
+        </setters>
+        <rules>
+            <grant type="Spell" id="ID_PHB_SPELL_ACID_SPLASH" />
+        </rules>
+    </element>
+    <element name="Fire Hex" type="Class Feature" source="D&amp;D Wiki" id="ID_NWIKI_GUN_WITCH_FIRE_HEX">
+        <supports>Weapon Hex</supports>
+        <description>
+            <p>Instead of making an Attack action with your weapon, you can cast Fire Bolt. Dexterity is your spell casting modifier.</p>
+        </description>
+        <sheet>
+            <description>You can cast Fire Bolt. Dexterity is your spell casting modifier.</description>
+            <description level="6">You can cast Fire Bolt as well with your Extra Attack feature. Dexterity is your spell casting modifier.</description>
+            <description level="10">As a bonus action, you can cast Fire Bolt as well with your Extra Attack feature. Dexterity is your spell casting modifier.</description>
+        </sheet>
+        <setters>
+            <set name="sourceUrl">https://www.dandwiki.com/w/index.php?title=Gun_Witch_(5e_Class)&amp;oldid=1663881#Weapon_Hex</set>
+        </setters>
+        <rules>
+            <grant type="Spell" id="ID_PHB_SPELL_FIRE_BOLT" />
+        </rules>
+    </element>
+    <element name="Lightning Hex" type="Class Feature" source="D&amp;D Wiki" id="ID_NWIKI_GUN_WITCH_LIGHTNING_HEX">
+        <supports>Weapon Hex</supports>
+        <description>
+            <p>Instead of making an Attack action with your weapon, you can cast Lightning Lure. Dexterity is your spell casting modifier.</p>
+        </description>
+        <sheet>
+            <description>You can cast Lightning Lure. Dexterity is your spell casting modifier.</description>
+            <description level="6">You can cast Lightning Lure as well with your Extra Attack feature. Dexterity is your spell casting modifier.</description>
+            <description level="10">As a bonus action, you can cast Lightning Lure as well with your Extra Attack feature. Dexterity is your spell casting modifier.</description>
+        </sheet>
+        <setters>
+            <set name="sourceUrl">https://www.dandwiki.com/w/index.php?title=Gun_Witch_(5e_Class)&amp;oldid=1663881#Weapon_Hex</set>
+        </setters>
+        <rules>
+            <grant type="Spell" id="ID_SCAG_SPELL_LIGHTNING_LURE" />
+        </rules>
+    </element>
+    <element name="Frost Hex" type="Class Feature" source="D&amp;D Wiki" id="ID_NWIKI_GUN_WITCH_FROST_HEX">
+        <supports>Weapon Hex</supports>
+        <description>
+            <p>Instead of making an Attack action with your weapon, you can cast Fire Bolt. Dexterity is your spell casting modifier.</p>
+        </description>
+        <sheet>
+            <description>You can cast Ray of Frost. Dexterity is your spell casting modifier.</description>
+            <description level="6">You can cast Ray of Frost as well with your Extra Attack feature. Dexterity is your spell casting modifier.</description>
+            <description level="10">As a bonus action, you can cast Ray of Frost as well with your Extra Attack feature. Dexterity is your spell casting modifier.</description>
+        </sheet>
+        <setters>
+            <set name="sourceUrl">https://www.dandwiki.com/w/index.php?title=Gun_Witch_(5e_Class)&amp;oldid=1663881#Weapon_Hex</set>
+        </setters>
+        <rules>
+            <grant type="Spell" id="ID_PHB_SPELL_RAY_OF_FROST" />
+        </rules>
+    </element>
+
+    <element name="Familiar Weapon" type="Class Feature" source="D&amp;D Wiki" id="ID_WIKI_CLASS_FEATURE_GUN_WITCH_FAMILIAR_WEAPON">
+        <description>
+            <p>Choose a weapon to hammer with arcane enchantments, hedge magic, and spell-worked runes. It becomes a Familiar Weapon. At 6th and 10th level, you can choose an additional weapon to be a Familiar Weapon. At 10th level, you can magically summon any of your Familiar Weapons to your side. If you lose or replace your Familiar Weapon, the process to create another takes 2 hours and cost 10 gp for the materials.</p>
+            <p class="indent">Gain a d6. Whenever you successfully attack with your Familiar Weapon, reduce the value of this die by 1. When the value of this die reaches 1, you can spend it as a bonus action to make your next attack with your Familiar Weapon deal an extra 1d6 piercing damage. After spending this die, hit or miss, it resets back to 6. When you finish a short or long rest this die resets back to 6. At 10th level and 20th level, this damage increases to 2d6 and 3d6 respectively.</p>
+            <div class="sidebar">
+                <h5>Familiar Weapon Die</h5>
+                <p>When you gain the Familiar Weapon die, it acts like a countdown and not like a regular die that you roll. If you’re tracking the die physically, grab a d6, place it on the face with six pips, and decrease the face by 1 every time you decrease the die. If you’re playing virtually, treat the Familiar Weapon die like it is a countdown that starts at 6 and ends at 1.</p>
+            </div>
+        </description>
+        <sheet action="Bonus Action">
+            <description>Choose a weapon to hammer with arcane enchantments, hedge magic, and spell-worked runes. It becomes a Familiar Weapon. Gain a d6. Whenever you successfully attack with your Familiar Weapon, reduce the value of this die by 1. When the value of this die reaches 1, you can spend it as a bonus action to make your next attack with your Familiar Weapon deal an extra {{familiar weapon:die}}d6 piercing damage. After spending this die, hit or miss, it resets back to 6. When you finish a short or long rest this die resets back to 6.</description>
+        </sheet>
+        <setters>
+            <set name="sourceUrl">https://www.dandwiki.com/w/index.php?title=Gun_Witch_(5e_Class)&amp;oldid=1663881#Familiar_Weapon</set>
+        </setters>
+        <rules>
+            <stat name="familiar weapon:die" value="1" bonus="die" />
+            <stat name="familiar weapon:die" value="2" bonus="die" level="10"/>
+            <stat name="familiar weapon:die" value="3" bonus="die" level="20" />
+        </rules>
+    </element>
+    <element name="Fighting Style" type="Class Feature" source="D&amp;D Wiki" id="ID_WIKI_CLASS_FEATURE_GUN_WITCH_FIGHTING_STYLE">
+        <description>
+            <p>At 2nd level, you adopt a particular style of fighting as your specialty. Choose one of the following options.</p>
+            <p class="indent">You can’t take a Fighting Style option more than once, even if you later get to choose again.</p>
+            <h5>Archery</h5>
+            <p>You gain a +2 bonus to attack rolls you make with ranged weapons.</p>
+            <h5>Great Weapon Fighting</h5>
+            <p>When you roll a 1 or 2 on a damage die for an Attack you make with a ranged weapon that you are wielding with two hands, you can reroll the die and must use the new roll, even if the new roll is a 1 or a 2. The weapon must have the Two-Handed or Versatile property for you to gain this benefit.</p>
+            <h5>Ranged Dueling</h5>
+            <p>As a reaction, which you take when you are hit by an attack, you can roll to attack the attacking creature with a ranged weapon. If you were hit by a ranged attack, roll your attack with advantage.</p>
+            <h5>Two-Weapon Fighting</h5>
+            <p>When you engage in two-weapon fighting, you can add your ability modifier to the damage of the second Attack.</p>
+        </description>
+        <sheet display="false" />
+        <setters>
+            <set name="sourceUrl">https://www.dandwiki.com/w/index.php?title=Gun_Witch_(5e_Class)&amp;oldid=1663881#Fighting_Style</set>
+        </setters>
+        <rules>
+            <select type="Class Feature" name="Fighting Style, Gun Witch" supports="Fighting Style, Gun Witch" />
+        </rules>
+    </element>
+
+    <element name="Ranged Dueling" type="Class Feature" source="D&amp;D Wiki" id="ID_WIKI_GUN_WITCH_FIGHTING_STYLE_RANGED_DUELING">
+        <supports>Fighting Style, Gun Witch</supports>
+        <description>
+            <p>As a reaction, which you take when you are hit by an attack, you can roll to attack the attacking creature with a ranged weapon. If you were hit by a ranged attack, roll your attack with advantage.</p>
+        </description>
+        <sheet action="Reaction">
+            <description>As a reaction, which you take when you are hit by an attack, you can roll to attack the attacking creature with a ranged weapon. If you were hit by a ranged attack, roll your attack with advantage.</description>
+        </sheet>
+    </element>
+    <append id="ID_WOTC_PHB_CLASS_FEATURE_FIGHTINGSTYLE_ARCHERY">
+        <supports>Gun Witch</supports>
+    </append>
+    <append id="ID_WOTC_PHB_CLASS_FEATURE_FIGHTINGSTYLE_GREAT_WEAPON_FIGHTING">
+        <supports>Gun Witch</supports>
+    </append>
+    <append id="ID_WOTC_PHB_CLASS_FEATURE_FIGHTINGSTYLE_TWOWEAPON_FIGHTING">
+        <supports>Gun Witch</supports>
+    </append>
+
+    <element name="Spellcasting" type="Class Feature" source="D&amp;D Wiki" id="ID_WIKI_CLASS_FEATURE_GUN_WITCH_SPELLCASTING">
+        <description>
+			<p>By the time you reach 2nd level, you have learned to use the magical essence of your hexes to cast Spells, much as a sorcerer or wizard does. See the general rules of Spellcasting and the Gun Witch spell list.</p>
+			<h5>SPELL SLOTS</h5>
+			<p>The Gun Witch table shows how many Spell Slots you have to cast your Gun Witch Spells of 1st level and higher. To cast one of these spells⁠, you must expend a slot of the spell’s level or higher. You regain all expended Spell Slots when you finish a Long Rest.</p>
+			<p class="indent">For example, if you know the 1st-level spell Witch Bolt and have a 1st-level and a 2nd-level spell slot available, you can cast Witch Bolt⁠ using either slot.</p>
+			<h5>SPELLS KNOWN OF 1ST LEVEL AND HIGHER</h5>
+			<p>You know two 1st-level Spells of your choice from the Gun Witch spell list.</p>
+			<p class="indent">The Spells Known column of the Gun Witch table shows when you learn more Gun Witch spells⁠ of your choice. Each of these spells⁠ must be of a level for which you have Spell Slots. For instance, when you reach 5th level in this class, you can learn one new spell of 1st or 2nd level.</p>
+			<p class="indent">Additionally, when you gain a level in this class, you can choose one of the Gun Witch Spells you know and replace it with another spell from the Gun Witch spell list, which also must be of a level for which you have Spell Slots.</p>
+			<h5>SPELLCASTING ABILITY</h5>
+			<p>Intelligence is your spellcasting ability for your Gun Witch spells. The power of your spells comes from the hexes hammered into your weapons. You use your Intelligence whenever a spell refers to your spellcasting ability. In addition, you use your Intelligence modifier when setting the saving throw DC for a Gun Witch spell you cast and when making an attack roll with one.</p>
+			<center>
+				<p><strong>Spell save DC</strong> = 8 + your proficiency bonus + your Intelligence modifier</p>
+				<p><strong>Spell attack modifier</strong> = your proficiency bonus + your Intelligence modifier</p>
+			</center>
+		</description>
+		<sheet display="false">
+			<description>You have learned to use the magical essence of nature to cast spells, much as a druid does.</description>
+		</sheet>
+        <setters>
+            <set name="sourceUrl">https://www.dandwiki.com/w/index.php?title=Gun_Witch_(5e_Class)&amp;oldid=1663881#Spellcasting</set>
+        </setters>
+		<spellcasting name="Gun Witch" ability="Intelligence" allowReplace="true">
+			<list>Gun Witch</list>
+		</spellcasting>
+        <rules>
+            <grant type="Grants" id="ID_INTERNAL_GRANT_MULTICLASS_SPELLCASTING_SLOTS_HALF" requirements="ID_INTERNAL_GRANT_MULTICLASS"/>
+			<stat name="Gun Witch:spellcasting:slots:1" value="2" level="2" />
+			<stat name="Gun Witch:spellcasting:slots:1" value="1" level="3" />
+			<stat name="Gun Witch:spellcasting:slots:1" value="1" level="5" />
+			<stat name="Gun Witch:spellcasting:slots:2" value="2" level="5" />
+			<stat name="Gun Witch:spellcasting:slots:2" value="1" level="7" />
+			<stat name="Gun Witch:spellcasting:slots:3" value="2" level="9" />
+			<stat name="Gun Witch:spellcasting:slots:3" value="1" level="11" />
+			<stat name="Gun Witch:spellcasting:slots:4" value="1" level="13" />
+			<stat name="Gun Witch:spellcasting:slots:4" value="1" level="15" />
+			<stat name="Gun Witch:spellcasting:slots:4" value="1" level="17" />
+			<stat name="Gun Witch:spellcasting:slots:5" value="1" level="17" />
+			<stat name="Gun Witch:spellcasting:slots:5" value="1" level="19" />
+			<select type="Spell" name="Spellcasting (Gun Witch)" supports="$(spellcasting:list),$(spellcasting:slots)" level="2" number="2" spellcasting="Gun Witch"/>
+			<select type="Spell" name="Spellcasting (Gun Witch)" supports="$(spellcasting:list),$(spellcasting:slots)" level="3" spellcasting="Gun Witch" />
+			<select type="Spell" name="Spellcasting (Gun Witch)" supports="$(spellcasting:list),$(spellcasting:slots)" level="5" spellcasting="Gun Witch" />
+			<select type="Spell" name="Spellcasting (Gun Witch)" supports="$(spellcasting:list),$(spellcasting:slots)" level="7" spellcasting="Gun Witch" />
+			<select type="Spell" name="Spellcasting (Gun Witch)" supports="$(spellcasting:list),$(spellcasting:slots)" level="9" spellcasting="Gun Witch" />
+			<select type="Spell" name="Spellcasting (Gun Witch)" supports="$(spellcasting:list),$(spellcasting:slots)" level="11" spellcasting="Gun Witch" />
+			<select type="Spell" name="Spellcasting (Gun Witch)" supports="$(spellcasting:list),$(spellcasting:slots)" level="13" spellcasting="Gun Witch" />
+			<select type="Spell" name="Spellcasting (Gun Witch)" supports="$(spellcasting:list),$(spellcasting:slots)" level="15" spellcasting="Gun Witch" />
+			<select type="Spell" name="Spellcasting (Gun Witch)" supports="$(spellcasting:list),$(spellcasting:slots)" level="17" spellcasting="Gun Witch" />
+			<select type="Spell" name="Spellcasting (Gun Witch)" supports="$(spellcasting:list),$(spellcasting:slots)" level="19" spellcasting="Gun Witch" />
+        </rules>
+    </element>
+    <element name="Witch Coven" type="Class Feature" source="D&amp;D Wiki" id="ID_WIKI_CLASS_FEATURE_GUN_WITCH_WITCH_COVEN">
+        <description>
+            <p>At 3rd level, you chose a Witch Coven. Choose between the Coven of Eyes and the Coven of Hexes, both detailed at the end of the class description. Your choice grants you features at 3rd level and again at 7th, 11th, and 15th level.</p>
+        </description>
+        <sheet display="false" />
+        <setters>
+            <set name="sourceUrl">https://www.dandwiki.com/w/index.php?title=Gun_Witch_(5e_Class)&amp;oldid=1663881#Witch_Coven</set>
+        </setters>
+        <rules>
+            <select type="Archetype" name="Witch Coven" supports="Witch Coven" />
+        </rules>
+    </element>
+    <element name="Gunslinger" type="Class Feature" source="D&amp;D Wiki" id="ID_WIKI_CLASS_FEATURE_GUN_WITCH_GUNSLINGER">
+        <description>
+            <p>At 3rd level, you can now reload one weapon as a free action once per turn, and you can use your bonus action to reload another. You can also reload one weapon after using a reaction that caused you to fire ammunition.</p>
+        </description>
+        <sheet>
+            <description>You can now reload one weapon as a free action once per turn, and you can use your bonus action to reload another. You can also reload one weapon after using a reaction that caused you to fire ammunition.</description>
+        </sheet>
+        <setters>
+            <set name="sourceUrl">https://www.dandwiki.com/w/index.php?title=Gun_Witch_(5e_Class)&amp;oldid=1663881#Gunslinger</set>
+        </setters>
+    </element>
+    <element name="Ability Score Improvement" type="Class Feature" source="D&amp;D Wiki" id="ID_WIKI_CLASS_FEATURE_GUN_WITCH_ABILITY_SCORE_IMPROVEMENT">
+        <description>
+            <p>When you reach 4th level, and again at 8th, 12th, 16th, and 19th level, you can increase one ability score of your choice by 2, or you can increase two ability scores of your choice by 1. As normal, you can’t increase an ability score above 20 using this feature.</p>
+        </description>
+        <sheet display="false" />
+        <setters>
+            <set name="sourceUrl">https://www.dandwiki.com/w/index.php?title=Gun_Witch_(5e_Class)&amp;oldid=1663881#Ability_Score_Increase</set>
+        </setters>
+        <rules>
+            <select type="Class Feature" name="Improvement Option (Gun Witch 4)" supports="Improvement Option,Gun Witch,4" level="4" />
+			<select type="Class Feature" name="Improvement Option (Gun Witch 8)" supports="Improvement Option,Gun Witch,8" level="8" />
+			<select type="Class Feature" name="Improvement Option (Gun Witch 12)" supports="Improvement Option,Gun Witch,12" level="12" />
+			<select type="Class Feature" name="Improvement Option (Gun Witch 16)" supports="Improvement Option,Gun Witch,16" level="16" />
+			<select type="Class Feature" name="Improvement Option (Gun Witch 19)" supports="Improvement Option,Gun Witch,19" level="19" />
+        </rules>
+    </element>
+    <element name="Extra Attack" type="Class Feature" source="D&amp;D Wiki" id="ID_WIKI_CLASS_FEATURE_GUN_WITCH_EXTRA_ATTACK">
+        <description>
+            <p>Beginning at 5th level, you can Attack twice, instead of once, whenever you take the Attack action on Your Turn. The number of attacks increases to three when you reach 13th level in this class.</p>
+        </description>
+        <sheet>
+            <description>You can attack twice, instead of once, whenever you take the Attack action on your turn.</description>
+            <description level="13">You can attack three times, instead of once, whenever you take the Attack action on your turn.</description>
+        </sheet>
+        <setters>
+            <set name="sourceUrl">https://www.dandwiki.com/w/index.php?title=Gun_Witch_(5e_Class)&amp;oldid=1663881#Extra_Attack</set>
+        </setters>
+        <rules>
+            <stat name="extra attack:count" value="2" level="5" bonus="extra attack" />
+            <stat name="extra attack:count" value="3" level="13" bonus="extra attack" />
+        </rules>
+    </element>
+    <element name="Calling Card" type="Class Feature" source="D&amp;D Wiki" id="ID_WIKI_CLASS_FEATURE_GUN_WITCH_CALLING_CARD">
+        <description>
+            <p>At 14th level, you enchant a small deck of cards or charms that allow you to display your small amount of magical prowess. Make a deck of eight cards, with each suit (Clubs, Diamonds, Hearts, and Spades) having two cards; or gain a d8 to substitute a deck, if you can not make one. As an action, you can draw one of your calling cards to gain a special effect. Shuffle the remaining cards afterwards, ignore this rule if you're using a die. After you draw eight cards (or roll your die eight times), you need to finish a short or long rest to reshuffle your deck.</p>
+            <p class="indent">After using this feature, the GM determines whether or not rumors of your strange qualities begin to spread in a nearby locale.</p>
+            <h5>Calling Card</h5>
+            <table>
+                <thead>
+                    <tr><td>Dice</td><td>Description</td></tr>
+                </thead>
+                <tr><td>Clubs (1-2)</td><td>Your next successful attack with a ranged weapon causes the target to fall prone. Your card dissipates into smoke. Your weapons coughs mystic smoke afterwards.</td></tr>
+                <tr><td>Diamonds (3-4)</td><td>Your next attack with a ranged weapon ignores resistances. Your card turns into a fine, diamond-like dust or sand; this dust is worthless. Any wounds made from this attack glitter onyx, sapphire and platinum.</td></tr>
+                <tr><td>Hearts (5-6)</td><td>Name a Tiny object, costing no more than 1 GP and weighing 2 lbs. or less. Your card becomes that object. Your pupils become heart-shaped until you take a short rest.</td></tr>
+                <tr><td>Spades (7-8)</td><td>Mark an enemy for death. If you hit them with a critical strike or deal damage that would reduce them to 0 hit points, your weapon fires four ghostly shots each dealing 1d4 piercing damage. Your card turns to ashes. If they die, a ghostly raven appears by the fallen foe for a brief second, and GM tells you one secret the enemy held.</td></tr>
+            </table>
+        </description>
+        <sheet>
+            <description>Make a deck of eight cards, with each suit (Clubs, Diamonds, Hearts, and Spades) having two cards; or gain a d8 to substitute a deck, if you can not make one. As an action, you can draw one of your calling cards to gain a special effect. Shuffle the remaining cards afterwards, ignore this rule if you're using a die. After you draw eight cards (or roll your die eight times), you need to finish a short or long rest to reshuffle your deck. &#13;
+                You gain these as spell cards for reference.
+            </description>
+        </sheet>
+        <setters>
+            <set name="sourceUrl">https://www.dandwiki.com/w/index.php?title=Gun_Witch_(5e_Class)&amp;oldid=1663881#Calling_Card</set>
+        </setters>
+        <rules>
+            <grant type="Spell" id="ID_WIKI_GUN_WITCH_CALLINGCARD_CLUBS" />
+            <grant type="Spell" id="ID_WIKI_GUN_WITCH_CALLINGCARD_DIAMONDS" />
+            <grant type="Spell" id="ID_WIKI_GUN_WITCH_CALLINGCARD_HEARTS" />
+            <grant type="Spell" id="ID_WIKI_GUN_WITCH_CALLINGCARD_SPADES" />
+        </rules>
+    </element>
+    <element name="Spell Slinger" type="Class Feature" source="D&amp;D Wiki" id="ID_WIKI_CLASS_FEATURE_GUN_WITCH_SPELLSLINGER">
+        <description>
+            <p>At the 14th level, you become as quick with your spells as you are with your weapons. Choose a 1st level spell you can cast with a casting time of 1 action. You gain the ability to cast that spell as bonus action. When you level up, you can change which 1st level spell has this benefit.</p>
+        </description>
+        <sheet>
+            <description>Choose a 1st level spell you can cast with a casting time of 1 action. You gain the ability to cast that spell as bonus action. When you level up, you can change which 1st level spell has this benefit.</description>
+        </sheet>
+        <setters>
+            <set name="sourceUrl">https://www.dandwiki.com/w/index.php?title=Gun_Witch_(5e_Class)&amp;oldid=1663881#Spell_Slinger</set>
+        </setters>
+    </element>
+    <element name="Dark Craft" type="Class Feature" source="D&amp;D Wiki" id="ID_WIKI_CLASS_FEATURE_GUN_WITCH_DARK_CRAFT">
+        <description>
+            <p>At 18th level, you finally unlock the secrets to creating hexed gunpowder. Add your Intelligence modifier to damage rolls made with your hex or familiar weapons.</p>
+        </description>
+        <sheet>
+            <description>Add your Intelligence modifier to damage rolls made with your hex or familiar weapons.</description>
+        </sheet>
+        <setters>
+            <set name="sourceUrl">https://www.dandwiki.com/w/index.php?title=Gun_Witch_(5e_Class)&amp;oldid=1663881#Dark_Craft</set>
+        </setters>
+    </element>
+    <element name="Weird Quick-draw" type="Class Feature" source="D&amp;D Wiki" id="ID_WIKI_CLASS_FEATURE_GUN_WITCH_WEIRD_QUICK_DRAW">
+        <description>
+            <p>At 20th level, you are unparalleled in your reflexes, enhanced by mysterious arcane arts. You have 10 d6s, used for quick draws. As a reaction to any enemy action or reaction, you can spend two of these d6s to fire a ghostly weapon that deals 2d6 piercing damage to that enemy if it is within 60 feet. This counts as magical for the purpose of resistances. This is not an attack, and cannot miss. You regain all of these dice after a long rest.</p>
+        </description>
+        <sheet action="Reaction">
+            <description>You have 10 d6s, used for quick draws. As a reaction to any enemy action or reaction, you can spend two of these d6s to fire a ghostly weapon that deals 2d6 piercing damage to that enemy if it is within 60 feet. This counts as magical for the purpose of resistances. This is not an attack, and cannot miss. You regain all of these dice after a long rest.</description>
+        </sheet>
+        <setters>
+            <set name="sourceUrl">https://www.dandwiki.com/w/index.php?title=Gun_Witch_(5e_Class)&amp;oldid=1663881#Weird_Quick-draw</set>
+        </setters>
+    </element>
+    <element name="Clubs (1-2)" type="Spell" source="D&amp;D Wiki" id="ID_WIKI_GUN_WITCH_CALLINGCARD_CLUBS">
+        <description>
+          <p>Your next successful attack with a ranged weapon causes the target to fall prone. Your card dissipates into smoke. Your weapons coughs mystic smoke afterwards.</p>
+          <p class="indent">After using this feature, the GM determines whether or not rumors of your strange qualities begin to spread in a nearby locale.</p>
+        </description>
+        <setters>
+          <set name="keywords"></set>
+          <set name="level">1</set>
+          <set name="school">Calling Card</set>
+          <set name="time">1 action</set>
+          <set name="duration">Instantaneous</set>
+          <set name="range">-</set>
+          <set name="hasVerbalComponent">false</set>
+          <set name="hasSomaticComponent">false</set>
+          <set name="hasMaterialComponent">false</set>
+          <set name="materialComponent" />
+          <set name="isConcentration">false</set>
+          <set name="isRitual">false</set>
+          <set name="sourceUrl">https://www.dandwiki.com/w/index.php?title=Gun_Witch_(5e_Class)&amp;oldid=1663881#Calling_Card</set>
+        </setters>
+    </element>
+    <element name="Diamonds (3-4)" type="Spell" source="D&amp;D Wiki" id="ID_WIKI_GUN_WITCH_CALLINGCARD_DIAMONDS">
+        <description>
+          <p>Your next attack with a ranged weapon ignores resistances. Your card turns into a fine, diamond-like dust or sand; this dust is worthless. Any wounds made from this attack glitter onyx, sapphire and platinum.</p>
+          <p class="indent">After using this feature, the GM determines whether or not rumors of your strange qualities begin to spread in a nearby locale.</p>
+        </description>
+        <setters>
+          <set name="keywords"></set>
+          <set name="level">1</set>
+          <set name="school">Calling Card</set>
+          <set name="time">1 action</set>
+          <set name="duration">Instantaneous</set>
+          <set name="range">-</set>
+          <set name="hasVerbalComponent">false</set>
+          <set name="hasSomaticComponent">false</set>
+          <set name="hasMaterialComponent">false</set>
+          <set name="materialComponent" />
+          <set name="isConcentration">false</set>
+          <set name="isRitual">false</set>
+          <set name="sourceUrl">https://www.dandwiki.com/w/index.php?title=Gun_Witch_(5e_Class)&amp;oldid=1663881#Calling_Card</set>
+        </setters>
+    </element>
+    <element name="Hearts (5-6)" type="Spell" source="D&amp;D Wiki" id="ID_WIKI_GUN_WITCH_CALLINGCARD_HEARTS">
+        <description>
+          <p>Name a Tiny object, costing no more than 1 GP and weighing 2 lbs. or less. Your card becomes that object. Your pupils become heart-shaped until you take a short rest.</p>
+          <p class="indent">After using this feature, the GM determines whether or not rumors of your strange qualities begin to spread in a nearby locale.</p>
+        </description>
+        <setters>
+          <set name="keywords"></set>
+          <set name="level">1</set>
+          <set name="school">Calling Card</set>
+          <set name="time">1 action</set>
+          <set name="duration">Instantaneous</set>
+          <set name="range">-</set>
+          <set name="hasVerbalComponent">false</set>
+          <set name="hasSomaticComponent">false</set>
+          <set name="hasMaterialComponent">false</set>
+          <set name="materialComponent" />
+          <set name="isConcentration">false</set>
+          <set name="isRitual">false</set>
+        </setters>
+    </element>
+    <element name="Spades (7-8)" type="Spell" source="D&amp;D Wiki" id="ID_WIKI_GUN_WITCH_CALLINGCARD_SPADES">
+        <description>
+          <p>Mark an enemy for death. If you hit them with a critical strike or deal damage that would reduce them to 0 hit points, your weapon fires four ghostly shots each dealing 1d4 piercing damage. Your card turns to ashes. If they die, a ghostly raven appears by the fallen foe for a brief second, and GM tells you one secret the enemy held.</p>
+          <p class="indent">After using this feature, the GM determines whether or not rumors of your strange qualities begin to spread in a nearby locale.</p>
+        </description>
+        <setters>
+          <set name="keywords"></set>
+          <set name="level">1</set>
+          <set name="school">Calling Card</set>
+          <set name="time">1 action</set>
+          <set name="duration">Instantaneous</set>
+          <set name="range">-</set>
+          <set name="hasVerbalComponent">false</set>
+          <set name="hasSomaticComponent">false</set>
+          <set name="hasMaterialComponent">false</set>
+          <set name="materialComponent" />
+          <set name="isConcentration">false</set>
+          <set name="isRitual">false</set>
+          <set name="sourceUrl">https://www.dandwiki.com/w/index.php?title=Gun_Witch_(5e_Class)&amp;oldid=1663881#Calling_Card</set>
+        </setters>
+    </element>
+
+    <!-- Gun Witch Covens/Archetypes -->
+    <element name="Coven of Eyes" type="Archetype" source="D&amp;D Wiki" id="ID_WIKI_SUBCLASS_COVEN_OF_EYES">
+        <supports>Witch Coven</supports>
+        <description>
+            <p>It's all about the eyes. Eyes are the window to the soul, as well the road for a bullet to someone's heart. Manipulating their natural bodies to improve their prowess with their shooting iron. Gun Witches who practice the traditions of the Coven of Eyes often live in the wilds mimicking beasts and nature to replicate them in their reflexes, as well as gathering reagents and using magics to augment themselves further. These Witches often have strange eyes as indicators of their association with the Coven.</p>
+            <div element="ID_WIKI_ARCHETYPE_FEATURE_COVENEYES_COVEN_OF_EYES_MAGIC" />
+            <div element="ID_WIKI_ARCHETYPE_FEATURE_COVENEYES_DARKEST_SIGHT" />
+            <div element="ID_WIKI_ARCHETYPE_FEATURE_COVENEYES_WITCH_EYES" />
+            <div element="ID_WIKI_ARCHETYPE_FEATURE_COVENEYES_SIGHT_BEYOND_SIGHT" />
+            <div element="ID_WIKI_ARCHETYPE_FEATURE_COVENEYES_WITCHS_BREW" />
+            <div element="ID_WIKI_ARCHETYPE_FEATURE_COVENEYES_UNNATURAL_PRECISION" />
+        </description>
+        <sheet display="false" />
+        <setters>
+            <set name="sourceUrl">https://www.dandwiki.com/w/index.php?title=Gun_Witch_(5e_Class)&amp;oldid=1663881#Coven_of_Eyes</set>
+        </setters>
+        <rules>
+            <grant type="Archetype Feature" id="ID_WIKI_ARCHETYPE_FEATURE_COVENEYES_COVEN_OF_EYES_MAGIC" level="3" />
+            <grant type="Archetype Feature" id="ID_WIKI_ARCHETYPE_FEATURE_COVENEYES_DARKEST_SIGHT" level="3" />
+            <grant type="Archetype Feature" id="ID_WIKI_ARCHETYPE_FEATURE_COVENEYES_WITCH_EYES" level="3" />
+            <grant type="Archetype Feature" id="ID_WIKI_ARCHETYPE_FEATURE_COVENEYES_SIGHT_BEYOND_SIGHT" level="7" />
+            <grant type="Archetype Feature" id="ID_WIKI_ARCHETYPE_FEATURE_COVENEYES_WITCHS_BREW" level="11" />
+            <grant type="Archetype Feature" id="ID_WIKI_ARCHETYPE_FEATURE_COVENEYES_UNNATURAL_PRECISION" level="15" />
+        </rules>
+    </element>
+    <element name="Coven of Eyes Magic" type="Archetype Feature" source="D&amp;D Wiki" id="ID_WIKI_ARCHETYPE_FEATURE_COVENEYES_COVEN_OF_EYES_MAGIC">
+        <description>
+            <p>Starting at 3rd level, you learn an additional spell when you reach certain levels in this class, as shown in the Coven of Eyes Spells table. The spell counts as a Gun Witch spell for you, but it doesn’t count against the number of Gun Witch Spells you know.</p>
+            <table>
+                <thead>
+                    <tr><td>Gun Witch Spells</td><td>Spell</td></tr>
+                </thead>
+                <tr><td>3rd</td><td>Enhance Ability</td></tr>
+                <tr><td>5th</td><td>See Invisibility</td></tr>
+                <tr><td>9th</td><td>Clairovoyance</td></tr>
+                <tr><td>13th</td><td>Locate Creature</td></tr>
+                <tr><td>17th</td><td>Arcane Eye</td></tr>
+            </table>
+        </description>
+        <sheet display="false" />
+        <setters>
+            <set name="sourceUrl">https://www.dandwiki.com/w/index.php?title=Gun_Witch_(5e_Class)&amp;oldid=1663881#Coven_of_Eyes</set>
+        </setters>
+        <spellcasting name="Gun Witch" extend="true">
+			<extend>ID_PHB_SPELL_ENHANCE_ABILITY</extend>
+			<extend>ID_PHB_SPELL_SEE_INVISIBILITY</extend>
+			<extend>ID_PHB_SPELL_CLAIRVOYANCE</extend>
+			<extend>ID_PHB_SPELL_LOCATE_CREATURE</extend>
+			<extend>ID_PHB_SPELL_ARCANE_EYE</extend>
+		</spellcasting>
+    </element>
+    <element name="Darkest Sight" type="Archetype Feature" source="D&amp;D Wiki" id="ID_WIKI_ARCHETYPE_FEATURE_COVENEYES_DARKEST_SIGHT">
+        <description>
+            <p>At 3rd level, you gain Darkvision out to a range of 30 feet. If you already have Darkvision from your race, its range increases by 30 feet. At night, its range increases by 30 feet.</p>
+            <p class="indent">You are also better at fighting enemies while shrouded in darkness. While in darkness, you gain +2 AC and attack rolls.</p>
+        </description>
+        <sheet>
+            <description>You gain Darkvision out to a range of 30 feet. If you already have Darkvision from your race, its range increases by 30 feet. At night, its range increases by 30 feet. You are also better at fighting enemies while shrouded in darkness. While in darkness, you gain +2 AC and attack rolls.</description>
+        </sheet>
+        <setters>
+            <set name="sourceUrl">https://www.dandwiki.com/w/index.php?title=Gun_Witch_(5e_Class)&amp;oldid=1663881#Coven_of_Eyes</set>
+        </setters>
+    </element>
+    <element name="Witch Eyes" type="Archetype Feature" source="D&amp;D Wiki" id="ID_WIKI_ARCHETYPE_FEATURE_COVENEYES_WITCH_EYES">
+        <description>
+            <p>At 3rd level, your eyes change to your weird, animalistic nature. You learn the Find Familiar spell and can cast it as a ritual. The spell doesn’t count against your number of Spells known. It's forms are limited by which feature you choose. Gain one of the following features of your choice.</p>
+            <p class="indent"><strong>Avian Eyes.</strong> Your familiar is limited to: hawk, owl, and raven. You have advantage on Wisdom (Perception) checks while your familiar is present. You can perfectly impersonate any voice or sound that you have heard as long your familiar is present. You can remember three voices and any number of sounds.</p>
+            <p class="indent"><strong>Feline Gaze.</strong> Your familiar is limited to: cat. You have advantage on Dexterity (Acrobatics) checks while your familiar is present. Additionally, you don’t make noise unless you choose to, no matter what you’re doing as long as your familiar is present.</p>
+            <p class="indent"><strong>Serpentine View.</strong> Your familiar is limited to: lizard or poisonous snake. You have advantage on Dexterity (Stealth) checks while your familiar is present. As long as you remain still, you are impossible to distinguish from any background. This effect will not work if your familiar is not present; or if someone was already aware of or looking at you.</p>
+        </description>
+        <sheet>
+            <description>Your eyes change to your weird, animalistic nature. You learn the Find Familiar spell and can cast it as a ritual. The spell doesn’t count against your number of Spells known. It's forms are limited by which feature you choose.</description>
+        </sheet>
+        <setters>
+            <set name="sourceUrl">https://www.dandwiki.com/w/index.php?title=Gun_Witch_(5e_Class)&amp;oldid=1663881#Coven_of_Eyes</set>
+        </setters>
+        <rules>
+            <select type="Archetype Feature" name="Witch Eyes Familar, Coven of Eyes" supports="Coven of Eyes" />
+            <grant type="Spell" id="ID_PHB_SPELL_FIND_FAMILIAR" />
+        </rules>
+    </element>
+    <element name="Avian Eyes" type="Archetype Feature" source="D&amp;D Wiki" id="ID_WIKI_GUN_WITCH_AVIAN_EYES">
+        <supports>Coven of Eyes</supports>
+        <description>
+            <p>Your familiar is limited to: hawk, owl, and raven. You have advantage on Wisdom (Perception) checks while your familiar is present. You can perfectly impersonate any voice or sound that you have heard as long your familiar is present. You can remember three voices and any number of sounds.</p>
+        </description>
+        <sheet>
+            <description>Your familiar is limited to: hawk, owl, and raven. You have advantage on Wisdom (Perception) checks while your familiar is present. You can perfectly impersonate any voice or sound that you have heard as long your familiar is present. You can remember three voices and any number of sounds.</description>
+        </sheet>
+        <setters>
+            <set name="sourceUrl">https://www.dandwiki.com/w/index.php?title=Gun_Witch_(5e_Class)&amp;oldid=1663881#Coven_of_Eyes</set>
+        </setters>
+        <rules>
+            <select type="Companion" name="Avian Eyes" supports="Familiar, Avian Eyes" />
+        </rules>
+    </element>
+    <append id="ID_WOTC_PHB_COMPANION_HAWK">
+        <supports>Avian Eyes</supports>
+    </append>
+    <append id="ID_WOTC_PHB_COMPANION_OWL">
+        <supports>Avian Eyes</supports>
+    </append>
+    <append id="ID_WOTC_PHB_COMPANION_RAVEN">
+        <supports>Avian Eyes</supports>
+    </append>
+    <element name="Feline Gaze" type="Archetype Feature" source="D&amp;D Wiki" id="ID_WIKI_GUN_WITCH_FELINE_GAZE">
+        <supports>Coven of Eyes</supports>
+        <description>
+            <p>Your familiar is limited to: cat. You have advantage on Dexterity (Acrobatics) checks while your familiar is present. Additionally, you don’t make noise unless you choose to, no matter what you’re doing as long as your familiar is present.</p>
+        </description>
+        <sheet>
+            <description>Your familiar is limited to: cat. You have advantage on Dexterity (Acrobatics) checks while your familiar is present. Additionally, you don’t make noise unless you choose to, no matter what you’re doing as long as your familiar is present.</description>
+        </sheet>
+        <setters>
+            <set name="sourceUrl">https://www.dandwiki.com/w/index.php?title=Gun_Witch_(5e_Class)&amp;oldid=1663881#Coven_of_Eyes</set>
+        </setters>
+        <rules>
+            <grant type="Companion" id="ID_WOTC_PHB_COMPANION_CAT" />
+        </rules>
+    </element>
+    <element name="Serpentine View" type="Archetype Feature" source="D&amp;D Wiki" id="ID_WIKI_GUN_WITCH_SERPENTINE_VIEW">
+        <supports>Coven of Eyes</supports>
+        <description>
+            <p>Your familiar is limited to: lizard or poisonous snake. You have advantage on Dexterity (Stealth) checks while your familiar is present. As long as you remain still, you are impossible to distinguish from any background. This effect will not work if your familiar is not present; or if someone was already aware of or looking at you.</p>
+        </description>
+        <sheet>
+            <description>Your familiar is limited to: lizard or poisonous snake. You have advantage on Dexterity (Stealth) checks while your familiar is present. As long as you remain still, you are impossible to distinguish from any background. This effect will not work if your familiar is not present; or if someone was already aware of or looking at you.</description>
+        </sheet>
+        <setters>
+            <set name="sourceUrl">https://www.dandwiki.com/w/index.php?title=Gun_Witch_(5e_Class)&amp;oldid=1663881#Coven_of_Eyes</set>
+        </setters>
+        <rules>
+            <select type="Companion" name="Serpentine View" supports="Familiar, Serpentine View" />
+        </rules>
+    </element>
+    <append id="ID_WOTC_PHB_COMPANION_LIZARD">
+        <supports>Serpentine View</supports>
+    </append>
+    <append id="ID_WOTC_PHB_COMPANION_POISONOUS_SNAKE">
+        <supports>Serpentine View</supports>
+    </append>
+    <element name="Sight Beyond Sight" type="Archetype Feature" source="D&amp;D Wiki" id="ID_WIKI_ARCHETYPE_FEATURE_COVENEYES_SIGHT_BEYOND_SIGHT">
+        <description>
+            <p>At 7th level, inscribe an eye-like mark on a weapon or piece of clothing. As long as you are wielding or wearing that item you gain +1 to your Passive Perception while your eyes are closed, you cannot be Blinded, and enemies do not gain any benefit from half cover when you act against them.</p>
+        </description>
+        <sheet>
+            <description>Inscribe an eye-like mark on a weapon or piece of clothing. As long as you are wielding or wearing that item you gain +1 to your Passive Perception while your eyes are closed, you cannot be Blinded, and enemies do not gain any benefit from half cover when you act against them.</description>
+        </sheet>
+        <setters>
+            <set name="sourceUrl">https://www.dandwiki.com/w/index.php?title=Gun_Witch_(5e_Class)&amp;oldid=1663881#Coven_of_Eyes</set>
+        </setters>
+    </element>
+    <element name="Witch's Brew" type="Archetype Feature" source="D&amp;D Wiki" id="ID_WIKI_ARCHETYPE_FEATURE_COVENEYES_WITCHS_BREW">
+        <description>
+            <p>At 11th level, you become better a crafting potions and brews to augment your sight. You gain expertise with Alchemist’s supplies. You also gain the ability to craft two unique potions. You need to have the materials to store these potions to make them, such as a Flask, a Glass Bottle, a Vial, or Waterskin.</p>
+        </description>
+        <sheet>
+            <description>You gain expertise with Alchemist’s supplies. You also gain the ability to craft two unique potions. You need to have the materials to store these potions to make them, such as a Flask, a Glass Bottle, a Vial, or Waterskin. &#13;
+                Dead Eye Ale.After you drink this potion, whether it is before combat or using the use an object action during combat, your ranged attacks during the next two rounds have advantage and roll with a +2 bonus. The white of your eyes become pitch black while under the effects of this potion. &#13;
+                Feral Fair Lady Elixir. After you drink this potion, whether it is before combat or using the use an object action during combat, you have heightened animal instincts. You gain a number of temporary hit points equal to double your level. While under the effects of this potion, your attacks gain a penalty equal to your proficiency bonus and your damage gains a bonus equal to your level. You also gain a bonus on any Wisdom (Perception) checks equal to your proficiency bonus. Your eyes seem be like that of a wild beast. When you lose these temporary hit points or after ten minutes (whichever comes first), you return to normal.
+            </description>
+        </sheet>
+        <setters>
+            <set name="sourceUrl">https://www.dandwiki.com/w/index.php?title=Gun_Witch_(5e_Class)&amp;oldid=1663881#Coven_of_Eyes</set>
+        </setters>
+    </element>
+    <element name="Unnatural Precision" type="Archetype Feature" source="D&amp;D Wiki" id="ID_WIKI_ARCHETYPE_FEATURE_COVENEYES_UNNATURAL_PRECISION">
+        <description>
+            <p>At 15th level, you can cause your ammunition to change course mid-air. Whenever you roll an attack, you can choose to add your Spell Attack bonus to the attack roll. This attack ignores three-quarters cover and full cover. You can use this feature a number of times equal to your Intelligence modifier (a minimum of once). Then, you need to finish a long rest before you can use this feature again.</p>
+        </description>
+        <sheet>
+            <description>Whenever you roll an attack, you can choose to add your Spell Attack bonus to the attack roll. This attack ignores three-quarters cover and full cover. You can use this feature a number of times equal to your Intelligence modifier (a minimum of once). Then, you need to finish a long rest before you can use this feature again.</description>
+        </sheet>
+        <setters>
+            <set name="sourceUrl">https://www.dandwiki.com/w/index.php?title=Gun_Witch_(5e_Class)&amp;oldid=1663881#Coven_of_Eyes</set>
+        </setters>
+    </element>
+
+    <element name="Coven of Hexes" type="Archetype" source="D&amp;D Wiki" id="ID_WIKI_SUBCLASS_COVEN_OF_HEXES">
+        <supports>Witch Coven</supports>
+        <description>
+            <p>Masters of using runic figures and magics to empower items. Improving upon their hexed weapons further than other Gun Witches as well as creating unique ammunition. Customizing their weapons, ammunition, and even some of their own belongings. Often called Hexslingers or Witches of the Hex, they style themselves as notorious innovators and often more interested in mixing magic with technology, rather than using the tech as something supplementary to their magic.</p>
+            <div element="ID_WIKI_ARCHETYPE_FEATURE_COVENHEXES_COVEN_OF_HEXES_MAGIC" />
+            <div element="ID_WIKI_ARCHETYPE_FEATURE_COVENHEXES_CUSTOMIZED_WEAPONS" />
+            <div element="ID_WIKI_ARCHETYPE_FEATURE_COVENHEXES_ROLL_THE_HEXES" />
+            <div element="ID_WIKI_ARCHETYPE_FEATURE_COVENHEXES_HEXED_AMMUNITION" />
+            <div element="ID_WIKI_ARCHETYPE_FEATURE_COVENHEXES_DEADLY_HEXES" />
+            <div element="ID_WIKI_ARCHETYPE_FEATURE_COVENHEXES_HEXMEISTER" />
+        </description>
+        <sheet display="false" />
+        <setters>
+            <set name="sourceUrl">https://www.dandwiki.com/w/index.php?title=Gun_Witch_(5e_Class)&amp;oldid=1663881#Coven_of_Hexes</set>
+        </setters>
+        <rules>
+            <grant type="Archetype Feature" id="ID_WIKI_ARCHETYPE_FEATURE_COVENHEXES_COVEN_OF_HEXES_MAGIC" level="3" />
+            <grant type="Archetype Feature" id="ID_WIKI_ARCHETYPE_FEATURE_COVENHEXES_CUSTOMIZED_WEAPONS" level="3" />
+            <grant type="Archetype Feature" id="ID_WIKI_ARCHETYPE_FEATURE_COVENHEXES_ROLL_THE_HEXES" level="3" />
+            <grant type="Archetype Feature" id="ID_WIKI_ARCHETYPE_FEATURE_COVENHEXES_HEXED_AMMUNITION" level="7" />
+            <grant type="Archetype Feature" id="ID_WIKI_ARCHETYPE_FEATURE_COVENHEXES_DEADLY_HEXES" level="11" />
+            <grant type="Archetype Feature" id="ID_WIKI_ARCHETYPE_FEATURE_COVENHEXES_HEXMEISTER" level="15" />
+        </rules>
+    </element>
+    <element name="Coven of Hexes Magic" type="Archetype Feature" source="D&amp;D Wiki" id="ID_WIKI_ARCHETYPE_FEATURE_COVENHEXES_COVEN_OF_HEXES_MAGIC">
+        <description>
+            <p>Starting at 3rd level, you learn an additional spell when you reach certain levels in this class, as shown in the Coven of Hexes Spells table. The spell counts as a Gun Witch spell for you, but it doesn’t count against the number of Gun Witch Spells you know.</p>
+            <table>
+                <thead>
+                    <tr><td>Gun Witch Spells</td><td>Spell</td></tr>
+                </thead>
+                <tr><td>3rd</td><td>Mending</td></tr>
+                <tr><td>5th</td><td>Locate Object</td></tr>
+                <tr><td>9th</td><td>Glyph of Warding</td></tr>
+                <tr><td>13th</td><td>Elemental Bane</td></tr>
+                <tr><td>17th</td><td>Legend Lore</td></tr>
+            </table>
+        </description>
+        <sheet display="false" />
+        <setters>
+            <set name="sourceUrl">https://www.dandwiki.com/w/index.php?title=Gun_Witch_(5e_Class)&amp;oldid=1663881#Coven_of_Hexes</set>
+        </setters>
+        <spellcasting name="Gun Witch" extend="true">
+			<extend>ID_PHB_SPELL_MENDING</extend>
+			<extend>ID_PHB_SPELL_LOCATE_OBJECT</extend>
+			<extend>ID_PHB_SPELL_GLYPH_OF_WARDING</extend>
+			<extend>ID_XGTE_SPELL_ELEMENTAL_BANE</extend>
+			<extend>ID_PHB_SPELL_LEGEND_LORE</extend>
+		</spellcasting>
+    </element>
+    <element name="Customized Weapons" type="Archetype Feature" source="D&amp;D Wiki" id="ID_WIKI_ARCHETYPE_FEATURE_COVENHEXES_CUSTOMIZED_WEAPONS">
+        <description>
+            <p>At 3rd level, you gain proficiency with hidden weapons and all your weapons gain the hidden property (two-handed and versatile fold) after you spend a short rest tinkering with them. After you tinker with them in this way, only you can wield them effectively and anyone else who wields them rolls attacks with disadvantage and without proficiency.</p>
+        </description>
+        <sheet>
+            <description>You gain proficiency with hidden weapons and all your weapons gain the hidden property (two-handed and versatile fold) after you spend a short rest tinkering with them. After you tinker with them in this way, only you can wield them effectively and anyone else who wields them rolls attacks with disadvantage and without proficiency.</description>
+        </sheet>
+        <setters>
+            <set name="sourceUrl">https://www.dandwiki.com/w/index.php?title=Gun_Witch_(5e_Class)&amp;oldid=1663881#Coven_of_Hexes</set>
+        </setters>
+    </element>
+    <element name="Roll the Hexes" type="Archetype Feature" source="D&amp;D Wiki" id="ID_WIKI_ARCHETYPE_FEATURE_COVENHEXES_ROLL_THE_HEXES">
+        <description>
+            <p>At 3rd level, you engrave a hex sigil or rune on a set of small stones, small bones, or dice. Gain two d6; as an action, you can roll these dice to produce a magical effect.</p>
+            <ul>
+                <li>Drop your hexed runes at your current space, they melt into the ground. As an action, you can teleport back to this space as long as you remain within 60 feet of it. You can do this once, then you would need to roll this effect again. After an hour, the runes magic fades and you are unable to use this action.</li>
+                <li>Throw your hexed runes at a space within 30 feet, they explode and flash with a bright light. Each creature within 10 feet of the space of where the runes landed must make a Dexterity saving throw against your spell save DC. On a failure, they are blinded until the end of their next turn.</li>
+                <li>Your runes harmlessly burn into your hands producing a red smoke around you, concealing you. This smokes functions the same as half cover. This smoke lasts until the end of your next turn.</li>
+            </ul>
+            <p class="indent">After roll these hexed trinkets three times, you need to finish a short rest before you can use this feature again. At 7th, 11th, and 15th level increase the number of times you can use this feature by 1 (Ex. at 7th level, you can roll the hexed trinkets four times and etc). If you lose these trinkets, the process to replace them takes an hour.</p>
+        </description>
+        <sheet action="{{rollhex:usage}} usages" usage="Short Rest">
+            <description>You engrave a hex sigil or rune on a set of small stones, small bones, or dice. Gain two d6; as an action, you can roll these dice to produce a magical effect.&#13;
+                • Drop your hexed runes at your current space, they melt into the ground. As an action, you can teleport back to this space as long as you remain within 60 feet of it. You can do this once, then you would need to roll this effect again. After an hour, the runes magic fades and you are unable to use this action. &#13;
+                • Throw your hexed runes at a space within 30 feet, they explode and flash with a bright light. Each creature within 10 feet of the space of where the runes landed must make a Dexterity saving throw against your spell save DC. On a failure, they are blinded until the end of their next turn.&#13;
+                • Your runes harmlessly burn into your hands producing a red smoke around you, concealing you. This smokes functions the same as half cover. This smoke lasts until the end of your next turn.&#13;
+                If you lose these trinkets, the process to replace them takes an hour.
+            </description>
+        </sheet>
+        <setters>
+            <set name="sourceUrl">https://www.dandwiki.com/w/index.php?title=Gun_Witch_(5e_Class)&amp;oldid=1663881#Coven_of_Hexes</set>
+        </setters>
+        <rules>
+            <stat name="rollhex:usage" value="2" bonus="base" />
+            <stat name="rollhex:usage" value="1" level="7" />
+            <stat name="rollhex:usage" value="1" level="11" />
+            <stat name="rollhex:usage" value="1" level="15" />
+        </rules>
+    </element>
+    <element name="Hexed Ammunition" type="Archetype Feature" source="D&amp;D Wiki" id="ID_WIKI_ARCHETYPE_FEATURE_COVENHEXES_HEXED_AMMUNITION">
+        <description>
+            <p>At 7th level, you can use your Smith's Tools to hammer hexes into your ammunition. When you do so, the process takes up to two hours per 10 ammunition (arrows, bullets, etc.) to convert it into the desired hexed ammunition. You can use this process on silvered ammunition and it retains its silvered property in addition to becoming hexed. You must declare you are using this ammunition when you load or reload your weapon. You can craft two unique ammunition types.</p>
+            <ul>
+                <li><strong>Banshee Hex Ammunition.</strong> On a successful hit, the enemy must succeed a Wisdom saving throw or take 1d4 psychic damage. This damage counts as magical for the purpose of resistances. On a critical hit, an enemy who fails the saving throw becomes frightened.</li>
+                <li><strong>Behir Hex Ammunition.</strong> On a successful hit, replace your ammunition damage type with lightning damage. This damage counts as magical for the purpose of resistances. On a critical hit, the enemy must succeed a Constitution saving throw or become stunned.</li>
+            </ul>
+            <p class="indent">If someone uses a non-hexed weapon or a weapon that isn't your familiar weapon to fire this ammunition, after the attack roll, roll a percentile die. If the outcome is below 50, the weapon breaks.</p>
+        </description>
+        <sheet>
+            <description>You can use your Smith's Tools to hammer hexes into your ammunition. When you do so, the process takes up to two hours per 10 ammunition (arrows, bullets, etc.) to convert it into the desired hexed ammunition. You can use this process on silvered ammunition and it retains its silvered property in addition to becoming hexed. You must declare you are using this ammunition when you load or reload your weapon. You can craft two unique ammunition types. &#13;
+                • Banshee Hex Ammunition. On a successful hit, the enemy must succeed a Wisdom saving throw or take 1d4 psychic damage. This damage counts as magical for the purpose of resistances. On a critical hit, an enemy who fails the saving throw becomes frightened.&#13;
+                • Behir Hex Ammunition. On a successful hit, replace your ammunition damage type with lightning damage. This damage counts as magical for the purpose of resistances. On a critical hit, the enemy must succeed a Constitution saving throw or become stunned.&#13;
+                If someone uses a non-hexed weapon or a weapon that isn't your familiar weapon to fire this ammunition, after the attack roll, roll a percentile die. If the outcome is below 50, the weapon breaks.
+            </description>
+        </sheet>
+        <setters>
+            <set name="sourceUrl">https://www.dandwiki.com/w/index.php?title=Gun_Witch_(5e_Class)&amp;oldid=1663881#Coven_of_Hexes</set>
+        </setters>
+    </element>
+    <element name="Deadly Hexes" type="Archetype Feature" source="D&amp;D Wiki" id="ID_WIKI_ARCHETYPE_FEATURE_COVENHEXES_DEADLY_HEXES">
+        <description>
+            <p>At 11th level, you hammer more potent magic in to your hexed weapons and ammunition. After hitting an enemy with hexed weapon or ammunition their AC is lowered by 1. This doesn't apply more than once. When you fire your last piece of hexed ammunition, flip a coin. On heads, on a successful hit it deals 1d4 force damage to all creatures within 5 feet of the creature you hit. On tails, on a successful hit it deals 1d4 necrotic damage at the end of the creature's next turn.</p>
+        </description>
+        <sheet>
+            <description>After hitting an enemy with hexed weapon or ammunition their AC is lowered by 1. This doesn't apply more than once. When you fire your last piece of hexed ammunition, flip a coin. On heads, on a successful hit it deals 1d4 force damage to all creatures within 5 feet of the creature you hit. On tails, on a successful hit it deals 1d4 necrotic damage at the end of the creature's next turn.</description>
+        </sheet>
+    </element>
+    <element name="Hexmeister" type="Archetype Feature" source="D&amp;D Wiki" id="ID_WIKI_ARCHETYPE_FEATURE_COVENHEXES_HEXMEISTER">
+        <description>
+            <p>At 15th level, your hexed ammunition becomes more potent in your hands. When declaring an attack you speak a set of magic words that your weapon responds to. If your attack is successful, the ammunition creates a small magical explosion that knocks the enemy back 10 feet. You can use this feature a number of times equal to your Intelligence modifier (a minimum of once). Then, you need to finish a long rest before you can use this feature again.</p>
+            <p class="indent">In addition to this, you can use the remaining cantrips on the Weapon Hex list with your hexed weapons. You also learn a third ammunition hex.</p>
+            <ul>
+                <li><strong>Witch Hex Ammunition.</strong> On a successful hit, regain a 1st level spell slot if you have expended any. On a critical hit, your appearance changes into a horrific shape to the enemy and has disadvantage on attack rolls and ability checks against you. The appearance is an illusory effect. These effects last until the end of the enemy's next turn.</li>
+            </ul>
+        </description>
+        <sheet>
+            <description>When declaring an attack you speak a set of magic words that your weapon responds to. If your attack is successful, the ammunition creates a small magical explosion that knocks the enemy back 10 feet. You can use this feature a number of times equal to your Intelligence modifier (a minimum of once). Then, you need to finish a long rest before you can use this feature again. In addition to this, you can use the remaining cantrips on the Weapon Hex list with your hexed weapons. You also learn a third ammunition hex.&#13;
+                • Witch Hex Ammunition. On a successful hit, regain a 1st level spell slot if you have expended any. On a critical hit, your appearance changes into a horrific shape to the enemy and has disadvantage on attack rolls and ability checks against you. The appearance is an illusory effect. These effects last until the end of the enemy's next turn.
+            </description>
+        </sheet>
+        <setters>
+            <set name="sourceUrl">https://www.dandwiki.com/w/index.php?title=Gun_Witch_(5e_Class)&amp;oldid=1663881#Coven_of_Hexes</set>
+        </setters>
+    </element>
+
+    <!-- Spell List - First Level -->
+    <append id="ID_PHB_SPELL_CHARM_PERSON">
+        <supports>Gun Witch</supports>
+    </append>
+    <append id="ID_PHB_SPELL_COLOR_SPRAY">
+        <supports>Gun Witch</supports>
+    </append>
+    <append id="ID_PHB_SPELL_COMPELLED_DUEL">
+        <supports>Gun Witch</supports>
+    </append>
+    <append id="ID_PHB_SPELL_DETECT_MAGIC">
+        <supports>Gun Witch</supports>
+    </append>
+    <append id="ID_PHB_SPELL_EXPEDITIOUS_RETREAT">
+        <supports>Gun Witch</supports>
+    </append>
+    <append id="ID_PHB_SPELL_FAERIE_FIRE">
+        <supports>Gun Witch</supports>
+    </append>
+    <append id="ID_PHB_SPELL_FEATHER_FALL">
+        <supports>Gun Witch</supports>
+    </append>
+    <append id="ID_PHB_SPELL_HEX">
+        <supports>Gun Witch</supports>
+    </append>
+    <append id="ID_PHB_SPELL_MAGE_ARMOR">
+        <supports>Gun Witch</supports>
+    </append>
+    <append id="ID_PHB_SPELL_MAGIC_MISSILE">
+        <supports>Gun Witch</supports>
+    </append>
+    <append id="ID_XGTE_SPELL_ICE_KNIFE">
+        <supports>Gun Witch</supports>
+    </append>
+    <append id="ID_PHB_SPELL_SHIELD">
+        <supports>Gun Witch</supports>
+    </append>
+    <append id="ID_PHB_SPELL_WITCH_BOLT">
+        <supports>Gun Witch</supports>
+    </append>
+
+    <!-- 2nd Level -->
+    <append id="ID_PHB_SPELL_MELFS_ACID_ARROW">
+        <supports>Gun Witch</supports>
+    </append>
+    <append id="ID_PHB_SPELL_BLUR">
+        <supports>Gun Witch</supports>
+    </append>
+    <append id="ID_PHB_SPELL_BLINDNESS_DEAFNESS">
+        <supports>Gun Witch</supports>
+    </append>
+    <append id="ID_PHB_SPELL_CLOUD_OF_DAGGERS">
+        <supports>Gun Witch</supports>
+    </append>
+    <append id="ID_PHB_SPELL_CORDON_OF_ARROWS">
+        <supports>Gun Witch</supports>
+    </append>
+    <append id="ID_XGTE_SPELL_DUST_DEVIL">
+        <supports>Gun Witch</supports>
+    </append>
+    <append id="ID_PHB_SPELL_HEAT_METAL">
+        <supports>Gun Witch</supports>
+    </append>
+    <append id="ID_PHB_SPELL_LEVITATE">
+        <supports>Gun Witch</supports>
+    </append>
+    <append id="ID_PHB_SPELL_MAGIC_WEAPON">
+        <supports>Gun Witch</supports>
+    </append>
+    <append id="ID_PHB_SPELL_MIRROR_IMAGE">
+        <supports>Gun Witch</supports>
+    </append>
+    <append id="ID_PHB_SPELL_MISTY_STEP">
+        <supports>Gun Witch</supports>
+    </append>
+    <append id="ID_PHB_SPELL_PHANTASMAL_FORCE">
+        <supports>Gun Witch</supports>
+    </append>
+    <append id="ID_XGTE_SPELL_PYROTECHNICS">
+        <supports>Gun Witch</supports>
+    </append>
+
+    <!-- 3rd level -->
+    <append id="ID_PHB_SPELL_CONJURE_BARRAGE">
+        <supports>Gun Witch</supports>
+    </append>
+    <append id="ID_PHB_SPELL_DISPEL_MAGIC">
+        <supports>Gun Witch</supports>
+    </append>
+    <append id="ID_PHB_SPELL_ELEMENTAL_WEAPON">
+        <supports>Gun Witch</supports>
+    </append>
+    <append id="ID_PHB_SPELL_FEAR">
+        <supports>Gun Witch</supports>
+    </append>
+    <append id="ID_PHB_SPELL_FLY">
+        <supports>Gun Witch</supports>
+    </append>
+    <append id="ID_PHB_SPELL_HASTE">
+        <supports>Gun Witch</supports>
+    </append>
+    <append id="ID_PHB_SPELL_HYPNOTIC_PATTERN">
+        <supports>Gun Witch</supports>
+    </append>
+    <append id="ID_PHB_SPELL_LIGHTNING_ARROW">
+        <supports>Gun Witch</supports>
+    </append>
+    <append id="ID_PHB_SPELL_MAGIC_CIRCLE">
+        <supports>Gun Witch</supports>
+    </append>
+    <append id="ID_PHB_SPELL_SLOW">
+        <supports>Gun Witch</supports>
+    </append>
+
+    <!-- 4th level -->
+    <append id="ID_PHB_SPELL_BLIGHT">
+        <supports>Gun Witch</supports>
+    </append>
+    <append id="ID_PHB_SPELL_FIRE_SHIELD">
+        <supports>Gun Witch</supports>
+    </append>
+    <append id="ID_PHB_SPELL_FREEDOM_OF_MOVEMENT">
+        <supports>Gun Witch</supports>
+    </append>
+    <append id="ID_PHB_SPELL_GREATER_INVISIBILITY">
+        <supports>Gun Witch</supports>
+    </append>
+
+    <!-- 5th level -->
+    <append id="ID_PHB_SPELL_CONJURE_VOLLEY">
+        <supports>Gun Witch</supports>
+    </append>
+    <append id="ID_PHB_SPELL_PASSWALL">
+        <supports>Gun Witch</supports>
+    </append>
+    <append id="ID_PHB_SPELL_SWIFT_QUIVER">
+        <supports>Gun Witch</supports>
+    </append>
+    <append id="ID_PHB_SPELL_MISLEAD">
+        <supports>Gun Witch</supports>
+    </append>
+</elements>

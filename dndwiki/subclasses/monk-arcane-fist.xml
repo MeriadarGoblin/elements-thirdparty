@@ -1,0 +1,658 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<elements>
+	<info>
+        <description>The Monk Way of the Arcane Fist subclass from D&amp;D Wiki, created by user "ZarHakkar", with contributions from users "SwankyPants", and "SirSprinkles."</description>
+		<author url="https://www.dandwiki.com/w/index.php?title=Way_of_the_Arcane_Fist_(5e_Subclass)&amp;oldid=1735427">D&amp;D Wiki</author>
+		<update version="0.0.1">
+			<file name="monk-arcane-fist.xml" url="https://raw.githubusercontent.com/MeriadarGoblin/elements-thirdparty/main/dndwiki/subclasses/monk-arcane-fist.xml" />
+		</update>
+    </info>
+
+	<element name="Way of the Arcane Fist" type="Archetype" source="D&amp;D Wiki" id="ID_WIKI_SUBCLASS_WAY_OF_THE_ARCANE_FIST">
+		<supports>Monastic Tradition</supports>
+		<description>
+			<p>Monks of the Way of the Arcane Fist see a two-fold path to true enlightenment. The first is through meditation to understand oneself spiritually. The second is through study and research to understand the universe intellectually. Only through achieving the end of these two goals will one be able to understand the true place of oneself in the universe. To that end, monks of the Arcane Fist complement their rigorous martial training with an equally-rigorous curriculum of magical study, research, and memorization.</p>
+			<div element="ID_WIKI_ARCHETYPE_FEATURE_WAY_OF_THE_ARCANE_FIST_SPELLCASTING" />
+			<div element="ID_WIKI_ARCHETYPE_FEATURE_WAY_OF_THE_ARCANE_FIST_MARTIAL_CASTING" />
+			<div element="ID_WIKI_ARCHETYPE_FEATURE_WAY_OF_THE_ARCANE_FIST_UNIVERSAL_ENERGY" />
+			<div element="ID_WIKI_ARCHETYPE_FEATURE_WAY_OF_THE_ARCANE_FIST_ARCANE_REDIRECTION" />
+			<div element="ID_WIKI_ARCHETYPE_FEATURE_WAY_OF_THE_ARCANE_FIST_ENLIGHTENED_ARCANUM" />
+		</description>
+		<sheet display="false" />
+		<setters>
+			<set name="sourceUrl">https://www.dandwiki.com/w/index.php?title=Way_of_the_Arcane_Fist_(5e_Subclass)&amp;oldid=1735427</set>
+		</setters>
+		<rules>
+			<grant type="Archetype Feature" id="ID_WIKI_ARCHETYPE_FEATURE_WAY_OF_THE_ARCANE_FIST_SPELLCASTING"/>
+			<grant type="Archetype Feature" id="ID_WIKI_ARCHETYPE_FEATURE_WAY_OF_THE_ARCANE_FIST_MARTIAL_CASTING" />
+			<grant type="Archetype Feature" id="ID_WIKI_ARCHETYPE_FEATURE_WAY_OF_THE_ARCANE_FIST_UNIVERSAL_ENERGY" level="6" />
+			<grant type="Archetype Feature" id="ID_WIKI_ARCHETYPE_FEATURE_WAY_OF_THE_ARCANE_FIST_ARCANE_REDIRECTION" level="11" />
+			<grant type="Archetype Feature" id="ID_WIKI_ARCHETYPE_FEATURE_WAY_OF_THE_ARCANE_FIST_ENLIGHTENED_ARCANUM" level="17" />
+		</rules>
+	</element>
+	<element name="Spellcasting" type="Archetype Feature" source="D&amp;D Wiki" id="ID_WIKI_ARCHETYPE_FEATURE_WAY_OF_THE_ARCANE_FIST_SPELLCASTING">
+		<description>
+			<p>When you reach 3rd level, you augment your martial prowess with the ability to cast spells.</p>
+			<p class="indent"><b><i>Cantrips. </i></b>You learn two cantrips of your choice from the arcane fist spell list. You learn an additional arcane fist cantrip of your choice at 10th level.</p>
+			<p class="indent"><b><i>Spell Slots. </i></b> The Arcane Fist Spellcasting table shows how many spell slots you have to cast your arcane fist spells of 1st level and higher. To cast one of these spells, you must expend a slot of the spell's level or higher. You regain all expended spell slots when you finish a long rest.</p>
+			<p class="indent">For example, if you know the 1st-level spell shield and have a 1st-level and a 2nd-level spell slot available, you can cast shield using either slot.</p>
+			<p class="indent"><b><i>Spells Known of 1st-Level and Higher. </i></b>You know three 1st-level arcane fist spells of your choice.</p>
+			<p class="indent">The Spells Known column of the Arcane Fist Spellcasting table shows when you learn more arcane fist spells of 1st level or higher. Each of these spells must be of a level for which you have spell slots. For instance, when you reach 7th level in this class, you can learn one new spell of 1st or 2nd level.</p>
+			<p class="indent">Whenever you gain a level in this class, you can replace one of the arcane fist spells you know with another spell of your choice from the arcane fist spell list. The new spell must be of a level for which you have spell slots.</p>
+			<p class="indent"><b><i>Spellcasting Ability. </i></b> Intelligence is your spellcasting ability for your arcane fist spells, since you learn your spells through study and memorization. You use your Intelligence whenever a spell refers to your spellcasting ability. In addition, you use your Intelligence modifier when setting the saving throw DC for a arcane fist spell you cast and when making an attack roll with one.</p>
+			<center>
+				<p><b>Spell Save DC</b> = Spell save DC = 8 + your proficiency bonus + your Intelligence modifier</p>
+				<p><b>Spell attack modifier</b> = your proficiency bonus + your Intelligence modifier</p>
+			</center>
+			<h5 class="caption">ARCANE FIST SPELLCASTING</h5>
+			<table class="class-features">
+				<thead>
+					<tr><td class="col-10">Monk Level</td><td class="col-10">Cantrips Known</td><td class="col-10">Spells Known</td><td>1st</td><td>2nd</td><td>3rd</td><td>4th</td></tr>
+				</thead>
+				<tr><td> 3rd</td><td>2</td><td> 3</td><td>2</td><td>—</td><td>—</td><td>—</td></tr>
+				<tr><td> 4th</td><td>2</td><td> 4</td><td>3</td><td>—</td><td>—</td><td>—</td></tr>
+				<tr><td> 5th</td><td>2</td><td> 4</td><td>3</td><td>—</td><td>—</td><td>—</td></tr>
+				<tr><td> 6th</td><td>2</td><td> 4</td><td>3</td><td>—</td><td>—</td><td>—</td></tr>
+				<tr><td> 7th</td><td>2</td><td> 5</td><td>4</td><td>2</td><td>—</td><td>—</td></tr>
+				<tr><td> 8th</td><td>2</td><td> 6</td><td>4</td><td>2</td><td>—</td><td>—</td></tr>
+				<tr><td> 9th</td><td>2</td><td> 6</td><td>4</td><td>2</td><td>—</td><td>—</td></tr>
+				<tr><td>10th</td><td>3</td><td> 7</td><td>4</td><td>3</td><td>—</td><td>—</td></tr>
+				<tr><td>11th</td><td>3</td><td> 8</td><td>4</td><td>3</td><td>—</td><td>—</td></tr>
+				<tr><td>12th</td><td>3</td><td> 8</td><td>4</td><td>3</td><td>—</td><td>—</td></tr>
+				<tr><td>13th</td><td>3</td><td> 9</td><td>4</td><td>3</td><td>2</td><td>—</td></tr>
+				<tr><td>14th</td><td>3</td><td>10</td><td>4</td><td>3</td><td>2</td><td>—</td></tr>
+				<tr><td>15th</td><td>3</td><td>10</td><td>4</td><td>3</td><td>2</td><td>—</td></tr>
+				<tr><td>16th</td><td>3</td><td>11</td><td>4</td><td>3</td><td>3</td><td>—</td></tr>
+				<tr><td>17th</td><td>3</td><td>11</td><td>4</td><td>3</td><td>3</td><td>—</td></tr>
+				<tr><td>18th</td><td>3</td><td>11</td><td>4</td><td>3</td><td>3</td><td>—</td></tr>
+				<tr><td>19th</td><td>3</td><td>12</td><td>4</td><td>3</td><td>3</td><td>1</td></tr>
+				<tr><td>20th</td><td>3</td><td>13</td><td>4</td><td>3</td><td>3</td><td>1</td></tr>
+			</table>
+		</description>
+		<sheet display="false">
+			<description>You augment your martial prowess with the ability to cast spells.</description>
+		</sheet>
+		<setters>
+			<set name="sourceUrl">https://www.dandwiki.com/w/index.php?title=Way_of_the_Arcane_Fist_(5e_Subclass)&amp;oldid=1735427#Spellcasting</set>
+		</setters>
+		<spellcasting name="Arcane Fist" ability="Intelligence" prepare="false" allowReplace="true">
+			<list>Arcane Fist</list>
+		</spellcasting>
+		<rules>
+			<grant type="Grants" id="ID_INTERNAL_GRANT_MULTICLASS_SPELLCASTING_SLOTS_THIRD" requirements="ID_INTERNAL_GRANT_MULTICLASS"/>
+			<stat name="arcane fist:spellcasting:slots:1" value="2" level="3" />
+			<stat name="arcane fist:spellcasting:slots:1" value="1" level="4" />
+			<stat name="arcane fist:spellcasting:slots:1" value="1" level="7" />
+			<stat name="arcane fist:spellcasting:slots:2" value="2" level="7" />
+			<stat name="arcane fist:spellcasting:slots:2" value="1" level="10" />
+			<stat name="arcane fist:spellcasting:slots:3" value="2" level="13" />
+			<stat name="arcane fist:spellcasting:slots:3" value="1" level="16" />
+			<stat name="arcane fist:spellcasting:slots:4" value="1" level="19" />
+			<select type="Spell" name="Cantrip (Arcane Fist)" supports="$(spellcasting:list),0" level="3" number="2" spellcasting="Arcane Fist" />
+			<select type="Spell" name="Cantrip (Arcane Fist)" supports="$(spellcasting:list),0" level="10" number="1" spellcasting="Arcane Fist" />
+			<select type="Spell" name="Spellcasting (Arcane Fist)" supports="$(spellcasting:list), 1" level="3" number="3" spellcasting="Arcane Fist" />
+			<select type="Spell" name="Spellcasting (Arcane Fist)" supports="$(spellcasting:list), $(spellcasting:slots)" level="4" spellcasting="Arcane Fist"/>
+			<select type="Spell" name="Spellcasting (Arcane Fist)" supports="$(spellcasting:list), $(spellcasting:slots)" level="7" spellcasting="Arcane Fist"/>
+			<select type="Spell" name="Spellcasting (Arcane Fist)" supports="$(spellcasting:list), $(spellcasting:slots)" level="8" spellcasting="Arcane Fist"/>
+			<select type="Spell" name="Spellcasting (Arcane Fist)" supports="$(spellcasting:list), $(spellcasting:slots)" level="10" spellcasting="Arcane Fist"/>
+			<select type="Spell" name="Spellcasting (Arcane Fist)" supports="$(spellcasting:list), $(spellcasting:slots)" level="11" spellcasting="Arcane Fist"/>
+			<select type="Spell" name="Spellcasting (Arcane Fist)" supports="$(spellcasting:list), $(spellcasting:slots)" level="13" spellcasting="Arcane Fist"/>
+			<select type="Spell" name="Spellcasting (Arcane Fist)" supports="$(spellcasting:list), $(spellcasting:slots)" level="14" spellcasting="Arcane Fist"/>
+			<select type="Spell" name="Spellcasting (Arcane Fist)" supports="$(spellcasting:list), $(spellcasting:slots)" level="16" spellcasting="Arcane Fist"/>
+			<select type="Spell" name="Spellcasting (Arcane Fist)" supports="$(spellcasting:list), $(spellcasting:slots)" level="19" spellcasting="Arcane Fist"/>
+			<select type="Spell" name="Spellcasting (Arcane Fist)" supports="$(spellcasting:list), $(spellcasting:slots)" level="20" spellcasting="Arcane Fist"/>
+		</rules>
+	</element>
+	<element name="Martial Casting" type="Archetype Feature" source="D&amp;D Wiki" id="ID_WIKI_ARCHETYPE_FEATURE_WAY_OF_THE_ARCANE_FIST_MARTIAL_CASTING">
+		<description>
+			<p>Additionally at 3rd level, by combining the arts of the arcane and the martial, you have learned to perform the gestures needed to cast spells by working them into the natural movements of your body. You gain the following features:</p>
+			<ul>
+				<li>Whenever you cast a spell with a range of 5 feet or less that requires a melee spell attack roll, you can choose to treat the melee spell attack as an unarmed strike made as part of casting the spell.</li>
+				<li>When you cast a spell that has a casting time of 1 action, you can expend a number of ki points equal to 1 + the spell's level to change the casting time to 1 bonus action for the casting.</li>
+			</ul>
+			<p class="indent">In addition, any part of your body that you can make unarmed strikes with is considered a melee weapon worth 1 sp for the purposes of any spells that require a melee weapon as a component.</p>
+		</description>
+		<sheet>
+			<description>Whenever you cast a spell with a range of 5 feet or less that requires a melee spell attack roll, you can choose to treat the melee spell attack as an unarmed strike made as part of casting the spell. &#13;
+				When you cast a spell that has a casting time of 1 action, you can expend a number of ki points equal to 1 + the spell's level to change the casting time to 1 bonus action for the casting.
+			</description>
+		</sheet>
+		<setters>
+			<set name="sourceUrl">https://www.dandwiki.com/w/index.php?title=Way_of_the_Arcane_Fist_(5e_Subclass)&amp;oldid=1735427#Martial_Casting</set>
+		</setters>
+	</element>
+	<element name="Universal Energy" type="Archetype Feature" source="D&amp;D Wiki" id="ID_WIKI_ARCHETYPE_FEATURE_WAY_OF_THE_ARCANE_FIST_UNIVERSAL_ENERGY">
+		<description>
+			<p>At 6th level, your dual practice of magic and the mystic energy of ki have begun to lead you down a path of enlightenment seldom few have traveled. As the first result of this journey to enlightenment, you have discovered a universal relationship between the two forces. You can use your ki points to gain additional spell slots, or sacrifice spell slots to regain ki points.</p>
+			<p class="indent"><b><i>Creating Spell Slots.</i></b> You can transform unexpended ki points into one spell slot as a bonus action on your turn. The created spell slots vanish at the end of a short or long rest. The Creating Spell Slots table shows the cost of creating a spell slot of a given level. You can create spells slots of a level no higher than the highest spell slot you have</p>
+			<p class="indent"><b><i>Converting a Spell Slot to Ki Points</i></b> As a bonus action on your turn, you can expend one spell slot and gain a number of ki points equal to the slot's level.</p>
+			<p class="indent">At 11th level, you uncover a deeper relationship between the two forces, understanding a bit further the complexities of their interaction. You can now cast spells directly from ki points, as well as expend spell slots to perform ki features.</p>
+			<p class="indent">At 17th level, you arrive at your final epiphany: just as ki is concentrated energy generated from the breath of all living things, so too is the Weave energy generated from the life and focus of a goddess; they are one and the same. You can now exchange spell slots and ki points at a 1:1 ratio.</p>
+		</description>
+		<sheet>
+			<description>You can transform unexpended ki points into one spell slot as a bonus action on your turn. The created spell slots vanish at the end of a short or long rest. &#13;
+				As a bonus action on your turn, you can expend one spell slot and gain a number of ki points equal to the slot's level. &#13;
+				Creating Spell Slots: 1st level = 2 Ki Points; 2nd level = 3 Ki Points; 3rd level = 5 Ki Points.
+			</description>
+			<description level="11">You can transform unexpended ki points into one spell slot as a bonus action on your turn. The created spell slots vanish at the end of a short or long rest. &#13;
+				As a bonus action on your turn, you can expend one spell slot and gain a number of ki points equal to the slot's level. &#13;
+				Creating Spell Slots: 1st level = 2 Ki Points; 2nd level = 3 Ki Points; 3rd level = 5 Ki Points. You can cast spells directly from ki points, as well as expend spell slots to perform ki features.
+			</description>
+			<description level="17">You can transform unexpended ki points into one spell slot as a bonus action on your turn. The created spell slots vanish at the end of a short or long rest. &#13;
+				As a bonus action on your turn, you can expend one spell slot and gain a number of ki points equal to the slot's level. &#13;
+				You can now exchange spell slots and ki points at a 1:1 ratio. You can also cast spells directly from ki points, as well as expend spell slots to perform ki features.
+			</description>
+		</sheet>
+		<setters>
+			<set name="sourceUrl">https://www.dandwiki.com/w/index.php?title=Way_of_the_Arcane_Fist_(5e_Subclass)&amp;oldid=1735427#Universal_Energy</set>
+		</setters>
+	</element>
+	<element name="Arcane Redirection" type="Archetype Feature" source="D&amp;D Wiki" id="ID_WIKI_ARCHETYPE_FEATURE_WAY_OF_THE_ARCANE_FIST_ARCANE_REDIRECTION">
+		<description>
+			<p>At 11th level, your understanding of magic and your practice of martial arts have become one and the same. Like redirecting the motion of an opponent's blows, so too can you redirect magical energy with the strength of your spirit.</p>
+			<p class="indent">When targeted by the effect of a spell, you can use your reaction and choose to spend a number of ki points in an attempt to redirect the magical energy away from you. You add the ki points spent as a bonus to your AC and to saving throws made against the spell, and if the spell deals damage, the damage the spell deals against you is reduced by 1d10 per ki point spent + your Intelligence modifier + your monk level.</p>
+			<p class="indent">If the spell has a saving throw that you've passed, and it has dealt no damage to you, you gain control over the spell's energy and can choose either to disperse it safely into the environment or, at the cost of 1 additional ki point, redirect it at a target of your choosing, treating it as if you had cast the spell using your arcane fist spellcasting modifiers.</p>
+		</description>
+		<sheet action="Reaction">
+			<description>When targeted by the effect of a spell, you can use your reaction and choose to spend a number of ki points in an attempt to redirect the magical energy away from you. You add the ki points spent as a bonus to your AC and to saving throws made against the spell, and if the spell deals damage, the damage the spell deals against you is reduced by 1d10 per ki point spent + your Intelligence modifier + your monk level. &#13;
+				If the spell has a saving throw that you've passed, and it has dealt no damage to you, you gain control over the spell's energy and can choose either to disperse it safely into the environment or, at the cost of 1 additional ki point, redirect it at a target of your choosing, treating it as if you had cast the spell using your arcane fist spellcasting modifiers.
+			</description>
+		</sheet>
+		<setters>
+			<set name="sourceUrl">https://www.dandwiki.com/w/index.php?title=Way_of_the_Arcane_Fist_(5e_Subclass)&amp;oldid=1735427#Arcane_Redirection</set>
+		</setters>
+	</element>
+	<element name="Enlightened Arcanum" type="Archetype Feature" source="D&amp;D Wiki" id="ID_WIKI_ARCHETYPE_FEATURE_WAY_OF_THE_ARCANE_FIST_ENLIGHTENED_ARCANUM">
+		<description>
+			<p>At 17th level, your mastery over mind, body, and spirit has allowed you to tap into the source of all magic. While meditating during a long rest, you can set aside a number of your ki points, reducing your ki point maximum, in order to unlock an enlightened arcanum, a specialized magical secret of the universe. Choose an arcane fist spell of 4th level or higher, and reduce your ki point maximum by the amount indicated on the Enlightened Arcanum table. You know this spell, and can cast it without material components. You may do so once freely, and then you must finish a long rest before you can do so again.</p>
+			<h5>Enlightened Arcanum</h5>
+			<table>
+				<thead>
+					<tr><td>Spell Level</td><td>Ki Point Cost</td></tr>
+				</thead>
+				<tr><td>4th</td><td>1</td></tr>
+				<tr><td>5th</td><td>3</td></tr>
+				<tr><td>6th</td><td>5</td></tr>
+				<tr><td>7th</td><td>7</td></tr>
+				<tr><td>8th</td><td>9</td></tr>
+				<tr><td>9th</td><td>11</td></tr>
+			</table>
+			<p class="indent">You may select multiple enlightened arcana, or even the same enlightened arcanum multiple times to give you additional castings per long rest. However, the reduction to your ki points is cumulative, and once you run out, you may no longer select any further enlightened arcana.</p>
+		</description>
+		<sheet>
+			<description>While meditating during a long rest, you can set aside a number of your ki points, reducing your ki point maximum, in order to unlock an enlightened arcanum, a specialized magical secret of the universe. Choose an arcane fist spell of 4th level or higher, and reduce your ki point maximum by the amount indicated on the Enlightened Arcanum table. You know this spell, and can cast it without material components. You may do so once freely, and then you must finish a long rest before you can do so again. &#13;
+				Spell Level: 4th = 1 Ki Point, 5th level = 3 Ki Points, 6th = 7 Ki Points, 8th = 9 Ki Points, 9th = 11 Ki Points.</description>
+		</sheet>
+		<setters>
+			<set name="sourceUrl">https://www.dandwiki.com/w/index.php?title=Way_of_the_Arcane_Fist_(5e_Subclass)&amp;oldid=1735427#Enlightened_Arcanum</set>
+		</setters>
+	</element>
+
+	<!-- Spell List -->
+	<!-- Cantrips -->
+	<append id="ID_PHB_SPELL_BLADE_WARD">
+		<supports>Arcane Fist</supports>
+	</append>
+	<append id="ID_SCAG_SPELL_BOOMING_BLADE">
+		<supports>Arcane Fist</supports>
+	</append>
+	<append id="ID_GGTR_SPELL_ENCODE_THOUGHTS">
+		<supports>Arcane Fist</supports>
+	</append>
+	<append id="ID_PHB_SPELL_FIRE_BOLT">
+		<supports>Arcane Fist</supports>
+	</append>
+	<append id="ID_WOTC_TCOE_SPELL_GREENFLAME_BLADE">
+		<supports>Arcane Fist</supports>
+	</append>
+	<append id="ID_PHB_SPELL_GUIDANCE">
+		<supports>Arcane Fist</supports>
+	</append>
+	<append id="ID_XGTE_SPELL_GUST">
+		<supports>Arcane Fist</supports>
+	</append>
+	<append id="ID_PHB_SPELL_LIGHT">
+		<supports>Arcane Fist</supports>
+	</append>
+	<append id="ID_SCAG_SPELL_LIGHTNING_LURE">
+		<supports>Arcane Fist</supports>
+	</append>
+	<append id="ID_PHB_SPELL_MAGE_HAND">
+		<supports>Arcane Fist</supports>
+	</append>
+	<append id="ID_PHB_SPELL_MENDING">
+		<supports>Arcane Fist</supports>
+	</append>
+	<append id="ID_PHB_SPELL_MESSAGE">
+		<supports>Arcane Fist</supports>
+	</append>
+	<append id="ID_XGTE_SPELL_MOLD_EARTH">
+		<supports>Arcane Fist</supports>
+	</append>
+	<append id="ID_PHB_SPELL_POISON_SPRAY">
+		<supports>Arcane Fist</supports>
+	</append>
+	<append id="ID_PHB_SPELL_PRESTIDIGITATION">
+		<supports>Arcane Fist</supports>
+	</append>
+	<append id="ID_PHB_SPELL_PRODUCE_FLAME">
+		<supports>Arcane Fist</supports>
+	</append>
+	<append id="ID_PHB_SPELL_RESISTANCE">
+		<supports>Arcane Fist</supports>
+	</append>
+	<append id="ID_XGTE_SPELL_SHAPE_WATER">
+		<supports>Arcane Fist</supports>
+	</append>
+	<append id="ID_PHB_SPELL_SHOCKING_GRASP">
+		<supports>Arcane Fist</supports>
+	</append>
+	<append id="ID_PHB_SPELL_SPARE_THE_DYING">
+		<supports>Arcane Fist</supports>
+	</append>
+	<append id="ID_XGTE_SPELL_THUNDERCLAP">
+		<supports>Arcane Fist</supports>
+	</append>
+	<append id="ID_PHB_SPELL_TRUE_STRIKE">
+		<supports>Arcane Fist</supports>
+	</append>
+	
+	<!-- 1st level -->
+	<append id="aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa">
+		<supports>Arcane Fist</supports>
+	</append>
+	<append id="ID_PHB_SPELL_BURNING_HANDS">
+		<supports>Arcane Fist</supports>
+	</append>
+	<append id="ID_PHB_SPELL_COLOR_SPRAY">
+		<supports>Arcane Fist</supports>
+	</append>
+	<append id="ID_PHB_SPELL_COMPREHEND_LANGUAGES">
+		<supports>Arcane Fist</supports>
+	</append>
+	<append id="ID_PHB_SPELL_CREATE_OR_DESTROY_WATER">
+		<supports>Arcane Fist</supports>
+	</append>
+	<append id="ID_PHB_SPELL_CURE_WOUNDS">
+		<supports>Arcane Fist</supports>
+	</append>
+	<append id="ID_PHB_SPELL_DETECT_MAGIC">
+		<supports>Arcane Fist</supports>
+	</append>
+	<append id="ID_PHB_SPELL_EXPEDITIOUS_RETREAT">
+		<supports>Arcane Fist</supports>
+	</append>
+	<append id="ID_XGTE_SPELL_ICE_KNIFE">
+		<supports>Arcane Fist</supports>
+	</append>
+	<append id="ID_PHB_SPELL_INFLICT_WOUNDS">
+		<supports>Arcane Fist</supports>
+	</append>
+	<append id="ID_PHB_SPELL_JUMP">
+		<supports>Arcane Fist</supports>
+	</append>
+	<append id="ID_PHB_SPELL_LONGSTRIDER">
+		<supports>Arcane Fist</supports>
+	</append>
+	<append id="ID_PHB_SPELL_SEARING_SMITE">
+		<supports>Arcane Fist</supports>
+	</append>
+	<append id="ID_PHB_SPELL_SHIELD">
+		<supports>Arcane Fist</supports>
+	</append>
+	<append id="ID_PHB_SPELL_THUNDEROUS_SMITE">
+		<supports>Arcane Fist</supports>
+	</append>
+	<append id="ID_PHB_SPELL_THUNDERWAVE">
+		<supports>Arcane Fist</supports>
+	</append>
+	<append id="ID_PHB_SPELL_WRATHFUL_SMITE">
+		<supports>Arcane Fist</supports>
+	</append>
+	<append id="ID_XGTE_SPELL_ZEPHYR_STRIKE">
+		<supports>Arcane Fist</supports>
+	</append>
+
+	<!-- 2nd level -->
+	<append id="ID_PHB_SPELL_ALTER_SELF">
+		<supports>Arcane Fist</supports>
+	</append>
+	<append id="ID_PHB_SPELL_BLUR">
+		<supports>Arcane Fist</supports>
+	</append>
+	<append id="ID_PHB_SPELL_BRANDING_SMITE">
+		<supports>Arcane Fist</supports>
+	</append>
+	<append id="ID_PHB_SPELL_CONTINUAL_FLAME">
+		<supports>Arcane Fist</supports>
+	</append>
+	<append id="ID_PHB_SPELL_DETECT_THOUGHTS">
+		<supports>Arcane Fist</supports>
+	</append>
+	<append id="ID_XGTE_SPELL_DRAGONS_BREATH">
+		<supports>Arcane Fist</supports>
+	</append>
+	<append id="ID_PHB_SPELL_ENHANCE_ABILITY">
+		<supports>Arcane Fist</supports>
+	</append>
+	<append id="ID_PHB_SPELL_GENTLE_REPOSE">
+		<supports>Arcane Fist</supports>
+	</append>
+	<append id="ID_PHB_SPELL_GUST_OF_WIND">
+		<supports>Arcane Fist</supports>
+	</append>
+	<append id="ID_PHB_SPELL_LESSER_RESTORATION">
+		<supports>Arcane Fist</supports>
+	</append>
+	<append id="ID_PHB_SPELL_MAGIC_WEAPON">
+		<supports>Arcane Fist</supports>
+	</append>
+	<append id="ID_XGTE_SPELL_MAXIMILIANS_EARTHEN_GRASP">
+		<supports>Arcane Fist</supports>
+	</append>
+	<append id="ID_PHB_SPELL_MIRROR_IMAGE">
+		<supports>Arcane Fist</supports>
+	</append>
+	<append id="ID_PHB_SPELL_MISTY_STEP">
+		<supports>Arcane Fist</supports>
+	</append>
+	<append id="ID_PHB_SPELL_PASS_WITHOUT_TRACE">
+		<supports>Arcane Fist</supports>
+	</append>
+	<append id="ID_XGTE_SPELL_PYROTECHNICS">
+		<supports>Arcane Fist</supports>
+	</append>
+	<append id="ID_PHB_SPELL_SPIDER_CLIMB">
+		<supports>Arcane Fist</supports>
+	</append>
+	<append id="ID_PHB_SPELL_SPIRITUAL_WEAPON">
+		<supports>Arcane Fist</supports>
+	</append>
+	<append id="ID_PHB_SPELL_WARDING_BOND">
+		<supports>Arcane Fist</supports>
+	</append>
+	<append id="ID_XGTE_SPELL_WARDING_WIND">
+		<supports>Arcane Fist</supports>
+	</append>
+
+	<!-- 3rd level -->
+	<append id="ID_PHB_SPELL_AURA_OF_VITALITY">
+		<supports>Arcane Fist</supports>
+	</append>
+	<append id="ID_PHB_SPELL_BLINDING_SMITE">
+		<supports>Arcane Fist</supports>
+	</append>
+	<append id="ID_PHB_SPELL_BLINK">
+		<supports>Arcane Fist</supports>
+	</append>
+	<append id="ID_PHB_SPELL_CONJURE_BARRAGE">
+		<supports>Arcane Fist</supports>
+	</append>
+	<append id="ID_PHB_SPELL_COUNTERSPELL">
+		<supports>Arcane Fist</supports>
+	</append>
+	<append id="ID_PHB_SPELL_ELEMENTAL_WEAPON">
+		<supports>Arcane Fist</supports>
+	</append>
+	<append id="ID_XGTE_SPELL_ERUPTING_EARTH">
+		<supports>Arcane Fist</supports>
+	</append>
+	<append id="ID_PHB_SPELL_FEIGN_DEATH">
+		<supports>Arcane Fist</supports>
+	</append>
+	<append id="ID_PHB_SPELL_FLY">
+		<supports>Arcane Fist</supports>
+	</append>
+	<append id="ID_PHB_SPELL_GLYPH_OF_WARDING">
+		<supports>Arcane Fist</supports>
+	</append>
+	<append id="ID_PHB_SPELL_HASTE">
+		<supports>Arcane Fist</supports>
+	</append>
+	<append id="ID_PHB_SPELL_LIGHTNING_ARROW">
+		<supports>Arcane Fist</supports>
+	</append>
+	<append id="ID_PHB_SPELL_MELD_INTO_STONE">
+		<supports>Arcane Fist</supports>
+	</append>
+	<append id="ID_PHB_SPELL_NONDETECTION">
+		<supports>Arcane Fist</supports>
+	</append>
+	<append id="ID_PHB_SPELL_PROTECTION_FROM_ENERGY">
+		<supports>Arcane Fist</supports>
+	</append>
+	<append id="ID_PHB_SPELL_REMOVE_CURSE">
+		<supports>Arcane Fist</supports>
+	</append>
+	<append id="ID_PHB_SPELL_REVIVIFY">
+		<supports>Arcane Fist</supports>
+	</append>
+	<append id="ID_XGTE_SPELL_THUNDER_STEP">
+		<supports>Arcane Fist</supports>
+	</append>
+	<append id="ID_XGTE_SPELL_TIDAL_WAVE">
+		<supports>Arcane Fist</supports>
+	</append>
+	<append id="ID_PHB_SPELL_VAMPIRIC_TOUCH">
+		<supports>Arcane Fist</supports>
+	</append>
+	<append id="ID_XGTE_SPELL_WALL_OF_SAND">
+		<supports>Arcane Fist</supports>
+	</append>
+	<append id="ID_XGTE_SPELL_WALL_OF_WATER">
+		<supports>Arcane Fist</supports>
+	</append>
+	<append id="ID_PHB_SPELL_WATER_WALK">
+		<supports>Arcane Fist</supports>
+	</append>
+	<append id="ID_PHB_SPELL_WIND_WALL">
+		<supports>Arcane Fist</supports>
+	</append>
+
+	<!-- 4th level -->
+	<append id="ID_PHB_SPELL_AURA_OF_LIFE">
+		<supports>Arcane Fist</supports>
+	</append>
+	<append id="ID_PHB_SPELL_AURA_OF_PURITY">
+		<supports>Arcane Fist</supports>
+	</append>
+	<append id="ID_PHB_SPELL_DEATH_WARD">
+		<supports>Arcane Fist</supports>
+	</append>
+	<append id="ID_PHB_SPELL_DIMENSION_DOOR">
+		<supports>Arcane Fist</supports>
+	</append>
+	<append id="ID_PHB_SPELL_FIRE_SHIELD">
+		<supports>Arcane Fist</supports>
+	</append>
+	<append id="ID_PHB_SPELL_FREEDOM_OF_MOVEMENT">
+		<supports>Arcane Fist</supports>
+	</append>
+	<append id="ID_PHB_SPELL_GREATER_INVISIBILITY">
+		<supports>Arcane Fist</supports>
+	</append>
+	<append id="ID_PHB_SPELL_GUARDIAN_OF_FAITH">
+		<supports>Arcane Fist</supports>
+	</append>
+	<append id="ID_PHB_SPELL_ICE_STORM">
+		<supports>Arcane Fist</supports>
+	</append>
+	<append id="ID_PHB_SPELL_STAGGERING_SMITE">
+		<supports>Arcane Fist</supports>
+	</append>
+	<append id="ID_PHB_SPELL_STONE_SHAPE">
+		<supports>Arcane Fist</supports>
+	</append>
+	<append id="ID_PHB_SPELL_STONESKIN">
+		<supports>Arcane Fist</supports>
+	</append>
+	<append id="ID_XGTE_SPELL_STORM_SPHERE">
+		<supports>Arcane Fist</supports>
+	</append>
+	<append id="ID_PHB_SPELL_WALL_OF_FIRE">
+		<supports>Arcane Fist</supports>
+	</append>
+	<append id="ID_XGTE_SPELL_WATERY_SPHERE">
+		<supports>Arcane Fist</supports>
+	</append>
+
+	<!-- 5th level -->
+	<append id="ID_PHB_SPELL_ANTILIFE_SHELL">
+		<supports>Arcane Fist</supports>
+	</append>
+	<append id="ID_PHB_SPELL_BANISHING_SMITE">
+		<supports>Arcane Fist</supports>
+	</append>
+	<append id="ID_PHB_SPELL_BIGBYS_HAND">
+		<supports>Arcane Fist</supports>
+	</append>
+	<append id="ID_PHB_SPELL_CIRCLE_OF_POWER">
+		<supports>Arcane Fist</supports>
+	</append>
+	<append id="ID_PHB_SPELL_CONE_OF_COLD">
+		<supports>Arcane Fist</supports>
+	</append>
+	<append id="ID_PHB_SPELL_CREATION">
+		<supports>Arcane Fist</supports>
+	</append>
+	<append id="ID_PHB_SPELL_DISPEL_EVIL_AND_GOOD">
+		<supports>Arcane Fist</supports>
+	</append>
+	<append id="ID_XGTE_SPELL_FAR_STEP">
+		<supports>Arcane Fist</supports>
+	</append>
+	<append id="ID_PHB_SPELL_GREATER_RESTORATION">
+		<supports>Arcane Fist</supports>
+	</append>
+	<append id="ID_PHB_SPELL_MISLEAD">
+		<supports>Arcane Fist</supports>
+	</append>
+	<append id="ID_PHB_SPELL_REINCARNATE">
+		<supports>Arcane Fist</supports>
+	</append>
+	<append id="ID_XGTE_SPELL_STEEL_WIND_STRIKE">
+		<supports>Arcane Fist</supports>
+	</append>
+	<append id="ID_PHB_SPELL_TELEKINESIS">
+		<supports>Arcane Fist</supports>
+	</append>
+
+	<!-- 6th level -->
+	<append id="ID_XGTE_SPELL_BONES_OF_THE_EARTH">
+		<supports>Arcane Fist</supports>
+	</append>
+	<append id="ID_PHB_SPELL_CHAIN_LIGHTNING">
+		<supports>Arcane Fist</supports>
+	</append>
+	<append id="ID_PHB_SPELL_FIND_THE_PATH">
+		<supports>Arcane Fist</supports>
+	</append>
+	<append id="ID_PHB_SPELL_FLESH_TO_STONE">
+		<supports>Arcane Fist</supports>
+	</append>
+	<append id="ID_PHB_SPELL_GLOBE_OF_INVULNERABILITY">
+		<supports>Arcane Fist</supports>
+	</append>
+	<append id="ID_PHB_SPELL_HEAL">
+		<supports>Arcane Fist</supports>
+	</append>
+	<append id="ID_XGTE_SPELL_INVESTITURE_OF_FLAME">
+		<supports>Arcane Fist</supports>
+	</append>
+	<append id="ID_XGTE_SPELL_INVESTITURE_OF_ICE">
+		<supports>Arcane Fist</supports>
+	</append>
+	<append id="ID_XGTE_SPELL_INVESTITURE_OF_STONE">
+		<supports>Arcane Fist</supports>
+	</append>
+	<append id="ID_XGTE_SPELL_INVESTITURE_OF_WIND">
+		<supports>Arcane Fist</supports>
+	</append>
+	<append id="ID_XGTE_SPELL_PRIMORDIAL_WARD">
+		<supports>Arcane Fist</supports>
+	</append>
+	<append id="ID_XGTE_SPELL_SCATTER">
+		<supports>Arcane Fist</supports>
+	</append>
+	<append id="ID_PHB_SPELL_SUNBEAM">
+		<supports>Arcane Fist</supports>
+	</append>
+	<append id="ID_PHB_SPELL_TRUE_SEEING">
+		<supports>Arcane Fist</supports>
+	</append>
+	<append id="ID_PHB_SPELL_WALL_OF_ICE">
+		<supports>Arcane Fist</supports>
+	</append>
+	<append id="ID_PHB_SPELL_WORD_OF_RECALL">
+		<supports>Arcane Fist</supports>
+	</append>
+	
+	<!-- 7th level -->
+	<append id="ID_XGTE_SPELL_CROWN_OF_STARS">
+		<supports>Arcane Fist</supports>
+	</append>
+	<append id="ID_PHB_SPELL_ETHEREALNESS">
+		<supports>Arcane Fist</supports>
+	</append>
+	<append id="ID_WOTC_TCOE_SPELL_DREAM_OF_THE_BLUE_VEIL">
+		<supports>Arcane Fist</supports>
+	</append>
+	<append id="ID_PHB_SPELL_FIRE_STORM">
+		<supports>Arcane Fist</supports>
+	</append>
+	<append id="ID_PHB_SPELL_PLANE_SHIFT">
+		<supports>Arcane Fist</supports>
+	</append>
+	<append id="ID_PHB_SPELL_REGENERATE">
+		<supports>Arcane Fist</supports>
+	</append>
+	<append id="ID_PHB_SPELL_RESURRECTION">
+		<supports>Arcane Fist</supports>
+	</append>
+	<append id="ID_WOTC_EGTW_SPELL_TETHER_ESSENCE">
+		<supports>Arcane Fist</supports>
+	</append>
+	<append id="ID_XGTE_SPELL_WHIRLWIND">
+		<supports>Arcane Fist</supports>
+	</append>
+
+	<!-- 8th level -->
+	<append id="ID_PHB_SPELL_CONTROL_WEATHER">
+		<supports>Arcane Fist</supports>
+	</append>
+	<append id="ID_PHB_SPELL_EARTHQUAKE">
+		<supports>Arcane Fist</supports>
+	</append>
+	<append id="ID_PHB_SPELL_INCENDIARY_CLOUD">
+		<supports>Arcane Fist</supports>
+	</append>
+	<append id="ID_PHB_SPELL_MIND_BLANK">
+		<supports>Arcane Fist</supports>
+	</append>
+	<append id="ID_PHB_SPELL_SUNBURST">
+		<supports>Arcane Fist</supports>
+	</append>
+	<append id="ID_PHB_SPELL_TELEPATHY">
+		<supports>Arcane Fist</supports>
+	</append>
+	<append id="ID_PHB_SPELL_TSUNAMI">
+		<supports>Arcane Fist</supports>
+	</append>
+
+	<!-- 9th level -->
+	<append id="ID_PHB_SPELL_ASTRAL_PROJECTION">
+		<supports>Arcane Fist</supports>
+	</append>
+	<append id="ID_PHB_SPELL_FORESIGHT">
+		<supports>Arcane Fist</supports>
+	</append>
+	<append id="ID_XGTE_SPELL_INVULNERABILITY">
+		<supports>Arcane Fist</supports>
+	</append>
+	<append id="ID_PHB_SPELL_TIME_STOP">
+		<supports>Arcane Fist</supports>
+	</append>
+	<append id="ID_PHB_SPELL_WISH">
+		<supports>Arcane Fist</supports>
+	</append>
+</elements>

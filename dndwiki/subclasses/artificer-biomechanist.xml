@@ -1,0 +1,202 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<elements>
+	<info>
+        <description>The Biomechanist Artificer subclass from D&amp;D Wiki, created by "MarshDASavage", with contributions from users "Yanied", "SirSprinkles", and "2600:387:4:803::2d".</description>
+		<author url="https://www.dandwiki.com/w/index.php?title=Biomechanist_(5e_Subclass)&amp;oldid=1537718">D&amp;D Wiki</author>
+		<update version="0.0.1">
+			<file name="artificer-biomechanist.xml" url="https://raw.githubusercontent.com/MeriadarGoblin/elements-thirdparty/main/dndwiki/subclasses/artificer-biomechanist.xml" />
+		</update>
+    </info>
+
+	<element name="Biomechanist" type="Archetype" source="D&amp;D Wiki" id="ID_WIKI_ARCHETYPE_BIOMECHANIST">
+		<supports>Artificer Specialist</supports>
+		<description>
+			<p>Biomechanists are artificers who follow a rather odd course of study- using technology to improve and enhance living organisms. They understand the workings of the humanoid body and use their knowledge to fuse their creations with flesh. They are particularly deadly adversaries, as they can make even the weakest of creatures powerful foes, attack a creature from the inside out, and even create new life. Biomechanics is a field of technology shunned by most, as many see it as evil or morally wrong. Still, a few brave souls follow this path to push the limits of technology and the humanoid body.</p>
+			<div element="ID_WIKI_ARCHETYPE_FEATURE_BIOMECHANIST_TOOL_PROFICIENCY" />
+			<div element="ID_WIKI_ARCHETYPE_FEATURE_BIOMECHANIST_BIOMECHANIST_SPELLS" />
+			<div element="ID_WIKI_ARCHETYPE_FEATURE_BIOMECHANIST_ENHANCED_BODY" />
+			<div element="ID_WIKI_ARCHETYPE_FEATURE_BIOMECHANIST_BIOWEAPON" />
+			<div element="ID_WIKI_ARCHETYPE_FEATURE_BIOMECHANIST_GENETIC_BREAKTHROUGH" />
+			<div element="ID_WIKI_ARCHETYPE_FEATURE_BIOMECHANIST_MASTER_MANIPULTOR" />
+		</description>
+		<sheet display="false">
+			<description>A Biomechanist is an expert at modifying the life force of others.</description>
+		</sheet>
+		<setters>
+			<set name="sourceUrl">"https://www.dandwiki.com/w/index.php?title=Biomechanist_(5e_Subclass)&amp;oldid=1537718</set>
+		</setters>
+		<rules>
+			<grant type="Archetype Feature" id="ID_WIKI_ARCHETYPE_FEATURE_BIOMECHANIST_TOOL_PROFICIENCY" level="3" />
+			<grant type="Archetype Feature" id="ID_WIKI_ARCHETYPE_FEATURE_BIOMECHANIST_BIOMECHANIST_SPELLS" level="3" />
+			<grant type="Archetype Feature" id="ID_WIKI_ARCHETYPE_FEATURE_BIOMECHANIST_ENHANCED_BODY" level="3" />
+			<grant type="Archetype Feature" id="ID_WIKI_ARCHETYPE_FEATURE_BIOMECHANIST_BIOWEAPON" level="5" />
+			<grant type="Archetype Feature" id="ID_WIKI_ARCHETYPE_FEATURE_BIOMECHANIST_GENETIC_BREAKTHROUGH" level="9" />
+			<grant type="Archetype Feature" id="ID_WIKI_ARCHETYPE_FEATURE_BIOMECHANIST_MASTER_MANIPULTOR" level="15" />
+		</rules>
+	</element>
+	<element name="Tool Proficiency" type="Archetype Feature" source="D&amp;D Wiki" id="ID_WIKI_ARCHETYPE_FEATURE_BIOMECHANIST_TOOL_PROFICIENCY">
+		<description>
+			<p>When you take this specialization at 3rd level, you gain proficiency in doctor's tools. If you already have this proficiency, you gain proficiency in one other type of artisan's tools of your choice.</p>
+		</description>
+		<sheet display="false">
+			<description>When you take this specialization at 3rd level, you gain proficiency in doctor's tools. If you already have this proficiency, you gain proficiency in one other type of artisan's tools of your choice.</description>
+		</sheet>
+		<setters>
+			<set name="sourceUrl">"https://www.dandwiki.com/w/index.php?title=Biomechanist_(5e_Subclass)&amp;oldid=1537718</set>
+		</setters>
+		<rules>
+			<select type="Proficiency" name="Tool Proficiency, Biomechanist" supports="Tool" default="ID_PROFICIENCY_TOOL_PROFICIENCY_DOCTORS_TOOLS" />
+		</rules>
+	</element>
+	<element name="Biomechanist Spells" type="Archetype Feature" source="D&amp;D Wiki" id="ID_WIKI_ARCHETYPE_FEATURE_BIOMECHANIST_BIOMECHANIST_SPELLS">
+		<description>
+			<p>Starting at 3rd level, you always have certain spells prepared after you reach particular levels in this class, as shown in the Biomechanist Spells table. These spells count as artificer spells for you, but they don’t count against the number of artificer spells you prepare.</p>
+			<h5 class="caption">BIOMECHANIST SPELLS</h5>
+			<table>
+				<thead>
+					<tr><td>Artificer Level</td><td>Spells</td></tr>
+				</thead>
+				<tr><td>3rd</td><td><em>healing word, shield</em></td></tr>
+				<tr><td>5th</td><td><em>enlarge/reduce, healing spirit</em></td></tr>
+				<tr><td>9th</td><td><em>bestow curse, nondetection</em></td></tr>
+				<tr><td>13th</td><td><em>greater invisibility, polymorph</em></td></tr>
+				<tr><td>17th</td><td><em>awaken, skill empowerment</em></td></tr>
+			</table>
+		</description>
+		<sheet display="false">
+			<description>You always have certain spells prepared after you reach particular levels in this class, as shown in the Alchemist Spells table. These spells count as artificer spells for you, but they don’t count against the number of artificer spells you prepare.</description>
+		</sheet>
+		<setters>
+			<set name="sourceUrl">"https://www.dandwiki.com/w/index.php?title=Biomechanist_(5e_Subclass)&amp;oldid=1537718</set>
+		</setters>
+		<rules>
+			<grant type="Spell" id="ID_PHB_SPELL_HEALING_WORD" spellcasting="Artificer" level="3" prepared="true" />
+			<grant type="Spell" id="ID_PHB_SPELL_SHIELD" spellcasting="Artificer" level="3" prepared="true" />
+			<grant type="Spell" id="ID_PHB_SPELL_ENLARGE_REDUCE" spellcasting="Artificer" level="5" prepared="true" />
+			<grant type="Spell" id="ID_XGTE_SPELL_HEALING_SPIRIT" spellcasting="Artificer" level="5" prepared="true" />
+			<grant type="Spell" id="ID_PHB_SPELL_BESTOW_CURSE" spellcasting="Artificer" level="9" prepared="true" />
+			<grant type="Spell" id="ID_PHB_SPELL_NONDETECTION" spellcasting="Artificer" level="9" prepared="true" />
+			<grant type="Spell" id="ID_PHB_SPELL_GREATER_INVISIBILITY" spellcasting="Artificer" level="13" prepared="true" />
+			<grant type="Spell" id="ID_PHB_SPELL_POLYMORPH" spellcasting="Artificer" level="13" prepared="true" />
+			<grant type="Spell" id="ID_PHB_SPELL_AWAKEN" spellcasting="Artificer" level="17" prepared="true" />
+			<grant type="Spell" id="ID_XGTE_SPELL_SKILL_EMPOWERMENT" spellcasting="Artificer" level="17" prepared="true" />
+		</rules>
+	</element>
+	<element name="Enhanced Body" type="Archetype Feature" source="D&amp;D Wiki" id="ID_WIKI_ARCHETYPE_FEATURE_BIOMECHANIST_ENHANCED_BODY">
+		<description>
+			<p>Also at 3rd level, you have learned how to improve a life form's functions, including your own. As part of a long rest, you may choose to enhance the body of a willing humanoid (including yourself). They gain the following benefits:</p>
+			<ul>
+				<li>While not wearing armor, their armor class is 10 + their Dexterity modifier + your Intelligence modifier.</li>
+				<li>Their unarmed strikes deal 1d6 force damage, and they may add your intelligence modifier to the damage instead of their strength or dexterity modifier.</li>
+				<li>Their movement speed increases by 10 feet.</li>
+				<li>They gain proficiency in 2 skills of your choice.</li>
+			</ul>
+			<p class="indent">These benefits last until the start of their next long rest, or until you use this feature on another creature. When you reach 15th level, you may use this feature on two creatures at once, rather than one.</p>
+		</description>
+		<sheet usage="Long Rest">
+			<description level="3">As part of a long rest, you may choose to enhance the body of a willing humanoid (including yourself). They gain the following benefits:
+				• While not wearing armor, their armor class is {{ac:unarmored defense biomechanist}}.
+				• Their unarmed strikes deal 1d6 force damage, and they may add your intelligence modifier to the damage instead of their strength or dexterity modifier.
+				• Their movement speed increases by 10 feet.
+				• They gain proficiency in 2 skills of your choice.
+			</description>
+			<description level="15">As part of a long rest, you may choose to enhance the body of two willing humanoids (including yourself). They gain the following benefits: &#13;
+				• While not wearing armor, their armor class is {{ac:unarmored defense biomechanist}}.&#13;
+				• Their unarmed strikes deal 1d6 force damage, and they may add your intelligence modifier to the damage instead of their strength or dexterity modifier.&#13;
+				• Their movement speed increases by 10 feet.&#13;
+				• They gain proficiency in 2 skills of your choice.
+			</description>
+			<setters>
+				<set name="sourceUrl">"https://www.dandwiki.com/w/index.php?title=Biomechanist_(5e_Subclass)&amp;oldid=1537718</set>
+			</setters>
+		</sheet>
+		<rules>
+			<stat name="ac:unarmored defense biomechanist:base" value="10" />
+			<stat name="ac:unarmored defense biomechanist:dexterity" value="dexterity:modifier" />
+			<stat name="ac:unarmored defense biomechanist:intelligence" value="intelligence:modifier" />
+			<stat name="ac:unarmored defense biomechanist" value="ac:unarmored defense biomechanist:base" />
+			<stat name="ac:unarmored defense biomechanist" value="ac:unarmored defense biomechanist:dexterity" />
+			<stat name="ac:unarmored defense biomechanist" value="ac:unarmored defense biomechanist:intelligence" />
+			<stat name="ac:calculation" value="ac:unarmored defense biomechanist" bonus="calculation" equipped="[armor:none]" alt="Unarmored Defense (Biomechanist)" />
+		</rules>
+	</element>
+	<element name="Bioweapon" type="Archetype Feature" source="D&amp;D Wiki" id="ID_WIKI_ARCHETYPE_FEATURE_BIOMECHANIST_BIOWEAPON">
+		<description>
+			<p>Starting at 5th level, you can create weapons to poison creatures from the inside out. During a long rest, you may create a number of bioweapons equal to your intelligence modifier. You may also expend a spell slot of 1st level or higher as a bonus action to create a bioweapon, creating a number of bioweapons equal to the level of the spell slot. You may only have up to your Intelligence modifier bioweapons at any given time.</p>
+			<p class="indent">As an action, you can throw one of the bioweapons at a point within 60 feet of you. Every creature within a 10-foot radius of the point must make a Constitution saving throw against your spell save DC. On a successful save, nothing happens. On a failed save, they take 2d8 poison damage, and they take an additional 1d8 poison damage at the start of each of their turns for 1 minute. They may repeat the saving throw at the start of each their turns, ending the effect on a success. If they magically regain hitpoints or are affected by lesser restoration or similar magic, then the effect ends early.</p>
+		</description>
+		<sheet action="Bonus Action" usage="Long Rest">
+			<description>You can create weapons to poison creatures from the inside out. During a long rest, you may create a number of bioweapons equal to your intelligence modifier. You may also expend a spell slot of 1st level or higher as a bonus action to create a bioweapon, creating a number of bioweapons equal to the level of the spell slot. You may only have up to your Intelligence modifier bioweapons at any given time. &#13;
+				As an action, you can throw one of the bioweapons at a point within 60 feet of you. Every creature within a 10-foot radius of the point must make a Constitution saving throw against your spell save DC. On a successful save, nothing happens. On a failed save, they take 2d8 poison damage, and they take an additional 1d8 poison damage at the start of each of their turns for 1 minute. They may repeat the saving throw at the start of each their turns, ending the effect on a success. If they magically regain hitpoints or are affected by lesser restoration or similar magic, then the effect ends early.
+			</description>
+		</sheet>
+		<setters>
+			<set name="sourceUrl">"https://www.dandwiki.com/w/index.php?title=Biomechanist_(5e_Subclass)&amp;oldid=1537718</set>
+		</setters>
+	</element>
+	<element name="Genetic Breakthrough" type="Archetype Feature" source="D&amp;D Wiki" id="ID_WIKI_ARCHETYPE_FEATURE_BIOMECHANIST_GENETIC_BREAKTHROUGH">
+		<description>
+			<p>At 9th level, you have found a way to enhance a creature's body even further. When you enhance a creature, they gain the following benefits:</p>
+			<ul>
+				<li>Their unarmored armor class increases to 12 + their Dexterity modifier + your Intelligence modifier.</li>
+				<li>The damage dealt by their unarmed strikes increases to 1d8 force damage.</li>
+			</ul>
+			<p class="indent">In addition, you may put an artificer infusion on the enhanced creature's body. You treat their body as a set of armor for the purpose of qualifying for infusions.</p>
+		</description>
+		<sheet>
+			<description>When you enhance a creature, they gain the following additional benefits: &#13;
+				• Their unarmored armor class increases to 12 + their Dexterity modifier + your Intelligence modifier. &#13;
+				• The damage dealt by their unarmed strikes increases to 1d8 force damage. &#13;
+				In addition, you may put an artificer infusion on the enhanced creature's body. You treat their body as a set of armor for the purpose of qualifying for infusions.
+			</description>
+		</sheet>
+		<setters>
+			<set name="sourceUrl">"https://www.dandwiki.com/w/index.php?title=Biomechanist_(5e_Subclass)&amp;oldid=1537718</set>
+		</setters>
+	</element>
+	<element name="Master Manipulator" type="Archetype Feature" source="D&amp;D Wiki" id="ID_WIKI_ARCHETYPE_FEATURE_BIOMECHANIST_MASTER_MANIPULTOR">
+		<description>
+			<p>At 15th level, you have mastered the art of quickly modifying a creature's genetic code. As an action, you can attempt to boost or cripple the genetic code of a number of creatures within 30 feet of you equal to your intelligence modifier. For each creature, decide if you want to enhance them or cripple them. The creature affected may choose to make a Constitution saving throw against your spell save DC to resist the effect. On a successful save, they do not become enhanced or crippled.</p>
+			<ul>
+				<li><strong>Enhance.</strong> The creature gains a +1 bonus to AC, their movement speed increases by 5 feet, and they gain resistance to bludgeoning, piercing and slashing damage.</li>
+				<li><strong>Cripple.</strong> The creature's AC decreases by 1, their movement speed decreases by 10 feet, and they gain vulnerability to bludgeoning, piercing, and slashing damage.</li>
+			</ul>
+			<p class="indent">These benefits last for 1 minute. Once you use this feature, you can't use it again until you finish a long rest, unless you expend a spell slot of 2nd level or higher to use it again.</p>
+		</description>
+		<sheet action="Action" usage="Long Rest">
+			<description>As an action, you can attempt to boost or cripple the genetic code of a number of creatures within 30 feet of you equal to your intelligence modifier. For each creature, decide if you want to enhance them or cripple them. The creature affected may choose to make a Constitution saving throw against your spell save DC to resist the effect. On a successful save, they do not become enhanced or crippled. &#13;
+				• Enhance. The creature gains a +1 bonus to AC, their movement speed increases by 5 feet, and they gain resistance to bludgeoning, piercing and slashing damage.&#13;
+				• Cripple. The creature's AC decreases by 1, their movement speed decreases by 10 feet, and they gain vulnerability to bludgeoning, piercing, and slashing damage. &#13;
+				These benefits/enfeeblements last for 1 minute. Once you use this feature, you can't use it again until you finish a long rest, unless you expend a spell slot of 2nd level or higher to use it again.
+			</description>
+		</sheet>
+		<setters>
+			<set name="sourceUrl">"https://www.dandwiki.com/w/index.php?title=Biomechanist_(5e_Subclass)&amp;oldid=1537718</set>
+		</setters>
+	</element>
+
+	<element name="Doctor's Tools" type="Item" source="D&amp;D Wiki" id="ID_WIKI_ITEM_TOOL_DOCTORS_TOOLS">
+		<description>
+			<p>Doctor's tools come in a flat-bottomed black or brown leather bag with a metal-frame closing mouth. The bag contains a number of general steel tools of a highly polished and precision nature, as well as a couple of additional tools unique to the doctor's specialty.</p>
+			<p class="indent">Proficiency with this kit lets you add your proficiency bonus to Wisdom (Medicine) checks when using it to stabilize a dying creature or diagnosing an illness. If you are already proficient with the medicine skill, your proficiency bonus is doubled.</p>
+			<p class="indent">If the actual contents of the bag are ever of roleplaying importance, they include:</p>
+			<ul>
+				<li>A needle and fine wire or thread</li>
+				<li>A hinged splint or brace</li>
+				<li>A small steel cone (Low-tech stethoscope)</li>
+				<li>A small mirror</li>
+				<li>Live leeches</li>
+				<li>Tools for clamping and binding open wounds to prevent blood loss</li>
+				<li>Two small tools relevant to the practitioner's specialty.</li>
+			</ul>
+		</description>
+		<setters>
+			<set name="category">Tools</set>
+			<set name="cost" currency="gp">20</set>
+			<set name="weight" lb="9">9 lbs.</set>
+			<set name="type">Tool</set>
+			<set name="proficiency">ID_PROFICIENCY_TOOL_PROFICIENCY_DOCTORS_TOOLS</set>
+			<set name="sourceUrl">"https://www.dandwiki.com/w/index.php?title=Biomechanist_(5e_Subclass)&amp;oldid=1537718</set>
+		</setters>
+	</element>
+</elements>

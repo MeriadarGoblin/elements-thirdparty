@@ -1,0 +1,996 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<elements>
+    <info>
+        <description>The Gunlance Wielder class from D&amp;D Wiki, created by user "BasiliskST", with contributions from users "Lavie", "Vladulenta", "151.57.239.59" and "SwankyPants".</description>
+		<author url="https://www.dandwiki.com/w/index.php?title=Gunlance_Wielder_(5e_Class)&amp;oldid=1639651">D&amp;D Wiki</author>
+		<update version="0.1.0">
+			<file name="class-gunlance-wielder.xml" url="https://raw.githubusercontent.com/MeriadarGoblin/elements-thirdparty/main/dndwiki/classes/class-gunlance-wielder.xml" />
+		</update>
+    </info>
+
+    <element name="Gunlance Wielder" type="Class" source="D&amp;D Wiki" id="ID_WIKI_CLASS_GUNLANCE_WIELDER">
+        <description>
+            <p>A combat military specialist trained to deal to use a unique weapon against extremely dangerous threats and to be able to operate with minimal support for long periods of time while acting as a solo shock trooper. The gunlance is a rare weapon and difficult to use properly. Those who train to use it are also trained to be able to function without significant backup for long periods of time. Because of this, they can function both alone and with a proper team. They also upgrade and maintain their weapon themselves, customizing it to suit their individual needs.</p>
+            <h4>CREATING A Gunlance Wielder</h4>
+            <p>When creating a Gunlance Wielder, work with your DM to figure out how they fit into the setting of the campaign and craft your backstory accordingly. Why was your character selected to be trained in this weapon? Did they pursue such training themselves? Did they do something to earn the honor?</p>
+            <h5 class="caption">QUICK BUILD</h5>
+            <p>You can quickly make a Gunlance Wielder by following these suggestions. First, put your highest ability score in either Strength or Constitution, with whichever you didn't choose as your highest ability score being your second highest. Then choose the soldier background.</p>
+            <h2>CLASS FEATURES</h2>
+            <p>As an Gunlance Wielder, you gain the following class features.</p>
+            <h5 class="caption">HIT POINTS</h5>
+            <p>
+                <span class="emphasis">Hit dice:</span>1d10 per gunlance wielder level<br />
+                <span class="emphasis">Hit poinst at 1st Level:</span>10 + your Constitution modifier <br />
+                <span class="emphasis">Hit dice:</span>1d10 (or 6) + your Constitution modifier per gunlance wielder level after the 1st <br />
+            </p>
+            <h5 class="caption">PROFICIENCIES</h5>
+            <p>
+                <span class="emphasis">Armor:</span>Heavy Armor, Shields<br />
+                <span class="emphasis">Weapons:</span>Lance, Heavy Crossbows, Firearms (DM Discretion), Gunlance<br />
+                <span class="emphasis">Armor:</span>Smith's Tools, Land Vehicles<br />
+            </p>
+            <p>
+                <span class="emphasis">Saving Throws:</span>Strength, Constitution
+                <span class="emphasis">Skills:</span>Choose two from Athletics, Acrobatics, Nature, Survival, Medicine, Perception, or Investigation
+            </p>
+            <h5 class="caption">EQUIPMENT</h5>
+            <p>You start with the following equipment, in addition to the equipment granted by your background:</p>
+            <ul>
+                <li>Gunlance, 20 shells, and Ring Mail</li>
+                <li>(a) Lance or (b) Shield or (c) Heavy Crossbow and 20 bolts</li>
+                <li>(a) Explorer's Pack or (b) Dungeoneer's Kit</li>
+                <li>Smith's Tools</li>
+                <li>If you are using starting wealth, you have 3d10 x 5 or equivalent in smithing materials in funds.</li>
+            </ul>
+            <h5 class="caption">THE Gunlance Wielder</h5>
+            <table class="class-features">
+                <thead>
+                    <tr><td class="col-5">Level</td><td class="col-10">Gunlance Shells</td><td class="col-10">Damage Dice</td><td class="col-60 left">Features</td></tr>
+                </thead>
+                <tr><td> 1st</td><td>3</td><td>1</td><td class="left">Gunlance, Shelling, Fighting Style</td></tr>
+                <tr><td> 2nd</td><td>3</td><td>1</td><td class="left">Field Smithing</td></tr>
+                <tr><td> 3rd</td><td>3</td><td>1</td><td class="left">Gunlance Specialization</td></tr>
+                <tr><td> 4th</td><td>3</td><td>1</td><td class="left">Ability Score Improvement</td></tr>
+                <tr><td> 5th</td><td>4</td><td>2</td><td class="left">Extra Attack</td></tr>
+                <tr><td> 6th</td><td>4</td><td>2</td><td class="left">Field Tracking</td></tr>
+                <tr><td> 7th</td><td>4</td><td>2</td><td class="left">Specialization Feature</td></tr>
+                <tr><td> 8th</td><td>4</td><td>2</td><td class="left">Ability Score Improvement</td></tr>
+                <tr><td> 9th</td><td>4</td><td>2</td><td class="left">Full Burst</td></tr>
+                <tr><td>10th</td><td>5</td><td>3</td><td class="left">Specialization Feature</td></tr>
+                <tr><td>11th</td><td>5</td><td>3</td><td class="left">Combat Medic</td></tr>
+                <tr><td>12th</td><td>5</td><td>3</td><td class="left">Ability Score Improvement</td></tr>
+                <tr><td>13th</td><td>5</td><td>3</td><td class="left">Anti-Air Flare</td></tr>
+                <tr><td>14th</td><td>5</td><td>3</td><td class="left">Wyvern Stake</td></tr>
+                <tr><td>15th</td><td>6</td><td>4</td><td class="left">Specialization Feature</td></tr>
+                <tr><td>16th</td><td>6</td><td>4</td><td class="left">Ability Score Improvement</td></tr>
+                <tr><td>17th</td><td>6</td><td>4</td><td class="left">Wyvern Blast</td></tr>
+                <tr><td>18th</td><td>6</td><td>4</td><td class="left">Specialization Feature</td></tr>
+                <tr><td>19th</td><td>6</td><td>4</td><td class="left">Ability Score Improvement</td></tr>
+                <tr><td>20th</td><td>7</td><td>5</td><td class="left">Dragon Breath</td></tr>
+            </table>
+            <div element="ID_WIKI_CLASS_FEATURE_GUNLANCE_GUNLANCE" />
+            <div element="ID_WIKI_CLASS_FEATURE_GUNLANCE_SHELLING" />
+            <div element="ID_WIKI_CLASS_FEATURE_GUNLANCE_FIGHTING_STYLE" />
+            <div element="ID_WIKI_CLASS_FEATURE_GUNLANCE_FIELD_SMITHING" />
+            <div element="ID_WIKI_CLASS_FEATURE_GUNLANCE_GUNLANCE_SPECIALIZATION" />
+            <div element="ID_WIKI_CLASS_FEATURE_GUNLANCE_ABILITY_SCORE_IMPROVEMENT" />
+            <div element="ID_WIKI_CLASS_FEATURE_GUNLANCE_EXTRA_ATTACK" />
+            <div element="ID_WIKI_CLASS_FEATURE_GUNLANCE_FIELD_TRACKING" />
+            <div element="ID_WIKI_CLASS_FEATURE_GUNLANCE_FULL_BURST" />
+            <div element="ID_WIKI_CLASS_FEATURE_GUNLANCE_COMBAT_MEDIC" />
+            <div element="ID_WIKI_CLASS_FEATURE_GUNLANCE_ANTIAIR_FLAIR" />
+            <div element="ID_WIKI_CLASS_FEATURE_GUNLANCE_WYVERN_STAKE" />
+            <div element="ID_WIKI_CLASS_FEATURE_GUNLANCE_WYVERN_BLAST" />
+            <div element="ID_WIKI_CLASS_FEATURE_GUNLANCE_DRAGON_BREATH" />
+        </description>
+        <setters>
+            <set name="sourceUrl">https://www.dandwiki.com/w/index.php?title=Godslayer_(5e_Class)&amp;oldid=1676945</set>
+			<set name="short">A martial character doomed by the gods and sets out to kill them.</set>
+			<set name="hd">d10</set>
+        </setters>
+        <sheet display="false" />
+        <rules>
+            <grant type="Proficiency" id="ID_PROFICIENCY_SAVINGTHROW_STRENGTH" requirements="!ID_WIKI_MULTICLASS_GUNLANCE" />
+            <grant type="Proficiency" id="ID_PROFICIENCY_SAVINGTHROW_CONSTITUTION" requirements="!ID_WIKI_MULTICLASS_GUNLANCE" />
+            <grant type="Proficiency" id="ID_PROFICIENCY_ARMOR_PROFICIENCY_HEAVY_ARMOR" requirements="!ID_WIKI_MULTICLASS_GUNLANCE" />
+            <grant type="Proficiency" id="ID_PROFICIENCY_ARMOR_PROFICIENCY_SHIELDS" requirements="!ID_WIKI_MULTICLASS_GUNLANCE" />
+            <grant type="Proficiency" id="ID_PROFICIENCY_WEAPON_PROFICIENCY_LANCE" requirements="!ID_WIKI_MULTICLASS_GUNLANCE" />
+            <grant type="Proficiency" id="ID_PROFICIENCY_WEAPON_PROFICIENCY_CROSSBOW_HEAVY" requirements="!ID_WIKI_MULTICLASS_GUNLANCE" />
+            <grant type="Proficiency" id="ID_PROFICIENCY_ARMOR_PROFICIENCY_SHIELDS" requirements="!ID_WIKI_MULTICLASS_GUNLANCE" />
+            <grant type="Proficiency" id="ID_PROFICIENCY_WEAPON_PROFICIENCY_GUNLANCE_STANDARD" requirements="!ID_WIKI_MULTICLASS_GUNLANCE" />
+            <select type="Proficiency" name="Skills, Gunlance Wielder" supports="ID_PROFICIENCY_SKILL_ATHLETICS|ID_PROFICIENCY_SKILL_ACROBATICS|ID_PROFICIENCY_SKILL_NATURE|ID_PROFICIENCY_SKILL_SURVIVAL|ID_PROFICIENCY_SKILL_MEDICINE|ID_PROFICIENCY_SKILL_PERCEPTION|ID_PROFICIENCY_SKILL_INVESTIGATION" number="2" requirements="!ID_WIKI_MULTICLASS_GUNLANCE" />
+            <grant type="Proficiency" id="ID_PROFICIENCY_TOOL_PROFICIENCY_SMITHS_TOOLS" requirements="!ID_WIKI_MULTICLASS_GUNLANCE" />
+            <grant type="Proficiency" id="ID_PROFICIENCY_TOOL_PROFICIENCY_VEHICLES_LAND" requirements="!ID_WIKI_MULTICLASS_GUNLANCE" />
+            <grant type="Class Feature" id="ID_WIKI_CLASS_FEATURE_GUNLANCE_GUNLANCE" level="1" />
+            <grant type="Class Feature" id="ID_WIKI_CLASS_FEATURE_GUNLANCE_SHELLING" level="1" />
+            <grant type="Class Feature" id="ID_WIKI_CLASS_FEATURE_GUNLANCE_FIGHTING_STYLE" level="1" />
+            <grant type="Class Feature" id="ID_WIKI_CLASS_FEATURE_GUNLANCE_FIELD_SMITHING" level="2" />
+            <grant type="Class Feature" id="ID_WIKI_CLASS_FEATURE_GUNLANCE_GUNLANCE_SPECIALIZATION" level="3" />
+            <grant type="Class Feature" id="ID_WIKI_CLASS_FEATURE_GUNLANCE_ABILITY_SCORE_IMPROVEMENT" level="4" />
+            <grant type="Class Feature" id="ID_WIKI_CLASS_FEATURE_GUNLANCE_EXTRA_ATTACK" level="5" />
+            <grant type="Class Feature" id="ID_WIKI_CLASS_FEATURE_GUNLANCE_FIELD_TRACKING" level="6" />
+            <grant type="Class Feature" id="ID_WIKI_CLASS_FEATURE_GUNLANCE_FULL_BURST" level="9" />
+            <grant type="Class Feature" id="ID_WIKI_CLASS_FEATURE_GUNLANCE_COMBAT_MEDIC" level="11" />
+            <grant type="Class Feature" id="ID_WIKI_CLASS_FEATURE_GUNLANCE_ANTIAIR_FLAIR" level="13" />
+            <grant type="Class Feature" id="ID_WIKI_CLASS_FEATURE_GUNLANCE_WYVERN_STAKE" level="14" />
+            <grant type="Class Feature" id="ID_WIKI_CLASS_FEATURE_GUNLANCE_WYVERN_BLAST" level="17" />
+            <grant type="Class Feature" id="ID_WIKI_CLASS_FEATURE_GUNLANCE_DRAGON_BREATH" level="20" />
+        </rules>
+        <multiclass id="ID_WIKI_MULTICLASS_GUNLANCE">
+			<prerequisite>Strength 15 and Constitution 15</prerequisite>
+			<requirements>[str:15],[con:15]</requirements>
+			<setters>
+				<set name="multiclass proficiencies">Heavy Armor, Shield, Gunlance</set>
+                <set name="sourceUrl">https://www.dandwiki.com/w/index.php?title=Gunlance_Wielder_(5e_Class)&amp;oldid=1639651#Multiclassing</set>
+			</setters>
+			<rules>
+				<grant type="Grants" id="ID_INTERNAL_GRANT_MULTICLASS" />
+				<grant type="Proficiency" id="ID_PROFICIENCY_ARMOR_PROFICIENCY_HEAVY_ARMOR" />
+                <grant type="Proficiency" id="ID_PROFICIENCY_WEAPON_PROFICIENCY_GUNLANCE_STANDARD" />
+                <grant type="Proficiency" id="ID_PROFICIENCY_ARMOR_PROFICIENCY_SHIELDS" />
+			</rules>
+		</multiclass>
+    </element>
+    <element name="Gunlance" type="Class Feature" source="D&amp;D Wiki" id="ID_WIKI_CLASS_FEATURE_GUNLANCE_GUNLANCE">
+        <description>
+            <p>The signature weapon of the Gunlance Wielder. Gunlances are heavy polearm cannons that, in their default state, take two hands to wield. While they don't start overtly powerful, a good Gunlance Wielder will eventually customize their weapon to be far more powerful than it was when they first began to wield it. This will increase both its raw power and usability as they become more skilled at maintaining and using their weapon, and customize it to suit their needs.</p>
+            <p class="indent">Gunlances start out dealing 1d6 piercing damage while using Str as it's accuracy and damage ability at level one, but as the Gunlance Wielder improves, so too will their weapon. The number of damage dice they roll for their weapon increases at levels 5, 10, 15, and 20. At a certain point, the Gunlance Wielder will begin to specialize their gunlance to their fighting style and the damage die will change. See Gunlance Specializations.</p>
+        </description>
+        <sheet>
+            <description>The signature weapon of the Gunlance Wielder. Gunlances are heavy polearm cannons that, in their default state, take two hands to wield. Equip your standard gunlance in the equipment menu.</description>
+        </sheet>
+        <setters>
+            <set name="sourceUrl=">https://www.dandwiki.com/w/index.php?title=Gunlance_Wielder_(5e_Class)&amp;oldid=1639651#Gunlance</set>
+        </setters>
+    </element>
+    <element name="Shelling" type="Class Feature" source="D&amp;D Wiki" id="ID_WIKI_CLASS_FEATURE_GUNLANCE_SHELLING">
+        <description>
+            <p>Gunlances, as the name indicates, are ranged weapons as well as melee weapons. Each gunlance has an internal cylinder magazine that holds its shells. These shells may be fire as a ranged attack until the magazine is depleted, at which point the Gunlance Wielder has to pause to reload. These shells are initially no stronger than the lance itself, merely allowing the Gunlance Wielder to attack at range as well as up close. However, like the lance itself, the power of each shell shot will increase as the Gunlance Wielder grows more familiar with their weapon and improves it.</p>
+            <p class="indent">Gunlance shelling starts with a range of 30/120 feet and deals 1d6 piercing damage per shot, initially holding 3 shells per reload, and uses Dex as its accuracy and damage ability. Both the range and the type of damage type rolled will increase as the Gunlance Wielder customizes their gunlance, see Gunlance Specializations. The number of damage die rolled as well as how many shells the gunlance holds per reload increases at levels 5, 10, 15, and 20.</p>
+        </description>
+        <sheet usage="{{gunlance shells}} Shells/Reload">
+            <description>Shells may be fire as a ranged attack until the magazine is depleted, at which point the Gunlance Wielder has to pause to reload. You use dexterity for attack and damage rolls when used this way.</description>
+        </sheet>
+        <setters>
+            <set name="sourceUrl=">https://www.dandwiki.com/w/index.php?title=Gunlance_Wielder_(5e_Class)&amp;oldid=1639651#Shelling</set>
+        </setters>
+        <rules>
+            <stat name="gunlance shells" value="3" />
+            <stat name="gunlance shells" value="1" level="5" />
+            <stat name="gunlance shells" value="1" level="10" />
+            <stat name="gunlance shells" value="1" level="15" />
+            <stat name="gunlance shells" value="1" level="20" />
+        </rules>
+    </element>
+    <element name="Fighting Style" type="Class Feature" source="D&amp;D Wiki" id="ID_WIKI_CLASS_FEATURE_GUNLANCE_FIGHTING_STYLE">
+		<description>
+			<p>You adopt a particular style of fighting as your specialty. Choose one of the following options. You can’t take a Fighting Style option more than once, even if you later get to choose again.</p>
+			<h5 class="caption">ARCHERY</h5>
+			<p>You gain a +2 bonus to attack rolls you make with ranged weapons.</p>
+			<h5 class="caption">DEFENSE</h5>
+			<p>While you are wearing armor, you gain a +1 bonus to AC.</p>
+			<h5 class="caption">GREAT WEAPON FIGHTING</h5>
+			<p>When you roll a 1 or 2 on a damage die for an attack you make with a melee weapon that you are wielding with two hands, you can reroll the die and must use the new roll, even if the new roll is a 1 or a 2. The weapon must have the two-handed or versatile property for you to gain this benefit.</p>
+			<h5 class="caption">PROTECTION</h5>
+			<p>When a creature you can see attacks a target other than you that is within 5 feet of you, you can use your reaction to impose disadvantage on the attack roll. You must be wielding a shield.</p>
+		</description>
+        <sheet display="false" />
+        <setters>
+            <set name="sourceUrl=">https://www.dandwiki.com/w/index.php?title=Gunlance_Wielder_(5e_Class)&amp;oldid=1639651#Fighting_Style</set>
+        </setters>
+		<rules>
+			<select type="Class Feature" name="Fighting Style" supports="Fighting Style, Gunlance Wielder" level="1"/>
+		</rules>
+	</element>
+    <element name="Field Smithing" type="Class Feature" source="D&amp;D Wiki" id="ID_WIKI_CLASS_FEATURE_GUNLANCE_FIELD_SMITHING">
+        <description>
+            <p>Gunlance Wielders are trained to be able to operate in the field without easy access to an armory. As part of this, they are trained to be able to do field repairs on their weapons and armor and to be able to forge additional shells for their Gunlance. The Gunlance Wielder now has advantage on any smithing roll made to repair weapons and armor or forge shells for their gunlance.</p>
+        </description>
+        <sheet>
+            <description>You now has advantage on any smithing roll made to repair weapons and armor or forge shells for their gunlance.</description>
+        </sheet>
+        <setters>
+            <set name="sourceUrl=">https://www.dandwiki.com/w/index.php?title=Gunlance_Wielder_(5e_Class)&amp;oldid=1639651#Field_Smithing</set>
+        </setters>
+    </element>
+    <element name="Gunlance Specialization" type="Class Feature" source="D&amp;D Wiki" id="ID_WIKI_CLASS_FEATURE_GUNLANCE_GUNLANCE_SPECIALIZATION">
+        <description>
+            <p>At this point, the Gunlance Wielder is able to customize their gunlance to suit their specific needs. At third level, you chose a Gunlance Specialization. Choose between Scout, Sentry, and Vanguard, all of which are detailed at the end of the class description. Your choice grants you features at third level and again at 7th, 10, 15th, and 18th.</p>
+        </description>
+        <sheet display="false" />
+        <setters>
+            <set name="sourceUrl=">https://www.dandwiki.com/w/index.php?title=Gunlance_Wielder_(5e_Class)&amp;oldid=1639651#Gunlance_Specialization</set>
+        </setters>
+        <rules>
+            <select type="Archetype" name="Gunlance Specialization" supports="Gunlance Specialization" />
+        </rules>
+    </element>
+    <element name="Ability Score Improvement" type="Class Feature" source="D&amp;D Wiki" id="ID_WIKI_CLASS_FEATURE_GUNLANCE_ABILITY_SCORE_IMPROVEMENT">
+		<compendium display="false" />
+		<description>
+			<p>When you reach 4th level, and again at 8th, 12th, 14th, 16th, and 19th level, you can increase one ability score of your choice by 2, or you can increase two ability scores of your choice by 1. As normal, you can’t increase an ability score above 20 using this feature.</p>
+		</description>
+		<sheet display="false" />
+        <setters>
+            <set name="sourceUrl=">https://www.dandwiki.com/w/index.php?title=Gunlance_Wielder_(5e_Class)&amp;oldid=1639651#Ability_Score_Improvement</set>
+        </setters>
+		<rules>
+			<select type="Class Feature" name="Improvement Option (Gunlance Wielder 4)" supports="Improvement Option,Gunlance Wielder,4" level="4" />
+			<select type="Class Feature" name="Improvement Option (Gunlance Wielder 8)" supports="Improvement Option,Gunlance Wielder,8" level="8" />
+			<select type="Class Feature" name="Improvement Option (Gunlance Wielder 12)" supports="Improvement Option,Gunlance Wielder,12" level="12" />
+			<select type="Class Feature" name="Improvement Option (Gunlance Wielder 14)" supports="Improvement Option,Gunlance Wielder,14" level="14" />
+			<select type="Class Feature" name="Improvement Option (Gunlance Wielder 16)" supports="Improvement Option,Gunlance Wielder,16" level="16" />
+			<select type="Class Feature" name="Improvement Option (Gunlance Wielder 19)" supports="Improvement Option,Gunlance Wielder,19" level="19" />
+		</rules>
+	</element>
+    <element name="Extra Attack" type="Class Feature" source="D&amp;D Wiki" id="ID_WIKI_CLASS_FEATURE_GUNLANCE_EXTRA_ATTACK">
+		<requirements>!ID_INTERNAL_FEATURE_REPLACEMENT_FIGHTER_EXTRA_ATTACK</requirements>
+		<description>
+			<p>Beginning at 5th level, you can attack twice, instead of once, whenever you take the Attack action on your turn.</p>
+		</description>
+		<sheet>
+			<description>You can attack twice, instead of once, whenever you take the Attack action on your turn</description>
+		</sheet>
+        <setters>
+            <set name="sourceUrl=">https://www.dandwiki.com/w/index.php?title=Gunlance_Wielder_(5e_Class)&amp;oldid=1639651#Extra_Attack</set>
+        </setters>
+		<rules>
+			<stat name="extra attack:count" value="2" level="5" bonus="extra attack" />
+		</rules>
+	</element>
+    <element name="Field Tracking" type="Class Feature" source="D&amp;D Wiki" id="ID_WIKI_CLASS_FEATURE_GUNLANCE_FIELD_TRACKING">
+        <description>
+            <p>Owing to their training for operating without support, gunlance wielders are trained to be able to more easily find supplies or tools while out in the field. At Level Six, the gunlance wielder gains advantage on perception checks to locate items, whether useable items or puzzle/quest items.</p>
+        </description>
+        <sheet>
+            <description>You gain advantage on perception checks to locate items, whether useable items or puzzle/quest items.</description>
+        </sheet>
+        <setters>
+            <set name="sourceUrl=">https://www.dandwiki.com/w/index.php?title=Gunlance_Wielder_(5e_Class)&amp;oldid=1639651#Field_Tracking</set>
+        </setters>
+    </element>
+    <element name="Full Burst" type="Class Feature" source="D&amp;D Wiki" id="ID_WIKI_CLASS_FEATURE_GUNLANCE_FULL_BURST">
+        <description>
+            <p>A dangerous offensive move, Full Burst allows the gunlance wielder to unload their entire magazine of shells on a single point. At Level Nine, the gunlance wielder can use this feature to target a point within their shelling range and unload their entire magazine on that point, causing an explosion that deals the entire magazine's worth of damage to every target in a fifteen foot radius. This can be used an equal number of times to the gunlance wielders CON modifier per long rest.</p>
+        </description>
+        <sheet action="All Shells" usage="{{burst:count}}/Long Rest">
+            <description>Target a point within their shelling range and unload their entire magazine on that point, causing an explosion that deals the entire magazine's worth of damage to every target in a fifteen foot radius.</description>
+        </sheet>
+        <setters>
+            <set name="sourceUrl=">https://www.dandwiki.com/w/index.php?title=Gunlance_Wielder_(5e_Class)&amp;oldid=1639651#Full_Burst</set>
+        </setters>
+        <rules>
+            <stat name="burst:count" value="constitution:modifier" />
+        </rules>
+    </element>
+    <element name="Combat Medic" type="Class Feature" source="D&amp;D Wiki" id="ID_WIKI_CLASS_FEATURE_GUNLANCE_COMBAT_MEDIC">
+        <description>
+            <p>Gunlance Wielders serve as specialist units that operate without support, and as part of that training, they are taught to more effectively treat wounds. At Level 11, the Gunlance Wielder gains advantage on Medicine checks and recovers an additional 1d8 when using potions.</p>
+        </description>
+        <sheet>
+            <description>You gain advantage on Medicine checks and recovers an additional 1d8 when using potions.</description>
+        </sheet>
+        <setters>
+            <set name="sourceUrl=">https://www.dandwiki.com/w/index.php?title=Gunlance_Wielder_(5e_Class)&amp;oldid=1639651#Conbat_Medic</set>
+        </setters>
+    </element>
+    <element name="Anti-Air Flair" type="Class Feature" source="D&amp;D Wiki" id="ID_WIKI_CLASS_FEATURE_GUNLANCE_ANTIAIR_FLAIR">
+        <description>
+            <p>Airborne enemies are often a pain to deal with, especially for those who focus on melee attacks. The Anti-Air Flare is a special type of gunlance shell that the Gunlance Wielder has access to that allows them to mitigate this hinderance. Starting from Level 13, the Gunlance Wielder can use this feature to fire a special shell that does 3d6 Piercing damage. If the enemy is airborne when hit with the Anti-Air Flare, they must make a constitution saving throw with a DC equal to that of the Gunlance Wielder's Dex modifier + their proficiency bonus + 8. If they fail, they are knocked to the ground and are left prone until their next turn. If they fall more than 10 feet, they take 1d6 fall damage for every 10 feet they fall.</p>
+        </description>
+        <sheet>
+            <description>You can use this feature to fire a special shell that does 3d6 Piercing damage. If the enemy is airborne when hit with the Anti-Air Flare, they must make a constitution saving throw with a DC equal to that of the Gunlance Wielder's Dex modifier + their proficiency bonus + 8. If they fail, they are knocked to the ground and are left prone until their next turn. If they fall more than 10 feet, they take 1d6 fall damage for every 10 feet they fall.</description>
+        </sheet>
+        <setters>
+            <set name="sourceUrl=">https://www.dandwiki.com/w/index.php?title=Gunlance_Wielder_(5e_Class)&amp;oldid=1639651#Anti-Air_Flare</set>
+        </setters>
+    </element>
+    <element name="Wyvern Stake" type="Class Feature" source="D&amp;D Wiki" id="ID_WIKI_CLASS_FEATURE_GUNLANCE_WYVERN_STAKE">
+        <description>
+            <p>A specialized explosive named for a powerful creature, the wyvern stake uses the leftover propellent from the regular gunlance shells to create a powerful explosive. Starting at Level 14, the Gunlance Wielder can this feature to make an attack roll against a target in melee range. If the attack hits, the target is implanted with the wyvern stake, which does 2d6 Piercing damage at the start of the targets turn for the next three turns. On the fourth turn after the target is hit with the wyvern stake, the stake explodes, dealing 3d6 force damage and 2d6 fire damage. The wyvern stake can be used a number of times equal to the Gunlance Wielders Dex modifier per long or short rest. Wyvern stake can only be used once per magazine.</p>
+        </description>
+        <sheet usage="{{wyvernstake:use}}/Rest">
+            <description>You can use this feature to make an attack roll against a target in melee range. If the attack hits, the target is implanted with the wyvern stake, which does 2d6 Piercing damage at the start of the targets turn for the next three turns. On the fourth turn after the target is hit with the wyvern stake, the stake explodes, dealing 3d6 force damage and 2d6 fire damage. Wyvern stake can only be used once per magazine.</description>
+        </sheet>
+        <setters>
+            <set name="sourceUrl=">https://www.dandwiki.com/w/index.php?title=Gunlance_Wielder_(5e_Class)&amp;oldid=1639651#Wyvern_Stake</set>
+        </setters>
+        <rules>
+            <stat name="wyvernstake:use" value="dexterity:modifier" />
+        </rules>
+    </element>
+    <element name="Wyvern Blast" type="Class Feature" source="D&amp;D Wiki" id="ID_WIKI_CLASS_FEATURE_GUNLANCE_WYVERN_BLAST">
+        <description>
+            <p>One of the most powerful moves in the Gunlance Wielder's arsenal, used by packing a full magazine's worth of shelling propellant into a special chamber of the gunlance and firing it with the same firing mechanism used to release Full Burst. At Level 17, the Gunlance Wielder can use this feature to create a powerful explosion that hits everything in a 15 foot square in front of them. Enemies caught in this blast must make a constitution saving throw with a DC equal to the Gunlance Wielder's STR mod + their proficiency bonus + 8, or take 6d6 force damage and 6d6 fire damage, or half on a successful save. This feature can be used a number of times equal ot the Gunlance Wielder's STR mod per long rest.</p>
+        </description>
+        <sheet action="{{wyvernblast:use}} uses" usage="Long Rest">
+            <description>You can use this feature to create a powerful explosion that hits everything in a 15 foot square in front of them. Enemies caught in this blast must make a constitution saving throw (DC {{wyvernblast:dc}}), or take 6d6 force damage and 6d6 fire damage, or half on a successful save.</description>
+        </sheet>
+        <setters>
+            <set name="sourceUrl=">https://www.dandwiki.com/w/index.php?title=Gunlance_Wielder_(5e_Class)&amp;oldid=1639651#Wyvern_Blast</set>
+        </setters>
+        <rules>
+            <stat name="wyvernblast:use" value="strength:modifier" />
+            <stat name="wyvernblast:dc" value="8" />
+            <stat name="wyvernblast:dc" value="strength:modifier" />
+            <stat name="wyvernblast:dc" value="proficiency" />
+        </rules>
+    </element>
+    <element name="Dragon Breath" type="Class Feature" source="D&amp;D Wiki" id="ID_WIKI_CLASS_FEATURE_GUNLANCE_DRAGON_BREATH">
+        <description>
+            <p>The most dangerous technique the Gunlance Wielders possess, Dragon Breath allows the Gunlance Wielder to release the safeties on their gunlance for a short time, overclocking the entire weapon and allowing them to deal more damage with both shelling and lance attacks. At Level 20, the Gunlance Wielder can use this feature to double the damage rolls on all attacks made using their gunlance for the next three turns. This stacks with other damage increasing features of this class and can only be used once per long rest.</p>
+        </description>
+        <sheet usage="1/Long Rest">
+            <description>You can use this feature to double the damage rolls on all attacks made using their gunlance for the next three turns. This stacks with other damage increasing features of this class and can only be used once per long rest.</description>
+        </sheet>
+        <setters>
+            <set name="sourceUrl=">https://www.dandwiki.com/w/index.php?title=Gunlance_Wielder_(5e_Class)&amp;oldid=1639651#Dragon_Breath</set>
+        </setters>
+    </element>
+
+    <!-- Archetypes -->
+    <element name="Scout" type="Archetype" source="D&amp;D Wiki" id="ID_WIKI_ARCHETYPE_GUNLANCE_SCOUT">
+        <supports>Gunlance Specialization</supports>
+        <description>
+            <p>Scouts are Gunlance Wielders who trade in raw power for enhanced mobility and the ability to easily switch out what type of shells they use in their gunlance.</p>
+            <div element="ID_WIKI_ARCHETYPE_FEATURE_SCOUTGUNLANCE_GUNLANCE" />
+            <div element="ID_WIKI_ARCHETYPE_FEATURE_SCOUTGUNLANCE_SIDEHOP" />
+            <div element="ID_WIKI_ARCHETYPE_FEATURE_SCOUTGUNLANCE_ELEMENTAL_SHELLS" />
+            <div element="ID_WIKI_ARCHETYPE_FEATURE_SCOUTGUNLANCE_QUICK_RELOAD" />
+            <div element="ID_WIKI_ARCHETYPE_FEATURE_SCOUTGUNLANCE_HAIL_CUTTER" />
+            <div element="ID_WIKI_ARCHETYPE_FEATURE_SCOUTGUNLANCE_BLAST_DASH" />
+        </description>
+        <sheet display="false" />
+        <setters>
+            <set name="sourceUrl">https://www.dandwiki.com/w/index.php?title=Gunlance_Wielder_(5e_Class)&amp;oldid=1639651#Scout</set>
+        </setters>
+        <rules>
+            <grant type="Archetype Feature" id="ID_WIKI_ARCHETYPE_FEATURE_SCOUTGUNLANCE_GUNLANCE" level="3" />
+            <grant type="Archetype Feature" id="ID_WIKI_ARCHETYPE_FEATURE_SCOUTGUNLANCE_SIDEHOP" level="3" />
+            <grant type="Archetype Feature" id="ID_WIKI_ARCHETYPE_FEATURE_SCOUTGUNLANCE_ELEMENTAL_SHELLS" level="7" />
+            <grant type="Archetype Feature" id="ID_WIKI_ARCHETYPE_FEATURE_SCOUTGUNLANCE_QUICK_RELOAD" level="10" />
+            <grant type="Archetype Feature" id="ID_WIKI_ARCHETYPE_FEATURE_SCOUTGUNLANCE_HAIL_CUTTER" level="15" />
+            <grant type="Archetype Feature" id="ID_WIKI_ARCHETYPE_FEATURE_SCOUTGUNLANCE_BLAST_DASH" level="18" />
+        </rules>
+    </element>
+    <element name="Scout Gunlance" type="Archetype Feature" source="D&amp;D Wiki" id="ID_WIKI_ARCHETYPE_FEATURE_SCOUTGUNLANCE_GUNLANCE">
+        <description>
+            <p>The scout's gunlance is the weakest of the three specialized Gunlances, only giving it a minor boost in power. In exchange, however, it is much lighter and more mobile. The scouts gunlance now deals rolls d8's as the damage die for both its melee and shelling attacks. In additon, the scouts gunlance can now be wielded in one hand, allowing them to use a shield as well. In addition, the shelling range increases to 80/320.</p>
+        </description>
+        <sheet>
+            <description>You gain a lighter gunlance. It can now be used one handed and used with a shield, as well with a range increase.</description>
+        </sheet>
+        <setters>
+            <set name="sourceUrl">https://www.dandwiki.com/w/index.php?title=Gunlance_Wielder_(5e_Class)&amp;oldid=1639651#Scout</set>
+        </setters>
+        <rules>
+            <grant type="Proficiency" id="ID_PROFICIENCY_WEAPON_PROFICIENCY_GUNLANCE_SCOUT" />
+        </rules>
+    </element>
+    <element name="Side Hop" type="Archetype Feature" source="D&amp;D Wiki" id="ID_WIKI_ARCHETYPE_FEATURE_SCOUTGUNLANCE_SIDEHOP">
+        <desription>
+            <p>Sometimes, all that's needed to evade an enemy attack is a slight hop to the side. At Level Three, the scout can use this feat to attempt to avoid an enemy attack by hoping out of the way, using their reaction to impose disadvantage on an enemy attack. This feature can be used a number of times equal to the scouts Dex modifier per long rest. Using this feet moves the Gunlance Wielder 10 feet in any direction. This movement can trigger attacks of opportunity, but they also have disadvantage.</p>
+        </desription>
+        <sheet usage="{{dexterity:modifier}}/Long Rest">
+            <description>You can use this feature to attempt to avoid an enemy attack by hoping out of the way. Using your reaction to impose disadvantage on an enemy attack. Using this feet moves the Gunlance Wielder 10 feet in any direction. This movement can trigger attacks of opportunity, but they also have disadvantage.</description>
+        </sheet>
+        <setters>
+            <set name="sourceUrl">https://www.dandwiki.com/w/index.php?title=Gunlance_Wielder_(5e_Class)&amp;oldid=1639651#Scout</set>
+        </setters>
+    </element>
+    <element name="Elemental Shells" type="Archetype Feature" source="D&amp;D Wiki" id="ID_WIKI_ARCHETYPE_FEATURE_SCOUTGUNLANCE_ELEMENTAL_SHELLS">
+        <description>
+            <p>To compensate for their lower damage, Scouts have learned to create and utilize element infused shells in their gunlances. At Level Seven, the scout can create elemental shells for their gunlance with the same materials they use for their basic shells. These shells can be Fire, Ice, Acid, Lightning, or Poison. When reloading their gunlance, the scout can choose to use elemental shells for their next magazine. These shells will last until either the mazagine is depleted or they choose to reload on their own.</p>
+        </description>
+        <sheet>
+            <description>You can create elemental shells for their gunlance with the same materials they use for their basic shells. These shells can be Fire, Ice, Acid, Lightning, or Poison. When reloading their gunlance, you can choose to use elemental shells for their next magazine. These shells will last until either the mazagine is depleted or they choose to reload on their own.</description>
+        </sheet>
+        <setters>
+            <set name="sourceUrl">https://www.dandwiki.com/w/index.php?title=Gunlance_Wielder_(5e_Class)&amp;oldid=1639651#Scout</set>
+        </setters>
+    </element>
+    <element name="Quick Reload" type="Archetype Feature" source="D&amp;D Wiki" id="ID_WIKI_ARCHETYPE_FEATURE_SCOUTGUNLANCE_QUICK_RELOAD">
+        <description>
+            <p>Owing to their relatively light weapons, Scouts have learned to reload the shells in their Gunlances faster than their heavier counterparts. At Level 10, the Scout can reload their entire magazine at once using a bonus action.</p>
+        </description>
+        <sheet>
+            <description>You can reload their entire magazine at once using a bonus action.</description>
+        </sheet>
+    </element>
+    <element name="Hail Cutter" type="Archetype Feature" source="D&amp;D Wiki" id="ID_WIKI_ARCHETYPE_FEATURE_SCOUTGUNLANCE_HAIL_CUTTER">
+        <description>
+            <p>A skill honed by Scouts that allows them to deal with flying enemies that have proven resistant to the Anti-Air Flare. At Level 15, the Scout can use this feature to make a leaping attack propelled by the use of a single gunlance shell. This attack uses their melee attack and damage rolls and has a vertical range of 10 feet. The Scout does not take damage upon landing. This feature requires the Scout to have at least one shell in their magazine in order to be used.</p>
+        </description>
+        <sheet>
+            <description>You can use this feature to make a leaping attack propelled by the use of a single gunlance shell. This attack uses their melee attack and damage rolls and has a vertical range of 10 feet. You do not take damage upon landing. This feature requires the Scout to have at least one shell in their magazine in order to be used.</description>
+        </sheet>
+        <setters>
+            <set name="sourceUrl">https://www.dandwiki.com/w/index.php?title=Gunlance_Wielder_(5e_Class)&amp;oldid=1639651#Scout</set>
+        </setters>
+    </element>
+    <element name="Blast Dash" type="Archetype Feature" source="D&amp;D Wiki" id="ID_WIKI_ARCHETYPE_FEATURE_SCOUTGUNLANCE_BLAST_DASH">
+        <description>
+            <p>In order to further enhance their mobility, Scouts have customized their gunlances to be able to use a variant of the Wyvern Blast to propel themselves. At Level 18, the Scout can use this feature to propel themselves up to sixty feet forward. If the Gunlance Wielder would be in melee range of an enemy at any point during the dash, they can use a melee attack against that enemy to end the dash early. They can use this feature a number of times equal to their Dex modifier per long rest.</p>
+        </description>
+        <sheet usage="{{dexterity}}/Long Rest">
+            <description>You can use this feature to propel yourself up to sixty feet forward. If the Gunlance Wielder would be in melee range of an enemy at any point during the dash, they can use a melee attack against that enemy to end the dash early. </description>
+        </sheet>
+        <setters>
+            <set name="sourceUrl">https://www.dandwiki.com/w/index.php?title=Gunlance_Wielder_(5e_Class)&amp;oldid=1639651#Scout</set>
+        </setters>
+    </element>
+
+    <element name="Sentry" type="Archetype" source="D&amp;D Wiki" id="ID_WIKI_ARCHETYPE_GUNLANCE_SENTRY">
+        <supports>Gunlance Specialization</supports>
+        <description>
+            <p>Sentries are the bulwark of the Gunlance Wielders, trading in mobility or offensive strength for added defensive capabilities. Though their gunlances are decently strong, they are still light enough to wield one handed so the Sentry may use a shield as well as their gunlance.</p>
+            <div element="ID_WIKI_ARCHETYPE_FEATURE_SENTRYGUNLANCE_GUNLANCE" />
+            <div element="ID_WIKI_ARCHETYPE_FEATURE_SENTRYGUNLANCE_TAKE_COVER" />
+            <div element="ID_WIKI_ARCHETYPE_FEATURE_SENTRYGUNLANCE_OVERWATCH" />
+            <div element="ID_WIKI_ARCHETYPE_FEATURE_SENTRYGUNLANCE_FULLGUARD" />
+            <div element="ID_WIKI_ARCHETYPE_FEATURE_SENTRYGUNLANCE_GUARD_RELOAD" />
+            <div element="ID_WIKI_ARCHETYPE_FEATURE_SENTRYGUNLANCE_FORTRESS_WALL" />
+        </description>
+        <sheet display="false" />
+        <setters>
+            <set name="sourceUrl">https://www.dandwiki.com/w/index.php?title=Gunlance_Wielder_(5e_Class)&amp;oldid=1639651#Sentry</set>
+        </setters>
+        <rules>
+            <grant type="Archetype Feature" id="ID_WIKI_ARCHETYPE_FEATURE_SENTRYGUNLANCE_GUNLANCE" level="3" />
+            <grant type="Archetype Feature" id="ID_WIKI_ARCHETYPE_FEATURE_SENTRYGUNLANCE_TAKE_COVER" level="3" />
+            <grant type="Archetype Feature" id="ID_WIKI_ARCHETYPE_FEATURE_SENTRYGUNLANCE_OVERWATCH" level="7" />
+            <grant type="Archetype Feature" id="ID_WIKI_ARCHETYPE_FEATURE_SENTRYGUNLANCE_FULLGUARD" level="10" />
+            <grant type="Archetype Feature" id="ID_WIKI_ARCHETYPE_FEATURE_SENTRYGUNLANCE_GUARD_RELOAD" level="15" />
+            <grant type="Archetype Feature" id="ID_WIKI_ARCHETYPE_FEATURE_SENTRYGUNLANCE_FORTRESS_WALL" level="18" />
+        </rules>
+    </element>
+    <element name="Sentry's Gunlance" type="Archetype Feature" source="D&amp;D Wiki" id="ID_WIKI_ARCHETYPE_FEATURE_SENTRYGUNLANCE_GUNLANCE">
+        <description>
+            <p>Sentry gunlances are the most middling of the three specializations, being light enough to wield in one hand while still doing solid damage, but not so light as to be easily mobile. The sentry's gunlance now rolls d8's for both it's melee attacks and shelling and can be used in one hand. In addition, the shelling range increases to 100/400.</p>
+        </description>
+        <sheet>
+            <description>You gain a sturdier gunlance. It can now be used one handed and used with a shield, as well with a range increase.</description>
+        </sheet>
+        <setters>
+            <set name="sourceUrl">https://www.dandwiki.com/w/index.php?title=Gunlance_Wielder_(5e_Class)&amp;oldid=1639651#Sentry</set>
+        </setters>
+        <rules>
+            <grant type="Proficiency" id="ID_PROFICIENCY_WEAPON_PROFICIENCY_GUNLANCE_SENTRY" />
+        </rules>
+    </element>
+    <element name="Take Cover" type="Archetype Feature" source="D&amp;D Wiki" id="ID_WIKI_ARCHETYPE_FEATURE_SENTRYGUNLANCE_TAKE_COVER">
+        <description>
+            <p>Sentries have focused on defense, not just for themselves but for others. Once the sentry hits Level Three, this feature allows the sentry to use their shield to grant one ally within five feet of them half-cover until the sentry's next turn or until the ally moves away from the sentry.</p>
+        </description>
+        <sheet>
+            <description>You can use your shield to grant one ally within five feet of them half-cover until the sentry's next turn or until the ally moves away from the sentry.</description>
+        </sheet>
+        <setters>
+            <set name="sourceUrl">https://www.dandwiki.com/w/index.php?title=Gunlance_Wielder_(5e_Class)&amp;oldid=1639651#Sentry</set>
+        </setters>
+    </element>
+    <element name="Overwatch" type="Archetype Feature" source="D&amp;D Wiki" id="ID_WIKI_ARCHETYPE_FEATURE_SENTRYGUNLANCE_OVERWATCH">
+        <description>
+            <p>As a bulwark style fighter, the sentry has learned to protect their allies from ambush. At Level Seven, the sentry can assume an overwatch position, granting them advantage on perception checks against stealth and allowing them to make a shelling or melee attack against any enemy that attacks an ally as a reaction.</p>
+        </description>
+        <sheet>
+            <description>You can assume an overwatch position, granting advantage on perception checks against stealth and allowing to make a shelling or melee attack against any enemy that attacks an ally as a reaction.</description>
+        </sheet>
+        <setters>
+            <set name="sourceUrl">https://www.dandwiki.com/w/index.php?title=Gunlance_Wielder_(5e_Class)&amp;oldid=1639651#Sentry</set>
+        </setters>
+    </element>
+    <element name="Full Guard" type="Archetype Feature" source="D&amp;D Wiki" id="ID_WIKI_ARCHETYPE_FEATURE_SENTRYGUNLANCE_FULLGUARD">
+        <description>
+            <p>Sentries primarily serve as protection for their allies, and at times that means taking the hit for them. At Level Ten, the sentry can use their reaction to put themselves between an ally and an enemy, taking the hit for their companion. If the attack against their ally would fail to hit the sentry, the sentry takes no damage. Otherwise, they take full damage.</p>
+        </description>
+        <sheet action="Reaction">
+            <description>You can use their reaction to put themselves between an ally and an enemy, taking the hit for their companion. If the attack against their ally would fail to hit the sentry, the sentry takes no damage. Otherwise, they take full damage.</description>
+        </sheet>
+        <setters>
+            <set name="sourceUrl">https://www.dandwiki.com/w/index.php?title=Gunlance_Wielder_(5e_Class)&amp;oldid=1639651#Sentry</set>
+        </setters>
+    </element>
+    <element name="Guard Reload" type="Archetype Feature" source="D&amp;D Wiki" id="ID_WIKI_ARCHETYPE_FEATURE_SENTRYGUNLANCE_GUARD_RELOAD">
+        <description>
+            <p>A complicated technique that Sentries have developed in order to avoid having to lower their guard while reloading, Guard Reload relies on using the impact of an attack on the Sentry's shield in order to reload their gunlance. At Level 15, the Sentry can use their reaction to impose disadvantage on an attack against them, reloading their gunlance if the attack does not hit. This feature requires a shield in order to be used.</p>
+        </description>
+        <sheet action="Reaction">
+            <description>You can use your reaction to impose disadvantage on an attack against them, reloading their gunlance if the attack does not hit. This feature requires a shield in order to be used.</description>
+        </sheet>
+        <setters>
+            <set name="sourceUrl">https://www.dandwiki.com/w/index.php?title=Gunlance_Wielder_(5e_Class)&amp;oldid=1639651#Sentry</set>
+        </setters>
+    </element>
+    <element name="Fortress Wall" type="Archetype Feature" source="D&amp;D Wiki" id="ID_WIKI_ARCHETYPE_FEATURE_SENTRYGUNLANCE_FORTRESS_WALL">
+        <description>
+            <p>The ultimate defensive technique developed by the Sentries, Fortress Wall draws enemy fire towards themselves at the cost of their own movement. At Level 18, the Sentry can use this feature to draw all attacks by enemies within 15 feet of them towards the Sentry until the start of their next turn. The Sentry cannot move on the turn they use this feature, nor can they use their reaction until their next turn, but all attacks against them have disadvantage while this feature is active. This feature can be used an equal number of times to the Sentry's Con modifier per long rest.</p>
+        </description>
+        <sheet usage="{{constitution:modifier}}/Long Rest">
+            <description>You can use this feature to draw all attacks by enemies within 15 feet of them towards you until the start of their next turn. You cannot move on the turn they use this feature, nor can they use their reaction until their next turn, but all attacks against them have disadvantage while this feature is active.</description>
+        </sheet>
+        <setters>
+            <set name="sourceUrl">https://www.dandwiki.com/w/index.php?title=Gunlance_Wielder_(5e_Class)&amp;oldid=1639651#Sentry</set>
+        </setters>
+    </element>
+
+    <element name="Vanguard" type="Archetype" source="D&amp;D Wiki" id="ID_WIKI_ARCHETYPE_GUNLANCE_VANGUARD">
+        <supports>Gunlance Specialization</supports>
+        <description>
+            <p>Sentries are the bulwark of the Gunlance Wielders, trading in mobility or offensive strength for added defensive capabilities. Though their gunlances are decently strong, they are still light enough to wield one handed so the Sentry may use a shield as well as their gunlance.</p>
+            <div element="ID_WIKI_ARCHETYPE_FEATURE_VANGUARDGUNLANCE_GUNLANCE" />
+            <div element="ID_WIKI_ARCHETYPE_FEATURE_VANGUARDGUNLANCE_OVERCLOCKED_SHELLING" />
+            <div element="ID_WIKI_ARCHETYPE_FEATURE_VANGUARDGUNLANCE_WEAKNESS_EXPLOIT" />
+            <div element="ID_WIKI_ARCHETYPE_FEATURE_VANGUARDGUNLANCE_FULL_RUSH" />
+            <div element="ID_WIKI_ARCHETYPE_FEATURE_VANGUARDGUNLANCE_GROUND_SPLITTER" />
+            <div element="ID_WIKI_ARCHETYPE_FEATURE_VANGUARDGUNLANCE_DRAGON_BLAST" />
+        </description>
+        <sheet display="false" />
+        <setters>
+            <set name="sourceUrl">https://www.dandwiki.com/w/index.php?title=Gunlance_Wielder_(5e_Class)&amp;oldid=1639651#Vanguard</set>
+        </setters>
+        <rules>
+            <grant type="Archetype Feature" id="ID_WIKI_ARCHETYPE_FEATURE_VANGUARDGUNLANCE_GUNLANCE" level="3" />
+            <grant type="Archetype Feature" id="ID_WIKI_ARCHETYPE_FEATURE_VANGUARDGUNLANCE_OVERCLOCKED_SHELLING" level="3" />
+            <grant type="Archetype Feature" id="ID_WIKI_ARCHETYPE_FEATURE_VANGUARDGUNLANCE_WEAKNESS_EXPLOIT" level="7" />
+            <grant type="Archetype Feature" id="ID_WIKI_ARCHETYPE_FEATURE_VANGUARDGUNLANCE_FULL_RUSH" level="10" />
+            <grant type="Archetype Feature" id="ID_WIKI_ARCHETYPE_FEATURE_VANGUARDGUNLANCE_GROUND_SPLITTER" level="15" />
+            <grant type="Archetype Feature" id="ID_WIKI_ARCHETYPE_FEATURE_VANGUARDGUNLANCE_DRAGON_BLAST" level="18" />
+        </rules>
+    </element>
+    <element name="Vanguard Gunlance" type="Archetype Feature" source="D&amp;D Wiki" id="ID_WIKI_ARCHETYPE_FEATURE_VANGUARDGUNLANCE_GUNLANCE">
+        <description>
+            <p>Vanguards overtune their gunlances for sheer power, at the cost of making them much heavier than normal. The vanguards gunlance now rolls d12s for both its melee attacks and shelling, but remains a two handed weapon. In addition, the shelling range increases to 150/600.</p>
+        </description>
+        <sheet>
+            <description>You gain a heavier gunlance with a range increase.</description>
+        </sheet>
+        <setters>
+            <set name="sourceUrl">https://www.dandwiki.com/w/index.php?title=Gunlance_Wielder_(5e_Class)&amp;oldid=1639651#Vanguard</set>
+        </setters>
+        <rules>
+            <grant type="Proficiency" id="ID_PROFICIENCY_WEAPON_PROFICIENCY_GUNLANCE_VANGUARD" />
+        </rules>
+    </element>
+    <element name="Overclocked Shelling" type="Archetype Feature" source="D&amp;D Wiki" id="ID_WIKI_ARCHETYPE_FEATURE_VANGUARDGUNLANCE_OVERCLOCKED_SHELLING">
+        <description>
+            <p>The vanguard has designed their gunlance to be able to overclock their shells. At Level Three, once per long rest, the vanguard can trigger the overclocking in their gunlance, causing all regular shelling attacks to automatically do critical damage if the shelling hits during the turn this feature is activated.</p>
+        </description>
+        <sheet usage="Long Rest">
+            <description>Once per long rest, you can trigger the overclocking in your gunlance, causing all regular shelling attacks to automatically do critical damage if the shelling hits during the turn this feature is activated.</description>
+        </sheet>
+        <setters>
+            <set name="sourceUrl">https://www.dandwiki.com/w/index.php?title=Gunlance_Wielder_(5e_Class)&amp;oldid=1639651#Vanguard</set>
+        </setters>
+    </element>
+    <element name="Weakness Exploit" type="Archetype Feature" source="D&amp;D Wiki" id="ID_WIKI_ARCHETYPE_FEATURE_VANGUARDGUNLANCE_WEAKNESS_EXPLOIT">
+        <description>
+            <p>The vanguard has learned to identify and target weakpoints in their enemies. At Level Seven, once per long or short rest, the Vanguard can use a bonus action to target an enemies weakness for their next turn, dealing double damage with each attack that lands that turn, regardless of whether or not they land a critical.</p>
+        </description>
+        <sheet action="Bonus Action" usage="Short/Long Rest">
+            <description>Once per long or short rest, you can use a bonus action to target an enemies weakness for their next turn, dealing double damage with each attack that lands that turn, regardless of whether or not they land a critical.</description>
+        </sheet>
+        <setters>
+            <set name="sourceUrl">https://www.dandwiki.com/w/index.php?title=Gunlance_Wielder_(5e_Class)&amp;oldid=1639651#Vanguard</set>
+        </setters>
+    </element>
+    <element name="Full Rush" type="Archetype Feature" source="D&amp;D Wiki" id="ID_WIKI_ARCHETYPE_FEATURE_VANGUARDGUNLANCE_FULL_RUSH">
+        <description>
+            <p>Owing to their focus on their offense, vanguards have learned to make wider swings in order to more effectively deal with groups of enemies. At Level Ten, the Vanguard can use their bonus action to target all enemies within a 10 foot radius around them, causing all melee attacks that turn to hit every enemy within that 10 foot radius.</p>
+        </description>
+        <sheet>
+            <description>You can use their bonus action to target all enemies within a 10 foot radius around them, causing all melee attacks that turn to hit every enemy within that 10 foot radius.</description>
+        </sheet>
+        <setters>
+            <set name="sourceUrl">https://www.dandwiki.com/w/index.php?title=Gunlance_Wielder_(5e_Class)&amp;oldid=1639651#Vanguard</set>
+        </setters>
+    </element>
+    <element name="Ground Splitter" type="Archetype Feature" source="D&amp;D Wiki" id="ID_WIKI_ARCHETYPE_FEATURE_VANGUARDGUNLANCE_GROUND_SPLITTER">
+        <description>
+            <p>An aggressive move designed to allow the Vanguard to quickly close the distance between them an enemy. At Level 15, the Vanguard can use a shell to propel themselves up to 30 feet forward. Due to the weight of their gunlance, the Vanguard's gunlance drags across the ground during this propulsion, causing the lance part of the weapon to heat up. At the end of this propulsion, the Vanguard may make a melee attack with the heated gunlance, dealing an extra 2d12 Fire damage if the attack hits. This ability requires the gunlance wielder to have a shell in their magazine in order to be used.</p>
+        </description>
+        <sheet>
+            <description>You can use a shell to propel themselves up to 30 feet forward. Due to the weight of their gunlance, the Vanguard's gunlance drags across the ground during this propulsion, causing the lance part of the weapon to heat up. At the end of this propulsion, the Vanguard may make a melee attack with the heated gunlance, dealing an extra 2d12 Fire damage if the attack hits. This ability requires the gunlance wielder to have a shell in their magazine in order to be used.</description>
+        </sheet>
+        <setters>
+            <set name="sourceUrl">https://www.dandwiki.com/w/index.php?title=Gunlance_Wielder_(5e_Class)&amp;oldid=1639651#Vanguard</set>
+        </setters>
+    </element>
+    <element name="Dragon Blast" type="Archetype Feature" source="D&amp;D Wiki" id="ID_WIKI_ARCHETYPE_FEATURE_VANGUARDGUNLANCE_DRAGON_BLAST">
+        <description>
+            <p>In accordance with their more aggressive fighting style, Vanguard's have modified their Gunlance in order to create an overclocked, far more powerful version of the Wyvern Blast. At Level 18, the Vanguard can use this feature to create a superhot explosion of flame that hits a 30 foot square in front of them. Enemies caught in this blast must make a constitution saving throw with a DC equal to the Vanguard's STR mod + their proficiency bonus + 10, or take 6d12 force damage and 6d12 fire damage, or half on a successful save. This ability can only be used once per long rest.</p>
+        </description>
+        <sheet>
+            <description>You can use this feature to create a superhot explosion of flame that hits a 30 foot square in front of them. Enemies caught in this blast must make a constitution saving throw with a DC equal to the Vanguard's STR mod + their proficiency bonus + 10, or take 6d12 force damage and 6d12 fire damage, or half on a successful save.</description>
+        </sheet>
+        <setters>
+            <set name="sourceUrl">https://www.dandwiki.com/w/index.php?title=Gunlance_Wielder_(5e_Class)&amp;oldid=1639651#Vanguard</set>
+        </setters>
+    </element>
+
+
+    <append id="ID_WOTC_PHB_CLASS_FEATURE_FIGHTINGSTYLE_ARCHERY">
+        <supports>Gunlance Wielder</supports>
+    </append>
+    <append id="ID_WOTC_PHB_CLASS_FEATURE_FIGHTINGSTYLE_DEFENSE">
+        <supports>Gunlance Wielder</supports>
+    </append>
+    <append id="ID_WOTC_PHB_CLASS_FEATURE_FIGHTINGSTYLE_GREAT_WEAPON_FIGHTING">
+        <supports>Gunlance Wielder</supports>
+    </append>
+    <append id="ID_WOTC_PHB_CLASS_FEATURE_FIGHTINGSTYLE_PROTECTION">
+        <supports>Gunlance Wielder</supports>
+    </append>
+
+    <element name="Weapon Proficiency (Standard Gunlance)" type="Proficiency" source="D&amp;D Wiki" id="ID_PROFICIENCY_WEAPON_PROFICIENCY_GUNLANCE_STANDARD">
+        <supports>Weapon, Martial, Melee, ID_INTERNAL_WEAPON_CATEGORY_MARTIAL_MELEE, ID_INTERNAL_DAMAGE_TYPE_PIERCING, ID_INTERNAL_WEAPON_PROPERTY_TWOHANDED</supports>
+        <sheet alt="Standard Gunlance" />    
+        <setters>
+            <set name="sourceUrl">https://www.dandwiki.com/w/index.php?title=Gunlance_Wielder_(5e_Class)&amp;oldid=1639651#Standard</set>
+        </setters>
+    </element>
+    <append id="ID_PROFICIENCY_WEAPON_PROFICIENCY_MARTIAL_MELEE_WEAPONS">
+        <rules>
+            <grant type="Proficiency" id="ID_PROFICIENCY_WEAPON_PROFICIENCY_GUNLANCE_STANDARD" />
+        </rules>
+    </append>
+    <element name="Standard Gunlance (Level 1)" type="Weapon" source="D&amp;D Wiki" id="ID_WIKI_WEAPON_GUNLANCE_STANDARD_LEVELONE">
+		<supports>ID_INTERNAL_WEAPON_CATEGORY_MARTIAL_MELEE,ID_INTERNAL_DAMAGE_TYPE_PIERCING, ID_INTERNAL_WEAPON_PROPERTY_TWOHANDED</supports>
+		<description>
+			<p></p>
+		</description>
+		<setters>
+			<set name="category">Weapons</set>
+			<set name="cost" currency="gp"></set>
+			<set name="weight" lb="3"></set>
+			<set name="slot">twohand</set>
+            <set name="range">30/120</set>
+			<set name="damage" type="piercing">1d6</set>
+			<set name="proficiency">ID_PROFICIENCY_WEAPON_PROFICIENCY_GUNLANCE_STANDARD</set>
+            <set name="sourceUrl">https://www.dandwiki.com/w/index.php?title=Gunlance_Wielder_(5e_Class)&amp;oldid=1639651#Standard</set>
+		</setters>
+	</element>
+    <element name="Standard Gunlance (Level 5)" type="Weapon" source="D&amp;D Wiki" id="ID_WIKI_WEAPON_GUNLANCE_STANDARD_LEVELFIVE">
+		<supports>ID_INTERNAL_WEAPON_CATEGORY_MARTIAL_MELEE,ID_INTERNAL_DAMAGE_TYPE_PIERCING, ID_INTERNAL_WEAPON_PROPERTY_TWOHANDED</supports>
+		<description>
+			<p></p>
+		</description>
+		<setters>
+			<set name="category">Weapons</set>
+			<set name="cost" currency="gp"></set>
+			<set name="weight" lb="3"></set>
+			<set name="slot">twohand</set>
+            <set name="range">30/120</set>
+			<set name="damage" type="piercing">2d6</set>
+			<set name="proficiency">ID_PROFICIENCY_WEAPON_PROFICIENCY_GUNLANCE_STANDARD</set>
+            <set name="sourceUrl">https://www.dandwiki.com/w/index.php?title=Gunlance_Wielder_(5e_Class)&amp;oldid=1639651#Standard</set>
+		</setters>
+	</element>
+    <element name="Standard Gunlance (Level 10)" type="Weapon" source="D&amp;D Wiki" id="ID_WIKI_WEAPON_GUNLANCE_STANDARD_LEVELTEN">
+		<supports>ID_INTERNAL_WEAPON_CATEGORY_MARTIAL_MELEE,ID_INTERNAL_DAMAGE_TYPE_PIERCING, ID_INTERNAL_WEAPON_PROPERTY_TWOHANDED</supports>
+		<description>
+			<p></p>
+		</description>
+		<setters>
+			<set name="category">Weapons</set>
+			<set name="cost" currency="gp"></set>
+			<set name="weight" lb="3"></set>
+			<set name="slot">twohand</set>
+            <set name="range">30/120</set>
+			<set name="damage" type="piercing">3d6</set>
+			<set name="proficiency">ID_PROFICIENCY_WEAPON_PROFICIENCY_GUNLANCE_STANDARD</set>
+            <set name="sourceUrl">https://www.dandwiki.com/w/index.php?title=Gunlance_Wielder_(5e_Class)&amp;oldid=1639651#Standard</set>
+		</setters>
+	</element>
+    <element name="Standard Gunlance (Level 15)" type="Weapon" source="D&amp;D Wiki" id="ID_WIKI_WEAPON_GUNLANCE_STANDARD_LEVELFIFTEEN">
+		<supports>ID_INTERNAL_WEAPON_CATEGORY_MARTIAL_MELEE,ID_INTERNAL_DAMAGE_TYPE_PIERCING, ID_INTERNAL_WEAPON_PROPERTY_TWOHANDED</supports>
+		<description>
+			<p></p>
+		</description>
+		<setters>
+			<set name="category">Weapons</set>
+			<set name="cost" currency="gp"></set>
+			<set name="weight" lb="3"></set>
+			<set name="slot">twohand</set>
+            <set name="range">30/120</set>
+			<set name="damage" type="piercing">4d6</set>
+			<set name="proficiency">ID_PROFICIENCY_WEAPON_PROFICIENCY_GUNLANCE_STANDARD</set>
+            <set name="sourceUrl">https://www.dandwiki.com/w/index.php?title=Gunlance_Wielder_(5e_Class)&amp;oldid=1639651#Standard</set>
+		</setters>
+	</element>
+    <element name="Standard Gunlance (Level 20)" type="Weapon" source="D&amp;D Wiki" id="ID_WIKI_WEAPON_GUNLANCE_STANDARD_LEVELTWENTY">
+		<supports>ID_INTERNAL_WEAPON_CATEGORY_MARTIAL_MELEE,ID_INTERNAL_DAMAGE_TYPE_PIERCING, ID_INTERNAL_WEAPON_PROPERTY_TWOHANDED</supports>
+		<description>
+			<p></p>
+		</description>
+		<setters>
+			<set name="category">Weapons</set>
+			<set name="cost" currency="gp"></set>
+			<set name="weight" lb="3"></set>
+			<set name="slot">twohand</set>
+            <set name="range">30/120</set>
+			<set name="damage" type="piercing">5d6</set>
+			<set name="proficiency">ID_PROFICIENCY_WEAPON_PROFICIENCY_GUNLANCE_STANDARD</set>
+            <set name="sourceUrl">https://www.dandwiki.com/w/index.php?title=Gunlance_Wielder_(5e_Class)&amp;oldid=1639651#Standard</set>
+		</setters>
+	</element>
+
+    <element name="Weapon Proficiency (Scout Gunlance)" type="Proficiency" source="D&amp;D Wiki" id="ID_PROFICIENCY_WEAPON_PROFICIENCY_GUNLANCE_SCOUT">
+        <supports>Weapon, Martial, Melee, ID_INTERNAL_WEAPON_CATEGORY_MARTIAL_MELEE, ID_INTERNAL_DAMAGE_TYPE_PIERCING</supports>
+        <sheet alt="Scout Gunlance" />  
+        <setters>
+            <set name="sourceUrl">https://www.dandwiki.com/w/index.php?title=Gunlance_Wielder_(5e_Class)&amp;oldid=1639651#Scout</set>
+        </setters>  
+    </element>
+    <append id="ID_PROFICIENCY_WEAPON_PROFICIENCY_MARTIAL_MELEE_WEAPONS">
+        <rules>
+            <grant type="Proficiency" id="ID_PROFICIENCY_WEAPON_PROFICIENCY_GUNLANCE_SCOUT" />
+        </rules>
+    </append>
+    <element name="Scout Gunlance (Level 1)" type="Weapon" source="D&amp;D Wiki" id="ID_WIKI_WEAPON_GUNLANCE_SCOUT_LEVELONE">
+		<supports>ID_INTERNAL_WEAPON_CATEGORY_MARTIAL_MELEE,ID_INTERNAL_DAMAGE_TYPE_PIERCING</supports>
+		<description>
+			<p></p>
+		</description>
+		<setters>
+			<set name="category">Weapons</set>
+			<set name="cost" currency="gp"></set>
+			<set name="weight" lb="3"></set>
+			<set name="slot">onehand</set>
+            <set name="range">80/320</set>
+			<set name="damage" type="piercing">1d8</set>
+			<set name="proficiency">ID_PROFICIENCY_WEAPON_PROFICIENCY_GUNLANCE_SCOUT</set>
+            <set name="sourceUrl">https://www.dandwiki.com/w/index.php?title=Gunlance_Wielder_(5e_Class)&amp;oldid=1639651#Scout</set>
+		</setters>
+	</element>
+    <element name="Scout Gunlance (Level 5)" type="Weapon" source="D&amp;D Wiki" id="ID_WIKI_WEAPON_GUNLANCE_SCOUT_LEVELFIVE">
+		<supports>ID_INTERNAL_WEAPON_CATEGORY_MARTIAL_MELEE,ID_INTERNAL_DAMAGE_TYPE_PIERCING</supports>
+		<description>
+			<p></p>
+		</description>
+		<setters>
+			<set name="category">Weapons</set>
+			<set name="cost" currency="gp"></set>
+			<set name="weight" lb="3"></set>
+			<set name="slot">onehand</set>
+            <set name="range">80/320</set>
+			<set name="damage" type="piercing">2d8</set>
+			<set name="proficiency">ID_PROFICIENCY_WEAPON_PROFICIENCY_GUNLANCE_SCOUT</set>
+            <set name="sourceUrl">https://www.dandwiki.com/w/index.php?title=Gunlance_Wielder_(5e_Class)&amp;oldid=1639651#Scout</set>
+		</setters>
+	</element>
+    <element name="Scout Gunlance (Level 10)" type="Weapon" source="D&amp;D Wiki" id="ID_WIKI_WEAPON_GUNLANCE_SCOUT_LEVELTEN">
+		<supports>ID_INTERNAL_WEAPON_CATEGORY_MARTIAL_MELEE,ID_INTERNAL_DAMAGE_TYPE_PIERCING</supports>
+		<description>
+			<p></p>
+		</description>
+		<setters>
+			<set name="category">Weapons</set>
+			<set name="cost" currency="gp"></set>
+			<set name="weight" lb="3"></set>
+			<set name="slot">onehand</set>
+            <set name="range">80/320</set>
+			<set name="damage" type="piercing">3d8</set>
+			<set name="proficiency">ID_PROFICIENCY_WEAPON_PROFICIENCY_GUNLANCE_SCOUT</set>
+            <set name="sourceUrl">https://www.dandwiki.com/w/index.php?title=Gunlance_Wielder_(5e_Class)&amp;oldid=1639651#Scout</set>
+		</setters>
+	</element>
+    <element name="Scout Gunlance (Level 15)" type="Weapon" source="D&amp;D Wiki" id="ID_WIKI_WEAPON_GUNLANCE_SCOUT_LEVELFITEEN">
+		<supports>ID_INTERNAL_WEAPON_CATEGORY_MARTIAL_MELEE,ID_INTERNAL_DAMAGE_TYPE_PIERCING</supports>
+		<description>
+			<p></p>
+		</description>
+		<setters>
+			<set name="category">Weapons</set>
+			<set name="cost" currency="gp"></set>
+			<set name="weight" lb="3"></set>
+			<set name="slot">onehand</set>
+            <set name="range">80/320</set>
+			<set name="damage" type="piercing">4d8</set>
+			<set name="proficiency">ID_PROFICIENCY_WEAPON_PROFICIENCY_GUNLANCE_SCOUT</set>
+            <set name="sourceUrl">https://www.dandwiki.com/w/index.php?title=Gunlance_Wielder_(5e_Class)&amp;oldid=1639651#Scout</set>
+		</setters>
+	</element>
+    <element name="Scout Gunlance (Level 20)" type="Weapon" source="D&amp;D Wiki" id="ID_WIKI_WEAPON_GUNLANCE_SCOUT_LEVELTWENTY">
+		<supports>ID_INTERNAL_WEAPON_CATEGORY_MARTIAL_MELEE,ID_INTERNAL_DAMAGE_TYPE_PIERCING</supports>
+		<description>
+			<p></p>
+		</description>
+		<setters>
+			<set name="category">Weapons</set>
+			<set name="cost" currency="gp"></set>
+			<set name="weight" lb="3"></set>
+			<set name="slot">onehand</set>
+            <set name="range">80/320</set>
+			<set name="damage" type="piercing">5d8</set>
+			<set name="proficiency">ID_PROFICIENCY_WEAPON_PROFICIENCY_GUNLANCE_SCOUT</set>
+            <set name="sourceUrl">https://www.dandwiki.com/w/index.php?title=Gunlance_Wielder_(5e_Class)&amp;oldid=1639651#Scout</set>
+		</setters>
+	</element>
+
+    <element name="Weapon Proficiency (Sentry Gunlance)" type="Proficiency" source="D&amp;D Wiki" id="ID_PROFICIENCY_WEAPON_PROFICIENCY_GUNLANCE_SENTRY">
+        <supports>Weapon, Martial, Melee, ID_INTERNAL_WEAPON_CATEGORY_MARTIAL_MELEE, ID_INTERNAL_DAMAGE_TYPE_PIERCING</supports>
+        <sheet alt="Sentry Gunlance" />    
+        <setters>
+            <set name="sourceUrl">https://www.dandwiki.com/w/index.php?title=Gunlance_Wielder_(5e_Class)&amp;oldid=1639651#Sentry</set>
+        </setters>
+    </element>
+    <append id="ID_PROFICIENCY_WEAPON_PROFICIENCY_MARTIAL_MELEE_WEAPONS">
+        <rules>
+            <grant type="Proficiency" id="ID_PROFICIENCY_WEAPON_PROFICIENCY_GUNLANCE_SENTRY" />
+        </rules>
+    </append>
+    <element name="Sentry Gunlance (Level 1)" type="Weapon" source="D&amp;D Wiki" id="ID_WIKI_WEAPON_GUNLANCE_SENTRY_LEVELONE">
+		<supports>ID_INTERNAL_WEAPON_CATEGORY_MARTIAL_MELEE,ID_INTERNAL_DAMAGE_TYPE_PIERCING</supports>
+		<description>
+			<p></p>
+		</description>
+		<setters>
+			<set name="category">Weapons</set>
+			<set name="cost" currency="gp"></set>
+			<set name="weight" lb="3"></set>
+			<set name="slot">onehand</set>
+            <set name="range">100/400</set>
+			<set name="damage" type="piercing">1d8</set>
+			<set name="proficiency">ID_PROFICIENCY_WEAPON_PROFICIENCY_GUNLANCE_SENTRY</set>
+            <set name="sourceUrl">https://www.dandwiki.com/w/index.php?title=Gunlance_Wielder_(5e_Class)&amp;oldid=1639651#Sentry</set>
+		</setters>
+	</element>
+    <element name="Sentry Gunlance (Level 5)" type="Weapon" source="D&amp;D Wiki" id="ID_WIKI_WEAPON_GUNLANCE_SENTRY_LEVELFIVE">
+		<supports>ID_INTERNAL_WEAPON_CATEGORY_MARTIAL_MELEE,ID_INTERNAL_DAMAGE_TYPE_PIERCING</supports>
+		<description>
+			<p></p>
+		</description>
+		<setters>
+			<set name="category">Weapons</set>
+			<set name="cost" currency="gp"></set>
+			<set name="weight" lb="3"></set>
+			<set name="slot">onehand</set>
+            <set name="range">100/400</set>
+			<set name="damage" type="piercing">2d8</set>
+			<set name="proficiency">ID_PROFICIENCY_WEAPON_PROFICIENCY_GUNLANCE_SENTRY</set>
+            <set name="sourceUrl">https://www.dandwiki.com/w/index.php?title=Gunlance_Wielder_(5e_Class)&amp;oldid=1639651#Sentry</set>
+		</setters>
+	</element>
+    <element name="Sentry Gunlance (Level 10)" type="Weapon" source="D&amp;D Wiki" id="ID_WIKI_WEAPON_GUNLANCE_SENTRY_LEVELTEN">
+		<supports>ID_INTERNAL_WEAPON_CATEGORY_MARTIAL_MELEE,ID_INTERNAL_DAMAGE_TYPE_PIERCING</supports>
+		<description>
+			<p></p>
+		</description>
+		<setters>
+			<set name="category">Weapons</set>
+			<set name="cost" currency="gp"></set>
+			<set name="weight" lb="3"></set>
+			<set name="slot">onehand</set>
+            <set name="range">100/400</set>
+			<set name="damage" type="piercing">3d8</set>
+			<set name="proficiency">ID_PROFICIENCY_WEAPON_PROFICIENCY_GUNLANCE_SENTRY</set>
+            <set name="sourceUrl">https://www.dandwiki.com/w/index.php?title=Gunlance_Wielder_(5e_Class)&amp;oldid=1639651#Sentry</set>
+		</setters>
+	</element>
+    <element name="Sentry Gunlance (Level 15)" type="Weapon" source="D&amp;D Wiki" id="ID_WIKI_WEAPON_GUNLANCE_SENTRY_LEVELFIFTEEN">
+		<supports>ID_INTERNAL_WEAPON_CATEGORY_MARTIAL_MELEE,ID_INTERNAL_DAMAGE_TYPE_PIERCING</supports>
+		<description>
+			<p></p>
+		</description>
+		<setters>
+			<set name="category">Weapons</set>
+			<set name="cost" currency="gp"></set>
+			<set name="weight" lb="3"></set>
+			<set name="slot">onehand</set>
+            <set name="range">100/400</set>
+			<set name="damage" type="piercing">4d8</set>
+			<set name="proficiency">ID_PROFICIENCY_WEAPON_PROFICIENCY_GUNLANCE_SENTRY</set>
+            <set name="sourceUrl">https://www.dandwiki.com/w/index.php?title=Gunlance_Wielder_(5e_Class)&amp;oldid=1639651#Sentry</set>
+		</setters>
+	</element>
+    <element name="Sentry Gunlance (Level 20)" type="Weapon" source="D&amp;D Wiki" id="ID_WIKI_WEAPON_GUNLANCE_SENTRY_LEVELTWENTY">
+		<supports>ID_INTERNAL_WEAPON_CATEGORY_MARTIAL_MELEE,ID_INTERNAL_DAMAGE_TYPE_PIERCING</supports>
+		<description>
+			<p></p>
+		</description>
+		<setters>
+			<set name="category">Weapons</set>
+			<set name="cost" currency="gp"></set>
+			<set name="weight" lb="3"></set>
+			<set name="slot">onehand</set>
+            <set name="range">100/400</set>
+			<set name="damage" type="piercing">5d8</set>
+			<set name="proficiency">ID_PROFICIENCY_WEAPON_PROFICIENCY_GUNLANCE_SENTRY</set>
+            <set name="sourceUrl">https://www.dandwiki.com/w/index.php?title=Gunlance_Wielder_(5e_Class)&amp;oldid=1639651#Sentry</set>
+		</setters>
+	</element>
+
+    <element name="Weapon Proficiency (Vanguard Gunlance)" type="Proficiency" source="D&amp;D Wiki" id="ID_PROFICIENCY_WEAPON_PROFICIENCY_GUNLANCE_VANGUARD">
+        <supports>Weapon, Martial, Melee, ID_INTERNAL_WEAPON_CATEGORY_MARTIAL_MELEE, ID_INTERNAL_DAMAGE_TYPE_PIERCING, ID_INTERNAL_WEAPON_PROPERTY_TWOHANDED</supports>
+        <sheet alt="Vanguard Gunlance" />
+        <setters>
+            <set name="sourceUrl">https://www.dandwiki.com/w/index.php?title=Gunlance_Wielder_(5e_Class)&amp;oldid=1639651#Vanguard</set>
+        </setters>
+    </element>
+    <append id="ID_PROFICIENCY_WEAPON_PROFICIENCY_MARTIAL_MELEE_WEAPONS">
+        <rules>
+            <grant type="Proficiency" id="ID_PROFICIENCY_WEAPON_PROFICIENCY_GUNLANCE_VANGUARD" />
+        </rules>
+    </append>
+    <element name="Vanguard Gunlance (Level 1)" type="Weapon" source="D&amp;D Wiki" id="ID_WIKI_WEAPON_GUNLANCE_VANGUARD_LEVELONE">
+		<supports>ID_INTERNAL_WEAPON_CATEGORY_MARTIAL_MELEE,ID_INTERNAL_DAMAGE_TYPE_PIERCING, ID_INTERNAL_WEAPON_PROPERTY_TWOHANDED</supports>
+		<description>
+			<p></p>
+		</description>
+		<setters>
+			<set name="category">Weapons</set>
+			<set name="cost" currency="gp"></set>
+			<set name="weight" lb="3"></set>
+			<set name="slot">twohand</set>
+            <set name="range">150/600</set>
+			<set name="damage" type="piercing">1d12</set>
+			<set name="proficiency">ID_PROFICIENCY_WEAPON_PROFICIENCY_GUNLANCE_VANGUARD</set>
+            <set name="sourceUrl">https://www.dandwiki.com/w/index.php?title=Gunlance_Wielder_(5e_Class)&amp;oldid=1639651#Vanguard</set>
+		</setters>
+	</element>
+    <element name="Vanguard Gunlance (Level 5)" type="Weapon" source="D&amp;D Wiki" id="ID_WIKI_WEAPON_GUNLANCE_VANGUARD_LEVELFIVE">
+		<supports>ID_INTERNAL_WEAPON_CATEGORY_MARTIAL_MELEE,ID_INTERNAL_DAMAGE_TYPE_PIERCING, ID_INTERNAL_WEAPON_PROPERTY_TWOHANDED</supports>
+		<description>
+			<p></p>
+		</description>
+		<setters>
+			<set name="category">Weapons</set>
+			<set name="cost" currency="gp"></set>
+			<set name="weight" lb="3"></set>
+			<set name="slot">twohand</set>
+            <set name="range">150/600</set>
+			<set name="damage" type="piercing">2d12</set>
+			<set name="proficiency">ID_PROFICIENCY_WEAPON_PROFICIENCY_GUNLANCE_VANGUARD</set>
+            <set name="sourceUrl">https://www.dandwiki.com/w/index.php?title=Gunlance_Wielder_(5e_Class)&amp;oldid=1639651#Vanguard</set>
+		</setters>
+	</element>
+    <element name="Vanguard Gunlance (Level 10)" type="Weapon" source="D&amp;D Wiki" id="ID_WIKI_WEAPON_GUNLANCE_VANGUARD_LEVELTEN">
+		<supports>ID_INTERNAL_WEAPON_CATEGORY_MARTIAL_MELEE,ID_INTERNAL_DAMAGE_TYPE_PIERCING, ID_INTERNAL_WEAPON_PROPERTY_TWOHANDED</supports>
+		<description>
+			<p></p>
+		</description>
+		<setters>
+			<set name="category">Weapons</set>
+			<set name="cost" currency="gp"></set>
+			<set name="weight" lb="3"></set>
+			<set name="slot">twohand</set>
+            <set name="range">150/600</set>
+			<set name="damage" type="piercing">3d12</set>
+			<set name="proficiency">ID_PROFICIENCY_WEAPON_PROFICIENCY_GUNLANCE_VANGUARD</set>
+            <set name="sourceUrl">https://www.dandwiki.com/w/index.php?title=Gunlance_Wielder_(5e_Class)&amp;oldid=1639651#Vanguard</set>
+		</setters>
+	</element>
+    <element name="Vanguard Gunlance (Level 15)" type="Weapon" source="D&amp;D Wiki" id="ID_WIKI_WEAPON_GUNLANCE_VANGUARD_LEVELFIFTEEN">
+		<supports>ID_INTERNAL_WEAPON_CATEGORY_MARTIAL_MELEE,ID_INTERNAL_DAMAGE_TYPE_PIERCING, ID_INTERNAL_WEAPON_PROPERTY_TWOHANDED</supports>
+		<description>
+			<p></p>
+		</description>
+		<setters>
+			<set name="category">Weapons</set>
+			<set name="cost" currency="gp"></set>
+			<set name="weight" lb="3"></set>
+			<set name="slot">twohand</set>
+            <set name="range">150/600</set>
+			<set name="damage" type="piercing">4d12</set>
+			<set name="proficiency">ID_PROFICIENCY_WEAPON_PROFICIENCY_GUNLANCE_VANGUARD</set>
+            <set name="sourceUrl">https://www.dandwiki.com/w/index.php?title=Gunlance_Wielder_(5e_Class)&amp;oldid=1639651#Vanguard</set>
+		</setters>
+	</element>
+    <element name="Vanguard Gunlance (Level 20)" type="Weapon" source="D&amp;D Wiki" id="ID_WIKI_WEAPON_GUNLANCE_VANGUARD_LEVELTWENTY">
+		<supports>ID_INTERNAL_WEAPON_CATEGORY_MARTIAL_MELEE,ID_INTERNAL_DAMAGE_TYPE_PIERCING, ID_INTERNAL_WEAPON_PROPERTY_TWOHANDED</supports>
+		<description>
+			<p></p>
+		</description>
+		<setters>
+			<set name="category">Weapons</set>
+			<set name="cost" currency="gp"></set>
+			<set name="weight" lb="3"></set>
+			<set name="slot">twohand</set>
+            <set name="range">150/600</set>
+			<set name="damage" type="piercing">5d12</set>
+			<set name="proficiency">ID_PROFICIENCY_WEAPON_PROFICIENCY_GUNLANCE_VANGUARD</set>
+            <set name="sourceUrl">https://www.dandwiki.com/w/index.php?title=Gunlance_Wielder_(5e_Class)&amp;oldid=1639651#Vanguard</set>
+		</setters>
+	</element>
+</elements>

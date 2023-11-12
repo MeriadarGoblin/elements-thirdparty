@@ -5,3 +5,6 @@
 
  ## Reddit (r/UnearthedArcana and r/DnDHomebrew)
  - https://raw.githubusercontent.com/MeriadarGoblin/elements-thirdparty/main/reddit.index
+
+ ## D&DWiki
+ - https://raw.githubusercontent.com/MeriadarGoblin/elements-thirdparty/main/dndwiki.index

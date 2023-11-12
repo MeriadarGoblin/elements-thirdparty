@@ -1,0 +1,151 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<elements>
+	<info>
+        <description>The Augmented Artificer subclass from D&amp;D Wiki, created by "DM1095", with contributions from users "Blobbly383b", "Anastacio", "Geodude671" and many others.</description>
+		<author url="https://www.dandwiki.com/w/index.php?title=Augumented_(5e_Subclass)&amp;oldid=1642715">D&amp;D Wiki</author>
+		<update version="0.0.1">
+			<file name="artificer-augmented.xml" url="https://raw.githubusercontent.com/MeriadarGoblin/elements-thirdparty/main/dndwiki/subclasses/artificer-augmented.xml" />
+		</update>
+    </info>
+
+	<element name="Augmented" type="Archetype" source="D&amp;D Wiki" id="ID_WIKI_ARCHETYPE_AUGMENTED">
+		<supports>Artificer Specialist</supports>
+		<description>
+			<p>These artificers through years of study have learn how to manipulate the surrounding magic through devices, weapons or their own life force to help augument themselves and their Arcane weapon.</p>
+			<div element="ID_WIKI_ARCHETYPE_FEATURE_AUGMENTED_AUGMENT_SPELLS" />
+			<div element="ID_WIKI_ARCHETYPE_FEATURE_AUGMENTED_ARCANE_ADJUSTED" />
+			<div element="ID_WIKI_ARCHETYPE_FEATURE_AUGMENTED_ARCANE_AUGMENTED" />
+			<div element="ID_WIKI_ARCHETYPE_FEATURE_AUGMENTED_EXTRA_ATTACK" />
+			<div element="ID_WIKI_ARCHETYPE_FEATURE_AUGMENTED_ARCANE_BURST" />
+			<div element="ID_WIKI_ARCHETYPE_FEATURE_AUGMENTED_ARCANE_ARMANENT" />
+		</description>
+		<sheet display="false">
+			<description>An Augmented focuses on upgrading his himself as the weapon or their own arcane weapon.</description>
+		</sheet>
+		<setters>
+			<set name="sourceUrl">"https://www.dandwiki.com/w/index.php?title=Augumented_(5e_Subclass)&amp;oldid=1642715</set>
+		</setters>
+		<rules>
+			<grant type="Archetype Feature" id="ID_WIKI_ARCHETYPE_FEATURE_AUGMENTED_AUGMENT_SPELLS" level="3" />
+			<grant type="Archetype Feature" id="ID_WIKI_ARCHETYPE_FEATURE_AUGMENTED_ARCANE_ADJUSTED" level="3" />
+			<grant type="Archetype Feature" id="ID_WIKI_ARCHETYPE_FEATURE_AUGMENTED_ARCANE_AUGMENTED" level="3" />
+			<grant type="Archetype Feature" id="ID_WIKI_ARCHETYPE_FEATURE_AUGMENTED_EXTRA_ATTACK" level="5" />
+			<grant type="Archetype Feature" id="ID_WIKI_ARCHETYPE_FEATURE_AUGMENTED_ARCANE_BURST" level="9" />
+			<grant type="Archetype Feature" id="ID_WIKI_ARCHETYPE_FEATURE_AUGMENTED_ARCANE_ARMANENT" level="15" />
+		</rules>	
+	</element>
+	<element name="Augmented Spells" type="Archetype Feature" source="D&amp;D Wiki" id="ID_WIKI_ARCHETYPE_FEATURE_AUGMENTED_AUGMENT_SPELLS">
+		<description>
+			<p>Starting at 3rd level, you always have certain spells prepared after you reach particular levels in this class, as shown in the Biomechanist Spells table. These spells count as artificer spells for you, but they don’t count against the number of artificer spells you prepare.</p>
+			<h5 class="caption">AUGMENTED SPELLS</h5>
+			<table>
+				<thead>
+					<tr><td>Artificer Level</td><td>Spells</td></tr>
+				</thead>
+				<tr><td>3rd</td><td><em>zephyr strike, longstrider</em></td></tr>
+				<tr><td>5th</td><td><em>nystul's magic aura, misty step</em></td></tr>
+				<tr><td>9th</td><td><em>haste, pulse wave</em></td></tr>
+				<tr><td>13th</td><td><em>fabricate, death ward</em></td></tr>
+				<tr><td>17th</td><td><em>skill empowerment, steel wind strike</em></td></tr>
+			</table>
+		</description>
+		<sheet display="false">
+			<description>You always have certain spells prepared after you reach particular levels in this class, as shown in the Alchemist Spells table. These spells count as artificer spells for you, but they don’t count against the number of artificer spells you prepare.</description>
+		</sheet>
+		<setters>
+			<set name="sourceUrl">"https://www.dandwiki.com/w/index.php?title=Augumented_(5e_Subclass)&amp;oldid=1642715</set>
+		</setters>
+		<rules>
+			<grant type="Spell" id="ID_XGTE_SPELL_ZEPHYR_STRIKE" spellcasting="Artificer" level="3" prepared="true" />
+			<grant type="Spell" id="ID_PHB_SPELL_LONGSTRIDER" spellcasting="Artificer" level="3" prepared="true" />
+			<grant type="Spell" id="ID_PHB_SPELL_NYSTULS_MAGIC_AURA" spellcasting="Artificer" level="5" prepared="true" />
+			<grant type="Spell" id="ID_PHB_SPELL_MISTY_STEP" spellcasting="Artificer" level="5" prepared="true" />
+			<grant type="Spell" id="ID_PHB_SPELL_HASTE" spellcasting="Artificer" level="9" prepared="true" />
+			<grant type="Spell" id="ID_WOTC_EGTW_SPELL_PULSE_WAVE" spellcasting="Artificer" level="9" prepared="true" />
+			<grant type="Spell" id="ID_PHB_SPELL_FABRICATE" spellcasting="Artificer" level="13" prepared="true" />
+			<grant type="Spell" id="ID_PHB_SPELL_DEATH_WARD" spellcasting="Artificer" level="13" prepared="true" />
+			<grant type="Spell" id="ID_XGTE_SPELL_SKILL_EMPOWERMENT" spellcasting="Artificer" level="17" prepared="true" />
+			<grant type="Spell" id="ID_XGTE_SPELL_STEEL_WIND_STRIKE" spellcasting="Artificer" level="17" prepared="true" />
+		</rules>
+	</element>
+	<element name="Arcane Adjusted" type="Archetype Feature" source="D&amp;D Wiki" id="ID_WIKI_ARCHETYPE_FEATURE_AUGMENTED_ARCANE_ADJUSTED">
+		<description>
+			<p>When you reach the 3rd level, you have enhanced your body with infusions, which grant you the following benefits:</p>
+			<ul>
+				<li>You gain proficiency in the smiths tools, if already proficient gain proficiency in another artisan tool or artificer skill</li>
+				<li>Over the course of a short or long rest, you can make a simple or martial weapon your arcane weapon. You can use your Intelligence modifier for attacks and damage rolls made with the integrated weapon. You are proficient with it while you wield it. You can only have one arcane weapon at a time.</li>
+			</ul>
+		</description>
+		<sheet usage="1/Rest">
+			<description>Over the course of a short or long rest, you can make a simple or martial weapon your arcane weapon. You can use your Intelligence modifier for attacks and damage rolls made with the integrated weapon. You are proficient with it while you wield it. You can only have one arcane weapon at a time.</description>
+		</sheet>
+		<setters>
+			<set name="sourceUrl">"https://www.dandwiki.com/w/index.php?title=Augumented_(5e_Subclass)&amp;oldid=1642715</set>
+		</setters>
+		<rules>
+			<select type="Proficiency" name="Tool Proficiency, Biomechanist" supports="Tool" default="ID_PROFICIENCY_TOOL_PROFICIENCY_SMITHS_TOOLS" />
+		</rules>
+	</element>
+	<element name="Arcane Augmented" type="Archetype Feature" source="D&amp;D Wiki" id="ID_WIKI_ARCHETYPE_FEATURE_AUGMENTED_ARCANE_AUGMENTED">
+		<description>
+			<p>Also at 3rd level you can add your Intelligence modifier to your initiative and gain one of these fighting styles. (you cannot of two instances of the same fighting style.)</p>
+		</description>
+		<sheet display="false">
+			<description>You can add your Intelligence modifier to your initiative.</description>
+		</sheet>
+		<setters>
+			<set name="sourceUrl">"https://www.dandwiki.com/w/index.php?title=Augumented_(5e_Subclass)&amp;oldid=1642715</set>
+		</setters>
+		<rules>
+			<stat name="initiative" value="intelligence:modifier" bonus="bonus" />
+			<select type="Class Feature" name="Fighting Styles, Augmented" supports="Fighting Style, Augmented" />
+		</rules>
+	</element>
+	<element name="Extra Attack" type="Archetype Feature" source="D&amp;D Wiki" id="ID_WIKI_ARCHETYPE_FEATURE_AUGMENTED_EXTRA_ATTACK">
+		<description>
+			<p>Starting at 5th level, you can attack twice, instead of once, whenever you take the Attack action on your turn.</p>
+		</description>
+		<sheet>
+			<description>You can attack twice, rather than once, whenever you take the Attack action on your turn.</description>
+		</sheet>
+		<setters>
+			<set name="sourceUrl">"https://www.dandwiki.com/w/index.php?title=Augumented_(5e_Subclass)&amp;oldid=1642715</set>
+		</setters>
+		<rules>
+			<stat name="extra attack:count" value="2" level="5" bonus="extra attack" />
+		</rules>
+	</element>
+	<element name="Arcane Burst" type="Archetype Feature" source="D&amp;D Wiki" id="ID_WIKI_ARCHETYPE_FEATURE_AUGMENTED_ARCANE_BURST">
+		<description>
+			<p>At 9th level, You gain 10 walking speed. You can also add your Intelligence modifier to you damage rolls made with your arcane weapon.</p>
+		</description>
+		<sheet>
+			<description>You can add your Intelligence modifier to you damage rolls made with your arcane weapon.</description>
+		</sheet>
+		<setters>
+			<set name="sourceUrl">"https://www.dandwiki.com/w/index.php?title=Augumented_(5e_Subclass)&amp;oldid=1642715</set>
+		</setters>
+		<rules>
+			<stat name="innate speed" value="10" bonus="bonus" />
+		</rules>
+	</element>
+	<element name="Arcane Armanent" type="Archetype Feature" source="D&amp;D Wiki" id="ID_WIKI_ARCHETYPE_FEATURE_AUGMENTED_ARCANE_ARMANENT">
+		<description>
+			<p>At 15th level, you reach the full potential of your body. You gain the following benefits:</p>
+			<p class="indent">Your arcane weapon now crits on 19 or 20 and when you crit you can use your bonus action to cast a cantrip. you can add extras 4d8 force damage to one damage roll of attack or spell you make. You can add extra damage by this feature a number of times equal to you Intelligence modifier, regaining all uses after you finish a long rest.</p>
+		</description>
+		<sheet>
+			<description>Your arcane weapon now crits on 19 or 20 and when you crit you can use your bonus action to cast a cantrip. you can add extras 4d8 force damage to one damage roll of attack or spell you make. You can add extra damage by this feature a number of times equal to you Intelligence modifier, regaining all uses after you finish a long rest.</description>
+		</sheet>
+	</element>
+	<append id="ID_WOTC_PHB_CLASS_FEATURE_FIGHTINGSTYLE_DEFENSE">
+		<supports>Augmented</supports>
+	</append>
+	<append id="ID_WOTC_PHB_CLASS_FEATURE_FIGHTINGSTYLE_DUELING">
+		<supports>Augmented</supports>
+	</append>
+	<append id="ID_WOTC_PHB_CLASS_FEATURE_FIGHTINGSTYLE_GREAT_WEAPON_FIGHTING">
+		<supports>Augmented</supports>
+	</append>
+
+</elements>

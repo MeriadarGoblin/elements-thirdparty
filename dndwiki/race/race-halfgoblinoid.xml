@@ -1,0 +1,277 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<elements>
+	<info>
+        <description>The Gesttil race from D&amp;D Wiki, created by user "Likebeingawesome", with contributions from users "Yaron89", "ConcealedLight", "SgtLionBot" and many others.</description>
+		<author url="https://www.dandwiki.com/w/index.php?title=Half-Goblinoid_(5e_Race)&amp;oldid=1375101">D&amp;D Wiki</author>
+		<update version="0.0.1">
+			<file name="race-halfgoblinoid.xml" url="https://raw.githubusercontent.com/MeriadarGoblin/elements-thirdparty/main/dndwiki/races/race-halfgoblinoid.xml" />
+		</update>
+    </info>
+
+	<element name="Half-Goblinoid" type="Race" source="D&amp;D Wiki" id="ID_WIKI_RACE_HALFGOBLINOID">
+		<description>
+			<p>Goblinoids are a rapacious race of diverse creatures. Their offspring with humans tend to be rather reflective of that.</p>
+			<h4>Physical Description</h4>
+			<p>Half goblinoids strangely share a lot of similar traits despite possibly hailing from different goblinoids. They retain a humanoid shape, and have squashed flat noses usually, with pointed ears and small, mean eyes. There are minute differences between each different group. Half-hobgoblin noses change color to turn colorful when they are angry. Half-goblins are slightly shorter than the others of this race. Half-bugbears tend to be very hirsute.</p>
+			<h4>History</h4>
+			<p>Throughout the successful years of goblinoids since Maglubiyet restructured their pantheon, they have experienced a golden age in conquest. Fear of the conquering host of goblinoids is now more commonplace than ever. In their conquests, there have inevitably been instances where their blood mixed with that of humans, creating the half-goblinoids. These creatures have an almost worse place in society than even a goblin would, due to their status as a half-breed. Few live to their full potential due to being outcasts by both humans and goblinoids. Some are lucky to make it to the pariah caste of goblins.</p>
+			<h4>Personality</h4>
+			<p>Due to the expectedly harsh upbringing of half-goblinoids, they tend to be very suspicious of kindness and these unfamiliar interactions. Their appearances are sometimes a source of shame for them, be it they don't look human or goblinoid enough. Abuse hardens them to become schemers much like goblins. There are also some small traits they inherit from their respective goblinoid race as well. Those with hobgoblin blood are more likely to be fearless or hate cowardice. Bugbear heritage might mean that they love to bully weaker creatures, as well as rely on surprise to strike.</p>
+			<h5>Half-Goblin Names</h5>
+			<ul class="unstyled">
+				<li><strong>Male Names. </strong>Iogz, Kloderg, Ghirok, Hector.</li>
+				<li><strong>Female Names. </strong>Botrith, Avrel, Fulzulk, Dagra.</li>
+			</ul>
+			<h4>Half-Goblin Traits</h4>
+			<p>Human-goblionoid spawn.</p>
+			<p class="indent"><strong><em>Ability Score Increase.</em></strong> Your Constitution or Dexterity score increases by 2.</p>
+			<p class="indent"><strong><em>Age.</em></strong> Half goblinoids don't live too long, maturing at around 8 and living to only about 60 or 70 years.</p>
+			<p class="indent"><strong><em>Alignment.</em></strong>  Many have a cynical and chaotic outlook in life, leaning towards evil even.</p>
+			<p class="indent"><strong><em>Size.</em></strong> While some are as short as dwarves, your size is Medium.</p>
+			<p class="indent"><strong><em>Speed.</em></strong> Your base walking speed is 30 feet.</p>
+			<p class="indent"><strong><em>Darkvision.</em></strong> You can see in dim light within 60 feet of you as if it were bright light, and in darkness as if it were dim light. You can't discern color in darkness, only shades of gray.</p>
+			<p class="indent"><strong><em>Scheming Wrath</em></strong> Living under everyone's heel has made you incredibly insidious with your methods. When you target a creature which has dealt you damage previously with an attack or spell, you can channel your rage to roll the attack or spell with advantage. Once you use this trait, you cannot use it again until you finish a short or long rest.</p>
+			<p class="indent"><strong><em>Languages.</em></strong> You can speak Common, Goblin, and one other language of your choice.</p>
+			<p class="indent"><strong><em>Subrace.</em></strong> Choose either bugbear, hobgoblin or goblin heritage.</p>
+		</description>
+		<sheet display="false" />
+		<setters>
+			<set name="sourceUrl">https://www.dandwiki.com/w/index.php?title=Half-Goblinoid_(5e_Race)&amp;oldid=1375101</set>
+		</setters>
+		<rules>
+			<select type="Racial Trait" name="Half-Goblin Ability Score Increase" supports="Half-Goblin Increase" requirements="!ID_WOTC_TCOE_OPTION_CUSTOMIZED_ASI" />
+			<select type="Ability Score Improvement" name="Custom Ability Score Improvement +2 (Half-Goblin)" supports="Custom Ability Score Increase 2" requirements="ID_WOTC_TCOE_OPTION_CUSTOMIZED_ASI" />
+			<stat name="innate speed" value="30" bonus="base" />
+			<grant type="Vision" id="ID_VISION_DARKVISION" />
+			<grant type="Language" id="ID_LANGUAGE_COMMON" requirements="!ID_WOTC_TCOE_OPTION_CUSTOMIZED_LANGUAGE" />
+			<grant type="Language" id="ID_LANGUAGE_GOBLIN" requirements="!ID_WOTC_TCOE_OPTION_CUSTOMIZED_LANGUAGE" />
+			<select type="Language" name="Language, Half-Goblin" supports="Standard||Exotic" />
+			<select type="Language" name="Customized Language" supports="Custom Race Language||Half-Goblin Language" number="2" requirements="ID_WOTC_TCOE_OPTION_CUSTOMIZED_LANGUAGE" />
+			<grant type="Size" id="ID_SIZE_MEDIUM" />
+			<grant type="Racial Trait" id="ID_WIKI_RACIAL_TRAIT_HALFGOBLIN_SCHEMING_WRATH" />
+			<grant type="Racial Trait" id="ID_WIKI_RACIAL_TRAIT_HALFGOBLIN_SUBRACE" />
+		</rules>
+	</element>
+	<element name="Constitution Increase" type="Racial Trait" source="D&amp;D Wiki" id="ID_WIKI_HALFGOB_CONSTITUTION_INCREASE">
+		<supports>Half-Goblin Increase</supports>
+		<description>
+			<p>Your Constitution score increases by 2.</p>
+		</description>
+		<sheet display="false" />
+		<setters>
+			<set name="sourceUrl">https://www.dandwiki.com/w/index.php?title=Half-Goblinoid_(5e_Race)&amp;oldid=1375101#Half-Goblin_Traits</set>
+		</setters>
+		<rules>
+			<stat name="constitution" value="2" />
+		</rules>
+	</element>
+	<element name="Dexterity Increase" type="Racial Trait" source="D&amp;D Wiki" id="ID_WIKI_HALFGOB_DEXTERITY_INCREASE">
+		<supports>Half-Goblin Increase</supports>
+		<description>
+			<p>Your Dexterity score increases by 2.</p>
+		</description>
+		<sheet display="false" />
+		<setters>
+			<set name="sourceUrl">https://www.dandwiki.com/w/index.php?title=Half-Goblinoid_(5e_Race)&amp;oldid=1375101#Half-Goblin_Traits</set>
+		</setters>
+		<rules>
+			<stat name="dexterity" value="2" />
+		</rules>
+	</element>
+	<element name="Scheming Wrath" type="Racial Trait" source="D&amp;D Wiki" id="ID_WIKI_RACIAL_TRAIT_HALFGOBLIN_SCHEMING_WRATH">
+		<description>
+			<p>Living under everyone's heel has made you incredibly insidious with your methods. When you target a creature which has dealt you damage previously with an attack or spell, you can channel your rage to roll the attack or spell with advantage. Once you use this trait, you cannot use it again until you finish a short or long rest.</p>
+		</description>
+		<sheet usage="1/Rest">
+			<description>Living under everyone's heel has made you incredibly insidious with your methods. When you target a creature which has dealt you damage previously with an attack or spell, you can channel your rage to roll the attack or spell with advantage. Once you use this trait, you cannot use it again until you finish a short or long rest.</description>
+		</sheet>
+		<setters>
+			<set name="sourceUrl">https://www.dandwiki.com/w/index.php?title=Half-Goblinoid_(5e_Race)&amp;oldid=1375101#Half-Goblin_Traits</set>
+		</setters>
+	</element>
+	<element name="Goblinoid Heritage" type="Racial Trait" source="D&amp;D Wiki" id="ID_WIKI_RACIAL_TRAIT_HALFGOBLIN_SUBRACE">
+		<description>
+			<p>Choose either bugbear, hobgoblin or goblin heritage.</p>
+		</description>
+		<sheet display="false">
+			<description>Choose either bugbear, hobgoblin or goblin heritage.</description>
+		</sheet>
+		<setters>
+			<set name="sourceUrl">https://www.dandwiki.com/w/index.php?title=Half-Goblinoid_(5e_Race)&amp;oldid=1375101#Half-Goblin_Traits</set>
+		</setters>
+		<rules>
+			<select type="Sub Race" name="Goblinoid Heritage" supports="Goblin Heritage" />
+		</rules>
+	</element>
+
+	<element name="Hobgoblin Heritage" type="Sub Race" source="D&amp;D Wiki" id="ID_WIKI_HALFGOBLIN_SUBRACE_HOBGOBLIN">
+		<supports>Goblin Heritage</supports>
+		<description>
+			<p><strong><em>Ability Score Increase.</em></strong> Your Intelligence score increases by 1.</p>
+			<p><strong><em>Muscle Memory.</em></strong> You have a natural tendency for weapons. You are proficient with light armor and one martial weapon of your choice.</p>
+			<p><strong><em>Uncomprimising.</em></strong> You don't have the same feeling of camaraderie as normal hobgoblins, but you are still compelled to save some face in the face of danger. If you fail a saving throw, you gain a bonus to the roll equal to the number of allies you see within 30 feet of you, to a maximum of +5. Once you use this trait, you cannot use it again until you finish a short or long rest.</p>
+			<p><strong><em>Anti-Coward.</em></strong> You have advantage against saving throws against being frightened.</p>
+		</description>
+		<sheet display="false" alt="Hobgoblin" />
+		<setters>
+			<set name="sourceUrl">https://www.dandwiki.com/w/index.php?title=Half-Goblinoid_(5e_Race)&amp;oldid=1375101#Hobgoblin_Heritage</set>
+		</setters>
+		<rules>
+			<stat name="intelligence" value="1" requirements="!ID_WOTC_TCOE_OPTION_CUSTOMIZED_ASI" />
+			<select type="Ability Score Improvement" name="Custom Ability Score Improvement +1 (Hobgoblin Heritage)" supports="Custom Ability Score Increase 1" requirements="ID_WOTC_TCOE_OPTION_CUSTOMIZED_ASI" />
+			<grant type="Racial Trait" id="ID_WIKI_HALFGOB_HOB_MUSCLE_MEMORY" />
+			<grant type="Racial Trait" id="ID_WIKI_HALFGOB_HOB_UNCOMPRIMISING" />
+			<grant type="Racial Trait" id="ID_WIKI_HALFGOB_HOB_ANTICOWARD" />
+		</rules>
+	</element>
+	<element name="Muscle Memory" type="Racial Trait" source="D&amp;D Wiki" id="ID_WIKI_HALFGOB_HOB_MUSCLE_MEMORY">
+		<description>
+			<p>You have a natural tendency for weapons. You are proficient with light armor and one martial weapon of your choice.</p>
+		</description>
+		<sheet display="false" />
+		<setters>
+			<set name="sourceUrl">https://www.dandwiki.com/w/index.php?title=Half-Goblinoid_(5e_Race)&amp;oldid=1375101#Hobgoblin_Heritage</set>
+		</setters>
+		<rules>
+			<grant type="Proficiency" id="ID_PROFICIENCY_ARMOR_PROFICIENCY_LIGHT_ARMOR" />
+			<select type="Proficiency" name="Muscle Memory (Hobgoblin Heritage)" supports="Weapon,Martial" requirements="!ID_WOTC_TCOE_OPTION_CUSTOMIZED_PROFICIENCY" />
+		</rules>
+	</element>
+	<element name="Uncomprimising" type="Racial Trait" source="D&amp;D Wiki" id="ID_WIKI_HALFGOB_HOB_UNCOMPRIMISING">
+		<description>
+			<p>You don't have the same feeling of camaraderie as normal hobgoblins, but you are still compelled to save some face in the face of danger. If you fail a saving throw, you gain a bonus to the roll equal to the number of allies you see within 30 feet of you, to a maximum of +5. Once you use this trait, you cannot use it again until you finish a short or long rest.</p>
+		</description>
+		<sheet usage="Short/Long Rest">
+			<description>You don't have the same feeling of camaraderie as normal hobgoblins, but you are still compelled to save some face in the face of danger. If you fail a saving throw, you gain a bonus to the roll equal to the number of allies you see within 30 feet of you, to a maximum of +5. Once you use this trait, you cannot use it again until you finish a short or long rest.</description>
+		</sheet>
+		<setters>
+			<set name="sourceUrl">https://www.dandwiki.com/w/index.php?title=Half-Goblinoid_(5e_Race)&amp;oldid=1375101#Hobgoblin_Heritage</set>
+		</setters>
+	</element>
+	<element name="Anti-Coward" type="Racial Trait" source="D&amp;D Wiki" id="ID_WIKI_HALFGOB_HOB_ANTICOWARD">
+		<description>
+			<p>You have advantage against saving throws against being frightened.</p>
+		</description>
+		<sheet>
+			<description>You have advantage against saving throws against being frightened.</description>
+		</sheet>
+		<setters>
+			<set name="sourceUrl">https://www.dandwiki.com/w/index.php?title=Half-Goblinoid_(5e_Race)&amp;oldid=1375101#Hobgoblin_Heritage</set>
+		</setters>
+	</element>
+
+	<element name="Bugbear Heritage" type="Sub Race" source="D&amp;D Wiki" id="ID_WIKI_HALFGOBLIN_SUBRACE_BUGBEAR">
+		<supports>Goblin Heritage</supports>
+		<description>
+			<p><strong><em>Ability Score Increase.</em></strong> Your Strength score increases by 1.</p>
+			<p><strong><em>Powerful Build.</em></strong> You have a natural tendency for weapons. You are proficient with light armor and one martial weapon of your choice.</p>
+			<p><strong><em>Long-Arm.</em></strong> When you make a melee attack on your turn, your reach for it is 5 feet greater than normal.</p>
+			<p><strong><em>Slinky Surprise.</em></strong> You are proficient in the Stealth skill.</p>
+		</description>
+		<sheet display="false" />
+		<setters>
+			<set name="sourceUrl">https://www.dandwiki.com/w/index.php?title=Half-Goblinoid_(5e_Race)&amp;oldid=1375101#Bugbear_Heritage</set>
+		</setters>
+		<rules>
+			<stat name="strength" value="1" requirements="!ID_WOTC_TCOE_OPTION_CUSTOMIZED_ASI" />
+			<select type="Ability Score Improvement" name="Custom Ability Score Improvement +1 (Bugbear Heritage)" supports="Custom Ability Score Increase 1" requirements="ID_WOTC_TCOE_OPTION_CUSTOMIZED_ASI" />
+			<grant type="Racial Trait" id="ID_WIKI_HALFGOB_BUG_POWERFULBUILD" />
+			<grant type="Racial Trait" id="ID_WIKI_HALFGOB_BUG_LONG_ARM" />
+			<grant type="Racial Trait" id="ID_WIKI_HALFGOB_BUG_SLINKY_SURPRISE" />
+		</rules>
+	</element>
+	<element name="Powerful Build" type="Racial Trait" source="D&amp;D Wiki" id="ID_WIKI_HALFGOB_BUG_POWERFULBUILD">
+		<description>
+			<p>You have a natural tendency for weapons. You are proficient with light armor and one martial weapon of your choice.</p>
+		</description>
+		<sheet>
+			<description>You count as one size larger when determining your carrying capacity and the weight you can push, drag, or lift.</description>
+		</sheet>
+		<setters>
+			<set name="sourceUrl">https://www.dandwiki.com/w/index.php?title=Half-Goblinoid_(5e_Race)&amp;oldid=1375101#Bugbear_Heritage</set>
+		</setters>
+		<rules>
+			<grant type="Grants" id="ID_INTERNAL_GRANTS_WEIGHT_CAPACITY_COUNTS_AS_LARGER" />
+		</rules>
+	</element>
+	<element name="Long-Arm" type="Racial Trait" source="D&amp;D Wiki" id="ID_WIKI_HALFGOB_BUG_LONG_ARM">
+		<description>
+			<p>When you make a melee attack on your turn, your reach for it is 5 feet greater than normal.</p>
+		</description>
+		<sheet>
+			<description>When you make a melee attack on your turn, your reach for it is 5 feet greater than normal.</description>
+		</sheet>
+		<setters>
+			<set name="sourceUrl">https://www.dandwiki.com/w/index.php?title=Half-Goblinoid_(5e_Race)&amp;oldid=1375101#Bugbear_Heritage</set>
+		</setters>
+	</element>
+	<element name="Slinky Surprise" type="Racial Trait" source="D&amp;D Wiki" id="ID_WIKI_HALFGOB_BUG_SLINKY_SURPRISE">
+		<description>
+			<p>You are proficient in the Stealth skill.</p>
+		</description>
+		<sheet display="false" />
+		<setters>
+			<set name="sourceUrl">https://www.dandwiki.com/w/index.php?title=Half-Goblinoid_(5e_Race)&amp;oldid=1375101#Bugbear_Heritage</set>
+		</setters>
+		<rules>
+			<grant type="Proficiency" id="ID_PROFICIENCY_SKILL_STEALTH" />
+		</rules>
+	</element>
+
+	<element name="Goblin Heritage" type="Sub Race" source="D&amp;D Wiki" id="ID_WIKI_HALFGOBLIN_SUBRACE_GOBLIN">
+		<supports>Goblin Heritage</supports>
+		<description>
+			<p><strong><em>Ability Score Increase.</em></strong> Your Charisma score increases by 1.</p>
+			<p><strong><em>Experienced Liar.</em></strong> You are proficient in the Deception skill.</p>
+			<p><strong><em>Enhanced Movement.</em></strong> Your movement speed increases to 35.</p>
+			<p><strong><em>Necessary Tools.</em></strong> You are proficient with 2 simple weapons of your choice.</p>
+		</description>
+		<sheet display="false" />
+		<setters>
+			<set name="sourceUrl">https://www.dandwiki.com/w/index.php?title=Half-Goblinoid_(5e_Race)&amp;oldid=1375101#Goblin_Heritage</set>
+		</setters>
+		<rules>
+			<stat name="charisma" value="1" requirements="!ID_WOTC_TCOE_OPTION_CUSTOMIZED_ASI" />
+			<select type="Ability Score Improvement" name="Custom Ability Score Improvement +1 (Goblin Heritage)" supports="Custom Ability Score Increase 1" requirements="ID_WOTC_TCOE_OPTION_CUSTOMIZED_ASI" />
+			<grant type="Racial Trait" id="ID_WIKI_HALFGOB_GOB_EXPERIENCED_LIAR" />
+			<grant type="Racial Trait" id="ID_WIKI_HALFGOB_GOB_ENHANCED_MOVEMENT" />
+			<grant type="Racial Trait" id="ID_WIKI_HALFGOB_GOB_NECESSARY_TOOLS" />
+		</rules>
+	</element>
+	<element name="Experienced Liar" type="Racial Trait" source="D&amp;D Wiki" id="ID_WIKI_HALFGOB_GOB_EXPERIENCED_LIAR">
+		<description>
+			<p>You are proficient in the Deception skill.</p>
+		</description>
+		<sheet display="false" />
+		<setters>
+			<set name="sourceUrl">https://www.dandwiki.com/w/index.php?title=Half-Goblinoid_(5e_Race)&amp;oldid=1375101#Goblin_Heritage</set>
+		</setters>
+		<rules>
+			<grant type="Proficiency" id="ID_PROFICIENCY_SKILL_DECEPTION" />
+		</rules>
+	</element>
+	<element name="Enhanced Movement" type="Racial Trait" source="D&amp;D Wiki" id="ID_WIKI_HALFGOB_GOB_ENHANCED_MOVEMENT">
+		<description>
+			<p>Your movement speed increases to 35.</p>
+		</description>
+		<sheet display="false" />
+		<setters>
+			<set name="sourceUrl">https://www.dandwiki.com/w/index.php?title=Half-Goblinoid_(5e_Race)&amp;oldid=1375101#Goblin_Heritage</set>
+		</setters>
+		<rules>
+			<stat name="innate speed" value="5" />
+		</rules>
+	</element>
+	<element name="Necessary Tools" type="Racial Trait" source="D&amp;D Wiki" id="ID_WIKI_HALFGOB_GOB_NECESSARY_TOOLS">
+		<description>
+			<p>You are proficient with 2 simple weapons of your choice.</p>
+		</description>
+		<sheet display="false" />
+		<setters>
+			<set name="sourceUrl">https://www.dandwiki.com/w/index.php?title=Half-Goblinoid_(5e_Race)&amp;oldid=1375101#Goblin_Heritage</set>
+		</setters>
+		<rules>
+			<select type="Proficiency" name="Necessary Tools" supports="Weapon,Simple" number="2" requirements="!ID_WOTC_TCOE_OPTION_CUSTOMIZED_PROFICIENCY" />
+		</rules>
+	</element>
+</elements>

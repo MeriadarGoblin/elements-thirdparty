@@ -1,0 +1,249 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- https://www.dandwiki.com/wiki/Gesttil_(5e_Race) -->
+<elements>
+	<info>
+        <description>The Gesttil race from D&amp;D Wiki, created by user "Grunzi676", with contributions from users "Marasumine", "Costu Malcio", "Blobby383b" and many others.</description>
+		<author url="https://www.dandwiki.com/w/index.php?title=Godslayer_(5e_Class)&amp;oldid=1676945">D&amp;D Wiki</author>
+		<update version="0.0.1">
+			<file name="race-gesttil.xml" url="https://raw.githubusercontent.com/MeriadarGoblin/elements-thirdparty/main/dndwiki/races/race-gesttil.xml" />
+		</update>
+    </info>
+
+	<element name="Gesttil" type="Race" source="D&amp;D Wiki" id="ID_WIKI_RACE_GESTTIL">
+		<description>
+			<h4>Physical Description</h4>
+			<p>Gesttil are a goblinoid race with gems for eyes. They are short with dark skin that ranges from brown, black, dark blue, and dark purple. Gesttil can eat like most races, though their digestive systems would prefer their foods to be rotten, spoiled, pickled, or overly-ripe. Their faces don't move much other than their mouths, so people always find it hard to trust them for their unbelievable "poker face".</p>
+			<h4>History</h4>
+			<p>Gesttil were originally not a race, they were created. A crazy goblin mage wanted to see if he could fuse his own kind with gems so they could have harder skin to survive the harsh world because for some reason goblins are the target of many adventurers. The outcome of the mage's experiment was not the one he had hoped for. The goblin formed to a 4'0 tall being with darker skin, and two gems as eyes and the next one turned out the same, and eventually, over time they became their own race.</p>
+			<p class="indent">To create a gesttil, elemental energy had to be infused with gems. Ruby eyes required fire; sapphire required cold; emeralds required acid; tiger's required lightning.</p>
+			<h4>Society</h4>
+			<p>Gesttil society is a rough subject, they really have no set society, though they can be found around dwarves and some are found around goblins, then there are the rare few that will be found in human settlements.</p>
+			<h5>Gesttil Names</h5>
+			<ul class="unstyled">
+				<li><strong>Male Names. </strong>Azzel, Merker, Selipher, Verial, Shar.</li>
+				<li><strong>Female Names. </strong>Merka, Lecta, Shipha, Vun, Gurnula.</li>
+			</ul>
+			<h4>Gesttil Traits</h4>
+			<p>A goblin-like race with gems for eyes.</p>
+			<p class="indent"><strong><em>Ability Score Increase.</em></strong> Your Wisdom score increases by 2.</p>
+			<p class="indent"><strong><em>Age.</em></strong> Gesttil are often a short-lived race becoming adults at age 10 and having an old age of 40.</p>
+			<p class="indent"><strong><em>Alignment.</em></strong> They are often neutral though they can be of any alignment.</p>
+			<p class="indent"><strong><em>Size.</em></strong> Gesttils range between 3 and 4 feet tall. Your size is Small.</p>
+			<p class="indent"><strong><em>Speed.</em></strong> Your base walking speed is 30ft.</p>
+			<p class="indent"><strong><em>Gem Eyes.</em></strong> You are immune to the blinded condition.</p>
+			<p class="indent"><strong><em>Languages.</em></strong> You can speak Common and Goblin.</p>
+			<p class="indent"><strong><em>Subrace.</em></strong> Gesttil come in four varieties, based on the type of gem that was used for their eyes. Choose the ruby, sapphire, emerald or tiger's eye subrace.</p>
+		</description>
+		<sheet display="false" />
+		<setters>
+			<set name="sourceUrl">https://www.dandwiki.com/w/index.php?title=Gesttil_(5e_Race)&amp;oldid=1017484</set>
+		</setters>
+		<rules>
+			<stat name="wisdom" value="2" requirements="!ID_WOTC_TCOE_OPTION_CUSTOMIZED_ASI" />
+			<select type="Ability Score Improvement" name="Custom Ability Score Improvement +2 (Gesttil)" supports="Custom Ability Score Increase 2" requirements="ID_WOTC_TCOE_OPTION_CUSTOMIZED_ASI" />
+			<stat name="innate speed" value="30" bonus="base" />
+			<grant type="Racial Trait" id="ID_WIKI_RACIAL_TRAIT_GESTTIL_GEM_EYES" />
+			<grant type="Language" id="ID_LANGUAGE_COMMON" requirements="!ID_WOTC_TCOE_OPTION_CUSTOMIZED_LANGUAGE" />
+			<grant type="Language" id="ID_LANGUAGE_GOBLIN" requirements="!ID_WOTC_TCOE_OPTION_CUSTOMIZED_LANGUAGE" />
+			<select type="Language" name="Customized Language" supports="Custom Race Language||Gesttil Language" number="2" requirements="ID_WOTC_TCOE_OPTION_CUSTOMIZED_LANGUAGE" />
+			<grant type="Size" id="ID_SIZE_SMALL" />
+			<grant type="Racial Trait" id="ID_WIKI_GESTTIL_SUBRACE" />
+		</rules>
+	</element>
+	<element name="Gem Eyes" type="Racial Trait" source="D&amp;D Wiki" id="ID_WIKI_RACIAL_TRAIT_GESTTIL_GEM_EYES">
+		<description>
+			<p>You are immune to the blinded condition.</p>
+		</description>
+		<sheet>
+			<description>You are immune to the blinded condition.</description>
+		</sheet>
+		<setters>
+			<set name="sourceUrl">https://www.dandwiki.com/w/index.php?title=Gesttil_(5e_Race)&amp;oldid=1017484#Gesttil_Traits</set>
+		</setters>
+	</element>
+	<element name="Gesttil Subrace" type="Racial Trait" source="D&amp;D Wiki" id="ID_WIKI_GESTTIL_SUBRACE">
+		<description>
+			<p>Gesttil come in four varieties, based on the type of gem that was used for their eyes. Choose the ruby, sapphire, emerald or tiger's eye subrace.</p>
+		</description>
+		<sheet display="false" />
+		<setters>
+			<set name="sourceUrl">https://www.dandwiki.com/w/index.php?title=Gesttil_(5e_Race)&amp;oldid=1017484#Gesttil_Traits</set>
+		</setters>
+		<rules>
+			<select type="Sub Race" name="Gesttil Subrace" supports="Gesttil Eyes" />
+		</rules>
+	</element>
+	<element name="Emerald-Eye" type="Sub Race" source="D&amp;D Wiki" id="ID_GESTILL_SUBRACE_EMERALDEYE">
+		<supports>Gesttil Eyes</supports>
+		<description>
+			<p><strong><em>Ability Score Increase.</em></strong> Your Charisma score increases by 1.</p>
+			<p><strong><em>Not Every Monster Is A Savage.</em></strong> The emerald-eyed gesttil are the noblest of the gesttil. You are proficient in the Persuasion skill.</p>
+			<p><strong><em>Acid Resistance.</em></strong> You are resistant to acid damage.</p>
+		</description>
+		<sheet alt="Emerald-Eye (Gesttil)" display="false" />
+		<setters>
+			<set name="sourceUrl">https://www.dandwiki.com/w/index.php?title=Gesttil_(5e_Race)&amp;oldid=1017484#Emerald-eye</set>
+		</setters>
+		<rules>
+			<stat name="charisma" value="1" requirements="!ID_WOTC_TCOE_OPTION_CUSTOMIZED_ASI" />
+			<select type="Ability Score Improvement" name="Custom Ability Score Improvement +1 (Emerald-Eye)" supports="Custom Ability Score Increase 1" requirements="ID_WOTC_TCOE_OPTION_CUSTOMIZED_ASI" />
+			<grant type="Racial Trait" id="ID_RACIAL_TRAIT_NOT_EVERY_MONSTER_IS_A_SAVAGE" />
+			<grant type="Racial Trait" id="ID_RACIAL_TRAIT_EMERALD_ACID_RESISTANCE" />
+		</rules>
+	</element>
+	<element name="Not Every Monster Is A Savage" type="Racial Trait" source="D&amp;D Wiki" id="ID_RACIAL_TRAIT_NOT_EVERY_MONSTER_IS_A_SAVAGE">
+		<description>
+			<p>The emerald-eyed gesttil are the noblest of the gesttil. You are proficient in the Persuasion skill.</p>
+		</description>
+		<sheet display="false" />
+		<setters>
+			<set name="sourceUrl">https://www.dandwiki.com/w/index.php?title=Gesttil_(5e_Race)&amp;oldid=1017484#Emerald-eye</set>
+		</setters>
+		<rules>
+			<grant type="Proficiency" id="ID_PROFICIENCY_SKILL_PERSUASION" />
+		</rules>
+	</element>
+	<element name="Acid Resistance" type="Racial Trait" source="D&amp;D Wiki" id="ID_RACIAL_TRAIT_EMERALD_ACID_RESISTANCE">
+		<description>
+			<p>You are resistant to acid damage.</p>
+		</description>
+		<sheet>
+			<description>You are resistant to acid damage.</description>
+		</sheet>
+		<setters>
+			<set name="sourceUrl">https://www.dandwiki.com/w/index.php?title=Gesttil_(5e_Race)&amp;oldid=1017484#Emerald-eye</set>
+		</setters>
+		<rules>
+			<grant type="Condition" id="ID_INTERNAL_CONDITION_DAMAGE_RESISTANCE_ACID" />
+		</rules>
+	</element>
+
+	<element name="Sapphire-Eye" type="Sub Race" source="D&amp;D Wiki" id="ID_GESTILL_SUBRACE_SAPPHIREEYE">
+		<supports>Gesttil Eyes</supports>
+		<description>
+			<p><strong><em>Ability Score Increase.</em></strong> Your Intelligence score increases by 1.</p>
+			<p><strong><em>Natural Mage.</em></strong> The sapphire-eye gesttil have a natural knack for magic. You know the ray of frost and prestidigitation cantrips.</p>
+			<p><strong><em>Cold Resistance.</em></strong> You are resistant to cold damage.</p>
+		</description>
+		<sheet alt="Sapphire-Eye (Gesttil)" display="false" />
+		<setters>
+			<set name="sourceUrl">https://www.dandwiki.com/w/index.php?title=Gesttil_(5e_Race)&amp;oldid=1017484#Sapphire-Eye</set>
+		</setters>
+		<rules>
+			<stat name="intelligence" value="1" requirements="!ID_WOTC_TCOE_OPTION_CUSTOMIZED_ASI" />
+			<select type="Ability Score Improvement" name="Custom Ability Score Improvement +1 (Sapphire-Eye)" supports="Custom Ability Score Increase 1" requirements="ID_WOTC_TCOE_OPTION_CUSTOMIZED_ASI" />
+			<grant type="Racial Trait" id="ID_WIKI_RACIAL_TRAIT_SAPPHIRE_NATURAL_MAGE" />
+			<grant type="Racial Trait" id="ID_WIKI_RACIAL_TRAIT_SAPPHIRE_COLD_RESISTANCE" />
+		</rules>
+	</element>
+	<element name="Natural Mage" type="Racial Trait" source="D&amp;D Wiki" id="ID_WIKI_RACIAL_TRAIT_SAPPHIRE_NATURAL_MAGE">
+		<description>
+			<p>The sapphire-eye gesttil have a natural knack for magic. You know the ray of frost and prestidigitation cantrips.</p>
+		</description>
+		<sheet display="false" />
+		<setters>
+			<set name="sourceUrl">https://www.dandwiki.com/w/index.php?title=Gesttil_(5e_Race)&amp;oldid=1017484#Sapphire-Eye</set>
+		</setters>
+		<rules>
+			<grant type="Spell" id="ID_PHB_SPELL_RAY_OF_FROST" />
+			<grant type="Spell" id="ID_PHB_SPELL_PRESTIDIGITATION" />
+		</rules>
+	</element>
+	<element name="Cold Resistance" type="Racial Trait" source="D&amp;D Wiki" id="ID_WIKI_RACIAL_TRAIT_SAPPHIRE_COLD_RESISTANCE">
+		<description>
+			<p>You are resistant to cold damage.</p>
+		</description>
+		<sheet>
+			<description>You are resistant to cold damage.</description>
+		</sheet>
+		<setters>
+			<set name="sourceUrl">https://www.dandwiki.com/w/index.php?title=Gesttil_(5e_Race)&amp;oldid=1017484#Sapphire-Eye</set>
+		</setters>
+		<rules>
+			<grant type="Condition" id="ID_INTERNAL_CONDITION_DAMAGE_RESISTANCE_COLD" />
+		</rules>
+	</element>
+
+	<element name="Ruby-Eye" type="Sub Race" source="D&amp;D Wiki" id="ID_GESTILL_SUBRACE_RUBYEYE">
+		<supports>Gesttil Eyes</supports>
+		<description>
+			<p><strong><em>Ability Score Increase.</em></strong> Your Strength score increases by 1.</p>
+			<p><strong><em>Blue Collar.</em></strong> The ruby-eyed gesttil are the most common of the gesttil and have a penchant for hard work. You have advantage on Constitution checks made on physical tasks that have taken longer than an hour.</p>
+			<p><strong><em>Fire Resistance.</em></strong> You are resistant to fire damage.</p>
+		</description>
+		<sheet alt="Ruby-Eye (Gesttil)" display="false" />
+		<setters>
+			<set name="sourceUrl">https://www.dandwiki.com/w/index.php?title=Gesttil_(5e_Race)&amp;oldid=1017484#Ruby-Eye</set>
+		</setters>
+		<rules>
+			<stat name="strength" value="1" requirements="!ID_WOTC_TCOE_OPTION_CUSTOMIZED_ASI" />
+			<select type="Ability Score Improvement" name="Custom Ability Score Improvement +1 (Ruby-Eye)" supports="Custom Ability Score Increase 1" requirements="ID_WOTC_TCOE_OPTION_CUSTOMIZED_ASI" />
+			<grant type="Racial Trait" id="ID_WIKI_RACIAL_TRAIT_RUBY_BLUE_COLLAR" />
+			<grant type="Racial Trait" id="ID_WIKI_RACIAL_TRAIT_RUBY_FIRE_RESISTANCE" />
+		</rules>
+	</element>
+	<element name="Blue Collar" type="Racial Trait" source="D&amp;D Wiki" id="ID_WIKI_RACIAL_TRAIT_RUBY_BLUE_COLLAR">
+		<description>
+			<p>The ruby-eyed gesttil are the most common of the gesttil and have a penchant for hard work. You have advantage on Constitution checks made on physical tasks that have taken longer than an hour.</p>
+		</description>
+		<sheet>
+			<description>You have advantage on Constitution checks made on physical tasks that have taken longer than an hour.</description>
+		</sheet>
+		<setters>
+			<set name="sourceUrl">https://www.dandwiki.com/w/index.php?title=Gesttil_(5e_Race)&amp;oldid=1017484#Ruby-Eye</set>
+		</setters>
+	</element>
+	<element name="Fire Resistance" type="Racial Trait" source="D&amp;D Wiki" id="ID_WIKI_RACIAL_TRAIT_RUBY_FIRE_RESISTANCE">
+		<description>
+			<p>You are resistant to fire damage.</p>
+		</description>
+		<sheet>
+			<description>You are resistant to fire damage.</description>
+		</sheet>
+		<setters>
+			<set name="sourceUrl">https://www.dandwiki.com/w/index.php?title=Gesttil_(5e_Race)&amp;oldid=1017484#Ruby-Eye</set>
+		</setters>
+		<rules>
+			<grant type="Condition" id="ID_INTERNAL_CONDITION_DAMAGE_RESISTANCE_FIRE" />
+		</rules>
+	</element>
+
+	<element name="Tiger's Eye-Eye" type="Sub Race" source="D&amp;D Wiki" id="ID_GESTILL_SUBRACE_TIGEREYE">
+		<supports>Gesttil Eyes</supports>
+		<description>
+			<p><strong><em>Ability Score Increase.</em></strong> Your Dexterity score increases by 1.</p>
+			<p><strong><em>Rare Find.</em></strong> The tiger's eye gesttil are the rarest of their kind and have a talent for finding rare things. You are proficient in the Perception skill.</p>
+			<p><strong><em>Lightning Resistance.</em></strong> You are resistant to lightning damage.</p>
+		</description>
+		<sheet alt="Tiger's Eye-Eye (Gesttil)" display="false" />
+		<setters>
+			<set name="sourceUrl">https://www.dandwiki.com/w/index.php?title=Gesttil_(5e_Race)&amp;oldid=1017484#Tigers_eye-eye</set>
+		</setters>
+		<rules>
+			<stat name="dexterity" value="1" requirements="!ID_WOTC_TCOE_OPTION_CUSTOMIZED_ASI" />
+			<select type="Ability Score Improvement" name="Custom Ability Score Improvement +1 (Tiger's Eye-Eye)" supports="Custom Ability Score Increase 1" requirements="ID_WOTC_TCOE_OPTION_CUSTOMIZED_ASI" />
+			<grant type="Racial Trait" id="ID_WIKI_RACIAL_TRAIT_TIGER_RARE_FIND" />
+			<grant type="Racial Trait" id="ID_WIKI_RACIAL_TRAIT_TIGER_LIGHTNING_RESISTANCE" />
+		</rules>
+	</element>
+	<element name="Rare Find" type="Racial Trait" source="D&amp;D Wiki" id="ID_WIKI_RACIAL_TRAIT_TIGER_RARE_FIND">
+		<description>
+			<p>The tiger's eye gesttil are the rarest of their kind and have a talent for finding rare things. You are proficient in the Perception skill.</p>
+		</description>
+		<sheet display="false" />
+		<rules>
+			<grant type="Proficiency" id="ID_PROFICIENCY_SKILL_PERCEPTION" />
+		</rules>
+	</element>
+	<element name="Lightning Resistance" type="Racial Trait" source="D&amp;D Wiki" id="ID_WIKI_RACIAL_TRAIT_TIGER_LIGHTNING_RESISTANCE">
+		<description>
+			<p>You are resistant to lightning damage.</p>
+		</description>
+		<sheet>
+			<description>You are resistant to lightning damage.</description>
+		</sheet>
+		<rules>
+			<grant type="Condition" id="ID_INTERNAL_CONDITION_DAMAGE_RESISTANCE_LIGHTNING" />
+		</rules>
+	</element>
+</elements>

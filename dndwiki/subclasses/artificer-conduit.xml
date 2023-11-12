@@ -1,0 +1,270 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<elements>
+	<info>
+        <description>The Augmented Artificer subclass from D&amp;D Wiki, created by "DM1095", with contributions from users "Blobbly383b", "Anastacio", "Geodude671" and many others.</description>
+		<author url="https://www.dandwiki.com/w/index.php?title=Conduit_(5e_Subclass)&amp;oldid=1601948">D&amp;D Wiki</author>
+		<update version="0.0.1">
+			<file name="artificer-conduit.xml" url="https://raw.githubusercontent.com/MeriadarGoblin/elements-thirdparty/main/dndwiki/subclasses/artificer-conduit.xml" />
+		</update>
+    </info>
+	
+	<element name="Conduit" type="Archetype" source="D&amp;D Wiki" id="ID_WIKI_ARCHETYPE_CONDUIT">
+		<supports>Artificer Specialist</supports>
+		<description>
+			<p>Pushing to keep the mystical energy of lightning contained inside a pressurized bottle is hard work!</p>
+			<div element="ID_WIKI_ARCHETYPE_FEATURE_CONDUIT_CONDUIT_SPELLS" />
+			<div element="ID_WIKI_ARCHETYPE_FEATURE_CONDUIT_ARCANE_BATTERY" />
+		</description>
+		<sheet display="false">
+			<description>A Conduit focuses on his battery pack and upgrades to wipe out his enemies!</description>
+		</sheet>
+		<setters>
+			<set name="sourceUrl">"https://www.dandwiki.com/w/index.php?title=Conduit_(5e_Subclass)&amp;oldid=1601948</set>
+		</setters>
+		<rules>
+			<grant type="Archetype Feature" id="ID_WIKI_ARCHETYPE_FEATURE_CONDUIT_CONDUIT_SPELLS" level="3" />
+			<grant type="Archetype Feature" id="ID_WIKI_ARCHETYPE_FEATURE_CONDUIT_ARCANE_BATTERY" level="3" />
+		</rules>	
+	</element>
+<element name="Conduit Spells" type="Archetype Feature" source="D&amp;D Wiki" id="ID_WIKI_ARCHETYPE_FEATURE_CONDUIT_CONDUIT_SPELLS">
+	<description>
+		<p>Starting at 3rd level, you always have certain spells prepared after you reach particular levels in this class, as shown in the Biomechanist Spells table. These spells count as artificer spells for you, but they don’t count against the number of artificer spells you prepare.</p>
+		<h5 class="caption">CONDUIT SPELLS</h5>
+		<table>
+			<thead>
+				<tr><td>Artificer Level</td><td>Spells</td></tr>
+			</thead>
+			<tr><td>3rd</td><td><em>gift of alacrity, thunderwave</em></td></tr>
+			<tr><td>5th</td><td><em>misty step, shatter</em></td></tr>
+			<tr><td>9th</td><td><em>thunder step, pulse wave</em></td></tr>
+			<tr><td>13th</td><td><em>confusion, storm sphere</em></td></tr>
+			<tr><td>17th</td><td><em>steel wind strike, wall of force</em></td></tr>
+		</table>
+	</description>
+	<sheet display="false">
+		<description>You always have certain spells prepared after you reach particular levels in this class, as shown in the Alchemist Spells table. These spells count as artificer spells for you, but they don’t count against the number of artificer spells you prepare.</description>
+	</sheet>
+	<setters>
+		<set name="sourceUrl">"https://www.dandwiki.com/w/index.php?title=Conduit_(5e_Subclass)&amp;oldid=1601948</set>
+	</setters>
+	<rules>
+		<grant type="Spell" id="ID_WOTC_EGTW_SPELL_GIFT_OF_ALACRITY" spellcasting="Artificer" level="3" prepared="true" />
+		<grant type="Spell" id="ID_PHB_SPELL_THUNDERWAVE" spellcasting="Artificer" level="3" prepared="true" />
+			<grant type="Spell" id="ID_PHB_SPELL_MISTY_STEP" spellcasting="Artificer" level="5" prepared="true" />
+			<grant type="Spell" id="ID_PHB_SPELL_SHATTER" spellcasting="Artificer" level="5" prepared="true" />
+			<grant type="Spell" id="ID_XGTE_SPELL_THUNDER_STEP" spellcasting="Artificer" level="9" prepared="true" />
+			<grant type="Spell" id="ID_WOTC_EGTW_SPELL_PULSE_WAVE" spellcasting="Artificer" level="9" prepared="true" />
+			<grant type="Spell" id="ID_PHB_SPELL_CONFUSION" spellcasting="Artificer" level="13" prepared="true" />
+			<grant type="Spell" id="ID_XGTE_SPELL_STORM_SPHERE" spellcasting="Artificer" level="13" prepared="true" />
+			<grant type="Spell" id="ID_XGTE_SPELL_STEEL_WIND_STRIKE" spellcasting="Artificer" level="17" prepared="true" />
+			<grant type="Spell" id="ID_PHB_SPELL_WALL_OF_FORCE" spellcasting="Artificer" level="17" prepared="true" />
+		</rules>
+	</element>
+
+	<element name="Arcane Battery" type="Archetype Feature" source="D&amp;D Wiki" id="ID_WIKI_ARCHETYPE_FEATURE_CONDUIT_ARCANE_BATTERY">
+		<description>
+			<p>Your mastery of the flow of electricity and understanding of it have allowed you to create an arcane battery that can be worn on your back. The battery has a certain number of charges. If the battery is lost or destroyed, you must spend a full long rest creating a new one. A new battery has all available charges restored.</p>
+			<h4>3rd level</h4>
+			<p>Your arcane battery has 4 charges and regains 1d4 charges at the end of a short or long rest. You also gain two of the following abilities for your battery:</p>
+			<ul>
+				<li><strong>Shock. </strong>As an action, you can choose up to two characters within 30-feet of you. All targets must make a Dexterity saving throw against your spell save DC. On a failed save they suffer 1d6 lightning damage. On a successful saving throw, they suffer half damage. When you use this ability, you can expend any number of additional charges to increase the amount of damage done by 1d6 for each additional charge used. Base cost: 1 charge.</li>
+				<li><strong>Repulser Wave. </strong>As an action Enemies within a 15-foot radius of you must make a Constitution saving throw vs your Spell DC, or be pushed 15-feet away from you and suffer 1d6 force damage. Targets that successfully make the saving throw do not get pushed back and take half damage. Cost: 2 charges.</li>
+				<li><strong>Projectile Field. </strong>As a reaction you can produce a five-foot radius centered on you that non-magical projectiles cannot pass through. The field lasts until the end of your next turn. When you use this ability, you can expend any number of additional charges to increase the radius by 5-feet for each charge spent. Base cost: 1 charge.</li>
+				<li><strong>Volatile Charge.</strong>As an bonus action, you can make a DC 12 Intelligence check so. On a success, the battery regains 1d4 charge. On a fail, you suffer 1d6 lightning damage and the charges are not replaced, but none are lost.</li>
+			</ul>
+
+			<h4>5th level</h4>
+			<p>The number of charges in your battery increases to 6 and you regain 1d6 at the end of every short rest. You also gain one of the following abilities for your battery:</p>
+			<ul>
+				<li><strong>Defibrillate. </strong>As a bonus action, you can channel electricity from your battery to your hands and touch an unconscious ally, and bring them up to 1d4 hit points plus your Intelligence modifier. Base cost: 3 charges.</li>
+				<li><strong>High Frequency. </strong>As an action you can cause an ear piercing sound, forcing any creatures that can hear within 60-feet of you must make a Constitution saving throw against your Spell DC. On a failure, they take 1d6 thunder damage and become deaf until the end of your next turn. On a successful saving throw, the creatures take half damage and are not deafened. The thunder damage can be increased by 1d6 by expending 2 extra charges. Base cost: 2 charges.</li>
+				<li><strong>Static Cling. </strong>Whenever you suffer bludgeoning damage from a weapon attack, while holding your battery, the attacker suffers 1d6 Lightning damage.</li>
+			</ul>
+			<p>Additionally, through extensive work on your battery you are able to absorb some of the surrounding static. While holding your battery, you have Resistance to Lightning damage.</p>
+
+			<h4>9th level</h4>
+			<p>Your batteries charges increase to 8 and you regain 1d8 charges on the end of a short rest, and you gain access to two of the following abilities from your battery.</p>
+			<ul>
+				<li><strong>Self-Destruct. </strong>As an action, you can overcharge your battery, expending all remaining charges to cause it to explode in a 30-foot radius in 1d4 rounds. All characters in range during the explosion must make a Dexterity save. On a failed save, they suffer 1d4 Lightning damage and 1d4 Force damage. On a successful save, they suffer half damage. The amount of Lightning and Force damage is increased by 1d4 for each per each charge expended. The battery is destroyed in the explosion.</li>
+				<li><strong>Absorption. </strong>As a reaction, when you would take Lightning or Thunder damage, you can choose to absorb it with your battery. If you do, you take no damage, and your battery regains 1d4 charges.</li>
+				<li><strong>Jumpstart. </strong>Your body is fueled by electricity causing you to gain advantage on Dexterity (Initiative) checks.</li>
+			</ul>
+			
+			<h4>15th level</h4>
+			<p>Your battery now has 10 charges and regains 1d10 charges on the end of a short rest, and you gain both of the following abilities with your battery:</p>
+			<ul>
+				<li><strong>Redirection. </strong>When a character makes a non-critical ranged attack against you, and you are holding your battery, then you can use reaction to change the course of the projectile. If you do, make an Spell attack against a target within 30-feet of you, adding 1d6 lightning damage to the projectile's normal damage if it hits. This ability does not work on ammunition bigger than small. Base cost: 2 charges.</li>
+				<li><strong>Quick Charge. </strong>You have learned how to quickly recharge your battery in a pinch. Once per short or long rest, as a bonus action, you can restore 1d6 charges to your battery.</li>
+			</ul>
+		</description>
+		<sheet action="{{conduit charges}} Charges" usage="Recharge (1d{{conduit:dice}})">
+			<description>If the battery is lost or destroyed, you must spend a full long rest creating a new one. A new battery has all available charges restored. Your arcane battery has 4 charges and regains 1d4 charges at the end of a short or long rest. </description>
+			<description level="5">If the battery is lost or destroyed, you must spend a full long rest creating a new one. A new battery has all available charges restored. Your arcane battery has 6 charges and regains 1d6 charges at the end of a short or long rest. </description>
+			<description level="9">If the battery is lost or destroyed, you must spend a full long rest creating a new one. A new battery has all available charges restored. Your arcane battery has 8 charges and regains 1d8 charges at the end of a short or long rest. &#13; Additionally, while holding your battery, you have Resistance to Lightning damage.</description>
+			<description level="15">If the battery is lost or destroyed, you must spend a full long rest creating a new one. A new battery has all available charges restored. Your arcane battery has 10 charges and regains 1d10 charges at the end of a short or long rest. &#13; Additionally, while holding your battery, you have Resistance to Lightning damage. </description>
+		</sheet>
+		<setters>
+			<set name="sourceUrl">"https://www.dandwiki.com/w/index.php?title=Conduit_(5e_Subclass)&amp;oldid=1601948</set>
+		</setters>
+		<rules>
+			<stat name="conduit charges" value="4" />
+			<stat name="conduit charges" value="2" level="5" />
+			<stat name="conduit charges" value="2" level="9" />
+			<stat name="conduit charges" value="2" level="15" />
+			<stat name="conduit:dice" value="4" />
+			<stat name="conduit:dice" value="2" level="5" />
+			<stat name="conduit:dice" value="2" level="9" />
+			<stat name="conduit:dice" value="2" level="15" />
+			<select type="Archetype Feature" name="Arcane Battery Abilities (level 3)" supports="Battery Level 3" number="2" />
+			<select type="Archetype Feature" name="Arcane Battery Abilities (level 5)" supports="Battery Level 5" level="5" />
+			<select type="Archetype Feature" name="Arcane Battery Abilities (level 9)" supports="Battery Level 9" number="2" level="9" />
+			<grant type="Archetype Feature" id="ID_WIKI_ARCANE_BATTERY_REDIRECTION" level="15" />
+			<grant type="Archetype Feature" id="ID_WIKI_ARCANE_BATTERY_QUICK_CHARGE" level="15" />
+			<grant type="Condition" id="ID_INTERNAL_CONDITION_DAMAGE_RESISTANCE_LIGHTNING" level="9" />
+		</rules>
+	</element>
+	<element name="Shock" type="Archetype Feature" source="D&amp;D Wiki" id="ID_WIKI_ARCANE_BATTERY_SHOCK">
+		<supports>Battery Level 3</supports>
+		<description>
+			<p>As an action Enemies within a 15-foot radius of you must make a Constitution saving throw vs your Spell DC, or be pushed 15-feet away from you and suffer 1d6 force damage. Targets that successfully make the saving throw do not get pushed back and take half damage. Cost: 2 charges.</p>
+		</description>
+		<sheet action="Action" usage="2 Charges">
+			<description>As an action Enemies within a 15-foot radius of you must make a Constitution saving throw vs your Spell DC, or be pushed 15-feet away from you and suffer 1d6 force damage. Targets that successfully make the saving throw do not get pushed back and take half damage.</description>
+		</sheet>
+		<setters>
+			<set name="sourceUrl">"https://www.dandwiki.com/w/index.php?title=Conduit_(5e_Subclass)&amp;oldid=1601948</set>
+		</setters>
+	</element>
+	<element name="Repulser Wave" type="Archetype Feature" source="D&amp;D Wiki" id="ID_WIKI_ARCANE_BATTERY_REPULSER_WAVE">
+		<supports>Battery Level 3</supports>
+		<description>
+			<p>As an action, you can choose up to two characters within 30-feet of you. All targets must make a Dexterity saving throw against your spell save DC. On a failed save they suffer 1d6 lightning damage. On a successful saving throw, they suffer half damage. When you use this ability, you can expend any number of additional charges to increase the amount of damage done by 1d6 for each additional charge used. Base cost: 1 charge.</p>
+		</description>
+		<sheet action="Action" usage="1 Charge">
+			<description>As an action, you can choose up to two characters within 30-feet of you. All targets must make a Dexterity saving throw against your spell save DC. On a failed save they suffer 1d6 lightning damage. On a successful saving throw, they suffer half damage. When you use this ability, you can expend any number of additional charges to increase the amount of damage done by 1d6 for each additional charge used.</description>
+		</sheet>
+		<setters>
+			<set name="sourceUrl">"https://www.dandwiki.com/w/index.php?title=Conduit_(5e_Subclass)&amp;oldid=1601948</set>
+		</setters>
+	</element>
+	<element name="Projectile Field" type="Archetype Feature" source="D&amp;D Wiki" id="ID_WIKI_ARCANE_BATTERY_PROJECTILE_FIELD">
+		<supports>Battery Level 3</supports>
+		<description>
+			<p>As a reaction you can produce a five-foot radius centered on you that non-magical projectiles cannot pass through. The field lasts until the end of your next turn. When you use this ability, you can expend any number of additional charges to increase the radius by 5-feet for each charge spent. Base cost: 1 charge.</p>
+		</description>
+		<sheet action="Reaction" usage="1 Charge">
+			<description>As a reaction you can produce a five-foot radius centered on you that non-magical projectiles cannot pass through. The field lasts until the end of your next turn. When you use this ability, you can expend any number of additional charges to increase the radius by 5-feet for each charge spent.</description>
+		</sheet>
+		<setters>
+			<set name="sourceUrl">"https://www.dandwiki.com/w/index.php?title=Conduit_(5e_Subclass)&amp;oldid=1601948</set>
+		</setters>
+	</element>
+	<element name="Volatile Charge" type="Archetype Feature" source="D&amp;D Wiki" id="ID_WIKI_ARCANE_BATTERY_VOLATILE_CHARGE">
+		<supports>Battery Level 3</supports>
+		<description>
+			<p>As a bonus action, you can make a DC 12 Intelligence check so. On a success, the battery regains 1d4 charge. On a fail, you suffer 1d6 lightning damage and the charges are not replaced, but none are lost.</p>
+		</description>
+		<sheet action="Bonus Action">
+			<description>As a bonus action, you can make a DC 12 Intelligence check so. On a success, the battery regains 1d4 charge. On a fail, you suffer 1d6 lightning damage and the charges are not replaced, but none are lost.</description>
+		</sheet>
+		<setters>
+			<set name="sourceUrl">"https://www.dandwiki.com/w/index.php?title=Conduit_(5e_Subclass)&amp;oldid=1601948</set>
+		</setters>
+	</element>
+	<element name="Defibrillate" type="Archetype Feature" source="D&amp;D Wiki" id="ID_WIKI_ARCANE_BATTERY_DEFIBRILLATE">
+		<supports>Battery Level 5</supports>
+		<description>
+			<p>As a bonus action, you can channel electricity from your battery to your hands and touch an unconscious ally, and bring them up to 1d4 hit points plus your Intelligence modifier. Base cost: 3 charges.</p>
+		</description>
+		<sheet action="Bonus Action" usage="3 Charges">
+			<description>As a bonus action, you can channel electricity from your battery to your hands and touch an unconscious ally, and bring them up to 1d4 hit points plus your Intelligence modifier.</description>
+		</sheet>
+		<setters>
+			<set name="sourceUrl">"https://www.dandwiki.com/w/index.php?title=Conduit_(5e_Subclass)&amp;oldid=1601948</set>
+		</setters>
+	</element>
+	<element name="High Frequency" type="Archetype Feature" source="D&amp;D Wiki" id="ID_WIKI_ARCANE_BATTERY_HIGH_FREQUENCY">
+		<supports>Battery Level 5</supports>
+		<description>
+			<p>As an action you can cause an ear piercing sound, forcing any creatures that can hear within 60-feet of you must make a Constitution saving throw against your Spell DC. On a failure, they take 1d6 thunder damage and become deaf until the end of your next turn. On a successful saving throw, the creatures take half damage and are not deafened. The thunder damage can be increased by 1d6 by expending 2 extra charges. Base cost: 2 charges.</p>
+		</description>
+		<sheet action="Action" usage="2 Charges">
+			<description>As an action you can cause an ear piercing sound, forcing any creatures that can hear within 60-feet of you must make a Constitution saving throw against your Spell DC. On a failure, they take 1d6 thunder damage and become deaf until the end of your next turn. On a successful saving throw, the creatures take half damage and are not deafened. The thunder damage can be increased by 1d6 by expending 2 extra charges.</description>
+		</sheet>
+		<setters>
+			<set name="sourceUrl">"https://www.dandwiki.com/w/index.php?title=Conduit_(5e_Subclass)&amp;oldid=1601948</set>
+		</setters>
+	</element>
+	<element name="Static Cling" type="Archetype Feature" source="D&amp;D Wiki" id="ID_WIKI_ARCANE_BATTERY_STATIC_CLING">
+		<supports>Battery Level 5</supports>
+		<description>
+			<p>Whenever you suffer bludgeoning damage from a weapon attack, while holding your battery, the attacker suffers 1d6 Lightning damage.</p>
+		</description>
+		<sheet>
+			<description>Whenever you suffer bludgeoning damage from a weapon attack, while holding your battery, the attacker suffers 1d6 Lightning damage.</description>
+		</sheet>
+		<setters>
+			<set name="sourceUrl">"https://www.dandwiki.com/w/index.php?title=Conduit_(5e_Subclass)&amp;oldid=1601948</set>
+		</setters>
+	</element>
+	<element name="Self-Destruct" type="Archetype Feature" source="D&amp;D Wiki" id="ID_WIKI_ARCANE_BATTERY_SELF_DESTRUCT">
+		<supports>Battery Level 9</supports>
+		<description>
+			<p>As an action, you can overcharge your battery, expending all remaining charges to cause it to explode in a 30-foot radius in 1d4 rounds. All characters in range during the explosion must make a Dexterity save. On a failed save, they suffer 1d4 Lightning damage and 1d4 Force damage. On a successful save, they suffer half damage. The amount of Lightning and Force damage is increased by 1d4 for each per each charge expended. The battery is destroyed in the explosion.</p>
+		</description>
+		<sheet action="Action" usage="X Charges">
+			<description>As an action, you can overcharge your battery, expending all remaining charges to cause it to explode in a 30-foot radius in 1d4 rounds. All characters in range during the explosion must make a Dexterity save. On a failed save, they suffer 1d4 Lightning damage and 1d4 Force damage. On a successful save, they suffer half damage. The amount of Lightning and Force damage is increased by 1d4 for each per each charge expended. The battery is destroyed in the explosion.</description>
+		</sheet>
+		<setters>
+			<set name="sourceUrl">"https://www.dandwiki.com/w/index.php?title=Conduit_(5e_Subclass)&amp;oldid=1601948</set>
+		</setters>
+	</element>
+	<element name="Absorption" type="Archetype Feature" source="D&amp;D Wiki" id="ID_WIKI_ARCANE_BATTERY_ABSORPTION">
+		<supports>Battery Level 9</supports>
+		<description>
+			<p>As a reaction, when you would take Lightning or Thunder damage, you can choose to absorb it with your battery. If you do, you take no damage, and your battery regains 1d4 charges.</p>
+		</description>
+		<sheet action="Absorption" usage="X Charges">
+			<description>As a reaction, when you would take Lightning or Thunder damage, you can choose to absorb it with your battery. If you do, you take no damage, and your battery regains 1d4 charges.</description>
+		</sheet>
+		<setters>
+			<set name="sourceUrl">"https://www.dandwiki.com/w/index.php?title=Conduit_(5e_Subclass)&amp;oldid=1601948</set>
+		</setters>
+	</element>
+	<element name="Jumpstart" type="Archetype Feature" source="D&amp;D Wiki" id="ID_WIKI_ARCANE_BATTERY_JUMPSTART">
+		<supports>Battery Level 9</supports>
+		<description>
+			<p>Your body is fueled by electricity causing you to gain advantage on Dexterity (Initiative) checks.</p>
+		</description>
+		<sheet>
+			<description>Your body is fueled by electricity causing you to gain advantage on Dexterity (Initiative) checks.</description>
+		</sheet>
+		<setters>
+			<set name="sourceUrl">"https://www.dandwiki.com/w/index.php?title=Conduit_(5e_Subclass)&amp;oldid=1601948</set>
+		</setters>
+	</element>
+	<element name="Redirection" type="Archetype Feature" source="D&amp;D Wiki" id="ID_WIKI_ARCANE_BATTERY_REDIRECTION">
+		<supports>Battery Level 15</supports>
+		<description>
+			<p>When a character makes a non-critical ranged attack against you, and you are holding your battery, then you can use reaction to change the course of the projectile. If you do, make an Spell attack against a target within 30-feet of you, adding 1d6 lightning damage to the projectile's normal damage if it hits. This ability does not work on ammunition bigger than small. Base cost: 2 charges.</p>
+		</description>
+		<sheet action="Reaction" usage="2 Charges">
+			<description>When a character makes a non-critical ranged attack against you, and you are holding your battery, then you can use reaction to change the course of the projectile. If you do, make an Spell attack against a target within 30-feet of you, adding 1d6 lightning damage to the projectile's normal damage if it hits. This ability does not work on ammunition bigger than small.</description>
+		</sheet>
+		<setters>
+			<set name="sourceUrl">"https://www.dandwiki.com/w/index.php?title=Conduit_(5e_Subclass)&amp;oldid=1601948</set>
+		</setters>
+	</element>
+	<element name="Quick Charge" type="Archetype Feature" source="D&amp;D Wiki" id="ID_WIKI_ARCANE_BATTERY_QUICK_CHARGE">
+		<supports>Battery Level 15</supports>
+		<description>
+			<p>You have learned how to quickly recharge your battery in a pinch. Once per short or long rest, as a bonus action, you can restore 1d6 charges to your battery.</p>
+		</description>
+		<sheet action="Bonus Action" usage="1/Rest">
+			<description>You have learned how to quickly recharge your battery in a pinch. Once per short or long rest, as a bonus action, you can restore 1d6 charges to your battery.</description>
+		</sheet>
+		<setters>
+			<set name="sourceUrl">"https://www.dandwiki.com/w/index.php?title=Conduit_(5e_Subclass)&amp;oldid=1601948</set>
+		</setters>
+	</element>
+</elements>

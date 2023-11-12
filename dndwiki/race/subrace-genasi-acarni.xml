@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<elements>
+	<info>
+        <description>The Genasi Arcani subrace from D&amp;D Wiki, created by user random ip user, with contributions from users "Marasmusine", and "ConcealedLight."</description>
+		<author url="https://www.dandwiki.com/w/index.php?title=Arcani_(5e_Subrace)&amp;oldid=1074161">D&amp;D Wiki</author>
+		<update version="0.0.1">
+			<file name="subrace-genasi-arcani.xml" url="https://raw.githubusercontent.com/MeriadarGoblin/elements-thirdparty/main/dndwiki/races/subrace-genasi-arcani.xml" />
+		</update>
+    </info>
+
+	<element name="Arcani" type="Sub Race" source="D&amp;D Wiki" id="ID_WIKI_SUBRACE_GENASI_ARCANI">
+		<supports>MOTM Genasi,Genasi</supports>
+		<description>
+			<p>Magic, it holds the universe together. Its force predates even the gods of this world. It is powerful enough to turn a mortal into a being of near-godlike power. Now imagine someone who has this energy infused deep into their body have a child. This is how a special kind of Genasi is born, The Arcani. Arcani appear the most normal-esque out of the Genasi. However their eyes might flicker with magic, Their veins might pulsate with magic, and their skin might glow various colors. These traits often allow them to be picked out from a crowed easily as any other Genasi.</p>
+			<p><b><i>Ability Score Increase:</i></b> Your Charisma score increases by 1.</p>
+			<p><b><i>Eldritch Skin:</i></b> You are resistant to force damage.</p>
+			<p><b><i>Might and Magic:</i></b> You know one cantrip from the sorcerer spell list. Charisma is your spell casting mod.</p>
+			<p><b><i>Primordial Eyes:</i></b> You can cast the detect magic spell once with this trait, requiring no material components, and you regain the ability to cast it this way when you finish a long rest. Charisma is your spellcasting ability for this spell.</p>
+		</description>
+		<sheet display="false" />
+		<setters>
+			<set name="sourceUrl">https://www.dandwiki.com/w/index.php?title=Arcani_(5e_Subrace)&amp;oldid=1074161</set>
+		</setters>
+		<rules>
+			<stat name="charisma" value="1" requirements="!ID_WOTC_TCOE_OPTION_CUSTOMIZED_ASI" />
+			<select type="Ability Score Improvement" name="Custom Ability Score Improvement +1 (Arcani)" supports="Custom Ability Score Increase 1" requirements="ID_WOTC_TCOE_OPTION_CUSTOMIZED_ASI" />
+			<grant type="Racial Trait" id="ID_WIKI_SUBRACE_ARCANI_ELDRITCH_SKIN" />
+			<grant type="Racial Trait" id="ID_WIKI_SUBRACE_ARCANI_MIGHT_AND_MAGIC" />
+			<grant type="Racial Trait" id="ID_WIKI_SUBRACE_ARCANI_PRIMORDIAL_EYES" />
+		</rules>
+	</element>
+	<element name="Eldritch Skin" type="Racial Trait" source="D&amp;D Wiki" id="ID_WIKI_SUBRACE_ARCANI_ELDRITCH_SKIN">
+		<description>
+			<p>You are resistant to force damage.</p>
+		</description>
+		<sheet>
+			<description>You are resistant to force damage.</description>
+		</sheet>
+		<setters>
+			<set name="sourceUrl">https://www.dandwiki.com/w/index.php?title=Arcani_(5e_Subrace)&amp;oldid=1074161</set>
+		</setters>
+		<rules>
+			<grant type="Condition" id="ID_INTERNAL_CONDITION_DAMAGE_RESISTANCE_FORCE" />
+		</rules>
+	</element>
+	<element name="Might and Magic" type="Racial Trait" source="D&amp;D Wiki" id="ID_WIKI_SUBRACE_ARCANI_MIGHT_AND_MAGIC">
+		<description>
+			<p>You know one cantrip from the sorcerer spell list. Charisma is your spell casting mod.</p>
+		</description>
+		<sheet display="false" />
+		<setters>
+			<set name="sourceUrl">https://www.dandwiki.com/w/index.php?title=Arcani_(5e_Subrace)&amp;oldid=1074161</set>
+		</setters>
+		<rules>
+			<select type="Spell" name="Might and Magic (Cantrip)" supports="0,Sorcerer" />
+		</rules>
+	</element>
+	<element name="Primordial Eyes" type="Racial Trait" source="D&amp;D Wiki" id="ID_WIKI_SUBRACE_ARCANI_PRIMORDIAL_EYES">
+		<description>
+			<p>You can cast the detect magic spell once with this trait, requiring no material components, and you regain the ability to cast it this way when you finish a long rest. Charisma is your spellcasting ability for this spell.</p>
+		</description>
+		<sheet>
+			<description>You can cast the detect magic spell once with this trait, requiring no material components, and you regain the ability to cast it this way when you finish a long rest. Charisma is your spellcasting ability for this spell.</description>
+		</sheet>
+		<setters>
+			<set name="sourceUrl">https://www.dandwiki.com/w/index.php?title=Arcani_(5e_Subrace)&amp;oldid=1074161</set>
+		</setters>
+		<rules>
+			<grant type="Spell" id="ID_PHB_SPELL_DETECT_MAGIC" />
+		</rules>
+	</element>
+</elements>

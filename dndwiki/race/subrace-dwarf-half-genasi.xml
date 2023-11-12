@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<elements>
+	<info>
+        <description>The Dwarf Half-Genasi subrace from D&amp;D Wiki, created by user random ip user, with contributions from users "SirSprinkles", "Dinomaster337", and "ConcealedLight."</description>
+		<author url="https://www.dandwiki.com/w/index.php?title=Half-Genasi_(5e_Subrace)&amp;oldid=1074009">D&amp;D Wiki</author>
+		<update version="0.0.1">
+			<file name="subrace-dwarf-halfgenasi.xml" url="https://raw.githubusercontent.com/MeriadarGoblin/elements-thirdparty/main/dndwiki/races/subrace-dwarf-halfgenasi.xml" />
+		</update>
+    </info>
+
+	<element name="Half-Genasi" type="Sub Race" source="D&amp;D Wiki" id="ID_WIKI_SUBRACE_DWARF_HALF_GENASI">
+		<supports>Dwarf</supports>
+		<description>
+			<p>You are descended from the powerful elementals distantly, and still, retain some of their power.</p>
+			<p class="indent"><b><i>Ability Score Increase. </i></b>Your Constitution score increases by 1.</p>
+			<p class="indent"><b><i>Elemental Affinity. </i></b>You gain a racial trait based on your genasi origin. Pick one from: Air, Earth, Fire, and Water.</p>
+			<h5>Elemental Affinities</h5>
+			<p class="indent"><b>Air Genasi - <i>Friend of Wind.</i></b> You can cause the wind to form shields and buffers. You know the gust cantrip and you can cast the feather fall spell once with this trait, requiring no material components, and you regain the ability to cast it this way when you finish a long rest. Constitution is your spellcasting ability for this spell.</p>
+			<p class="indent"><b>Earth Genasi - <i>One with Rock.</i></b> You know the mold earth cantrip, and at 3rd level, you can cast the meld into stone spell once with this trait, requiring no material components, and you regain the ability to cast it this way when you finish a long rest. Constitution is your spellcasting ability for this spell.</p>
+			<p class="indent"><b>Fire Genasi - <i>Fire Affinity.</i></b> You are resistant to fire damage and know the fire bolt cantrip.</p>
+			<p class="indent"><b>Water Genasi - <i>Water Affinity.</i></b> You can breathe underwater and have swimming speed of 30 feet.</p>
+		</description>
+		<sheet display="false" />
+		<setters>
+			<set name="sourceUrl">https://www.dandwiki.com/w/index.php?title=Half-Genasi_(5e_Subrace)&amp;oldid=1074009</set>
+		</setters>
+		<rules>
+			<stat name="constitution" value="1" requirements="!ID_WOTC_TCOE_OPTION_CUSTOMIZED_ASI" />
+			<select type="Ability Score Improvement" name="Custom Ability Score Improvement +1 (Half-Genasi)" supports="Custom Ability Score Increase 1" requirements="ID_WOTC_TCOE_OPTION_CUSTOMIZED_ASI" />
+			<select type="Racial Trait" name="Elemental Affinity" supports="Half-Genasi" />
+		</rules>
+	</element>
+
+	<element name="Air Genasi" type="Racial Trait" source="D&amp;D Wiki" id="ID_WIKI_RACIAL_TRAIT_HALFGENASI_AIR">
+		<supports>Half-Genasi</supports>
+		<description>
+			<p>You can cause the wind to form shields and buffers. You know the gust cantrip and you can cast the feather fall spell once with this trait, requiring no material components, and you regain the ability to cast it this way when you finish a long rest. Constitution is your spellcasting ability for this spell.</p>
+		</description>
+		<sheet alt="Friend of Wind">
+			<description>As an Air genasi, you know the gust cantrip and you can cast the feather fall spell once with this trait, requiring no material components, and you regain the ability to cast it this way when you finish a long rest. Constitution is your spellcasting ability for this spell.</description>
+		</sheet>
+		<setters>
+			<set name="sourceUrl">https://www.dandwiki.com/w/index.php?title=Half-Genasi_(5e_Subrace)&amp;oldid=1074009</set>
+		</setters>
+		<rules>
+			<grant type="Spell" id="ID_XGTE_SPELL_GUST" />
+			<grant type="Spell" id="ID_PHB_SPELL_FEATHER_FALL" />
+		</rules>
+	</element>
+
+	<element name="Earth Genasi" type="Racial Trait" source="D&amp;D Wiki" id="ID_WIKI_RACIAL_TRAIT_HALFGENASI_EARTH">
+		<supports>Half-Genasi</supports>
+		<description>
+			<p>You know the mold earth cantrip, and at 3rd level, you can cast the meld into stone spell once with this trait, requiring no material components, and you regain the ability to cast it this way when you finish a long rest. Constitution is your spellcasting ability for this spell.</p>
+		</description>
+		<sheet alt="One with Rock">
+			<description>As an Earth Genasi, you know the mold earth cantrip. Constitution is your spellcasting ability for this spell.</description>
+			<description level="3">As an Earth Genasi, you know the mold earth cantrip, and at 3rd level, you can cast the meld into stone spell once with this trait, requiring no material components, and you regain the ability to cast it this way when you finish a long rest. Constitution is your spellcasting ability for this spell.</description>
+		</sheet>
+		<setters>
+			<set name="sourceUrl">https://www.dandwiki.com/w/index.php?title=Half-Genasi_(5e_Subrace)&amp;oldid=1074009</set>
+		</setters>
+		<rules>
+			<grant type="Spell" id="ID_XGTE_SPELL_MOLD_EARTH" />
+			<grant type="Spell" id="ID_PHB_SPELL_MELD_INTO_STONE" level="3" />
+		</rules>
+	</element>
+
+	<element name="Fire Genasi" type="Racial Trait" source="D&amp;D Wiki" id="ID_WIKI_RACIAL_TRAIT_HALFGENASI_FIRE">
+		<supports>Half-Genasi</supports>
+		<description>
+			<p>You are resistant to fire damage and know the fire bolt cantrip.</p>
+		</description>
+		<sheet alt="Fire Affinity">
+			<description>As a Fire Genasi, you are resistant to fire damage and know the fire bolt cantrip.</description>
+		</sheet>
+		<setters>
+			<set name="sourceUrl">https://www.dandwiki.com/w/index.php?title=Half-Genasi_(5e_Subrace)&amp;oldid=1074009</set>
+		</setters>
+		<rules>
+			<grant type="Condition" id="ID_INTERNAL_CONDITION_DAMAGE_RESISTANCE_FIRE" />
+			<grant type="Spell" id="ID_PHB_SPELL_FIRE_BOLT" />
+		</rules>
+	</element>
+	<element name="Water Genasi" type="Racial Trait" source="D&amp;D Wiki" id="ID_WIKI_RACIAL_TRAIT_HALFGENASI_WATER">
+		<supports>Half-Genasi</supports>
+		<description>
+			<p>You can breathe underwater and have swimming speed of 30 feet.</p>
+		</description>
+		<sheet alt="Water Affinity">
+			<description>As a Water Genasi, you can breathe underwater.</description>
+		</sheet>
+		<setters>
+			<set name="sourceUrl">https://www.dandwiki.com/w/index.php?title=Half-Genasi_(5e_Subrace)&amp;oldid=1074009</set>
+		</setters>
+		<rules>
+			<stat name="innate speed:swim" value="30" />
+		</rules>
+	</element>
+</elements>

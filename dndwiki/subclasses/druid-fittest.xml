@@ -1,0 +1,109 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<elements>
+	<info>
+        <description>The Circle of the Fittest subclass from D&amp;D Wiki, created by user "Rallyzydap'w", with contributions from users "Yanied", and "SirSprinkles."</description>
+		<author url="https://www.dandwiki.com/w/index.php?title=Circle_of_the_Fittest_(5e_Subclass)&amp;oldid=1737325">D&amp;D Wiki</author>
+		<update version="0.0.1">
+			<file name="druid-fittest.xml" url="https://raw.githubusercontent.com/MeriadarGoblin/elements-thirdparty/main/dndwiki/subclasses/druid-fittest.xml" />
+		</update>
+    </info>
+
+	<element name="Circle of the Fittest" type="Archetype" source="D&amp;D Wiki" id="ID_WIKI_ARCHETYPE_DRUID_FITTEST">
+		<supports>Druid Circle</supports>
+		<description>
+			<p>Those who follow this circle believe that Nature destroys what is weak and absorbs what is strong enough to survive.</p>
+			<p class="indent"><i>"While other druids look The Arcane Magic with bad eyes, you embrace it. Where they see a monstrosity destroying the wildlife, you see a beautiful griffon feeding. For you, it's just Nature following its course...</i></p>
+			<div element="ID_WIKI_ARCHETYPE_FEATURE_FITTEST_LESSER_NATURE_INVOCATION" />
+			<div element="ID_WIKI_ARCHETYPE_FEATURE_FITTEST_ARMOR_LIMITATION" />
+			<div element="ID_WIKI_ARCHETYPE_FEATURE_FITTEST_MONSTRUOUS_SHAPE" />
+			<div element="ID_WIKI_ARCHETYPE_FEATURE_FITTEST_RESILIENT" />
+			<div element="ID_WIKI_ARCHETYPE_FEATURE_FITTEST_GREATER_NATURE_INVOCATION" />
+			<div element="ID_WIKI_ARCHETYPE_FEATURE_FITTEST_ADAPTATION" />
+		</description>
+		<sheet display="false" />
+		<setters>
+			<set name="sourceUrl">https://www.dandwiki.com/w/index.php?title=Godslayer_(5e_Class)&amp;oldid=1676945</set>
+		</setters>
+		<rules>
+			<grant type="Archetype Feature" id="ID_WIKI_ARCHETYPE_FEATURE_FITTEST_LESSER_NATURE_INVOCATION" level="2" />
+			<grant type="Archetype Feature" id="ID_WIKI_ARCHETYPE_FEATURE_FITTEST_ARMOR_LIMITATION" level="2" />
+			<grant type="Archetype Feature" id="ID_WIKI_ARCHETYPE_FEATURE_FITTEST_MONSTRUOUS_SHAPE" level="2" />
+			<grant type="Archetype Feature" id="ID_WIKI_ARCHETYPE_FEATURE_FITTEST_RESILIENT" level="6" />
+			<grant type="Archetype Feature" id="ID_WIKI_ARCHETYPE_FEATURE_FITTEST_GREATER_NATURE_INVOCATION" level="10" />
+			<grant type="Archetype Feature" id="ID_WIKI_ARCHETYPE_FEATURE_FITTEST_ADAPTATION" level="14" />
+		</rules>
+	</element>
+	<element name="Lesser Nature Invocation" type="Archetype Feature" source="D&amp;D Wiki" id="ID_WIKI_ARCHETYPE_FEATURE_FITTEST_LESSER_NATURE_INVOCATION">
+		<description>
+			<p>When you start to follow this circle in the 2nd level, you can improve your abilities by drawing power from The Weave. You learn one Eldritch Invocation from the Warlock class. You can change your invocation when you finish a long rest.</p>
+		</description>
+		<sheet>
+			<description>You can change your invocation when you finish a long rest.</description>
+		</sheet>
+		<setters>
+			<set name="sourceUrl">https://www.dandwiki.com/w/index.php?title=Godslayer_(5e_Class)&amp;oldid=1676945</set>
+		</setters>
+		<rules>
+			<select type="Class Feature" name="Lesser Nature Invocation" supports="Eldritch Invocation" />
+		</rules>
+	</element>
+	<element name="Armor Limitation" type="Archetype Feature" source="D&amp;D Wiki" id="ID_WIKI_ARCHETYPE_FEATURE_FITTEST_ARMOR_LIMITATION">
+		<description>
+			<p>When you gain this feature at level 2, you understand that shaping metal to make tools is something that the civilized species evolves to do, so you can use metal armor and shield. You also gain proficiency with heavy armor.</p>
+		</description>
+		<sheet display="false" />
+		<setters>
+			<set name="sourceUrl">https://www.dandwiki.com/w/index.php?title=Godslayer_(5e_Class)&amp;oldid=1676945</set>
+		</setters>
+		<rules>
+			<grant type="Proficiency" id="ID_PROFICIENCY_ARMOR_PROFICIENCY_HEAVY_ARMOR" />
+		</rules>
+	</element>
+	<element name="Monstruous Shape" type="Archetype Feature" source="D&amp;D Wiki" id="ID_WIKI_ARCHETYPE_FEATURE_FITTEST_MONSTRUOUS_SHAPE">
+		<description>
+			<p>Also at level 2, you know that the "Monsters" are just a part of Nature. You can use your Wild Shape to assume the shape of monstrosity types, in addition to beasts, so long as they fit the CR guidelines appropriate for your level.</p>
+		</description>
+		<sheet>
+			<description>You can use your Wild Shape to assume the shape of monstrosity types, in addition to beasts, so long as they fit the CR guidelines appropriate for your level.</description>
+		</sheet>
+		<setters>
+			<set name="sourceUrl">https://www.dandwiki.com/w/index.php?title=Godslayer_(5e_Class)&amp;oldid=1676945</set>
+		</setters>
+	</element>
+	<element name="Resilient" type="Archetype Feature" source="D&amp;D Wiki" id="ID_WIKI_ARCHETYPE_FEATURE_FITTEST_RESILIENT">
+		<description>
+			<p>At level 6, your body is more resistant and doesn't need to rest like the others. You gain the trance elven feature and proficiency in Constitution saving throws.</p>
+		</description>
+		<sheet>
+			<description>You don’t need to sleep. Instead, you meditate deeply, remaining semiconscious, for 4 hours a day.</description>
+		</sheet>
+		<setters>
+			<set name="sourceUrl">https://www.dandwiki.com/w/index.php?title=Godslayer_(5e_Class)&amp;oldid=1676945</set>
+		</setters>
+	</element>
+	<element name="Greater Nature Invocation" type="Archetype Feature" source="D&amp;D Wiki" id="ID_WIKI_ARCHETYPE_FEATURE_FITTEST_GREATER_NATURE_INVOCATION">
+		<description>
+			<p>You learn more about the invocations. At level 10 you learn to have three Eldritch Invocations and can change them when you finish a short or long rest.</p>
+		</description>
+		<sheet>
+			<description>You learn to have three Eldritch Invocations and can change them when you finish a short or long rest.</description>
+		</sheet>
+		<setters>
+			<set name="sourceUrl">https://www.dandwiki.com/w/index.php?title=Godslayer_(5e_Class)&amp;oldid=1676945</set>
+		</setters>
+		<rules>
+			<select type="Class Feature" name="Greater Nature Invocation" supports="Eldritch Invocation" number="3" />
+		</rules>
+	</element>
+	<element name="Adaptation" type="Archetype Feature" source="D&amp;D Wiki" id="ID_WIKI_ARCHETYPE_FEATURE_FITTEST_ADAPTATION">
+		<description>
+			<p>When you reach level 14 you can deal with any condition affecting you. While out of combat you regain a number of hit points equal to your Constitution modifier (minimum of 1). You also can't be paralyzed, petrified, poisoned, and are immune to disease.</p>
+		</description>
+		<sheet>
+			<description>While out of combat you regain a number of hit points equal to your Constitution modifier (minimum of 1). You also can't be paralyzed, petrified, poisoned, and are immune to disease.</description>
+		</sheet>
+		<setters>
+			<set name="sourceUrl">https://www.dandwiki.com/w/index.php?title=Godslayer_(5e_Class)&amp;oldid=1676945</set>
+		</setters>
+	</element>
+</elements>
