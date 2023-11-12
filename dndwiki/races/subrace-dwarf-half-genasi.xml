@@ -4,7 +4,7 @@
         <description>The Dwarf Half-Genasi subrace from D&amp;D Wiki, created by user random ip user, with contributions from users "SirSprinkles", "Dinomaster337", and "ConcealedLight."</description>
 		<author url="https://www.dandwiki.com/w/index.php?title=Half-Genasi_(5e_Subrace)&amp;oldid=1074009">D&amp;D Wiki</author>
 		<update version="0.0.1">
-			<file name="subrace-dwarf-halfgenasi.xml" url="https://raw.githubusercontent.com/MeriadarGoblin/elements-thirdparty/main/dndwiki/races/subrace-dwarf-halfgenasi.xml" />
+			<file name="subrace-dwarf-halfgenasi.xml" url="https://raw.githubusercontent.com/MeriadarGoblin/elements-thirdparty/main/dndwiki/races/subrace-dwarf-half-genasi.xml" />
 		</update>
     </info>
 
