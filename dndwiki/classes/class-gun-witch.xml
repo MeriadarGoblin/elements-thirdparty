@@ -3,7 +3,7 @@
     <info>
         <description>The Gun Witch class from D&amp;D Wiki, created by user "Chilroy", with contributions from users "Green Dragon", "DruidJake", "Sereth27", "SwankyPants" and many others.</description>
 		<author url="https://www.dandwiki.com/w/index.php?title=Gun_Witch_(5e_Class)&amp;oldid=1663881">D&amp;D Wiki</author>
-		<update version="0.0.1">
+		<update version="0.0.2">
 			<file name="class-gun-witch.xml" url="https://raw.githubusercontent.com/MeriadarGoblin/elements-thirdparty/main/dndwiki/classes/class-gun-witch.xml" />
 		</update>
     </info>
@@ -213,7 +213,7 @@
     <element name="Frost Hex" type="Class Feature" source="D&amp;D Wiki" id="ID_NWIKI_GUN_WITCH_FROST_HEX">
         <supports>Weapon Hex</supports>
         <description>
-            <p>Instead of making an Attack action with your weapon, you can cast Fire Bolt. Dexterity is your spell casting modifier.</p>
+            <p>Instead of making an Attack action with your weapon, you can cast Ray of Frost. Dexterity is your spell casting modifier.</p>
         </description>
         <sheet>
             <description>You can cast Ray of Frost. Dexterity is your spell casting modifier.</description>
