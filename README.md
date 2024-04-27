@@ -4,7 +4,9 @@
  Please go into each folder if you are looking for a specific group of content.
 
  ## Reddit (r/UnearthedArcana and r/DnDHomebrew)
- - https://raw.githubusercontent.com/MeriadarGoblin/elements-thirdparty/main/reddit.index
+ - https://raw.githubusercontent.com/MeriadarGoblin/elements-thirdparty/main/meridar-reddit.index
 
  ## D&DWiki
- - https://raw.githubusercontent.com/MeriadarGoblin/elements-thirdparty/main/dndwiki.index
+ - https://raw.githubusercontent.com/MeriadarGoblin/elements-thirdparty/main/meridar-dndwiki.index
+
+Please contact Meriadar on discord if you have any questions regarding the content.
