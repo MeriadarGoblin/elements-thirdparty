@@ -5,8 +5,8 @@
 		<description>The 5e homebrew content from the D&amp;D Wiki website.</description>
 		<author url="http://www.dandwiki.com/wiki/5e_Homebrew">D&amp;D Wiki</author>
 		<!-- created by MeriadarGoblin -->
-		<update version="0.0.1">
-			<file name="dndwiki.index" url="https://raw.githubusercontent.com/MeriadarGoblin/elements-thirdparty/main/meridar-dndwiki.index" />
+		<update version="0.0.2">
+			<file name="dndwiki.index" url="https://raw.githubusercontent.com/MeriadarGoblin/elements-thirdparty/main/meriadar-dndwiki.index" />
 		</update>
 	</info>
 	
