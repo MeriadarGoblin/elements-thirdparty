@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<elements>
+	<info>
+		<name>A number of spells from D&amp;DWiki.</name>
+		<update version="0.0.1">
+			<file name="spells.xml" url="https://raw.githubusercontent.com/MeriadarGoblin/elements-thirdparty/main/dndwiki/spells.xml" />
+		</update>
+	</info>
+	
+	<element name="Blade of Grass" type="Spell" source="D&amp;D Wiki" id="ID_WIKI_SPELL_BLADE_OF_GRASS">
+		<supports>Druid</supports>
+		<description>
+			<p>You imbue one or two blades of grass with nature's power. For the duration, they become sickles, and you can use your spellcasting ability instead of Strength for attack and damage rolls using these weapons. They are considered to be magical weapons. If you let go of a of a sickle created by this spell, the spell ends for it, and it reverts to a nonmagical blade of grass. The spell also ends if you cast it again.</p>
+		</description>
+		<setters>
+			<set name="keywords">grass</set>
+			<set name="level">0</set>
+			<set name="school">Transmutation</set>
+			<set name="time">1 bonus action</set>
+			<set name="range">Touch</set>
+			<set name="duration">1 minute</set>
+			<set name="hasVerbalComponent">true</set>
+			<set name="hasSomaticComponent">false</set>
+			<set name="hasMaterialComponent">true</set>
+			<set name="materialComponent">one or two blades of grass</set>
+			<set name="isConcentration">false</set>
+			<set name="isRitual">false</set>
+			<set name="sourceUrl">https://www.dandwiki.com/w/index.php?title=Blade_of_Grass_(5e_Spell)&amp;oldid=1719907</set>
+			<set name="author" url="https://www.dandwiki.com/w/index.php?title=Blade_of_Grass_(5e_Spell)&amp;oldid=1719907">The Blade of Grass spell from D&amp;D Wiki, created by user "68.80.182.145", with contributions from users "Marasmusine", "SirSprinkles", "210.10.140.97", and "Coaldstone".</set>
+		</setters>
+	</element>
+	<element name="Magical Fang" type="Spell" source="D&amp;D Wiki" id="ID_WIKI_SPELL_MAGICAL_FANG">
+		<supports>Druid, Ranger</supports>
+		<description>
+			<p>You touch a creature to enhance its natural weaponry. Whenever the target makes an attack or damage roll with an unarmed strike, the target can roll a d4 and add the result to its roll. Alternatively, the target can attack with a melee weapon that is part of its body and still receive this benefit. If the target is affected by another spell or magical effect which grants a d4 bonus to rolls, such as bless, it cannot also use the benefit of this spell.</p>
+			<p class="indent"><b><i>At Higher Levels. </i></b>When you cast this spell using a spell slot of 2nd level or higher, you can target one additional creature for each slot level above 1st.</p>
+		</description>
+		<setters>
+			<set name="keywords">weapon</set>
+			<set name="level">1</set>
+			<set name="school">Transmutation</set>
+			<set name="time">1 bonus action</set>
+			<set name="range">Touch</set>
+			<set name="duration">1 minute</set>
+			<set name="hasVerbalComponent">true</set>
+			<set name="hasSomaticComponent">true</set>
+			<set name="hasMaterialComponent">false</set>
+			<set name="isConcentration">false</set>
+			<set name="isRitual">false</set>
+			<set name="sourceUrl">https://www.dandwiki.com/w/index.php?title=Magic_Fang_(5e_Spell)&amp;oldid=1720865</set>
+			<set name="author" url="https://www.dandwiki.com/w/index.php?title=Magic_Fang_(5e_Spell)&amp;oldid=1720865">The Magical Fang spell from D&amp;D Wiki, created by user "100.36.18.54", with contributions from users "Guy", "Meep", "SirSprinkles", and "Coaldstone".</set>
+		</setters>
+	</element>
+	<element name="Magical Deflect" type="Spell" source="D&amp;D Wiki" id="ID_WIKI_SPELL_MAGICAL_DEFLECT">
+		<supports>Bard, Sorcerer, Warlock, Wizard</supports>
+		<description>
+			<p>You weave a magical barrier, which soaks up most of the effort from spells. Until the start of your next turn, you take 7 less damage from spells, after resistance and vunerability.</p>
+			<p class="indent"><b><i>At Higher Levels. </i></b>When cast at 2nd level or higher, the damage reduction increases by 7 for every level above 1st.</p>
+		</description>
+		<setters>
+			<set name="keywords">deflect</set>
+			<set name="level">1</set>
+			<set name="school">Transmutation</set>
+			<set name="time">1 bonus action</set>
+			<set name="range">Self</set>
+			<set name="duration">1 round</set>
+			<set name="hasVerbalComponent">true</set>
+			<set name="hasSomaticComponent">true</set>
+			<set name="hasMaterialComponent">false</set>
+			<set name="isConcentration">false</set>
+			<set name="isRitual">false</set>
+			<set name="sourceUrl">https://www.dandwiki.com/w/index.php?title=Magical_Deflect_(5e_Spell)&amp;oldid=1481422</set>
+			<set name="author" url="https://www.dandwiki.com/w/index.php?title=Magical_Deflect_(5e_Spell)&amp;oldid=1481422">The Magical Deflect spell from D&amp;D Wiki, created by user "OwenLeaf", with contributions from users "Marasmusine", "SgtLionBot", "ConcealedLight", and "SwankyPants".</set>
+		</setters>
+	</element>
+	
+</elements>

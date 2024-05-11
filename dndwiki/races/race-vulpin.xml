@@ -1,0 +1,245 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<elements>
+	<info>
+		<description>The Vulpin from D&amp;D Wiki, created by user "71.177.155.115", with contributions from users "Watermeloon5", "ConcealedLight", "Green Dragon", and others.</description>
+		<author url="https://www.dandwiki.com/w/index.php?title=Vulpin_(5e_Race)&amp;oldid=1471266">D&amp;D Wiki</author>
+		<update version="0.0.1">
+			<file name="race-vulpin.xml" url="https://raw.githubusercontent.com/MeriadarGoblin/elements-thirdparty/main/dndwiki/races/race-vulpin.xml" />
+		</update>
+	</info>
+	
+	<element name="Vulpin" type="Race" source="D&amp;D Wiki" id="ID_WIKI_RACE_VULPIN">
+		<description>
+			<h4>Physical Description</h4>
+			<p>Vulpin look similar to humans in the same way that an elf or dwarf would. Vulpin have fox-like ears and/or tails, eyes, and they have slightly longer, fang-like canines. Their hair can be brown, black, white, grey, silver, red or sandy blonde. They can also have a mix of colors in their hair. These mixes are brown and black, white and black, grey and white, white and red, or red and black. Fox eye colors are dark brown, red, yellow, blue-grey, white/ice blue, pale yellow, yellow-green, and forest green. Vulpin are lean and lithe in appearance, being naturally strong, agile, and charming. In addition to their natural lack of bulk, their bones are lighter, granting them more graceful and quick movement at the cost of being more fragile.</p>
+			<h4>History</h4>
+			<p>Vulpin have always got along well with dwarves, gnomes, and elves, but some human societies and religions never accepted them. By these humans they were seen as nothing more than animals and abominations. Despite vulpin having a reputation to be formidable warriors and very capable and honorable leaders, these humans amassed a very large an impressive army to thin vulpin numbers. The few vulpin kingdoms put up a valient resistance, but they fell in time. With the vulpin kingdoms reduced to rubble and the vulpin dwelling in the larger kingdoms out of reach, the cruel-hearted humans turned to the smaller kingdoms in which larger vulpin societies dwelled. These vulpin societies were those of honorable warriors and mages who had pledged themselves to that country's ruler. Whether the ruler was human or not, the cruel-hearted ones did not care. They tore through these countries all the same. Leaving nothing but rubble and the echoes of the damned. Those that survived spread their tale, and the masterminds of this genocide were put to death. Maybe too little too late, but justice was served all the same as the vulpin executioner brought the axe down on their necks. Despite this large loss of blood, the vulpin seemed no worse for wear. A good portion of their society was nomadic after all, and had managed to avoid the cruel ones gaze. Some of these nomads settled down in the rubble of the fallen kingdoms and began to rebuild, brick by brick.</p>
+			<h4>Society</h4>
+			<p>Vulpin society is about strengthening oneself and others. Vulpin value the strengthening of personal truths and ideals just as much as they value pursuing the desires of one's heart and soul. They have a natural inclination to move about, preferring not to stay still for any longer than they must. This is part of why they are such good warriors, as even if they are forced to go days without sleep they stay as energetic as ever. This is not to say that they don't feel tired, vulpin find it impolite to complain or to hinder others by asking for help. For example, if a vulpin were suffering from a wound, but they thought that they could take care of it themselves, then they would carry on as if nothing happened until it's companions had fallen asleep. At that point and only then would the vulpin take the time to properly care for the wound. If asking for help hinders the group in any way, they tend to keep their troubles to themselves.</p>
+			<p class="indent">A very important part of vulpin society is honor. A vulpin does not go against their word if they ever had the intention of keeping it. When in combat, if their opponent finds themselves on the ground a vulpin will most likely extend a hand to help them up or wait to strike until their opponent has risen and regained their senses. Vulpin strike not to kill, but to incapacitate. They only kill opponents who have killed innocents, betrayed their word or someone else's trust, or those who have gotten in their way. When vulpin set their minds to something their is almost nothing that can stop them, save for a loved one.</p>
+			<h4>Vulpin Names</h4>
+			<p>Vulpin names often reflect traits that the parents wish to be instilled in the child.</p>
+			<p><b><i>Male: </i></b>Kite, Yato, Viridian, Echo, Orion, Arthur, Haku</p>
+			<p><b><i>Female: </i></b>Erika, Yona, Vermillion, Song, Riley, Rin, Artemis</p>
+			<h4>Vulpin Traits</h4>
+			<p>A human-like race with fox-like ears, tails, and eyes.</p>
+			<p class="indent"><strong><em>Ability Score Increase.</em></strong> Your Dexterity score increases by 2, and your Charisma score increases by 1.</p>
+			<p class="indent"><strong><em>Age.</em></strong> Vulpin mature at 17, but do not stop growing until they reach 23. They can live up to 110 years.</p>
+			<p class="indent"><strong><em>Alignment.</em></strong> Vulpin follow whatever alignment suits them the most. You may be of any alignment.</p>
+			<p class="indent"><strong><em>Size.</em></strong> Adult vulpin are between 5' and 6'2" and weigh 80-88 pounds. Your size is Medium.</p>
+			<p class="indent"><strong><em>Speed.</em></strong> Vulpin have a walking speed of 30 feet.</p>
+			<p class="indent"><strong><em>Natural Attunement.</em></strong> Vulpin have close ties to nature and if need be can use it as a weapon. You know the <i>blade of grass</i> cantrip. Charisma is your spellcasting ability for it.</p>
+			<p class="indent"><strong><em>Darkvision.</em></strong> You can see in dim light within 60 feet of you as if it were bright light, and in darkness as if it were dim light. You can't discern color in darkness, only shades of gray.</p>
+			<p class="indent"><strong><em>Vulpin Grace.</em></strong> You move lightly and with grace, you are proficient in the Acrobatics skill.</p>
+			<p class="indent"><strong><em>Quick Reflexes.</em></strong> As a reaction, when you are targeted by a melee or ranged attack you can perform a Dexterity saving throw to attempt to evade it. The DC is equal to the opponents attack roll. On a successful save you take half damage. You regain use of this trait once you finish a short or long rest.</p>
+			<p class="indent"><strong><em>Languages.</em></strong> You can speak, read, and write Common and rat Speech. If not using a setting with multiple beastfolk races, you can substitute Beast Speech for one other language of your choice.</p>
+
+			<h4>Variant Traits</h4>
+			<h5>Lupin</h5>
+			<p>Lupin are similar to Vulpin but with more power behind them as well as being less nimble. Their hair colors are White, Black, Gray, and red. They can have mixed hair colors in any combination of two of their usual hair colors. Their features are wolflike rather than foxlike.</p>
+			<p class="indent"><strong><em>Ability Score Increase.</em></strong> Your Strength score increases by 2 and your Charisma score increases by 1.</p>
+			<p class="indent"><strong><em>Natural Warrior.</em></strong> You can cast the magic fang or magical deflect spell once with this trait, requiring no material components, and you regain the ability to cast it this way when you finish a long rest. Charisma is your spellcasting ability for this spell.</p>
+			<p class="indent"><strong><em>Darkvision.</em></strong> You can see in dim light within 60 feet of you as if it were bright light, and in darkness as if it were dim light. You can't discern color in darkness, only shades of gray.</p>
+			<p class="indent"><strong><em>Lupin Bravery.</em></strong> You have advantage on saving throws against being frightened.</p>
+			<p class="indent"><strong><em>Pack Tactics.</em></strong> You have advantage on your first attack roll of that round against a creature if at least one of your allies is within 5 feet of the creature and the ally isn't incapacitated.</p>
+		</description>
+		<sheet display="false" />
+		<setters>
+			<set name="names" type="male">Kite, Yato, Viridian, Echo, Orion, Arthur, Haku</set>
+			<set name="names" type="female">Erika, Yona, Vermillion, Song, Riley, Rin, Artemis</set>
+			<set name="names-format">{{name}}</set>
+			<set name="height" modifier="2d8">5'0"</set>
+			<set name="weight" modifier="1d8">80 lb.</set>
+			<set name="sourceUrl">https://www.dandwiki.com/w/index.php?title=Vulpin_(5e_Race)&amp;oldid=1471266</set>
+		</setters>
+		<rules>
+			<grant type="Racial Trait" id="ID_WIKI_RACIAL_TRAIT_VULPIN_ABILITY_SCORE_INCREASE" requirements="!ID_WIKI_RACE_VARIANT_LUPIN_VARIANT" />
+			<grant type="Vision" id="ID_VISION_DARKVISION" />
+			<stat name="innate speed" value="30" bonus="base" />
+			<grant type="Language" id="ID_LANGUAGE_COMMON" requirements="!ID_WOTC_TCOE_OPTION_CUSTOMIZED_LANGUAGE" />
+			<select type="Language" name="Language (Vulpin)" supports="Standard||Exotic" />
+
+			<grant type="Racial Trait" id="ID_WIKI_RACIAL_TRAIT_VULPIN_NATURAL_ATTUNEMENT" requirements="!ID_WIKI_RACE_VARIANT_LUPIN_VARIANT" />
+			<grant type="Racial Trait" id="ID_WIKI_RACIAL_TRAIT_VULPIN_GRACE" requirements="!ID_WIKI_RACE_VARIANT_LUPIN_VARIANT" />
+			<grant type="Racial Trait" id="ID_WIKI_RACIAL_TRAIT_VULPIN_QUICK_REFLEXES" requirements="!ID_WIKI_RACE_VARIANT_LUPIN_VARIANT" />
+			<select type="Race Variant" name="Lupin Variant" supports="Vulpin Variant" optional="true" />
+		</rules>
+	</element>
+
+	<element name="Vulpin" type="Racial Trait" source="D&amp;D Wiki" id="ID_WIKI_RACIAL_TRAIT_VULPIN_ABILITY_SCORE_INCREASE">
+		<compendium display="false" />
+		<description />
+		<sheet display="false" />
+		<rules>
+			<stat name="dexterity" value="2" requirements="!ID_WOTC_TCOE_OPTION_CUSTOMIZED_ASI" />
+			<stat name="charisma" value="1" requirements="!ID_WOTC_TCOE_OPTION_CUSTOMIZED_ASI" />
+			<select type="Ability Score Improvement" name="Custom Ability Score Improvement +2 (Vulpin)" supports="Custom Ability Score Increase 2" requirements="ID_WOTC_TCOE_OPTION_CUSTOMIZED_ASI" />
+			<select type="Ability Score Improvement" name="Custom Ability Score Improvement +1 (Vulpin)" supports="Custom Ability Score Increase 1" requirements="ID_WOTC_TCOE_OPTION_CUSTOMIZED_ASI" />
+		</rules>
+	</element>
+	<element name="Natural Attunement" type="Racial Trait" source="D&amp;D Wiki" id="ID_WIKI_RACIAL_TRAIT_VULPIN_NATURAL_ATTUNEMENT">
+		<description>
+			<p>Vulpin have close ties to nature and if need be can use it as a weapon. You know the blade of grass cantrip. Charisma is your spellcasting ability for it.</p>
+		</description>
+		<sheet>
+			<description>You know the blade of grass cantrip. Charisma is your spellcasting ability for it.</description>
+		</sheet>
+		<setters>
+			<set name="sourceUrl">https://www.dandwiki.com/w/index.php?title=Vulpin_(5e_Race)&amp;oldid=1471266#Vulpin_Traits</set>
+		</setters>
+		<rules>
+			<grant type="Spell" id="ID_WIKI_SPELL_BLADE_OF_GRASS" />
+		</rules>
+	</element>
+	<element name="Vulpin Grace" type="Racial Trait" source="D&amp;D Wiki" id="ID_WIKI_RACIAL_TRAIT_VULPIN_GRACE">
+		<description>
+			<p>You move lightly and with grace, you are proficient in the Acrobatics skill.</p>
+		</description>
+		<sheet display="false" />
+		<setters>
+			<set name="sourceUrl">https://www.dandwiki.com/w/index.php?title=Vulpin_(5e_Race)&amp;oldid=1471266#Vulpin_Traits</set>
+		</setters>
+		<rules>
+			<grant type="Proficiency" id="ID_PROFICIENCY_SKILL_ACROBATICS" />
+		</rules>
+	</element>
+	<element name="Quick Reflexes" type="Racial Trait" source="D&amp;D Wiki" id="ID_WIKI_RACIAL_TRAIT_VULPIN_QUICK_REFLEXES">
+		<description>
+			<p>As a reaction, when you are targeted by a melee or ranged attack you can perform a Dexterity saving throw to attempt to evade it. The DC is equal to the opponents attack roll. On a successful save you take half damage. You regain use of this trait once you finish a short or long rest.</p>
+		</description>
+		<sheet action="Reaction" usage="1/Rest">
+			<description>As a reaction, when you are targeted by a melee or ranged attack you can perform a Dexterity saving throw to attempt to evade it. The DC is equal to the opponents attack roll. On a successful save you take half damage. You regain use of this trait once you finish a short or long rest.</description>
+		</sheet>
+		<setters>
+			<set name="sourceUrl">https://www.dandwiki.com/w/index.php?title=Vulpin_(5e_Race)&amp;oldid=1471266#Vulpin_Traits</set>
+		</setters>
+	</element>
+
+	<element name="Lupin Variant" type="Race Variant" source="D&amp;D Wiki" id="ID_WIKI_RACE_VARIANT_LUPIN_VARIANT">
+		<supports>Vulpin Variant</supports>
+		<description>
+			<p>Lupin are similar to Vulpin but with more power behind them as well as being less nimble. Their hair colors are White, Black, Gray, and red. They can have mixed hair colors in any combination of two of their usual hair colors. Their features are wolflike rather than foxlike.</p>
+			<p class="indent"><strong><em>Ability Score Increase.</em></strong> Your Strength score increases by 2 and your Charisma score increases by 1.</p>
+			<p class="indent"><strong><em>Natural Warrior.</em></strong> You can cast the magic fang or magical deflect spell once with this trait, requiring no material components, and you regain the ability to cast it this way when you finish a long rest. Charisma is your spellcasting ability for this spell.</p>
+			<p class="indent"><strong><em>Darkvision.</em></strong> You can see in dim light within 60 feet of you as if it were bright light, and in darkness as if it were dim light. You can't discern color in darkness, only shades of gray.</p>
+			<p class="indent"><strong><em>Lupin Bravery.</em></strong> You have advantage on saving throws against being frightened.</p>
+			<p class="indent"><strong><em>Pack Tactics.</em></strong> You have advantage on your first attack roll of that round against a creature if at least one of your allies is within 5 feet of the creature and the ally isn't incapacitated.</p>
+		</description>
+		<sheet alt="Lupin" display="false"/>
+		<setters>
+			<set name="sourceUrl">https://www.dandwiki.com/w/index.php?title=Vulpin_(5e_Race)&amp;oldid=1471266#Lupin</set>
+		</setters>
+		<rules>
+			<stat name="strength" value="2" requirements="!ID_WOTC_TCOE_OPTION_CUSTOMIZED_ASI" />
+			<stat name="charisma" value="1" requirements="!ID_WOTC_TCOE_OPTION_CUSTOMIZED_ASI" />
+			<select type="Ability Score Improvement" name="Ability Score Improvement Option (Lupin)" supports="Custom Ability Score Improvement Option" requirements="ID_WOTC_TCOE_OPTION_CUSTOMIZED_ASI" />
+			<grant type="Racial Trait" id="ID_WIKI_RACIAL_TRAIT_LUPIN_VARIANT_NATURAL_WARRIOR" />
+			<grant type="Racial Trait" id="ID_WIKI_RACIAL_TRAIT_LUPIN_VARIANT_LUPIN_BRAVERY" />
+			<grant type="Racial Trait" id="ID_WIKI_RACIAL_TRAIT_LUPIN_VARIANT_PACK_TACTICS" />
+		</rules>
+	</element>
+	<element name="Natural Warrior" type="Racial Trait" source="D&amp;D Wiki" id="ID_WIKI_RACIAL_TRAIT_LUPIN_VARIANT_NATURAL_WARRIOR">
+		<description>
+			<p>You can cast the <i>magic fang</i> or <i>magical deflect</i> spell once with this trait, requiring no material components, and you regain the ability to cast it this way when you finish a long rest. Charisma is your spellcasting ability for this spell.</p>
+		</description>
+		<sheet>
+			<description>You can cast the magic fang or magical deflect spell once with this trait, requiring no material components, and you regain the ability to cast it this way when you finish a long rest. Charisma is your spellcasting ability for this spell.</description>
+		</sheet>
+		<setters>
+			<set name="sourceUrl">https://www.dandwiki.com/w/index.php?title=Vulpin_(5e_Race)&amp;oldid=1471266#Lupin</set>
+		</setters>
+		<rules>
+			<grant type="Spell" id="ID_WIKI_SPELL_MAGICAL_DEFLECT" />
+			<grant type="Spell" id="ID_WIKI_SPELL_MAGICAL_FANG" />
+		</rules>
+	</element>
+	<element name="Lupin Bravery" type="Racial Trait" source="D&amp;D Wiki" id="ID_WIKI_RACIAL_TRAIT_LUPIN_VARIANT_LUPIN_BRAVERY">
+		<description>
+			<p>You have advantage on saving throws against being frightened.</p>
+		</description>
+		<sheet>
+			<description>You have advantage on saving throws against being frightened.</description>
+		</sheet>
+		<setters>
+			<set name="sourceUrl">https://www.dandwiki.com/w/index.php?title=Vulpin_(5e_Race)&amp;oldid=1471266#Lupin</set>
+		</setters>
+	</element>
+	<element name="Pack Tactics" type="Racial Trait" source="D&amp;D Wiki" id="ID_WIKI_RACIAL_TRAIT_LUPIN_VARIANT_PACK_TACTICS">
+		<description>
+			<p>You have advantage on your first attack roll of that round against a creature if at least one of your allies is within 5 feet of the creature and the ally isn't incapacitated.</p>
+		</description>
+		<sheet>
+			<description>You have advantage on your first attack roll of that round against a creature if at least one of your allies is within 5 feet of the creature and the ally isn't incapacitated.</description>
+		</sheet>
+		<setters>
+			<set name="sourceUrl">https://www.dandwiki.com/w/index.php?title=Vulpin_(5e_Race)&amp;oldid=1471266#Lupin</set>
+		</setters>
+	</element>
+
+	<!-- <element name="Blade of Grass" type="Spell" source="D&amp;D Wiki" id="ID_WIKI_SPELL_BLADE_OF_GRASS">
+		<supports>Druid</supports>
+		<description>
+			<p>You imbue one or two blades of grass with nature's power. For the duration, they become sickles, and you can use your spellcasting ability instead of Strength for attack and damage rolls using these weapons. They are considered to be magical weapons. If you let go of a of a sickle created by this spell, the spell ends for it, and it reverts to a nonmagical blade of grass. The spell also ends if you cast it again.</p>
+		</description>
+		<setters>
+			<set name="keywords">grass</set>
+			<set name="level">0</set>
+			<set name="school">Transmutation</set>
+			<set name="time">1 bonus action</set>
+			<set name="range">Touch</set>
+			<set name="duration">1 minute</set>
+			<set name="hasVerbalComponent">true</set>
+			<set name="hasSomaticComponent">false</set>
+			<set name="hasMaterialComponent">true</set>
+			<set name="materialComponent">one or two blades of grass</set>
+			<set name="isConcentration">false</set>
+			<set name="isRitual">false</set>
+			<set name="sourceUrl">https://www.dandwiki.com/w/index.php?title=Blade_of_Grass_(5e_Spell)&amp;oldid=1719907</set>
+			<set name="author" url="https://www.dandwiki.com/w/index.php?title=Blade_of_Grass_(5e_Spell)&amp;oldid=1719907">The Blade of Grass spell from D&amp;D Wiki, created by user "68.80.182.145", with contributions from users "Marasmusine", "SirSprinkles", "210.10.140.97", and "Coaldstone".</set>
+		</setters>
+	</element>
+	<element name="Magical Fang" type="Spell" source="D&amp;D Wiki" id="ID_WIKI_SPELL_MAGICAL_FANG">
+		<supports>Druid, Ranger</supports>
+		<description>
+			<p>You touch a creature to enhance its natural weaponry. Whenever the target makes an attack or damage roll with an unarmed strike, the target can roll a d4 and add the result to its roll. Alternatively, the target can attack with a melee weapon that is part of its body and still receive this benefit. If the target is affected by another spell or magical effect which grants a d4 bonus to rolls, such as bless, it cannot also use the benefit of this spell.</p>
+			<p class="indent"><b><i>At Higher Levels. </i></b>When you cast this spell using a spell slot of 2nd level or higher, you can target one additional creature for each slot level above 1st.</p>
+		</description>
+		<setters>
+			<set name="keywords">weapon</set>
+			<set name="level">1</set>
+			<set name="school">Transmutation</set>
+			<set name="time">1 bonus action</set>
+			<set name="range">Touch</set>
+			<set name="duration">1 minute</set>
+			<set name="hasVerbalComponent">true</set>
+			<set name="hasSomaticComponent">true</set>
+			<set name="hasMaterialComponent">false</set>
+			<set name="isConcentration">false</set>
+			<set name="isRitual">false</set>
+			<set name="sourceUrl">https://www.dandwiki.com/w/index.php?title=Magic_Fang_(5e_Spell)&amp;oldid=1720865</set>
+			<set name="author" url="https://www.dandwiki.com/w/index.php?title=Magic_Fang_(5e_Spell)&amp;oldid=1720865">The Magical Fang spell from D&amp;D Wiki, created by user "100.36.18.54", with contributions from users "Guy", "Meep", "SirSprinkles", and "Coaldstone".</set>
+		</setters>
+	</element>
+	<element name="Magical Deflect" type="Spell" source="D&amp;D Wiki" id="ID_WIKI_SPELL_MAGICAL_DEFLECT">
+		<supports>Bard, Sorcerer, Warlock, Wizard</supports>
+		<description>
+			<p>You weave a magical barrier, which soaks up most of the effort from spells. Until the start of your next turn, you take 7 less damage from spells, after resistance and vunerability.</p>
+			<p class="indent"><b><i>At Higher Levels. </i></b>When cast at 2nd level or higher, the damage reduction increases by 7 for every level above 1st.</p>
+		</description>
+		<setters>
+			<set name="keywords">deflect</set>
+			<set name="level">1</set>
+			<set name="school">Transmutation</set>
+			<set name="time">1 bonus action</set>
+			<set name="range">Self</set>
+			<set name="duration">1 round</set>
+			<set name="hasVerbalComponent">true</set>
+			<set name="hasSomaticComponent">true</set>
+			<set name="hasMaterialComponent">false</set>
+			<set name="isConcentration">false</set>
+			<set name="isRitual">false</set>
+			<set name="sourceUrl">https://www.dandwiki.com/w/index.php?title=Magical_Deflect_(5e_Spell)&amp;oldid=1481422</set>
+			<set name="author" url="https://www.dandwiki.com/w/index.php?title=Magical_Deflect_(5e_Spell)&amp;oldid=1481422">The Magical Deflect spell from D&amp;D Wiki, created by user "OwenLeaf", with contributions from users "Marasmusine", "SgtLionBot", "ConcealedLight", and "SwankyPants".</set>
+		</setters>
+	</element> -->
+</elements>
