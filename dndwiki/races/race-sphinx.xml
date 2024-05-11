@@ -1,0 +1,111 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<elements>
+	<info>
+		<description>The Sphinx race from D&amp;D Wiki, created by user "Sureen Ink", with contributions from users "Someone404", "Ajluis101", "SwankyPants", and others.</description>
+		<author url="https://www.dandwiki.com/w/index.php?title=Sphinx_(5e_Race)&amp;oldid=1822441">D&amp;D Wiki</author>
+		<update version="0.0.1">
+			<file name="race-sphinx.xml" url="https://raw.githubusercontent.com/MeriadarGoblin/elements-thirdparty/main/dndwiki/races/race-sphinx.xml" />
+		</update>
+	</info>
+	
+	<element name="Sphinx" type="Race" source="D&amp;D Wiki" id="ID_WIKI_RACE_SPHINX">
+		<description>
+			<p>In sacred isolation, a sphinx guards the secrets and treasures of the gods. That's what the legends say, anyway. In truth, sphinxes are a race of beings with a lion's body and a humanoid head, also bearing a set of wings. Due to their strongly lawful nature, they make excellent guardians, and are known to be protectors of many desert lands.</p>
+			<h4>Physical Description</h4>
+			<p>The average sphinx has the body of a lion, along with a humanoid head. Some are recorded as also having wings. They are normally adorned with symbols of the desert gods, such as headdresses depicting suns, symbols of ankhs on their robes, and other such markings. Male sphinxes pride themselves in their beards that stick out from their chins. It is said that the larger a sphinx is, the more powerful it is, with the most powerful of all having wings.</p>
+			<h4>History</h4>
+			<p>Sphinxes have been in the multiverse since the beginning.</p>
+			<h4>Society</h4>
+			<p>Sphinxes are solitary creatures, most likely never coming across another of their kind.</p>
+			<h4>Sphinx Names</h4>
+			<p>Sphinxes have generally Egyptian-sounding names.</p>
+			<p><b><i>Male Names: </i></b>Aimenamun, Amset, Binra, Rha-sha-ankh, Thema, Tutmose</p>
+			<p><b><i>Female Names: </i></b>Aurera, Hatatsu, Ketet, Menhit, Sefkhabu, Surhet</p>
+			<h4>Sphinx Traits</h4>
+			<p>Guardians of secrets and treasures of the gods.</p>
+			<p class="indent"><strong><em>Ability Score Increase.</em></strong> Your Intelligence, Wisdom, and Charisma scores increase by 1 point each.</p>
+			<p class="indent"><strong><em>Age.</em></strong> Sphinxes are immortal beings, having been watching over the world since they were first summoned during the First Age. While immortal, a Sphinx may choose to end their life when they feel they have grown bored of it. Most sphinx tend to live for thousands of years, however. Sphinx age and mature at about the rate of humans, reaching maturity around 16 years of age.</p>
+			<p class="indent"><strong><em>Alignment.</em></strong> Sphinxes are strictly lawful creatures. They have a tendency to ere on the side of neutral, however, as they have few issues committing acts some would see as evil as long as it aligns with their own code of law.</p>
+			<p class="indent"><strong><em>Size.</em></strong> Sphinxes can be very large beings, but the average sphinx adventurer tends to be in their younger years. Because of this, they have not reached their full size, which takes hundreds of years. The average sphinx adventurer is about 7 feet from foot to head and weighs 500-600 pounds. Your size is Medium.</p>
+			<p class="indent"><strong><em>Speed.</em></strong> You have a base speed of 30 feet.</p>
+			<p class="indent"><strong><em>Fey.</em></strong> Your creature type is fey, rather than humanoid.</p>
+			<p class="indent"><strong><em>Flight.</em></strong> You have a flying speed of 30 feet. To use this speed, you can't be wearing medium or heavy armor.</p>
+			<p class="indent"><strong><em>Inscrutable.</em></strong> You are immune to effects that would sense your emotions or read your thoughts, as well as any divination spell that you refuse. Wisdom (Insight) checks made to ascertain your intentions or sincerity have disadvantage.</p>
+			<p class="indent"><strong><em>Claws.</em></strong> Your claws are natural weapons, which you can use to make unarmed strikes. If you hit with them, you deal slashing damage equal to 1d4 + your Strength modifier, instead of the bludgeoning damage normal for an unarmed strike.</p>
+			<p class="indent"><strong><em>Languages.</em></strong> You can read, write, and speak Common and two other languages of your choice. You are also able to speak in any language, so long as your words are a riddle to be solved.</p>
+		</description>
+		<sheet display="false" />
+		<setters>
+			<set name="names" type="male">Aimenamun, Amset, Binra, Rha-sha-ankh, Thema, Tutmose</set>
+			<set name="names" type="female">Aurera, Hatatsu, Ketet, Menhit, Sefkhabu, Surhet</set>
+			<set name="names-format">{{name}}</set>
+			<set name="height" modifier="1d10">6'7"</set>
+			<set name="weight" modifier="1d10">500 lb.</set>
+			<set name="sourceUrl">https://www.dandwiki.com/w/index.php?title=Sphinx_(5e_Race)&amp;oldid=1822441</set>
+		</setters>
+		<rules>
+			<stat name="intelligence" value="1" requirements="!ID_WOTC_TCOE_OPTION_CUSTOMIZED_ASI" />
+			<stat name="wisdom" value="1" requirements="!ID_WOTC_TCOE_OPTION_CUSTOMIZED_ASI" />
+			<stat name="charisma" value="1" requirements="!ID_WOTC_TCOE_OPTION_CUSTOMIZED_ASI" />
+			<select type="Ability Score Improvement" name="Custom Ability Score Improvement +1 (Sphinx)" supports="Custom Ability Score Increase 1" requirements="ID_WOTC_TCOE_OPTION_CUSTOMIZED_ASI" />
+			<stat name="innate speed" value="30" bonus="base" />
+			<grant type="Racial Feature" id="ID_INTERNAL_RACIAL_TRAIT_TYPE_FEY" />
+			<grant type="Language" id="ID_LANGUAGE_COMMON" requirements="!ID_WOTC_TCOE_OPTION_CUSTOMIZED_LANGUAGE" />
+			<select type="Language" name="Language (Sphinx)" supports="Standard||Exotic" number="2" />
+
+			<grant type="Racial Trait" id="ID_WIKI_RACIAL_TRAIT_SPHINX_FLIGHT" />
+			<grant type="Racial Trait" id="ID_WIKI_RACIAL_TRAIT_SPHINX_INSCRUTABLE" />
+			<grant type="Racial Trait" id="ID_WIKI_RACIAL_TRAIT_SPHINX_CLAWS" />
+			<grant type="Racial Trait" id="ID_WIKI_RACIAL_TRAIT_SPHINX_LANGUAGES" />
+		</rules>
+	</element>
+
+	<element name="Flight" type="Racial Trait" source="D&amp;D Wiki" id="ID_WIKI_RACIAL_TRAIT_SPHINX_FLIGHT">
+		<description>
+			<p>You have a flying speed of 30 feet. To use this speed, you can't be wearing medium or heavy armor.</p>
+		</description>
+		<sheet>
+			<description>You have a flying speed of 30 feet. To use this speed, you can't be wearing medium or heavy armor.</description>
+		</sheet>
+		<setters>
+			<set name="sourceUrl">https://www.dandwiki.com/w/index.php?title=Sphinx_(5e_Race)&amp;oldid=1822441#Sphinx_Traits</set>
+		</setters>
+		<rules>
+			<stat name="innate speed:fly" value="innate speed" bonus="base" equipped="![armor:medium],![armor:heavy]" />
+		</rules>
+	</element>
+	<element name="Inscrutable" type="Racial Trait" source="D&amp;D Wiki" id="ID_WIKI_RACIAL_TRAIT_SPHINX_INSCRUTABLE">
+		<description>
+			<p>You are immune to effects that would sense your emotions or read your thoughts, as well as any divination spell that you refuse. Wisdom (Insight) checks made to ascertain your intentions or sincerity have disadvantage.</p>
+		</description>
+		<sheet>
+			<description>You are immune to effects that would sense your emotions or read your thoughts, as well as any divination spell that you refuse. Wisdom (Insight) checks made to ascertain your intentions or sincerity have disadvantage.</description>
+		</sheet>
+		<setters>
+			<set name="sourceUrl">https://www.dandwiki.com/w/index.php?title=Sphinx_(5e_Race)&amp;oldid=1822441#Sphinx_Traits</set>
+		</setters>
+	</element>
+	<element name="Claws" type="Racial Trait" source="D&amp;D Wiki" id="ID_WIKI_RACIAL_TRAIT_SPHINX_CLAWS">
+		<description>
+			<p>Your claws are natural weapons, which you can use to make unarmed strikes. If you hit with them, you deal slashing damage equal to 1d4 + your Strength modifier, instead of the bludgeoning damage normal for an unarmed strike.</p>
+		</description>
+		<sheet>
+			<description>Your claws are natural weapons, which you can use to make unarmed strikes. If you hit with them, you deal slashing damage equal to 1d4 + {{strength:modifier}}, instead of the bludgeoning damage normal for an unarmed strike.</description>
+		</sheet>
+		<setters>
+			<set name="sourceUrl">https://www.dandwiki.com/w/index.php?title=Sphinx_(5e_Race)&amp;oldid=1822441#Sphinx_Traits</set>
+		</setters>
+	</element>
+	<element name="Languages" type="Racial Trait" source="D&amp;D Wiki" id="ID_WIKI_RACIAL_TRAIT_SPHINX_LANGUAGES">
+		<description>
+			<p>You can read, write, and speak Common and two other languages of your choice. You are also able to speak in any language, so long as your words are a riddle to be solved.</p>
+		</description>
+		<sheet>
+			<description>You are able to speak in any language, so long as your words are a riddle to be solved.</description>
+		</sheet>
+		<setters>
+			<set name="sourceUrl">https://www.dandwiki.com/w/index.php?title=Sphinx_(5e_Race)&amp;oldid=1822441#Sphinx_Traits</set>
+		</setters>
+	</element>
+
+</elements>
