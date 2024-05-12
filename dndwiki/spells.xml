@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="utf-8" ?>
 <elements>
 	<info>
-		<name>A number of spells from D&amp;DWiki.</name>
-		<update version="0.0.1">
+		<description>A number of spells from D&amp;DWiki.</description>
+		<update version="0.0.2">
 			<file name="spells.xml" url="https://raw.githubusercontent.com/MeriadarGoblin/elements-thirdparty/main/dndwiki/spells.xml" />
 		</update>
 	</info>

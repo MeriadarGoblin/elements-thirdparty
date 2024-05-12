@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<elements>
+	<info>
+		<description>The Gnoll race from D&amp;D Wiki, created by user "Dmilewski", with contributions from users "Knowlessman", "Marasmusine", "ConcealedLight", "Green Dragon" and many others.</description>
+		<author url="https://www.dandwiki.com/w/index.php?title=Gnoll_(5e_Race)&amp;oldid=1768895">D&amp;D Wiki</author>
+		<update version="0.0.1">
+			<file name="race-gnoll.xml" url="https://raw.githubusercontent.com/MeriadarGoblin/elements-thirdparty/main/dndwiki/races/race-gnoll.xml" />
+		</update>
+	</info>
+
+	<element name="Gnoll" type="Race" source="D&amp;D Wiki" id="ID_WIKI_RACE_GNOLL">
+		<description>
+			<p>Gnolls are infamous among races such as humans and elves for their brutality and demonic heritage. For the most part, they aren't wrong. Many gnoll packs are indeed aggressive and have a demonic side to their affairs. Typically they worship the demon lord Yeenoghu. They also tend to be rather aggressive and are still mistrusted and avoided. To them, the pack is more important than anything else.</p>
+			<h4>Physical Description</h4>
+			<p>Demon-worshiping is not the only reason many races are wary of gnolls. A lean, muscular 7-foot tall gnoll can be an imposing sight. Despite their musculature, they move rather quickly, easily outpacing most other races. Gnolls also outpace most other races in how quickly they mature. A gnoll matures by the age of 5 and lives to be about 30. Oddly a gnoll's vitality will remain with them until very soon before their natural death. </p>
+			<p class="indent">Gnolls have reflective eyes that are typically bright green or yellow. They also have a thick coat of fur, which is generally light brown or dark brown. Certain clans may possess a single-colored coat or a spotted or striped coat. Some gnolls possess crest like manes of hair going from their head down their spine which rise up when they become frightened or angry. </p>
+			<p>Adding to other races distrust about gnolls, occasionally a gnoll's demonic ancestry will result in peculiar physical traits. This might be manifested in the claws of gnoll claw fighters or an abnormal eye or coat colors. </p>
+			<h4>History</h4>
+			<p>Gnolls are widely known as raiders and slavers. In the middle of the night, they attack a village or town, killing and eating guards and taking slaves. These slaves are then brutalized physically and mentally. This has become an art among many gnoll tribes. In fact, many gnoll tribes have “tantekurash” or “spirit breakers” who are experts at breaking the wills of slaves. If the slave resists, it is eaten. Occasionally a slave’s mind becomes so broken they revere the brutality of their gnoll captors. They then become “kryshantel” or “savage souls” who follow their gnoll masters into battle as thralls.</p>
+			<p>However, not all gnoll tribes are evil. There are a scattered few nomadic tribes who specialize as hunters and trappers. They may even come to peacefully interact with other races and often offer their service as hunters or trappers. Even so, they remain fairly aggressive and quick to anger, so other races have to be careful not to offend them. </p>
+			<p>In addition to the typical variety of gnoll, there is a sub-race known as flind gnolls. They tend to be shorter and stouter than other gnolls, use flindbars more commonly, and live in more hilly areas than other gnolls who live in plains. Flind gnolls can be either raiders or hunters as described above. If you want to play a flind gnoll, make yourself somewhat short and stout and consider using a flindbar. </p>
+			<h4>Society</h4>
+			<h4>Gnoll</h4>
+			<p>The brutality of gnolls is reflected even in their names which tend to have many harsh consonants.</p>
+			<p><b>Male: </b>Dagnyr, Dhyrn, Doryc, Ghyrryn, Gnasc, Gnoryc, Gnyrn, Hyrn, Lhoryn, Lhyr, Mognyr, Sorgnyn, Thyrn, Toryc, Yrgnyn, Yrych</p>
+			<p><b>Femle: </b>Dagnyra, Gnara, Gnora, Gnyrl, Hyra, Hyrgna, Lhyra, Lhyrl, Malgna, Myrl, Sargna, Shyrla, Tarnyra, Yrgna</p>
+			<h4>GNOLL TRAITS</h4>
+			<p>Gnolls are brutal hunters with a demonic ancestry who are fiercely loyal to their pack.</p>
+			<p class="indent"><strong><em>Ability Score Increase.</em></strong> Your Strength score increases by 2 and your Dexterity score increases by 1.</p>
+			<p class="indent"><strong><em>Age.</em></strong> Gnolls reach adulthood by the age of 5 and live to around 30.</p>
+			<p class="indent"><strong><em>Alignment.</em></strong> Gnolls are usually chaotic neutral or evil, though there are exceptions.</p>
+			<p class="indent"><strong><em>Size.</em></strong> Most gnolls are between 6 and 7 feet tall. Your size is Medium.</p>
+			<p class="indent"><strong><em>Speed.</em></strong> Your base walking speed is 30 feet.</p>
+			<p class="indent"><strong><em>Darkvision.</em></strong> You can see in dim light within 60 feet of you as if it were bright light, and in darkness as if it were dim light. You can't discern color in darkness, only shades of gray.</p>
+			<p class="indent"><strong><em>Bite.</em></strong> You can make unarmed strikes using your bite as a natural melee weapon. You are proficient with your bite attack, which deals piercing damage equal to 1d6 plus your Strength modifier.</p>
+			<p class="indent"><strong><em>Rampage.</em></strong> When you reduce a creature to 0 hit points with a melee attack on your turn, you may use a bonus action to move up to half your speed and make a bite attack.</p>
+            <p class="indent"><strong><em>Frightful Appearance. </em></strong> You are proficient in the Intimidation skill.</p>
+			<p class="indent"><strong><em>Languages.</em></strong> You can speak, read, and write Common and Gnoll. You can also understand spoken Abyssal, but not speak, read or write it unless learnt through other features.</p>
+			<h4>Racial Feats</h4>
+			<p>Added to help bring the race in line with races that received such feats from XGtE. These feats are intentionally designed to be about as strong as Elven Accuracy.</p>
+			<div element="ID_WIKI_FEAT_RACIAL_STRONG_JAW" />
+			<div element="ID_WIKI_FEAT_RACIAL_DEATHLY_REVELRY" />
+			<div element="ID_WIKI_FEAT_RACIAL_BONE_LORD" />
+		</description>
+		<sheet display="false" />
+		<setters>
+			<set name="names" type="male">Dagnyr, Dhyrn, Doryc, Ghyrryn, Gnasc, Gnoryc, Gnyrn, Hyrn, Lhoryn, Lhyr, Mognyr, Sorgnyn, Thyrn, Toryc, Yrgnyn, Yrych</set>
+			<set name="names" type="female">Dagnyra, Gnara, Gnora, Gnyrl, Hyra, Hyrgna, Lhyra, Lhyrl, Malgna, Myrl, Sargna, Shyrla, Tarnyra, Yrgna </set>
+			<set name="names-format">{{name}}</set>
+			<set name="height" modifier="2d6">5'11"</set>
+			<set name="weight" modifier="2d4">210 lb.</set>
+			<set name="sourceUrl">https://www.dandwiki.com/w/index.php?title=Gnoll_(5e_Race)&amp;oldid=1768895#Gnoll</set>
+		</setters>
+		<rules>
+			<stat name="dexterity" value="2" requirements="!ID_WOTC_TCOE_OPTION_CUSTOMIZED_ASI" />
+			<stat name="strength" value="1" requirements="!ID_WOTC_TCOE_OPTION_CUSTOMIZED_ASI" />
+			<select type="Ability Score Improvement" name="Ability Score Improvement Option (Gnoll)" supports="Custom Ability Score Improvement Option" requirements="ID_WOTC_TCOE_OPTION_CUSTOMIZED_ASI" />
+			<stat name="innate speed" value="30" bonus="base"/>
+			<grant type="Size" id="ID_SIZE_MEDIUM" />
+			<grant type="Vision" id="ID_VISION_DARKVISION" />
+
+			<grant type="Language" id="ID_LANGUAGE_COMMON" />
+			<grant type="Language" id="ID_MM_LANGUAGE_GNOLL" />
+			<grant type="Proficiency" id="ID_PROFICIENCY_SKILL_INTIMIDATION" />
+
+			<grant type="Racial Trait" id="ID_WIKI_RACIAL_TRAIT_GNOLL_BITE" />
+			<grant type="Racial Trait" id="ID_WIKI_RACIAL_TRAIT_GNOLL_RAMPAGE" />
+        </rules>
+	</element>
+	<element name="Bite" type="Racial Trait" source="D&amp;D Wiki" id="ID_WIKI_RACIAL_TRAIT_GNOLL_BITE">
+		<description>
+			<p>You can make unarmed strikes using your bite as a natural melee weapon. You are proficient with your bite attack, which deals piercing damage equal to 1d6 plus your Strength modifier.</p>
+		</description>
+		<sheet>
+			<description>You can make unarmed strikes using your bite as a natural melee weapon. You are proficient with your bite attack, which deals piercing damage equal to 1d6 + {{strength:modifier}}.</description>
+		</sheet>
+		<setters>
+			<set name="sourceUrl">https://www.dandwiki.com/w/index.php?title=Gnoll_(5e_Race)&amp;oldid=1768895#Gnoll_Traits</set>
+		</setters>
+	</element>
+    <element name="Rampage" type="Racial Trait" source="D&amp;D Wiki" id="ID_WIKI_RACIAL_TRAIT_GNOLL_RAMPAGE">
+        <description>
+            <p>When you reduce a creature to 0 hit points with a melee attack on your turn, you may use a bonus action to move up to half your speed and make a bite attack.</p>
+        </description>
+        <sheet action="Bonus Action">
+            <description>When you reduce a creature to 0 hit points with a melee attack on your turn, you may use a bonus action to move up to half your speed and make a bite attack.</description>
+        </sheet>
+		<setters>
+			<set name="sourceUrl">https://www.dandwiki.com/w/index.php?title=Gnoll_(5e_Race)&amp;oldid=1768895#Gnoll_Traits</set>
+		</setters>
+	</element>
+</elements>

@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<elements>
+	<info>
+		<description>A number of feats from D&amp;DWiki.</description>
+		<update version="0.0.1">
+			<file name="feats.xml" url="https://raw.githubusercontent.com/MeriadarGoblin/elements-thirdparty/main/dndwiki/feats.xml" />
+		</update>
+	</info>
+	
+	<!-- Racial Feats -->
+	<element name="Bone Lord" type="Feat" source="D&amp;D Wiki" id="ID_WIKI_FEAT_RACIAL_BONE_LORD">
+		<prerequisite>Gnoll</prerequisite>
+		<requirements>ID_WIKI_RACE_GNOLL</requirements>
+		<description>
+			<p><em>Prerequisite: Gnoll</em></p>
+			<p>You can see the inherent beauty, power, entertainment and symbolism in bones (like all gnolls), but unlike your peers, you can truly express their power.</p>
+			<ul>
+				<li>When wielding an improvised weapon that is the bone of another creature, you are automatically considered proficient in the bone, and the bone becomes a magical +1 weapon while you hold it. The DM determines the bone's damage dice, based on how it is shaped (a blunt bone could be a club, while a broken and sharp one could be a dagger, eg.).</li>
+				<li>Furthermore, you can use any bone as a universal spellcasting focus.</li>
+				<li>Finally, you learn the chill touch cantrip. You also learn the inflict wounds, hex, and augury spells, and can cast each of these spells once without expending a spell slot, but only while using a bone focus. Once you cast any of these spells, you can't cast it again with this feature until you finish a long rest. Strength is your spellcasting ability for these spells.</li>
+			</ul>
+		</description>
+		<sheet>
+			<description>When wielding an improvised weapon that is the bone of another creature, you are automatically considered proficient in the bone, and the bone becomes a magical +1 weapon while you hold it. The DM determines the bone's damage dice, based on how it is shaped (a blunt bone could be a club, while a broken and sharp one could be a dagger, eg.).&#13;
+				Furthermore, you can use any bone as a universal spellcasting focus. &#13;
+				Finally, you learn the chill touch cantrip. You also learn the inflict wounds, hex, and augury spells, and can cast each of these spells once without expending a spell slot, but only while using a bone focus. Once you cast any of these spells, you can't cast it again with this feature until you finish a long rest. Strength is your spellcasting ability for these spells.
+			</description>
+		</sheet>
+		<setters>
+			<set name="sourceUrl">https://www.dandwiki.com/w/index.php?title=Gnoll_(5e_Race)&amp;oldid=1768895#Bone_Lord</set>
+		</setters>
+		<rules>
+			<grant type="Spell" id="ID_PHB_SPELL_CHILL_TOUCH" />
+			<grant type="Spell" id="ID_PHB_SPELL_INFLICT_WOUNDS" />
+			<grant type="Spell" id="ID_PHB_SPELL_HEX" />
+			<grant type="Spell" id="ID_PHB_SPELL_AUGURY" />
+		</rules>
+	</element>
+	<element name="Deathly Revelry" type="Feat" source="D&amp;D Wiki" id="ID_WIKI_FEAT_RACIAL_DEATHLY_REVELRY">
+		<prerequisite>Gnoll, 8th Level</prerequisite>
+		<requirements>ID_WIKI_RACE_GNOLL,[level:8]</requirements>
+		<description>
+			<p><em>Prerequisite: Gnoll, 8th level</em></p>
+			<p>Gnolls have often been rumored to enter battle rages so savage that they become completely unable to feel pain, enter trance-like states of bloodlust, and even return from being killed to continue their warpath. While not all these rumours are perfectly true and correct, you contain some of that burning lust for violence, and it shows when you're close to death- provided that you can keep Yeenoghu's madness at the forefront of your mind, and laugh it all off.</p>
+			<ul>
+				<li>When you are reduced to 0 hit points but not killed outright, you can make a DC10 Performance check, dropping to 1 hit point instead on a success. The DC of this feature increases by 5 every time it is used, and resets on a long rest.</li>
+				<li>While at 1 hit point, any successful attacks you make with a melee weapon are considered critical hits.</li>
+			</ul>
+		</description>
+		<sheet>
+			<description>When you are reduced to 0 hit points but not killed outright, you can make a DC10 Performance check, dropping to 1 hit point instead on a success. The DC of this feature increases by 5 every time it is used, and resets on a long rest.&#13;
+				While at 1 hit point, any successful attacks you make with a melee weapon are considered critical hits.
+			</description>
+		</sheet>
+		<setters>
+			<set name="sourceUrl">https://www.dandwiki.com/w/index.php?title=Gnoll_(5e_Race)&amp;oldid=1768895#Deathly_Revelry</set>
+		</setters>
+	</element>
+	<element name="Strong Jaw" type="Feat" source="D&amp;D Wiki" id="ID_WIKI_FEAT_RACIAL_STRONG_JAW">
+		<prerequisite>Gnoll</prerequisite>
+		<requirements>ID_WIKI_RACE_GNOLL</requirements>
+		<description>
+			<p><em>Prerequisite: Gnoll</em></p>
+			<p>A hyena's bite can exert so much pressure that it outright destroys most measurement equipment intended to record bite strength. The only thing keeping gnolls from harnessing that power is a slight lack of realizing what they're capable of.</p>
+			<ul>
+				<li>Increase your Strength or Constitution by 1 point.</li>
+				<li>Once per turn, you can make a special, empowered attack with your bite. If this bite hits, it deals piercing damage equal to 1d10 + your Strength modifier. If the target is a Medium or smaller sized creature, you can move them into an unoccupied space adjacent to you. If you have a free hand when making this attack, you can also add your proficiency bonus to the damage roll.</li>
+			</ul>
+		</description>
+		<sheet>
+			<description>Once per turn, you can make a special, empowered attack with your bite. If this bite hits, it deals piercing damage equal to 1d10 + {{strength:modifier}}. If the target is a Medium or smaller sized creature, you can move them into an unoccupied space adjacent to you. If you have a free hand when making this attack, you can also add your proficiency bonus to the damage roll.</description>
+		</sheet>
+		<setters>
+			<set name="sourceUrl">https://www.dandwiki.com/w/index.php?title=Gnoll_(5e_Race)&amp;oldid=1768895#Strong_Jaw</set>
+		</setters>
+		<rules>
+			<select type="Ability Score Improvement" name="Ability Score Improvement (Strong Jaw)" supports="ID_PHB_FEAT_ASI_STRENGTH|ID_PHB_FEAT_ASI_DEXTERITY" />
+		</rules>
+	</element>
+</elements>

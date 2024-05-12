@@ -5,7 +5,7 @@
 		<description>The 5e homebrew content from the D&amp;D Wiki website.</description>
 		<author url="http://www.dandwiki.com/wiki/5e_Homebrew">D&amp;D Wiki</author>
 		<!-- created by MeriadarGoblin -->
-		<update version="0.0.4">
+		<update version="0.0.5">
 			<file name="dndwiki.index" url="https://raw.githubusercontent.com/MeriadarGoblin/elements-thirdparty/main/meriadar-dndwiki.index" />
 		</update>
 	</info>
@@ -24,12 +24,15 @@
 		<file name="monk-beast.xml" url="https://raw.githubusercontent.com/MeriadarGoblin/elements-thirdparty/main/dndwiki/subclasses/monk-beast.xml" />
 		<!-- races & subraces -->
 		<file name="race-gesttil.xml" url="https://raw.githubusercontent.com/MeriadarGoblin/elements-thirdparty/main/dndwiki/races/race-gesttil.xml" />
+		<file name="race-gnoll.xml" url="https://raw.githubusercontent.com/MeriadarGoblin/elements-thirdparty/main/dndwiki/races/race-gnoll.xml" />
 		<file name="race-halfgoblinoid.xml" url="https://raw.githubusercontent.com/MeriadarGoblin/elements-thirdparty/main/dndwiki/races/race-halfgoblinoid.xml" />
 		<file name="race-sphinx.xml" url="https://raw.githubusercontent.com/MeriadarGoblin/elements-thirdparty/main/dndwiki/races/race-sphinx.xml" />
 		<file name="race-vulpin.xml" url="https://raw.githubusercontent.com/MeriadarGoblin/elements-thirdparty/main/dndwiki/races/race-vulpin.xml" />
 		<file name="subrace-dwarf-half-genasi.xml" url="https://raw.githubusercontent.com/MeriadarGoblin/elements-thirdparty/main/dndwiki/races/subrace-dwarf-half-genasi.xml" />
 		<file name="subrace-genasi-arcani.xml" url="https://raw.githubusercontent.com/MeriadarGoblin/elements-thirdparty/main/dndwiki/races/subrace-genasi-arcani.xml" />
 
+
+		<file name="feats.xml" url="https://raw.githubusercontent.com/MeriadarGoblin/elements-thirdparty/main/dndwiki/feats.xml" />
 		<file name="spells.xml" url="https://raw.githubusercontent.com/MeriadarGoblin/elements-thirdparty/main/dndwiki/spells.xml" />
 		<!-- source -->
 		<file name="source.xml" url="https://raw.githubusercontent.com/MeriadarGoblin/elements-thirdparty/main/dndwiki/source.xml" />
