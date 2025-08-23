@@ -3,7 +3,7 @@
 	<info>
         <description>The Fighter Scorpion Knight subclass from D&amp;D Wiki, created by user "Slaadsack", with contributions from users "Coaldstone", and "SirSprinkles."</description>
 		<author url="https://www.dandwiki.com/w/index.php?title=Scorpion_Knight_(5e_Subclass)&amp;oldid=1737525">D&amp;D Wiki</author>
-		<update version="0.0.1">
+		<update version="0.0.2">
 			<file name="fighter-scorpion-knight.xml" url="https://raw.githubusercontent.com/MeriadarGoblin/elements-thirdparty/main/dndwiki/subclasses/fighter-scorpion-knight.xml" />
 		</update>
     </info>
@@ -32,7 +32,7 @@
 			<grant type="Archetype Feature" id="ID_WIKI_ARCHETYPE_FEATURE_SCORPION_KNIGHT_IRRESISTABLE_VENOM" level="18" />
 		</rules>
 	</element>
-	<element name="Bonus Proficiency" type="Archetype Feature" source="" id="ID_WIKI_ARCHETYPE_FEATURE_SCORPION_KNIGHT_BONUS_PROFICIENCY">
+	<element name="Bonus Proficiency" type="Archetype Feature" source="D&amp;D Wiki" id="ID_WIKI_ARCHETYPE_FEATURE_SCORPION_KNIGHT_BONUS_PROFICIENCY">
 		<description>
 			<p>When you choose this archetype at 3rd level, you gain proficiency with the Medicine skill and the poisoner's kit.</p>
 		</description>
@@ -45,7 +45,7 @@
 			<grant type="Proficiency" id="ID_PROFICIENCY_TOOL_PROFICIENCY_POISONERS_KIT" />
 		</rules>
 	</element>
-	<element name="Scorpion Knight's Venom" type="Archetype Feature" source="" id="ID_WIKI_ARCHETYPE_FEATURE_SCORPION_KNIGHT_VENOM">
+	<element name="Scorpion Knight's Venom" type="Archetype Feature" source="D&amp;D Wiki" id="ID_WIKI_ARCHETYPE_FEATURE_SCORPION_KNIGHT_VENOM">
 		<description>
 			<p>Also at 3rd level, you learn how to create simple but effective poisons. You can spend an hour and 20 GP worth of materials to create a poison called Scorpion Knight’s Venom using a poisoner’s kit. You can then spend a bonus action to apply this poison to a weapon that deals piercing or slashing damage. While a weapon is coated with this poison, it deals an extra 1d4 poison damage to any target it hits.</p>
 			<p class="indent">When you create a batch of Scorpion Knight’s Venom, you create enough for four separate applications. One application is enough to coat a single melee weapon, or twenty pieces of ammunition. The poison dries out 1 minute after it is applied.</p>
@@ -65,7 +65,7 @@
 			<stat name="scorpion knight:die" value="12" bonus="bonus" level="18" />
 		</rules>
 	</element>
-	<element name="Antivenom" type="Archetype Feature" source="" id="ID_WIKI_ARCHETYPE_FEATURE_SCORPION_KNIGHT_ANTIVENOM">
+	<element name="Antivenom" type="Archetype Feature" source="D&amp;D Wiki" id="ID_WIKI_ARCHETYPE_FEATURE_SCORPION_KNIGHT_ANTIVENOM">
 		<description>
 			<p>At 7th level, your knowledge of poisons lets you treat and identify them effectively. You add double your proficiency bonus to any Wisdom (Medicine) check that involves identifying a poison or treating the effects of a poison.</p>
 		</description>
@@ -76,7 +76,7 @@
 			<set name="sourceUrl">https://www.dandwiki.com/w/index.php?title=Scorpion_Knight_(5e_Subclass)&amp;oldid=1737525</set>
 		</setters>
 	</element>
-	<element name="Enhanced Venom" type="Archetype Feature" source="" id="ID_WIKI_ARCHETYPE_FEATURE_SCORPION_KNIGHT_ENHANCED_VENOM">
+	<element name="Enhanced Venom" type="Archetype Feature" source="D&amp;D Wiki" id="ID_WIKI_ARCHETYPE_FEATURE_SCORPION_KNIGHT_ENHANCED_VENOM">
 		<description>
 			<p>By 10th level, you have learned how to enhance your Scorpion Knight’s Venom in various ways. When you create a batch of Scorpion Knight’s Venom, you can choose to apply one of the following additional effects to that batch.</p>
 			<ul>
@@ -105,7 +105,7 @@
 			<select type="Archetype Feature" name="Enhanced Venom" supports="Enhanced Venom" default="ID_WIKI_ARCHETYPE_FEATURE_SCORPION_KNIGHT_VENOM_PSYCHOTROPIC" />
 		</rules>
 	</element>
-	<element name="Immune to Venom" type="Archetype Feature" source="" id="ID_WIKI_ARCHETYPE_FEATURE_SCORPION_KNIGHT_IMMUNE_TO_VENOM">
+	<element name="Immune to Venom" type="Archetype Feature" source="D&amp;D Wiki" id="ID_WIKI_ARCHETYPE_FEATURE_SCORPION_KNIGHT_IMMUNE_TO_VENOM">
 		<description>
 			<p>By 15th level, you have built up a tolerance to the effects of poison. You gain resistance to poison damage and you have advantage on Constitution saving throws against being poisoned.</p>
 			<p class="indent">In addition, if you fail a saving throw against being poisoned, you can choose to succeed instead. Once you have used this feature this way, you cannot use it again until you finish a long rest.</p>
@@ -117,7 +117,7 @@
 			<set name="sourceUrl">https://www.dandwiki.com/w/index.php?title=Scorpion_Knight_(5e_Subclass)&amp;oldid=1737525</set>
 		</setters>
 	</element>
-	<element name="Irresistable Venom" type="Archetype Feature" source="" id="ID_WIKI_ARCHETYPE_FEATURE_SCORPION_KNIGHT_IRRESISTABLE_VENOM">
+	<element name="Irresistable Venom" type="Archetype Feature" source="D&amp;D Wiki" id="ID_WIKI_ARCHETYPE_FEATURE_SCORPION_KNIGHT_IRRESISTABLE_VENOM">
 		<description>
 			<p>By 18th level, the poisons you develop are so extraordinarily potent that nothing can resist them. Any poison you create ignores resistance to poison damage and immunity to the poisoned condition. Creatures that are normally immune to poison damage take half damage from your poisons instead.</p>
 		</description>
@@ -131,7 +131,7 @@
 
 	<!-- Enhanced Venom -->
 	<!-- granted by default just so it appears under enhanced venom -->
-	<element name="Necrotizing Venom" type="Archetype Feature" source="" id="ID_WIKI_ARCHETYPE_FEATURE_SCORPION_KNIGHT_VENOM_NECROTIZING">
+	<element name="Necrotizing Venom" type="Archetype Feature" source="D&amp;D Wiki" id="ID_WIKI_ARCHETYPE_FEATURE_SCORPION_KNIGHT_VENOM_NECROTIZING">
 		<supports>Enhanced Venom</supports>
 		<description>
 			<p>When you hit a creature with a weapon coated in your Scorpion Knight’s Venom, that creature must succeed on a Constitution saving throw or become poisoned until the end of its next turn. While poisoned in this way, a creature takes 2d6 necrotic damage at the start of its turn.</p>
@@ -143,7 +143,7 @@
 			<set name="sourceUrl">https://www.dandwiki.com/w/index.php?title=Scorpion_Knight_(5e_Subclass)&amp;oldid=1737525</set>
 		</setters>
 	</element>
-	<element name="Opthalmic Venom" type="Archetype Feature" source="" id="ID_WIKI_ARCHETYPE_FEATURE_SCORPION_KNIGHT_VENOM_OPTHALMIC">
+	<element name="Opthalmic Venom" type="Archetype Feature" source="D&amp;D Wiki" id="ID_WIKI_ARCHETYPE_FEATURE_SCORPION_KNIGHT_VENOM_OPTHALMIC">
 		<supports>Enhanced Venom</supports>
 		<description>
 			<p>When you hit a creature with a weapon coated in your Scorpion Knight’s Venom, that creature must succeed on a Constitution saving throw or become poisoned until the end of its next turn. While poisoned in this way, a creature is also blinded.</p>
@@ -155,7 +155,7 @@
 			<set name="sourceUrl">https://www.dandwiki.com/w/index.php?title=Scorpion_Knight_(5e_Subclass)&amp;oldid=1737525</set>
 		</setters>
 	</element>
-	<element name="Opthalmic Venom" type="Archetype Feature" source="" id="ID_WIKI_ARCHETYPE_FEATURE_SCORPION_KNIGHT_VENOM_OPTHALMIC">
+	<element name="Opthalmic Venom" type="Archetype Feature" source="D&amp;D Wiki" id="ID_WIKI_ARCHETYPE_FEATURE_SCORPION_KNIGHT_VENOM_OPTHALMIC">
 		<supports>Enhanced Venom</supports>
 		<description>
 			<p>When you hit a creature with a weapon coated in your Scorpion Knight’s Venom, that creature must succeed on a Constitution saving throw or become poisoned until the end of its next turn. While poisoned in this way, a creature is also paralyzed.</p>
@@ -167,7 +167,7 @@
 			<set name="sourceUrl">https://www.dandwiki.com/w/index.php?title=Scorpion_Knight_(5e_Subclass)&amp;oldid=1737525</set>
 		</setters>
 	</element>
-	<element name="Paralytic Venom" type="Archetype Feature" source="" id="ID_WIKI_ARCHETYPE_FEATURE_SCORPION_KNIGHT_VENOM_PARALYTIC">
+	<element name="Paralytic Venom" type="Archetype Feature" source="D&amp;D Wiki" id="ID_WIKI_ARCHETYPE_FEATURE_SCORPION_KNIGHT_VENOM_PARALYTIC">
 		<supports>Enhanced Venom</supports>
 		<description>
 			<p>When you hit a creature with a weapon coated in your Scorpion Knight’s Venom, that creature must succeed on a Constitution saving throw or become poisoned until the end of its next turn. While poisoned in this way, a creature is also paralyzed.</p>
@@ -179,7 +179,7 @@
 			<set name="sourceUrl">https://www.dandwiki.com/w/index.php?title=Scorpion_Knight_(5e_Subclass)&amp;oldid=1737525</set>
 		</setters>
 	</element>
-	<element name="Psychotropic Venom" type="Archetype Feature" source="" id="ID_WIKI_ARCHETYPE_FEATURE_SCORPION_KNIGHT_VENOM_PSYCHOTROPIC">
+	<element name="Psychotropic Venom" type="Archetype Feature" source="D&amp;D Wiki" id="ID_WIKI_ARCHETYPE_FEATURE_SCORPION_KNIGHT_VENOM_PSYCHOTROPIC">
 		<supports>Enhanced Venom</supports>
 		<description>
 			<p>When you hit a creature with a weapon coated in your Scorpion Knight’s Venom, that creature must succeed on a Constitution saving throw or become poisoned until the end of its next turn. While poisoned in this way, a creature is also frightened and must roll a D6 at the start of its turn. On a roll of 1, the creature attacks the nearest creature it can see. On a roll of 2-5, the creature takes no action this turn as it cowers from imaginary threats. On a roll of 6, the creature can act normally this turn.</p>
