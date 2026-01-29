@@ -5,7 +5,7 @@
 		<description>The 5e homebrew content from the D&amp;D Wiki website.</description>
 		<author url="http://www.dandwiki.com/wiki/5e_Homebrew">D&amp;D Wiki</author>
 		<!-- created by MeriadarGoblin -->
-		<update version="0.0.10">
+		<update version="0.0.11">
 			<file name="meriadar-dndwiki.index" url="https://raw.githubusercontent.com/MeriadarGoblin/elements-thirdparty/main/meriadar-dndwiki.index" />
 		</update>
 	</info>
@@ -24,7 +24,9 @@
 		<file name="druid-fittest.xml" url="https://raw.githubusercontent.com/MeriadarGoblin/elements-thirdparty/main/dndwiki/subclasses/druid-fittest.xml" />
 		<file name="fighter-scorpion-knight.xml" url="https://raw.githubusercontent.com/MeriadarGoblin/elements-thirdparty/main/dndwiki/subclasses/fighter-scorpion-knight.xml" />
 		<file name="monk-arcane-fist.xml" url="https://raw.githubusercontent.com/MeriadarGoblin/elements-thirdparty/main/dndwiki/subclasses/monk-arcane-fist.xml" />
+		<file name="monk-axe.xml" url="https://raw.githubusercontent.com/MeriadarGoblin/elements-thirdparty/refs/heads/main/dndwiki/subclasses/monk-axe.xml" />
 		<file name="monk-beast.xml" url="https://raw.githubusercontent.com/MeriadarGoblin/elements-thirdparty/main/dndwiki/subclasses/monk-beast.xml" />
+		<file name="monk-onestrike.xml" url="https://raw.githubusercontent.com/MeriadarGoblin/elements-thirdparty/refs/heads/main/dndwiki/subclasses/monk-onestrike.xml" />
 		<!-- races & subraces -->
 		<file name="race-gesttil.xml" url="https://raw.githubusercontent.com/MeriadarGoblin/elements-thirdparty/main/dndwiki/races/race-gesttil.xml" />
 		<file name="race-gnoll.xml" url="https://raw.githubusercontent.com/MeriadarGoblin/elements-thirdparty/main/dndwiki/races/race-gnoll.xml" />
