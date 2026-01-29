@@ -4,8 +4,8 @@
 		<name>Reddit Content</name>
 		<description>The content from reddit such as r/UnearthedArcana and r/DnDHomebrew. This includes all compendiums and smaller creations.</description>
 		<author url="https://www.reddit.com/r/DnDHomebrew/">Redditors</author>
-		<update version="0.1.0">
-			<file name="reddit.index" url="https://raw.githubusercontent.com/MeriadarGoblin/elements-thirdparty/main/reddit.index" />
+		<update version="0.1.1">
+			<file name="meriadar-reddit.index" url="https://raw.githubusercontent.com/MeriadarGoblin/elements-thirdparty/main/meriadar-reddit.index" />
 		</update>
 	</info>
 	<files>
