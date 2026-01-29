@@ -1,0 +1,306 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<!-- SBuchanan  https://www.dandwiki.com/w/index.php?title=Gemwright_(5e_Subclass)&oldid=1581364 -->
+<elements>
+	<info>
+        <description>The Augmented Artificer subclass from D&amp;D Wiki, created by "SBuchanan" and many others.</description>
+		<author url="https://www.dandwiki.com/w/index.php?title=Gemwright_(5e_Subclass)&amp;oldid=1581364">D&amp;D Wiki</author>
+		<update version="0.0.1">
+			<file name="artificer-gemwright.xml" url="https://raw.githubusercontent.com/MeriadarGoblin/elements-thirdparty/refs/heads/main/dndwiki/subclasses/artificer-gemwright.xml" />
+		</update>
+    </info>
+
+	<element name="Gemwright" type="Archetype" source="D&amp;D Wiki" id="ID_WIKI_SUBCLASS_GEMWRIGHT">
+		<supports>Artificer Specialist</supports>
+		<description>
+			<p>Gemwrights specialize in just about everything related to gemstones, and they are often employed in places where large amounts of treasures are kept. Many have found ways to rise rapidly through the ranks of nobility through both bribery and honest labor, securing positions of power with their exotic magic. When it comes to gems, very little escapes their keen eyes.</p>
+			<div element="ID_WIKI_ARCHETYPE_FEATURE_GEMWRIGHT_GEMWRIGHT_SPELLS" />
+			<div element="ID_WIKI_ARCHETYPE_FEATURE_GEMWRIGHT_TOOL_PROFICIENCY" />
+			<div element="ID_WIKI_ARCHETYPE_FEATURE_GEMWRIGHT_GEM_SAVANT" />
+			<div element="ID_WIKI_ARCHETYPE_FEATURE_GEMWRIGHT_ENCHANTED_GEMS" />
+			<div element="ID_WIKI_ARCHETYPE_FEATURE_GEMWRIGHT_BIJOU_HELPER" />
+			<div element="ID_WIKI_ARCHETYPE_FEATURE_GEMWRIGHT_HELPER_UPGRADE" />
+			<div element="ID_WIKI_ARCHETYPE_FEATURE_GEMWRIGHT_RESONANCE_MASTERY" />
+			<div element="ID_WIKI_ARCHETYPE_FEATURE_GEMWRIGHT_GEMWRIGHT_MASTERY" />
+		</description>
+		<sheet display="false">
+			<description>An Augmented focuses on upgrading his himself as the weapon or their own arcane weapon.</description>
+		</sheet>
+		<rules>
+			<grant type="Archetype Feature" id="ID_WIKI_ARCHETYPE_FEATURE_GEMWRIGHT_GEMWRIGHT_SPELLS" level="3" />
+			<grant type="Archetype Feature" id="ID_WIKI_ARCHETYPE_FEATURE_GEMWRIGHT_TOOL_PROFICIENCY" level="3" />
+			<grant type="Archetype Feature" id="ID_WIKI_ARCHETYPE_FEATURE_GEMWRIGHT_GEM_SAVANT" level="3" />
+			<grant type="Archetype Feature" id="ID_WIKI_ARCHETYPE_FEATURE_GEMWRIGHT_ENCHANTED_GEMS" level="3" />
+			<grant type="Archetype Feature" id="ID_WIKI_ARCHETYPE_FEATURE_GEMWRIGHT_BIJOU_HELPER" level="5" />
+			<grant type="Archetype Feature" id="ID_WIKI_ARCHETYPE_FEATURE_GEMWRIGHT_HELPER_UPGRADE" level="7" />
+			<grant type="Archetype Feature" id="ID_WIKI_ARCHETYPE_FEATURE_GEMWRIGHT_RESONANCE_MASTERY" level="9" />
+			<grant type="Archetype Feature" id="ID_WIKI_ARCHETYPE_FEATURE_GEMWRIGHT_GEMWRIGHT_MASTERY" level="15" />
+		</rules>	
+	</element>
+	<element name="Gemwright Spells" type="Archetype Feature" source="D&amp;D Wiki" id="ID_WIKI_ARCHETYPE_FEATURE_GEMWRIGHT_GEMWRIGHT_SPELLS">
+		<description>
+			<p>Starting at 3rd level, you always have certain spells prepared after you reach particular levels in this class, as shown in the Biomechanist Spells table. These spells count as artificer spells for you, but they don’t count against the number of artificer spells you prepare.</p>
+			<h5 class="caption">GEMWRIGHT SPELLS</h5>
+			<table>
+				<thead>
+					<tr><td>Artificer Level</td><td>Spells</td></tr>
+				</thead>
+				<tr><td>3rd</td><td><em>zephyr strike, longstrider</em></td></tr>
+				<tr><td>5th</td><td><em>nystul's magic aura, misty step</em></td></tr>
+				<tr><td>9th</td><td><em>haste, pulse wave</em></td></tr>
+				<tr><td>13th</td><td><em>fabricate, death ward</em></td></tr>
+				<tr><td>17th</td><td><em>skill empowerment, steel wind strike</em></td></tr>
+			</table>
+		</description>
+		<sheet display="false">
+			<description>You always have certain spells prepared after you reach particular levels in this class, as shown in the Alchemist Spells table. These spells count as artificer spells for you, but they don’t count against the number of artificer spells you prepare.</description>
+		</sheet>
+		<rules>
+			<grant type="Spell" id="ID_XGTE_SPELL_ZEPHYR_STRIKE" spellcasting="Artificer" level="3" prepared="true" />
+			<grant type="Spell" id="ID_PHB_SPELL_LONGSTRIDER" spellcasting="Artificer" level="3" prepared="true" />
+			<grant type="Spell" id="ID_PHB_SPELL_NYSTULS_MAGIC_AURA" spellcasting="Artificer" level="5" prepared="true" />
+			<grant type="Spell" id="ID_PHB_SPELL_MISTY_STEP" spellcasting="Artificer" level="5" prepared="true" />
+			<grant type="Spell" id="ID_PHB_SPELL_HASTE" spellcasting="Artificer" level="9" prepared="true" />
+			<grant type="Spell" id="ID_WOTC_EGTW_SPELL_PULSE_WAVE" spellcasting="Artificer" level="9" prepared="true" />
+			<grant type="Spell" id="ID_PHB_SPELL_FABRICATE" spellcasting="Artificer" level="13" prepared="true" />
+			<grant type="Spell" id="ID_PHB_SPELL_DEATH_WARD" spellcasting="Artificer" level="13" prepared="true" />
+			<grant type="Spell" id="ID_XGTE_SPELL_SKILL_EMPOWERMENT" spellcasting="Artificer" level="17" prepared="true" />
+			<grant type="Spell" id="ID_XGTE_SPELL_STEEL_WIND_STRIKE" spellcasting="Artificer" level="17" prepared="true" />
+		</rules>
+	</element>
+	<element name="Tool Proficiency" type="Archetype Feature" source="D&amp;D Wiki" id="ID_WIKI_ARCHETYPE_FEATURE_GEMWRIGHT_TOOL_PROFICIENCY">
+		<description>
+			<p>When you take this specialization at 3rd level, you gain proficiency in gemwright's tools. If you already have this proficiency, you gain proficiency in one other type of artisan's tools of your choice.</p>
+		</description>
+		<sheet display="false">
+			<description>When you take this specialization at 3rd level, you gain proficiency in gemwright's tools. If you already have this proficiency, you gain proficiency in one other type of artisan's tools of your choice.</description>
+		</sheet>
+		<rules>
+			<select type="Proficiency" name="Tool Proficiency, Gemwright" supports="Tool" default="ID_PROFICIENCY_TOOL_PROFICIENCY_GEMWRIGHTS_TOOLS" />
+		</rules>
+	</element>
+	<element name="Gem Savant" type="Archetype Feature" source="D&amp;D Wiki" id="ID_WIKI_ARCHETYPE_FEATURE_GEMWRIGHT_GEM_SAVANT">
+		<description>
+			<p>When you reach 3rd level, your combat training and your experiments with magic have paid off in two ways:</p>
+			<ul>
+				<li>Whenever you make a Intelligence (Arcana) check concerning gemstones, you are considered proficient in the Arcana skill, and can add double your proficiency bonus, instead of your normal proficiency bonus.</li>
+				<li>You are able to tell the exact location of any gemstone within 15 feet of you.</li>
+			</ul>
+		</description>
+		<sheet>
+			<description>Your combat training and your experiments with magic have paid off in two ways: &#13;
+				• Whenever you make a Intelligence (Arcana) check concerning gemstones, you are considered proficient in the Arcana skill, and can add double your proficiency bonus, instead of your normal proficiency bonus. &#13;
+				• You are able to tell the exact location of any gemstone within 15 feet of you.
+			</description>
+		</sheet>
+	</element>
+	<element name="Enchanted Gems" type="Archetype Feature" source="D&amp;D Wiki" id="ID_WIKI_ARCHETYPE_FEATURE_GEMWRIGHT_ENCHANTED_GEMS">
+		<description>
+			<p>Also at 3rd level, you have learned to utilize the focal properties of gemstones in your own innate magic. Whenever you finish a long rest, you can magically imbue a gemstone you touch with magical properties. Choose a property from the Enchanted Gem table below; the more valuable a gemstone is, the more properties available for you to imbue. Gemstones with a higher value can have lower-valued properties applied to them. As an action, a creature can activate the property by holding out the gemstone and willing it to activate.</p>
+			<p class="indent">You can create additional enchanted gems by expending a spell slot of 1st level or higher for each one. When you do so, you use your action to create imbue a gemstone you touch, and you choose the gem's effect from the Enchanted Gem table. You may imbue an enchanted gem with an additional property by expending a spell slot of 3rd level or higher for each one.</p>
+			<p class="indent">Creating an enchanted gem requires you to have gemwright's tools on your person, and any enchanted gem you create with this feature will retain its magical properties indefinitely. When you reach certain levels in this class, you can freely make more enchanted gems at the end of a long rest: two at 6th level and three at 15th level. Each enchanted gem requires its own separate gemstone.</p>
+			<h5>Enchanted Gem</h5>
+			<table>
+				<thead>
+					<tr><td>Gem Value</td><td>Property</td></tr>
+				</thead>
+				<tr><td>10 gp</td><td><strong>Healing.</strong> The wielder regains a number of hit points equal to their Intelligence modifier. This consumes the gemstone.</td></tr>
+				<tr><td>50 gp</td><td><strong>Intuition.</strong> The wielder may use their Intelligence modifier, instead of Strength or Dexterity modifier, for attack and damage rolls for 10 minutes.</td></tr>
+				<tr><td>500 gp</td><td><strong>Instinct.</strong> The wielder may add their Intelligence modifier to their AC for 1 minute. This consumes the gemstone.</td> </tr>
+				<tr><td>1000 gp</td><td><strong>Spellstone.</strong> The wielder may use the gemstone to cast a spell up to 5th level without spending a spell slot. The gemstone is consumed when the spell is cast.</td></tr>
+				<tr><td>5000 gp</td><td><strong>Spellgem.</strong> The wielder may use the gemstone to cast a spell up to 9th level without spending a spell slot. The gemstone is consumed when the spell is cast.</td></tr>
+			</table>
+		</description>
+		<sheet action="Action" usage="Long Rest">
+			<description>Whenever you finish a long rest, you can magically imbue a gemstone you touch with magical properties. Choose a property from the Enchanted Gem table below; the more valuable a gemstone is, the more properties available for you to imbue. Gemstones with a higher value can have lower-valued properties applied to them. As an action, a creature can activate the property by holding out the gemstone and willing it to activate. You can create additional enchanted gems by expending a spell slot of 1st level or higher for each one. When you do so, you use your action to create imbue a gemstone you touch, and you choose the gem's effect from the Enchanted Gem table. You may imbue an enchanted gem with an additional property by expending a spell slot of 3rd level or higher for each one. Creating an enchanted gem requires you to have gemwright's tools on your person, and any enchanted gem you create with this feature will retain its magical properties indefinitely. When you reach certain levels in this class, you can freely make more enchanted gems at the end of a long rest: two at 6th level and three at 15th level. Each enchanted gem requires its own separate gemstone.</description>
+		</sheet>
+	</element>
+	<element name="Bijou Helper" type="Archetype Feature" source="D&amp;D Wiki" id="ID_WIKI_ARCHETYPE_FEATURE_GEMWRIGHT_BIJOU_HELPER">
+		<description>
+			<p>At 5th level, you have become so in tune with the magical nature of gemstones that you are able to use them to create life in the form of a Bijou Helper. It's friendly to you and your companions, and it obeys your commands. See its game statistics in the Bijou Helper stat block, which uses your proficiency bonus (PB) in several places. You determine the creature's appearance and whether it has two legs or four; your choice has no effect on its game statistics.</p>
+			<p class="indent">In combat, the helper shares your initiative count, but it takes its turn immediately after yours. It can move and use its reaction on its own, but the only action it takes on its turn is the help action unless you take a bonus action on your turn to command it to take another action. That action can be one in its stat block or some other available action. If you are incapacitated, the helper will switch to only taking the hide action. If it cannot hide, it will instead take the dash action and avoid combat.</p>
+			<p class="indent">If the mending spell is cast on it, it regains 2d6 hit points. If it has died within the last hour, you can use your gemwright's tools as an action to revive it, provided you are within 5 feet of it and you expend a spell slot of 1st level or higher. The bijou helper returns to life after 1 minute with all its hit points restored.</p>
+			<p class="indent">At the end of a long rest, you can create a new Bijou Helper if you have gemwright's tools with you. If you already have a helper from this feature, the first one immediately disintegrates. The helper also disintegrates if you die.</p>
+		</description>
+		<sheet>
+			<description>In combat, the helper shares your initiative count, but it takes its turn immediately after yours. It can move and use its reaction on its own, but the only action it takes on its turn is the help action unless you take a bonus action on your turn to command it to take another action. That action can be one in its stat block or some other available action. If you are incapacitated, the helper will switch to only taking the hide action. If it cannot hide, it will instead take the dash action and avoid combat. &#13;
+				If the mending spell is cast on it, it regains 2d6 hit points. If it has died within the last hour, you can use your gemwright's tools as an action to revive it, provided you are within 5 feet of it and you expend a spell slot of 1st level or higher. The bijou helper returns to life after 1 minute with all its hit points restored. &#13;
+				At the end of a long rest, you can create a new Bijou Helper if you have gemwright's tools with you. If you already have a helper from this feature, the first one immediately disintegrates. The helper also disintegrates if you die.</description>
+		</sheet>
+		<rules>
+			<select type="Companion" name="Bijou Helper" supports="Bijou Helper" default="ID_WIKI_COMPANION_ARTIFICER_BIJOU_HELPER" />
+		</rules>
+	</element>
+	<element name="Helper Upgrade" type="Archetype Feature" source="D&amp;D Wiki" id="ID_WIKI_ARCHETYPE_FEATURE_GEMWRIGHT_HELPER_UPGRADE">
+		<description>
+			<p>At 7th level, you may choose 1 upgrade to add to your Bijou Helper from the list below. Whenever you finish a long rest, you may choose to replace the upgrade with another. You cannot have more than one upgrade on a Bijou Helper at a time.</p>
+		</description>
+		<sheet>
+			<description>Whenever you finish a long rest, you may choose to replace a bijou upgrade with another. You cannot have more than one upgrade on a Bijou Helper at a time.</description>
+		</sheet>
+		<rules>
+			<select type="Archetype Feature" name="Helper Upgrade, Gemwright" supports="Bijou Upgrade" level="7" />
+		</rules>
+	</element>
+	<element name="Resonance Mastery" type="Archetype Feature" source="D&amp;D Wiki" id="ID_WIKI_ARCHETYPE_FEATURE_GEMWRIGHT_RESONANCE_MASTERY">
+		<description>
+			<p>At 9th level, you've learned 2 new ways to channel your arcane energy:</p>
+			<ul>
+				<li>Whenever you finish a long rest, you can magically transform one mundane tuning fork into a planar tuning fork. You can only make one, and using this feature again will turn the first back into a mundane tuning fork.</li>
+				<li>When you make a successful hit with a metal weapon you are proficient with, you may change the damage it deals to thunder damage.</li>
+			</ul>
+		</description>
+		<sheet>
+			<description>You've learned 2 new ways to channel your arcane energy: &#13;
+				• Whenever you finish a long rest, you can magically transform one mundane tuning fork into a planar tuning fork. You can only make one, and using this feature again will turn the first back into a mundane tuning fork. &#13;
+				• When you make a successful hit with a metal weapon you are proficient with, you may change the damage it deals to thunder damage.
+			</description>
+		</sheet>
+	</element>
+	<element name="Gemwright Mastery" type="Archetype Feature" source="D&amp;D Wiki" id="ID_WIKI_ARCHETYPE_FEATURE_GEMWRIGHT_GEMWRIGHT_MASTERY">
+		<description>
+			<p>By 15th level, you’re a master at reaping the benefits of your Bijou Helper:</p>
+			<ul>
+				<li>You and your allies are under the effect of the help action within 10 feet of a Bijou Helper, as a result of astral copies and afterimages that it generates.</li>
+				<li>You can now have up to two helpers at the same time. You determine whether the helpers are identical to each other or different. Each helper can have a different upgrade.</li>
+			</ul>
+		</description>
+		<sheet>
+			<description>You’re a master at reaping the benefits of your Bijou Helper: &#13;
+				• You and your allies are under the effect of the help action within 10 feet of a Bijou Helper, as a result of astral copies and afterimages that it generates. &#13;
+				• You can now have up to two helpers at the same time. You determine whether the helpers are identical to each other or different. Each helper can have a different upgrade.
+			</description>
+		</sheet>
+	</element>
+
+
+	<element name="Gemwright's Tools" type="Item" source="D&amp;D Wiki" id="ID_WIKI_ITEM_TOOL_GEMWRIGHTS_TOOLS">
+		<description>
+			<p>This set of tools includes a hammer and chisel, a set of wireframe stands, a tuning fork, and other assorted instruments used to locate, examine, value, and refine gemstones. Proficiency with these tools lets you add your proficiency bonus to any ability checks you make regarding gemstones. Proficiency with these tools also allows you to use them to take the following actions:</p>
+			<p><strong>Locate Gemstone(s).</strong> Using this set of tools, you may spend 10 minutes searching a rocky area. For every 10 minutes spent searching, make an Intelligence (Investigation) check. For a 1 - 4, you find one gemstone worth 10 gp or multiple that add up to 10 gp. For a 5 - 8, you find one gemstone worth 50 gp or multiple that add up to 50 gp. For a 9 - 12, you find one gemstone worth 500 gp or multiple that add up to 500 gp. For a 13 - 16, you find one gemstone worth 1000 gp or multiple that add up to 1000 gp. For a 17 - 20, you find one gemstone worth 5000 gp or multiple that add up to 5000 gp. If you attempt to take this action in areas that are not rocky, or where gemstones cannot be found, you will always find nothing.</p>
+			<p><strong>Examine Gemstone.</strong> Using this set of tools, you may spend 1 hour examining a gemstone. You must maintain concentration during this period. For every hour spent examining, make a Wisdom (Insight) check. The higher you roll, the more you are able to find out about the gemstone.</p>
+			<p><strong>Refine Gemstone.</strong> Using this set of tools, you may spend 1 day refining a gemstone. You must maintain concentration during this period. For every hour spent examining, make an Dexterity (Insight) check. For every four points, the value of the gemstone increases by 10%. For example, a Bloodstone would go from 50 gp to 55 gp with a 3, and from 50 gp to 75 gp with a 19. On a natural 20 the value is doubled. On a natural 1, or if your concentration is broken, you damage the gemstone and reduce its value by half.</p>
+		</description>
+		<setters>
+			<set name="category">Tools</set>
+			<set name="cost" currency="gp">50</set>
+			<set name="weight" lb="3">3 lbs.</set>
+			<set name="type">Tool</set>
+			<set name="proficiency">ID_PROFICIENCY_TOOL_PROFICIENCY_GEMWRIGHTS_TOOLS</set>
+		</setters>
+	</element>
+
+	<element name="Bijou Helper" type="Companion" source="D&amp;D Wiki" id="ID_WIKI_COMPANION_GEMWRIGHT_BIJOU_HELPER">
+		<supports>Bijou Helper</supports>
+		<description>
+			<p>Your tinkering has borne you a faithful companion, a steel defender. It is friendly to you and your companions, and it obeys your commands.</p>
+			<p><b>Proficiency Bonus (PB)</b> equals your bonus</p>
+		</description>
+		<setters>
+			<set name="strength">12</set>
+			<set name="dexterity">14</set>
+			<set name="constitution">12</set>
+			<set name="intelligence">10</set>
+			<set name="wisdom">8</set>
+			<set name="charisma">6</set>
+			<set name="ac">10 (natural armor)</set>
+			<set name="hp">2 + your Intelligence modifier + three times your artificer level (the defender has a number of Hit Dice [d8s] equal to your artificer level)</set>
+			<set name="speed">30 ft.</set>
+			<set name="immunities">poison, cold</set>
+			<set name="conditionImmunities">charmed, exhaustion, poisoned</set>			
+			<set name="saves">Int +2 plus PB</set>
+			<set name="skills">Arcana +1 plus PB, Perception +2 plus PB</set>
+			<set name="senses">blindsight 60 ft., passive Perception 13 plus PB×2</set>
+			<set name="languages">understands the languages you speak</set>
+			<set name="type">Construct</set>
+			<set name="size">Medium</set>
+			<set name="alignment">Any Alignment</set>
+			<set name="challenge">-</set>
+			<set name="traits">ID_WIKI_COMPANION_TRAIT_BIJOU_HELPER_INNATE_SPELLCASTING</set>
+			<set name="actions">ID_WIKI_COMPANION_ACTION_BIJOU_HELPER_SUBSPACIAL_REND</set>
+		</setters>
+		<rules>
+			<stat name="companion:ac" value="10" bonus="base" />
+			<stat name="companion:hp:max" value="2" />
+			<stat name="companion:hp:max" value="intelligence:modifier" />
+			<stat name="companion:hp:max" value="level:artificer" />
+			<stat name="companion:hp:max" value="level:artificer" />
+			<stat name="companion:hp:max" value="level:artificer" />
+			<stat name="companion:speed" value="30" bonus="base" />	
+			<stat name="companion:proficiency" value="proficiency" bonus="base" />
+			<stat name="companion:arcana:proficiency" value="companion:proficiency" bonus="proficiency" />
+			<stat name="companion:perception:proficiency" value="companion:proficiency" bonus="proficiency" />
+			<stat name="companion:intelligence:save:proficiency" value="companion:proficiency" bonus="proficiency" />
+		</rules>
+	</element>
+	<element name="Innate Spellcasting" type="Companion Trait" source="D&amp;D Wiki" id="ID_WIKI_COMPANION_TRAIT_BIJOU_HELPER_INNATE_SPELLCASTING">
+		<description>
+			<p>The helper's spellcasting ability is Intelligence. It can innately cast the following spells at will, requiring no material components:</p>
+			<ul>
+				<li>wary sphere</li>
+				<li>death finger</li>
+			</ul>
+		</description>
+		<sheet>
+			<description>The helper's spellcasting ability is Intelligence. It can innately cast the following spells at will, requiring no material components: &#13;
+				• wavy sphere &#13;
+				• death finger
+			</description>
+		</sheet>
+	</element>
+	<element name="Subspacial Rend" type="Companion Action" source="D&amp;D Wiki" id="ID_WIKI_COMPANION_ACTION_BIJOU_HELPER_SUBSPACIAL_REND">
+		<description>
+			<p>Melee Weapon Attack: your spell attack modifier to hit, reach 5 ft., one target you can see. Hit: 1d6 + PB force damage.</p>
+		</description>
+		<sheet>
+			<description>Melee Weapon Attack: your spell attack modifier to hit, reach 5 ft., one target you can see. Hit: 1d6 + PB force damage.</description>
+		</sheet>
+	</element>
+
+
+
+	<element name="Aviation" type="Archetype Feature" source="D&amp;D Wiki" id="ID_WIKI_COMPANION_TRAIT_BIJOU_HELPER_AVIATION">
+		<supports>Bijou Upgrade</supports>
+		<description>
+			<p>You give your helper wings, granting them a 15 ft flight speed.</p>
+		</description>
+		<sheet>
+			<description>You give your helper wings, granting them a 15 ft flight speed.</description>
+		</sheet>
+	</element>
+	<element name="Arborealism" type="Archetype Feature" source="D&amp;D Wiki" id="ID_WIKI_COMPANION_TRAIT_BIJOU_HELPER_ARBOREALISM">
+		<supports>Bijou Upgrade</supports>
+		<description>
+			<p>You either give your helper grip pads or an extra set of insect-like legs, granting them a 15 ft climb speed.</p>
+		</description>
+		<sheet>
+			<description>You either give your helper grip pads or an extra set of insect-like legs, granting them a 15 ft climb speed.</description>
+		</sheet>
+	</element>
+	<element name="Water Gliding" type="Archetype Feature" source="D&amp;D Wiki" id="ID_WIKI_COMPANION_TRAIT_BIJOU_HELPER_WATER_GLIDING">
+		<supports>Bijou Upgrade</supports>
+		<description>
+			<p>You either give your helper flippers or some other form of underwated propulsion, granting them a 15 ft swim speed.</p>
+		</description>
+		<sheet>
+			<description>You either give your helper flippers or some other form of underwated propulsion, granting them a 15 ft swim speed.</description>
+		</sheet>
+	</element>
+	<element name="Exoskeleton" type="Archetype Feature" source="D&amp;D Wiki" id="ID_WIKI_COMPANION_TRAIT_BIJOU_HELPER_EXOSKELETON">
+		<supports>Bijou Upgrade</supports>
+		<description>
+			<p>You give your helper a full or partial exoskeleton, allowing them to add your Intelligence modifier to their AC.</p>
+		</description>
+		<sheet>
+			<description>You give your helper a full or partial exoskeleton, allowing them to add your Intelligence modifier to their AC.</description>
+		</sheet>
+	</element>
+	<element name="Multiattack" type="Archetype Feature" source="D&amp;D Wiki" id="ID_WIKI_COMPANION_TRAIT_BIJOU_HELPER_MULTIATTACK">
+		<supports>Bijou Upgrade</supports>
+		<description>
+			<p>You enhance your helper's movements, allowing them to use Subspacial Rend twice with one action.</p>
+		</description>
+		<sheet>
+			<description>You enhance your helper's movements, allowing them to use Subspacial Rend twice with one action.</description>
+		</sheet>
+	</element>
+</elements>
