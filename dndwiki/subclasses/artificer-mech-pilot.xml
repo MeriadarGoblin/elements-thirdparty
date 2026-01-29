@@ -3,7 +3,7 @@
     <info>
 		<name>Artificer: Mech Pilot</name>
 		<author url="https://www.dandwiki.com/w/index.php?title=Mech_Pilot_(5e_Subclass)&amp;oldid=1955702">Created by Sir Lucas and random IP addresses.</author>
-		<update version="0.0.5">
+		<update version="0.0.1">
 			<file name="artificer-mech-pilot.xml" url="https://raw.githubusercontent.com/MeriadarGoblin/elements-thirdparty/refs/heads/main/dndwiki/subclasses/artificer-mech-pilot.xml" />
 		</update>
 	</info>
@@ -578,4 +578,5 @@
             <description>As an action, You can engage an auto pilot on your mech allowing it to function to its full capacity while your not inside it. Your mech's Int, Wis, and Cha become 10. Your mech acts on your initiative and you can command it as a bonus action, if no action is commanded it takes the dodge action. While not in combat you can also give simple commands to your mech such as follow me, lift this, or patrol this area.</description>
         </sheet>
     </element>
+
 </elements>
