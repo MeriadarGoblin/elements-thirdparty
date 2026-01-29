@@ -1,0 +1,581 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<elements>
+    <info>
+		<name>Artificer: Mech Pilot</name>
+		<author url="https://www.dandwiki.com/w/index.php?title=Mech_Pilot_(5e_Subclass)&amp;oldid=1955702">Created by Sir Lucas and random IP addresses.</author>
+		<update version="0.0.5">
+			<file name="artificer-mech-pilot.xml" url="https://raw.githubusercontent.com/MeriadarGoblin/elements-thirdparty/refs/heads/main/dndwiki/subclasses/artificer-mech-pilot.xml" />
+		</update>
+	</info>
+
+    <element name="Mech Pilot" type="Archetype" source="D&amp;D Wiki" id="ID_WIKI_ARCHETYPE_ARTIFICER_MECH_PILOT">
+        <supports>Artificer Specialist</supports>
+        <description>
+            <p class="indent">Your intelligence and engineering prowess have earned you a special bond with a warforged suit of advanced armor enhanced by magic, whether you built it yourself or you were selected from some specialized program. Entering your Mech suit gives you new combat abilities that you wouldn't normally have access to. The artificer bonds with their Mech suit, becoming one with it even as they experiment with it and refine its magical capabilities.</p>
+            <div element="ID_WIKI_ARCHETYPE_FEATURE_MECHPILOT_PILOT_EXPERTISE" />
+            <div element="ID_WIKI_ARCHETYPE_FEATURE_MECHPILOT_SPELLS" />
+            <div element="ID_WIKI_ARCHETYPE_FEATURE_MECHPILOT_COCKPIT" />
+            <div element="ID_WIKI_ARCHETYPE_FEATURE_MECHPILOT_RIGHT_ATTACHMENT" />
+            <div element="ID_WIKI_ARCHETYPE_FEATURE_MECHPILOT_EXTRA_ATTACK" />
+            <div element="ID_WIKI_ARCHETYPE_FEATURE_MECHPILOT_ADVANCED_MANEUVERS" />
+            <div element="ID_WIKI_ARCHETYPE_FEATURE_MECHPILOT_SPINAL_ATTACHMENT" />
+        </description>
+        <sheet display="false" />
+        <rules>
+            <grant type="Archetype Feature" id="ID_WIKI_ARCHETYPE_FEATURE_MECHPILOT_PILOT_EXPERTISE" level="3" />
+            <grant type="Archetype Feature" id="ID_WIKI_ARCHETYPE_FEATURE_MECHPILOT_SPELLS" level="3" />
+            <grant type="Archetype Feature" id="ID_WIKI_ARCHETYPE_FEATURE_MECHPILOT_COCKPIT" level="3" />
+            <grant type="Archetype Feature" id="ID_WIKI_ARCHETYPE_FEATURE_MECHPILOT_RIGHT_ATTACHMENT" level="3" />
+            <grant type="Archetype Feature" id="ID_WIKI_ARCHETYPE_FEATURE_MECHPILOT_EXTRA_ATTACK" level="5" />
+            <grant type="Archetype Feature" id="ID_WIKI_ARCHETYPE_FEATURE_MECHPILOT_ADVANCED_MANEUVERS" level="11" />
+            <grant type="Archetype Feature" id="ID_WIKI_ARCHETYPE_FEATURE_MECHPILOT_SPINAL_ATTACHMENT" level="15" />
+        </rules>
+    </element>
+    <element name="Pilot Expertise" type="Archetype Feature" source="D&amp;D Wiki" id="ID_WIKI_ARCHETYPE_FEATURE_MECHPILOT_PILOT_EXPERTISE">
+		<description>
+			<p>When you adopt this specialization at 3rd level, you gain proficiency with Land Vehicles and Tinkerer's Tools. Both proficiencies count as expertises when relating to your Mech, Additionally, you gain damage reduction equal to your intelligence when inside the mech.</p>
+		</description>
+		<sheet>
+			<description>You gain {{intelligence}} damage reduction when inside the mech. You also have expertise in Land Vehicles and Tinkerer's Tools relating to your mech.</description>
+		</sheet>
+		<rules>
+			<select type="Proficiency" name="Pilot Expertise, Mech Pilot" supports="Tool, Vehicles" default="ID_PROFICIENCY_TOOL_PROFICIENCY_VEHICLES_LAND" />
+			<select type="Proficiency" name="Pilot Expertise, Mech Pilot" supports="Tool" default="ID_PROFICIENCY_TOOL_PROFICIENCY_TINKERS_TOOLS" />
+		</rules>
+	</element>
+    <element name="Mech Pilot Spells" type="Archetype Feature" source="D&amp;D Wiki" id="ID_WIKI_ARCHETYPE_FEATURE_MECHPILOT_SPELLS">
+		<description>
+			<p>Starting at 3rd level, while inside your Mech, you gain access to extra spells. You unlock more spells when you reach certain levels in this class. These spells count as artificer spells for you, but they don't count against the number of artificer spells you prepare.</p>
+			<h5 class="caption">MECH PILOT SPELLS</h5>
+			<table>
+				<thead>
+					<tr><td>Artificer Level</td><td>Spells</td></tr>
+				</thead>
+				<tr><td>3rd</td><td><em>shield</em></td></tr>
+				<tr><td>5th</td><td><em>scorching ray</em></td></tr>
+				<tr><td>9th</td><td><em>sending</em></td></tr>
+				<tr><td>13th</td><td><em>stoneskin</em></td></tr>
+				<tr><td>17th</td><td><em>destructive wave</em></td></tr>
+			</table>
+		</description>
+		<sheet display="false" />
+		<rules>
+			<grant type="Spell" id="ID_PHB_SPELL_SHIELD" spellcasting="Artificer" level="3" prepared="true" />
+			<grant type="Spell" id="ID_PHB_SPELL_SCORCHING_RAY" spellcasting="Artificer" level="5" prepared="true" />
+			<grant type="Spell" id="ID_PHB_SPELL_SENDING" spellcasting="Artificer" level="9" prepared="true" />
+			<grant type="Spell" id="ID_PHB_SPELL_STONESKIN" spellcasting="Artificer" level="13" prepared="true" />
+			<grant type="Spell" id="ID_PHB_SPELL_DESTRUCTIVE_WAVE" spellcasting="Artificer" level="17" prepared="true" />
+		</rules>
+	</element>
+    <element name="In The Cockpit" type="Archetype Feature" source="D&amp;D Wiki" id="ID_WIKI_ARCHETYPE_FEATURE_MECHPILOT_COCKPIT">
+        <description>
+            <p>Starting at 3rd level, you form a special bond with an advanced exoskeleton enchanted with magic. Your Mech suit grants you new abilities while wearing it based on its construction. The Mech acts as both a land vehicle and a construct.</p>
+            <p class="indent">Mechs can be constructed in three different models, found below. Each model offers a unique approach to combat. Your Mech's model can be changed by spending a long rest uninterrupted at a blacksmith's forge.</p>
+            <table>
+                <thead>
+                    <tr><td>Mech Model</td><td>HP</td><td>AC</td><td>Mech STR</td><td>Mech DEX</td><td>Mech CON</td><td>Walking Speed</td><td>Size</td></tr>
+                </thead>
+                <tr><td>Athena</td><td>(INT modifier+PB)*level</td><td>16</td><td>INT+10</td><td>INT+10</td><td>INT+10</td><td>6*INT</td><td>Medium</td></tr>
+                <tr><td>Hermes</td><td>(INT modifier)*level</td><td>18</td><td>INT+8</td><td>INT+14</td><td>INT+8</td><td>8*INT</td><td>Medium</td></tr>
+                <tr><td>Atlas</td><td>(4+INT modifier+PB)*level</td><td>20</td><td>INT+14</td><td>INT+8</td><td>INT+14</td><td>4*INT</td><td>Large</td></tr>
+            </table>
+            <p>The Mech suit is piloted from the inside and can only be piloted successfully by its pilot. (Any creature with an intelligence of 9 or higher can attempt to pilot the Mech, but will make every check, save and attack with disadvantage.) It takes an Action to board the Mech and it can be exited as a Bonus Action. While inside the suit, the pilot uses the Mech's AC (Attacks specifically targeting you inside your Mech count you as having 3/4 cover), HP, walking speed, size and physical attributes. While inside the Mech, the pilot is unable to cast any of their spells, with the exception of those listed under the Mech Pilot's Spells feature.</p>
+            <p class="indent">When the Mech reaches 0 HP, it becomes inoperable and the pilot takes 1d4 fire damage for every turn they remain inside and must use their action to make a DC 14 Athletics or Acrobatics to escape or another creature can use their action to make this check. The Mech must be repaired before it can be used again, this can be done using a set of tinker's tools on the Mech during a short or long rest, bringing the Mech back to full health. The pilot can also repair the Mech outside of a long rest by casting the Mending cantrip, bringing the Mech back to half its total HP. This action can only be taken a number of times equal to the half the pilot's proficiency bonus rounded down, and resets at a long rest</p>
+            <p class="indent">The Mech can act as 1/2 cover during combat for any creature within 5 feet of it, If the Mech pilot chooses they can provide 3/4 cover as an action to all creatures within 5 feet, using its body as a shield or source of cover. The Mech does not have to be Humanoid.</p>
+        </description>
+        <sheet>
+            <description>The Mech acts as both a land vehicle and a construct. Your Mech's model can be changed by spending a long rest uninterrupted at a blacksmith's forge. It takes an Action to board the Mech and it can be exited as a Bonus Action. While inside the suit, the pilot uses the Mech's AC (Attacks specifically targeting you inside your Mech count you as having 3/4 cover), HP, walking speed, size and physical attributes. While inside the Mech, the pilot is unable to cast any of their spells, with the exception of those listed under the Mech Pilot's Spells feature.</description>
+        </sheet>
+        <rules>
+            <select type="Archetype Feature" name="Mech, In the Cockpit" supports="Mech Model" />
+        </rules>
+    </element>
+    <!-- Mechs -->
+    <element name="Athena" type="Archetype Feature" source="D&amp;D Wiki" id="ID_WIKI_ARCHETYPE_FEATURE_MECHPILOT_MECH_ATHENA">
+        <supports>Mech Model</supports>
+        <description>
+           <table>
+                <thead>
+                    <tr><td>Mech Model</td><td>HP</td><td>AC</td><td>Mech STR</td><td>Mech DEX</td><td>Mech CON</td><td>Walking Speed</td><td>Size</td></tr>
+                </thead>
+                <tr><td>Athena</td><td>(INT modifier+PB)*level</td><td>16</td><td>INT+10</td><td>INT+10</td><td>INT+10</td><td>6*INT</td><td>Medium</td></tr>
+           </table>
+           <p>The Mech suit is piloted from the inside and can only be piloted successfully by its pilot. (Any creature with an intelligence of 9 or higher can attempt to pilot the Mech, but will make every check, save and attack with disadvantage.)</p>
+           <p class="indent">The Mech can act as 1/2 cover during combat for any creature within 5 feet of it, If the Mech pilot chooses they can provide 3/4 cover as an action to all creatures within 5 feet, using its body as a shield or source of cover. The Mech does not have to be Humanoid.</p>
+        </description>
+        <sheet>
+            <description>
+                HP: {{athena:mech:hp:total}}&#13;
+                AC: 16 &#13;
+                Strength: {{athena:mech:str:total}} &#13;
+                Dexterity: {{athena:mech:dex:total}} &#13;
+                Constitution: {{athena:mech:con}} &#13;
+                Walking Speed: {{athena:mech:speed:total}} feet &#13;
+                Size: Medium
+            </description>
+        </sheet>
+        <rules>
+            <stat name="athena:mech:hp" value="intelligence:modifier" />
+            <stat name="athena:mech:hp" value="proficiency"/>
+            <stat name="athena:mech:hp:total" value="athena:mech:hp" level="1" />
+            <stat name="athena:mech:hp:total" value="athena:mech:hp" level="2" />
+            <stat name="athena:mech:hp:total" value="athena:mech:hp" level="3" />
+            <stat name="athena:mech:hp:total" value="athena:mech:hp" level="4" />
+            <stat name="athena:mech:hp:total" value="athena:mech:hp" level="5" />
+            <stat name="athena:mech:hp:total" value="athena:mech:hp" level="6" />
+            <stat name="athena:mech:hp:total" value="athena:mech:hp" level="7" />
+            <stat name="athena:mech:hp:total" value="athena:mech:hp" level="8" />
+            <stat name="athena:mech:hp:total" value="athena:mech:hp" level="9" />
+            <stat name="athena:mech:hp:total" value="athena:mech:hp" level="10" />
+            <stat name="athena:mech:hp:total" value="athena:mech:hp" level="11" />
+            <stat name="athena:mech:hp:total" value="athena:mech:hp" level="12" />
+            <stat name="athena:mech:hp:total" value="athena:mech:hp" level="13" />
+            <stat name="athena:mech:hp:total" value="athena:mech:hp" level="14" />
+            <stat name="athena:mech:hp:total" value="athena:mech:hp" level="15" />
+            <stat name="athena:mech:hp:total" value="athena:mech:hp" level="16" />
+            <stat name="athena:mech:hp:total" value="athena:mech:hp" level="17" />
+            <stat name="athena:mech:hp:total" value="athena:mech:hp" level="18" />
+            <stat name="athena:mech:hp:total" value="athena:mech:hp" level="19" />
+            <stat name="athena:mech:hp:total" value="athena:mech:hp" level="20" />
+
+            <stat name="athena:mech:str" value="10" />
+            <stat name="athena:mech:str" value="intelligence:score" />
+            <stat name="athena:mech:str:total" value="athena:mech:str" />
+            <stat name="athena:mech:dex" value="intelligence:score" />
+            <stat name="athena:mech:dex" value="10" />
+            <stat name="athena:mech:dex:total" value="athena:mech:dex" />
+            <stat name="athena:mech:con" value="intelligence:score" />
+            <stat name="athena:mech:con" value="10" />
+            <stat name="athena:mech:speed" value="intelligence:score" />
+            <stat name="athena:mech:speed" value="intelligence:score" />
+            <stat name="athena:mech:speed" value="intelligence:score" />
+            <stat name="athena:mech:speed" value="intelligence:score" />
+            <stat name="athena:mech:speed" value="intelligence:score" />
+            <stat name="athena:mech:speed" value="intelligence:score" />
+            <stat name="athena:mech:speed:total" value="athena:mech:speed" />
+            <stat name="mech passengers" value="2" />
+        </rules>
+    </element>
+    <element name="Hermes" type="Archetype Feature" source="D&amp;D Wiki" id="ID_WIKI_ARCHETYPE_FEATURE_MECHPILOT_MECH_HERMES">
+        <supports>Mech Model</supports>
+        <description>
+           <table>
+                <thead>
+                    <tr><td>Mech Model</td><td>HP</td><td>AC</td><td>Mech STR</td><td>Mech DEX</td><td>Mech CON</td><td>Walking Speed</td><td>Size</td></tr>
+                </thead>
+                <tr><td>Hermes</td><td>(INT modifier)*level</td><td>18</td><td>INT+8</td><td>INT+14</td><td>INT+8</td><td>8*INT</td><td>Medium</td></tr>
+           </table>
+           <p>The Mech suit is piloted from the inside and can only be piloted successfully by its pilot. (Any creature with an intelligence of 9 or higher can attempt to pilot the Mech, but will make every check, save and attack with disadvantage.)</p>
+           <p class="indent">The Mech can act as 1/2 cover during combat for any creature within 5 feet of it, If the Mech pilot chooses they can provide 3/4 cover as an action to all creatures within 5 feet, using its body as a shield or source of cover. The Mech does not have to be Humanoid.</p>
+        </description>
+        <sheet>
+            <description>
+                HP: {{hermes:mech:hp:total}}&#13;
+                AC: 18 &#13;
+                Strength: {{hermes:mech:str:total}} &#13;
+                Dexterity: {{hermes:mech:dex:total}} &#13;
+                Constitution: {{hermes:mech:con}} &#13;
+                Walking Speed: {{hermes:mech:speed:total}} feet &#13;
+                Size: Medium
+            </description>
+        </sheet>
+        <rules>
+            <stat name="hermes:mech:hp" value="intelligence:modifier" />
+            <stat name="hermes:mech:hp:total" value="hermes:mech:hp" level="1" />
+            <stat name="hermes:mech:hp:total" value="hermes:mech:hp" level="2" />
+            <stat name="hermes:mech:hp:total" value="hermes:mech:hp" level="3" />
+            <stat name="hermes:mech:hp:total" value="hermes:mech:hp" level="4" />
+            <stat name="hermes:mech:hp:total" value="hermes:mech:hp" level="5" />
+            <stat name="hermes:mech:hp:total" value="hermes:mech:hp" level="6" />
+            <stat name="hermes:mech:hp:total" value="hermes:mech:hp" level="7" />
+            <stat name="hermes:mech:hp:total" value="hermes:mech:hp" level="8" />
+            <stat name="hermes:mech:hp:total" value="hermes:mech:hp" level="9" />
+            <stat name="hermes:mech:hp:total" value="hermes:mech:hp" level="10" />
+            <stat name="hermes:mech:hp:total" value="hermes:mech:hp" level="11" />
+            <stat name="hermes:mech:hp:total" value="hermes:mech:hp" level="12" />
+            <stat name="hermes:mech:hp:total" value="hermes:mech:hp" level="13" />
+            <stat name="hermes:mech:hp:total" value="hermes:mech:hp" level="14" />
+            <stat name="hermes:mech:hp:total" value="hermes:mech:hp" level="15" />
+            <stat name="hermes:mech:hp:total" value="hermes:mech:hp" level="16" />
+            <stat name="hermes:mech:hp:total" value="hermes:mech:hp" level="17" />
+            <stat name="hermes:mech:hp:total" value="hermes:mech:hp" level="18" />
+            <stat name="hermes:mech:hp:total" value="hermes:mech:hp" level="19" />
+            <stat name="hermes:mech:hp:total" value="hermes:mech:hp" level="20" />
+
+            <stat name="hermes:mech:str" value="8" />
+            <stat name="hermes:mech:str" value="intelligence:score" />
+            <stat name="hermes:mech:str:total" value="hermes:mech:str" />
+            <stat name="hermes:mech:dex" value="intelligence:score" />
+            <stat name="hermes:mech:dex" value="14" />
+            <stat name="hermes:mech:dex:total" value="hermes:mech:dex" />
+            <stat name="hermes:mech:con" value="intelligence:score" />
+            <stat name="hermes:mech:con" value="8" />
+            <stat name="hermes:mech:speed" value="intelligence:score" />
+            <stat name="hermes:mech:speed" value="intelligence:score" />
+            <stat name="hermes:mech:speed" value="intelligence:score" />
+            <stat name="hermes:mech:speed" value="intelligence:score" />
+            <stat name="hermes:mech:speed" value="intelligence:score" />
+            <stat name="hermes:mech:speed" value="intelligence:score" />
+            <stat name="hermes:mech:speed" value="intelligence:score" />
+            <stat name="hermes:mech:speed" value="intelligence:score" />
+            <stat name="hermes:mech:speed:total" value="hermes:mech:speed" />
+            <stat name="mech passengers" value="1" /> <!-- for increased capacity attachment-->
+        </rules>
+    </element>
+    <element name="Atlas" type="Archetype Feature" source="D&amp;D Wiki" id="ID_WIKI_ARCHETYPE_FEATURE_MECHPILOT_MECH_ATLAS">
+        <supports>Mech Model</supports>
+        <description>
+           <table>
+                <thead>
+                    <tr><td>Mech Model</td><td>HP</td><td>AC</td><td>Mech STR</td><td>Mech DEX</td><td>Mech CON</td><td>Walking Speed</td><td>Size</td></tr>
+                </thead>
+                <tr><td>Atlas</td><td>(4+INT modifier+PB)*level</td><td>20</td><td>INT+14</td><td>INT+8</td><td>INT+14</td><td>4*INT</td><td>Large</td></tr>
+           </table>
+           <p>The Mech suit is piloted from the inside and can only be piloted successfully by its pilot. (Any creature with an intelligence of 9 or higher can attempt to pilot the Mech, but will make every check, save and attack with disadvantage.)</p>
+           <p class="indent">The Mech can act as 1/2 cover during combat for any creature within 5 feet of it, If the Mech pilot chooses they can provide 3/4 cover as an action to all creatures within 5 feet, using its body as a shield or source of cover. The Mech does not have to be Humanoid.</p>
+        </description>
+        <sheet>
+            <description>
+                HP: {{atlas:mech:hp:total}}&#13;
+                AC: 20 &#13;
+                Strength: {{atlas:mech:str:total}} &#13;
+                Dexterity: {{atlas:mech:dex:total}} &#13;
+                Constitution: {{atlas:mech:con}} &#13;
+                Walking Speed: {{atlas:mech:speed:total}} feet &#13;
+                Size: Medium
+            </description>
+        </sheet>
+        <rules>
+            <stat name="atlas:mech:hp" value="4" />
+            <stat name="atlas:mech:hp" value="intelligence:modifier" />
+            <stat name="atlas:mech:hp" value="proficiency" />
+            <stat name="atlas:mech:hp:total" value="atlas:mech:hp" level="1" />
+            <stat name="atlas:mech:hp:total" value="atlas:mech:hp" level="2" />
+            <stat name="atlas:mech:hp:total" value="atlas:mech:hp" level="3" />
+            <stat name="atlas:mech:hp:total" value="atlas:mech:hp" level="4" />
+            <stat name="atlas:mech:hp:total" value="atlas:mech:hp" level="5" />
+            <stat name="atlas:mech:hp:total" value="atlas:mech:hp" level="6" />
+            <stat name="atlas:mech:hp:total" value="atlas:mech:hp" level="7" />
+            <stat name="atlas:mech:hp:total" value="atlas:mech:hp" level="8" />
+            <stat name="atlas:mech:hp:total" value="atlas:mech:hp" level="9" />
+            <stat name="atlas:mech:hp:total" value="atlas:mech:hp" level="10" />
+            <stat name="atlas:mech:hp:total" value="atlas:mech:hp" level="11" />
+            <stat name="atlas:mech:hp:total" value="atlas:mech:hp" level="12" />
+            <stat name="atlas:mech:hp:total" value="atlas:mech:hp" level="13" />
+            <stat name="atlas:mech:hp:total" value="atlas:mech:hp" level="14" />
+            <stat name="atlas:mech:hp:total" value="atlas:mech:hp" level="15" />
+            <stat name="atlas:mech:hp:total" value="atlas:mech:hp" level="16" />
+            <stat name="atlas:mech:hp:total" value="atlas:mech:hp" level="17" />
+            <stat name="atlas:mech:hp:total" value="atlas:mech:hp" level="18" />
+            <stat name="atlas:mech:hp:total" value="atlas:mech:hp" level="19" />
+            <stat name="atlas:mech:hp:total" value="atlas:mech:hp" level="20" />
+
+            <stat name="atlas:mech:str" value="14" />
+            <stat name="atlas:mech:str" value="intelligence:score" />
+            <stat name="atlas:mech:str:total" value="atlas:mech:str" />
+            <stat name="atlas:mech:dex" value="intelligence:score" />
+            <stat name="atlas:mech:dex" value="8" />
+            <stat name="atlas:mech:dex:total" value="atlas:mech:dex" />
+            <stat name="atlas:mech:con" value="intelligence:score" />
+            <stat name="atlas:mech:con" value="14" />
+            <stat name="atlas:mech:speed" value="intelligence:score" />
+            <stat name="atlas:mech:speed" value="intelligence:score" />
+            <stat name="atlas:mech:speed" value="intelligence:score" />
+            <stat name="atlas:mech:speed" value="intelligence:score" />
+            <stat name="atlas:mech:speed:total" value="atlas:mech:speed" />
+            <stat name="mech passengers" value="1" /> <!-- for increased capacity attachment-->
+        </rules>
+    </element>
+    <element name="The Right Attachment" type="Archetype Feature" source="D&amp;D Wiki" id="ID_WIKI_ARCHETYPE_FEATURE_MECHPILOT_RIGHT_ATTACHMENT">
+        <description>
+            <p>Much like the artificer that pilots it, the Mech is not restricted to only one set of weapons. Using their technical knowledge, the pilot can add attachments to the arms of their Mech which act as different weapons or tools. Your Mech can be fitted with a number of attachments equal 1+ the pilot's proficiency bonus. These attachments can be swapped in or out during repair.</p>
+        </description>
+        <sheet>
+            <description>Your Mech can be fitted with {{right attachment:slots}} attachments. These attachments can be swapped in or out during repair.</description>
+        </sheet>
+        <rules>
+            <stat name="right attachment:slots" value="1" />
+            <stat name="right attachment:slots" value="proficiency" />
+
+            <select type="Archetype Feature" name="The Right Attachments" supports="Mech Attachment" number="3" level="3" />
+            <select type="Archetype Feature" name="The Right Attachments" supports="Mech Attachment" level="5" />
+            <select type="Archetype Feature" name="The Right Attachments" supports="Mech Attachment" level="9" />
+            <select type="Archetype Feature" name="The Right Attachments" supports="Mech Attachment" level="13" />
+            <select type="Archetype Feature" name="The Right Attachments" supports="Mech Attachment" level="17" />
+        </rules>
+    </element>
+     <!-- Attachments -->
+    <element name="Hydraulic Joints" type="Archetype Feature" source="D&amp;D Wiki" id="ID_WIKI_ARCHETYPE_FEATURE_MECHPILOT_ATTACHMENT_HYDRAULIC_POINTS">
+        <supports>Mech Attachment</supports>
+        <description>
+            <p>Your Mech's limbs are outfitted with better hydraulics and a dash of magic which allows it to resist incredible pressure. While in your Mech, you have Advantage on Strength Saving Throws and athletics tests.</p>
+        </description>
+        <sheet>
+            <description>While in your Mech, you have Advantage on Strength Saving Throws and athletics tests.</description>
+        </sheet>
+    </element>
+    <element name="Shared Magic" type="Archetype Feature" source="D&amp;D Wiki" id="ID_WIKI_ARCHETYPE_FEATURE_MECHPILOT_ATTACHMENT_SHARED_MAGIC">
+        <supports>Mech Attachment</supports>
+        <description>
+            <p>The mech system is now more linked to the pilot, the mech can use all of the pilot's magics when the pilot is piloting the mech, but only he can use magic through the mech.</p>
+        </description>
+        <sheet>
+            <description>The mech can use all of the pilot's magics when the pilot is piloting the mech, but only he can use magic through the mech.</description>
+        </sheet>
+    </element>
+    <element name="Drift Link" type="Archetype Feature" source="D&amp;D Wiki" id="ID_WIKI_ARCHETYPE_FEATURE_MECHPILOT_ATTACHMENT_DRIFT_LINK">
+        <supports>Mech Attachment</supports>
+        <description>
+            <p>Your Mech's sensors are wired directly into your nervous system. You gain Advantage on a Dexterity Checks and Saves while inside the Mech. Your cover inside the Mech is 1/2 cover rather than 3/4 cover.</p>
+        </description>
+        <sheet>
+            <description>You gain Advantage on a Dexterity Checks and Saves while inside the Mech. Your cover inside the Mech is 1/2 cover rather than 3/4 cover.</description>
+        </sheet>
+    </element>
+    <element name="Jump Pack" type="Archetype Feature" source="D&amp;D Wiki" id="ID_WIKI_ARCHETYPE_FEATURE_MECHPILOT_ATTACHMENT_JUMP_PACK">
+        <supports>Mech Attachment</supports>
+        <description>
+            <p>Your Mech is granted boosters or special speed enhancing magic that allows it to move into the air over short distances. Your Mech's horizontal and vertical leap distances are tripled and is resistant to fall damage.</p>
+        </description>
+        <sheet>
+            <description>Your Mech's horizontal and vertical leap distances are tripled and is resistant to fall damage.</description>
+        </sheet>
+    </element>
+    <element name="Monster Hauler" type="Archetype Feature" source="D&amp;D Wiki" id="ID_WIKI_ARCHETYPE_FEATURE_MECHPILOT_ATTACHMENT_MONSTER_HAULER">
+        <supports>Mech Attachment</supports>
+        <description>
+            <p>Your Mech is capable of moving mountains with enough time, your Mech's carrying capacity is doubled. And your Mech is considered a beast of burden when pulling carts or moving objects.</p>
+        </description>
+        <sheet>
+            <description>Your Mech's carrying capacity is doubled. And your Mech is considered a beast of burden when pulling carts or moving objects.</description>
+        </sheet>
+    </element>
+    <element name="Increased Capacity" type="Archetype Feature" source="D&amp;D Wiki" id="ID_WIKI_ARCHETYPE_FEATURE_MECHPILOT_ATTACHMENT_INCREASED_CAPACITY">
+        <supports>Mech Attachment</supports>
+        <description>
+            <p>Your Mech is outfitted with a space to hold passengers comfortably, the amount of creatures it can hold depends on your Mechs model. Athena = 2, Hermes = 1, Atlas = 3.</p>
+        </description>
+        <sheet>
+            <description>Your Mech can hold additional {{mech passengers}} passengers.</description>
+        </sheet>
+    </element>
+    <element name="Self Destruct" type="Archetype Feature" source="D&amp;D Wiki" id="ID_WIKI_ARCHETYPE_FEATURE_MECHPILOT_ATTACHMENT_SELF_DESTRUCT">
+        <prerequisite>6th level</prerequisite>
+        <requirements>[level:6]</requirements>
+        <supports>Mech Attachment</supports>
+        <description>
+            <p>As a bonus action you can overload your Mech's Core and cause it to enter a meltdown. All creatures within 30 feet of the Mech must make a Dexterity saving throw or take fire damage equal to 10d12 + Your Intelligence modifier or half of it on a success. The Mech is then reduced to 0 HP and cannot be repaired outside of a long rest.</p>
+        </description>
+        <sheet action="Bonus Action">
+            <description>As a bonus action you can overload your Mech's Core and cause it to enter a meltdown. All creatures within 30 feet of the Mech must make a Dexterity saving throw or take fire damage equal to 10d12 + Your Intelligence modifier or half of it on a success. The Mech is then reduced to 0 HP and cannot be repaired outside of a long rest.</description>
+        </sheet>
+    </element>
+    <element name="Battlefield Analysis" type="Archetype Feature" source="D&amp;D Wiki" id="ID_WIKI_ARCHETYPE_FEATURE_MECHPILOT_ATTACHMENT_BATTLEFIELD_ANALYSIS">
+        <prerequisite>6th level, Athena Model</prerequisite>
+        <requirements>[level:6], ID_WIKI_ARCHETYPE_FEATURE_MECHPILOT_MECH_ATHENA</requirements>
+        <supports>Mech Attachment</supports>
+        <description>
+            <p>When you roll a 1 or 2 on an attack roll, the Mech makes with a weapon you're proficient with, you can re-roll the die and must use the new roll, even if the new roll is a 1 or a 2.</p>
+        </description>
+        <sheet>
+            <description>When you roll a 1 or 2 on an attack roll, the Mech makes with a weapon you're proficient with, you can re-roll the die and must use the new roll, even if the new roll is a 1 or a 2.</description>
+        </sheet>
+    </element>
+    <element name="Grappling Hook" type="Archetype Feature" source="D&amp;D Wiki" id="ID_WIKI_ARCHETYPE_FEATURE_MECHPILOT_ATTACHMENT_GRAPPLING_HOOK">
+        <prerequisite>6th level, Hermes Model</prerequisite>
+        <requirements>[level:6], ID_WIKI_ARCHETYPE_FEATURE_MECHPILOT_MECH_HERMES</requirements>
+        <supports>Mech Attachment</supports>
+        <description>
+            <p>As an action, launch a thick line of chain towards a point you can see up to 40 feet. And as a bonus action, pull the Mech towards the point of impact if it landed on a wall or grounded object.</p>
+        </description>
+        <sheet action="Action/Bonus Action">
+            <description>As an action, launch a thick line of chain towards a point you can see up to 40 feet. And as a bonus action, pull the Mech towards the point of impact if it landed on a wall or grounded object.</description>
+        </sheet>
+    </element>
+    <element name="Overlapping Ceramic Plates" type="Archetype Feature" source="D&amp;D Wiki" id="ID_WIKI_ARCHETYPE_FEATURE_MECHPILOT_ATTACHMENT_OVERLAPPING_CERAMIC_PLATES">
+        <prerequisite>6th level, Atlas Model</prerequisite>
+        <requirements>[level:6], ID_WIKI_ARCHETYPE_FEATURE_MECHPILOT_MECH_ATLAS</requirements>
+        <supports>Mech Attachment</supports>
+        <description>
+            <p>Your Mech can handle a lot more abuse than others but something will eventually give. You and the mech gain temporary HP equal to half of the Mech's HP rounded down. However, when you take either piercing or bludgeoning damage; this effect subsides until your Mech is repaired.</p>
+        </description>
+        <sheet>
+            <description>You and the mech gain {{atlas:mech:hp:total:half}} temporary HP. However, when you take either piercing or bludgeoning damage; this effect subsides until your Mech is repaired.</description>
+        </sheet>
+    </element>
+    <element name="Core Exhaust" type="Archetype Feature" source="D&amp;D Wiki" id="ID_WIKI_ARCHETYPE_FEATURE_MECHPILOT_ATTACHMENT_CORE_EXHAUST">
+        <prerequisite>9th level, Athena Model</prerequisite>
+        <requirements>[level:9], ID_WIKI_ARCHETYPE_FEATURE_MECHPILOT_MECH_ATHENA</requirements>
+        <supports>Mech Attachment</supports>
+        <description>
+            <p>Up to twice per long rest, As an action you can expose your Mech's core and release its excess energy. All creatures in a 50 feet long and 10 feet wide line must make a Dexterity Saving Throw (DC = Spell Save DC) On a failure they take 6d8+int Radiant damage and half as much on a successful save. You can keep the effect active for up to three turns, during which you can change the direction of the effect but cannot move and your AC gets reduced by 2.</p>
+        </description>
+        <sheet usage="2/Long Rest">
+            <description>As an action you can expose your Mech's core and release its excess energy. All creatures in a 50 feet long and 10 feet wide line must make a Dexterity Saving Throw (DC = Spell Save DC) On a failure they take 6d8+int Radiant damage and half as much on a successful save. You can keep the effect active for up to three turns, during which you can change the direction of the effect but cannot move and your AC gets reduced by 2.</description>
+        </sheet>
+    </element>
+    <element name="Air Superiority" type="Archetype Feature" source="D&amp;D Wiki" id="ID_WIKI_ARCHETYPE_FEATURE_MECHPILOT_ATTACHMENT_AIR_SUPERIORITY">
+        <prerequisite>9th level, Hermes Model</prerequisite>
+        <requirements>[level:9], ID_WIKI_ARCHETYPE_FEATURE_MECHPILOT_MECH_HERMES</requirements>
+        <supports>Mech Attachment</supports>
+        <description>
+            <p>The Mech gains a flying speed equal to 30 feet and cannot be knocked down while flying. Additionally, you learn the Magic Missile Spell while piloting the Mech. You can cast it at 1st Level without spending spell slots as long as you're in the air.</p>
+        </description>
+        <sheet>
+            <description>The Mech gains a flying speed equal to 30 feet and cannot be knocked down while flying. Additionally, you learn the Magic Missile Spell while piloting the Mech. You can cast it at 1st Level without spending spell slots as long as you're in the air.</description>
+        </sheet>
+    </element>
+    <element name="Hail Fire" type="Archetype Feature" source="D&amp;D Wiki" id="ID_WIKI_ARCHETYPE_FEATURE_MECHPILOT_ATTACHMENT_HAIL_FIRE">
+        <prerequisite>9th level, Atlas Model</prerequisite>
+        <requirements>[level:9], ID_WIKI_ARCHETYPE_FEATURE_MECHPILOT_MECH_ATLAS</requirements>
+        <supports>Mech Attachment</supports>
+        <description>
+            <p>As an action, you can fire an explosive into the air, making it land one turn later on any point within 120 feet of you. When it lands, all creatures within 20 feet of the point of impact must make a Dexterity Saving Throw (DC = Spell Save DC) On a failure they take 4d8+Int fire damage and takes 1d8 fire damage per turn and half as much on a successful save and is not caught on fire and half as much on a successful save. You must spend a Bonus Action to reload the weapon in order to fire it again.</p>
+        </description>
+        <sheet>
+            <description>As an action, you can fire an explosive into the air, making it land one turn later on any point within 120 feet of you. When it lands, all creatures within 20 feet of the point of impact must make a Dexterity Saving Throw against your Spell Save DC. On a failure they take 4d8+Int fire damage and takes 1d8 fire damage per turn and half as much on a successful save and is not caught on fire and half as much on a successful save. You must spend a Bonus Action to reload the weapon in order to fire it again.</description>
+        </sheet>
+    </element>
+    <element name="Arcane Essence Fusion" type="Archetype Feature" source="D&amp;D Wiki" id="ID_WIKI_ARCHETYPE_FEATURE_MECHPILOT_ATTACHMENT_ARCANE_ESSENCE_FUSION">
+        <prerequisite>15th level, Athena Model</prerequisite>
+        <requirements>[level:15], ID_WIKI_ARCHETYPE_FEATURE_MECHPILOT_MECH_ATHENA</requirements>
+        <supports>Mech Attachment</supports>
+        <description>
+            <p>The mecha and pilot now have a 100% connection with the pilot thanks to the fusion with their core, giving Advantage on attack rolls with spells Increases the CD of your spells by 2.</p>
+        </description>
+        <sheet usage="2/Long Rest">
+            <description>The mecha and pilot now have a 100% connection with the pilot thanks to the fusion with their core, giving Advantage on attack rolls with spells. Increases the CD of your spells by 2.</description>
+        </sheet>
+    </element>
+    <element name="Vortex Acceleration" type="Archetype Feature" source="D&amp;D Wiki" id="ID_WIKI_ARCHETYPE_FEATURE_MECHPILOT_ATTACHMENT_VORTEX_ACCELERATION">
+        <prerequisite>15th level, Hermes Model</prerequisite>
+        <requirements>[level:15], ID_WIKI_ARCHETYPE_FEATURE_MECHPILOT_MECH_HERMES</requirements>
+        <supports>Mech Attachment</supports>
+        <description>
+            <p>Using a bonus action, the Mech generates a vortex of energy around itself. For 2 round, your movement speed is doubled, and you have advantage on Dexterity checks and saving throws against effects that attempt to slow or immobilize you, must remain stationary for 1 turn to recharge.</p>
+        </description>
+        <sheet action="Bonus Action">
+            <description>Using a bonus action, the Mech generates a vortex of energy around itself. For 2 rounds, your movement speed is doubled, and you have advantage on Dexterity checks and saving throws against effects that attempt to slow or immobilize you, must remain stationary for 1 turn to recharge.</description>
+        </sheet>
+    </element>
+    <element name="Walking Fortress" type="Archetype Feature" source="D&amp;D Wiki" id="ID_WIKI_ARCHETYPE_FEATURE_MECHPILOT_ATTACHMENT_WALKING_FORTRESS">
+        <prerequisite>15th level, Atlas Model</prerequisite>
+        <requirements>[level:15], ID_WIKI_ARCHETYPE_FEATURE_MECHPILOT_MECH_ATLAS</requirements>
+        <supports>Mech Attachment</supports>
+        <description>
+            <p>By integrating the Module, the Atlas transforms into a true walking fortress. This modification gives an increase to the large size, the life of the mech is doubled and it is possible to place two automatic turrets on the mech each doing 2d8 piercing damage as a free action but its speed is reduced by 10 feet.</p>
+        </description>
+        <sheet>
+            <description>This modification gives an increase to the large size, the life of the mech is doubled and it is possible to place two automatic turrets on the mech each doing 2d8 piercing damage as a free action but its speed is reduced by 10 feet.</description>
+        </sheet>
+        <rules>
+            <stat name="atlas:mech:speed:total" value="-10" />
+        </rules>
+    </element>
+
+    <element name="Extra Attack" type="Archetype Feature" source="D&amp;D Wiki" id="ID_WIKI_ARCHETYPE_FEATURE_MECHPILOT_EXTRA_ATTACK">
+		<description>
+			<p>You can attack twice, rather than once, whenever you take the Attack action on your turn.</p>
+		</description>
+		<sheet>
+			<description>You can attack twice, rather than once, whenever you take the Attack action on your turn.</description>
+		</sheet>
+		<rules>
+			<stat name="extra attack:count" value="2" level="5" bonus="extra attack" />
+		</rules>
+	</element>
+    <element name="Advanced Maneuvers" type="Archetype Feature" source="D&amp;D Wiki" id="ID_WIKI_ARCHETYPE_FEATURE_MECHPILOT_ADVANCED_MANEUVERS">
+        <description>
+            <p>At 9th level, the mech can be fitted with new modifications that give it new abilities based on its model. One combat modification may be chosen from the list below and installed on the mech whenever its model is changed.</p>
+        </description>
+        <sheet display="false" />
+        <rules>
+            <grant type="Archetype Feature" id="ID_WIKI_ARCHETYPE_FEATURE_MECHPILOT_ADVANCED_MANEUVERS_UNRELENTING" requirements="ID_WIKI_ARCHETYPE_FEATURE_MECHPILOT_MECH_ATHENA" />
+            <grant type="Archetype Feature" id="ID_WIKI_ARCHETYPE_FEATURE_MECHPILOT_ADVANCED_MANEUVERS_BLINKBOLT" requirements="ID_WIKI_ARCHETYPE_FEATURE_MECHPILOT_MECH_HERMES" />
+            <grant type="Archetype Feature" id="ID_WIKI_ARCHETYPE_FEATURE_MECHPILOT_ADVANCED_MANEUVERS_BUNKER_DOWN" requirements="ID_WIKI_ARCHETYPE_FEATURE_MECHPILOT_MECH_ATLAS" />
+        </rules>
+    </element>
+    <!-- Advanced Maneuvers -->
+    <element name="Unrelenting" type="Archetype Feature" source="D&amp;D Wiki" id="ID_WIKI_ARCHETYPE_FEATURE_MECHPILOT_ADVANCED_MANEUVERS_UNRELENTING">
+        <prerequisite>Athena Model</prerequisite>
+        <description>
+            <p>WIP</p>
+        </description>
+        <sheet>
+            <description>WIP</description>
+        </sheet>
+    </element>
+    <element name="Blinkbolt" type="Archetype Feature" source="D&amp;D Wiki" id="ID_WIKI_ARCHETYPE_FEATURE_MECHPILOT_ADVANCED_MANEUVERS_BLINKBOLT">
+        <prerequisite>Hermes Model</prerequisite>
+        <description>
+            <p>Whenever you are hit bit an attacker you can see, you can spend your reaction to add your proficiency bonus, if then the attack misses, you can immediately move up to 30 feet towards your attacker.</p>
+        </description>
+        <sheet>
+            <description>Whenever you are hit bit an attacker you can see, you can spend your reaction to add your proficiency bonus, if then the attack misses, you can immediately move up to 30 feet towards your attacker.</description>
+        </sheet>
+    </element>
+    <element name="Bunker Down" type="Archetype Feature" source="D&amp;D Wiki" id="ID_WIKI_ARCHETYPE_FEATURE_MECHPILOT_ADVANCED_MANEUVERS_BUNKER_DOWN">
+        <prerequisite>Atlas Model</prerequisite>
+        <description>
+            <p>The Armored mech can bunker itself, making itself an impenetrable fortress, gaining resistance to all physical damage, force and fire, and can make attacks as normal, but the mech cannot take any movement actions while bunkered. Taking this modification allows a Cannon to be attached to the Armored mech.</p>
+        </description>
+        <sheet>
+            <description>The Armored mech can bunker itself, making itself an impenetrable fortress, gaining resistance to all physical damage, force and fire, and can make attacks as normal, but the mech cannot take any movement actions while bunkered. Taking this modification allows a Cannon to be attached to the Armored mech.</description>
+        </sheet>
+    </element>
+    <element name="Spinal Attachment" type="Archetype Feature" source="D&amp;D Wiki" id="ID_WIKI_ARCHETYPE_FEATURE_MECHPILOT_SPINAL_ATTACHMENT">
+        <description>
+            <p>At 15th level, the mech can be fitted with a powerful attachment that fits onto its back. The attachment is different for each mech model, and can be found in table 4. This attachment can only be used once per long rest.</p>
+        </description>
+        <sheet display="false">
+            <description>At 15th level, the mech can be fitted with a powerful attachment that fits onto its back. The attachment is different for each mech model, and can be found in table 4. This attachment can only be used once per long rest.</description>
+        </sheet>
+        <rules>
+            <select type="Archetype Feature" name="Spinal Attachment" supports="Mech Spinal Attachment" />
+        </rules>
+    </element>
+    <!-- Spinal Attachments -->
+    <element name="Hellfire Cannon" type="Archetype Feature" source="D&amp;D Wiki" id="ID_WIKI_ARCHETYPE_FEATURE_MECHPILOT_SPINAL_ATTACHMENT_HELLFIRE_CANNON">
+        <supports>Mech Spinal Attachment</supports>
+        <prerequisite>Athena Model</prerequisite>
+        <requirements>ID_WIKI_ARCHETYPE_FEATURE_MECHPILOT_MECH_ATHENA</requirements>
+        <description>
+            <p>As an action, the cannon can cast Fire ball at 5th level, using the Mech's strength as the spellcasting ability.</p>
+        </description>
+        <sheet action="Action" usage="Long Rest">
+            <description>As an action, the cannon can cast Fire ball at 5th level, using the Mech's strength as the spellcasting ability.</description>
+        </sheet>
+    </element>
+    <element name="Ballista Turret" type="Archetype Feature" source="D&amp;D Wiki" id="ID_WIKI_ARCHETYPE_FEATURE_MECHPILOT_SPINAL_ATTACHMENT_BALLISTA_TURRET">
+        <supports>Mech Spinal Attachment</supports>
+        <prerequisite>Hermes Model</prerequisite>
+        <requirements>ID_WIKI_ARCHETYPE_FEATURE_MECHPILOT_MECH_HERMES</requirements>
+        <description>
+            <p>As an action, target any number of creatures within a 180-foot radius and fire a devastating volley of arrows. Every targeted creature must succeed on Dexterity check with a dc of 8 + the pilot's proficiency bonus + The mech's Dexterity modifier. If the target fails, they take 7d6 piercing damage, if they succeed they take no damage.</p>
+        </description>
+        <sheet action="Action" usage="Long Rest">
+            <description>As an action, target any number of creatures within a 180-foot radius and fire a devastating volley of arrows. Every targeted creature must succeed on Dexterity check with a dc of 8 + the pilot's proficiency bonus + The mech's Dexterity modifier. If the target fails, they take 7d6 piercing damage, if they succeed they take no damage.</description>
+        </sheet>
+    </element>
+    <element name="Tank Shell Shield" type="Archetype Feature" source="D&amp;D Wiki" id="ID_WIKI_ARCHETYPE_FEATURE_MECHPILOT_SPINAL_ATTACHMENT_TANK_SHELL_SHIELD">
+        <supports>Mech Spinal Attachment</supports>
+        <prerequisite>Atlas Model</prerequisite>
+        <requirements>ID_WIKI_ARCHETYPE_FEATURE_MECHPILOT_MECH_ATLAS</requirements>
+        <description>
+            <p>As an action, form an impenetrable defensive wall around the mech. The Shield has the same AC as the mech, and has HP equal to half the mech's health. The shield absorbs all damage that would be put into the mech until it is broken. While the shield is activated, the mech can still attack and the mech can be used as full cover.</p>
+        </description>
+        <sheet action="Action" usage="Long Rest">
+            <description>As an action, form an impenetrable defensive wall around the mech. The Shield has the same AC as the mech, and has HP equal to half the mech's health. The shield absorbs all damage that would be put into the mech until it is broken. While the shield is activated, the mech can still attack and the mech can be used as full cover.</description>
+        </sheet>
+    </element>
+    <element name="Auto-Pilot" type="Archetype Feature" source="D&amp;D Wiki" id="ID_WIKI_ARCHETYPE_FEATURE_MECHPILOT_SPINAL_ATTACHMENT_AUTOPILOT">
+        <supports>Mech Spinal Attachment</supports>
+        <prerequisite>Any Model</prerequisite>
+        <description>
+            <p>As an action, You can engage an auto pilot on your mech allowing it to function to its full capacity while your not inside it. Your mech's Int, Wis, and Cha become 10. Your mech acts on your initiative and you can command it as a bonus action, if no action is commanded it takes the dodge action. While not in combat you can also give simple commands to your mech such as follow me, lift this, or patrol this area.</p>
+        </description>
+        <sheet action="Action" usage="Long Rest">
+            <description>As an action, You can engage an auto pilot on your mech allowing it to function to its full capacity while your not inside it. Your mech's Int, Wis, and Cha become 10. Your mech acts on your initiative and you can command it as a bonus action, if no action is commanded it takes the dodge action. While not in combat you can also give simple commands to your mech such as follow me, lift this, or patrol this area.</description>
+        </sheet>
+    </element>
+</elements>
