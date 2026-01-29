@@ -5,7 +5,7 @@
 		<description>The 5e homebrew content from the D&amp;D Wiki website.</description>
 		<author url="http://www.dandwiki.com/wiki/5e_Homebrew">D&amp;D Wiki</author>
 		<!-- created by MeriadarGoblin -->
-		<update version="0.0.9">
+		<update version="0.0.10">
 			<file name="meriadar-dndwiki.index" url="https://raw.githubusercontent.com/MeriadarGoblin/elements-thirdparty/main/meriadar-dndwiki.index" />
 		</update>
 	</info>
@@ -19,6 +19,7 @@
 		<file name="artificer-augmented.xml" url="https://raw.githubusercontent.com/MeriadarGoblin/elements-thirdparty/main/dndwiki/subclasses/artificer-augmented.xml" />
 		<file name="artificer-biomechanist.xml" url="https://raw.githubusercontent.com/MeriadarGoblin/elements-thirdparty/main/dndwiki/subclasses/artificer-biomechanist.xml" />
 		<file name="artificer-conduit.xml" url="https://raw.githubusercontent.com/MeriadarGoblin/elements-thirdparty/main/dndwiki/subclasses/artificer-conduit.xml" />
+		<file name="artificer-gemwright.xml" url="https://raw.githubusercontent.com/MeriadarGoblin/elements-thirdparty/refs/heads/main/dndwiki/subclasses/artificer-gemwright" />
 		<file name="artificer-mech-pilot.xml" url="https://raw.githubusercontent.com/MeriadarGoblin/elements-thirdparty/refs/heads/main/dndwiki/subclasses/artificer-mech-pilot.xml" />
 		<file name="druid-fittest.xml" url="https://raw.githubusercontent.com/MeriadarGoblin/elements-thirdparty/main/dndwiki/subclasses/druid-fittest.xml" />
 		<file name="fighter-scorpion-knight.xml" url="https://raw.githubusercontent.com/MeriadarGoblin/elements-thirdparty/main/dndwiki/subclasses/fighter-scorpion-knight.xml" />
