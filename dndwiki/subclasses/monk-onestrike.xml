@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<elements>
+    <info>
+        <description>The Way of One Strike Monk subclass from D&amp;D Wiki, created by "ShieldingPaladin7", "SwankyPants", "GreenDragon", and others.</description>
+		<author url="https://www.dandwiki.com/w/index.php?title=Way_of_One_Strike_(5e_Subclass)&amp;oldid=1569559">D&amp;D Wiki</author>
+		<update version="0.0.1">
+			<file name="monk-onestrike.xml" url="https://raw.githubusercontent.com/MeriadarGoblin/elements-thirdparty/refs/heads/main/dndwiki/subclasses/monk-onestrike.xml" />
+		</update>
+    </info>
+    
+    <element name="Way of One Strike" type="Archetype" source="D&amp;D Wiki" id="ID_WIKI_MONK_WAY_OF_ONE_STRIKE">
+        <supports>Monastic Tradition</supports>
+        <description>
+            <p>"The best path to victory in combat is to bring your opponent to fall with one perfect blow. The Way of One Strike is focused on the art of one lightning fast, precise and deadly unarmed attack that musters all the monk's focus and strength."</p>
+            <div element="ID_WIKI_ARCHETYPE_FEATURE_MONK_ONESTRIKE_SINGLE_STRIKE" />
+            <div element="ID_WIKI_ARCHETYPE_FEATURE_MONK_ONESTRIKE_COMBAT_READINESS" />
+            <div element="ID_WIKI_ARCHETYPE_FEATURE_MONK_ONESTRIKE_KI_STRIKE" />
+            <div element="ID_WIKI_ARCHETYPE_FEATURE_MONK_ONESTRIKE_MASTERY_OFTHE_FIST" />
+            <div element="ID_WIKI_ARCHETYPE_FEATURE_MONK_ONESTRIKE_BODY_ENHANCEMENT" />
+        </description>
+        <sheet display="false" />
+        <rules>
+            <grant type="Archetype Feature" id="ID_WIKI_ARCHETYPE_FEATURE_MONK_ONESTRIKE_SINGLE_STRIKE" level="3" />
+            <grant type="Archetype Feature" id="ID_WIKI_ARCHETYPE_FEATURE_MONK_ONESTRIKE_COMBAT_READINESS" level="3" />
+            <grant type="Archetype Feature" id="ID_WIKI_ARCHETYPE_FEATURE_MONK_ONESTRIKE_KI_STRIKE" level="6" />
+            <grant type="Archetype Feature" id="ID_WIKI_ARCHETYPE_FEATURE_MONK_ONESTRIKE_MASTERY_OFTHE_FIST" level="11" />
+            <grant type="Archetype Feature" id="ID_WIKI_ARCHETYPE_FEATURE_MONK_ONESTRIKE_BODY_ENHANCEMENT" level="17" />
+        </rules>
+    </element>
+    
+    <element name="Single Strike" type="Archetype Feature" source="D&amp;D Wiki" id="ID_WIKI_ARCHETYPE_FEATURE_MONK_ONESTRIKE_SINGLE_STRIKE">
+        <description>
+            <p>Starting when you choose this tradition at 3rd level, "Flurry of Blows" is replaced by "Single Strike". You can spend 1 ki point to do 1 unarmed attack with the damage of 3 Martial Art dice +1 Martial Art dice for every Extra Attack. Your enemy must make a Strength saving throw. If it fails, you can push it up to 15 feet away from you.</p>
+            <p class="indent">You can use "Single Strike" only once per turn.</p>
+        </description>
+        <sheet usage="1 Ki Point">
+            <description>You can spend 1 Ki point to do 1 unarmed attack with the damage of 3 Martial Art dice +1 Martial Art dice for every Extra Attack. Your enemy must make a Strength saving throw. If it fails, you can push it up to 15 feet away from you. You can use "Single Strike" only once per turn.</description>
+        </sheet>
+        <rules>
+            <grant type="Grant" id="ID_INTERNAL_FEATURE_REPLACEMENT_MONK_KI_FLURRY_OF_BLOWS" />
+        </rules>
+    </element>
+    <element name="Combat Readiness" type="Archetype Feature" source="D&amp;D Wiki" id="ID_WIKI_ARCHETYPE_FEATURE_MONK_ONESTRIKE_COMBAT_READINESS">
+        <description>
+            <p>At 3rd level you learn the True strike cantrip.</p>
+        </description>
+        <sheet display="false" />
+        <rules>
+            <grant type="Spell" id="ID_PHB_SPELL_TRUE_STRIKE" />
+        </rules>
+    </element>
+    <element name="Ki Strike" type="Archetype Feature" source="D&amp;D Wiki" id="ID_WIKI_ARCHETYPE_FEATURE_MONK_ONESTRIKE_KI_STRIKE">
+        <description>
+            <p>At 6th level, you use your ki to increase your power. When you hit a creature with an unarmed strike, you can spend 1 ki point to deal extra damage equal to one roll of your Martial Arts die + your Wisdom modifier + your Monk Level. You can use this feature only once per turn.</p>
+        </description>
+        <sheet>
+            <description>When you hit a creature with an unarmed strike, you can spend 1 ki point to deal extra damage equal to one roll of your Martial Arts die + {{monk ki strike}}. You can use this feature only once per turn.</description>
+        </sheet>
+        <rules>
+            <stat name="monk ki strike" value="wisdom:modifier" />
+            <stat name="monk ki strike" value="level:monk" />
+        </rules>
+    </element>
+    <element name="Mastery of the Fist" type="Archetype Feature" source="D&amp;D Wiki" id="ID_WIKI_ARCHETYPE_FEATURE_MONK_ONESTRIKE_MASTERY_OFTHE_FIST">
+        <description>
+            <p>By 11th level, you began to look deeper inside of yourself and that insight has allowed you to push past your regular limits. You add your Wisdom modifier to the damage of your unarmed strikes.</p>
+            <p class="indent">In addition, when you hit a creature with an unarmed strike, you can spend 1 ki point to deal additional damage equal to one of your martial arts die on that attack.</p>
+        </description>
+        <sheet usage="1 Ki Point">
+            <description>You add your Wisdom modifier to the damage of your unarmed strikes. when you hit a creature with an unarmed strike, you can spend 1 ki point to deal additional damage equal to one of your martial arts die on that attack.</description>
+        </sheet>
+    </element>
+    <element name="Body Enhancement" type="Archetype Feature" source="D&amp;D Wiki" id="ID_WIKI_ARCHETYPE_FEATURE_MONK_ONESTRIKE_BODY_ENHANCEMENT">
+        <description>
+            <p>At 17th level, you can spend 3 Ki points to take your body to new heights. For the next minute, you gain the following benefits:</p>
+            <ul>
+                <li>Your movement increases by 15 feet</li>
+                <li>You gain +2 to all attack roles</li>
+                <li>Your unarmed attacks deal extra damage equal to half your proficiency bonus</li>
+                <li>All nonmagical damage you take is reduced by 3</li>
+                <li>You can add your Dexterity and Strength modifier instead of only one of this to your damage rolls.</li>
+            </ul>
+            <p>You must finish a Long Rest before you can use this feature again.</p>
+        </description>
+    </element>
+</elements>

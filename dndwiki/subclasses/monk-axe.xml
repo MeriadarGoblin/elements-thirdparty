@@ -1,0 +1,113 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<elements>
+	<info>
+        <description>The Way of the Axe Monk subclass from D&amp;D Wiki, created by "Lycanskull".</description>
+		<author url="https://www.dandwiki.com/w/index.php?title=Way_of_the_Axe_(5e_Subclass)&amp;oldid=1763646">D&amp;D Wiki</author>
+		<update version="0.0.1">
+			<file name="monk-axe.xml" url="https://raw.githubusercontent.com/MeriadarGoblin/elements-thirdparty/refs/heads/main/dndwiki/subclasses/monk-axe.xml" />
+		</update>
+    </info>
+
+	<element name="Way of the Axe" type="Archetype" source="D&amp;D Wiki" id="ID_WIKI_ARCHETYPE_MONK_WAY_OF_THE_AXE">
+		<supports>Monastic Tradition</supports>
+		<description>
+			<p>Monks are known for wielding simple weapons in combat. For those following this tradition, there is nothing less simple than the Axe. More than simply a club or a blade on a stick, the Axe is a weapon that has defined cultures, and has far more uses than a sword or a mace. Perhaps you are an overzealous dwarf, a weapon historian or an adventurer who favors a particular weapon. Regardless, with your Axe and your fists, there is no problem you can't beat, break or cleave.</p>
+			<div element="ID_WIKI_ARCHETYPE_FEATURE_MONK_AXE_SCION" />
+			<div element="ID_WIKI_ARCHETYPE_FEATURE_MONK_AXE_MARTIAL_ADEPT" />
+			<div element="ID_WIKI_ARCHETYPE_FEATURE_MONK_AXE_FELL_HANDED" />
+			<div element="ID_WIKI_ARCHETYPE_FEATURE_MONK_AXE_MAUL" />
+			<div element="ID_WIKI_ARCHETYPE_FEATURE_MONK_AXE_ONSLAUGHT" />
+			<div element="ID_WIKI_ARCHETYPE_FEATURE_MONK_AXE_BETTER_THAN_ONE" />
+			<div element="ID_WIKI_ARCHETYPE_FEATURE_MONK_AXE_INDOMITABLE_ACCURACY" />
+			<div element="ID_WIKI_ARCHETYPE_FEATURE_MONK_AXE_FOCUS_ON_THE_FIGHT" />
+		</description>
+		<sheet display="false" />
+		<rules>
+			<grant type="Archetype Feature" id="ID_WIKI_ARCHETYPE_FEATURE_MONK_AXE_SCION" level="3" />
+			<grant type="Archetype Feature" id="ID_WIKI_ARCHETYPE_FEATURE_MONK_AXE_MARTIAL_ADEPT" level="3" />
+			<grant type="Archetype Feature" id="ID_WIKI_ARCHETYPE_FEATURE_MONK_AXE_FELL_HANDED" level="6" />
+			<grant type="Archetype Feature" id="ID_WIKI_ARCHETYPE_FEATURE_MONK_AXE_MAUL" level="6" />
+			<grant type="Archetype Feature" id="ID_WIKI_ARCHETYPE_FEATURE_MONK_AXE_ONSLAUGHT" level="11" />
+			<grant type="Archetype Feature" id="ID_WIKI_ARCHETYPE_FEATURE_MONK_AXE_BETTER_THAN_ONE" level="11" />
+			<grant type="Archetype Feature" id="ID_WIKI_ARCHETYPE_FEATURE_MONK_AXE_INDOMITABLE_ACCURACY" level="17" />
+			<grant type="Archetype Feature" id="ID_WIKI_ARCHETYPE_FEATURE_MONK_AXE_FOCUS_ON_THE_FIGHT" level="17" />
+		</rules>
+	</element>
+	<element name="Scion of the Axe" type="Archetype Feature" source="D&amp;D Wiki" id="ID_WIKI_ARCHETYPE_FEATURE_MONK_AXE_SCION">
+		<description>
+			<p>When you choose this tradition at 3rd level, you have devoted yourself to all things axe. You gain proficiency in handaxes, battleaxes, greataxes, and halberds if you have not already, and they are counted as Monk Weapons for you.</p>
+		</description>
+		<sheet display="false" />
+		<rules>
+			<grant type="Proficency" id="ID_PROFICIENCY_WEAPON_PROFICIENCY_HANDAXE" />
+			<grant type="Proficency" id="ID_PROFICIENCY_WEAPON_PROFICIENCY_BATTLEAXE" />
+			<grant type="Proficency" id="ID_PROFICIENCY_WEAPON_PROFICIENCY_GREATAXE" />
+			<grant type="Proficency" id="ID_PROFICIENCY_WEAPON_PROFICIENCY_HALBERD" />
+		</rules>
+	</element>
+	<element name="Martial Adept" type="Archetype Feature" source="D&amp;D Wiki" id="ID_WIKI_ARCHETYPE_FEATURE_MONK_AXE_MARTIAL_ADEPT">
+		<description>
+			<p>At 3rd level, you have devoting yourself to martial training with your axe. Choose one Fighting Style from the Fighter class. You gain the benefits of this fighting style while you are wielding one of the weapons listed in your Scion of the Axe.</p>
+		</description>
+		<sheet>
+			<description>You gain the benefits of this fighting style while you are wielding handaxes, battleaxes, greataxes, and halberds.</description>
+		</sheet>
+		<rules>
+			<select type="Class Feature" name="Martial Adept" supports="Fighting Style, Fighter" />
+		</rules>
+	</element>
+	<element name="Fell-Handed" type="Archetype Feature" source="D&amp;D Wiki" id="ID_WIKI_ARCHETYPE_FEATURE_MONK_AXE_FELL_HANDED">
+		<description>
+			<p>At 6th level, attacks with axes (The weapons listed in your Scion of the Axe feature) are counted as magical for the purpose of overcoming resistance and immunity to nonmagical attacks and damage.</p>
+			<p class="indent">In addition, you gain +1 to attack and damage rolls with these weapons. This bonus increases at 11th level (+2) and 17th level (+3).</p>
+		</description>
+		<sheet>
+			<description>You have a +{{monk axe:damage bonus}} to attack and damage rolls with handaxes, battleaxes, greataxes, and halberds. Attacks with these axes are counted as magical for the purpose of overcoming resistance and immunity to nonmagical attacks and damage.</description>
+		</sheet>
+		<rules>
+			<stat name="monk axe:damage bonus" value="1" />
+			<stat name="monk axe:damage bonus" value="1" level="11" />
+			<stat name="monk axe:damage bonus" value="1" level="17" />
+		</rules>
+	</element>
+	<element name="Haul" type="Archetype Feature" source="D&amp;D Wiki" id="ID_WIKI_ARCHETYPE_FEATURE_MONK_AXE_MAUL">
+		<description>
+			<p>Also at 6th level, your revelry in bloodshed with your axe can fuel your vitality. When you reduce a creature to 0 hit points with one of the weapons listed in your Scion of the Axe feature, you may spend 1 ki point to roll your martial die. You regain hit points equal to the number rolled + your Constitution modifier. You may not use this feature if you have no ki points remaining.</p>
+		</description>
+		<sheet>
+			<description>When you reduce a creature to 0 hit points with one of the weapons listed in your Scion of the Axe feature, you may spend 1 ki point to roll your martial die. You regain hit points equal to the number rolled + {{constitution:modifier}}. You may not use this feature if you have no ki points remaining.</description>
+		</sheet>
+	</element>
+	<element name="Onslaught" type="Archetype Feature" source="D&amp;D Wiki" id="ID_WIKI_ARCHETYPE_FEATURE_MONK_AXE_ONSLAUGHT">
+		<description>
+			<p>At 11th level, you may choose to make attacks with one of the weapons listed in your Scion of the Axe feature in place of unarmed strikes when taking the Flurry of Blows bonus action.</p>
+		</description>
+		<sheet>
+			<description>You may choose to make attacks with handaxes, battleaxes, greataxes, and halberds in place of unarmed strikes when taking the Flurry of Blows bonus action.</description>
+		</sheet>
+	</element>
+	<element name="Better Than One" type="Archetype Feature" source="D&amp;D Wiki" id="ID_WIKI_ARCHETYPE_FEATURE_MONK_AXE_BETTER_THAN_ONE">
+		<description>
+			<p>Also at 11th level, your devotion to axes has resulted in the ability to wield weapons in unorthodox manners. Weapons listed in your Scion of the Axe that have the Two-Handed property instead gain the Versatile Property, the damage dice being reduced when wielded in one hand (For example, a greataxe's damage die would be reduced from 1d12 to 1d10 when used in one hand). Only you gain this benefit when using these weapons.</p>
+		</description>
+		<sheet>
+			<description>Axes that have the Two-Handed property instead gain the Versatile Property, the damage dice being reduced when wielded in one hand (For example, a greataxe's damage die would be reduced from 1d12 to 1d10 when used in one hand). Only you gain this benefit when using these weapons.</description>
+		</sheet>
+	</element>
+	<element name="Indomitable Accuracy" type="Archetype Feature" source="D&amp;D Wiki" id="ID_WIKI_ARCHETYPE_FEATURE_MONK_AXE_INDOMITABLE_ACCURACY">
+		<description>
+			<p>At 17th level, your muscle memory with axes is so great you almost never miss. When making an attack with one of the weapons listed in your Scion of the Axe feature, if your total for your attack roll was lower than your ability score used to make the attack (Strength or Dexterity), you may use that score in place of the total.</p>
+		</description>
+		<sheet>
+			<description>When making an attack with handaxes, battleaxes, greataxes, and halberds, if your total for your attack roll was lower than your ability score used to make the attack (Strength or Dexterity), you may use that score in place of the total.</description>
+		</sheet>
+	</element>
+	<element name="Focus on the Fight" type="Archetype Feature" source="D&amp;D Wiki" id="ID_WIKI_ARCHETYPE_FEATURE_MONK_AXE_FOCUS_ON_THE_FIGHT">
+		<description>
+			<p>Also 17th level, your devotion to your axe can fuel your Ki. As an action you may focus on your Axe (One of the weapons listed in your Scion of the Axe feature) to fuel your zeal for battle. You then regain 1 Ki point.</p>
+		</description>
+		<sheet action="Action">
+			<description>As an action you may focus on your Axe to fuel your zeal for battle. You then regain 1 Ki point.</description>
+		</sheet>
+	</element>
+</elements>
