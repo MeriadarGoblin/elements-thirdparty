@@ -1,0 +1,132 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<elements>
+    <info>
+        <update version="0.0.1">
+            <file name="falconer-vulture.xml" url="https://raw.githubusercontent.com/MeriadarGoblin/elements-thirdparty/refs/heads/main/Reddit/The%20GooseQuill/falconer-vulture.xml" />
+        </update>
+    </info>
+    
+    <element name="Vulture" type="Archetype" source="The GooseQuill" id="ID_MRDR_GSQL_ARCHETYPE_FALCONER_VULTURE">
+		<supports>Falconer Subclass</supports>
+		<prerequisite>A resilient survivor adept at capitalizing on its prey’s untimely demise.</prerequisite>
+		<description>
+			<p>The human’s feet hurt- they hurt like hell, after trodding through the endless desert for miles uncountable. On his shoulder sat a large, bald-headed bird, with a sharp, curved beak and large, broad wings stretched, basking in the scorching sun. The vulture prepared to take flight, flapping its wings before letting out a shrill shreek, taking off. It has sensed something, as the human knew, who quickly went after his bird. He readied his sling as he stepped over the dune’s crest, a wounded camel laying next to an oasis a hundred feet before him. In the water, right next to it, a crocodile lies in ambush, intending to contest the meal. A fell swing of the human’s sling and the crocodile roared in pain as it drew its last breath. Now, they had food for a week.</p>
+			<p class="indent">What Vultures lack in terms of beauty, they more than make up for with their excellent sense of smell and effectiveness as a scavenger. The preferred choice for hunters in desolate areas where the wind can carry scents for miles. In combat, vultures capitalize off of the rampant banquet of injured quarries, feasting on their wounds to embolden itself in battle.</p>
+			<div element="ID_MRDR_GSQL_ARCHETYPE_FEATURE_VULTURE_BIRD" />
+			<div element="ID_MRDR_GSQL_ARCHETYPE_FEATURE_VULTURE_OBLIGATE_SCAVENGER" />
+			<div element="ID_MRDR_GSQL_ARCHETYPE_FEATURE_VULTURE_OLFACTION" />
+			<div element="ID_MRDR_GSQL_ARCHETYPE_FEATURE_VULTURE_FEAST" />
+			<div element="ID_MRDR_GSQL_ARCHETYPE_FEATURE_VULTURE_ACIDIC_TALONS" />
+			<div element="ID_MRDR_GSQL_ARCHETYPE_FEATURE_VULTURE_REBUKE_IN_BILE" />
+		</description>
+		<sheet display="false" />
+		<rules>
+			<grant type="Archetype Feature" id="ID_MRDR_GSQL_ARCHETYPE_FEATURE_VULTURE_BIRD" level="3" />
+			<grant type="Archetype Feature" id="ID_MRDR_GSQL_ARCHETYPE_FEATURE_VULTURE_OBLIGATE_SCAVENGER" level="3" />
+			<grant type="Archetype Feature" id="ID_MRDR_GSQL_ARCHETYPE_FEATURE_VULTURE_OLFACTION" level="6" />
+			<grant type="Archetype Feature" id="ID_MRDR_GSQL_ARCHETYPE_FEATURE_VULTURE_FEAST" level="10" />
+			<grant type="Archetype Feature" id="ID_MRDR_GSQL_ARCHETYPE_FEATURE_VULTURE_ACIDIC_TALONS" level="14" />
+			<grant type="Archetype Feature" id="ID_MRDR_GSQL_ARCHETYPE_FEATURE_VULTURE_REBUKE_IN_BILE" level="17" />
+
+			<grant type="Grants" id="ID_MRDR_GSQL_GRANTS_VULTURE_LEVEL_6" level="6" />
+			<grant type="Grants" id="ID_MRDR_GSQL_GRANTS_VULTURE_LEVEL_10" level="10" />
+			<grant type="Grants" id="ID_MRDR_GSQL_GRANTS_VULTURE_LEVEL_14" level="14" />
+			<grant type="Grants" id="ID_MRDR_GSQL_GRANTS_VULTURE_LEVEL_17" level="17" />
+		</rules>
+	</element>
+
+	<element name="Level 3: Vulture" type="Archetype Feature" source="The GooseQuill" id="ID_MRDR_GSQL_ARCHETYPE_FEATURE_VULTURE_BIRD">
+		<description>
+			<p>Your Bird of Prey is a vulture. To reflect your choice of its species, its stat block changes in the following ways:</p>
+			<center>
+				<p><b>Armor Class.</b></p>
+				<p><i>The Bird of Prey’s AC calculation changes to:</i></p>
+				<p>10 plus the Bird of Prey’s Dexterity modifier plus your Wisdom modifier.</p>
+				<p><b>Hit Points.</b></p>
+				<p><i>The Bird of Prey’s HP changes to:</i></p>
+				<p>The Bird of Prey’s Constitution modifier times your Falconer level, plus five times your Falconer level (the Bird of Prey has a number of Hit Dice [d10s] equal to your Falconer level).</p>
+				<p><b>Ability Scores.</b></p>
+				<p>The Bird of Prey’s Strength score increases to 10, its Intelligence score to 8, and its Charisma score to 10.</p>
+				<p><b>Immunities.</b></p>
+				<p>The Bird of Prey is immune to the Poisoned condition.</p>
+				<p><b>Traits.</b></p>
+				<p><i>The Bird of Prey gains the Keen Smell trait:</i></p>
+				<p><b><i>Keen Smell.</i></b> The Bird of Prey has Advantage on Wisdom (Perception) checks that rely smell.</p>
+			</center>
+		</description>
+		<sheet display="false" />
+	</element>
+
+	<element name="Level 3: Obligate Scavenger" type="Archetype Feature" source="The GooseQuill" id="ID_MRDR_GSQL_ARCHETYPE_FEATURE_VULTURE_OBLIGATE_SCAVENGER">
+		<description>
+			<p>When your Bird of Prey hits a Quarry with an attack, your Bird of Prey gains Temporary Hit Points equal to its Constitution modifier.</p>
+		</description>
+		<sheet alt="Obligate Scavenger">
+			<description>When your Bird of Prey hits a Quarry with an attack, your Bird of Prey gains Temporary Hit Points equal to its Constitution modifier.</description>
+		</sheet>
+	</element>
+
+	<element name="Level 6: Vulture's Olfaction" type="Archetype Feature" source="The GooseQuill" id="ID_MRDR_GSQL_ARCHETYPE_FEATURE_VULTURE_OLFACTION">
+		<description>
+			<p>Your sense of smell grows stronger, resembling that of your Bird of Prey.</p>
+			<p class="indent"><strong><em>Strong Nostrils.</em></strong> You have Advantage on Wisdom (Perception) checks that rely on smell.</p>
+			<p class="indent"><strong><em>Scent of Blood.</em></strong> You know the location of an Invisible creature if it is missing any of its Hit Points while it is within 30 feet of you even if it is Hidden.</p>
+		</description>
+		<sheet alt="Vulture's Olfaction" />
+		<rules>
+			<select type="Archetype Feature" name="Vulture Olfaction" supports="Vulture Olfaction" default="ID_MRDR_GSQL_ARCHETYPE_FEATURE_VULTURE_OLFACTION_STRONG_NOSTRILS" />
+			<select type="Archetype Feature" name="Vulture Olfaction" supports="Vulture Olfaction" default="ID_MRDR_GSQL_ARCHETYPE_FEATURE_VULTURE_OLFACTION_SCENT_OF_BLOOD" />
+		</rules>
+	</element>
+	<element name="Strong Nostrils" type="Archetype Feature" source="The GooseQuill" id="ID_MRDR_GSQL_ARCHETYPE_FEATURE_VULTURE_OLFACTION_STRONG_NOSTRILS">
+		<supports>Vulture Olfaction</supports>
+		<description>
+			<p>You have Advantage on Wisdom (Perception) checks that rely on smell.</p>
+		</description>
+		<sheet>
+			<description>You have Advantage on Wisdom (Perception) checks that rely on smell.</description>
+		</sheet>
+	</element>
+	<element name="Scent of Blood" type="Archetype Feature" source="The GooseQuill" id="ID_MRDR_GSQL_ARCHETYPE_FEATURE_VULTURE_OLFACTION_SCENT_OF_BLOOD">
+		<supports>Vulture Olfaction</supports>
+		<description>
+			<p>You know the location of an Invisible creature if it is missing any of its Hit Points while it is within 30 feet of you even if it is Hidden.</p>
+		</description>
+		<sheet>
+			<description>You know the location of an Invisible creature if it is missing any of its Hit Points while it is within 30 feet of you even if it is Hidden.</description>
+		</sheet>
+	</element>
+
+	<element name="Level 10: Feast" type="Archetype Feature" source="The GooseQuill" id="ID_MRDR_GSQL_ARCHETYPE_FEATURE_VULTURE_FEAST">
+		<description>
+			<p>When a Quarry is reduced to 0 Hit Points while your Bird of Prey is within 5 feet of it, your Bird of Prey can use a Reaction to expend one of its unspent Hit Dice and regain Hit Points equal to the roll plus its Constitution modifier.</p>
+		</description>
+		<sheet alt="Feast">
+			<description>When a Quarry is reduced to 0 Hit Points while your Bird of Prey is within 5 feet of it, your Bird of Prey can use a Reaction to expend one of its unspent Hit Dice and regain Hit Points equal to the roll plus its Constitution modifier.</description>
+		</sheet>
+	</element>
+
+	<element name="Level 14: Acidic Talons" type="Archetype Feature" source="The GooseQuill" id="ID_MRDR_GSQL_ARCHETYPE_FEATURE_VULTURE_ACIDIC_TALONS">
+		<description>
+			<p>Once per turn, when your Bird of Prey hits a creature with a weapon attack, the attack deals an additional 1d8 Acid damage. If the creature is a Quarry, the additional Acid damage increases to 2d8.</p>
+		</description>
+		<sheet alt="Acidic Talons">
+			<description>Once per turn, when your Bird of Prey hits a creature with a weapon attack, the attack deals an additional 1d8 Acid damage. If the creature is a Quarry, the additional Acid damage increases to 2d8.</description>
+		</sheet>
+	</element>
+
+	<element name="Level 17: Rebuke in Bile" type="Archetype Feature" source="The GooseQuill" id="ID_MRDR_GSQL_ARCHETYPE_FEATURE_VULTURE_REBUKE_IN_BILE">
+		<description>
+			<p>Your Bird of Prey can emit its stomach acid onto a nearby enemy. When your Bird of Prey uses a Reaction to regain Hit Points as described in Feast, it can make a ranged weapon attack as part of that same Reaction. The attack has a normal range of 10 feet and a long range of 30 feet, uses your Bird of Prey’s Strength- or Dexterity modifier plus your Wisdom modifier (minimum of 1) for the attack roll, and deals 4d8 plus your Bird of Prey’s Constitution modifier Acid damage.</p>
+			<p class="indent">If the attack hits, the target must take an action to remove the acid from its person. Until it does so, the target takes an additional 1d8 Acid damage at the start of each of its turns.</p>
+		</description>
+		<sheet alt="Rebuke in Bile">
+			<description>When your Bird of Prey uses a Reaction to regain Hit Points as described in Feast, it can make a ranged weapon attack as part of that same Reaction. The attack has a normal range of 10 feet and a long range of 30 feet, uses your Bird of Prey’s Strength- or Dexterity modifier plus {{rebuke in bile}} for the attack roll, and deals 4d8 plus your Bird of Prey’s Constitution modifier Acid damage.</description>
+		</sheet>
+		<rules>
+			<stat name="rebuke in bile" value="1" bonus="base" />
+			<stat name="rebuke in bile" value="wisdom:modifier" bonus="base" />
+		</rules>
+	</element>
+    
+</elements>

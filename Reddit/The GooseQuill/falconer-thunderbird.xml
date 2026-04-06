@@ -1,0 +1,240 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<elements>
+    <info>
+        <update version="0.0.1">
+            <file name="falconer-thunderbird.xml" url="https://raw.githubusercontent.com/MeriadarGoblin/elements-thirdparty/refs/heads/main/Reddit/The%20GooseQuill/falconer-thunderbird.xml" />
+        </update>
+    </info>
+    
+    <element name="Thunderbird" type="Archetype" source="The GooseQuill" id="ID_MRDR_GSQL_ARCHETYPE_FALCONER_THUNDERBIRD">
+		<supports>Falconer Subclass</supports>
+		<prerequisite>A herald of storms and lightning strikes.</prerequisite>
+		<description>
+			<p>The lightning flashes as a guard stands before the gates of the enemies’ encampment, counting to himself. “One, two, three-“ the roar of thunder fills his ears as he stops counting. He looks up to the sky to see dark clouds looming over the forest up ahead. Another flash. “One, two-“ the thunderclap breaks the silence around him once more. The next flash illuminates the night sky as the guard’s eyes widen- he could’ve sworn that there, in the clouds, he could’ve seen a bird flying- that couldn’t be, though; it was at least as big as a horse. He returns to counting, the beating of his heart growing faster and louder as the storm approaches until there, from over the treeline, a shape reveals itself, a bird with eyes glowing with the bright, white light of lightning itself. As it flaps its wings, the sound of thunder shakes the foundations of the towers behind him. On its back, a humanoid figure shouts a command before the bird flashes its eyes, sending a bolt of lightning directly towards the guard before letting out a loud screech- the sound of storm manifest.</p>
+			<p class="indent">The Thunderbird is a creature of legend to which devastating thunderstorms are attributed. Taming an adult thunderbird is a nigh-impossible feat, but the lucky few who are able to obtain a thunderbird egg can raise a thunderbird hatchling. Falconers who do so gain the companionship of a fierce Bird of Prey control over lightning and thunder.</p>
+			<div element="ID_MRDR_GSQL_ARCHETYPE_FEATURE_THUNDERBIRD_BIRD" />
+			<div element="ID_MRDR_GSQL_ARCHETYPE_FEATURE_THUNDERBIRD_SPELLCASTING" />
+			<div element="ID_MRDR_GSQL_ARCHETYPE_FEATURE_THUNDERBIRD_DYNAMO" />
+			<div element="ID_MRDR_GSQL_ARCHETYPE_FEATURE_THUNDERBIRD_STORMBORN" />
+			<div element="ID_MRDR_GSQL_ARCHETYPE_FEATURE_THUNDERBIRD_THUNDERSTRIKE" />
+			<div element="ID_MRDR_GSQL_ARCHETYPE_FEATURE_THUNDERBIRD_ICON_OFTHE_STORM" />
+			<div element="ID_MRDR_GSQL_ARCHETYPE_FEATURE_THUNDERBIRD_STORM_UNCAGED" />
+		</description>
+		<sheet display="false" />
+		<rules>
+			<grant type="Archetype Feature" id="ID_MRDR_GSQL_ARCHETYPE_FEATURE_THUNDERBIRD_BIRD" level="3" />
+			<grant type="Archetype Feature" id="ID_MRDR_GSQL_ARCHETYPE_FEATURE_THUNDERBIRD_SPELLCASTING" level="3" />
+			<grant type="Archetype Feature" id="ID_MRDR_GSQL_ARCHETYPE_FEATURE_THUNDERBIRD_DYNAMO" level="3" />
+			<grant type="Archetype Feature" id="ID_MRDR_GSQL_ARCHETYPE_FEATURE_THUNDERBIRD_STORMBORN" level="6" />
+			<grant type="Archetype Feature" id="ID_MRDR_GSQL_ARCHETYPE_FEATURE_THUNDERBIRD_THUNDERSTRIKE" level="10" />
+			<grant type="Archetype Feature" id="ID_MRDR_GSQL_ARCHETYPE_FEATURE_THUNDERBIRD_ICON_OFTHE_STORM" level="14" />
+			<grant type="Archetype Feature" id="ID_MRDR_GSQL_ARCHETYPE_FEATURE_THUNDERBIRD_STORM_UNCAGED" level="17" />
+
+			<grant type="Grants" id="ID_MRDR_GSQL_GRANTS_THUNDERBIRD_LEVEL_6" level="6" />
+			<grant type="Grants" id="ID_MRDR_GSQL_GRANTS_THUNDERBIRD_LEVEL_10" level="10" />
+			<grant type="Grants" id="ID_MRDR_GSQL_GRANTS_THUNDERBIRD_LEVEL_14" level="14" />
+			<grant type="Grants" id="ID_MRDR_GSQL_GRANTS_THUNDERBIRD_LEVEL_17" level="17" />
+		</rules>
+	</element>
+
+	<element name="Level 3: Thunderbird" type="Archetype Feature" source="The GooseQuill" id="ID_MRDR_GSQL_ARCHETYPE_FEATURE_THUNDERBIRD_BIRD">
+		<description>
+			<p>Your Bird of Prey is a thunderbird. To reflect your choice of its species, its stat block changes in the following ways:</p>
+			<center>
+				<p><b>Creature Type.</b></p>
+				<p>The Bird of Prey’s creature type changes to Elemental.</p>
+				<p><b>Armor Class.</b></p>
+				<p><i>The Bird of Prey’s AC calculation changes to:</i></p>
+				<p>9 plus the Bird of Prey’s Dexterity modifier plus your Wisdom modifier.</p>
+				<p><b>Hit Points.</b></p>
+				<p><i>The Bird of Prey’s HP changes to:</i></p>
+				<p>The Bird of Prey’s Constitution modifier times your Falconer level, plus three times your Falconer level (the Bird of Prey has a number of Hit Dice [d8s] equal to your Falconer level).</p>
+				<p><b>Ability Scores.</b></p>
+				<p>The Bird of Prey’s Strength score increases to 10, and its Charisma score to 7.</p>
+				<p><b>Immunities.</b></p>
+				<p>The Bird of Prey has Immunity to Lightning and Thunder damage.</p>
+				<p><b>Senses.</b></p>
+				<p>The Bird of Prey has Darkvision with a range of 60 feet.</p>
+			</center>
+		</description>
+		<sheet display="false" />
+	</element>
+
+	<element name="Level 3: Spellcasting" type="Archetype Feature" source="The GooseQuill" id="ID_MRDR_GSQL_ARCHETYPE_FEATURE_THUNDERBIRD_SPELLCASTING">
+		<description>
+			<p>You have learned to cast spells. See Chapter 7 of the 2024 Player’s Handbook for the rules on spellcasting. The information below details how you use those rules when choosing the Thunderbird as your Bird of Prey.</p>
+			<p><b>Cantrips.</b> You know two cantrips of your choice from the Sorcerer spell list (see that class’s section for its list). Gust and Shocking Grasp are recommended. Whenever you gain a Falconer level, you can replace one of these cantrips with another cantrip of your choice from the Sorcerer spell list.</p>
+			<p class="indent">When you reach Falconer level 10, you learn another Sorcerer cantrip of your choice.</p>
+			<p><b>Spell Slots.</b> The Thunderbird Spellcasting table shows how many spell slots you have to cast your level 1+ spells. You regain all expended slots when you finish a Long Rest.</p>
+			<p><b>Spellcasting Ability.</b> Charisma is your spellcasting ability for your Thunderbird spells.</p>
+			<p><b>Spells' Point of Origin.</b> When casting a Thunderbird spell, you can choose to have your Thunderbird be the origin point of the spell. Your Thunderbird must be within 100 feet of you, and it must take a Reaction to deliver the spell. If the spell requires a spell attack, you use your own spell attack modifier.</p>
+			<h5>THUNDERBIRD SPELLCASTING</h5>
+			<table class="class-features">
+				<thead>
+					<tr><td class="col-10">Falconer Level</td><td class="col-10">Cantrips Known</td><td class="col-10">Spells Known</td><td>1st</td><td>2nd</td><td>3rd</td><td>4th</td></tr>
+				</thead>
+				<tr><td> 3rd</td><td>2</td><td> 3</td><td>2</td><td>—</td><td>—</td><td>—</td></tr>
+				<tr><td> 4th</td><td>2</td><td> 4</td><td>3</td><td>—</td><td>—</td><td>—</td></tr>
+				<tr><td> 5th</td><td>2</td><td> 4</td><td>3</td><td>—</td><td>—</td><td>—</td></tr>
+				<tr><td> 6th</td><td>2</td><td> 4</td><td>3</td><td>—</td><td>—</td><td>—</td></tr>
+				<tr><td> 7th</td><td>2</td><td> 5</td><td>4</td><td>2</td><td>—</td><td>—</td></tr>
+				<tr><td> 8th</td><td>2</td><td> 6</td><td>4</td><td>2</td><td>—</td><td>—</td></tr>
+				<tr><td> 9th</td><td>2</td><td> 6</td><td>4</td><td>2</td><td>—</td><td>—</td></tr>
+				<tr><td>10th</td><td>3</td><td> 7</td><td>4</td><td>3</td><td>—</td><td>—</td></tr>
+				<tr><td>11th</td><td>3</td><td> 8</td><td>4</td><td>3</td><td>—</td><td>—</td></tr>
+				<tr><td>12th</td><td>3</td><td> 8</td><td>4</td><td>3</td><td>—</td><td>—</td></tr>
+				<tr><td>13th</td><td>3</td><td> 9</td><td>4</td><td>3</td><td>2</td><td>—</td></tr>
+				<tr><td>14th</td><td>3</td><td>10</td><td>4</td><td>3</td><td>2</td><td>—</td></tr>
+				<tr><td>15th</td><td>3</td><td>10</td><td>4</td><td>3</td><td>2</td><td>—</td></tr>
+				<tr><td>16th</td><td>3</td><td>11</td><td>4</td><td>3</td><td>3</td><td>—</td></tr>
+				<tr><td>17th</td><td>3</td><td>11</td><td>4</td><td>3</td><td>3</td><td>—</td></tr>
+				<tr><td>18th</td><td>3</td><td>11</td><td>4</td><td>3</td><td>3</td><td>—</td></tr>
+				<tr><td>19th</td><td>3</td><td>12</td><td>4</td><td>3</td><td>3</td><td>1</td></tr>
+				<tr><td>20th</td><td>3</td><td>13</td><td>4</td><td>3</td><td>3</td><td>1</td></tr>
+			</table>
+			<p><b>Known Spells of Level 1+.</b> You know a number of level 1+ spells that are available for you to cast with this feature. To start, choose three level 1 spells from the Sorcerer spell list. Absorb Elements, Burning Hands, and Feather Fall are recommended.</p>
+			<p class="indent">The number of spells you know increases as you gain Falconer levels, as shown in the Spells Known column of the Thunderbird Spellcasting table. Whenever that number increases, choose additional spells from the Sorcerer spell list until the number of spells on your list matches the number on the table. The chosen spells must be of a level for which you have spell slots.</p>
+			<p class="indent">For example, if you’re a level 7 Falconer, your list of prepared spells can include five Sorcerer spells of levels 1 and 2 in any combination.</p>
+			<p><b>Changing Your Prepared Spells.</b> Whenever you gain a Falconer level, you can replace one spell on your list with another Sorcerer spell for which you have spell slots.</p>
+			<p><b>Spellcasting Focus.</b> You can use an Arcane Focus as a Spellcasting Focus for your Thunderbird spells.</p>
+		</description>
+		<sheet display="false" />
+		<spellcasting name="Sorcerer" ability="Charisma" allowReplace="true">
+			<list>Sorcerer</list>
+		</spellcasting>
+		<rules>
+			<grant type="Grants" id="ID_INTERNAL_GRANTS_SPELLCASTING_FEATURE" />
+			<grant type="Grants" id="ID_INTERNAL_GRANT_MULTICLASS_SPELLCASTING_SLOTS_THIRD" requirements="ID_INTERNAL_GRANT_MULTICLASS"/>
+
+			<stat name="sorcerer:spellcasting:slots:1" value="2" level="3" />
+			<stat name="sorcerer:spellcasting:slots:1" value="1" level="4" />
+			<stat name="sorcerer:spellcasting:slots:1" value="1" level="7" />
+			<stat name="sorcerer:spellcasting:slots:2" value="2" level="7" />
+			<stat name="sorcerer:spellcasting:slots:2" value="1" level="10" />
+			<stat name="sorcerer:spellcasting:slots:3" value="2" level="13" />
+			<stat name="sorcerer:spellcasting:slots:3" value="1" level="16" />
+			<stat name="sorcerer:spellcasting:slots:4" value="1" level="19" />
+
+			<select type="Spell" name="Cantrip (Sorcerer)" supports="Sorcerer, 0" level="3" number="2" spellcasting="Sorcerer" />
+			<select type="Spell" name="Cantrip (Sorcerer)" supports="Sorcerer, 0" level="10" number="1" spellcasting="Sorcerer" />
+			<select type="Spell" name="Spell (Sorcerer)" supports="Sorcerer, 1" level="3" number="1" spellcasting="Sorcerer" />
+			<select type="Spell" name="Spell (Sorcerer)" supports="$(spellcasting:list), 1" level="3" number="2" spellcasting="Sorcerer" />
+			<select type="Spell" name="Spell (Sorcerer)" supports="$(spellcasting:list), $(spellcasting:slots)" level="4" spellcasting="Sorcerer"/>
+			<select type="Spell" name="Spell (Sorcerer)" supports="$(spellcasting:list), $(spellcasting:slots)" level="7" spellcasting="Sorcerer"/>
+			<select type="Spell" name="Spell (Sorcerer)" supports="(Sorcerer||$(spellcasting:list)), $(spellcasting:slots)" level="8" spellcasting="Sorcerer"/>
+			<select type="Spell" name="Spell (Sorcerer)" supports="$(spellcasting:list), $(spellcasting:slots)" level="10" spellcasting="Sorcerer"/>
+			<select type="Spell" name="Spell (Sorcerer)" supports="$(spellcasting:list), $(spellcasting:slots)" level="11" spellcasting="Sorcerer"/>
+			<select type="Spell" name="Spell (Sorcerer)" supports="$(spellcasting:list), $(spellcasting:slots)" level="13" spellcasting="Sorcerer"/>
+			<select type="Spell" name="Spell (Sorcerer)" supports="(Sorcerer||$(spellcasting:list)), $(spellcasting:slots)" level="14" spellcasting="Sorcerer"/>
+			<select type="Spell" name="Spell (Sorcerer)" supports="$(spellcasting:list), $(spellcasting:slots)" level="16" spellcasting="Sorcerer"/>
+			<select type="Spell" name="Spell (Sorcerer)" supports="$(spellcasting:list), $(spellcasting:slots)" level="19" spellcasting="Sorcerer"/>
+			<select type="Spell" name="Spell (Sorcerer)" supports="(Sorcerer||$(spellcasting:list)), $(spellcasting:slots)" level="20" spellcasting="Sorcerer"/>
+		</rules>
+	</element>
+
+	<element name="Level 3: Dynamo" type="Archetype Feature" source="The GooseQuill" id="ID_MRDR_GSQL_ARCHETYPE_FEATURE_THUNDERBIRD_DYNAMO">
+		<description>
+			<p>Your Bird of Prey gains the ability to harness the energy it generates. When your Bird of Prey moves at least 20 feet on your turn, choose one of the following effects, which lasts until the end of your turn:</p>
+			<p class="indent"><strong><em>Electric Jolt.</em></strong> Your Bird of Prey’s next weapon attack deals an additional 1d4 Lightning- or Thunder damage (your choice). This damage increases to 2d4 at 6th level, and 3d4 at 14th level.</p>
+			<p class="indent"><strong><em>Shock and Awe.</em></strong> The DC for your Aerial Acrobatics options increases by 1d4.</p>
+		</description>
+		<sheet alt="Dynamo">
+			<description>When your Bird of Prey moves at least 20 feet on your turn, choose one of the following effects, which lasts until the end of your turn:</description>
+		</sheet>
+		<rules>
+			<select type="Archetype Feature" name="Dynamo" supports="Dynamo" default="ID_MRDR_GSQL_ARCHETYPE_FEATURE_THUNDERBIRD_DYNAMO_JOLT" />
+			<select type="Archetype Feature" name="Dynamo" supports="Dynamo" default="ID_MRDR_GSQL_ARCHETYPE_FEATURE_THUNDERBIRD_DYNAMO_SHOCK_AND_AWE" />
+		</rules>
+	</element>
+	<element name="Electric Jolt" type="Archetype Feature" source="The GooseQuill" id="ID_MRDR_GSQL_ARCHETYPE_FEATURE_THUNDERBIRD_DYNAMO_JOLT">
+		<supports>Dynamo</supports>
+		<description>
+			<p>Your Bird of Prey’s next weapon attack deals an additional 1d4 Lightning- or Thunder damage (your choice). This damage increases to 2d4 at 6th level, and 3d4 at 14th level.</p>
+		</description>
+		<sheet>
+			<description>Your Bird of Prey’s next weapon attack deals an additional 1d4 Lightning- or Thunder damage (your choice).</description>
+			<description level="6">Your Bird of Prey’s next weapon attack deals an additional 2d4 Lightning- or Thunder damage (your choice).</description>
+			<description level="14">Your Bird of Prey’s next weapon attack deals an additional 3d4 Lightning- or Thunder damage (your choice).</description>
+		</sheet>
+	</element>
+	<element name="Shock and Awe" type="Archetype Feature" source="The GooseQuill" id="ID_MRDR_GSQL_ARCHETYPE_FEATURE_THUNDERBIRD_DYNAMO_SHOCK_AND_AWE">
+		<supports>Dynamo</supports>
+		<description>
+			<p>The DC for your Aerial Acrobatics options increases by 1d4.</p>
+		</description>
+		<sheet>
+			<description>The DC for your Aerial Acrobatics options increases by 1d4.</description>
+		</sheet>
+	</element>
+
+	<element name="Level 6: Stormborn" type="Archetype Feature" source="The GooseQuill" id="ID_MRDR_GSQL_ARCHETYPE_FEATURE_THUNDERBIRD_STORMBORN">
+		<description>
+			<p>Your Bird of Prey’s innate magic allows you to change the weather around you. As an action, you can activate one of the following effects, which affect a 30-foot Emanation centered on your Bird of Prey:</p>
+			<p class="indent"><strong><em>Volatile Weather.</em></strong> You cause it to rain or for rain to stop falling.</p>
+			<p class="indent"><strong><em>Squall.</em></strong> You can manifest winds in a direction of your choice, or alter the direction of existing winds. The winds are cable of dispersing fog or gases but have no effect on the Speed of creatures or projectiles. You can not lesser the strength of existing winds, but you can increase their strength if applicable.</p>
+		</description>
+		<sheet alt="Stormborn" action="Action">
+			<description>As an action, you can activate one of the following effects, which affect a 30-foot Emanation centered on your Bird of Prey:</description>
+		</sheet>
+		<rules>
+			<select type="Archetype Feature" name="Stormborn" supports="Stormborn" default="ID_MRDR_GSQL_ARCHETYPE_FEATURE_THUNDERBIRD_STORMBORN_VOLATILE_WEATHER" />
+			<select type="Archetype Feature" name="Stormborn" supports="Stormborn" default="ID_MRDR_GSQL_ARCHETYPE_FEATURE_THUNDERBIRD_STORMBORN_SQUALL" />
+		</rules>
+	</element>
+	<element name="Volatile Weather" type="Archetype Feature" source="The GooseQuill" id="ID_MRDR_GSQL_ARCHETYPE_FEATURE_THUNDERBIRD_STORMBORN_VOLATILE_WEATHER">
+		<supports>Stormborn</supports>
+		<description>
+			<p>You cause it to rain or for rain to stop falling.</p>
+		</description>
+		<sheet>
+			<description>You cause it to rain or for rain to stop falling.</description>
+		</sheet>
+	</element>
+	<element name="Squall" type="Archetype Feature" source="The GooseQuill" id="ID_MRDR_GSQL_ARCHETYPE_FEATURE_THUNDERBIRD_STORMBORN_SQUALL">
+		<supports>Stormborn</supports>
+		<description>
+			<p>You can manifest winds in a direction of your choice, or alter the direction of existing winds. The winds are cable of dispersing fog or gases but have no effect on the Speed of creatures or projectiles. You can not lesser the strength of existing winds, but you can increase their strength if applicable.</p>
+		</description>
+		<sheet>
+			<description>You can manifest winds in a direction of your choice, or alter the direction of existing winds. The winds are cable of dispersing fog or gases but have no effect on the Speed of creatures or projectiles. You can not lesser the strength of existing winds, but you can increase their strength if applicable.</description>
+		</sheet>
+	</element>
+
+	<element name="Level 10: Thunderstrike" type="Archetype Feature" source="The GooseQuill" id="ID_MRDR_GSQL_ARCHETYPE_FEATURE_THUNDERBIRD_THUNDERSTRIKE">
+		<description>
+			<p>When you use Shock &amp; Awe and a Quarry fails a saving throw against one of your Aerial Acrobatics options, the next cantrip or spell you cast before the end of your next turn can deal Lightning- or Thunder damage (your choice) instead of its normal damage type. You can reroll any 1s or 2s on that spell’s damage die.</p>
+		</description>
+		<sheet alt="Thunderstrike">
+			<description>When you use Shock &amp; Awe and a Quarry fails a saving throw against one of your Aerial Acrobatics options, the next cantrip or spell you cast before the end of your next turn can deal Lightning- or Thunder damage (your choice) instead of its normal damage type. You can reroll any 1s or 2s on that spell’s damage die.</description>
+		</sheet>
+	</element>
+
+	<element name="Level 14: Icon of the Storm" type="Archetype Feature" source="The GooseQuill" id="ID_MRDR_GSQL_ARCHETYPE_FEATURE_THUNDERBIRD_ICON_OFTHE_STORM">
+		<description>
+			<p>When you use Shock &amp; Awe and a Quarry fails a saving throw against one of your Aerial Acrobatics options, the next cantrip or spell you cast before the end of your next turn can deal Lightning- or Thunder damage (your choice) instead of its normal damage type. You can reroll any 1s or 2s on that spell’s damage die.</p>
+		</description>
+		<sheet alt="Icon of the Storm">
+			<description>When you use Shock &amp; Awe and a Quarry fails a saving throw against one of your Aerial Acrobatics options, the next cantrip or spell you cast before the end of your next turn can deal Lightning- or Thunder damage (your choice) instead of its normal damage type. You can reroll any 1s or 2s on that spell’s damage die.</description>
+		</sheet>
+	</element>
+
+	<element name="Level 17: Storm Uncaged" type="Archetype Feature" source="The GooseQuill" id="ID_MRDR_GSQL_ARCHETYPE_FEATURE_THUNDERBIRD_STORM_UNCAGED">
+		<description>
+			<p>Your Bird of Prey can temporarily unleash the full force of its innate magic. As an action, your Bird of Prey gains the following benefits, which last for 1 minute or until you dismiss them as a Bonus Action:</p>
+			<p class="indent"><strong><em>Large Form.</em></strong> Your Bird of Prey grows to Large size if it's in a big enough space.</p>
+			<p class="indent"><strong><em>Thunderbird's Resilience.</em></strong> Your Bird of Prey gains Temporary Hit Points equal to half its total Hit Points (round up).</p>
+			<p class="indent"><strong><em>Overcharge.</em></strong> You ignore the movement prerequisite for Dynamo, and instead choose one of Dynamo’s effects at the start of your turn (no action required).</p>
+			<p class="indent"><strong><em>Gale Force.</em></strong> Creatures of your choice that start their turn within 10 feet of your Bird of Prey take 2d8 Force damage.</p>
+			<p class="indent">Once you have used this feature, you cannot do so again until you finish a Rest.</p>
+		</description>
+		<sheet alt="Storm Uncaged" action="Action" usage="Long Rest">
+			<description>As an action, your Bird of Prey gains the following benefits, which last for 1 minute or until you dismiss them as a Bonus Action:&#13;
+				• Your Bird of Prey grows to Large size if it's in a big enough space.&#13;
+				• Your Bird of Prey gains Temporary Hit Points equal to half its total Hit Points (round up).&#13;
+				• You ignore the movement prerequisite for Dynamo, and instead choose one of Dynamo’s effects at the start of your turn (no action required).&#13;
+				• Creatures of your choice that start their turn within 10 feet of your Bird of Prey take 2d8 Force damage.
+			</description>
+		</sheet>
+	</element>
+    
+</elements>

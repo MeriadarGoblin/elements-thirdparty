@@ -1,0 +1,166 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<elements>
+    <info>
+        <update version="0.0.1">
+            <file name="falconer-raven.xml" url="https://raw.githubusercontent.com/MeriadarGoblin/elements-thirdparty/refs/heads/main/Reddit/The%20GooseQuill/falconer-raven.xml" />
+        </update>
+    </info>
+    
+    <element name="Raven" type="Archetype" source="The GooseQuill" id="ID_MRDR_GSQL_ARCHETYPE_FALCONER_RAVEN">
+		<supports>Falconer Subclass</supports>
+		<prerequisite>An especially cunning, vengeful Bird of Prey.</prerequisite>
+		<description>
+			<p>Music and laughter fills the inn’s taproom as the band plays a townfolks’ favourite- their singer a black-feathered passerine bird, its voice sounding just like its owner’s; a halfling making her way through the crowd. The bird was a sight to behold, flapping its wings on the beat of the drums, croaking and mimicking its owner’s rendition of ‘Bottom of the Bottle’, the crowd enamoured and enthralled by the raven in front of them, enough for the halfling to rummage through the audience’s pockets to collect their nightly tips.</p>
+			<p class="indent">Falconers who choose the Raven as their Bird of Prey do so for its remarkable intelligence, a trait prized by its handlers employed in fields such as reconnaisance, counterintelligence, thievery, and entertainment. Ravens also bear the ability to hold grudges, making them all the more fierce when doing battle with a previously encountered adverary.</p>
+			<div element="ID_MRDR_GSQL_ARCHETYPE_FEATURE_RAVEN_BIRD" />
+			<div element="ID_MRDR_GSQL_ARCHETYPE_FEATURE_RAVEN_UNKINDNESS" />
+			<div element="ID_MRDR_GSQL_ARCHETYPE_FEATURE_RAVEN_CORVIDS_MEMORY" />
+			<div element="ID_MRDR_GSQL_ARCHETYPE_FEATURE_RAVEN_FELL_OMEN" />
+			<div element="ID_MRDR_GSQL_ARCHETYPE_FEATURE_RAVEN_QUOTH_THE_RAVEN" />
+			<div element="ID_MRDR_GSQL_ARCHETYPE_FEATURE_RAVEN_CLEVER_GIRL" />
+		</description>
+		<sheet display="false" />
+		<rules>
+			<grant type="Archetype Feature" id="ID_MRDR_GSQL_ARCHETYPE_FEATURE_RAVEN_BIRD" level="3" />
+			<grant type="Archetype Feature" id="ID_MRDR_GSQL_ARCHETYPE_FEATURE_RAVEN_UNKINDNESS" level="3" />
+			<grant type="Archetype Feature" id="ID_MRDR_GSQL_ARCHETYPE_FEATURE_RAVEN_CORVIDS_MEMORY" level="6" />
+			<grant type="Archetype Feature" id="ID_MRDR_GSQL_ARCHETYPE_FEATURE_RAVEN_FELL_OMEN" level="10" />
+			<grant type="Archetype Feature" id="ID_MRDR_GSQL_ARCHETYPE_FEATURE_RAVEN_QUOTH_THE_RAVEN" level="14" />
+			<grant type="Archetype Feature" id="ID_MRDR_GSQL_ARCHETYPE_FEATURE_RAVEN_CLEVER_GIRL" level="17" />
+
+			<grant type="Grants" id="ID_MRDR_GSQL_GRANTS_RAVEN_LEVEL_6" level="6" />
+			<grant type="Grants" id="ID_MRDR_GSQL_GRANTS_RAVEN_LEVEL_10" level="10" />
+			<grant type="Grants" id="ID_MRDR_GSQL_GRANTS_RAVEN_LEVEL_14" level="14" />
+			<grant type="Grants" id="ID_MRDR_GSQL_GRANTS_RAVEN_LEVEL_17" level="17" />
+		</rules>
+	</element>
+
+	<element name="Level 3: Raven" type="Archetype Feature" source="The GooseQuill" id="ID_MRDR_GSQL_ARCHETYPE_FEATURE_RAVEN_BIRD">
+		<description>
+			<p>Your Bird of Prey is a raven. To reflect your choice of its species, its stat block changes in the following ways:</p>
+			<center>
+				<p><b>Armor Class.</b></p>
+				<p><i>The Bird of Prey’s AC calculation changes to:</i></p>
+				<p>10 plus the Bird of Prey’s Dexterity modifier plus your Wisdom modifier.</p>
+				<p><b>Hit Points.</b></p>
+				<p><i>The Bird of Prey’s HP changes to:</i></p>
+				<p>The Bird of Prey’s Constitution modifier times your Falconer level, plus four times your Falconer level (the Bird of Prey has a number of Hit Dice [d8s] equal to your Falconer level).</p>
+				<p><b>Speed.</b></p>
+				<p>The Bird of Prey’s Fly Speed increases by 10 feet.</p>
+				<p><b>Ability Scores.</b></p>
+				<p>The Bird of Prey’s Strength score increases to 10, its Intelligence score to 8, and its Charisma score to 10.</p>
+				<p><b>Senses.</b></p>
+				<p>The Bird of Prey has Darkvision with a range of 60 feet.</p>
+				<p><b>Traits.</b></p>
+				<p><i>The Bird of Prey gains the Mimicry trait:</i></p>
+				<p><b><i>Mimicry.</i></b> Your Bird of Prey can mimic simple sounds it has heard, such as a whisper or chitter. A hearer can discern the sounds are imitations with a successful Wisdom (Insight) check against your Bird of Prey DC.</p>
+			</center>
+		</description>
+		<sheet display="false" />
+	</element>
+
+	<element name="Level 3: Unkindness" type="Archetype Feature" source="The GooseQuill" id="ID_MRDR_GSQL_ARCHETYPE_FEATURE_RAVEN_UNKINDNESS">
+		<description>
+			<p>Your Bird of Prey’s ability to bear grudges against those who wronged it allow you to punish enemies in battle.</p>
+			<p class="indent"><strong><em>Raven's Retort.</em></strong> When a creature hits your Bird of Prey with an attack, you can use a Reaction to make a weapon attack against that creature if the target is within your weapon’s range.</p>
+			<p class="indent"><strong><em>Raven's Revenge.</em></strong> If you use Raven’s Retort against a Quarry, your Bird of Prey gains Advantage on the next weapon attack it makes against that creature until the end of your next turn, and the Quarry takes additional Psychic damage equal to your Bird of Prey’s Intelligence modifier (minimum of 1) if the attack hits.</p>
+		</description>
+		<sheet alt="Unkindness" />
+		<rules>
+			<select type="Archetype Feature" name="Unkindness" supports="Unkindness" default="ID_MRDR_GSQL_ARCHETYPE_FEATURE_RAVEN_UNKINDNESS_RETORT" />
+			<select type="Archetype Feature" name="Unkindness" supports="Unkindness" default="ID_MRDR_GSQL_ARCHETYPE_FEATURE_RAVEN_UNKINDNESS_REVENGE" />
+		</rules>
+	</element>
+	<element name="Raven's Retort" type="Archetype Feature" source="The GooseQuill" id="ID_MRDR_GSQL_ARCHETYPE_FEATURE_RAVEN_UNKINDNESS_RETORT">
+		<supports>Unkindness</supports>
+		<description>
+			<p>When a creature hits your Bird of Prey with an attack, you can use a Reaction to make a weapon attack against that creature if the target is within your weapon’s range.</p>
+		</description>
+		<sheet action="Reaction">
+			<description>When a creature hits your Bird of Prey with an attack, you can use a Reaction to make a weapon attack against that creature if the target is within your weapon’s range.</description>
+		</sheet>
+	</element>
+	<element name="Raven's Revenge" type="Archetype Feature" source="The GooseQuill" id="ID_MRDR_GSQL_ARCHETYPE_FEATURE_RAVEN_UNKINDNESS_REVENGE">
+		<supports>Unkindness</supports>
+		<description>
+			<p>If you use Raven’s Retort against a Quarry, your Bird of Prey gains Advantage on the next weapon attack it makes against that creature until the end of your next turn, and the Quarry takes additional Psychic damage equal to your Bird of Prey’s Intelligence modifier (minimum of 1) if the attack hits.</p>
+		</description>
+		<sheet>
+			<description>If you use Raven’s Retort against a Quarry, your Bird of Prey gains Advantage on the next weapon attack it makes against that creature until the end of your next turn, and the Quarry takes additional {{raven revenge}} Psychic damage if the attack hits.</description>
+		</sheet>
+		<rules>
+			<stat name="raven revenge" value="1" bonus="base" />
+			<stat name="raven revenge" value="companion:intelligence:modifier" bonus="base" />
+		</rules>
+	</element>
+
+	<element name="Level 6: Corvid's Memory" type="Archetype Feature" source="The GooseQuill" id="ID_MRDR_GSQL_ARCHETYPE_FEATURE_RAVEN_CORVIDS_MEMORY">
+		<description>
+			<p>You teach your Bird of Prey to remember short phrases. Your own wit grows sharper.</p>
+			<p class="indent"><strong><em>Winged Messenger.</em></strong> While within 10 feet of your Bird of Prey, you can have it memorize a message of 25 words or less. Your Bird of Prey can then repeat the message under a specific condition predetermined by you. It will remember the message until you instruct it to memorize a new one.</p>
+			<p class="indent"><strong><em>Not Just Elephants.</em></strong> You and your Bird of Prey have Advantage on any Intelligence (History) checks made to remember significant details about creatures that have either wronged or assisted you, such as characterising physical traits or names. You gain proficiency in Intelligence saving throws.</p>
+		</description>
+		<sheet alt="Corvid's Memory" />
+		<rules>
+			<select type="Archetype Feature" name="Corvid's Memory" supports="Corvid Memory" default="ID_MRDR_GSQL_ARCHETYPE_FEATURE_RAVEN_CORVID_WINGED_MESSENGER" />
+			<select type="Archetype Feature" name="Corvid's Memory" supports="Corvid Memory" default="ID_MRDR_GSQL_ARCHETYPE_FEATURE_RAVEN_CORVID_NOTJUST_ELEPHANTS" />
+		</rules>
+	</element>
+	<element name="Winged Messenger" type="Archetype Feature" source="The GooseQuill" id="ID_MRDR_GSQL_ARCHETYPE_FEATURE_RAVEN_CORVID_WINGED_MESSENGER">
+		<supports>Corvid Memory</supports>
+		<description>
+			<p>While within 10 feet of your Bird of Prey, you can have it memorize a message of 25 words or less. Your Bird of Prey can then repeat the message under a specific condition predetermined by you. It will remember the message until you instruct it to memorize a new one.</p>
+		</description>
+		<sheet>
+			<description>While within 10 feet of your Bird of Prey, you can have it memorize a message of 25 words or less. Your Bird of Prey can then repeat the message under a specific condition predetermined by you. It will remember the message until you instruct it to memorize a new one.</description>
+		</sheet>
+	</element>
+	<element name="Not Just Elephants" type="Archetype Feature" source="The GooseQuill" id="ID_MRDR_GSQL_ARCHETYPE_FEATURE_RAVEN_CORVID_NOTJUST_ELEPHANTS">
+		<supports>Corvid Memory</supports>
+		<description>
+			<p>You and your Bird of Prey have Advantage on any Intelligence (History) checks made to remember significant details about creatures that have either wronged or assisted you, such as characterising physical traits or names. You gain proficiency in Intelligence saving throws.</p>
+		</description>
+		<sheet>
+			<description>You and your Bird of Prey have Advantage on any Intelligence (History) checks made to remember significant details about creatures that have either wronged or assisted you, such as characterising physical traits or names. You gain proficiency in Intelligence saving throws.</description>
+		</sheet>
+	</element>
+
+	<element name="Level 10: Fell Omen" type="Archetype Feature" source="The GooseQuill" id="ID_MRDR_GSQL_ARCHETYPE_FEATURE_RAVEN_FELL_OMEN">
+		<description>
+			<p>Your Bird of Prey’s presence fills its Quarry with a sense of unease. In addition to the Aerial Acrobatics options already available to you, you can choose the option below:</p>
+			<p class="indent"><strong><em>Frightful Mark.</em></strong> The Quarry must make a Wisdom saving throw or have the Frightened condition until the end of its next turn.</p>
+		</description>
+		<sheet alt="Corvid's Memory" />
+		<rules>
+			<select type="Archetype Feature" name="Fell Omen" supports="Fell Omen" default="ID_MRDR_GSQL_ARCHETYPE_FEATURE_RAVEN_FELL_OMEN_FRIGHTFUL_MARK" />
+		</rules>
+	</element>
+	<element name="Frightful Mark" type="Archetype Feature" source="The GooseQuill" id="ID_MRDR_GSQL_ARCHETYPE_FEATURE_RAVEN_FELL_OMEN_FRIGHTFUL_MARK">
+		<supports>Fell Omen</supports>
+		<description>
+			<p>The Quarry must make a Wisdom saving throw or have the Frightened condition until the end of its next turn.</p>
+		</description>
+		<sheet>
+			<description>The Quarry must make a Wisdom saving throw or have the Frightened condition until the end of its next turn.</description>
+		</sheet>
+	</element>
+	
+	<element name="Level 14: Quoth the Raven" type="Archetype Feature" source="The GooseQuill" id="ID_MRDR_GSQL_ARCHETYPE_FEATURE_RAVEN_QUOTH_THE_RAVEN">
+		<description>
+			<p>Once per turn, your Bird of Prey can make one additional attack when it takes the Attack action when the attack is made against a Quarry that has the Frightened condition.</p>
+		</description>
+		<sheet alt="Quoth the Raven">
+			<description>Once per turn, your Bird of Prey can make one additional attack when it takes the Attack action when the attack is made against a Quarry that has the Frightened condition.</description>
+		</sheet>
+	</element>
+
+	<element name="Level 17: Clever Girl" type="Archetype Feature" source="The GooseQuill" id="ID_MRDR_GSQL_ARCHETYPE_FEATURE_RAVEN_CLEVER_GIRL">
+		<description>
+			<p>Your Bird of Prey’s intelligence allows for it to understand and perform more complex commands. When you use a Bonus Action to activate an Aerial Acrobatics option, you can activate an additional second option of your choosing.</p>
+		</description>
+		<sheet alt="Clever Girl">
+			<description>When you use a Bonus Action to activate an Aerial Acrobatics option, you can activate an additional second option of your choosing.</description>
+		</sheet>
+	</element>
+    
+</elements>

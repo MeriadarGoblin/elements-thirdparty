@@ -1,0 +1,141 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<elements>
+    <info>
+        <update version="0.0.1">
+            <file name="falconer-hawk.xml" url="https://raw.githubusercontent.com/MeriadarGoblin/elements-thirdparty/refs/heads/main/Reddit/The%20GooseQuill/falconer-hawk.xml" />
+        </update>
+    </info>
+    
+    <element name="Hawk" type="Archetype" source="The GooseQuill" id="ID_MRDR_GSQL_ARCHETYPE_FALCONER_HAWK">
+		<supports>Falconer Subclass</supports>
+		<prerequisite>Nimble and adept at entering- and exiting combat at a moment’s notice.</prerequisite>
+		<description>
+			<p>The trees fly past as a small, avian form darts between the canopy’s branches, its eyes fixated on the human running away from the sacred temple grounds, stumbling over the underbrush and dead branches, on the verge of losing his balance. Clutched in his white-knuckled hand is an object, a golden artifact belonging to the temple he had stolen from. Closely behind him is an elf, her gaze fixed in a look of determination, nimbly jumping over the fallen trees and ducking under branches as they cross her path, undoubtedly gaining on the human. She shouts something in elvish, and the hawk plummets towards the human, a shriek filling the air as its claws dig into the human’s legs.</p>
+			<p class="indent">The Hawk is known primarily for its agility. It hunts below the treetops, skillfullly dodging trunk and branch of the trees it zips past. It can use this excellent maneuverability to dodge trees and attacks alike, allowing it to soar through a battlefield and come out the other end largely unscathed. The hawk is valued particularly by hunters, as its maneuverability allows it to give chase to quarry in densely forested areas.</p>
+			<div element="ID_MRDR_GSQL_ARCHETYPE_FEATURE_HAWK_BIRD" />
+			<div element="ID_MRDR_GSQL_ARCHETYPE_FEATURE_HAWK_ACCIPTERS_AGILITY" />
+			<div element="ID_MRDR_GSQL_ARCHETYPE_FEATURE_HAWK_BUZZARDS_BALANCE" />
+			<div element="ID_MRDR_GSQL_ARCHETYPE_FEATURE_HAWK_RUDDER_TAIL" />
+			<div element="ID_MRDR_GSQL_ARCHETYPE_FEATURE_HAWK_NIMBLE" />
+			<div element="ID_MRDR_GSQL_ARCHETYPE_FEATURE_HAWK_SCYTHE_WING" />
+		</description>
+		<sheet display="false" />
+		<rules>
+			<grant type="Archetype Feature" id="ID_MRDR_GSQL_ARCHETYPE_FEATURE_HAWK_BIRD" level="3" />
+			<grant type="Archetype Feature" id="ID_MRDR_GSQL_ARCHETYPE_FEATURE_HAWK_ACCIPTERS_AGILITY" level="3" />
+			<grant type="Archetype Feature" id="ID_MRDR_GSQL_ARCHETYPE_FEATURE_HAWK_BUZZARDS_BALANCE" level="6" />
+			<grant type="Archetype Feature" id="ID_MRDR_GSQL_ARCHETYPE_FEATURE_HAWK_RUDDER_TAIL" level="10" />
+			<grant type="Archetype Feature" id="ID_MRDR_GSQL_ARCHETYPE_FEATURE_HAWK_NIMBLE" level="14" />
+			<grant type="Archetype Feature" id="ID_MRDR_GSQL_ARCHETYPE_FEATURE_HAWK_SCYTHE_WING" level="17" />
+			
+			<grant type="Grants" id="ID_MRDR_GSQL_GRANTS_HAWK_LEVEL_6" level="6" />
+			<grant type="Grants" id="ID_MRDR_GSQL_GRANTS_HAWK_LEVEL_10" level="10" />
+			<grant type="Grants" id="ID_MRDR_GSQL_GRANTS_HAWK_LEVEL_14" level="14" />
+			<grant type="Grants" id="ID_MRDR_GSQL_GRANTS_HAWK_LEVEL_17" level="17" />
+		</rules>
+	</element>
+
+	<element name="Level 3: Hawk" type="Archetype Feature" source="The GooseQuill" id="ID_MRDR_GSQL_ARCHETYPE_FEATURE_HAWK_BIRD">
+		<description>
+			<p>Your Bird of Prey is a hawk. To reflect your choice of its species, its stat block changes in the following ways:</p>
+			<center>
+				<p><b>Armor Class.</b></p>
+				<p><i>The Bird of Prey’s AC calculation changes to:</i></p>
+				<p>10 plus the Bird of Prey’s Dexterity modifier plus your Wisdom modifier.</p>
+				<p><b>Hit Points.</b></p>
+				<p><i>The Bird of Prey’s HP changes to:</i></p>
+				<p>The Bird of Prey’s Constitution modifier times your Falconer level, plus four times your Falconer level (the Bird of Prey has a number of Hit Dice [d8s] equal to your Falconer level).</p>
+				<p><b>Speed.</b></p>
+				<p>The Bird of Prey’s Fly Speed increases by 10 feet.</p>
+				<p><b>Ability Scores.</b></p>
+				<p>The Bird of Prey’s Strength score changes to 12, and its Constitution score to 15.</p>
+			</center>
+		</description>
+		<sheet display="false" />
+	</element>
+
+	<element name="Level 3: Accipter's Agility" type="Archetype Feature" source="The GooseQuill" id="ID_MRDR_GSQL_ARCHETYPE_FEATURE_HAWK_ACCIPTERS_AGILITY">
+		<description>
+			<p>When a creature that you can see attacks your Bird of Prey while your Bird of Prey is within 30 feet of you, you can take a Reaction to impose Disadvantage on the triggering attack roll.</p>
+			<p class="indent">You can use this feature a number of times equal to your Wisdom modifier, and regain all expended uses when you finish a Rest.</p>
+		</description>
+		<sheet alt="Accipter's Agility" action="Reaction" usage="{{accipter agility}}/Rest">
+			<description>After using an Aerial Acrobatics option against a Quarry, the next weapon attack made against that Quarry by a creature other than you or your Bird of Prey gains Advantage on the attack roll.</description>
+		</sheet>
+		<rules>
+			<stat name="accipter agility" value="wisdom:modifier" bonus="base" />
+		</rules>
+	</element>
+
+	<element name="Level 6: Buzzard's Balance" type="Archetype Feature" source="The GooseQuill" id="ID_MRDR_GSQL_ARCHETYPE_FEATURE_HAWK_BUZZARDS_BALANCE">
+		<description>
+			<p>You have learned to mimic your Bird of Prey’s excellent sense of balance. As a result, you gain the following benefits:</p>
+			<p class="indent"><strong><em>Steady Footing.</em></strong> You have Advantage on saving throws against being moved against your will.</p>
+			<p class="indent"><strong><em>Deliberate Steps.</em></strong> Difficult terrain doesn’t slow your movement.</p>
+		</description>
+		<sheet alt="Buzzard's Balance" />
+		<rules>
+			<select type="Archetype Feature" name="Buzzard Balance" supports="Buzzard Balance" default="ID_MRDR_GSQL_ARCHETYPE_FEATURE_BUZZARD_STEADY_FOOTING" />
+			<select type="Archetype Feature" name="Buzzard Balance" supports="Buzzard Balance" default="ID_MRDR_GSQL_ARCHETYPE_FEATURE_BUZZARD_DELIBERATE_STEPS" />
+		</rules>
+	</element>
+	<element name="Steady Footing" type="Archetype Feature" source="The GooseQuill" id="ID_MRDR_GSQL_ARCHETYPE_FEATURE_BUZZARD_STEADY_FOOTING">
+		<supports>Buzzard Balance</supports>
+		<description>
+			<p>You have Advantage on saving throws against being moved against your will.</p>
+		</description>
+		<sheet>
+			<description>You have Advantage on saving throws against being moved against your will.</description>
+		</sheet>
+	</element>
+	<element name="Deliberate Steps" type="Archetype Feature" source="The GooseQuill" id="ID_MRDR_GSQL_ARCHETYPE_FEATURE_BUZZARD_DELIBERATE_STEPS">
+		<supports>Buzzard Balance</supports>
+		<description>
+			<p>Difficult terrain doesn’t slow your movement.</p>
+		</description>
+		<sheet>
+			<description>Difficult terrain doesn’t slow your movement.</description>
+		</sheet>
+	</element>
+
+	<element name="Level 10: Rudder Tail" type="Archetype Feature" source="The GooseQuill" id="ID_MRDR_GSQL_ARCHETYPE_FEATURE_HAWK_RUDDER_TAIL">
+		<description>
+			<p>Your Bird of Prey’s physiology combined with hours of training make it exceptionally hard to hit.</p>
+			<p class="indent"><strong><em>Daredevil Maneuvers.</em></strong> You can use Accipiter’s Agility an unlimited number of times.</p>
+			<p class="indent"><strong><em>Tactical Retreat.</em></strong> If you use Accipiter’s Agility to impose Disadvantage on an attack made by a Quarry, the damage dealt to your Bird of Prey is halved if the attack still hits (round down).</p>
+		</description>
+		<sheet alt="Rudder's Tail" />
+		<rules>
+			<select type="Archetype Feature" name="Rudder Tail" supports="Rudder Tail" default="ID_MRDR_GSQL_ARCHETYPE_FEATURE_RUDDER_TACTICAL_RETREAT" />
+			<stat name="accipter agility" value="999" bonus="base" />
+		</rules>
+	</element>
+	<element name="Tactical Retreat" type="Archetype Feature" source="The GooseQuill" id="ID_MRDR_GSQL_ARCHETYPE_FEATURE_RUDDER_TACTICAL_RETREAT">
+		<supports>Rudder Tail</supports>
+		<description>
+			<p>If you use Accipiter’s Agility to impose Disadvantage on an attack made by a Quarry, the damage dealt to your Bird of Prey is halved if the attack still hits (round down).</p>
+		</description>
+		<sheet>
+			<description>If you use Accipiter’s Agility to impose Disadvantage on an attack made by a Quarry, the damage dealt to your Bird of Prey is halved if the attack still hits (round down).</description>
+		</sheet>
+	</element>
+
+	<element name="Level 14: Nimble" type="Archetype Feature" source="The GooseQuill" id="ID_MRDR_GSQL_ARCHETYPE_FEATURE_HAWK_NIMBLE">
+		<description>
+			<p>When you use a Bonus Action to activate an Aerial Acrobatics option, you can take the Dash- or Disengage action as part of that same Bonus Action.</p>
+		</description>
+		<sheet alt="Nimble">
+			<description>When you use a Bonus Action to activate an Aerial Acrobatics option, you can take the Dash- or Disengage action as part of that same Bonus Action.</description>
+		</sheet>
+	</element>
+
+	<element name="Level 17: Scythe-Wing" type="Archetype Feature" source="The GooseQuill" id="ID_MRDR_GSQL_ARCHETYPE_FEATURE_HAWK_SCYTHE_WING">
+		<description>
+			<p>When you use Accipiter’s Agility to impose Disadvantage on an attack, and that attack misses, you or your Bird of Prey can use a Reaction to make one weapon attack against that creature.</p>
+		</description>
+		<sheet alt="Scythe-Wing" action="Reaction">
+			<description>When you use Accipiter’s Agility to impose Disadvantage on an attack, and that attack misses, you or your Bird of Prey can use a Reaction to make one weapon attack against that creature.</description>
+		</sheet>
+	</element>
+    
+</elements>

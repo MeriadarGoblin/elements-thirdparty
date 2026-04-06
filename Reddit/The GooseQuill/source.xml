@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<elements>
+    <info>
+        <update version="0.0.1">
+            <file name="items.xml" url="https://raw.githubusercontent.com/MeriadarGoblin/elements-thirdparty/refs/heads/main/Reddit/The%20GooseQuill/items.xml" />
+        </update>
+    </info>
+    
+    <element name="The GooseQuill" type="Source" source="The GooseQuill" id="ID_MRDR_GSQL_SOURCE">
+        <description>
+            <p>An avid Dungeons &amp; Dragons player, game design graduate and freelance TTRPG writer from the Netherlands. I first started playing back in 2018 and published my first homebrew in 2022, primarily as a way to get feedback on my graduation project (Valka’s Guide to Vleurland). Now that I have graduated, my full-time job in software development doesn’t provide the same creative outlet that college did, so I now create homebrew to scratch that creative itch.</p>
+        </description>
+        <setters>
+            <set name="abbreviation">GSQL</set>
+            <set name="url">https://homebrewery.naturalcrit.com/share/ZCA6yCqEGcFD</set>
+            <set name="image">https://images.squarespace-cdn.com/content/v1/6757117b09cc6f3d061c612c/d5344107-ac96-482e-b6ae-e2285b680acd/GQTransp.png?format=2500w</set>
+            <set name="author" abbreviation="GSQL" url="https://www.thegoosequill.com/">TheGooseQuill</set>
+            <set name="official">false</set>
+            <set name="supplement">false</set>
+            <set name="playtest">false</set>
+            <set name="third-party">false</set>
+            <set name="homebrew">true</set>
+            <set name="league">false</set>
+            <set name="release">20250101</set>
+        </setters>
+    </element>
+    
+</elements>

@@ -1,0 +1,157 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<elements>
+    <info>
+        <update version="0.0.1">
+            <file name="falconer-owl.xml" url="https://raw.githubusercontent.com/MeriadarGoblin/elements-thirdparty/refs/heads/main/Reddit/The%20GooseQuill/falconer-owl.xml" />
+        </update>
+    </info>
+    
+    <element name="Owl" type="Archetype" source="The GooseQuill" id="ID_MRDR_GSQL_ARCHETYPE_FALCONER_OWL">
+		<supports>Falconer Subclass</supports>
+		<prerequisite>A silent, nocturnal hunter.</prerequisite>
+		<description>
+			<p>The eastern watchtower of the warlord’s keep was manned by a single guard, standing atop the stone tower as he watched over the fields below him, painted in the darkness of a moonless night. The keep, which until recently had belonged to a noble house, had been taken by the warlord while the keep’s garrison had been conveniently distracted by trouble in the nearby villages. The guard was revisiting the pleasant memories of him and his fellow men raising their warlord’s flag on the keep’s tallest tower when he was ripped out of his reverie by a sharp whistle. He looked over the tower’s battlements, looking for the source of the sound when without warning, a pair of talons dug themselves in his back, knocking the air out of his lungs as he was pushed over the stone battlements, plummeting towards his untimely demise.</p>
+			<p class="indent">Known for its striking visage and telltale call, the Owl is a recurring symbol in many cultures. Whether it represents the nighttime, wisdom, or misfortune, owls are skilled nocturnal hunters, prized for their excellent nocturnal vision and their ability to fly without making any noise at all. This makes owls an excellent choice for falconers who want to remain unnoticed in their line of work: assassins or scouts will find an excellent companion in the owl.</p>
+			<div element="ID_MRDR_GSQL_ARCHETYPE_FEATURE_OWL_BIRD" />
+			<div element="ID_MRDR_GSQL_ARCHETYPE_FEATURE_OWL_VEIL_OF_NIGHT" />
+			<div element="ID_MRDR_GSQL_ARCHETYPE_FEATURE_OWL_NOCTURNAL_HUNTER" />
+			<div element="ID_MRDR_GSQL_ARCHETYPE_FEATURE_OWL_ELEMENT_OF_SURPRISE" />
+			<div element="ID_MRDR_GSQL_ARCHETYPE_FEATURE_OWL_SERRATED_FEATHERS" />
+			<div element="ID_MRDR_GSQL_ARCHETYPE_FEATURE_OWL_BELIGERENT_STRIGIFORMES" />
+		</description>
+		<sheet display="false" />
+		<rules>
+			<grant type="Archetype Feature" id="ID_MRDR_GSQL_ARCHETYPE_FEATURE_OWL_BIRD" level="3" />
+			<grant type="Archetype Feature" id="ID_MRDR_GSQL_ARCHETYPE_FEATURE_OWL_VEIL_OF_NIGHT" level="3" />
+			<grant type="Archetype Feature" id="ID_MRDR_GSQL_ARCHETYPE_FEATURE_OWL_NOCTURNAL_HUNTER" level="6" />
+			<grant type="Archetype Feature" id="ID_MRDR_GSQL_ARCHETYPE_FEATURE_OWL_ELEMENT_OF_SURPRISE" level="10" />
+			<grant type="Archetype Feature" id="ID_MRDR_GSQL_ARCHETYPE_FEATURE_OWL_SERRATED_FEATHERS" level="14" />
+			<grant type="Archetype Feature" id="ID_MRDR_GSQL_ARCHETYPE_FEATURE_OWL_BELIGERENT_STRIGIFORMES" level="17" />
+			 
+			<grant type="Grants" id="ID_MRDR_GSQL_GRANTS_OWL_LEVEL_6" level="6" />
+			<grant type="Grants" id="ID_MRDR_GSQL_GRANTS_OWL_LEVEL_10" level="10" />
+			<grant type="Grants" id="ID_MRDR_GSQL_GRANTS_OWL_LEVEL_14" level="14" />
+			<grant type="Grants" id="ID_MRDR_GSQL_GRANTS_OWL_LEVEL_17" level="17" />
+		</rules>
+	</element>
+
+	<element name="Level 3: Owl" type="Archetype Feature" source="The GooseQuill" id="ID_MRDR_GSQL_ARCHETYPE_FEATURE_OWL_BIRD">
+		<description>
+			<p>Your Bird of Prey is an owl. To reflect your choice of its species, its stat block changes in the following ways:</p>
+			<center>
+				<p><b>Armor Class.</b></p>
+				<p><i>The Bird of Prey’s AC calculation changes to:</i></p>
+				<p>10 plus the Bird of Prey’s Dexterity modifier plus your Wisdom modifier.</p>
+				<p><b>Hit Points.</b></p>
+				<p><i>The Bird of Prey’s HP changes to:</i></p>
+				<p>The Bird of Prey’s Constitution modifier times your Falconer level, plus four times your Falconer level (the Bird of Prey has a number of Hit Dice [d8s] equal to your Falconer level).</p>
+				<p><b>Ability Scores.</b></p>
+				<p>The Bird of Prey’s Strength score changes to 12, and its Constitution score to 15.</p>
+				<p><b>Senses.</b></p>
+				<p>The Bird of Prey has Darkvision with a range of 120 feet.</p>
+				<p><b>Traits.</b></p>
+				<p><i>The Bird of Prey gains the Silent Flight trait:</i></p>
+				<p><b><i>Silent Flight.</i></b> The Bird of Prey does not produce sound while flying.</p>
+			</center>
+		</description>
+		<sheet display="false" />
+	</element>
+
+	<element name="Level 3: Veil of Night" type="Archetype Feature" source="The GooseQuill" id="ID_MRDR_GSQL_ARCHETYPE_FEATURE_OWL_VEIL_OF_NIGHT">
+		<description>
+			<p>You can take Advantage of your Bird of Prey’s abilities as an ambush hunter.</p>
+			<p class="indent"><strong><em>Stealthy.</em></strong> You and your Bird of Prey can take the Hide action as a Bonus Action.</p>
+			<p class="indent"><strong><em>Camouflage.</em></strong> Your Bird of Prey has Advantage on Dexterity (Stealth) checks it makes as part of the Hide action.</p>
+			<p class="indent"><strong><em>Creature of the Night.</em></strong> While in Dim Light, your Bird of Prey is Heavily Obscured.</p>
+		</description>
+		<sheet alt="Veil of Night" />
+		<rules>
+			<select type="Archetype Feature" name="Veil of Night" supports="Veil of Night" default="ID_MRDR_GSQL_ARCHETYPE_FEATURE_OWL_VEIL_OF_NIGHT_STEALTHY" />
+		</rules>
+	</element>
+	<element name="Stealthy" type="Archetype Feature" source="The GooseQuill" id="ID_MRDR_GSQL_ARCHETYPE_FEATURE_OWL_VEIL_OF_NIGHT_STEALTHY">
+		<supports>Veil of Night</supports>
+		<description>
+			<p>You and your Bird of Prey can take the Hide action as a Bonus Action.</p>
+		</description>
+		<sheet action="Bonus Action">
+			<description>You and your Bird of Prey can take the Hide action as a Bonus Action.</description>
+		</sheet>
+	</element>
+
+	<element name="Level 6: Nocturnal Hunter" type="Archetype Feature" source="The GooseQuill" id="ID_MRDR_GSQL_ARCHETYPE_FEATURE_OWL_NOCTURNAL_HUNTER">
+		<description>
+			<p>Your time spent with owls has taught you how to mimic their sleep pattern and improved your senses.</p>
+			<p class="indent"><strong><em>Night Owl.</em></strong> Instead of sleeping, you can finish a Long Rest in 4 hours if you spend those hours in a motionless, trancelike state, during which you retain consciousness.</p>
+			<p class="indent"><strong><em>Adapted to the Dark.</em></strong> You gain Darkvision with a range of 60 feet. If you already have Darkvision, its range increases by 60 feet.</p>
+			<p class="indent"><strong><em>Silent through the Night.</em></strong> You gain a bonus to Dexterity (Stealth) checks equal to your Wisdom modifier (minimum of 1).</p>
+		</description>
+		<sheet alt="Nocturnal Hunter" />
+		<rules>
+			<select type="Archetype Feature" name="Nocturnal Hunter" supports="Nocturnal Hunter" default="ID_MRDR_GSQL_ARCHETYPE_FEATURE_OWL_NOCTURNAL_HUNTER_NIGHTOWL" />
+			<select type="Archetype Feature" name="Nocturnal Hunter" supports="Nocturnal Hunter" default="ID_MRDR_GSQL_ARCHETYPE_FEATURE_OWL_NOCTURNAL_HUNTER_ADAPTED_TOTHE_DARK" />
+			<select type="Archetype Feature" name="Nocturnal Hunter" supports="Nocturnal Hunter" default="ID_MRDR_GSQL_ARCHETYPE_FEATURE_OWL_NOCTURNAL_HUNTER_SILENT_THROUGH_THE_NIGHT" />
+		</rules>
+	</element>
+	<element name="Night Owl" type="Archetype Feature" source="The GooseQuill" id="ID_MRDR_GSQL_ARCHETYPE_FEATURE_OWL_NOCTURNAL_HUNTER_NIGHTOWL">
+		<supports>Nocturnal Hunter</supports>
+		<description>
+			<p>Instead of sleeping, you can finish a Long Rest in 4 hours if you spend those hours in a motionless, trancelike state, during which you retain consciousness.</p>
+		</description>
+		<sheet>
+			<description>Instead of sleeping, you can finish a Long Rest in 4 hours if you spend those hours in a motionless, trancelike state, during which you retain consciousness.</description>
+		</sheet>
+	</element>
+	<element name="Adapted to the Dark" type="Archetype Feature" source="The GooseQuill" id="ID_MRDR_GSQL_ARCHETYPE_FEATURE_OWL_NOCTURNAL_HUNTER_ADAPTED_TOTHE_DARK">
+		<supports>Nocturnal Hunter</supports>
+		<description>
+			<p>You gain Darkvision with a range of 60 feet. If you already have Darkvision, its range increases by 60 feet.</p>
+		</description>
+		<sheet display="false">
+			<description>You gain Darkvision with a range of {{darkvision:range}} feet.</description>
+		</sheet>
+		<rules>
+			<stat name="darkvision:range" value="60" bonus="base" requirements="!ID_VISION_DARKVISION" />
+			<stat name="darkvision:range" value="120" bonus="base" requirements="ID_VISION_DARKVISION" />
+		</rules>
+	</element>
+	<element name="Silent Through the Night" type="Archetype Feature" source="The GooseQuill" id="ID_MRDR_GSQL_ARCHETYPE_FEATURE_OWL_NOCTURNAL_HUNTER_SILENT_THROUGH_THE_NIGHT">
+		<supports>Nocturnal Hunter</supports>
+		<description>
+			<p>You gain a bonus to Dexterity (Stealth) checks equal to your Wisdom modifier (minimum of 1).</p>
+		</description>
+		<sheet display="false" />
+		<rules>
+			<stat name="stealth:misc" value="1" bonus="falconer owl" />
+			<stat name="stealth:misc" value="wisdom:modifier" bonus="falconer owl" />
+		</rules>
+	</element>
+
+	<element name="Level 10: Element of Surprised" type="Archetype Feature" source="The GooseQuill" id="ID_MRDR_GSQL_ARCHETYPE_FEATURE_OWL_ELEMENT_OF_SURPRISE">
+		<description>
+			<p>If your Bird of Prey is Hidden when it makes an attack which triggers an Aerial Acrobatics option, the creature has Disadvantage on saving throws if they need to make one.</p>
+		</description>
+		<sheet alt="Element Surprised">
+			<description>If your Bird of Prey is Hidden when it makes an attack which triggers an Aerial Acrobatics option, the creature has Disadvantage on saving throws if they need to make one.</description>
+		</sheet>
+	</element>
+
+	<element name="Level 14: Serrated Feathers" type="Archetype Feature" source="The GooseQuill" id="ID_MRDR_GSQL_ARCHETYPE_FEATURE_OWL_SERRATED_FEATHERS">
+		<description>
+			<p>After your Bird of Prey is subjected to an attack, it can use its Reaction to move up to half its Speed and take the Hide action again.</p>
+		</description>
+		<sheet alt="Serrated Feathers" action="Companion Reaction">
+			<description>After your Bird of Prey is subjected to an attack, it can use its Reaction to move up to half its Speed and take the Hide action again.</description>
+		</sheet>
+	</element>
+
+	<element name="Level 17: Belligerent Strigiformes" type="Archetype Feature" source="The GooseQuill" id="ID_MRDR_GSQL_ARCHETYPE_FEATURE_OWL_BELIGERENT_STRIGIFORMES">
+		<description>
+			<p>On your turn, if the first attack made by either you or your Bird of Prey is made while Hiding, the attack's damage is doubled against the target if the attack hits.</p>
+		</description>
+		<sheet alt="Belligerent Strigiformes">
+			<description>On your turn, if the first attack made by either you or your Bird of Prey is made while Hiding, the attack's damage is doubled against the target if the attack hits.</description>
+		</sheet>
+	</element>
+    
+</elements>

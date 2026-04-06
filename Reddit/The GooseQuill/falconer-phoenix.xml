@@ -1,0 +1,330 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<elements>
+    <info>
+        <update version="0.0.1">
+            <file name="falconer-phoenix.xml" url="https://raw.githubusercontent.com/MeriadarGoblin/elements-thirdparty/refs/heads/main/Reddit/The%20GooseQuill/falconer-phoenix.xml" />
+        </update>
+    </info>
+    
+    <element name="Phoenix" type="Archetype" source="The GooseQuill" id="ID_MRDR_GSQL_ARCHETYPE_FALCONER_PHOENIX">
+		<supports>Falconer Subclass</supports>
+		<prerequisite>A legendary bird of fire capable of resurrecting itself.</prerequisite>
+		<description>
+			<p>The group of adventurers was sat around the campfire, enjoying a warm stew after a long day of trekking through the rain &amp; the mud. Suddenly, a twig snapped in the brushes behind the tents, prompting the bonfire to come to life, becoming a flaming bird which promptly set the bush ablaze, causing the goblin who had been hiding in it to run out screaming, right towards the party’s raised swords.</p>
+			<p class="indent">The Phoenix is a symbol of rebirth. If it dies, its body vanishes in a flash of fire, leaving behind an egg in its ashes from which it later resurrects. This unique and astounding quality makes the phoenix a much sought-after bird of prey amongst falconers who regularly deal with near-death situations.</p>
+			<div element="ID_MRDR_GSQL_ARCHETYPE_FEATURE_PHOENIX_BIRD" />
+			<div element="ID_MRDR_GSQL_ARCHETYPE_FEATURE_PHOENIX_SPELLCASTING" />
+			<div element="ID_MRDR_GSQL_ARCHETYPE_FEATURE_PHOENIX_INCANDESCENT" />
+			<div element="ID_MRDR_GSQL_ARCHETYPE_FEATURE_PHOENIX_CIRCLE_OF_LIFE" />
+			<div element="ID_MRDR_GSQL_ARCHETYPE_FEATURE_PHOENIX_FOSTER_THE_FLAME" />
+			<div element="ID_MRDR_GSQL_ARCHETYPE_FEATURE_PHOENIX_CAUTERIZE_AND_CONFLAGRATE" />
+			<div element="ID_MRDR_GSQL_ARCHETYPE_FEATURE_PHOENIX_FIREPROOFED" />
+			<div element="ID_MRDR_GSQL_ARCHETYPE_FEATURE_PHOENIX_AVATAR_OF_REBIRTH" />
+		</description>
+		<sheet display="false" />
+		<rules>
+			<grant type="Archetype Feature" id="ID_MRDR_GSQL_ARCHETYPE_FEATURE_PHOENIX_BIRD" level="3" />
+			<grant type="Archetype Feature" id="ID_MRDR_GSQL_ARCHETYPE_FEATURE_PHOENIX_SPELLCASTING" level="3" />
+			<grant type="Archetype Feature" id="ID_MRDR_GSQL_ARCHETYPE_FEATURE_PHOENIX_INCANDESCENT" level="3" />
+			<grant type="Archetype Feature" id="ID_MRDR_GSQL_ARCHETYPE_FEATURE_PHOENIX_CIRCLE_OF_LIFE" level="3" />
+			<grant type="Archetype Feature" id="ID_MRDR_GSQL_ARCHETYPE_FEATURE_PHOENIX_FOSTER_THE_FLAME" level="6" />
+			<grant type="Archetype Feature" id="ID_MRDR_GSQL_ARCHETYPE_FEATURE_PHOENIX_CAUTERIZE_AND_CONFLAGRATE" level="10" />
+			<grant type="Archetype Feature" id="ID_MRDR_GSQL_ARCHETYPE_FEATURE_PHOENIX_FIREPROOFED" level="14" />
+			<grant type="Archetype Feature" id="ID_MRDR_GSQL_ARCHETYPE_FEATURE_PHOENIX_AVATAR_OF_REBIRTH" level="17" />
+
+			<grant type="Grants" id="ID_MRDR_GSQL_GRANTS_PHOENIX_LEVEL_6" level="6" />
+			<grant type="Grants" id="ID_MRDR_GSQL_GRANTS_PHOENIX_LEVEL_10" level="10" />
+			<grant type="Grants" id="ID_MRDR_GSQL_GRANTS_PHOENIX_LEVEL_14" level="14" />
+			<grant type="Grants" id="ID_MRDR_GSQL_GRANTS_PHOENIX_LEVEL_17" level="17" />
+		</rules>
+	</element>
+	
+	<element name="Level 3: Phoenix" type="Archetype Feature" source="The GooseQuill" id="ID_MRDR_GSQL_ARCHETYPE_FEATURE_PHOENIX_BIRD">
+		<description>
+			<p>Your Bird of Prey is a phoenix. To reflect your choice of its species, its stat block changes in the following ways:</p>
+			<center>
+				<p><b>Creature Type.</b></p>
+				<p>The Bird of Prey’s creature type changes to Elemental.</p>
+				<p><b>Armor Class.</b></p>
+				<p><i>The Bird of Prey’s AC calculation changes to:</i></p>
+				<p>9 plus the Bird of Prey’s Dexterity modifier plus your Wisdom modifier.</p>
+				<p><b>Hit Points.</b></p>
+				<p><i>The Bird of Prey’s HP changes to:</i></p>
+				<p>The Bird of Prey’s Constitution modifier times your Falconer level, plus three times your Falconer level (the Bird of Prey has a number of Hit Dice [d8s] equal to your Falconer level).</p>
+				<p><b>Ability Scores.</b></p>
+				<p>The Bird of Prey’s Strength score increases to 10, and its Charisma score to 8.</p>
+				<p><b>Immunities.</b></p>
+				<p>The Bird of Prey has Immunity to Fire damage.</p>
+				<p><b>Senses.</b></p>
+				<p>The Bird of Prey has Darkvision with a range of 60 feet.</p>
+			</center>
+		</description>
+		<sheet display="false" />
+	</element>
+
+	<element name="Level 3: Spellcasting" type="Archetype Feature" source="The GooseQuill" id="ID_MRDR_GSQL_ARCHETYPE_FEATURE_PHOENIX_SPELLCASTING">
+		<description>
+			<p>You have learned to cast spells. See Chapter 7 of the 2024 Player’s Handbook for the rules on spellcasting. The information below details how you use those rules when choosing the Phoenix as your Bird of Prey.</p>
+			<p><b>Cantrips.</b> You know two cantrips of your choice from the Sorcerer spell list (see that class’s section for its list). Control Flames and Firebolt are recommended. Whenever you gain a Falconer level, you can replace one of these cantrips with another cantrip of your choice from the Sorcerer spell list.</p>
+			<p class="indent">When you reach Falconer level 10, you learn another Sorcerer cantrip of your choice.</p>
+			<p><b>Spell Slots.</b> The Phoenix Spellcasting table shows how many spell slots you have to cast your level 1+ spells. You regain all expended slots when you finish a Long Rest.</p>
+			<p><b>Spellcasting Ability.</b> Charisma is your spellcasting ability for your Phoenix spells.</p>
+			<p><b>Spells' Point of Origin.</b> When casting a Phoenix spell, you can choose to have your Bird of Prey be the origin point of the spell. Your Phoenix must be within 100 feet of you, and it must take a Reaction to deliver the spell. If the spell requires a spell attack, you use your own spell attack modifier.</p>
+			<h5>PHOENIX SPELLCASTING</h5>
+			<table class="class-features">
+				<thead>
+					<tr><td class="col-10">Falconer Level</td><td class="col-10">Cantrips Known</td><td class="col-10">Spells Known</td><td>1st</td><td>2nd</td><td>3rd</td><td>4th</td></tr>
+				</thead>
+				<tr><td> 3rd</td><td>2</td><td> 3</td><td>2</td><td>—</td><td>—</td><td>—</td></tr>
+				<tr><td> 4th</td><td>2</td><td> 4</td><td>3</td><td>—</td><td>—</td><td>—</td></tr>
+				<tr><td> 5th</td><td>2</td><td> 4</td><td>3</td><td>—</td><td>—</td><td>—</td></tr>
+				<tr><td> 6th</td><td>2</td><td> 4</td><td>3</td><td>—</td><td>—</td><td>—</td></tr>
+				<tr><td> 7th</td><td>2</td><td> 5</td><td>4</td><td>2</td><td>—</td><td>—</td></tr>
+				<tr><td> 8th</td><td>2</td><td> 6</td><td>4</td><td>2</td><td>—</td><td>—</td></tr>
+				<tr><td> 9th</td><td>2</td><td> 6</td><td>4</td><td>2</td><td>—</td><td>—</td></tr>
+				<tr><td>10th</td><td>3</td><td> 7</td><td>4</td><td>3</td><td>—</td><td>—</td></tr>
+				<tr><td>11th</td><td>3</td><td> 8</td><td>4</td><td>3</td><td>—</td><td>—</td></tr>
+				<tr><td>12th</td><td>3</td><td> 8</td><td>4</td><td>3</td><td>—</td><td>—</td></tr>
+				<tr><td>13th</td><td>3</td><td> 9</td><td>4</td><td>3</td><td>2</td><td>—</td></tr>
+				<tr><td>14th</td><td>3</td><td>10</td><td>4</td><td>3</td><td>2</td><td>—</td></tr>
+				<tr><td>15th</td><td>3</td><td>10</td><td>4</td><td>3</td><td>2</td><td>—</td></tr>
+				<tr><td>16th</td><td>3</td><td>11</td><td>4</td><td>3</td><td>3</td><td>—</td></tr>
+				<tr><td>17th</td><td>3</td><td>11</td><td>4</td><td>3</td><td>3</td><td>—</td></tr>
+				<tr><td>18th</td><td>3</td><td>11</td><td>4</td><td>3</td><td>3</td><td>—</td></tr>
+				<tr><td>19th</td><td>3</td><td>12</td><td>4</td><td>3</td><td>3</td><td>1</td></tr>
+				<tr><td>20th</td><td>3</td><td>13</td><td>4</td><td>3</td><td>3</td><td>1</td></tr>
+			</table>
+			<p><b>Known Spells of Level 1+.</b> You know a number of level 1+ spells that are available for you to cast with this feature. To start, choose three level 1 spells from the Sorcerer spell list. Absorb Elements, Burning Hands, and Feather Fall are recommended.</p>
+			<p class="indent">The number of spells you know increases as you gain Falconer levels, as shown in the Spells Known column of the Phoenix Spellcasting table. Whenever that number increases, choose additional spells from the Sorcerer spell list until the number of spells on your list matches the number on the table. The chosen spells must be of a level for which you have spell slots.</p>
+			<p class="indent">For example, if you’re a level 7 Falconer, your list of prepared spells can include five Sorcerer spells of levels 1 and 2 in any combination.</p>
+			<p><b>Changing Your Prepared Spells.</b> Whenever you gain a Falconer level, you can replace one spell on your list with another Sorcerer spell for which you have spell slots.</p>
+			<p><b>Spellcasting Focus.</b> You can use an Arcane Focus as a Spellcasting Focus for your Phoenix spells.</p>
+		</description>
+		<sheet display="false" />
+		<spellcasting name="Sorcerer" ability="Charisma" allowReplace="true">
+			<list>Sorcerer</list>
+		</spellcasting>
+		<rules>
+			<grant type="Grants" id="ID_INTERNAL_GRANTS_SPELLCASTING_FEATURE" />
+			<grant type="Grants" id="ID_INTERNAL_GRANT_MULTICLASS_SPELLCASTING_SLOTS_THIRD" requirements="ID_INTERNAL_GRANT_MULTICLASS"/>
+
+			<stat name="sorcerer:spellcasting:slots:1" value="2" level="3" />
+			<stat name="sorcerer:spellcasting:slots:1" value="1" level="4" />
+			<stat name="sorcerer:spellcasting:slots:1" value="1" level="7" />
+			<stat name="sorcerer:spellcasting:slots:2" value="2" level="7" />
+			<stat name="sorcerer:spellcasting:slots:2" value="1" level="10" />
+			<stat name="sorcerer:spellcasting:slots:3" value="2" level="13" />
+			<stat name="sorcerer:spellcasting:slots:3" value="1" level="16" />
+			<stat name="sorcerer:spellcasting:slots:4" value="1" level="19" />
+
+			<select type="Spell" name="Cantrip (Sorcerer)" supports="Sorcerer, 0" level="3" number="2" spellcasting="Sorcerer" />
+			<select type="Spell" name="Cantrip (Sorcerer)" supports="Sorcerer, 0" level="10" number="1" spellcasting="Sorcerer" />
+			<select type="Spell" name="Spell (Sorcerer)" supports="Sorcerer, 1" level="3" number="1" spellcasting="Sorcerer" />
+			<select type="Spell" name="Spell (Sorcerer)" supports="$(spellcasting:list), 1" level="3" number="2" spellcasting="Sorcerer" />
+			<select type="Spell" name="Spell (Sorcerer)" supports="$(spellcasting:list), $(spellcasting:slots)" level="4" spellcasting="Sorcerer"/>
+			<select type="Spell" name="Spell (Sorcerer)" supports="$(spellcasting:list), $(spellcasting:slots)" level="7" spellcasting="Sorcerer"/>
+			<select type="Spell" name="Spell (Sorcerer)" supports="(Sorcerer||$(spellcasting:list)), $(spellcasting:slots)" level="8" spellcasting="Sorcerer"/>
+			<select type="Spell" name="Spell (Sorcerer)" supports="$(spellcasting:list), $(spellcasting:slots)" level="10" spellcasting="Sorcerer"/>
+			<select type="Spell" name="Spell (Sorcerer)" supports="$(spellcasting:list), $(spellcasting:slots)" level="11" spellcasting="Sorcerer"/>
+			<select type="Spell" name="Spell (Sorcerer)" supports="$(spellcasting:list), $(spellcasting:slots)" level="13" spellcasting="Sorcerer"/>
+			<select type="Spell" name="Spell (Sorcerer)" supports="(Sorcerer||$(spellcasting:list)), $(spellcasting:slots)" level="14" spellcasting="Sorcerer"/>
+			<select type="Spell" name="Spell (Sorcerer)" supports="$(spellcasting:list), $(spellcasting:slots)" level="16" spellcasting="Sorcerer"/>
+			<select type="Spell" name="Spell (Sorcerer)" supports="$(spellcasting:list), $(spellcasting:slots)" level="19" spellcasting="Sorcerer"/>
+			<select type="Spell" name="Spell (Sorcerer)" supports="(Sorcerer||$(spellcasting:list)), $(spellcasting:slots)" level="20" spellcasting="Sorcerer"/>
+		</rules>
+	</element>
+
+	<element name="Level 3: Incandescent" type="Archetype Feature" source="The GooseQuill" id="ID_MRDR_GSQL_ARCHETYPE_FEATURE_PHOENIX_INCANDESCENT">
+		<description>
+			<p>Your Bird of Prey can temporarily focus its elemental essence into radiating a bright, magical aura.</p>
+			<p class="indent"><strong><em>Phoenix Fire.</em></strong> You know the <i>Faerie Fire</i> spell, which doesn’t count against the number of spells you know. You can cast <i>Faerie Fire</i> without expending a spell slot a number of times equal to your Charisma modifier (minimum of 1).</p>
+			<p class="indent"><strong><em>Flare.</em></strong> When you cast Faerie Fire, the spell’s area is a 10-foot Radius centered on your Bird of Prey, rather than a 20-foot Cube. Creatures make <i>Faerie Fire</i>‘s Dexterity saving throw the first time they start their turn within the Emanation. Creatures that fail <i>Faerie Fire</i>‘s Dexterity saving throw are outlined in a fiery red, orange, or yellow hue, rather than its usual colours.</p>
+		</description>
+		<sheet alt="Incandescent" />
+		<rules>
+			<select type="Archetype Feature" name="Incandescent" supports="Incandescent" default="ID_MRDR_GSQL_ARCHETYPE_FEATURE_PHOENIX_INCANDESCENT_FIRE" />
+			<select type="Archetype Feature" name="Incandescent" supports="Incandescent" default="ID_MRDR_GSQL_ARCHETYPE_FEATURE_PHOENIX_INCANDESCENT_FLARE" />
+		</rules>
+	</element>
+	<element name="Phoenix Fire" type="Archetype Feature" source="The GooseQuill" id="ID_MRDR_GSQL_ARCHETYPE_FEATURE_PHOENIX_INCANDESCENT_FIRE">
+		<supports>Incandescent</supports>
+		<description>
+			<p>You know the <i>Faerie Fire</i> spell, which doesn’t count against the number of spells you know. You can cast <i>Faerie Fire</i> without expending a spell slot a number of times equal to your Charisma modifier (minimum of 1).</p>
+		</description>
+		<sheet>
+			<description>You know the Faerie Fire spell, which doesn’t count against the number of spells you know. You can cast Faerie Fire without expending a spell slot: {{phoenix:fire}} times.</description>
+		</sheet>
+		<rules>
+			<stat name="phoenix:fire" value="1" bonus="base" />
+			<stat name="phoenix:fire" value="charisma:modifier" bonus="base" />
+		</rules>
+	</element>
+	<element name="Flare" type="Archetype Feature" source="The GooseQuill" id="ID_MRDR_GSQL_ARCHETYPE_FEATURE_PHOENIX_INCANDESCENT_FLARE">
+		<supports>Incandescent</supports>
+		<description>
+			<p>When you cast Faerie Fire, the spell’s area is a 10-foot Radius centered on your Bird of Prey, rather than a 20-foot Cube. Creatures make <i>Faerie Fire</i>‘s Dexterity saving throw the first time they start their turn within the Emanation. Creatures that fail <i>Faerie Fire</i>‘s Dexterity saving throw are outlined in a fiery red, orange, or yellow hue, rather than its usual colours.</p>
+		</description>
+		<sheet>
+			<description>When you cast Faerie Fire, the spell’s area is a 10-foot Radius centered on your Bird of Prey, rather than a 20-foot Cube. Creatures make Faerie Fire‘s Dexterity saving throw the first time they start their turn within the Emanation. Creatures that fail Faerie Fire‘s Dexterity saving throw are outlined in a fiery red, orange, or yellow hue, rather than its usual colours.</description>
+		</sheet>
+	</element>
+
+	<element name="Level 3: Circle of Life" type="Archetype Feature" source="The GooseQuill" id="ID_MRDR_GSQL_ARCHETYPE_FEATURE_PHOENIX_CIRCLE_OF_LIFE">
+		<description>
+			<p>If your Bird of Prey dies, its body vanishes, leaving behind a 2-pound spotted orange egg. Placing the egg on a heat source equivalent to a bonfire or hotter for 4 hours returns the Bird of Prey to life with all of its Hit Points restored.</p>
+		</description>
+		<sheet alt="Circle of Life">
+			<description>If your Bird of Prey dies, its body vanishes, leaving behind a 2-pound spotted orange egg. Placing the egg on a heat source equivalent to a bonfire or hotter for 4 hours returns the Bird of Prey to life with all of its Hit Points restored.</description>
+		</sheet>
+	</element>
+
+	<element name="Level 6: Foster the Flame" type="Archetype Feature" source="The GooseQuill" id="ID_MRDR_GSQL_ARCHETYPE_FEATURE_PHOENIX_FOSTER_THE_FLAME">
+		<description>
+			<p>Your bird of prey provides a comforting source of heat through the coldest of nights. During a Long Rest, while your Bird of Prey has at least 1 Hit Point and doesn’t have the Incapacitated condition, your Bird of Prey provides the following effects:</p>
+			<p class="indent"><strong><em>Campfire Nights.</em></strong> Your Bird of Prey provides a comfortable warmth during rests. A number of creatures equal to your Charisma modifier (minimum of 1) gain Heroic Inspiration when you finish a Long Rest.</p>
+			<p class="indent"><strong><em>Well-Rested.</em></strong> When you finish a Long Rest, you can remove 2 points of the Exhaustion condition, rather than 1.</p>
+			<p class="indent"><strong><em>Brought to Light.</em></strong> Dexterity (Stealth) checks made by Hostile creatures to Hide from yourself and friendly creatures within 10 feet of your Bird of Prey are made with Disadvantage.</p>
+		</description>
+		<sheet alt="Foster the Flame">
+			<description>During a Long Rest, while your Bird of Prey has at least 1 Hit Point and doesn’t have the Incapacitated condition, your Bird of Prey provides the following effects:</description>
+		</sheet>
+		<rules>
+			<select type="Archetype Feature" name="Foster The Flame" supports="Phoenix Foster" default="ID_MRDR_GSQL_ARCHETYPE_FEATURE_PHOENIX_FOSTER_CAMPFIRE_NIGHT" />
+			<select type="Archetype Feature" name="Foster The Flame" supports="Phoenix Foster" default="ID_MRDR_GSQL_ARCHETYPE_FEATURE_PHOENIX_FOSTER_WELL_RESTED" />
+			<select type="Archetype Feature" name="Foster The Flame" supports="Phoenix Foster" default="ID_MRDR_GSQL_ARCHETYPE_FEATURE_PHOENIX_FOSTER_BROUGHT_TO_LIGHT" />
+		</rules>
+	</element>
+	<element name="Campfire Nights" type="Archetype Feature" source="The GooseQuill" id="ID_MRDR_GSQL_ARCHETYPE_FEATURE_PHOENIX_FOSTER_CAMPFIRE_NIGHT">
+		<supports>Phoenix Foster</supports>
+		<description>
+			<p>Your Bird of Prey provides a comfortable warmth during rests. A number of creatures equal to your Charisma modifier (minimum of 1) gain Heroic Inspiration when you finish a Long Rest.</p>
+		</description>
+		<sheet>
+			<description>Your Bird of Prey provides {{phoenix:fire}} creatures Heroic Inspiration when you finish a Long Rest.</description>
+		</sheet>
+	</element>
+	<element name="Well-Rested" type="Archetype Feature" source="The GooseQuill" id="ID_MRDR_GSQL_ARCHETYPE_FEATURE_PHOENIX_FOSTER_WELL_RESTED">
+		<supports>Phoenix Foster</supports>
+		<description>
+			<p>When you finish a Long Rest, you can remove 2 points of the Exhaustion condition, rather than 1.</p>
+		</description>
+		<sheet>
+			<description>When you finish a Long Rest, you can remove 2 points of the Exhaustion condition, rather than 1.</description>
+		</sheet>
+	</element>
+	<element name="Brought to Light" type="Archetype Feature" source="The GooseQuill" id="ID_MRDR_GSQL_ARCHETYPE_FEATURE_PHOENIX_FOSTER_BROUGHT_TO_LIGHT">
+		<supports>Phoenix Foster</supports>
+		<description>
+			<p>Dexterity (Stealth) checks made by Hostile creatures to Hide from yourself and friendly creatures within 10 feet of your Bird of Prey are made with Disadvantage.</p>
+		</description>
+		<sheet>
+			<description>Dexterity (Stealth) checks made by Hostile creatures to Hide from yourself and friendly creatures within 10 feet of your Bird of Prey are made with Disadvantage.</description>
+		</sheet>
+	</element>
+
+	<element name="Level 10: Cauterize and Conflagrate" type="Archetype Feature" source="The GooseQuill" id="ID_MRDR_GSQL_ARCHETYPE_FEATURE_PHOENIX_CAUTERIZE_AND_CONFLAGRATE">
+		<description>
+			<p>A creature born from fire, the flames embolden your Bird of Prey rather than inflict harm upon it.</p>
+			<p class="indent"><strong><em>Fuel to the Fire.</em></strong> When your Bird of Prey is subjected to a spell, attack, or effect that would cause it to take Fire damage, it instead grants Temporary Hit Points equal to the damage otherwise dealt, to a maxium amount equal to twice your Falconer level.</p>
+			<p class="indent"><strong><em>Flame Burst.</em></strong> After being granted Temporary Hit Points by Fuel to the Fire, the next melee attack made by your Bird of Prey before the end of your next turn deals an additional 2d6 Fire damage. This damage is increased by 1d6 when you reach Falconer level 14, and again when you reach Falconer level 17.</p>
+		</description>
+		<sheet alt="Cauterize and Conflagrate" />
+		<rules>
+			<select type="Archetype Feature" name="Cauterize" supports="Cauterize" default="ID_MRDR_GSQL_ARCHETYPE_FEATURE_PHOENIX_CAUTERIZE_FUEL_TO_THE_FIRE" />
+			<select type="Archetype Feature" name="Cauterize" supports="Cauterize" default="ID_MRDR_GSQL_ARCHETYPE_FEATURE_PHOENIX_CAUTERIZE_FLAME_BURST" />
+		</rules>
+	</element>
+	<element name="Fuel to the Fire" type="Archetype Feature" source="The GooseQuill" id="ID_MRDR_GSQL_ARCHETYPE_FEATURE_PHOENIX_CAUTERIZE_FUEL_TO_THE_FIRE">
+		<supports>Cauterize</supports>
+		<description>
+			<p>When your Bird of Prey is subjected to a spell, attack, or effect that would cause it to take Fire damage, it instead grants Temporary Hit Points equal to the damage otherwise dealt, to a maxium amount equal to twice your Falconer level.</p>
+		</description>
+		<sheet>
+			<description>When your Bird of Prey is subjected to a spell, attack, or effect that would cause it to take Fire damage, it instead grants Temporary Hit Points equal to the damage otherwise dealt, to a maxium {{fuel to fire:points}}.</description>
+		</sheet>
+		<rules>
+			<stat name="fuel to fire:points" value="level:falconer" />
+			<stat name="fuel to fire:points" value="level:falconer" />
+		</rules>
+	</element>
+	<element name="Flame Burst" type="Archetype Feature" source="The GooseQuill" id="ID_MRDR_GSQL_ARCHETYPE_FEATURE_PHOENIX_CAUTERIZE_FLAME_BURST">
+		<supports>Cauterize</supports>
+		<description>
+			<p>After being granted Temporary Hit Points by Fuel to the Fire, the next melee attack made by your Bird of Prey before the end of your next turn deals an additional 2d6 Fire damage. This damage is increased by 1d6 when you reach Falconer level 14, and again when you reach Falconer level 17.</p>
+		</description>
+		<sheet>
+			<description>After being granted Temporary Hit Points by Fuel to the Fire, the next melee attack made by your Bird of Prey before the end of your next turn deals an additional 2d6 Fire damage.</description>
+			<description level="14">After being granted Temporary Hit Points by Fuel to the Fire, the next melee attack made by your Bird of Prey before the end of your next turn deals an additional 3d6 Fire damage.</description>
+			<description level="17">After being granted Temporary Hit Points by Fuel to the Fire, the next melee attack made by your Bird of Prey before the end of your next turn deals an additional 4d6 Fire damage.</description>
+		</sheet>
+	</element>
+
+	<element name="Level 14: Fireproofed" type="Archetype Feature" source="The GooseQuill" id="ID_MRDR_GSQL_ARCHETYPE_FEATURE_PHOENIX_FIREPROOFED">
+		<description>
+			<p>The time spent around your Bird of Prey has made you remarkably resilient to heat and fire.</p>
+			<p class="indent"><strong><em>Non-Flammable.</em></strong> You gain Resistance to Fire damage and the effects of extreme heat.</p>
+			<p class="indent"><strong><em>Flame Burst.</em></strong> When you are subjected to an attack, spell or effect that would cause you to take Fire Damage, you can use a Reaction to grant yourself Immunity to fire damage until the start of your next turn.</p>
+		</description>
+		<sheet alt="Fireproofed" />
+		<rules>
+			<select type="Archetype Feature" name="Fireproofed" supports="Fireproofed" default="ID_MRDR_GSQL_ARCHETYPE_FEATURE_PHOENIX_FIREPROOF_NONFLAMMABLE" />
+			<select type="Archetype Feature" name="Fireproofed" supports="Fireproofed" default="ID_MRDR_GSQL_ARCHETYPE_FEATURE_PHOENIX_FIREPROOF_CANDLELIGHT" />
+		</rules>
+	</element>
+	<element name="Non-Flammable" type="Archetype Feature" source="The GooseQuill" id="ID_MRDR_GSQL_ARCHETYPE_FEATURE_PHOENIX_FIREPROOF_NONFLAMMABLE">
+		<supports>Fireproofed</supports>
+		<description>
+			<p>You gain Resistance to Fire damage and the effects of extreme heat.</p>
+		</description>
+		<sheet>
+			<description>You gain Resistance to Fire damage and the effects of extreme heat.</description>
+		</sheet>
+		<rules>
+			<grant type="Condition" id="ID_INTERNAL_CONDITION_DAMAGE_RESISTANCE_FIRE" />
+		</rules>
+	</element>
+	<element name="Flame" type="Archetype Feature" source="The GooseQuill" id="ID_MRDR_GSQL_ARCHETYPE_FEATURE_PHOENIX_FIREPROOF_CANDLELIGHT">
+		<supports>Fireproofed</supports>
+		<description>
+			<p>When you are subjected to an attack, spell or effect that would cause you to take Fire damage, you can use a Reaction to grant yourself Immunity to Fire damage until the start of your next turn.</p>
+		</description>
+		<sheet usage="Reaction">
+			<description>When you are subjected to an attack, spell or effect that would cause you to take Fire damage, you can use a Reaction to grant yourself Immunity to Fire damage until the start of your next turn.</description>
+		</sheet>
+	</element>
+
+	<element name="Level 17: Avatar of Rebirth" type="Archetype Feature" source="The GooseQuill" id="ID_MRDR_GSQL_ARCHETYPE_FEATURE_PHOENIX_AVATAR_OF_REBIRTH">
+		<description>
+			<p>Your Bird of Prey can speed up its rebirth to aid you in combat.</p>
+			<p class="indent"><strong><em>Fiery Death.</em></strong> When your Bird of Prey starts its turn with 0 Hit Points remaining, it creates an instance of Create Bonfire centered on itself before subsequently vanishing into the created fire.</p>
+			<p class="indent"><strong><em>Fiery Rebirth.</em></strong> At the start of your next turn, your Bird of Prey reappears in the location it vanished with half its total Hit Points restored. When it reappears, your Bird of Prey creates an instance of the Incendiary Cloud spell as a 20-foot Emanation centered on itself.</p>
+			<p class="indent">Once you have used this feature, you cannot do so again until you finish a Long Rest.</p>
+		</description>
+		<sheet alt="Avatar of Rebirth" />
+		<rules>
+			<select type="Archetype Feature" name="Avatar of Rebirth" supports="Avatar of Rebirth" default="ID_MRDR_GSQL_ARCHETYPE_FEATURE_PHOENIX_AVATAR_REBIRTH_FIERY_DEATH" />
+			<select type="Archetype Feature" name="Avatar of Rebirth" supports="Avatar of Rebirth" default="ID_MRDR_GSQL_ARCHETYPE_FEATURE_PHOENIX_AVATAR_REBIRTH_FIERY_REBIRTH" />
+		</rules>
+	</element>
+	<element name="Fiery Death" type="Archetype Feature" source="The GooseQuill" id="ID_MRDR_GSQL_ARCHETYPE_FEATURE_PHOENIX_AVATAR_REBIRTH_FIERY_DEATH">
+		<supports>Avatar of Rebirth</supports>
+		<description>
+			<p>When your Bird of Prey starts its turn with 0 Hit Points remaining, it creates an instance of Create Bonfire centered on itself before subsequently vanishing into the created fire.</p>
+		</description>
+		<sheet>
+			<description>When your Bird of Prey starts its turn with 0 Hit Points remaining, it creates an instance of Create Bonfire centered on itself before subsequently vanishing into the created fire.</description>
+		</sheet>
+	</element>
+	<element name="Fiery Rebirth" type="Archetype Feature" source="The GooseQuill" id="ID_MRDR_GSQL_ARCHETYPE_FEATURE_PHOENIX_AVATAR_REBIRTH_FIERY_REBIRTH">
+		<supports>Avatar of Rebirth</supports>
+		<description>
+			<p>At the start of your next turn, your Bird of Prey reappears in the location it vanished with half its total Hit Points restored. When it reappears, your Bird of Prey creates an instance of the Incendiary Cloud spell as a 20-foot Emanation centered on itself.</p>
+		</description>
+		<sheet usage="Long Rest">
+			<description>At the start of your next turn, your Bird of Prey reappears in the location it vanished with half its total Hit Points restored. When it reappears, your Bird of Prey creates an instance of the Incendiary Cloud spell as a 20-foot Emanation centered on itself.&#13;
+				Once you have used this feature, you cannot do so again until you finish a Long Rest.
+			</description>
+		</sheet>
+	</element>
+    
+</elements>

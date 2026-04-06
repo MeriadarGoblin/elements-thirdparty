@@ -1,0 +1,160 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<elements>
+    <info>
+        <update version="0.0.1">
+            <file name="falconer-falcon.xml" url="https://raw.githubusercontent.com/MeriadarGoblin/elements-thirdparty/refs/heads/main/Reddit/The%20GooseQuill/falconer-falcon.xml" />
+        </update>
+    </info>
+    
+    <element name="Falcon" type="Archetype" source="The GooseQuill" id="ID_MRDR_GSQL_ARCHETYPE_FALCONER_FALCON">
+		<supports>Falconer Subclass</supports>
+		<prerequisite>Fast and capable of unleashing bursts of massive damage.</prerequisite>
+		<description>
+			<p>The young man paints a black silhoutte against the tall grass of the meadow he stands in, the sunset coming to its end as the verdant grass is painted with a golden hue. Against the sun, a smaller silhoutte can be seen, its form unmistakably that of a small bird of prey, nearly imperceivable against the light of the setting sun. The bird suddenly begins to dive, picking up speed over the couple hundred of feet it has before it collides with its quarry, another bird slightly larger than the bird of prey itself. Its prey, stunned from the force of the collision, now tumbles uncontrollably towards the ground, the falcon on its heels.</p>
+			<p class="indent">Falconers who opt for the Falcon as their Bird of Prey do so for the breakneck speeds at which it strikes its enemies. Using dives at breakneck speeds to incapacitate enemies it collides with means striking hard and fast. The falcon is a bird of prey appreciated by many, from the lowliest of thieves to the most influential of royalty.</p>
+			<div element="ID_MRDR_GSQL_ARCHETYPE_FEATURE_FALCON_BIRD" />
+			<div element="ID_MRDR_GSQL_ARCHETYPE_FEATURE_FALCON_DIVE" />
+			<div element="ID_MRDR_GSQL_ARCHETYPE_FEATURE_FALCON_PEREGRINES_PACE" />
+			<div element="ID_MRDR_GSQL_ARCHETYPE_FEATURE_FALCON_DEBILATING_DIVE" />
+			<div element="ID_MRDR_GSQL_ARCHETYPE_FEATURE_FALCON_FALCONS_FLEETNESS" />
+			<div element="ID_MRDR_GSQL_ARCHETYPE_FEATURE_FALCON_CRUSHING_DIVE" />
+		</description>
+		<sheet display="false" />
+		<rules>
+			<grant type="Archetype Feature" id="ID_MRDR_GSQL_ARCHETYPE_FEATURE_FALCON_BIRD" level="3" />
+			<grant type="Archetype Feature" id="ID_MRDR_GSQL_ARCHETYPE_FEATURE_FALCON_DIVE" level="3" />
+			<grant type="Archetype Feature" id="ID_MRDR_GSQL_ARCHETYPE_FEATURE_FALCON_PEREGRINES_PACE" level="6" />
+			<grant type="Archetype Feature" id="ID_MRDR_GSQL_ARCHETYPE_FEATURE_FALCON_DEBILATING_DIVE" level="10" />
+			<grant type="Archetype Feature" id="ID_MRDR_GSQL_ARCHETYPE_FEATURE_FALCON_FALCONS_FLEETNESS" level="14" />
+			<grant type="Archetype Feature" id="ID_MRDR_GSQL_ARCHETYPE_FEATURE_FALCON_CRUSHING_DIVE" level="17" />
+
+			<grant type="Grants" id="ID_MRDR_GSQL_GRANTS_FALCON_LEVEL_6" level="6" />
+			<grant type="Grants" id="ID_MRDR_GSQL_GRANTS_FALCON_LEVEL_10" level="10" />
+			<grant type="Grants" id="ID_MRDR_GSQL_GRANTS_FALCON_LEVEL_14" level="14" />
+			<grant type="Grants" id="ID_MRDR_GSQL_GRANTS_FALCON_LEVEL_17" level="17" />
+		</rules>
+	</element>
+
+	<element name="Level 3: Falcon" type="Archetype Feature" source="The GooseQuill" id="ID_MRDR_GSQL_ARCHETYPE_FEATURE_FALCON_BIRD">
+		<description>
+			<p>Your Bird of Prey is a falcon. To reflect your choice of its species, its stat block changes in the following ways:</p>
+			<center>
+				<p><b>Armor Class.</b></p>
+				<p><i>The Bird of Prey’s AC calculation changes to:</i></p>
+				<p>10 plus the Bird of Prey’s Dexterity modifier plus your Wisdom modifier.</p>
+				<p><b>Hit Points.</b></p>
+				<p><i>The Bird of Prey’s HP changes to:</i></p>
+				<p>The Bird of Prey’s Constitution modifier times your Falconer level, plus three times your Falconer level (the Bird of Prey has a number of Hit Dice [d8s] equal to your Falconer level).</p>
+				<p><b>Speed.</b></p>
+				<p>The Bird of Prey’s Fly Speed increases by 20 feet.</p>
+				<p><b>Ability Scores.</b></p>
+				<p>The Bird of Prey’s Strength score changes to 11, its Dexterity score to 15, and its Wisdom score to 15.</p>
+				<p><b>Senses.</b></p>
+				<p>The Bird of Prey has Darkvision with a range of 60 feet.</p>
+			</center>
+		</description>
+		<sheet display="false" />
+	</element>
+
+	<element name="Level 3: Dive" type="Archetype Feature" source="The GooseQuill" id="ID_MRDR_GSQL_ARCHETYPE_FEATURE_FALCON_DIVE">
+		<description>
+			<p>Once per turn, whenever you or your Bird of Prey moves at least 30 feet towards a creature and then hit that creature with a melee weapon attack, the target suffers the following effects:</p>
+			<p class="indent"><strong><em>Daze.</em></strong> The target needs to make a Constitution saving throw or lose the ability to take Reactions until the start of its next turn.</p>
+			<p class="indent"><strong><em>Kinetic Force.</em></strong> The target takes an additional 1d6 Bludgeoning damage.</p>
+		</description>
+		<sheet alt="Dive">
+			<description>Once per turn, whenever you or your Bird of Prey moves at least 30 feet towards a creature and then hit that creature with a melee weapon attack, the target suffers the following effects:</description>
+		</sheet>
+		<rules>
+			<select type="Archetype Feature" name="Dive" supports="Falcon Dive" default="ID_MRDR_GSQL_ARCHETYPE_FEATURE_FALCON_DIVE_DAZE" />
+			<select type="Archetype Feature" name="Dive" supports="Falcon Dive" default="ID_MRDR_GSQL_ARCHETYPE_FEATURE_FALCON_DIVE_KINETIC_FORCE" />
+		</rules>
+	</element>
+	<element name="Daze" type="Archetype Feature" source="The GooseQuill" id="ID_MRDR_GSQL_ARCHETYPE_FEATURE_FALCON_DIVE_DAZE">
+		<supports>Falcon Dive</supports>
+		<description>
+			<p class="indent"><strong><em>Daze.</em></strong> The target needs to make a Constitution saving throw or lose the ability to take Reactions until the start of its next turn.</p>
+		</description>
+		<sheet>
+			<description>The target needs to make a Constitution saving throw or lose the ability to take Reactions until the start of its next turn.</description>
+		</sheet>
+	</element>
+	<element name="Kinetic Force" type="Archetype Feature" source="The GooseQuill" id="ID_MRDR_GSQL_ARCHETYPE_FEATURE_FALCON_DIVE_KINETIC_FORCE">
+		<supports>Falcon Dive</supports>
+		<description>
+			<p class="indent"><strong><em>Kinetic Force.</em></strong> The target takes an additional 1d6 Bludgeoning damage.</p>
+		</description>
+		<sheet>
+			<description>The target takes an additional 1d6 Bludgeoning damage.</description>
+			<description level="10">The target takes an additional 2d6 Bludgeoning damage.</description>
+			<description level="17">The target takes an additional 4d6 Bludgeoning damage.</description>
+		</sheet>
+	</element>
+
+	<element name="Level 6: Peregrine Pace" type="Archetype Feature" source="The GooseQuill" id="ID_MRDR_GSQL_ARCHETYPE_FEATURE_FALCON_PEREGRINES_PACE">
+		<description>
+			<p>Your Speed and your Bird of Prey’s Flying Speed both increase by 10 feet.</p>
+		</description>
+		<sheet display="false" />
+		<rules>
+			<stat name="speed" value="10" />
+			<stat name="companion:speed:fly" value="10" />
+		</rules>
+	</element>
+
+	<element name="Level 10: Debilating Dive" type="Archetype Feature" source="The GooseQuill" id="ID_MRDR_GSQL_ARCHETYPE_FEATURE_FALCON_DEBILATING_DIVE">
+		<description>
+			<p>You and your Bird of Prey grow more adept at performing dives on Quarries. Once per turn, when you or your Bird of Prey makes an attack against a creature as described in Dive, it suffers the following additional effects:</p>
+			<p class="indent"><strong><em>Astonish.</em></strong> If the creature is a Quarry, it must make a Constitution saving throw or have the Stunned condition until the start of your next turn. It can repeat the saving throw at the start of its turn.</p>
+			<p class="indent"><strong><em>Improved Kinetic Force.</em></strong> The additional damage increases to 2d6 Bludgeoning damage.</p>
+		</description>
+		<sheet alt="Debilating Dive">
+			<description>Once per turn, when you or your Bird of Prey makes an attack against a creature as described in Dive, it suffers the following additional effects:</description>
+		</sheet>
+		<rules>
+			<select type="Archetype Feature" name="Debilating Dive" supports="Delbilating Dive" default="ID_MRDR_GSQL_ARCHETYPE_FEATURE_FALCON_DEBILATING_DIVE_ASTONISH" />
+		</rules>
+	</element>
+	<element name="Astonish" type="Archetype Feature" source="The GooseQuill" id="ID_MRDR_GSQL_ARCHETYPE_FEATURE_FALCON_DEBILATING_DIVE_ASTONISH">
+		<supports>Delbilating Dive</supports>
+		<description>
+			<p>If the creature is a Quarry, it must make a Constitution saving throw or have the Stunned condition until the start of your next turn. It can repeat the saving throw at the start of its turn.</p>
+		</description>
+		<sheet>
+			<description>If the creature is a Quarry, it must make a Constitution saving throw or have the Stunned condition until the start of your next turn. It can repeat the saving throw at the start of its turn.</description>
+		</sheet>
+	</element>
+
+	<element name="Level 14: Falcon's Fleetness" type="Archetype Feature" source="The GooseQuill" id="ID_MRDR_GSQL_ARCHETYPE_FEATURE_FALCON_FALCONS_FLEETNESS">
+		<description>
+			<p>When you roll Initiative, you and your Bird of Prey immediately move up to half your respective Speeds to an unoccupied space without provoking Opportunity Attacks.</p>
+		</description>
+		<sheet alt="Falcon's Fleetness">
+			<description>When you roll Initiative, you and your Bird of Prey immediately move up to half your respective Speeds to an unoccupied space without provoking Opportunity Attacks.</description>
+		</sheet>
+	</element>
+
+	<element name="Level 17: Crushing Dive" type="Archetype Feature" source="The GooseQuill" id="ID_MRDR_GSQL_ARCHETYPE_FEATURE_FALCON_CRUSHING_DIVE">
+		<description>
+			<p>You and your Bird of Prey have perfected your dive. Once per turn, when you or your Bird of Prey makes an attack against a creature as described in Dive, it suffers the following additional effects:</p>
+			<p class="indent"><strong><em>Avian Reflexes.</em></strong> When you or your Bird of Prey hit a Quarry, the other can use a Reaction to make a melee weapon attack against that creature.</p>
+			<p class="indent"><strong><em>Improved Kinetic Force.</em></strong> The additional damage increases to 4d6 Bludgeoning damage.</p>
+		</description>
+		<sheet alt="Crushing Dive">
+			<description>Once per turn, when you or your Bird of Prey makes an attack against a creature as described in Dive, it suffers the following additional effects:</description>
+		</sheet>
+		<rules>
+			<select type="Archetype Feature" name="Crushing Dive" supports="Crushing Dive" default="ID_MRDR_GSQL_ARCHETYPE_FEATURE_FALCON_CRUSHING_DIVE_AVIAN_REFLEXES" />
+		</rules>
+	</element>
+	<element name="Avian Reflexes" type="Archetype Feature" source="The GooseQuill" id="ID_MRDR_GSQL_ARCHETYPE_FEATURE_FALCON_CRUSHING_DIVE_AVIAN_REFLEXES">
+		<supports>Crushing Dive</supports>
+		<description>
+			<p>When you or your Bird of Prey hit a Quarry, the other can use a Reaction to make a melee weapon attack against that creature.</p>
+		</description>
+		<sheet>
+			<description>When you or your Bird of Prey hit a Quarry, the other can use a Reaction to make a melee weapon attack against that creature.</description>
+		</sheet>
+	</element>
+    
+</elements>

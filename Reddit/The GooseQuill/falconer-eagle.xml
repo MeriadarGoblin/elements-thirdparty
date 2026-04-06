@@ -1,0 +1,168 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<elements>
+    <info>
+        <update version="0.0.1">
+            <file name="falconer-eagle.xml" url="https://raw.githubusercontent.com/MeriadarGoblin/elements-thirdparty/refs/heads/main/Reddit/The%20GooseQuill/falconer-eagle.xml" />
+        </update>
+    </info>
+    
+    <element name="Eagle" type="Archetype" source="The GooseQuill" id="ID_MRDR_GSQL_ARCHETYPE_FALCONER_EAGLE">
+		<supports>Falconer Subclass</supports>
+		<prerequisite>Powerful and most effective in close quarters.</prerequisite>
+		<description>
+			<p>A sharp whistle pierces through the metallic clanking of steel weapons colliding as a screech follows mere moments after. A woman, fitted in chainmail, rides atop a grand horse, the steed snorting and panting as she drives her boots into its flanks, galloping forwards towards the bandits who had holed themselves up in the nearby bluff. Next to her flew a large bird, its golden brown feathers glistening against the sunlight. The eagle screeched again, drawing the attention of one of the bandits who had but a mere moment to react before the eagle plunged its talons into the bandit’s chest, followed by a bolt fired from the woman’s crossbow.</p>
+			<p class="indent">Falconers who choose the Eagle as their Bird of Prey do so for its eye-catching stature. A grand, imposing bird, it is often the bird of prey of choice of high-ranking officers and members of nobility. On the battlefield, the eagle is capable of striking fear into the hearts of its enemies whilst inspiring courage in its allies.</p>
+			<div element="ID_MRDR_GSQL_ARCHETYPE_FEATURE_EAGLE_BIRD" />
+			<div element="ID_MRDR_GSQL_ARCHETYPE_FEATURE_EAGLE_STEEL_FEATHERS" />
+			<div element="ID_MRDR_GSQL_ARCHETYPE_FEATURE_EAGLE_RULER_OFTHE_ROOST" />
+			<div element="ID_MRDR_GSQL_ARCHETYPE_FEATURE_EAGLE_SUPERIOR_WINGSPAN" />
+			<div element="ID_MRDR_GSQL_ARCHETYPE_FEATURE_EAGLE_INSPIRING_PRESENCE" />
+			<div element="ID_MRDR_GSQL_ARCHETYPE_FEATURE_EAGLE_DREADFUL_PRESENCE" />
+		</description>
+		<sheet display="false" />
+		<rules>
+			<grant type="Archetype Feature" id="ID_MRDR_GSQL_ARCHETYPE_FEATURE_EAGLE_BIRD" level="3" />
+			<grant type="Archetype Feature" id="ID_MRDR_GSQL_ARCHETYPE_FEATURE_EAGLE_STEEL_FEATHERS" level="3" />
+			<grant type="Archetype Feature" id="ID_MRDR_GSQL_ARCHETYPE_FEATURE_EAGLE_RULER_OFTHE_ROOST" level="6" />
+			<grant type="Archetype Feature" id="ID_MRDR_GSQL_ARCHETYPE_FEATURE_EAGLE_SUPERIOR_WINGSPAN" level="10" />
+			<grant type="Archetype Feature" id="ID_MRDR_GSQL_ARCHETYPE_FEATURE_EAGLE_INSPIRING_PRESENCE" level="14" />
+			<grant type="Archetype Feature" id="ID_MRDR_GSQL_ARCHETYPE_FEATURE_EAGLE_DREADFUL_PRESENCE" level="17" />
+			
+			<grant type="Grants" id="ID_MRDR_GSQL_GRANTS_EAGLE_LEVEL_6" level="6" />
+			<grant type="Grants" id="ID_MRDR_GSQL_GRANTS_EAGLE_LEVEL_10" level="10" />
+			<grant type="Grants" id="ID_MRDR_GSQL_GRANTS_EAGLE_LEVEL_14" level="14" />
+			<grant type="Grants" id="ID_MRDR_GSQL_GRANTS_EAGLE_LEVEL_17" level="17" />
+		</rules>
+	</element>
+
+	<element name="Level 3: Eagle" type="Archetype Feature" source="The GooseQuill" id="ID_MRDR_GSQL_ARCHETYPE_FEATURE_EAGLE_BIRD">
+		<description>
+			<p>Your Bird of Prey is an eagle. To reflect your choice of its species, its stat block changes in the following ways:</p>
+			<center>
+				<p><b>Armor Class.</b></p>
+				<p><i>The Bird of Prey’s AC calculation changes to:</i></p>
+				<p>11 plus the Bird of Prey’s Dexterity modifier plus your Wisdom modifier.</p>
+				<p><b>Hit Points.</b></p>
+				<p><i>The Bird of Prey’s HP changes to:</i></p>
+				<p>The Bird of Prey’s Constitution modifier times your Falconer level, plus five times your Falconer level (the Bird of Prey has a number of Hit Dice [d10s] equal to your Falconer level).</p>
+				<p><b>Speed.</b></p>
+				<p>The Bird of Prey’s Fly Speed increases by 10 feet.</p>
+				<p><b>Ability Scores.</b></p>
+				<p>The Bird of Prey’s Strength score changes to 13, and its Constitution score to 15.</p>
+			</center>
+		</description>
+		<sheet display="false" />
+	</element>
+
+	<element name="Level 3: Steel Feathers" type="Archetype Feature" source="The GooseQuill" id="ID_MRDR_GSQL_ARCHETYPE_FEATURE_EAGLE_STEEL_FEATHERS">
+		<description>
+			<p>Choosing the Eagle as your Bird of Prey grants the following benefits.</p>
+			<p class="indent"><strong><em>Bulwark.</em></strong> You gain training with Heavy Armor.</p>
+			<p class="indent"><strong><em>Close-Quarters Companions.</em></strong> When you and your Bird of Prey are within 5 feet of each other, you both gain a +2 to your AC, and you can force an attack targeted at your Bird of Prey to target you instead if you don’t have the Incapacitated condition.</p>
+		</description>
+		<sheet alt="Close-Quarters Companions">
+			<description>When you and your Bird of Prey are within 5 feet of each other, you both gain a +2 to your AC, and you can force an attack targeted at your Bird of Prey to target you instead if you don’t have the Incapacitated condition.</description>
+		</sheet>
+		<rules>
+			<grant type="Proficiency" id="ID_PROFICIENCY_ARMOR_PROFICIENCY_HEAVY_ARMOR" />
+		</rules>
+	</element>
+	
+	<element name="Level 6: Ruler of the Roost" type="Archetype Feature" source="The GooseQuill" id="ID_MRDR_GSQL_ARCHETYPE_FEATURE_EAGLE_RULER_OFTHE_ROOST">
+		<description>
+			<p>Choosing the Eagle as your Bird of Prey grants the following benefits.</p>
+			<p class="indent"><strong><em>Commanding Presence.</em></strong> When you make a Charisma (Intimidation or Persuasion) check, you gain a bonus to the check equal to your Wisdom modifier.</p>
+			<p class="indent"><strong><em>Level-Headed.</em></strong> You gain proficiency in Wisdom saving throws.</p>
+		</description>
+		<sheet display="false" />
+		<rules>
+			<grant type="Archetype Feature" id="ID_MRDR_GSQL_ARCHETYPE_FEATURE_RULER_OFTHE_ROOST_COMMANDING_PRESENCE" />
+			<grant type="Proficiency" id="ID_PROFICIENCY_SAVINGTHROW_WISDOM" />
+		</rules>
+	</element>
+	<element name="Commanding Presence" type="Archetype Feature" source="The GooseQuill" id="ID_MRDR_GSQL_ARCHETYPE_FEATURE_RULER_OFTHE_ROOST_COMMANDING_PRESENCE">
+		<description>
+			<p>When you make a Charisma (Intimidation or Persuasion) check, you gain a bonus to the check equal to your Wisdom modifier.</p>
+		</description>
+		<sheet>
+			<description>When you make a Charisma (Intimidation or Persuasion) check, you gain a bonus to the check equal to your Wisdom modifier.</description>
+		</sheet>
+	</element>
+	
+	<element name="Level 10: Superior Wingspan" type="Archetype Feature" source="The GooseQuill" id="ID_MRDR_GSQL_ARCHETYPE_FEATURE_EAGLE_SUPERIOR_WINGSPAN">
+		<description>
+			<p>Your Bird of Prey grows to Medium size. When you or your Bird of Prey make a melee attack on your turn, your reach for it is 5 feet greater than normal.</p>
+		</description>
+		<sheet alt="Superior Wingspan">
+			<description>When you or your Bird of Prey make a melee attack on your turn, your reach for it is 5 feet greater than normal.</description>
+		</sheet>
+	</element>
+
+	<element name="Level 14: Inspiring Presence" type="Archetype Feature" source="The GooseQuill" id="ID_MRDR_GSQL_ARCHETYPE_FEATURE_EAGLE_INSPIRING_PRESENCE">
+		<description>
+			<p>Your Bird of Prey’s presence inspires courage in your allies. While within a 10-foot Emanation centered on your Bird of Prey, you and all creatures of your choice gain the following benefits if the Bird of Prey doesn’t have the Incapacitated condition:</p>
+			<p class="indent"><strong><em>Fearless.</em></strong> You gain immunity to the Frightened condition.</p>
+			<p class="indent"><strong><em>Emboldened.</em></strong> If you roll a 1 or 2 on a damage die for an attack you make with a weapon, you can reroll the die. You must use the new result.</p>
+		</description>
+		<sheet alt="Inspiring Presence">
+			<description>While within a 10-foot Emanation centered on your Bird of Prey, you and all creatures of your choice gain the following benefits if the Bird of Prey doesn’t have the Incapacitated condition:</description>
+		</sheet>
+		<rules>
+			<select type="Archetype Feature" name="Inspiring Presence" supports="Inspiring Presence" default="ID_MRDR_GSQL_CLASS_FEATURE_INSPIRING_PRESENCE_FEARLESS" />
+			<select type="Archetype Feature" name="Inspiring Presence" supports="Inspiring Presence" default="ID_MRDR_GSQL_CLASS_FEATURE_INSPIRING_PRESENCE_EMBOLDEN" />
+		</rules>
+	</element>
+	<element name="Fearless" type="Archetype Feature" source="The GooseQuill" id="ID_MRDR_GSQL_CLASS_FEATURE_INSPIRING_PRESENCE_FEARLESS">
+		<supports>Inspiring Presence</supports>
+		<description>
+			<p>You gain immunity to the Frightened condition.</p>
+		</description>
+		<sheet>
+			<description>You gain immunity to the Frightened condition.</description>
+		</sheet>
+	</element>
+	<element name="Embolden" type="Archetype Feature" source="The GooseQuill" id="ID_MRDR_GSQL_CLASS_FEATURE_INSPIRING_PRESENCE_EMBOLDEN">
+		<supports>Inspiring Presence</supports>
+		<description>
+			<p>If you roll a 1 or 2 on a damage die for an attack you make with a weapon, you can reroll the die. You must use the new result.</p>
+		</description>
+		<sheet>
+			<description>If you roll a 1 or 2 on a damage die for an attack you make with a weapon, you can reroll the die. You must use the new result.</description>
+		</sheet>
+	</element>
+
+	<element name="Level 17: Dreadful Presence" type="Archetype Feature" source="The GooseQuill" id="ID_MRDR_GSQL_ARCHETYPE_FEATURE_EAGLE_DREADFUL_PRESENCE">
+		<description>
+			<p>The sight of your Bird of Prey instills fear within your enemies. While within a 10-foot Emanation centered on your Bird of Prey, creatures of your choice are subjected to the following effects if the Bird of Prey doesn’t have the Incapacitated condition:</p>
+			<p class="indent"><strong><em>Instill Fear.</em></strong> Whenever the Emanation enters a creature’s space and whenever a creature enters the Emanation or ends its turn there, the creature must make a Wisdom saving throw. On a failed save, the creature has the Frightened condition. A creature can repeat the saving throw at the start of its next turn.</p>
+			<p class="indent"><strong><em>Dread Strikes.</em></strong> You and your Bird of Prey have Advantage on attack rolls made against a Quarry if it has the Frightened condition from Dreadful Presence.</p>
+			<p class="indent">If a creature successfully saves against the effect, or if the effect on it ends, the target is immune to the Bird of Prey's Dreadful Presence for the next 24 hours.</p>
+		</description>
+		<sheet alt="Dreadful Presence">
+			<description>While within a 10-foot Emanation centered on your Bird of Prey, creatures of your choice are subjected to the following effects if the Bird of Prey doesn’t have the Incapacitated condition:</description>
+		</sheet>
+		<rules>
+			<select type="Archetype Feature" name="Dreadful Presence" supports="Dreadful Presence" default="ID_MRDR_GSQL_CLASS_FEATURE_DREADFUL_PRESENCE_INSTILL_FEAR" />
+			<select type="Archetype Feature" name="Dreadful Presence" supports="Dreadful Presence" default="ID_MRDR_GSQL_CLASS_FEATURE_DREADFUL_PRESENCE_DREAD_STRIKES" />
+		</rules>
+	</element>
+	<element name="Instill Fear" type="Archetype Feature" source="The GooseQuill" id="ID_MRDR_GSQL_CLASS_FEATURE_DREADFUL_PRESENCE_INSTILL_FEAR">
+		<supports>Dreadful Presence</supports>
+		<description>
+			<p>Whenever the Emanation enters a creature’s space and whenever a creature enters the Emanation or ends its turn there, the creature must make a Wisdom saving throw. On a failed save, the creature has the Frightened condition. A creature can repeat the saving throw at the start of its next turn.</p>
+		</description>
+		<sheet>
+			<description>Whenever the Emanation enters a creature’s space and whenever a creature enters the Emanation or ends its turn there, the creature must make a Wisdom saving throw. On a failed save, the creature has the Frightened condition. A creature can repeat the saving throw at the start of its next turn. If a creature successfully saves against the effect, or if the effect on it ends, the target is immune to the Bird of Prey's Dreadful Presence for the next 24 hours.</description>
+		</sheet>
+	</element>
+	<element name="Dread Strikes" type="Archetype Feature" source="The GooseQuill" id="ID_MRDR_GSQL_CLASS_FEATURE_DREADFUL_PRESENCE_DREAD_STRIKES">
+		<supports>Dreadful Presence</supports>
+		<description>
+			<p>You and your Bird of Prey have Advantage on attack rolls made against a Quarry if it has the Frightened condition from Dreadful Presence.</p>
+		</description>
+		<sheet>
+			<description>You and your Bird of Prey have Advantage on attack rolls made against a Quarry if it has the Frightened condition from Dreadful Presence.</description>
+		</sheet>
+	</element>
+    
+</elements>

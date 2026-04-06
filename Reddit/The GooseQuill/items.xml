@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<elements>
+    <info>
+        <update version="0.0.1">
+            <file name="items.xml" url="https://raw.githubusercontent.com/MeriadarGoblin/elements-thirdparty/refs/heads/main/Reddit/The%20GooseQuill/items.xml" />
+        </update>
+    </info>
+    
+    <element name="Falconry Kit" type="Item" source="The GooseQuill" id="ID_MRDR_GSQL_ITEM_TOOL_FALCONRY_KIT">
+		<description>
+			<p>A kit for falconer's.</p>
+		</description>
+		<setters>
+			<set name="category">Tools</set>
+			<set name="cost" currency="gp">-</set>
+			<set name="weight" lb="10">10 lbs.</set>
+			<set name="type">Tool</set>
+			<set name="proficiency">ID_PROFICIENCY_TOOL_PROFICIENCY_FALCONRY_KIT</set>
+		</setters>
+	</element>
+
+	<element name="Tool Proficiency (Falconry kit)" type="Proficiency" source="The GooseQuill" id="ID_PROFICIENCY_TOOL_PROFICIENCY_FALCONRY_KIT">
+		<supports>Tool</supports>
+		<requirements />
+		<description>
+			<p>A kit for falconer's.</p>
+		</description>
+		<rules />
+	</element>
+
+	<element name="Class Equipment Pack (Falconer)" type="Item" source="The GooseQuill" id="ID_MRDR_GSQL_ITEM_CLASS_EQUIPMENT_PACK_FALCONER">
+		<description>
+			<p style="margin-bottom:5px">This pack contains items that are given to a character of Falconer Class, if you chose option A for Equipment.</p>
+			<p>You will receive following items by extracting contents of this pack:</p>
+			<p class="indent">• 2 Daggers</p>
+			<p class="indent">• 2 Shortswords</p>
+			<p class="indent">• Rapier</p>
+			<p class="indent">• Shortbow</p>
+			<p class="indent">• 20 Arrows</p>
+			<p class="indent">• Quiver</p>
+			<p class="indent">• Falconry Kit</p>
+			<p class="indent" style="margin-bottom:5px">• Explorer's Pack</p>
+			<p><b>Note:</b> This pack doesn't include Chain Shirt and 9 GP.</p>
+		</description>
+		<setters>
+			<set name="category">Equipment Packs</set>
+			<set name="cost">—</set>
+			<set name="weight">—</set>
+		</setters>
+		<extract>
+			<item amount="2">ID_WOTC_PHB_WEAPON_DAGGER</item>
+			<item amount="2">ID_WOTC_PHB_WEAPON_SHORTSWORD</item>
+			<item>ID_WOTC_PHB_WEAPON_RAPIER</item>
+			<item>ID_WOTC_PHB_WEAPON_SHORTBOW</item>
+			<item amount="20">ID_WOTC_PHB_ITEM_ARROW</item>
+			<item>ID_WOTC_PHB_ITEM_QUIVER</item>
+			<item>ID_MRDR_GSQL_ITEM_TOOL_FALCONRY_KIT</item>
+			<item>ID_WOTC_PHB24_ITEM_EXPLORERS_PACK</item>
+		</extract>
+	</element>
+    
+</elements>

@@ -1,0 +1,206 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<elements>
+    <info>
+        <update version="0.0.1">
+            <file name="falconer-goose.xml" url="https://raw.githubusercontent.com/MeriadarGoblin/elements-thirdparty/refs/heads/main/Reddit/The%20GooseQuill/falconer-goose.xml" />
+        </update>
+    </info>
+    
+    <element name="Goose" type="Archetype" source="The GooseQuill" id="ID_MRDR_GSQL_ARCHETYPE_FALCONER_GOOSE">
+		<supports>Falconer Subclass</supports>
+		<prerequisite>A terrifying waterfowl.</prerequisite>
+		<description>
+			<p>Legends tell of a terrifying creature, the blight of hamlets, villages and towns alike. Indeed, these legends told of white, brown or black-feathered waterfowl that filled the hearts of all who could hear their deafening honk with dread. These tales told of a creature none other than the Goose, a creature that the very gods themselves forgot to give the ability to feel fear, their mistake now the cause of many an innocent’s person fear to leave their house.</p>
+			<p class="indent">Falconers skilled- and most importantly brave enough to tame a Goose walk across the battlefield with cacophonous fear itself by their side.</p>
+			<div element="ID_MRDR_GSQL_ARCHETYPE_FEATURE_GOOSE_BIRD" />
+			<div element="ID_MRDR_GSQL_ARCHETYPE_FEATURE_GOOSE_HONK" />
+			<div element="ID_MRDR_GSQL_ARCHETYPE_FEATURE_GOOSE_UNITITLED_GOOSE_FEATURE" />
+			<div element="ID_MRDR_GSQL_ARCHETYPE_FEATURE_GOOSE_INSPIRING_HONKROBATICS" />
+			<div element="ID_MRDR_GSQL_ARCHETYPE_FEATURE_GOOSE_GATHERING_GAGGLE" />
+			<div element="ID_MRDR_GSQL_ARCHETYPE_FEATURE_GOOSE_HERALD_OFTHE_HONKPOCALYPSE" />
+		</description>
+		<sheet display="false" />
+		<rules>
+			<grant type="Archetype Feature" id="ID_MRDR_GSQL_ARCHETYPE_FEATURE_GOOSE_BIRD" level="3" />
+			<grant type="Archetype Feature" id="ID_MRDR_GSQL_ARCHETYPE_FEATURE_GOOSE_HONK" level="3" />
+			<grant type="Archetype Feature" id="ID_MRDR_GSQL_ARCHETYPE_FEATURE_GOOSE_UNITITLED_GOOSE_FEATURE" level="6" />
+			<grant type="Archetype Feature" id="ID_MRDR_GSQL_ARCHETYPE_FEATURE_GOOSE_INSPIRING_HONKROBATICS" level="10" />
+			<grant type="Archetype Feature" id="ID_MRDR_GSQL_ARCHETYPE_FEATURE_GOOSE_GATHERING_GAGGLE" level="14" />
+			<grant type="Archetype Feature" id="ID_MRDR_GSQL_ARCHETYPE_FEATURE_GOOSE_HERALD_OFTHE_HONKPOCALYPSE" level="17" />
+
+			<grant type="Grants" id="ID_MRDR_GSQL_GRANTS_GOOSE_LEVEL_6" level="6" />
+			<grant type="Grants" id="ID_MRDR_GSQL_GRANTS_GOOSE_LEVEL_10" level="10" />
+			<grant type="Grants" id="ID_MRDR_GSQL_GRANTS_GOOSE_LEVEL_14" level="14" />
+			<grant type="Grants" id="ID_MRDR_GSQL_GRANTS_GOOSE_LEVEL_17" level="17" />
+		</rules>
+	</element>
+
+	<element name="Level 3: Goose" type="Archetype Feature" source="The GooseQuill" id="ID_MRDR_GSQL_ARCHETYPE_FEATURE_GOOSE_BIRD">
+		<description>
+			<p>Your Bird of Prey is a goose. To reflect your choice of its species, its stat block changes in the following ways:</p>
+			<center>
+				<p><b>Armor Class.</b></p>
+				<p><i>The Bird of Prey’s AC calculation changes to:</i></p>
+				<p>10 plus the Bird of Prey’s Dexterity modifier plus your Wisdom modifier.</p>
+				<p><b>Hit Points.</b></p>
+				<p><i>The Bird of Prey’s HP changes to:</i></p>
+				<p>The Bird of Prey’s Constitution modifier times your Falconer level, plus four times your Falconer level (the Bird of Prey has a number of Hit Dice [d8s] equal to your Falconer level).</p>
+				<p><b>Speed.</b></p>
+				<p>The Bird of Prey’s Fly Speed increases by 10 feet.</p>
+				<p><b>Ability Scores.</b></p>
+				<p>The Bird of Prey’s Strength score changes to 12, and its Dexterity score to 15.</p>
+				<p><b>Immunities.</b></p>
+				<p>The Bird of Prey has Immunity to the Frightened condition.</p>
+				<p><b>Damage Types.</b></p>
+				<p>Instead of Piercing or Slashing damage, your Bird of Prey’s attacks deal your Bludgeoning or Psychic damage (your choice).</p>
+			</center>
+		</description>
+		<sheet display="false" />
+	</element>
+
+	<element name="Level 3: Honk" type="Archetype Feature" source="The GooseQuill" id="ID_MRDR_GSQL_ARCHETYPE_FEATURE_GOOSE_HONK">
+		<description>
+			<p>As an action, your Bird of Prey can scare its opponents by producing a terrifying honk. Creatures within 10 feet of your Bird of Prey must make a Wisdom saving throw or gain the Frightened Condition until the end of your next turn. Creatures may make a saving throw to end the Frightened condition on themselves early when they leave your Bird of Prey’s reach.</p>
+			<p class="indent">If at least one creature fails its saving throw against this effect, your Bird of Prey gains temporary hit points equal to your Falconer level.</p>
+			<p class="indent">You can use this feature a number of times equal to your Wisdom modifier (minimum of 1), and you regain all expended uses when you finish a Rest.</p>
+		</description>
+		<sheet alt="Honk" action="Action" usage="{{goose:honk}}/Rest">
+			<description>As an action, your Bird of Prey can scare its opponents by producing a terrifying honk. Creatures within 10 feet of your Bird of Prey must make a Wisdom saving throw or gain the Frightened Condition until the end of your next turn. Creatures may make a saving throw to end the Frightened condition on themselves early when they leave your Bird of Prey’s reach.&#13;
+				If at least one creature fails its saving throw against this effect, your Bird of Prey gains {{level:falconer}} temporary hit points.
+			</description>
+		</sheet>
+		<rules>
+			<stat name="goose:honk" value="1" bonus="base" />
+			<stat name="goose:honk" value="wisdom:modifier" bonus="base" />
+		</rules>
+	</element>
+
+	<element name="Level 6: Untitled Goose Feature" type="Archetype Feature" source="The GooseQuill" id="ID_MRDR_GSQL_ARCHETYPE_FEATURE_GOOSE_UNITITLED_GOOSE_FEATURE">
+		<description>
+			<p>You have spent so much time near one of nature’s most terrifying creatures that you aren’t so easily swayed anymore.</p>
+			<p class="indent"><strong><em>Fearless.</em></strong> You gain Advantage on saving throws to avoid or end the Frightened condition on yourself.</p>
+			<p class="indent"><strong><em>Fear Itself.</em></strong> The presence of your Bird of Prey inspires fear in your enemies. While your Bird of Prey is within 10 feet of you, you gain a bonus to Charisma (Intimidation) checks equal to your Wisdom modifier.</p>
+			<p class="indent"><strong><em>Unbothered.</em></strong> When an effect tries to move you against your will, you can use a Reaction to roll a d4. On a 3 or higher, you remain stationary. You can’t use this Reaction if you’re Prone.</p>
+		</description>
+		<sheet alt="Untitled Goose Feature" />
+		<rules>
+			<select type="Archetype Feature" name="Untitled Goose Feature" supports="Untitled Goose Feature" default="ID_MRDR_GSQL_ARCHETYPE_FEATURE_GOOSE_FEARLESS" />
+			<select type="Archetype Feature" name="Untitled Goose Feature" supports="Untitled Goose Feature" default="ID_MRDR_GSQL_ARCHETYPE_FEATURE_GOOSE_FEAR_ITSELF" />
+			<select type="Archetype Feature" name="Untitled Goose Feature" supports="Untitled Goose Feature" default="ID_MRDR_GSQL_ARCHETYPE_FEATURE_GOOSE_UNBOTHERED" />
+		</rules>
+	</element>
+	<element name="Fearless" type="Archetype Feature" source="The GooseQuill" id="ID_MRDR_GSQL_ARCHETYPE_FEATURE_GOOSE_FEARLESS">
+		<supports>Untitled Goose Feature</supports>
+		<description>
+			<p>You gain Advantage on saving throws to avoid or end the Frightened condition on yourself.</p>
+		</description>
+		<sheet>
+			<description>You gain Advantage on saving throws to avoid or end the Frightened condition on yourself.</description>
+		</sheet>
+	</element>
+	<element name="Fear Itself" type="Archetype Feature" source="The GooseQuill" id="ID_MRDR_GSQL_ARCHETYPE_FEATURE_GOOSE_FEAR_ITSELF">
+		<supports>Untitled Goose Feature</supports>
+		<description>
+			<p>The presence of your Bird of Prey inspires fear in your enemies. While your Bird of Prey is within 10 feet of you, you gain a bonus to Charisma (Intimidation) checks equal to your Wisdom modifier.</p>
+		</description>
+		<sheet>
+			<description>The presence of your Bird of Prey inspires fear in your enemies. While your Bird of Prey is within 10 feet of you, you gain a bonus to Charisma (Intimidation) checks equal to your Wisdom modifier.</description>
+		</sheet>
+	</element>
+	<element name="Unbothered" type="Archetype Feature" source="The GooseQuill" id="ID_MRDR_GSQL_ARCHETYPE_FEATURE_GOOSE_UNBOTHERED">
+		<supports>Untitled Goose Feature</supports>
+		<description>
+			<p>When an effect tries to move you against your will, you can use a Reaction to roll a d4. On a 3 or higher, you remain stationary. You can’t use this Reaction if you’re Prone.</p>
+		</description>
+		<sheet action="Reaction">
+			<description>When an effect tries to move you against your will, you can use a Reaction to roll a d4. On a 3 or higher, you remain stationary. You can’t use this Reaction if you’re Prone.</description>
+		</sheet>
+	</element>
+
+	<element name="Level 10: Inspiring Honkrobatics" type="Archetype Feature" source="The GooseQuill" id="ID_MRDR_GSQL_ARCHETYPE_FEATURE_GOOSE_INSPIRING_HONKROBATICS">
+		<description>
+			<p>Your foes stand no chance against the combined prowess of you and your waterfowl. After using an Aerial Acrobatics option against a Quarry, the next weapon attack made against that Quarry by a creature other than you or your Bird of Prey gains Advantage on the attack roll.</p>
+		</description>
+		<sheet alt="Inspiring Honkrobatics">
+			<description>After using an Aerial Acrobatics option against a Quarry, the next weapon attack made against that Quarry by a creature other than you or your Bird of Prey gains Advantage on the attack roll.</description>
+		</sheet>
+	</element>
+
+	<element name="Level 14: Gathering Gaggle" type="Archetype Feature" source="The GooseQuill" id="ID_MRDR_GSQL_ARCHETYPE_FEATURE_GOOSE_GATHERING_GAGGLE">
+		<description>
+			<p>As if one goose wasn’t enough. As an action, you can summon an amount of illusory geese equal to your Wisdom modifier (minimum of 1), which flock around you in your space. You gain the following benefits while you have at least one illusory goose:</p>
+			<p class="indent"><strong><em>Distracting Honk.</em></strong> Creatures of your choice within 5 feet of you gain a penalty to attack rolls equal to the number of illusory geese.</p>
+			<p class="indent"><strong><em>Wild Goose Chase.</em></strong> Each time a creature hits you with an attack roll, roll a d6 for each of your illusory geese. If any of the d6s rolls a 3 or higher, one of the geese is hit instead of you, and vanishes. The geese otherwise ignore all other damage and effects.</p>
+			<p class="indent">The illusory geese remain for 1 minute or until you use this feature again. You can use this feature a number of times equal to your Wisdom modifier (minimum of 1), and regain all expended uses when you finish a Long Rest.</p>
+		</description>
+		<sheet alt="Gathering Gaggle" action="Action" usage="{{gathering gaggle}}/Long Rest">
+			<description>As an action, you can summon {{gathering gaggle}} illusory geese, which flock around you in your space. You gain the following benefits while you have at least one illusory goose:</description>
+		</sheet>
+		<rules>
+			<stat name="gathering gaggle" value="1" bonus="base" />
+			<stat name="gathering gaggle" value="wisdom:modifier" bonus="base" />
+
+			<select type="Archetype Feature" name="Gathering Gaggle" supports="Gathering Gaggle" default="ID_MRDR_GSQL_ARCHETYPE_FEATURE_GOOSE_GAGGLE_DISTRACTING_HONK" />
+			<select type="Archetype Feature" name="Gathering Gaggle" supports="Gathering Gaggle" default="ID_MRDR_GSQL_ARCHETYPE_FEATURE_GOOSE_GAGGLE_GOOSE_CHASE" />
+		</rules>
+	</element>
+	<element name="Distracting Honk" type="Archetype Feature" source="The GooseQuill" id="ID_MRDR_GSQL_ARCHETYPE_FEATURE_GOOSE_GAGGLE_DISTRACTING_HONK">
+		<supports>Gathering Gaggle</supports>
+		<description>
+			<p>Creatures of your choice within 5 feet of you gain a penalty to attack rolls equal to the number of illusory geese.</p>
+		</description>
+		<sheet>
+			<description>Creatures of your choice within 5 feet of you gain a penalty to attack rolls equal to the number of illusory geese.</description>
+		</sheet>
+	</element>
+	<element name="Wild Goose Chase" type="Archetype Feature" source="The GooseQuill" id="ID_MRDR_GSQL_ARCHETYPE_FEATURE_GOOSE_GAGGLE_GOOSE_CHASE">
+		<supports>Gathering Gaggle</supports>
+		<description>
+			<p>Each time a creature hits you with an attack roll, roll a d6 for each of your illusory geese. If any of the d6s rolls a 3 or higher, one of the geese is hit instead of you, and vanishes. The geese otherwise ignore all other damage and effects.</p>
+		</description>
+		<sheet alt="Wild Goose Chase">
+			<description>Each time a creature hits you with an attack roll, roll a d6 for each of your illusory geese. If any of the d6s rolls a 3 or higher, one of the geese is hit instead of you, and vanishes. The geese otherwise ignore all other damage and effects.&#13;
+				The illusory geese remain for 1 minute or until you use this feature again. You regain all expended uses when you finish a Long Rest.
+			</description>
+		</sheet>
+	</element>
+
+	<element name="Level 17: Herald of the Honkpocalypse" type="Archetype Feature" source="The GooseQuill" id="ID_MRDR_GSQL_ARCHETYPE_FEATURE_GOOSE_HERALD_OFTHE_HONKPOCALYPSE">
+		<description>
+			<p>As part of a Bonus Action when you activate an Aerial Acrobatics option, you can summon a flock of geese which fill a 10-foot-radius Sphere centered on a point you can see within 60 feet of you. The flock’s area is Difficult Terrain and creatures other than you have Disadvantage on saving throws to avoid or end the Frightened condition on themselves.</p>
+			<p class="indent">A creature other than you or your Bird of Prey that starts or ends its turn in the flock’s area must make a Wisdom saving throw, taking 3d12 Psychic damage on a failed save or half as much damage on a succesful one.</p>
+			<p class="indent">If you activate an Aerial Acrobatics option on subsequent turns, you can choose one of the following effects:</p>
+			<p class="indent"><strong><em>Flock.</em></strong> You summon an additional flock. You can have a number of active flocks equal to your Wisdom modifier.</p>
+			<p class="indent"><strong><em>Move.</em></strong> You can move all existing flocks up to 30 feet respectively to an unoccupied space that you can see.</p>
+			<p class="indent">Each flock remains for 1 minute or until you dismiss all active flocks as a Bonus Action.</p>
+		</description>
+		<sheet alt="Herald of the Honkpocalypse" action="Aerial Acrobatics">
+			<description>As part of a Bonus Action when you activate an Aerial Acrobatics option, you can summon a flock of geese which fill a 10-foot-radius Sphere centered on a point you can see within 60 feet of you. The flock’s area is Difficult Terrain and creatures other than you have Disadvantage on saving throws to avoid or end the Frightened condition on themselves.&#13;
+				A creature other than you or your Bird of Prey that starts or ends its turn in the flock’s area must make a Wisdom saving throw, taking 3d12 Psychic damage on a failed save or half as much damage on a succesful one.If you activate an Aerial Acrobatics option on subsequent turns, you can choose one of the following effects:
+			</description>
+		</sheet>
+		<rules>
+			<select type="Archetype Feature" name="Honkpocalypse" supports="Honkpocalypse" default="ID_MRDR_GSQL_ARCHETYPE_FEATURE_GOOSE_HONKPOCALYPSE_FLOCK" />
+			<select type="Archetype Feature" name="Honkpocalypse" supports="Honkpocalypse" default="ID_MRDR_GSQL_ARCHETYPE_FEATURE_GOOSE_HONKPOCALYPSE_MOVE" />
+		</rules>
+	</element>
+	<element name="Flock" type="Archetype Feature" source="The GooseQuill" id="ID_MRDR_GSQL_ARCHETYPE_FEATURE_GOOSE_HONKPOCALYPSE_FLOCK">
+		<supports>Honkpocalypse</supports>
+		<description>
+			<p>You summon an additional flock. You can have a number of active flocks equal to your Wisdom modifier.</p>
+		</description>
+		<sheet>
+			<description>You summon an additional flock. You can have {{gathering:gaggle}} active flocks.</description>
+		</sheet>
+	</element>
+	<element name="Move" type="Archetype Feature" source="The GooseQuill" id="ID_MRDR_GSQL_ARCHETYPE_FEATURE_GOOSE_HONKPOCALYPSE_MOVE">
+		<supports>Honkpocalypse</supports>
+		<description>
+			<p>You can move all existing flocks up to 30 feet respectively to an unoccupied space that you can see.</p>
+		</description>
+		<sheet>
+			<description>You can move all existing flocks up to 30 feet respectively to an unoccupied space that you can see.</description>
+		</sheet>
+	</element>
+    
+</elements>
