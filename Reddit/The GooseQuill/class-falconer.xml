@@ -1,0 +1,719 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<elements>
+	<element name="Falconer" type="Class" source="The GooseQuill" id="ID_MRDR_GSQL_CLASS_FALCONER">
+		<description>
+			<p>Falconers are skilled handlers of imposing birds of prey, with whom they share an unbreakable bond. Wherever they go, they turn heads, commanding a certain air of authority, their birds a symbol of their perseverance and discipline.</p>
+			<p class="indent">Falconry exists within many tribes and nations as an important aspect of their cultures- birds of prey are a method of hunting for some, a symbol of status for others, but fiercely loyal companions to all who wear the falconer’s glove. This loyalty does not often come naturally, requiring countless hours of arduous training and handling, hours characterized by discipline, perseverance and the occasional bout of frustration. The result is a two-part team whose bond is stronger than steel, partners who can rely on and bolster each other in the heat of battle.</p>
+			<div class="sidebar">
+				<h5>CORE RANGER TRAITS</h5>
+				<table>
+					<tr><td><b>Primary Ability</b></td><td>Dexterity and Wisdom</td></tr>
+					<tr><td><b>Hit Point Die</b></td><td>D8 per Falconer level</td></tr>
+					<tr><td><b>Saving Throw Proficiencies</b></td><td>Strength and Dexterity</td></tr>
+					<tr><td><b>Skills Proficiencies</b></td><td><i>Choose 2:</i> Acrobatics, Animal Handling, Athletics, Insight, Nature, Investigation, Perception, Persuasion or Survival</td></tr>
+					<tr><td><b>Weapon Proficiencies</b></td><td>Simple and Martial weapons</td></tr>
+					<tr><td><b>Tool Proficiencies</b></td><td>Falconry Kit</td></tr>
+					<tr><td><b>Armor Training</b></td><td>Light and Medium armor</td></tr>
+					<tr><td><b>Starting Equipment</b></td><td><i>Choose A or B:</i> (A) Chain Shirt, 2 Daggers, 2 Shortswords, Rapier, Shortbow, 20 Arrows, Quiver, Falconry Kit, Explorer’s Pack, and 9 GP; or (B) 150 GP</td></tr>
+				</table>
+			</div>
+			<p class="indent">Falconers who set out to take up the adventurer’s mantle often find themselves relying heavily on the companionship of their bird of prey, which assists them with the challenges they are forced to face in the wilderness of dense, primordial forests, the darkness of ancient dungeons. Whether they are travelling alone or in a party of like-minded adventurers, falconers will always find company in their bird of prey.</p>
+			<h4>BECOMING A FALCONER</h4>
+			<h5 style="margin-top:-2em">AS A LEVEL 1 CHARACTER</h5>
+			<ul style="margin-top:-1em; margin-bottom: 0.5em">
+				<li>Gain all the traits in the Core Falconer Traits table. </li>
+				<li>Gain the Falconer's level 1 features, which are listed in the Falconer Features table.</li>
+			</ul>
+			<h5 style="margin-top: 0px">AS A MULTICLASS CHARACTER</h5>
+			<ul style="margin-top:-1em">
+				<li>Gain the following traits from the Core Falconer Traits table: Hit Point Die, proficiency with Martial Weapons, proficiency with Falconry Kits, and training with Light and Medium armor.</li>
+				<li>Gain the Falconer’s level 1 features, which are listed in the Falconer Features table.</li>
+			</ul>
+			<h5>FALCONER FEATURES</h5>
+			<table class="class-features">
+				<tr style="font-weight: bold">
+					<td class="col-10">Level</td>
+					<td class="col-50 left">Class Features</td>
+					<td>Bird of Prey Damage Die</td>
+					<td>Harrier</td>
+				</tr>
+				<tr><td> 1</td><td class="left">Bird of Prey, Weapon Mastery</td><td>1d4</td><td>-</td></tr>
+				<tr><td> 2</td><td class="left">Bird's Eye View, Fighting Style, Harrier</td><td>1d4</td><td>+1</td></tr>
+				<tr><td> 3</td><td class="left">Falconer Subclass, Aerial Acrobatics</td><td>1d6</td><td>+1</td></tr>
+				<tr><td> 4</td><td class="left">Ability Score Improvement</td><td>1d6</td><td>+1</td></tr>
+				<tr><td> 5</td><td class="left">Extra Attack</td><td>1d6</td><td>+2</td></tr>
+				<tr><td> 6</td><td class="left">Primal Talons, Subclass Feature</td><td>1d8</td><td>+2</td></tr>
+				<tr><td> 7</td><td class="left">Eagle Eye, Hollow Bones</td><td>1d8</td><td>+2</td></tr>
+				<tr><td> 8</td><td class="left">Ability Score Improvement</td><td>1d8</td><td>+2</td></tr>
+				<tr><td> 9</td><td class="left">Evasive Maneuvers, Birds of a Feather</td><td>1d8</td><td>+2</td></tr>
+				<tr><td> 10</td><td class="left">Subclass Feature</td><td>1d10</td><td>+3</td></tr>
+				<tr><td> 11</td><td class="left">Flurry of Talons, Stick Together</td><td>1d10</td><td>+3</td></tr>
+				<tr><td> 12</td><td class="left">Ability Score Improvement</td><td>1d10</td><td>+3</td></tr>
+				<tr><td> 13</td><td class="left">Aerial Ace</td><td>1d10</td><td>+3</td></tr>
+				<tr><td> 14</td><td class="left">Subclass Feature</td><td>1d12</td><td>+4</td></tr>
+				<tr><td> 15</td><td class="left">Volte-Face</td><td>1d12</td><td>+4</td></tr>
+				<tr><td> 16</td><td class="left">Ability Score Improvement</td><td>1d12</td><td>+4</td></tr>
+				<tr><td> 17</td><td class="left">Subclass Feature</td><td>2d6</td><td>+5</td></tr>
+				<tr><td> 18</td><td class="left">Perseverance</td><td>2d6</td><td>+5</td></tr>
+				<tr><td> 19</td><td class="left">Epic Boon</td><td>2d6</td><td>+5</td></tr>
+				<tr><td> 20</td><td class="left">Aerial Supremacy</td><td>2d6</td><td>+5</td></tr>
+			</table>
+			<h4>FALCONER CLASS FEATURES</h4>
+			<p>As a Falconer, you gain the following class features when you reach the specified Falconer levels. These features are listed on the Falconer Features table.</p>
+			<div element="ID_MRDR_GSQL_CLASS_FEATURE_FALCONER_BIRD_OF_PREY" />
+			<div element="ID_MRDR_GSQL_INFORMATION_BIRD_OF_PREY" />
+			<div element="ID_MRDR_GSQL_CLASS_FEATURE_FALCONER_WEAPON_MASTERY" />
+			<div element="ID_MRDR_GSQL_CLASS_FEATURE_FALCONER_BIRDS_EYE_VIEW" />
+			<div element="ID_MRDR_GSQL_CLASS_FEATURE_FALCONER_FIGHTING_STYLE" />
+			<div element="ID_MRDR_GSQL_CLASS_FEATURE_FALCONER_HARRIER" />
+			<div element="ID_MRDR_GSQL_CLASS_FEATURE_FALCONER_FALCONER_SUBCLASS" />
+			<div element="ID_MRDR_GSQL_CLASS_FEATURE_FALCONER_AERIAL_ACROBATICS" />
+			<div element="ID_MRDR_GSQL_CLASS_FEATURE_FALCONER_ABILITY_SCORE_INCREASE" />
+			<div element="ID_MRDR_GSQL_CLASS_FEATURE_FALCONER_EXTRA_ATTACK" />
+			<div element="ID_MRDR_GSQL_CLASS_FEATURE_FALCONER_PRIMAL_TALONS" />
+			<div element="ID_MRDR_GSQL_CLASS_FEATURE_FALCONER_EAGLE_EYES" />
+			<div element="ID_MRDR_GSQL_CLASS_FEATURE_FALCONER_HOLLOW_BONES" />
+			<div element="ID_MRDR_GSQL_CLASS_FEATURE_FALCONER_EVASIVE_MANEUVERS" />
+			<div element="ID_MRDR_GSQL_CLASS_FEATURE_FALCONER_BIRDS_OF_A_FEATHER" />
+			<div element="ID_MRDR_GSQL_CLASS_FEATURE_FALCONER_FLURRY_OF_TALONS" />
+			<div element="ID_MRDR_GSQL_CLASS_FEATURE_FALCONER_STICK_TOGETHER" />
+			<div element="ID_MRDR_GSQL_CLASS_FEATURE_FALCONER_AERIAL_ACE" />
+			<div element="ID_MRDR_GSQL_CLASS_FEATURE_FALCONER_VOLTE_FACE" />
+			<div element="ID_MRDR_GSQL_CLASS_FEATURE_FALCONER_PERSEVERANCE" />
+			<div element="ID_MRDR_GSQL_CLASS_FEATURE_FALCONER_EPIC_BOON" />
+			<div element="ID_MRDR_GSQL_CLASS_FEATURE_FALCONER_AERIAL_SUPREMACY" />
+		</description>
+		<sheet display="false"/>
+		<setters>
+			<set name="short">Give chase to your prey with this companion-oriented martial class!</set>
+			<set name="hd">d8</set>
+		</setters>
+		<rules>
+			<grant type="Proficiency" id="ID_PROFICIENCY_ARMOR_PROFICIENCY_LIGHT_ARMOR" />
+			<grant type="Proficiency" id="ID_PROFICIENCY_ARMOR_PROFICIENCY_MEDIUM_ARMOR" />
+			<grant type="Proficiency" id="ID_PROFICIENCY_WEAPON_PROFICIENCY_SIMPLE_WEAPONS" requirements="!ID_MRDR_GSQL_MULTICLASS_FALCONER" />
+			<grant type="Proficiency" id="ID_PROFICIENCY_WEAPON_PROFICIENCY_MARTIAL_WEAPONS" />
+			<grant type="Proficiency" id="ID_PROFICIENCY_TOOL_PROFICIENCY_FALCONRY_KIT" />
+			<grant type="Proficiency" id="ID_PROFICIENCY_SAVINGTHROW_STRENGTH" requirements="!ID_MRDR_GSQL_MULTICLASS_FALCONER" />
+			<grant type="Proficiency" id="ID_PROFICIENCY_SAVINGTHROW_DEXTERITY" requirements="!ID_MRDR_GSQL_MULTICLASS_FALCONER" />
+			<select type="Proficiency" name="Skill Proficiency (Falconer)" supports="ID_PROFICIENCY_SKILL_ACROBATICS|ID_PROFICIENCY_SKILL_ANIMALHANDLING|ID_PROFICIENCY_SKILL_ATHLETICS|ID_PROFICIENCY_SKILL_INSIGHT|ID_PROFICIENCY_SKILL_NATURE|ID_PROFICIENCY_SKILL_INVESTIGATION|ID_PROFICIENCY_SKILL_PERCEPTION|ID_PROFICIENCY_SKILL_PERSUASION|ID_PROFICIENCY_SKILL_SURVIVAL" number="2" requirements="!ID_MRDR_GSQL_MULTICLASS_FALCONER" />
+
+			<grant type="Class Feature" id="ID_MRDR_GSQL_CLASS_FEATURE_FALCONER_BIRD_OF_PREY" level="1"/>
+			<grant type="Class Feature" id="ID_MRDR_GSQL_CLASS_FEATURE_FALCONER_WEAPON_MASTERY" level="1"/>
+			<grant type="Class Feature" id="ID_MRDR_GSQL_CLASS_FEATURE_FALCONER_BIRDS_EYE_VIEW" level="2"/>
+			<grant type="Class Feature" id="ID_MRDR_GSQL_CLASS_FEATURE_FALCONER_FIGHTING_STYLE" level="2"/>
+			<grant type="Class Feature" id="ID_MRDR_GSQL_CLASS_FEATURE_FALCONER_HARRIER" level="2"/>
+			<grant type="Class Feature" id="ID_MRDR_GSQL_CLASS_FEATURE_FALCONER_FALCONER_SUBCLASS" level="3"/>
+			<grant type="Class Feature" id="ID_MRDR_GSQL_CLASS_FEATURE_FALCONER_AERIAL_ACROBATICS" level="3"/>
+			<grant type="Class Feature" id="ID_MRDR_GSQL_CLASS_FEATURE_FALCONER_ABILITY_SCORE_INCREASE" level="4"/>
+			<grant type="Class Feature" id="ID_MRDR_GSQL_CLASS_FEATURE_FALCONER_EXTRA_ATTACK" level="5"/>
+			<grant type="Class Feature" id="ID_MRDR_GSQL_CLASS_FEATURE_FALCONER_PRIMAL_TALONS" level="6"/>
+			<grant type="Class Feature" id="ID_MRDR_GSQL_CLASS_FEATURE_FALCONER_EAGLE_EYES" level="7"/>
+			<grant type="Class Feature" id="ID_MRDR_GSQL_CLASS_FEATURE_FALCONER_HOLLOW_BONES" level="7"/>
+			<grant type="Class Feature" id="ID_MRDR_GSQL_CLASS_FEATURE_FALCONER_EVASIVE_MANEUVERS" level="9"/>
+			<grant type="Class Feature" id="ID_MRDR_GSQL_CLASS_FEATURE_FALCONER_BIRDS_OF_A_FEATHER" level="9"/>
+			<grant type="Class Feature" id="ID_MRDR_GSQL_CLASS_FEATURE_FALCONER_FLURRY_OF_TALONS" level="11"/>
+			<grant type="Class Feature" id="ID_MRDR_GSQL_CLASS_FEATURE_FALCONER_STICK_TOGETHER" level="11"/>
+			<grant type="Class Feature" id="ID_MRDR_GSQL_CLASS_FEATURE_FALCONER_AERIAL_ACE" level="13"/>
+			<grant type="Class Feature" id="ID_MRDR_GSQL_CLASS_FEATURE_FALCONER_VOLTE_FACE" level="15" />
+			<grant type="Class Feature" id="ID_MRDR_GSQL_CLASS_FEATURE_FALCONER_PERSEVERANCE" level="18"/>
+			<grant type="Class Feature" id="ID_MRDR_GSQL_CLASS_FEATURE_FALCONER_EPIC_BOON" level="19" />
+			<grant type="Class Feature" id="ID_MRDR_GSQL_CLASS_FEATURE_FALCONER_AERIAL_SUPREMACY" level="20"/>
+		</rules>
+		<multiclass id="ID_MRDR_GSQL_MULTICLASS_FALCONER">
+			<prerequisite>Dexterity 13 and Wisdom 13</prerequisite>
+			<requirements>[dex:13],[wis:13]||ID_INTERNAL_GRANTS_MULTICLASS_UNLOCKER</requirements>
+			<setters>
+				<set name="multiclass proficiencies">Martial weapons, Falconry Kits, Light armor, Medium armor</set>
+			</setters>
+			<rules>
+				<grant type="Grants" id="ID_INTERNAL_GRANT_MULTICLASS" />
+			</rules>
+		</multiclass>
+	</element>
+
+	<element name="Level 1: Bird of Prey" type="Class Feature" source="The GooseQuill" id="ID_MRDR_GSQL_CLASS_FEATURE_FALCONER_BIRD_OF_PREY">
+		<requirements>!ID_INTERNAL_PHB24_FEATURE_REPLACEMENT_RANGER_FAVORED_ENEMY</requirements>
+		<description>
+			<p>You gain the companionship of a Bird of Prey, which is Friendly to you and your companions and obeys your commands.</p>
+			<p class="indent"><strong><em>The Bird of Prey in Combat.</em></strong> In combat, the Bird of Prey acts during your turn. It can move and use its Reaction on its own, but the only action it takes is the Dodge action unless you verbally command it (no action required by you) to take an action in its stat block or some other action.</p>
+			<p class="indent"><strong><em>Roost.</em></strong> You can administer aid to your Bird of Prey. You have a pool of health that replenishes when you finish a Long Rest. With that pool, you can restore a total number of Hit Points to your Bird of Prey equal to five times your Falconer level.</p>
+			<p class="indent">With a Falconry Kit in hand, as a Magic action, you can touch your Bird of Prey to restore any number of Hit Points to it up to the maximum amount remaining in the pool.</p>
+			<p class="indent"><strong><em>Restoring the Bird of Prey.</em></strong> When your Bird of Prey starts its turn with 0 Hit Points, it makes Death Saving Throws as a player character would. You can restore the Bird of Prey to life if it has died within the last hour.</p>
+			<p class="indent">With a Falconry Kit in hand, as a Magic action, you can touch your Bird of Prey to expend 5 hit points from your Roost pool. Your Bird of Prey returns to life after 1 minute with 1 Hit Point.</p>
+			<p class="indent"><strong><em>Replacing the Bird of Prey.</em></strong> Over the course of a Long Rest, you can bond with a different Bird of Prey, which appears in an unoccupied space within 5 feet of you at the end of the Long Rest. That Bird of Prey has the same statistics as your previous one. If you already have a Bird of Prey, the old one takes flight and resigns from its service to you when the new one appears.</p>
+			<p class="indent"><strong><em>At Later Levels.</em></strong> When you choose a Falconer subclass or reach Falconer levels that grant you subclass features, you can increase your Bird of Prey’s ability scores. You can either increase one ability score of your choice by 2, or you can increase two ability scores of your choice by 1. As normal, you can’t increase an ability score above 20 using this feature.</p>
+			<p class="indent"><strong><em>Bird of Prey DC.</em></strong> If a feature requires a saving throw, the DC for it is as follows:</p>
+			<center>
+				<p><strong>Bird of Prey DC:</strong></p>
+				<p>8 plus your Wisdom modifier and Proficiency Bonus</p>
+			</center>
+		</description>
+		<sheet alt="Bird of Prey">
+			<descripton>Your Bird of Prey DC is {{bird of prey:dc}}.</descripton>
+		</sheet>
+		<rules>
+			<select type="Class Feature" name="Bird of Prey" supports="Bird of Prey Features" default="ID_MRDR_GSQL_CLASS_FEATURE_BIRD_OF_PREY_COMBAT" />
+			<select type="Class Feature" name="Bird of Prey" supports="Bird of Prey Features" default="ID_MRDR_GSQL_CLASS_FEATURE_BIRD_OF_PREY_ROOST" />
+			<select type="Class Feature" name="Bird of Prey" supports="Bird of Prey Features" default="ID_MRDR_GSQL_CLASS_FEATURE_BIRD_OF_PREY_RESTORE" />
+			<select type="Class Feature" name="Bird of Prey" supports="Bird of Prey Features" default="ID_MRDR_GSQL_CLASS_FEATURE_BIRD_OF_PREY_REPLACING" />
+			<select type="Class Feature" name="Bird of Prey" supports="Bird of Prey Features" default="ID_MRDR_GSQL_CLASS_FEATURE_BIRD_OF_PREY_LATER_LEVELS" />
+			<select type="Companion" name="Bird of Prey" supports="Bird of Prey" default="ID_MRDR_GSQL_COMPANION_FALCONER_BIRD_OF_PREY" requirements="!ID_MRDR_GSQL_GRANTS_BIRDOFPREY_REPLACEMENT,[level:falconer:1]" />
+			<!-- Eagle -->
+			<select type="Companion" name="Bird of Prey" supports="Bird of Prey" default="ID_MRDR_GSQL_COMPANION_FALCONER_EAGLE" requirements="ID_MRDR_GSQL_ARCHETYPE_FALCONER_EAGLE,!ID_MRDR_GSQL_GRANTS_EAGLE_LEVEL_6" />
+			<select type="Companion" name="Bird of Prey" supports="Bird of Prey" default="ID_MRDR_GSQL_COMPANION_FALCONER_EAGLE_LEVEL_6" requirements="ID_MRDR_GSQL_GRANTS_EAGLE_LEVEL_6,!ID_MRDR_GSQL_GRANTS_EAGLE_LEVEL_10" />
+			<select type="Companion" name="Bird of Prey" supports="Bird of Prey" default="ID_MRDR_GSQL_COMPANION_FALCONER_EAGLE_LEVEL_10" requirements="ID_MRDR_GSQL_GRANTS_EAGLE_LEVEL_10,!ID_MRDR_GSQL_GRANTS_EAGLE_LEVEL_14" />
+			<select type="Companion" name="Bird of Prey" supports="Bird of Prey" default="ID_MRDR_GSQL_COMPANION_FALCONER_EAGLE_LEVEL_14" requirements="ID_MRDR_GSQL_GRANTS_EAGLE_LEVEL_14,!ID_MRDR_GSQL_GRANTS_EAGLE_LEVEL_17" />
+			<select type="Companion" name="Bird of Prey" supports="Bird of Prey" default="ID_MRDR_GSQL_COMPANION_FALCONER_EAGLE_LEVEL_17" requirements="ID_MRDR_GSQL_GRANTS_EAGLE_LEVEL_17" />
+			<!-- Falcon -->
+			<select type="Companion" name="Bird of Prey" supports="Bird of Prey" default="ID_MRDR_GSQL_COMPANION_FALCONER_FALCON" requirements="ID_MRDR_GSQL_ARCHETYPE_FALCONER_FALCON,!ID_MRDR_GSQL_GRANTS_FALCON_LEVEL_6" />
+			<select type="Companion" name="Bird of Prey" supports="Bird of Prey" default="ID_MRDR_GSQL_COMPANION_FALCONER_FALCON_LEVEL_6" requirements="ID_MRDR_GSQL_GRANTS_FALCON_LEVEL_6,!ID_MRDR_GSQL_GRANTS_FALCON_LEVEL_10" />
+			<select type="Companion" name="Bird of Prey" supports="Bird of Prey" default="ID_MRDR_GSQL_COMPANION_FALCONER_FALCON_LEVEL_10" requirements="ID_MRDR_GSQL_GRANTS_FALCON_LEVEL_10,!ID_MRDR_GSQL_GRANTS_FALCON_LEVEL_14" />
+			<select type="Companion" name="Bird of Prey" supports="Bird of Prey" default="ID_MRDR_GSQL_COMPANION_FALCONER_FALCON_LEVEL_14" requirements="ID_MRDR_GSQL_GRANTS_FALCON_LEVEL_14,!ID_MRDR_GSQL_GRANTS_FALCON_LEVEL_17" />
+			<select type="Companion" name="Bird of Prey" supports="Bird of Prey" default="ID_MRDR_GSQL_COMPANION_FALCONER_FALCON_LEVEL_17" requirements="ID_MRDR_GSQL_GRANTS_FALCON_LEVEL_17" />
+			<!-- Goose -->
+			<select type="Companion" name="Bird of Prey" supports="Bird of Prey" default="ID_MRDR_GSQL_COMPANION_FALCONER_GOOSE" requirements="ID_MRDR_GSQL_ARCHETYPE_FALCONER_GOOSE,!ID_MRDR_GSQL_GRANTS_GOOSE_LEVEL_6" />
+			<select type="Companion" name="Bird of Prey" supports="Bird of Prey" default="ID_MRDR_GSQL_COMPANION_FALCONER_GOOSE_LEVEL_6" requirements="ID_MRDR_GSQL_GRANTS_GOOSE_LEVEL_6,!ID_MRDR_GSQL_GRANTS_GOOSE_LEVEL_10" />
+			<select type="Companion" name="Bird of Prey" supports="Bird of Prey" default="ID_MRDR_GSQL_COMPANION_FALCONER_GOOSE_LEVEL_10" requirements="ID_MRDR_GSQL_GRANTS_GOOSE_LEVEL_10,!ID_MRDR_GSQL_GRANTS_GOOSE_LEVEL_14" />
+			<select type="Companion" name="Bird of Prey" supports="Bird of Prey" default="ID_MRDR_GSQL_COMPANION_FALCONER_GOOSE_LEVEL_14" requirements="ID_MRDR_GSQL_GRANTS_GOOSE_LEVEL_14,!ID_MRDR_GSQL_GRANTS_GOOSE_LEVEL_17" />
+			<select type="Companion" name="Bird of Prey" supports="Bird of Prey" default="ID_MRDR_GSQL_COMPANION_FALCONER_GOOSE_LEVEL_17" requirements="ID_MRDR_GSQL_GRANTS_GOOSE_LEVEL_17" />
+			<!-- Hawk -->
+			<select type="Companion" name="Bird of Prey" supports="Bird of Prey" default="ID_MRDR_GSQL_COMPANION_FALCONER_HAWK" requirements="ID_MRDR_GSQL_ARCHETYPE_FALCONER_HAWK,!ID_MRDR_GSQL_GRANTS_HAWK_LEVEL_6" />
+			<select type="Companion" name="Bird of Prey" supports="Bird of Prey" default="ID_MRDR_GSQL_COMPANION_FALCONER_HAWK_LEVEL_6" requirements="ID_MRDR_GSQL_GRANTS_HAWK_LEVEL_6,!ID_MRDR_GSQL_GRANTS_HAWK_LEVEL_10" />
+			<select type="Companion" name="Bird of Prey" supports="Bird of Prey" default="ID_MRDR_GSQL_COMPANION_FALCONER_HAWK_LEVEL_10" requirements="ID_MRDR_GSQL_GRANTS_HAWK_LEVEL_10,!ID_MRDR_GSQL_GRANTS_HAWK_LEVEL_14" />
+			<select type="Companion" name="Bird of Prey" supports="Bird of Prey" default="ID_MRDR_GSQL_COMPANION_FALCONER_HAWK_LEVEL_14" requirements="ID_MRDR_GSQL_GRANTS_HAWK_LEVEL_14,!ID_MRDR_GSQL_GRANTS_HAWK_LEVEL_17" />
+			<select type="Companion" name="Bird of Prey" supports="Bird of Prey" default="ID_MRDR_GSQL_COMPANION_FALCONER_HAWK_LEVEL_17" requirements="ID_MRDR_GSQL_GRANTS_HAWK_LEVEL_17" />
+			<!-- Owl -->
+			<select type="Companion" name="Bird of Prey" supports="Bird of Prey" default="ID_MRDR_GSQL_COMPANION_FALCONER_OWL" requirements="ID_MRDR_GSQL_ARCHETYPE_FALCONER_OWL,!ID_MRDR_GSQL_GRANTS_OWL_LEVEL_6" />
+			<select type="Companion" name="Bird of Prey" supports="Bird of Prey" default="ID_MRDR_GSQL_COMPANION_FALCONER_OWL_LEVEL_6" requirements="ID_MRDR_GSQL_GRANTS_OWL_LEVEL_6,!ID_MRDR_GSQL_GRANTS_OWL_LEVEL_10" />
+			<select type="Companion" name="Bird of Prey" supports="Bird of Prey" default="ID_MRDR_GSQL_COMPANION_FALCONER_OWL_LEVEL_10" requirements="ID_MRDR_GSQL_GRANTS_OWL_LEVEL_10,!ID_MRDR_GSQL_GRANTS_OWL_LEVEL_14" />
+			<select type="Companion" name="Bird of Prey" supports="Bird of Prey" default="ID_MRDR_GSQL_COMPANION_FALCONER_OWL_LEVEL_14" requirements="ID_MRDR_GSQL_GRANTS_OWL_LEVEL_14,!ID_MRDR_GSQL_GRANTS_OWL_LEVEL_17" />
+			<select type="Companion" name="Bird of Prey" supports="Bird of Prey" default="ID_MRDR_GSQL_COMPANION_FALCONER_OWL_LEVEL_17" requirements="ID_MRDR_GSQL_GRANTS_OWL_LEVEL_17" />
+			<!-- Phoenix -->
+			<select type="Companion" name="Bird of Prey" supports="Bird of Prey" default="ID_MRDR_GSQL_COMPANION_FALCONER_PHOENIX" requirements="ID_MRDR_GSQL_ARCHETYPE_FALCONER_PHOENIX,!ID_MRDR_GSQL_GRANTS_PHOENIX_LEVEL_6" />
+			<select type="Companion" name="Bird of Prey" supports="Bird of Prey" default="ID_MRDR_GSQL_COMPANION_FALCONER_PHOENIX_LEVEL_6" requirements="ID_MRDR_GSQL_GRANTS_PHOENIX_LEVEL_6,!ID_MRDR_GSQL_GRANTS_PHOENIX_LEVEL_10" />
+			<select type="Companion" name="Bird of Prey" supports="Bird of Prey" default="ID_MRDR_GSQL_COMPANION_FALCONER_PHOENIX_LEVEL_10" requirements="ID_MRDR_GSQL_GRANTS_PHOENIX_LEVEL_10,!ID_MRDR_GSQL_GRANTS_PHOENIX_LEVEL_14" />
+			<select type="Companion" name="Bird of Prey" supports="Bird of Prey" default="ID_MRDR_GSQL_COMPANION_FALCONER_PHOENIX_LEVEL_14" requirements="ID_MRDR_GSQL_GRANTS_PHOENIX_LEVEL_14,!ID_MRDR_GSQL_GRANTS_PHOENIX_LEVEL_17" />
+			<select type="Companion" name="Bird of Prey" supports="Bird of Prey" default="ID_MRDR_GSQL_COMPANION_FALCONER_PHOENIX_LEVEL_17" requirements="ID_MRDR_GSQL_GRANTS_PHOENIX_LEVEL_17" />
+			<!-- Thunderbird -->
+			<select type="Companion" name="Bird of Prey" supports="Bird of Prey" default="ID_MRDR_GSQL_COMPANION_FALCONER_THUNDERBIRD" requirements="ID_MRDR_GSQL_ARCHETYPE_FALCONER_THUNDERBIRD,!ID_MRDR_GSQL_GRANTS_THUNDERBIRD_LEVEL_6" />
+			<select type="Companion" name="Bird of Prey" supports="Bird of Prey" default="ID_MRDR_GSQL_COMPANION_FALCONER_THUNDERBIRD_LEVEL_6" requirements="ID_MRDR_GSQL_GRANTS_THUNDERBIRD_LEVEL_6,!ID_MRDR_GSQL_GRANTS_THUNDERBIRD_LEVEL_10" />
+			<select type="Companion" name="Bird of Prey" supports="Bird of Prey" default="ID_MRDR_GSQL_COMPANION_FALCONER_THUNDERBIRD_LEVEL_10" requirements="ID_MRDR_GSQL_GRANTS_THUNDERBIRD_LEVEL_10,!ID_MRDR_GSQL_GRANTS_THUNDERBIRD_LEVEL_14" />
+			<select type="Companion" name="Bird of Prey" supports="Bird of Prey" default="ID_MRDR_GSQL_COMPANION_FALCONER_THUNDERBIRD_LEVEL_14" requirements="ID_MRDR_GSQL_GRANTS_THUNDERBIRD_LEVEL_14,!ID_MRDR_GSQL_GRANTS_THUNDERBIRD_LEVEL_17" />
+			<select type="Companion" name="Bird of Prey" supports="Bird of Prey" default="ID_MRDR_GSQL_COMPANION_FALCONER_THUNDERBIRD_LEVEL_17" requirements="ID_MRDR_GSQL_GRANTS_THUNDERBIRD_LEVEL_17" />
+			<!-- Raven -->
+			<select type="Companion" name="Bird of Prey" supports="Bird of Prey" default="ID_MRDR_GSQL_COMPANION_FALCONER_RAVEN" requirements="ID_MRDR_GSQL_ARCHETYPE_FALCONER_RAVEN,!ID_MRDR_GSQL_GRANTS_RAVEN_LEVEL_6" />
+			<select type="Companion" name="Bird of Prey" supports="Bird of Prey" default="ID_MRDR_GSQL_COMPANION_FALCONER_RAVEN_LEVEL_6" requirements="ID_MRDR_GSQL_GRANTS_RAVEN_LEVEL_6,!ID_MRDR_GSQL_GRANTS_RAVEN_LEVEL_10" />
+			<select type="Companion" name="Bird of Prey" supports="Bird of Prey" default="ID_MRDR_GSQL_COMPANION_FALCONER_RAVEN_LEVEL_10" requirements="ID_MRDR_GSQL_GRANTS_RAVEN_LEVEL_10,!ID_MRDR_GSQL_GRANTS_RAVEN_LEVEL_14" />
+			<select type="Companion" name="Bird of Prey" supports="Bird of Prey" default="ID_MRDR_GSQL_COMPANION_FALCONER_RAVEN_LEVEL_14" requirements="ID_MRDR_GSQL_GRANTS_RAVEN_LEVEL_14,!ID_MRDR_GSQL_GRANTS_RAVEN_LEVEL_17" />
+			<select type="Companion" name="Bird of Prey" supports="Bird of Prey" default="ID_MRDR_GSQL_COMPANION_FALCONER_RAVEN_LEVEL_17" requirements="ID_MRDR_GSQL_GRANTS_RAVEN_LEVEL_17" />
+			<!-- Vulture -->
+			<select type="Companion" name="Bird of Prey" supports="Bird of Prey" default="ID_MRDR_GSQL_COMPANION_FALCONER_VULTURE" requirements="ID_MRDR_GSQL_ARCHETYPE_FALCONER_VULTURE,!ID_MRDR_GSQL_GRANTS_VULTURE_LEVEL_6" />
+			<select type="Companion" name="Bird of Prey" supports="Bird of Prey" default="ID_MRDR_GSQL_COMPANION_FALCONER_VULTURE_LEVEL_6" requirements="ID_MRDR_GSQL_GRANTS_VULTURE_LEVEL_6,!ID_MRDR_GSQL_GRANTS_VULTURE_LEVEL_10" />
+			<select type="Companion" name="Bird of Prey" supports="Bird of Prey" default="ID_MRDR_GSQL_COMPANION_FALCONER_VULTURE_LEVEL_10" requirements="ID_MRDR_GSQL_GRANTS_VULTURE_LEVEL_10,!ID_MRDR_GSQL_GRANTS_VULTURE_LEVEL_14" />
+			<select type="Companion" name="Bird of Prey" supports="Bird of Prey" default="ID_MRDR_GSQL_COMPANION_FALCONER_VULTURE_LEVEL_14" requirements="ID_MRDR_GSQL_GRANTS_VULTURE_LEVEL_14,!ID_MRDR_GSQL_GRANTS_VULTURE_LEVEL_17" />
+			<select type="Companion" name="Bird of Prey" supports="Bird of Prey" default="ID_MRDR_GSQL_COMPANION_FALCONER_VULTURE_LEVEL_17" requirements="ID_MRDR_GSQL_GRANTS_VULTURE_LEVEL_17" />
+
+			<stat name="bird of prey:dc" value="8" />
+			<stat name="bird of prey:dc" value="wisdom:modifier" />
+			<stat name="bird of prey:dc" value="proficiency" />
+
+			<stat name="bird of prey:mod" value="wisdom:modifier" /> <!--Generic Wisdom modifier for sheets-->
+		</rules>
+	</element>
+	<element name="The Birds of Prey in Combat" type="Class Feature" source="The GooseQuill" id="ID_MRDR_GSQL_CLASS_FEATURE_BIRD_OF_PREY_COMBAT">
+		<supports>Bird of Prey Features</supports>
+		<description>
+			<p>In combat, the Bird of Prey acts during your turn. It can move and use its Reaction on its own, but the only action it takes is the Dodge action unless you verbally command it (no action required by you) to take an action in its stat block or some other action.</p>
+		</description>
+		<sheet>
+			<description>In combat, the Bird of Prey acts during your turn. It can move and use its Reaction on its own, but the only action it takes is the Dodge action unless you verbally command it (no action required by you) to take an action in its stat block or some other action.</description>
+		</sheet>
+	</element>
+	<element name="Roost" type="Class Feature" source="The GooseQuill" id="ID_MRDR_GSQL_CLASS_FEATURE_BIRD_OF_PREY_ROOST">
+		<supports>Bird of Prey Features</supports>
+		<description>
+			<p>You can administer aid to your Bird of Prey. You have a pool of health that replenishes when you finish a Long Rest. With that pool, you can restore a total number of Hit Points to your Bird of Prey equal to five times your Falconer level.</p>
+			<p class="indent">With a Falconry Kit in hand, as a Magic action, you can touch your Bird of Prey to restore any number of Hit Points to it up to the maximum amount remaining in the pool.</p>
+		</description>
+		<sheet action="Magic Action" usage="Pool: {{falconer:roost}}/Long Rest">
+			<description>As a Magic action, using your Falconry kit, you can touch your Bird of Prey to restore any number of Hit Points to it up to the maximum amount remaining in the pool. </description>
+		</sheet>
+		<rules>
+			<stat name="falconer:roost" value="level:falconer" />
+			<stat name="falconer:roost" value="level:falconer" />
+			<stat name="falconer:roost" value="level:falconer" />
+			<stat name="falconer:roost" value="level:falconer" />
+			<stat name="falconer:roost" value="level:falconer" />
+		</rules>
+	</element>
+	<element name="Restoring the Bird of Prey" type="Class Feature" source="The GooseQuill" id="ID_MRDR_GSQL_CLASS_FEATURE_BIRD_OF_PREY_RESTORE">\
+		<supports>Bird of Prey Features</supports>
+		<description>
+			<p>When your Bird of Prey starts its turn with 0 Hit Points, it makes Death Saving Throws as a player character would. You can restore the Bird of Prey to life if it has died within the last hour.</p>
+			<p class="indent">With a Falconry Kit in hand, as a Magic action, you can touch your Bird of Prey to expend 5 hit points from your Roost pool. Your Bird of Prey returns to life after 1 minute with 1 Hit Point.</p>
+		</description>
+		<sheet>
+			<description>When your Bird of Prey starts its turn with 0 Hit Points, it makes Death Saving Throws as a player character would. You can restore the Bird of Prey to life if it has died within the last hour.</description>
+		</sheet>
+	</element>
+	<element name="Replacing the Bird of Prey" type="Class Feature" source="The GooseQuill" id="ID_MRDR_GSQL_CLASS_FEATURE_BIRD_OF_PREY_REPLACING">\
+		<supports>Bird of Prey Features</supports>
+		<description>
+			<p>Over the course of a Long Rest, you can bond with a different Bird of Prey, which appears in an unoccupied space within 5 feet of you at the end of the Long Rest. That Bird of Prey has the same statistics as your previous one. If you already have a Bird of Prey, the old one takes flight and resigns from its service to you when the new one appears.</p>
+		</description>
+		<sheet>
+			<description>Over the course of a Long Rest, you can bond with a different Bird of Prey, which appears in an unoccupied space within 5 feet of you at the end of the Long Rest. That Bird of Prey has the same statistics as your previous one. If you already have a Bird of Prey, the old one takes flight and resigns from its service to you when the new one appears.</description>
+		</sheet>
+	</element>
+	<element name="At Later Levels" type="Class Feature" source="The GooseQuill" id="ID_MRDR_GSQL_CLASS_FEATURE_BIRD_OF_PREY_LATER_LEVELS">\
+		<supports>Bird of Prey Features</supports>
+		<description>
+			<p>When you choose a Falconer subclass or reach Falconer levels that grant you subclass features, you can increase your Bird of Prey’s ability scores. You can either increase one ability score of your choice by 2, or you can increase two ability scores of your choice by 1. As normal, you can’t increase an ability score above 20 using this feature.</p>
+		</description>
+		<sheet display="false">
+			<description>When you choose a Falconer subclass or reach Falconer levels that grant you subclass features, you can increase your Bird of Prey’s ability scores. You can either increase one ability score of your choice by 2, or you can increase two ability scores of your choice by 1. As normal, you can’t increase an ability score above 20 using this feature.</description>
+		</sheet>
+		<rules>
+			<select type="Ability Score Improvement" name="Ability Score Improvement, Bird of Prey (3)" supports="Ability Score Improvement,Companion" number="2" level="3" />
+			<select type="Ability Score Improvement" name="Ability Score Improvement, Bird of Prey (6)" supports="Ability Score Improvement,Companion" number="2" level="6" />
+			<select type="Ability Score Improvement" name="Ability Score Improvement, Bird of Prey (10)" supports="Ability Score Improvement,Companion" number="2" level="10" />
+			<select type="Ability Score Improvement" name="Ability Score Improvement, Bird of Prey (14)" supports="Ability Score Improvement,Companion" number="2" level="14" />
+			<select type="Ability Score Improvement" name="Ability Score Improvement, Bird of Prey (17)" supports="Ability Score Improvement,Companion" number="2" level="17" />
+		</rules>
+	</element>
+
+	<element name="Level 1: Weapon Mastery" type="Class Feature" source="The GooseQuill" id="ID_MRDR_GSQL_CLASS_FEATURE_FALCONER_WEAPON_MASTERY">
+		<description>
+			<p>Your training with weapons allows you to use the mastery properties of two kinds of weapons of your choice with which you have proficiency, such as Light Crossbows and Scimitars.</p>
+			<p class="indent">Whenever you finish a Long Rest, you can change the kinds of weapons you chose. For example, you could switch to using the mastery properties of Longbows and Rapiers.</p>
+		</description>
+		<sheet alt="Weapon Mastery">
+			<description>Whenever you finish a Long Rest, you can change one of the weapons you previously chosen for a different one.</description>
+		</sheet>
+		<rules>
+			<select type="Class Feature" name="Weapon Mastery" supports="Weapon Mastery" number="2"/>
+		</rules>
+	</element>
+
+	<element name="Level 2: Bird's Eye View" type="Class Feature" source="The GooseQuill" id="ID_MRDR_GSQL_CLASS_FEATURE_FALCONER_BIRDS_EYE_VIEW">
+		<description>
+			<p>The bond with your Bird of Prey allows you to see the world through its eyes. You perform a 10-minute long ritual, after which you see and hear through your Bird of Prey’s senses, rather than your own. You continue to do so for up to an hour, or until you use an action to end this effect. While using Bird’s Eye View, you can telepathically communicate to your Bird of Prey, but it does not have a special way to respond to you.</p>
+		</description>
+		<sheet alt="Bird's Eye View">
+			<description>You perform a 10-minute long ritual, after which you see and hear through your Bird of Prey’s senses, rather than your own. You continue to do so for up to an hour, or until you use an action to end this effect. While using Bird’s Eye View, you can telepathically communicate to your Bird of Prey, but it does not have a special way to respond to you.</description>
+		</sheet>
+	</element>
+
+	<element name="Level 2: Fighting Style" type="Class Feature" source="The GooseQuill" id="ID_MRDR_GSQL_CLASS_FEATURE_FALCONER_FIGHTING_STYLE">
+		<description>
+			<p>You gain a Fighting Style feat of your choice. Instead of choosing one of those feats, you can choose the option below.</p>
+			<p class="indent"><b><i>Tag Team.</i></b> When you hit a creature your Bird of Prey has dealt damage to this turn, or vice versa, you can add your Wisdom modifier (minimum of 1) to the damage roll.</p>
+		</description>
+		<sheet display="false"/>
+		<rules>
+			<grant type="Grants" id="ID_INTERNAL_GRANTS_FIGHTING_STYLE_FEATURE" />
+			<select type="Feat" name="Fighting Style (Falconer 2)" supports="Fighting Style||Tag Team Fighting Style" />
+		</rules>
+	</element>
+	<element name="Tag Team" type="Feat" source="The GooseQuill" id="ID_MRMR_REDDIT_FEAT_FALCONER_TAG_TEAM">
+		<supports>Tag Team Fighting Style</supports>
+		<requirements>ID_MRDR_GSQL_CLASS_FEATURE_FALCONER_FIGHTING_STYLE||ID_WOTC_PHB24_GRANTS_FEAT_UNLOCKER</requirements>
+		<prerequisite>Falconer Fighting Style Feature</prerequisite>
+		<description>
+			<p>When you hit a creature your Bird of Prey has dealt damage to this turn, or vice versa, you can add your Wisdom modifier (minimum of 1) to the damage roll.</p>
+		</description>
+		<sheet>
+			<description>When you hit a creature your Bird of Prey has dealt damage to this turn, or vice versa, you can add {{tag team:damage}} to the damage roll.</description>
+		</sheet>
+		<rules>
+			<stat name="tag team:damage" value="1" bonus="base" />
+			<stat name="tag team:damage" value="wisdom:modifier" bonus="base" />
+		</rules>
+	</element>
+
+	<element name="Level 2: Harrier" type="Class Feature" source="The GooseQuill" id="ID_MRDR_GSQL_CLASS_FEATURE_FALCONER_HARRIER">
+		<description>
+			<p>You can single out a creature for your Bird of Prey to hunt down.</p>
+			<p class="indent"><strong><em>Quarry.</em></strong> You can use a Bonus Action to designate a creature within 60 feet of you that you can see as your Bird of Prey’s Quarry.</p>
+			<p class="indent"><strong><em>Laid Bare.</em></strong> Your Bird of Prey gains a bonus to attack rolls against its Quarry if the Quarry is missing any of its Hit Points, as listed in the Falconer Features table.</p>
+			<p class="indent"><strong><em>Duration.</em></strong> A Quarry remains marked as such for 1 minute, until it is reduced to 0 Hit Points or until you use this feature again. When a Quarry is reduced to 0 Hit Points, you can use a Reaction to immediately designate a new Quarry without expending a use of this feature.</p>
+			<p class="indent">The amount of times you can use this feature are equal to your Wisdom modifier (minimum of 1). You regain all expended uses when you finish a Long Rest.</p>
+		</description>
+		<sheet action="Bonus Action" usage="{{harrier:usage}}/Long Rest" alt="Harrier">
+			<description>You can use a Bonus Action to designate a creature within 60 feet of you that you can see as your Bird of Prey’s Quarry. Your Bird of Prey gains a +{{harrier:attack}} bonus to attack rolls against its Quarry if the Quarry is missing any of its Hit Points.&#13;
+				A Quarry remains marked as such for 1 minute, until it is reduced to 0 Hit Points or until you use this feature again. When a Quarry is reduced to 0 Hit Points, you can use a Reaction to immediately designate a new Quarry without expending a use of this feature. You regain all expended uses when you finish a Long Rest.
+			</description>
+		</sheet>
+		<rules>
+			<stat name="harrier:usage" value="1" bonus="base" />
+			<stat name="harrier:usage" value="wisdom:modifier" bonus="base" />
+
+			<stat name="harrier:attack" value="1" level="2" />
+			<stat name="harrier:attack" value="1" level="5" />
+			<stat name="harrier:attack" value="1" level="10" />
+			<stat name="harrier:attack" value="1" level="14" />
+			<stat name="harrier:attack" value="1" level="17" />
+		</rules>
+	</element>
+
+	<element name="Level 3: Falconer Subclass" type="Class Feature" source="The GooseQuill" id="ID_MRDR_GSQL_CLASS_FEATURE_FALCONER_FALCONER_SUBCLASS">
+		<description>
+			<p>You gain a Falconer subclass of your choice. A subclass is a specialization that grants you features at certain Falconer levels. For the rest of your career, you gain each of your subclass’s features that are of your Falconer level or lower.</p>
+		</description>
+		<sheet display="false" />
+		<rules>
+			<select type="Archetype" name="Falconer Subclass" supports="Falconer Subclass" />
+			<grant type="Grants" id="ID_MRDR_GSQL_GRANTS_BIRDOFPREY_REPLACEMENT" />
+		</rules>
+	</element>
+
+	<element name="Level 3: Aerial Acrobatics" type="Class Feature" source="The GooseQuill" id="ID_MRDR_GSQL_CLASS_FEATURE_FALCONER_AERIAL_ACROBATICS">
+		<description>
+			<p>When you use Harrier to mark a creature as Quarry, you can select one of the Aerial Acrobatics options listed below.</p>
+			<p class="indent">When you hit a Quarry your Bird of Prey has dealt damage to this turn, or vice versa, you can use a Bonus Action to activate that Aerial Acrobatics option.</p>
+			<p class="indent"><strong><em>Distracting Mark.</em></strong> The Quarry must make a Wisdom saving throw or suffer a penalty to attack rolls and saving throws equal to your Harrier bonus until the start of your next turn.</p>
+			<p class="indent"><strong><em>Exposing Mark.</em></strong> The Quarry must make a Dexterity saving throw. On a failed save, attacks made against the Quarry by creatures other than your Bird of Prey gain a bonus equal to your Harrier bonus until the start of your next turn.</p>
+			<p class="indent"><strong><em>Gouging Mark.</em></strong> The Quarry must make a Constitution saving throw or be blinded until the start of your next turn.</p>
+		</description>
+		<sheet action="Bonus Action" alt="Aerial Acrobatics">
+			<description>When you hit a Quarry your Bird of Prey has dealt damage to this turn, or vice versa, you can use a Bonus Action to activate that Aerial Acrobatics option.</description>
+		</sheet>
+		<rules>
+			<select type="Class Feature" name="Aerial Acrobatics" supports="Aerial Acrobatics" default="ID_MRDR_GSQL_CLASS_FEATURE_AERIAL_ACROBATICS_DISTRACTING_MARK" />
+			<select type="Class Feature" name="Aerial Acrobatics" supports="Aerial Acrobatics" default="ID_MRDR_GSQL_CLASS_FEATURE_AERIAL_ACROBATICS_EXPOSING_MARK" />
+			<select type="Class Feature" name="Aerial Acrobatics" supports="Aerial Acrobatics" default="ID_MRDR_GSQL_CLASS_FEATURE_AERIAL_ACROBATICS_GOUGING_MARK" />
+			<select type="Class Feature" name="Aerial Acrobatics" supports="Aerial Acrobatics" default="ID_MRDR_GSQL_CLASS_FEATURE_AERIAL_ACROBATICS_DEBILATING_MARK" requirements="[level:falconer:13]" />
+			<select type="Class Feature" name="Aerial Acrobatics" supports="Aerial Acrobatics" default="ID_MRDR_GSQL_CLASS_FEATURE_AERIAL_ACROBATICS_EXPEDITING_MARK" requirements="[level:falconer:13]" />
+			<select type="Class Feature" name="Aerial Acrobatics" supports="Aerial Acrobatics" default="ID_MRDR_GSQL_CLASS_FEATURE_AERIAL_ACROBATICS_WINDING_MARK" requirements="[level:falconer:13]" />
+		</rules>
+	</element>
+	<element name="Distracting Mark" type="Class Feature" source="The GooseQuill" id="ID_MRDR_GSQL_CLASS_FEATURE_AERIAL_ACROBATICS_DISTRACTING_MARK">
+		<supports>Aerial Acrobatics</supports>
+		<description>
+			<p>The Quarry must make a Wisdom saving throw or suffer a penalty to attack rolls and saving throws equal to your Harrier bonus until the start of your next turn.</p>
+		</description>
+		<sheet>
+			<description>The Quarry must make a Wisdom saving throw or suffer a penalty to attack rolls and saving throws equal to your Harrier bonus until the start of your next turn.</description>
+		</sheet>
+	</element>
+	<element name="Exposing Mark" type="Class Feature" source="The GooseQuill" id="ID_MRDR_GSQL_CLASS_FEATURE_AERIAL_ACROBATICS_EXPOSING_MARK">
+		<supports>Aerial Acrobatics</supports>
+		<description>
+			<p>The Quarry must make a Dexterity saving throw. On a failed save, attacks made against the Quarry by creatures other than your Bird of Prey gain a bonus equal to your Harrier bonus until the start of your next turn.</p>
+		</description>
+		<sheet>
+			<description>The Quarry must make a Dexterity saving throw. On a failed save, attacks made against the Quarry by creatures other than your Bird of Prey gain a bonus equal to your Harrier bonus until the start of your next turn.</description>
+		</sheet>
+	</element>
+	<element name="Gouging Mark" type="Class Feature" source="The GooseQuill" id="ID_MRDR_GSQL_CLASS_FEATURE_AERIAL_ACROBATICS_GOUGING_MARK">
+		<supports>Aerial Acrobatics</supports>
+		<description>
+			<p>The Quarry must make a Constitution saving throw or be blinded until the start of your next turn.</p>
+		</description>
+		<sheet>
+			<description>The Quarry must make a Constitution saving throw or be blinded until the start of your next turn.</description>
+		</sheet>
+	</element>
+ 
+	<element name="Level 4: Ability Score Improvement" type="Class Feature" source="The GooseQuill" id="ID_MRDR_GSQL_CLASS_FEATURE_FALCONER_ABILITY_SCORE_INCREASE">
+		<compendium display="false" />
+		<description>
+			<p>You gain the Ability Score Improvement feat or another feat of your choice for which you qualify. You gain this feature again at Druid levels 8, 12, and 16.</p>
+		</description>
+		<sheet display="false" />
+		<rules>
+			<select type="Feat" name="Ability Score Improvement (Falconer 4)" />
+			<select type="Feat" name="Ability Score Improvement (Falconer 8)" level="8" />
+			<select type="Feat" name="Ability Score Improvement (Falconer 12)" level="12" />
+			<select type="Feat" name="Ability Score Improvement (Falconer 16)" level="16" />
+		</rules>
+	</element>
+
+	<element name="Level 5: Extra Attack" type="Class Feature" source="The GooseQuill" id="ID_MRDR_GSQL_CLASS_FEATURE_FALCONER_EXTRA_ATTACK">
+		<description>
+			<p>You can attack twice instead of once whenever you take the Attack action on your turn.</p>
+		</description>
+		<sheet display="false" />
+		<rules>
+			<stat name="extra attack:count" value="2" bonus="extra attack" />
+		</rules>
+	</element>
+
+	<element name="Level 6: Primal Talons" type="Class Feature" source="The GooseQuill" id="ID_MRDR_GSQL_CLASS_FEATURE_FALCONER_PRIMAL_TALONS">
+		<description>
+			<p>Whenever your Bird of Prey deals damage with one of its attacks, it can deal your choice of Force damage or the attack’s normal damage type.</p>
+		</description>
+		<sheet alt="Primal Talons">
+			<description>Whenever your Bird of Prey deals damage with one of its attacks, it can deal your choice of Force damage or the attack’s normal damage type.</description>
+		</sheet>
+	</element>
+
+	<element name="Level 7: Eagle Eyes" type="Class Feature" source="The GooseQuill" id="ID_MRDR_GSQL_CLASS_FEATURE_FALCONER_EAGLE_EYES">
+		<description>
+			<p>Countless hours spent bonding with your Bird have taught you to see the world through a different lens.</p>
+			<p class="indent"><strong><em>Eye for Detail.</em></strong> You can take the Search action as a Bonus Action, and you have Expertise on checks made as part of the Search action if you are proficient in the skill used for the check.</p>
+			<p class="indent"><strong><em>No Escape.</em></strong> You have Advantage on checks made with the Search action if they are made against your Quarry.</p>
+		</description>
+		<sheet alt="Eagle Eyes" />
+		<rules>
+			<select type="Class Feature" name="Eagle Eyes" supports="Eagle Eyes" default="ID_MRDR_GSQL_CLASS_FEATURE_EAGLE_EYES_FOR_DETAIL" />
+			<select type="Class Feature" name="Eagle Eyes" supports="Eagle Eyes" default="ID_MRDR_GSQL_CLASS_FEATURE_EAGLE_EYES_NO_ESCAPE" />
+		</rules>
+	</element>
+	<element name="Eyes for Detail" type="Class Feature" source="The GooseQuill" id="ID_MRDR_GSQL_CLASS_FEATURE_EAGLE_EYES_FOR_DETAIL">
+		<supports>Eagle Eyes</supports>
+		<description>
+			<p>You can take the Search action as a Bonus Action, and you have Expertise on checks made as part of the Search action if you are proficient in the skill used for the check.</p>
+		</description>
+		<sheet>
+			<description>You can take the Search action as a Bonus Action, and you have Expertise on checks made as part of the Search action if you are proficient in the skill used for the check.</description>
+		</sheet>
+	</element>
+	<element name="No Escape" type="Class Feature" source="The GooseQuill" id="ID_MRDR_GSQL_CLASS_FEATURE_EAGLE_EYES_NO_ESCAPE">
+		<supports>Eagle Eyes</supports>
+		<description>
+			<p>You have Advantage on checks made with the Search action if they are made against your Quarry.</p>
+		</description>
+		<sheet>
+			<description>You have Advantage on checks made with the Search action if they are made against your Quarry.</description>
+		</sheet>
+	</element>
+
+	<element name="Level 7: Hollow Bones" type="Class Feature" source="The GooseQuill" id="ID_MRDR_GSQL_CLASS_FEATURE_FALCONER_HOLLOW_BONES">
+		<description>
+			<p>An excellent sense of balance in you and your Bird of Prey allows for cushioned falls and the ability to scale vertical surfaces.</p>
+			<p class="indent"><strong><em>Agile.</em></strong> You gain a Climb Speed equal to your Speed.</p>
+			<p class="indent"><strong><em>Lightweight.</em></strong> Your Bird of Prey can use a Reaction when it falls to halve the damage it takes from the fall (round up).</p>
+		</description>
+		<sheet alt="Hollow Bones" display="false" />
+		<rules>
+			<stat name="speed:climb" value="speed" />
+			<grant type="Class Feature" id="ID_MRDR_GSQL_CLASS_FEATURE_HOLLOW_BONES_LIGHTWEIGHT" />
+		</rules>
+	</element>
+	<element name="Lightweight" type="Class Feature" source="The GooseQuill" id="ID_MRDR_GSQL_CLASS_FEATURE_HOLLOW_BONES_LIGHTWEIGHT">
+		<supports>Hollow Bones</supports>
+		<description>
+			<p>Your Bird of Prey can use a Reaction when it falls to halve the damage it takes from the fall (round up).</p>
+		</description>
+		<sheet>
+			<description>Your Bird of Prey can use a Reaction when it falls to halve the damage it takes from the fall (round up).</description>
+		</sheet>
+	</element>
+
+	<element name="Level 9: Evasive Maneuvers" type="Class Feature" source="The GooseQuill" id="ID_MRDR_GSQL_CLASS_FEATURE_FALCONER_EVASIVE_MANEUVERS">
+		<description>
+			<p>When you or your Bird of Prey are subjected to an effect that allows you to make a Dexterity saving throw to take only half damage, you instead take no damage if you succeed on the saving throw and only half damage if you fail.</p>
+			<p class="indent">You and your Bird of Prey can only benefit from this feature if you respectively don’t have the Incapacitated condition.</p>
+		</description>
+		<sheet alt="Evasive Maneuvers">
+			<description>When you or your Bird of Prey are subjected to an effect that allows you to make a Dexterity saving throw to take only half damage, you instead take no damage if you succeed on the saving throw and only half damage if you fail. This only works if you and your bird of prey are not incapcitated.</description>
+		</sheet>
+	</element>
+
+	<element name="Level 9: Birds of a Feather" type="Class Feature" source="The GooseQuill" id="ID_MRDR_GSQL_CLASS_FEATURE_FALCONER_BIRDS_OF_A_FEATHER">
+		<description>
+			<p>If your Bird of Prey takes damage while it is within 30 feet of you, you can use a Reaction to transfer either all or half of the damage taken to yourself. The damage you take this way can’t be reduced in any way.</p>
+		</description>
+		<sheet alt="Birds of a Feather">
+			<description>If your Bird of Prey takes damage while it is within 30 feet of you, you can use a Reaction to transfer either all or half of the damage taken to yourself. The damage you take this way can’t be reduced in any way.</description>
+		</sheet>
+	</element>
+
+	<element name="Level 11: Flurry of Talons" type="Class Feature" source="The GooseQuill" id="ID_MRDR_GSQL_CLASS_FEATURE_FALCONER_FLURRY_OF_TALONS">
+		<description>
+			<p>Your bird of prey can attack twice instead of once whenever it takes the Attack action on its turn.</p>
+		</description>
+		<sheet alt="Flurry of Talons">
+			<description>Your bird of prey can attack twice instead of once whenever it takes the Attack action on its turn.</description>
+		</sheet>
+	</element>
+	
+	<element name="Level 11: Stick Together" type="Class Feature" source="The GooseQuill" id="ID_MRDR_GSQL_CLASS_FEATURE_FALCONER_STICK_TOGETHER">
+		<description>
+			<p>The activation time of Bird’s Eye View is reduced to an action, and you can now perceive through both your Bird of Prey’s senses as well as your own simultaneously when using Bird’s Eye View.</p>
+		</description>
+		<sheet alt="Stick Together">
+			<description>The activation time of Bird’s Eye View is reduced to an action, and you can now perceive through both your Bird of Prey’s senses as well as your own simultaneously when using Bird’s Eye View.</description>
+		</sheet>
+	</element>
+
+	<element name="Level 13: Aerial Ace" type="Class Feature" source="The GooseQuill" id="ID_MRDR_GSQL_CLASS_FEATURE_FALCONER_AERIAL_ACE">
+		<description>
+			<p>You gain three new Aerial Acrobatics options to choose from when you mark a Quarry.</p>
+			<p class="indent"><strong><em>Debilitating Mark.</em></strong> The Quarry must make a Strength saving throw. On a failed save, the Quarry can take either an Action or a Bonus action on its turn, not both.</p>
+			<p class="indent"><strong><em>Expediting Mark.</em></strong> A creature of your choice within 30 feet of the Quarry can use its Reaction to move up to half its Speed and make a weapon attack against the Quarry.</p>
+			<p class="indent"><strong><em>Winding Mark.</em></strong> The Quarry must make a Constitution saving throw or have its speed halved until the end of its next turn.</p>
+		</description>
+		<sheet display="false">Given to original Aerial Acrobatics</sheet>
+	</element>
+	<element name="Debiliating Mark" type="Class Feature" source="The GooseQuill" id="ID_MRDR_GSQL_CLASS_FEATURE_AERIAL_ACROBATICS_DEBILATING_MARK">
+		<requirements>[level:falconer:14]</requirements>
+		<supports>Aerial Acrobatics</supports>
+		<description>
+			<p>The Quarry must make a Strength saving throw. On a failed save, the Quarry can take either an Action or a Bonus action on its turn, not both.</p>
+		</description>
+		<sheet>
+			<description>The Quarry must make a Strength saving throw. On a failed save, the Quarry can take either an Action or a Bonus action on its turn, not both.</description>
+		</sheet>
+	</element>
+	<element name="Expediting Mark" type="Class Feature" source="The GooseQuill" id="ID_MRDR_GSQL_CLASS_FEATURE_AERIAL_ACROBATICS_EXPEDITING_MARK">
+		<requirements>[level:falconer:14]</requirements>
+		<supports>Aerial Acrobatics</supports>
+		<description>
+			<p>A creature of your choice within 30 feet of the Quarry can use its Reaction to move up to half its Speed and make a weapon attack against the Quarry.</p>
+		</description>
+		<sheet>
+			<description>A creature of your choice within 30 feet of the Quarry can use its Reaction to move up to half its Speed and make a weapon attack against the Quarry.</description>
+		</sheet>
+	</element>
+	<element name="Winding Mark" type="Class Feature" source="The GooseQuill" id="ID_MRDR_GSQL_CLASS_FEATURE_AERIAL_ACROBATICS_WINDING_MARK">
+		<requirements>[level:falconer:14]</requirements>
+		<supports>Aerial Acrobatics</supports>
+		<description>
+			<p>The Quarry must make a Constitution saving throw or have its speed halved until the end of its next turn.</p>
+		</description>
+		<sheet>
+			<description>The Quarry must make a Constitution saving throw or have its speed halved until the end of its next turn.</description>
+		</sheet>
+	</element>
+
+	<element name="Level 15: Volte-Face" type="Class Feature" source="The GooseQuill" id="ID_MRDR_GSQL_CLASS_FEATURE_FALCONER_VOLTE_FACE">
+		<description>
+			<p>While within 30 feet of your Bird of Prey, you can use a Bonus Action to switch places with it. You can’t take this Bonus Action if either of your respective Speeds are 0.</p>
+		</description>
+		<sheet alt="Volte-Face">
+			<description>While within 30 feet of your Bird of Prey, you can use a Bonus Action to switch places with it. You can’t take this Bonus Action if either of your respective Speeds are 0.</description>
+		</sheet>
+	</element>
+
+	<element name="Level 18: Perseverance" type="Class Feature" source="The GooseQuill" id="ID_MRDR_GSQL_CLASS_FEATURE_FALCONER_PERSEVERANCE">
+		<description>
+			<p>When you roll Initiative, you regain one use of Harrier if you have none remaining.</p>
+		</description>
+		<sheet>
+			<description>When you roll Initiative, you regain one use of Harrier if you have none remaining.</description>
+		</sheet>
+	</element>
+
+	<element name="Level 19: Epic Boon" type="Class Feature" source="The GooseQuill" id="ID_MRDR_GSQL_CLASS_FEATURE_FALCONER_EPIC_BOON">
+		<description>
+			<p>You gain an Epic Boon feat or another feat of your choice for which you qualify.</p>
+		</description>
+		<sheet display="false"/>
+		<rules>  
+			<select type="Feat" name="Epic Boon (Falconer 19)" level="19" />
+		</rules>
+	</element>
+
+	<element name="Level 20: Aerial Supremacy" type="Class Feature" source="The GooseQuill" id="ID_MRDR_GSQL_CLASS_FEATURE_FALCONER_AERIAL_SUPREMACY">
+		<description>
+			<p>You teach your Bird of Prey to focus its ire on multiple targets at once.</p>
+			<p class="indent"><strong><em>Target Acquisition.</em></strong> When you use Harrier to mark a creature as Quarry, you can mark an additional creature. You can choose different Aerial Acrobatics options for both Quarries. You can have no more than two Quarries at any time.</p>
+			<p class="indent"><strong><em>Double Down.</em></strong> On your turn, if you and your Bird of Prey hit both Quarries with an attack, you can roll one additional weapon damage die for every subsequent attack made against the Quarries until the start of your next turn.</p>
+		</description>
+		<sheet display="false" />
+		<rules>
+			<grant type="Class Feature" id="ID_MRDR_GSQL_CLASS_FEATURE_AERIAL_SUPREMACY_TARGET_ACQUISITION" />
+			<grant type="Class Feature" id="ID_MRDR_GSQL_CLASS_FEATURE_AERIAL_SUPREMACY_DOUBLE_DOWN" />
+		</rules>
+	</element>
+	<element name="Target Acquisition" type="Class Feature" source="The GooseQuill" id="ID_MRDR_GSQL_CLASS_FEATURE_AERIAL_SUPREMACY_TARGET_ACQUISITION">
+		<description>
+			<p>When you use Harrier to mark a creature as Quarry, you can mark an additional creature. You can choose different Aerial Acrobatics options for both Quarries. You can have no more than two Quarries at any time.</p>
+		</description>
+		<sheet>
+			<description>When you use Harrier to mark a creature as Quarry, you can mark an additional creature. You can choose different Aerial Acrobatics options for both Quarries. You can have no more than two Quarries at any time.</description>
+		</sheet>
+	</element>
+	<element name="Double Down" type="Class Feature" source="The GooseQuill" id="ID_MRDR_GSQL_CLASS_FEATURE_AERIAL_SUPREMACY_DOUBLE_DOWN">
+		<description>
+			<p>On your turn, if you and your Bird of Prey hit both Quarries with an attack, you can roll one additional weapon damage die for every subsequent attack made against the Quarries until the start of your next turn.</p>
+		</description>
+		<sheet>
+			<description>On your turn, if you and your Bird of Prey hit both Quarries with an attack, you can roll one additional weapon damage die for every subsequent attack made against the Quarries until the start of your next turn.</description>
+		</sheet>
+	</element>
+
+	<!-- Information -->
+	<element name="Bird of Prey" type="Information" source="The GooseQuill" id="ID_MRDR_GSQL_INFORMATION_BIRD_OF_PREY">
+		<description>
+			<p style="margin-bottom:-5px"><em>Small beast</em></p>
+			<h4 style="margin-top:5px" />
+			<ul class="unstyled">
+				<li><strong>Armor Class</strong> 11 plus your Wisdom modifier</li>
+				<li><strong>HP</strong> 7 plus three times your Falconer level (the Bird of Prey has a number of Hit Dice [d6s] equal to your Falconer level)</li>
+				<li><strong>Speed</strong> 10 ft., Fly 30ft.</li>
+			</ul>
+			<table style="text-align:center;margin-top:10px;margin-bottom:10px">
+				<thead><tr><td>STR</td><td>DEX</td><td>CON</td><td>INT</td><td>WIS</td><td>CHA</td></tr></thead>
+				<tr><td>8 (+2)</td><td>14 (+1)</td><td>13 (+2)</td><td>4 (-3)</td><td>14 (+0)</td><td>6 (-2)</td></tr>
+			</table>
+			<ul class="unstyled">
+				<li><strong>Resistances</strong> 1 of Bludgeoning, Piercing, or Slashing (your choice).</li>
+				<li><strong>Senses</strong> Passive Perception 10 plus the Bird of Prey’s Wisdom modifier plus your Wisdom modifier</li>
+				<li><strong>Languages</strong> Understands the languages you know</li>
+				<li style="margin-bottom:-1em"><strong>Challenge</strong> —</li>
+				<li style="text-align:right; margin-top:-1em"><strong>Proficiency Bonus (PB)</strong> equals your bonus</li>
+			</ul>
+			<h4 style="margin-top:5px; margin-bottom:10px" />
+			<ul class="unstyled">
+				<li><strong><em>Bonded.</em></strong> Add your Proficiency Bonus to any ability check or saving throw the Bird of Prey makes.</li>
+				<li><strong><em>Flyby.</em></strong> The Bird of Prey doesn’t provoke Opportunity Attacks when it flies out of an enemy’s reach.</li>
+				<li><strong><em>Keen Sight.</em></strong> The Bird of Prey has Advantage on Wisdom (Perception) checks that rely on sight.</li>
+			</ul>
+			<h4 style="margin-top:10px">Actions</h4>
+			<ul class="unstyled">
+				<li><em><strong>Peck &amp; Scratch.</strong>Melee Attack Roll:</em> Bonus equals the Bird of Prey’s Strength- or Dexterity modifier plus your Wisdom modifier, reach 5 ft. Hit: 1d4 + PB Piercing or Slashing damage (your choice).</li>
+			</ul>
+		</description>
+	</element>
+
+	<!-- replaces bird of prey with archetype birds -->
+	<element name="Bird of Prey Replacement" type="Grants" source="The GooseQuill" id="ID_MRDR_GSQL_GRANTS_BIRDOFPREY_REPLACEMENT" />
+	<element name="Eagle Level 6" type="Grants" source="The GooseQuill" id="ID_MRDR_GSQL_GRANTS_EAGLE_LEVEL_6" />
+	<element name="Eagle Level 10" type="Grants" source="The GooseQuill" id="ID_MRDR_GSQL_GRANTS_EAGLE_LEVEL_10" />
+	<element name="Eagle Level 14" type="Grants" source="The GooseQuill" id="ID_MRDR_GSQL_GRANTS_EAGLE_LEVEL_14" />
+	<element name="Eagle Level 17" type="Grants" source="The GooseQuill" id="ID_MRDR_GSQL_GRANTS_EAGLE_LEVEL_17" />
+	
+	<element name="Falcon Level 6" type="Grants" source="The GooseQuill" id="ID_MRDR_GSQL_GRANTS_FALCON_LEVEL_6" />
+	<element name="Falcon Level 10" type="Grants" source="The GooseQuill" id="ID_MRDR_GSQL_GRANTS_FALCON_LEVEL_10" />
+	<element name="Falcon Level 14" type="Grants" source="The GooseQuill" id="ID_MRDR_GSQL_GRANTS_FALCON_LEVEL_14" />
+	<element name="Falcon Level 17" type="Grants" source="The GooseQuill" id="ID_MRDR_GSQL_GRANTS_FALCON_LEVEL_17" />
+	
+	<element name="Goose Level 6" type="Grants" source="The GooseQuill" id="ID_MRDR_GSQL_GRANTS_GOOSE_LEVEL_6" />
+	<element name="Goose Level 10" type="Grants" source="The GooseQuill" id="ID_MRDR_GSQL_GRANTS_GOOSE_LEVEL_10" />
+	<element name="Goose Level 14" type="Grants" source="The GooseQuill" id="ID_MRDR_GSQL_GRANTS_GOOSE_LEVEL_14" />
+	<element name="Goose Level 17" type="Grants" source="The GooseQuill" id="ID_MRDR_GSQL_GRANTS_GOOSE_LEVEL_17" />
+	
+	<element name="Hawk Level 6" type="Grants" source="The GooseQuill" id="ID_MRDR_GSQL_GRANTS_HAWK_LEVEL_6" />
+	<element name="Hawk Level 10" type="Grants" source="The GooseQuill" id="ID_MRDR_GSQL_GRANTS_HAWK_LEVEL_10" />
+	<element name="Hawk Level 14" type="Grants" source="The GooseQuill" id="ID_MRDR_GSQL_GRANTS_HAWK_LEVEL_14" />
+	<element name="Hawk Level 17" type="Grants" source="The GooseQuill" id="ID_MRDR_GSQL_GRANTS_HAWK_LEVEL_17" />
+	
+	<element name="Owl Level 6" type="Grants" source="The GooseQuill" id="ID_MRDR_GSQL_GRANTS_OWL_LEVEL_6" />
+	<element name="Owl Level 10" type="Grants" source="The GooseQuill" id="ID_MRDR_GSQL_GRANTS_OWL_LEVEL_10" />
+	<element name="Owl Level 14" type="Grants" source="The GooseQuill" id="ID_MRDR_GSQL_GRANTS_OWL_LEVEL_14" />
+	<element name="Owl Level 17" type="Grants" source="The GooseQuill" id="ID_MRDR_GSQL_GRANTS_OWL_LEVEL_17" />
+
+	<element name="Phoenix Level 6" type="Grants" source="The GooseQuill" id="ID_MRDR_GSQL_GRANTS_PHOENIX_LEVEL_6" />
+	<element name="Phoenix Level 10" type="Grants" source="The GooseQuill" id="ID_MRDR_GSQL_GRANTS_PHOENIX_LEVEL_10" />
+	<element name="Phoenix Level 14" type="Grants" source="The GooseQuill" id="ID_MRDR_GSQL_GRANTS_PHOENIX_LEVEL_14" />
+	<element name="Phoenix Level 17" type="Grants" source="The GooseQuill" id="ID_MRDR_GSQL_GRANTS_PHOENIX_LEVEL_17" />
+
+	<element name="Thunderbird Level 6" type="Grants" source="The GooseQuill" id="ID_MRDR_GSQL_GRANTS_THUNDERBIRD_LEVEL_6" />
+	<element name="Thunderbird Level 10" type="Grants" source="The GooseQuill" id="ID_MRDR_GSQL_GRANTS_THUNDERBIRD_LEVEL_10" />
+	<element name="Thunderbird Level 14" type="Grants" source="The GooseQuill" id="ID_MRDR_GSQL_GRANTS_THUNDERBIRD_LEVEL_14" />
+	<element name="Thunderbird Level 17" type="Grants" source="The GooseQuill" id="ID_MRDR_GSQL_GRANTS_THUNDERBIRD_LEVEL_17" />
+
+	<element name="Raven Level 6" type="Grants" source="The GooseQuill" id="ID_MRDR_GSQL_GRANTS_RAVEN_LEVEL_6" />
+	<element name="Raven Level 10" type="Grants" source="The GooseQuill" id="ID_MRDR_GSQL_GRANTS_RAVEN_LEVEL_10" />
+	<element name="Raven Level 14" type="Grants" source="The GooseQuill" id="ID_MRDR_GSQL_GRANTS_RAVEN_LEVEL_14" />
+	<element name="Raven Level 17" type="Grants" source="The GooseQuill" id="ID_MRDR_GSQL_GRANTS_RAVEN_LEVEL_17" />
+
+	<element name="Vulture Level 6" type="Grants" source="The GooseQuill" id="ID_MRDR_GSQL_GRANTS_VULTURE_LEVEL_6" />
+	<element name="Vulture Level 10" type="Grants" source="The GooseQuill" id="ID_MRDR_GSQL_GRANTS_VULTURE_LEVEL_10" />
+	<element name="Vulture Level 14" type="Grants" source="The GooseQuill" id="ID_MRDR_GSQL_GRANTS_VULTURE_LEVEL_14" />
+	<element name="Vulture Level 17" type="Grants" source="The GooseQuill" id="ID_MRDR_GSQL_GRANTS_VULTURE_LEVEL_17" />
+</elements>
