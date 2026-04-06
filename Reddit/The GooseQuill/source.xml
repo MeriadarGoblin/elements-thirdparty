@@ -2,7 +2,7 @@
 <elements>
     <info>
         <update version="0.0.1">
-            <file name="items.xml" url="https://raw.githubusercontent.com/MeriadarGoblin/elements-thirdparty/refs/heads/main/Reddit/The%20GooseQuill/items.xml" />
+            <file name="source.xml" url="https://raw.githubusercontent.com/MeriadarGoblin/elements-thirdparty/refs/heads/main/Reddit/The%20GooseQuill/source.xml" />
         </update>
     </info>
     
