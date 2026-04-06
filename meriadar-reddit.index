@@ -4,12 +4,13 @@
 		<name>Reddit Content</name>
 		<description>The content from reddit such as r/UnearthedArcana and r/DnDHomebrew. This includes all compendiums and smaller creations.</description>
 		<author url="https://www.reddit.com/r/DnDHomebrew/">Redditors</author>
-		<update version="0.1.1">
+		<update version="0.1.2">
 			<file name="meriadar-reddit.index" url="https://raw.githubusercontent.com/MeriadarGoblin/elements-thirdparty/main/meriadar-reddit.index" />
 		</update>
 	</info>
 	<files>
-		<file name="handbook-to-kamigawa.xml" url="https://raw.githubusercontent.com/MeriadarGoblin/elements-thirdparty/main/Reddit/handbook-to-kamigawa.index" />
+		<file name="handbook-to-kamigawa.index" url="https://raw.githubusercontent.com/MeriadarGoblin/elements-thirdparty/main/Reddit/handbook-to-kamigawa.index" />
 		<!-- Created by u/KingYamez -->
+		<file name="goosequill.index" url="https://raw.githubusercontent.com/MeriadarGoblin/elements-thirdparty/refs/heads/main/Reddit/goosequill.index" />
 	</files>
 </index>
