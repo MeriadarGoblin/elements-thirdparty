@@ -1,5 +1,11 @@
 <?xml version="1.0" encoding="utf-8" ?>
 <elements>
+	<info>
+        <update version="0.0.1">
+            <file name="class-falconer.xml" url="https://raw.githubusercontent.com/MeriadarGoblin/elements-thirdparty/refs/heads/main/Reddit/The%20GooseQuill/class-falconer.xml" />
+        </update>
+    </info>
+
 	<element name="Falconer" type="Class" source="The GooseQuill" id="ID_MRDR_GSQL_CLASS_FALCONER">
 		<description>
 			<p>Falconers are skilled handlers of imposing birds of prey, with whom they share an unbreakable bond. Wherever they go, they turn heads, commanding a certain air of authority, their birds a symbol of their perseverance and discipline.</p>
