@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<index>
+	<info>
+		<name>The Goosequill
+		</name>
+		<description>The content of The Goosequill.</description>
+		<author url="https://www.reddit.com/user/TheGooseQuill/">The GooseQuill</author>
+		<update version="0.1.0">
+			<file name="goosequill.xml" url="https://raw.githubusercontent.com/MeriadarGoblin/elements-thirdparty/main/Reddit/goosequill.index" />
+		</update>
+	</info>
+	<files>
+		<file name="source.xml" url="https://raw.githubusercontent.com/MeriadarGoblin/elements-thirdparty/refs/heads/main/Reddit/The%20GooseQuill/source.xml" />
+
+        <!-- Class -->
+        <file name="class-falconer.xml" url="https://raw.githubusercontent.com/MeriadarGoblin/elements-thirdparty/refs/heads/main/Reddit/The%20GooseQuill/class-falconer.xml" />
+
+		<!-- Subclasses -->
+		<file name="falconer-eagle.xml" url="https://raw.githubusercontent.com/MeriadarGoblin/elements-thirdparty/refs/heads/main/Reddit/The%20GooseQuill/falconer-eagle.xml" />
+		<file name="falconer-falcon.xml" url="https://raw.githubusercontent.com/MeriadarGoblin/elements-thirdparty/refs/heads/main/Reddit/The%20GooseQuill/falconer-falcon.xml" />
+		<file name="falconer-goose.xml" url="https://raw.githubusercontent.com/MeriadarGoblin/elements-thirdparty/refs/heads/main/Reddit/The%20GooseQuill/falconer-goose.xml" />
+		<file name="falconer-hawk.xml" url="https://raw.githubusercontent.com/MeriadarGoblin/elements-thirdparty/refs/heads/main/Reddit/The%20GooseQuill/falconer-hawk.xml" />
+		<file name="falconer-owl.xml" url="https://raw.githubusercontent.com/MeriadarGoblin/elements-thirdparty/refs/heads/main/Reddit/The%20GooseQuill/falconer-owl.xml" />
+		<file name="falconer-phoenix.xml" url="https://raw.githubusercontent.com/MeriadarGoblin/elements-thirdparty/refs/heads/main/Reddit/The%20GooseQuill/falconer-phoenix.xml" />
+		<file name="falconer-raven.xml" url="https://raw.githubusercontent.com/MeriadarGoblin/elements-thirdparty/refs/heads/main/Reddit/The%20GooseQuill/falconer-raven.xml" />
+		<file name="falconer-thunderbird.xml" url="https://raw.githubusercontent.com/MeriadarGoblin/elements-thirdparty/refs/heads/main/Reddit/The%20GooseQuill/falconer-thunderbird.xml" />
+		<file name="falconer-vulture.xml" url="https://raw.githubusercontent.com/MeriadarGoblin/elements-thirdparty/refs/heads/main/Reddit/The%20GooseQuill/falconer-vulture.xml" />
+
+        <!-- Other -->
+		<file name="items.xml" url="https://raw.githubusercontent.com/MeriadarGoblin/elements-thirdparty/refs/heads/main/Reddit/The%20GooseQuill/items.xml" />
+		<file name="falconer-companions.xml" url="https://raw.githubusercontent.com/MeriadarGoblin/elements-thirdparty/refs/heads/main/Reddit/The%20GooseQuill/falconer-companions.xml" />
+	</files>
+</index>
