@@ -6,7 +6,7 @@
 		<description>The content of The Goosequill.</description>
 		<author url="https://www.reddit.com/user/TheGooseQuill/">The GooseQuill</author>
 		<update version="0.1.0">
-			<file name="goosequill.xml" url="https://raw.githubusercontent.com/MeriadarGoblin/elements-thirdparty/main/Reddit/goosequill.index" />
+			<file name="goosequill.xml" url="https://raw.githubusercontent.com/MeriadarGoblin/elements-thirdparty/refs/heads/main/Reddit/goosequill.index" />
 		</update>
 	</info>
 	<files>
